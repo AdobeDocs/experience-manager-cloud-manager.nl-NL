@@ -2,7 +2,7 @@
 title: Aangepaste machtigingen
 description: Leer hoe u douanetoestemmingen kunt gebruiken om nieuwe profielen van de douanetoestemming met configureerbare toestemmingen tot stand te brengen om toegang tot programma's, pijpleidingen en milieu's voor de gebruikers van de Managers van de Wolk te beperken.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 16eef51d86647ae4f2515f3f3c4cb2d15e948854
+source-git-commit: 4a784f1594be4831be1c1c4aecb41b4f1b3b8be2
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 1%
@@ -15,14 +15,14 @@ Leer hoe u douanetoestemmingen kunt gebruiken om nieuwe profielen van de douanet
 
 ## Inleiding {#introduction}
 
-Cloud Manager heeft een set vooraf gedefinieerde rollen die de toegang tot verschillende functies van cloudbeheer bepalen:
+Cloud Manager heeft een set vooraf gedefinieerde rollen die de toegang tot verschillende functies van cloud Manager regelen:
 
 * Business Owner
 * Program Manager
 * Deployment Manager
 * Developer
 
-Met aangepaste machtigingen kunnen gebruikers nieuwe aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang voor gebruikers van Cloud Managers te beperken tot programma&#39;s, pijpleidingen en omgevingen.
+Met aangepaste machtigingen kunnen gebruikers nieuwe aangepaste machtigingsprofielen maken met configureerbare machtigingen om de toegang voor gebruikers van Cloud Managers tot programma&#39;s, pijpleidingen en omgevingen te beperken.
 
 >[!TIP]
 >
@@ -79,7 +79,7 @@ Nu u een nieuw productprofiel hebt, kunt u er aangepaste machtigingen aan toewij
 
 1. Tik of klik op de knop **Bewerken** koppeling van een machtiging om deze te bewerken.
 
-1. De **Rechten bewerken** wordt geopend.
+1. De **Machtigingen bewerken** wordt geopend.
    * De machtigingen die u in de vorige stap hebt geselecteerd, worden in de linkerkolom geselecteerd.
    * De machtigingsitems die beschikbaar zijn voor toewijzing voor de machtiging bevinden zich in de middelste kolom met het label **Beschikbare machtiging** Items.
    * De toegewezen toestemmingspunten zijn in de juiste kolom geëtiketteerd **Opgenomen machtigingsitems**.
@@ -121,14 +121,14 @@ De volgende machtigingen zijn beschikbaar voor het maken van aangepaste profiele
 | Pipet bewerken | Gebruikers toestaan pijpleidingen te bewerken |
 | Productieimplementaties goedkeuren/afwijzen | Gebruikers toestaan een stap voor productieimplementatie goed te keuren of af te wijzen |
 | Uitvoeringen pijplijn annuleren | Laat gebruikers uitvoeren pijpleidingen annuleren |
-| Start van pijplijnuitvoering | Gebruikers toestaan een nieuwe pijpleiding uit te voeren |
+| Start van pijplijnuitvoering | Gebruikers toestaan nieuwe pijpleidinguitvoeringen te starten |
 | Belangrijke metrische fouten negeren/negeren | Gebruikers toestaan belangrijke metrische fouten te negeren/af te wijzen |
 | Plan voor productieimplementaties | Gebruikers toestaan een stap voor productieimplementatie te plannen |
 | Toegang tot opslaggegevens | Gebruikers toegang geven tot dataopslag en een wachtwoord voor toegang genereren |
 | Opslagplaats maken | Gebruikers toestaan nieuwe it-opslagruimten te maken |
 | Opslagplaats verwijderen | Gebruikers mogen it-opslagruimten verwijderen |
 | Bewerken opslagplaats | Gebruikers mogen it-opslagruimten bewerken |
-| Code opslagplaats genereren | Gebruikers toestaan een project te genereren op basis van het archetype |
+| Code opslagplaats genereren | Gebruikers toestaan projecten te genereren op basis van het archetype |
 | Inhoud kopiëren beheren | Gebruikers toestaan bewerkingen voor het kopiëren van inhoud te beheren |
 
 ### Rechten op organisatieniveau {#organization-level}
