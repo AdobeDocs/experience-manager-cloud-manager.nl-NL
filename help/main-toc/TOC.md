@@ -7,9 +7,9 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: d9ae15c61527d76f8f17e6cb48f204deb3f9fff5
+source-git-commit: 664f43f8ec92da01af16721d9c847e0b03eb4e96
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '498'
 ht-degree: 6%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 6%
 + Opmerkingen bij de release {#release-notes}
    + [Opmerkingen bij de huidige release](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [Opmerkingen bij de release 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Opmerkingen bij de release 2024.2.0](/help/release-notes/2024/2024-2-0.md)
       + [Opmerkingen bij de release 2024.1.0](/help/release-notes/2024/2024-1-0.md)
    + 2023 {#2023}
