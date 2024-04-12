@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het hulpprogramma voor het kopiëren van inhoud van Cloud Manager kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AMS-gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: c7803c75bcfcc967877808214704c5746015481d
+source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Ee
 /conf/**
 /etc/**
 /var/workflow/models/**
+/var/commerce/**
 ```
 
 Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
