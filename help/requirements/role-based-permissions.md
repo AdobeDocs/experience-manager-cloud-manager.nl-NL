@@ -2,9 +2,9 @@
 title: Op rollen gebaseerde machtigingen
 description: Meer informatie over de vooraf geconfigureerde, op rollen gebaseerde machtigingen van Cloud Manager voor het beheren van toegang tot uw cloudbronnen.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
+source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '594'
 ht-degree: 2%
 
 ---
@@ -66,3 +66,7 @@ Elk van de rollen heeft specifieke bijbehorende preconfigured toestemmingen. Dez
 | Token voor persoonlijke toegang genereren | Toegangsuitrusting |  | x |  | x |  |
 
 Raadpleeg het document voor meer informatie over het instellen van uw gebruikers [Gebruikers en rollen instellen.](/help/requirements/users-and-roles.md)
+
+>[!TIP]
+>
+>Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Zie het document [Aangepaste machtigingen](/help/using/custom-permissions.md) voor meer informatie .
