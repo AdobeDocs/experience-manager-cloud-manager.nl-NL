@@ -7,9 +7,9 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 664f43f8ec92da01af16721d9c847e0b03eb4e96
+source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '499'
 ht-degree: 6%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 6%
    + [Levering van omgeving](/help/requirements/environment-provisioning.md)
 + Aan de slag {#getting-started}
    + [Eerste aanmelding](/help/getting-started/first-time-login.md)
+   + [Navigatie](/help/getting-started/navigation.md)
    + [Programma instellen](/help/getting-started/program-setup.md)
    + AEM project maken {#project-creation}
       + [De wizard gebruiken](/help/getting-started/using-the-wizard.md)

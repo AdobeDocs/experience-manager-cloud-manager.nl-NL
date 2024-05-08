@@ -2,9 +2,9 @@
 title: Codeimplementatie
 description: Leer hoe u uw code implementeert en wat er gebeurt in Cloud Manager wanneer u dat doet.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,6 @@ De **Werkgebied testen** De stap omvat de volgende acties:
 
 * **Beveiligingstests**: Deze stap evalueert het effect van uw code op de AEM. Zie het document [Testresultaten begrijpen](/help/using/code-quality-testing.md) voor meer informatie over het testproces.
    * **Prestatietesten**: Deze stap evalueert de prestaties van uw code. Zie [Testresultaten begrijpen](/help/using/code-quality-testing.md) voor meer informatie over het testproces.
-
-  ![Werkgebied testen](/help/assets/Stage_Testing1.png)
 
 ### Implementatiestap voor productie {#production-deployment}
 

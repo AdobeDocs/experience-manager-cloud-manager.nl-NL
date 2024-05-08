@@ -1,10 +1,10 @@
 ---
 title: Belangrijke concepten
-description: Net als alle andere krachtige functies omvat Cloud Manager veel concepten en termen. Dit document geeft een overzicht van een aantal van de belangrijkste voor u bij het werken met Cloud Manager.
+description: Cloud Manager bevat, net als alle andere krachtige functies, veel concepten en termen. Dit document geeft een overzicht van een aantal van de belangrijkste voor u bij het werken met Cloud Manager.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 73e322cf93dc7709b7581860974079c8d94034ba
+source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,21 @@ ht-degree: 0%
 
 # Belangrijke concepten {#key-concepts}
 
-Net als alle andere krachtige functies omvat Cloud Manager veel concepten en termen. Dit document geeft een overzicht van een aantal van de belangrijkste voor u bij het werken met Cloud Manager.
+Cloud Manager bevat, net als alle andere krachtige functies, veel concepten en termen. Dit document geeft een overzicht van een aantal van de belangrijkste voor u bij het werken met Cloud Manager.
 
 ## Toepassing {#application}
 
-En de toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om het onderliggende aan te passen [oplossing](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften. Een toepassing is een logische eenheid die kan bestaan uit meerdere [artefacten.](#artifact)
+Een toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om het onderliggende aan te passen [oplossing](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften. Een toepassing is een logische eenheid die kan bestaan uit meerdere [artefacten.](#artifact)
 
 Een voorbeeldtoepassing is fictief [WKND-toepassing voor levensstijl.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 ## Artefact {#artifact}
 
-Een artefact is een plaatsbare eenheid en is het resultaat van wat bouwstijlproces dat broncode in één enkele eenheid omzet. Bijvoorbeeld een ZIP-bestand met de broncode.
+Een artefact is een plaatsbare eenheid en is het resultaat van één of ander bouwstijlproces dat broncode in één enkele eenheid omzet. Bijvoorbeeld een ZIP-bestand met de broncode.
 
 ## Artefactopslagplaats {#artifact-repository}
 
-Een artefactopslagplaats is een opslagplaats waar klant-specifiek [artefacten](#artifact) worden opgeslagen en beveiligd.
+Een artefactopslagplaats is een opslagplaats waar klant-specifiek [artefact](#artifact) worden opgeslagen en beveiligd.
 
 ## Omgeving {#environment}
 
@@ -42,7 +42,7 @@ Een instantie is een specifieke virtuele server waarop de AEM wordt uitgevoerd [
 
 ## Organisatie {#organization}
 
-Een organisatie is een constructie van de Adobe die een ondernemingsklant vertegenwoordigt. Eén bedrijf kan meerdere organisaties hebben, afhankelijk van de manier waarop deze in het Adobe Identity Management System (IMS) zijn ingericht.
+Een organisatie is een constructie van de Adobe die een ondernemingsklant vertegenwoordigt. Eén bedrijf kan meerdere organisaties hebben, afhankelijk van de manier waarop deze zijn ingericht in het Identity Management System (IMS) van Adobe.
 
 ## Pijpleiding {#pipeline}
 
@@ -50,7 +50,7 @@ Een pijpleiding is een reeks plaatsingsstappen die in opeenvolging worden uitgev
 
 ## Product {#product}
 
-Een product is een specifieke set functies binnen een [oplossing](#solution) in licentie gegeven door een organisatie. Verschil [programma&#39;s](#program) binnen een organisatie kan recht hebben op verschillende sets producten, bijvoorbeeld AEM Sites, AEM Assets of AEM Forms.
+Een product is een specifieke set functies binnen een [oplossing](#solution) in licentie gegeven door een organisatie. Verschil [programma&#39;s](#program) binnen een organisatie kan recht hebben op verschillende productensets, bijvoorbeeld AEM Sites, AEM Assets of AEM Forms.
 
 ## Programma {#program}
 
@@ -58,7 +58,7 @@ Een programma is een reeks milieu&#39;s die een logische groepering van klanteni
 
 ## Oplossing {#solution}
 
-Een oplossing is een van de Adobe [!UICONTROL Experience Cloud] oplossingen. Bijvoorbeeld Adobe Experience Manager, Adobe Target of Adobe Analytics.
+Een oplossing is een van de Adoben [!UICONTROL Experience Cloud] oplossingen. Bijvoorbeeld Adobe Experience Manager, Adobe Target of Adobe Analytics.
 
 ## Stap {#step}
 

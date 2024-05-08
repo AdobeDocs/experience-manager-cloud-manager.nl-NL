@@ -2,9 +2,9 @@
 title: Opslagplaatsen voor Cloud Manager
 description: Leer hoe u opslagruimten voor uw Cloud Manager-programma's kunt openen, maken en bewerken.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -26,16 +26,12 @@ Als u toegang wilt krijgen tot uw opslagplaats, gebruikt u de **Repo-info openen
 
    ![Knop Repo-info openen](/help/assets/access-repo1.png)
 
-1. Als u overschakelt op **Niet-productie** pijplijntabblad, de **Repo-info openen** ook daar beschikbaar als [gevormd voor de pijpleiding.](/help/using/non-production-pipelines.md)
-
-   ![Niet-productieleidingen](/help/assets/access-repo-nonprod.png)
-
-1. Klik op de knop **Repo-info openen** om een dialoogvenster te openen dat het volgende bevat:
+1. Tik of klik op de knop **Repo-info openen** om een dialoogvenster te openen dat het volgende bevat:
 
    * De URL naar de gegevensopslagruimte
    * Gebruikersnaam
    * Wachtwoord
-   * De opdracht Git wordt uitgevoerd om de repository lokaal te klonen
+   * De opdracht Git wordt uitgevoerd om de opslagplaats lokaal te klonen
 
    ![Dialoogvenster met informatie over opslagplaats](/help/assets/access-repo-create.png)
 
@@ -57,7 +53,7 @@ Ga als volgt te werk om opslagruimten toe te voegen in Cloud Manager:
 
    >[!NOTE]
    >
-   >U moet beschikken over de **Implementatiebeheer** of **Zakelijke eigenaar** rol om een gegevensopslagruimte toe te voegen.
+   >U moet beschikken over **Implementatiebeheer** of **Zakelijke eigenaar** rol om een gegevensopslagruimte toe te voegen.
 
    ![Opslagplaats toevoegen](/help/assets/create-repo2.png)
 
@@ -68,8 +64,6 @@ Ga als volgt te werk om opslagruimten toe te voegen in Cloud Manager:
 1. Selecteren **Opslaan**.
 
 Het nieuwe bericht wordt weergegeven.
-
-![Nieuwe reactie gemaakt](/help/assets/create-repo3.png)
 
 In Cloud Manager gemaakte opslagruimten kunnen worden geselecteerd wanneer u [uw pijpleidingen aanmaken.](/help/overview/ci-cd-pipelines.md)
 
@@ -87,7 +81,7 @@ Voer de volgende stappen uit om opslagruimten te bewerken en weer te geven in Cl
 
 ## Opslagplaatsen verwijderen {#delete-repos}
 
-Als u een gegevensopslagruimte wilt verwijderen, voert u dezelfde stappen uit [om opslagruimten te bekijken en te bewerken](#edit-repos) maar op de **Opslagplaatsen** pagina selecteren **Verwijderen** van de ellipse knoop van de bewaarplaats die moet worden geschrapt.
+Voer dezelfde stappen uit om een gegevensopslagruimte te verwijderen [om opslagruimten te bekijken en te bewerken](#edit-repos) maar op de **Opslagplaatsen** pagina selecteren **Verwijderen** van de ellipse knoop van de bewaarplaats die moet worden geschrapt.
 
 Wanneer een opslagplaats wordt verwijderd in Cloud Manager, wordt deze gemarkeerd als verwijderd en is deze niet langer toegankelijk voor de gebruiker, maar wordt deze in het systeem onderhouden voor hersteldoeleinden.
 
@@ -160,4 +154,4 @@ Houd rekening met het volgende wanneer u it-submodules gebruikt:
 * Git-submoduleverwijzingen worden opgeslagen naar specifieke it-opdrachten.
    * Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, moet het gecommitteerde referenced worden bijgewerkt, bijvoorbeeld door te gebruiken `git submodule update --remote`.
 * Tenzij anders nodig, wordt het ten zeerste aanbevolen &quot;oppervlakkige&quot; submodules te gebruiken.
-   * Voer `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule.
+   * Voer hiervoor `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule.

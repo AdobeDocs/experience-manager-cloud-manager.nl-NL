@@ -2,9 +2,9 @@
 title: Eerste aanmelding
 description: Volg deze pagina als u algemene configuraties hebt ingesteld en u voor het eerst Cloud Manager kunt gebruiken.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
+source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -24,21 +24,23 @@ Zodra u opstelling de algemene configuratie voor [!UICONTROL Cloud Manager], ben
 
    ![Cloud Manager-console](/help/assets/cloud-manager-console.png)
 
-1. Selecteer op de kaart van uw programma de knop voor ovaal en vervolgens **Programmaoverzicht** om naar Cloud Manager te navigeren **Overzicht** pagina.
+1. Tik of klik op de kaart van uw programma om naar Cloud Manager te navigeren **Overzicht** pagina.
 
-   ![Cloud Manager, optie](/help/assets/program-overview-option.png)
+1. Cloud Manager wordt geopend voor de **Overzicht** pagina.
 
-1. Cloud Manager wordt geopend voor **Overzicht** pagina.
+   ![Overzicht van Cloud Manager](/help/assets/program-overview-page.png)
 
-   ![Overzicht van Cloud Manager](/help/assets/FirstLogin1.png)
-
-1. Klikken **Installatieprogramma** om uw programmabeschrijving in te stellen en belangrijke prestatie-indicatoren (KPI&#39;s) te definiëren.
+1. Tik of klik op **Installatieprogramma** in de [oproep tot actie](/help/getting-started/navigation.md#cta) om uw programmabeschrijving in te stellen en belangrijke prestatie-indicatoren (KPI&#39;s) te definiëren. Als uw programma al is ingesteld, kan de overeenkomst aanvullende volgende stappen bieden.
 
 Ga door met het document [Programma instellen](/help/getting-started/program-setup.md) voor de volgende stappen in het instellen van uw programma.
 
 ## Activiteit van cloudbeheer {#activity}
 
 Cloud Manager biedt een geconsolideerde weergave van de activiteit van een programma, waarin alle uitgevoerde CI-/CD-pijpleidingen, zowel de productie als de niet-productie, worden vermeld, zodat de activiteiten in het verleden en heden zichtbaar zijn.
+
+>[!TIP]
+>
+>Raadpleeg het document voor meer informatie over het gebruik van de interface van Cloud Manager. [Navigeren door de interface van Cloud Manager.](/help/getting-started/navigation.md)
 
 >[!NOTE]
 >

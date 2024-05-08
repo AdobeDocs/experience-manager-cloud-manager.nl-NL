@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ De **Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het g
 
 1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien evenals begin en stop pijpleidingsuitvoering zoals u in **Pijppijplijnkaart**.
 
-Als een pijpleiding uitvoert, beweegt over zijn **Status** de kolom zal details over de uitvoering openbaren.
+Tikken of klikken op de knop `i` toont details over de laatste of huidige uitvoering van de pijpleiding.
 
 ![Uitvoeringdetails pijpleiding](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ De **Activiteiten** toont een volledige lijst van alle pijpleiding uitvoeringen 
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
-Als een pijpleiding uitvoert, beweegt over zijn **Status** de kolom zal details over de uitvoering openbaren.
+Tikken of klikken op de knop `i` toont details over de uitvoering van de geselecteerde pijpleiding in werking stellen.
 
 ![Uitvoeringdetails pijpleiding](/help/assets/configure-pipelines/pipeline-activity.png)
 

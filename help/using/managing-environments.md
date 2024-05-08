@@ -2,10 +2,10 @@
 title: Omgevingen beheren
 description: Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 80f8707e00357f5a08dd835b846c9ee610f3e573
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 
-## Overzichtspagina {#overview-page}
+## Overzicht van pagina {#overview-page}
 
 De **Overzicht** bevat de pagina met Cloud Manager de **Omgevingen** tegel die van alle beheerde AEM milieu&#39;s een lijst maakt.
 
 In elk van de vermelde omgevingen wordt de bijbehorende status weergegeven.
 
-![Overzichtspagina](/help/assets/Manage-Environ-Overview.png)
+![Overzicht pagina](/help/assets/Manage-Environ-Overview.png)
 
 ## Omgevingstegel {#environments-tile}
 
@@ -37,9 +37,9 @@ De status is de toestand van het opgerold vermogen over de knooppunten in de omg
 
 ## Omgevingen beheren {#managing-environments-with-cloud-manager}
 
-Op de **Omgevingen** tegel, klikken **Beheren** om de **Omgevingen** scherm.
+Op de **Omgevingen** tik of klik op de rij van een omgeving om de **Omgevingen** scherm.
 
-De **Omgevingen** scherm geeft elk een kaart weer voor productie- en testomgevingen (zoals van toepassing) in uw programma. De naam van de omgeving wordt boven elke kaart weergegeven. De kaart omvat een lijst van knopen in het milieu samen met de t-shirtgrootte van cpu, de opslag, het gebied, en de status.
+De **Omgevingen** scherm geeft elke productie- en testomgeving in uw programma weer. De naam van de omgeving wordt boven elke kaart weergegeven. De kaart omvat een lijst van knopen in het milieu samen met de t-shirtgrootte van cpu, de opslag, het gebied, en de status.
 
 >[!NOTE]
 >
