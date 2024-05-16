@@ -1,13 +1,13 @@
 ---
 title: Navigeren door de interface van Cloud Manager
 description: Leer hoe de interface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
-source-git-commit: 95736be8c38488c3f16164784247e160a967ecb7
+exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
-
 
 # Navigeren door de gebruikersinterface van Cloudbeheer {#navigation}
 
@@ -101,7 +101,6 @@ Elk programma wordt vertegenwoordigd door een kaart (of rij in een lijst), die e
 * Programmaafbeelding (indien geconfigureerd)
 * Programmanaam
 * Servicetype: **Experience Manager Cloud** for [as a Cloud Service programma&#39;s AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) of **Experience Manager** voor AMS-programma&#39;s
-* [Programmatype](/help/getting-started/program-setup.md): zandbak of productie
 * Status
 * Gevormde oplossingen
 * Aanmaakdatum
