@@ -2,9 +2,9 @@
 title: Op rollen gebaseerde machtigingen
 description: Meer informatie over de vooraf geconfigureerde, op rollen gebaseerde machtigingen van Cloud Manager voor het beheren van toegang tot uw cloudbronnen.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
+source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '600'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Deze lijst maakt een lijst van de rollen u in de Admin Console kunt toewijzen.
 | Deployment Manager | Deze gebruiker beheert de implementatiebewerkingen met [!UICONTROL Cloud Manager] om fase en productieplaatsingen uit te voeren, kan belangrijke drie-laag mislukkingen goedkeuren wanneer nodig, en heeft toegang tot de git bewaarplaats. |
 | Developer | Deze gebruiker ontwikkelt en test de code van de douanetoepassing, hoofdzakelijk gebruik [!UICONTROL Cloud Manager] om plaatsingsstatus te bekijken, en toegang tot de git bewaarplaats te begaan. |
 | Klantsuccesvolle technicus | Deze gebruiker steunt over het algemeen klantensucces voor klanten AMS en wisselt met [!UICONTROL Cloud Manager] voor het uitvoeren van implementaties waarvoor toezicht van de Klant vereist is. |
-| Inhoudsauteur | Deze gebruiker communiceert doorgaans niet met [!UICONTROL Cloud Manager], maar kan de [!UICONTROL Cloud Manager] programma wwitcher (navigeer van [!UICONTROL Experience Cloud]) voor toegang tot Adobe Experience Manager (AEM). |
+| Inhoudsauteur | Deze gebruiker communiceert gewoonlijk niet met Cloud Manager, maar gebruikt mogelijk de programmaschakeloptie voor Cloud Manager (die vanuit Experience Cloud is genavigeerd) om toegang te krijgen tot Adobe Experience Manager (AEM). |
 
 ## Gebruikersmachtigingen {#user-permissions}
 
