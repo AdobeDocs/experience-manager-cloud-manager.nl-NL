@@ -7,9 +7,9 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '530'
 ht-degree: 6%
 
 ---
@@ -58,17 +58,23 @@ ht-degree: 6%
    + [Aangepaste regels voor codekwaliteit](/help/using/custom-code-quality-rules.md)
    + [Inhoud kopiëren](/help/using/content-copy.md)
 + Code beheren {#managing-code}
+   + [Opslagplaatsen beheren in Cloud Manager](/help/managing-code/managing-repositories.md)
+   + [Toegang tot opslagplaats](/help/managing-code/accessing-repositories.md)
+   + [Opslagplaatsen voor Adoben toevoegen](/help/managing-code/adobe-repositories.md)
+   + [Persoonlijke opslagplaatsen toevoegen](/help/managing-code/private-repositories.md)
+   + [Ondersteuning voor Git-submodule](/help/managing-code/git-submodules.md)
+   + [Configuratie van GitHub-controle](/help/managing-code/github-check-config.md)
+   + [GitHub-controleannotaties](/help/managing-code/github-annotations.md)
    + [Maven Project Version Handling](/help/managing-code/maven-project-version.md)
-   + [Opslagplaatsen](/help/managing-code/repositories.md)
    + [Integreren met it](/help/managing-code/git-integration.md)
    + [Werken met meerdere opslagplaatsen voor git](/help/managing-code/multiple-git-repos.md)
-   + [Werken met uw eigen GitHub-opslagruimten](/help/managing-code/byo-github.md)
 + Wizard Productupdates {#product-update-wizard}
    + [Overzicht](/help/product-update-wizard/overview.md)
    + [Evaluatie](/help/product-update-wizard/evaluation.md)
 + Opmerkingen bij de release {#release-notes}
    + [Opmerkingen bij de huidige release](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [Opmerkingen bij de release 2024.5.0](/help/release-notes/2024/2024-5-0.md)
       + [Opmerkingen bij de release 2024.4.0](/help/release-notes/2024/2024-4-0.md)
       + [Opmerkingen bij de release 2024.3.0](/help/release-notes/2024/2024-3-0.md)
       + [Opmerkingen bij de release 2024.2.0](/help/release-notes/2024/2024-2-0.md)

@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release 2024.5.0
-description: Dit zijn de opmerkingen bij de release 2024.5.0 voor Cloud Manager.
+title: Opmerkingen bij de release 2024.6.0
+description: Dit zijn de opmerkingen bij de release 2024.6.0 voor Cloud Manager.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 395fe2a42fc2d6413dff38c9e4620c62039f87e2
+source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release 2024.5.0 van Cloud Manager {#release-notes}
+# Opmerkingen bij de release 2024.6.0 voor Cloud Manager {#release-notes}
 
-Op deze pagina worden de opmerkingen bij de release voor [!UICONTROL Cloud Manager] release 2024.5.0.
+Op deze pagina worden de opmerkingen bij de release voor [!UICONTROL Cloud Manager] release 2024.6.0.
 
 >[!NOTE]
 >
@@ -21,11 +21,16 @@ Op deze pagina worden de opmerkingen bij de release voor [!UICONTROL Cloud Manag
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor [!UICONTROL Cloud Manager] release 2024.5.0 is 9 mei 2024. De volgende release is gepland voor 6 juni 2024.
+De releasedatum voor [!UICONTROL Cloud Manager] release 2024.6.0 is 6 juni 2024. De volgende release is gepland voor 11 juli 2024.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* De stap van de Controle van de Inhoud wordt nu overgeslagen wanneer een pijpleiding binnen loopt [noodmodus.](/help/using/code-deployment.md#emergency-pipeline)
+* U kunt nu [gebruik uw eigen GitHub-repositories](/help/managing-code/private-repositories.md) als bronnen voor zowel volledig-stapelpijpleidingen als frontpijpleidingen.
+   * Bovendien kunt u uit bewaarplaatsen GitHub met voordeel halen [git-submodules;](/help/managing-code/git-submodules.md) voorzien u van verbeterde controle over de auto-geproduceerde pijpleidingen die voor de bevestiging van het trekkingsverzoek worden gebruikt en het toestaan van u om gedrag voor cruciale metriek tijdens de fase van het codescannen te bepalen.
+   * [U kunt ook](/help/managing-code/github-check-config.md) om de rapportgeschiedenis op GitHub te bewaren, noem de pijpleiding, en plaats pijpleidingsvariabelen om uw behoeften aan te passen.
+* Er zijn nieuwe OakPal-regels toegevoegd aan de [Codekwaliteitsscan van Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
+   * Elke nieuwe regel die vanaf juni 2024 wordt toegevoegd, is een onverbrekelijke verandering.
+   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen mislukken vanaf de release Cloud Manager August 2024.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
@@ -36,13 +41,3 @@ Maak deel uit van ons programma voor vroege goedkeuring en heb de kans om een aa
 Ondersteuning voor [pijpleidingen die uitsluitend bestemd zijn voor de productie](/help/using/stage-prod-only.md) is geïntroduceerd, toelatend u om volledig-stapelpijpleidingen van de productieleiding in kleinere, gespecialiseerde plaatsingen te verdelen.
 
 Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar  `Grp-cloudmanager_splitpipelines@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
-
-### Breng uw eigen GitHub {#byo-github}
-
-Als u GitHub gebruikt om uw bewaarplaatsen te beheren, [u kunt code binnen uw bewaarplaatsen van GitHub door de Manager van de Wolk nu bevestigen.](/help/managing-code/byo-github.md) Door deze integratie is het niet nodig de code consistent te synchroniseren met de opslagplaats van de Adobe en kunt u terugtrekkingsverzoeken verifiëren voordat u ze samenvoegt in de hoofdvertakkingen. Deze eigenschap is exclusief aan openbare GitHub. De steun voor zelf-ontvangen GitHub is niet beschikbaar.
-
-Als je deze nieuwe functie wilt testen en je feedback wilt delen, stuur dan een e-mail naar `Grp-CloudManager_BYOG@adobe.com` van uw e-mailadres dat aan uw Adobe ID is gekoppeld.
-
-## Opgeloste problemen {#bug-fixes}
-
-* Er is een probleem opgelost waarbij in Cloud Manager artefacten zijn hergebruikt met de onjuiste commit hash.

@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 >
 >U kunt een lopende pijpleiding niet uitgeven.
 
+>[!NOTE]
+>
+>De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie het document [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](/help/managing-code/private-repositories.md) voor nadere bijzonderheden en de volledige lijst van beperkingen.
+
 ## Verwijderen van pijpleidingen {#deleting-pipelines}
 
 1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
@@ -127,6 +131,15 @@ Zodra een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
 Tik of klik op de knop **Details weergeven** koppeling om de **Duur** sectie. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
 
 ![Duur](/help/assets/configure-pipelines/duration.png)
+
+Als uw pijpleiding een **Codescannen** de stap, die kwesties opriep, kunt u tikken of klikken **Downloaddetails** om een lijst met [codekwaliteitstests](/help/using/code-quality-testing.md) dat is niet gelukt .
+
+![Codekwaliteitsproblemen](assets/managing-pipelines-code-quality-issues.png)
+
+A **Locatie projectbestand** is beschikbaar in het CSV-bestand om de locatie van de betreffende code aan te geven. Deze kolom is de project-relatieve weg, terwijl **Bestandslocatie** wordt gegenereerd.
+
+![Probleemdetails over het scannen van projectcode](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >

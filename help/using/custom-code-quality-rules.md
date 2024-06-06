@@ -2,10 +2,10 @@
 title: Aangepaste regels voor codekwaliteit
 description: Meer informatie over de regels voor de kwaliteit van aangepaste code die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code, op basis van de aanbevolen procedures van AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
+source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
 workflow-type: tm+mt
-source-wordcount: '3377'
-ht-degree: 2%
+source-wordcount: '3513'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Meer informatie over de aangepaste kwaliteitsregels voor code die door Cloud Man
 
 >[!NOTE]
 >
->Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege Adobe-eigen informatie. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+>Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -532,7 +532,7 @@ In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manag
 
 De AEM-API bevat Java™-interfaces en -klassen die alleen door aangepaste code moeten worden gebruikt, maar niet geïmplementeerd. Bijvoorbeeld de interface `com.day.cq.wcm.api.Page` wordt alleen door AEM geïmplementeerd.
 
-Wanneer nieuwe methoden aan deze interfaces worden toegevoegd, beïnvloeden deze aanvullende methoden geen bestaande code die deze interfaces gebruikt en daardoor wordt de toevoeging van nieuwe methoden aan deze interfaces beschouwd als compatibel met eerdere versies. Als echter door aangepaste code één van deze interfaces wordt geïmplementeerd, heeft deze aangepaste code een risico voor compatibiliteit met eerdere versies voor de klant geïntroduceerd.
+Wanneer nieuwe methoden aan deze interfaces worden toegevoegd, beïnvloeden deze aanvullende methoden geen bestaande code die deze interfaces gebruikt en daardoor wordt de toevoeging van nieuwe methoden aan deze interfaces beschouwd als compatibel met eerdere versies. Nochtans, als de douanecode één van deze interfaces uitvoert, heeft die douanecode een achterwaarts-verenigbaarheidsrisico voor de klant geïntroduceerd.
 
 Interfaces en klassen die alleen door AEM moeten worden geïmplementeerd, zijn voorzien van een annotatie `org.osgi.annotation.versioning.ProviderType` of, soms, een gelijkaardige erfenisaantekening `aQute.bnd.annotation.ProviderType`. Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd of een klasse door douanecode wordt uitgebreid.
 
@@ -553,7 +553,7 @@ public class DontDoThis implements Page {
 * **Ernst**: Blocker
 * **Sinds**: Versie 2019.6.0
 
-Het is al lang een goede praktijk dat de `/libs` de inhoudsstructuur in de AEM-inhoudgegevensopslagruimte moet door klanten als alleen-lezen worden beschouwd. Knooppunten en eigenschappen wijzigen onder `/libs` brengt een aanzienlijk risico met zich mee voor belangrijke en kleine updates. Wijzigingen in `/libs` uitsluitend via officiële kanalen door Adobe wordt gemaakt.
+Het is al lang een goede praktijk dat de `/libs` de inhoudsstructuur in de AEM-inhoudgegevensopslagruimte moet door klanten als alleen-lezen worden beschouwd. Knooppunten en eigenschappen wijzigen onder `/libs` brengt een aanzienlijk risico met zich mee voor belangrijke en kleine updates. Wijzigingen in `/libs` uitsluitend via officiële kanalen door Adobe wordt verricht.
 
 ### Pakketten mogen geen dubbele OSGi-configuraties bevatten {#oakpal-package-osgi}
 
@@ -794,6 +794,74 @@ AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppun
 * **Sinds**: Versie 2021.2.0
 
 AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `reindex`. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie de [Documentatie voor zoeken en indexeren van inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie .
+
+### De knooppunten van de indexdefinitie moeten niet in het inhoudspakket worden opgesteld UI {#oakpal-ui-content-package}
+
+* **Sleutel**: IndexNotUnderUIContent
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **Sinds**: Versie 2024.6.0
+
+AEM Cloud Service staat definities van aangepaste zoekindexen (knooppunten van het type) niet toe `oak:QueryIndexDefinition`) van wordt geïmplementeerd in het UI-inhoudspakket.
+
+>[!WARNING]
+>
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+
+### Aangepaste full-text indexdefinitie van type damAssetLucene moet correct worden voorgefixeerd met &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
+
+* **Sleutel**: CustomFulltextIndexesOfTheDamAssetCheck
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **Sinds**: Versie 2024.6.0
+
+AEM Cloud Service staat aangepaste definities van volledige-tekstindextypen niet toe `damAssetLucene` van tevoren met andere dan `damAssetLucene`.
+
+>[!WARNING]
+>
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+
+### De knooppunten van de indexdefinitie mogen geen eigenschappen met dezelfde naam bevatten {#oakpal-index-property-name}
+
+* **Sleutel**: DuplicateNameProperty
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **Sinds**: Versie 2024.6.0
+
+AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van eigenschappen met dezelfde naam
+
+>[!WARNING]
+>
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+
+### Het aanpassen van bepaalde OTB-indexdefinities is verboden {#oakpal-customizing-ootb-index}
+
+* **Sleutel**: RestrictionIndexCustomization
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **Sinds**: Versie 2024.6.0
+
+AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen niet toe:
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+
+### De conkenizers in de analysatoren moeten worden geconfigureerd met de naam &#39;tokenizer&#39;. {#oakpal-tokenizer}
+
+* **Sleutel**: AnalyzerTokenizerConfigCheck
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **Sinds**: Versie 2024.6.0
+
+AEM Cloud Service verbiedt het maken van kenizers met onjuiste namen in analysatoren. Tokenizers moeten altijd worden gedefinieerd als `tokenizer`.
 
 ## Gereedschap Verzendoptimalisatie {#dispatcher-optimization-tool-rules}
 

@@ -2,7 +2,7 @@
 title: Navigeren door de interface van Cloud Manager
 description: Leer hoe de interface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 0%
@@ -168,7 +168,7 @@ Elk programma heeft een heleboel opties en gegevens verbonden aan het. Deze gege
 * Overzicht - Het programma-overzicht zoals beschreven in het huidige document
 * [Activiteit](/help/using/managing-pipelines.md#activity) - De geschiedenis van de pijpleiding van het programma
 * [Pijpleidingen](/help/using/managing-pipelines.md#pipelines) - Alle voor het programma geconfigureerde pijpleidingen
-* [Opslagplaatsen](/help/managing-code/repositories.md) - Alle voor het programma geconfigureerde opslagruimten
+* [Opslagplaatsen](/help/managing-code/managing-repositories.md) - Alle voor het programma geconfigureerde opslagruimten
 * [Rapporten](/help/using/monitoring-environments.md#system-monitoring-overview) - Metriek zoals SLA-gegevens
 * [Omgevingen](/help/using/managing-environments.md) - Alle omgevingen die voor het programma zijn geconfigureerd
 * [Inhoudssets](/help/using/content-copy.md) - Sets inhoud die voor kopieerdoeleinden is gemaakt
