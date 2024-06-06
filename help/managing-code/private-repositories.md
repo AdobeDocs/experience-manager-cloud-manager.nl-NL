@@ -3,9 +3,9 @@ title: Persoonlijke opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u Cloud Manager instelt voor gebruik met uw eigen persoonlijke GitHub-opslagruimten.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: dcb48f6914ff48c6905da40609ca99fe529d9fe3
+source-git-commit: 84a6d8b7a44af124eb227999ad1cbd1fe14ab7ee
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -122,10 +122,12 @@ Gevalideerde privéopslagruimten kunnen worden gekoppeld aan [volledige-stapelle
 
 ## Beperkingen {#limitations}
 
-Houd rekening met de volgende beperkingen wanneer u uw eigen GitHub-opslagruimten gebruikt met Cloud Manager.
+Er gelden bepaalde beperkingen voor het gebruik van persoonlijke opslagruimten met Cloud Manager.
 
-* U kunt niet de bewaarplaatsen GitHub als directe bewaarplaatsbron voor de pijpleidingen gebruiken u beheert.
-   * Deze functionaliteit is gepland.
-* U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van wolkenmanager.
+* U kunt privéopslagruimten niet gebruiken als directe opslagplaats voor de pijpleidingen die u beheert.
+* U kunt de bevestiging van het trekkingsverzoek niet pauzeren gebruikend de controle GitHub van de Manager van de Wolk.
    * Als de gegevensopslagplaats GitHub in de Manager van de Wolk wordt bevestigd, zal de Manager van de Wolk altijd proberen om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
-Als de Adobe GitHub app wordt verwijderd uit uw organisatie GitHb, zal dit de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen verwijderen.
+* Als de Adobe GitHub app wordt verwijderd uit uw organisatie GitHb, zal dit de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen verwijderen.
+* Er wordt geen tag git aangemaakt en geduwd wanneer particuliere opslagruimten worden gebruikt voor de productie van volledige stapelleidingen.
+* De pijpleidingen die privé bewaarplaatsen gebruiken en de aanzetmachine op-verbind zijn niet automatisch begonnen wanneer nieuw verbindt in de geselecteerde tak wordt geduwd.
+* [Functionaliteit voor hergebruik van artefacten](/help/getting-started/project-setup.md#build-artifact-reuse) is niet van toepassing op particuliere gegevensbanken.
