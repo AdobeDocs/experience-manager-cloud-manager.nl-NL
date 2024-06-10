@@ -2,9 +2,9 @@
 title: Opslagplaatsen beheren in Cloud Manager
 description: Leer hoe u uw git-opslagruimten maakt, weergeeft en bewerkt in Cloud Manager.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: b15ef71ae24f51811798d2d25c8f75320e21c01f
+source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ De **Opslagplaatsen** venster bevat informatie over de opslagplaatsen:
 
 * Het type gegevensopslagruimte
    * **Adobe** geeft opslagruimten aan die door Adobe worden beheerd
-   * **Persoonlijk** wijst op GitHub bewaarplaatsen die u beheert
+   * **GitHub** wijst op privé bewaarplaatsen GitHub die u beheert
 * Toen het werd gemaakt
 * Pijpleidingen die zijn gekoppeld aan de opslagplaats
 
@@ -76,6 +76,13 @@ Wanneer u uw opslagruimten in de **Opslagplaatsen** venster, kunt u de details b
 De **Info opslagplaats** venster wordt geopend met de details. Zie het document voor meer informatie over het benaderen van gegevens in de repository [Toegang tot gegevens opslagplaats.](accessing-repositories.md)
 
 ## Branches controleren {#check-branches}
+
+De **Branches controleren / Project maken** actie voert twee functies uit afhankelijk van de staat van de bewaarplaats.
+
+* Als de opslagplaats nieuw wordt gecreeerd, leidt de actie tot een steekproefproject dat op wordt gebaseerd [het AEM project archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Als de gegevensopslagplaats reeds het steekproefproject heeft gecreeerd, controleert het de staat van de bewaarplaats en zijn takken en meldt terug als het steekproefproject reeds bestaat.
+
+![Vertakkingen controleren, actie](assets/check-branches.png)
 
 ## Repository-URL kopiëren {#copy-url}
 

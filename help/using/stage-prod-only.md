@@ -1,13 +1,13 @@
 ---
 title: Alleen werkgebied- en alleen-prod-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
-source-git-commit: c09fbf30270523018a36b128d43cbf10e65daf54
+exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
+source-git-commit: c238caa22fdd71ae6aefd098331b626b9b951a0f
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
-
 
 # Pijpleidingen, alleen voor de productie {#stage-prod-only}
 
@@ -32,7 +32,7 @@ De fase-slechts en prod-slechts pijpleidingen bieden oplossingen aan deze gebrui
 * **Implementatie-pijplijnen (alleen op basis van profielen)** alleen implementeren in een productieomgeving met de optie om een met succes voltooide en gevalideerde uitvoering in het werkgebied te selecteren en de artefacten op de pod in te zetten.
    * Prod-enige pijpleidingen zullen de artefacten van de plaatsingen van het stadium hergebruiken, die de bouwfase overslaan.
 
-Noch worden de stadium-enige noch de prod-enige pijpleidingen uitgevoerd terwijl een volledig-stapelproductiepijpleiding loopt en vice versa.
+Noch worden de stadium-enige noch de prod-enige pijpleidingen uitgevoerd terwijl een volledig-stapelproductiepijpleiding loopt en vice versa. Als zowel de productiepijpleiding voor de fase-alleen als de productiepijpleiding voor de volledige-stackfase **Wijzigingen in Git** trigger geconfigureerd en wijst naar dezelfde vertakking en opslagplaats, alleen de alleen-werkgebiedpijplijn wordt automatisch gestart. Er worden geen proefpijpleidingen gestart **Wijzigingen in Git** omdat ze niet rechtstreeks aan een opslagplaats zijn gekoppeld.
 
 Deze speciale pijpleidingen bieden meer flexibiliteit, maar noteer de volgende details van de werking en aanbevelingen.
 
