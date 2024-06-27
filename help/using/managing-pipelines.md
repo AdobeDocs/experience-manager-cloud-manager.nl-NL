@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoere
 
 ## Pipetkaart {#pipeline-card}
 
-De **Pijpleidingen** kaart op **Programmaoverzicht** in Cloud Manager geeft u een overzicht van al uw pijpleidingen en hun huidige status.
+De **Pijpleidingen** kaart op **Programmaoverzicht** in Cloud Manager geeft je een overzicht van al je pijpleidingen en hun huidige status.
 
-![Pipelinekaart in Cloud Manager](/help/assets/configure-pipelines/pipelines-card.png)
+![Pijpleiding in Cloud Manager](/help/assets/configure-pipelines/pipelines-card.png)
 
 Door de ellipsieknoop naast elke pijpleiding te klikken kunt u de volgende acties voeren.
 
@@ -31,7 +31,7 @@ Onder aan de lijst met pijpleidingen staan algemene opties.
 
 * **Toevoegen** - Aan [toevoegen van een nieuwe productiepijplijn](/help/using/production-pipelines.md) of [nieuwe niet-productiepijpleiding toevoegen](/help/using/non-production-pipelines.md)
 * **Alles tonen** - Gebruikt de **Pijpleidingen** scherm om alle pijpleidingen in een meer gedetailleerde lijst te bekijken
-* **Repo-info openen** - Geeft de informatie weer die nodig is om toegang te krijgen tot de gegevensopslagruimte van Cloud Manager
+* **Repo-info openen** - Geeft de informatie weer die nodig is om toegang te krijgen tot de Cloud Manager git-opslagplaats
 * **Meer informatie** - Navigeert aan CI/CD pijpleidingsdocumentatiemiddelen.
 
 ## Venster Pijpleidingen {#pipelines}
@@ -95,10 +95,6 @@ Afhankelijk van het type pijplijn, kunt u de looppas kunnen annuleren door de el
 >[!NOTE]
 >
 >U kunt een lopende pijpleiding niet uitgeven.
-
->[!NOTE]
->
->De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen. Zie het document [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](/help/managing-code/private-repositories.md) voor nadere bijzonderheden en de volledige lijst van beperkingen.
 
 ## Verwijderen van pijpleidingen {#deleting-pipelines}
 

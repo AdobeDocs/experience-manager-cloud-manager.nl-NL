@@ -1,23 +1,23 @@
 ---
 title: Opmerkingen bij de release 2024.6.0
-description: Dit zijn de opmerkingen bij de release 2024.6.0 voor Cloud Manager.
+description: Dit zijn de opmerkingen bij de release van Cloud Manager 2024.6.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release 2024.6.0 voor Cloud Manager {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2024.6.0 {#release-notes}
 
 Op deze pagina worden de opmerkingen bij de release voor [!UICONTROL Cloud Manager] release 2024.6.0.
 
 >[!NOTE]
 >
->Raadpleeg voor de meest recente releaseopmerkingen voor Cloud Manager in AEM as a Cloud Service de [Cloud Manager in AEM opmerkingen bij de huidige release van as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
+>Voor de meest recente releaseopmerkingen voor Cloud Manager in AEM as a Cloud Service raadpleegt u [Cloud Manager in AEM as a Cloud Service: opmerkingen bij de huidige release.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/release-notes-cloud-manager/release-notes-cm-current.html)
 
 ## Releasedatum {#release-date}
 
@@ -25,12 +25,12 @@ De releasedatum voor [!UICONTROL Cloud Manager] release 2024.6.0 is 6 juni 2024.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* U kunt nu [gebruik uw eigen GitHub-repositories](/help/managing-code/private-repositories.md) als bronnen voor zowel volledig-stapelpijpleidingen als frontpijpleidingen.
+* U kunt nu [gebruik uw eigen GitHub-repositories](/help/managing-code/private-repositories.md) als bronnen voor pijpleidingen in volledige stapel.
    * Bovendien kunt u uit bewaarplaatsen GitHub met voordeel halen [git-submodules;](/help/managing-code/git-submodules.md) voorzien u van verbeterde controle over de auto-geproduceerde pijpleidingen die voor de bevestiging van het trekkingsverzoek worden gebruikt en het toestaan van u om gedrag voor cruciale metriek tijdens de fase van het codescannen te bepalen.
    * [U kunt ook](/help/managing-code/github-check-config.md) om de rapportgeschiedenis op GitHub te bewaren, noem de pijpleiding, en plaats pijpleidingsvariabelen om uw behoeften aan te passen.
-* Er zijn nieuwe OakPal-regels toegevoegd aan de [Codekwaliteitsscan van Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
+* Er zijn nieuwe OakPal-regels toegevoegd aan de [Cloud Manager Code Quality-scan.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
    * Elke nieuwe regel die vanaf juni 2024 wordt toegevoegd, is een onverbrekelijke verandering.
-   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen mislukken vanaf de release Cloud Manager August 2024.
+   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen vanaf de release van Cloud Manager augustus 2024 mislukken.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 

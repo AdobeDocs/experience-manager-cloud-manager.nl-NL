@@ -1,11 +1,11 @@
 ---
 title: Persoonlijke opslagplaatsen toevoegen in Cloud Manager
-description: Leer hoe u Cloud Manager instelt voor gebruik met uw eigen persoonlijke GitHub-opslagruimten.
+description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarplaatsen te werken GitHub.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Persoonlijke opslagplaatsen toevoegen in Cloud Manager {#private-repositories}
 
-Leer hoe u Cloud Manager instelt voor gebruik met uw eigen persoonlijke GitHub-opslagruimten.
+Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarplaatsen te werken GitHub.
 
 ## Overzicht {#overview}
 
-Door de Manager van de Wolk te vormen om met uw eigen privé bewaarplaatsen te werken GitHub, kunt u uw code direct binnen uw bewaarplaats GitHub door de Manager van de Wolk bevestigen, die de behoefte elimineert om uw code met de bewaarplaats van de Adobe constant te synchroniseren.
+Door Cloud Manager te vormen om met uw eigen privé bewaarplaatsen te werken GitHub, kunt u uw code direct binnen uw bewaarplaats GitHub door Cloud Manager bevestigen, die de behoefte elimineert om uw code met de bewaarplaats van de Adobe constant te synchroniseren.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ De configuratie bestaat uit twee hoofdstappen:
 
 ### Opslagplaats toevoegen {#add-repo}
 
-1. In Cloud Manager, via de **Programmaoverzicht** pagina, tik of klik op **Opslagplaatsen** tab naar **Opslagplaatsen** pagina en klik op **Opslagplaats toevoegen**.
+1. In Cloud Manager, vanaf de **Programmaoverzicht** pagina, tik of klik op **Opslagplaatsen** tab naar **Opslagplaatsen** pagina en klik op **Opslagplaats toevoegen**.
 
 1. In de **Opslagplaats toevoegen** dialoogvenster, selecteren **Particuliere opslagplaats** als het type opslagplaats.
 
@@ -48,7 +48,7 @@ De configuratie bestaat uit twee hoofdstappen:
 
 >[!TIP]
 >
->Zie het document voor meer informatie over het beheer van opslagruimten in Cloud Manager [Opslagplaatsen voor Cloud Manager.](/help/managing-code/managing-repositories.md)
+>Zie het document voor meer informatie over het beheer van opslagruimten in Cloud Manager [Cloud Manager-opslagplaatsen.](/help/managing-code/managing-repositories.md)
 
 ### Eigendom van privéopslagplaats valideren {#validate-ownership}
 
@@ -68,7 +68,7 @@ Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot
 
    ![Bevestig geheime generatie](/help/assets/repositories/confirm-generation.png)
 
-1. Terug in de **Eigendom van privéopslagplaats valideren** venster heeft Cloud Manager de inhoud van het privébestand gegenereerd in het dialoogvenster **Beveiligde bestandsinhoud** veld. Kopieer de inhoud van dat veld.
+1. Terug in de **Eigendom van privéopslagplaats valideren** venster, heeft Cloud Manager de inhoud van het privébestand in het **Beveiligde bestandsinhoud** veld. Kopieer de inhoud van dat veld.
 
    * De inhoud van het geheime bestand wordt slechts eenmaal weergegeven. Als u de inhoud niet kopieert voordat u dit venster sluit, moet u het geheim opnieuw genereren.
 
@@ -90,7 +90,7 @@ Als u op een latere datum naar de opslagplaats moet terugkeren om de validatie t
 
 ## Persoonlijke opslagplaatsen gebruiken met Cloud Manager {#using}
 
-Nadat de gegevensopslagplaats GitHub in de Manager van de Wolk wordt bevestigd wordt de integratie voltooid en u kunt de bewaarplaats met de Manager van de Wolk gebruiken.
+Nadat de bewaarplaats GitHub in Cloud Manager wordt bevestigd wordt de integratie voltooid en u kunt de bewaarplaats met Cloud Manager gebruiken.
 
 1. Wanneer u een trekkingsverzoek creeert, zal een controle GitHub automatisch beginnen.
 
@@ -114,18 +114,14 @@ Wanneer het trekkingsverzoek wordt gesloten of samengevoegd, wordt de volledige 
 
 ## Particuliere opslagplaatsen koppelen aan pijpleidingen {#pipelines}
 
-Gevalideerde privéopslagruimten kunnen worden gekoppeld aan [volledige-stapelleidingen en frontpijpleidingen.](/help/overview/ci-cd-pipelines.md)
-
->[!NOTE]
->
->De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen.
+Gevalideerde privéopslagruimten kunnen worden gekoppeld aan [volledige-stapelpijpleidingen.](/help/overview/ci-cd-pipelines.md)
 
 ## Beperkingen {#limitations}
 
-Er gelden bepaalde beperkingen voor het gebruik van persoonlijke opslagruimten met Cloud Manager.
+Bij het gebruik van persoonlijke opslagruimten met Cloud Manager gelden bepaalde beperkingen.
 
-* U kunt de bevestiging van het trekkingsverzoek niet pauzeren gebruikend de controle GitHub van de Manager van de Wolk.
-   * Als de gegevensopslagplaats GitHub in de Manager van de Wolk wordt bevestigd, zal de Manager van de Wolk altijd proberen om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
+* U kunt de bevestiging van het trekkingsverzoek niet pauzeren gebruikend de controle GitHub van Cloud Manager.
+   * Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, zal Cloud Manager altijd proberen om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.
 * Als de Adobe GitHub app wordt verwijderd uit uw organisatie GitHb, zal dit de trekrekverzoekbevestigingseigenschap voor alle bewaarplaatsen verwijderen.
 * Er wordt geen tag git aangemaakt en geduwd wanneer particuliere opslagruimten worden gebruikt voor de productie van volledige stapelleidingen.
 * De pijpleidingen die privé bewaarplaatsen gebruiken en de aanzetmachine op-verbind zijn niet automatisch begonnen wanneer nieuw verbindt in de geselecteerde tak wordt geduwd.
