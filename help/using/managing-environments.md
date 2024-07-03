@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 
 ## Overzicht van pagina {#overview-page}
 
-De **Overzicht** bevat de pagina met Cloud Manager de **Omgevingen** tegel die van alle beheerde AEM milieu&#39;s een lijst maakt.
+De **Overzicht** Cloud Manager bevat de pagina **Omgevingen** tegel die van alle beheerde AEM milieu&#39;s een lijst maakt.
 
 In elk van de vermelde omgevingen wordt de bijbehorende status weergegeven.
 
@@ -54,10 +54,14 @@ De **Omgevingen** scherm geeft elke productie- en testomgeving in uw programma w
 
 >[!NOTE]
 >
+>De details van het milieu zoals naam kunnen niet worden veranderd zodra zij provisioned zijn.
+
+>[!NOTE]
+>
 >Als u uw omgevingslogboeken nodig hebt, kunnen deze worden aangevraagd via uw Customer Success Engineer.
 
 ## Videozelfstudie {#video-tutorial}
 
-Deze video biedt een overzicht van de omgevingen in Cloud Manager die bestaan uit AEM instanties die ontwerpen, publiceren en Dispatcher verzenden.
+Deze video biedt een overzicht voor Cloud Manager-omgevingen die zijn samengesteld uit AEM publicatie-, publicatie- en Dispatcher-instanties.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
