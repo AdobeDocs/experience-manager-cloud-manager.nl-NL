@@ -27,7 +27,7 @@ ht-degree: 6%
    + [Veelgestelde vragen over Cloud Manager](/help/overview/faqs.md)
 + Wat is vereist {#requirements}
    + [Toegangsrechten](/help/requirements/access-rights.md)
-   + [Broncodeopslagplaats](/help/requirements/source-code-repository.md)
+   + [Source Code Repository](/help/requirements/source-code-repository.md)
    + [Op rollen gebaseerde machtigingen](/help/requirements/role-based-permissions.md)
    + [Gebruikers en rollen instellen](/help/requirements/users-and-roles.md)
    + [Aangepaste machtigingen](/help/using/custom-permissions.md)
@@ -36,14 +36,14 @@ ht-degree: 6%
    + [Eerste aanmelding](/help/getting-started/first-time-login.md)
    + [Navigatie](/help/getting-started/navigation.md)
    + [Programma instellen](/help/getting-started/program-setup.md)
-   + AEM project maken {#project-creation}
+   + Project maken AEM {#project-creation}
       + [De wizard gebruiken](/help/getting-started/using-the-wizard.md)
       + [Projectinstelling](/help/getting-started/project-setup.md)
       + [De Build-omgeving](/help/getting-started/build-environment.md)
    + [Branches configureren](/help/getting-started/configuring-branches.md)
-   + [Dispatcher Configurations](/help/getting-started/dispatcher-configurations.md)
-+ Gebruiken {#using}
-   + CI/CD-pijpleidingen {#pipelines}
+   + [Dispatcher-configuraties](/help/getting-started/dispatcher-configurations.md)
++ {#using} gebruiken
+   + CI/CD Pipelines {#pipelines}
       + [Productiepijpleidingen configureren](/help/using/production-pipelines.md)
       + [Niet-productiepijpleidingen configureren](/help/using/non-production-pipelines.md)
       + [alleen podium- en prod-pijplijnen](/help/using/stage-prod-only.md)
@@ -52,13 +52,13 @@ ht-degree: 6%
    + [Testen van de codekwaliteit](/help/using/code-quality-testing.md)
    + [Omgevingen beheren](/help/using/managing-environments.md)
    + [Controleomgevingen](/help/using/monitoring-environments.md)
-   + [Cloud Manager-API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
-   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+   + [ Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Meldingen](/help/using/notifications.md)
    + [Aangepaste regels voor codekwaliteit](/help/using/custom-code-quality-rules.md)
    + [Inhoud kopiëren](/help/using/content-copy.md)
 + Code beheren {#managing-code}
-   + [Opslagplaatsen beheren in Cloud Manager](/help/managing-code/managing-repositories.md)
+   + [Opslagplaatsen in Cloud Manager beheren](/help/managing-code/managing-repositories.md)
    + [Toegang tot opslagplaats](/help/managing-code/accessing-repositories.md)
    + [Opslagplaatsen voor Adoben toevoegen](/help/managing-code/adobe-repositories.md)
    + [Persoonlijke opslagplaatsen toevoegen](/help/managing-code/private-repositories.md)
@@ -130,7 +130,7 @@ ht-degree: 6%
       + [Opmerkingen bij de release 2020.3.0](/help/release-notes/2020/2020-3-0.md)
       + [Opmerkingen bij de release 2020.2.0](/help/release-notes/2020/2020-2-0.md)
       + [Opmerkingen bij de release 2020.1.0](/help/release-notes/2020/2020-1-0.md)
-   + 19 {#2019}
+   + 2019 {#2019}
       + [Opmerkingen bij de release 2019.12.0](/help/release-notes/2019/2019-12-0.md)
       + [Opmerkingen bij de release 2019.11.0](/help/release-notes/2019/2019-11-0.md)
       + [Opmerkingen bij de release 2019.10.0](/help/release-notes/2019/2019-10-0.md)
@@ -143,7 +143,7 @@ ht-degree: 6%
       + [Opmerkingen bij de release 2019.3.0](/help/release-notes/2019/2019-3-0.md)
       + [Opmerkingen bij de release 2019.2.0](/help/release-notes/2019/2019-2-0.md)
       + [Opmerkingen bij de release 2019.1.0](/help/release-notes/2019/2019-1-0.md)
-   + 18 {#2018}
+   + 2018 {#2018}
       + [Opmerkingen bij de release 2018.9.0](/help/release-notes/2018/2018-9-0.md)
       + [Opmerkingen bij de release 2018.8.0](/help/release-notes/2018/2018-8-0.md)
       + [Opmerkingen bij de release 2018.7.0](/help/release-notes/2018/2018-7-0.md)

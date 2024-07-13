@@ -1,36 +1,36 @@
 ---
-title: Dispatcher Configurations
+title: Dispatcher-configuraties
 description: Leer hoe u configuratiebestanden voor verzenders kunt implementeren met Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
 
 
-# Dispatcher Configurations {#manage-your-dispatcher-configurations}
+# Dispatcher-configuraties {#manage-your-dispatcher-configurations}
 
-Leer hoe u configuratiebestanden voor verzenders kunt implementeren met Cloud Manager
+Leer hoe u de configuratiebestanden van de dispatcher kunt implementeren met Cloud Manager
 
 ## Dispatcher-configuraties implementeren met Cloud Manager {#deploying-dispatcher-configurations}
 
-Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren op basis van de veronderstelling dat deze samen met normale AEM-inhoudspakketten zijn opgeslagen in de git-opslagplaats.
+Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren als deze naast normale AEM-inhoudpakketten zijn opgeslagen in de it-opslagplaats.
 
-Als u van deze mogelijkheid gebruik wilt maken, moet de Maven-build een ZIP-bestand maken dat ten minste twee mappen bevat: `conf` en `conf.d`. Dit ZIP-bestand kan worden gemaakt met het `maven-assembly-plugin`.
+Als u van deze mogelijkheid gebruik wilt maken, moet de Maven-build een ZIP-bestand maken dat ten minste twee mappen bevat: `conf` en `conf.d` . Dit .zip-bestand kan worden gemaakt met `maven-assembly-plugin` .
 
-Projecten die zijn gegenereerd door Cloud Manager met de ingebouwde [wizard voor het maken van projecten](/help/getting-started/using-the-wizard.md) de juiste automatisch gemaakte Maven-projectstructuur hebben. Dit is het aanbevolen pad als u nog geen ervaring hebt met Adobe Managed Services (AMS).
+De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [ tovenaar van de projectverwezenlijking ](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit is het aanbevolen pad als u nog geen ervaring hebt met Adobe Managed Services (AMS).
 
-Bij plaatsing aan een instantie van de verzender, wordt de inhoud van deze folders op de instantie van de Verzender overschreven door die in uw git bewaarplaats. Aangezien de de configuratiedossiers van de Webserver en van de Verzender regelmatig milieu-specifieke informatie vereisen om dit vermogen correct te gebruiken, zult u eerst met uw Ingenieurs van het Succes van de Klant (CSE) moeten werken om deze milieuvariabelen te plaatsen in `/etc/sysconfig/httpd`.
+Bij de implementatie naar een dispatcherinstantie wordt de inhoud van deze mappen in de Dispatcher-instantie overschreven door de mappen in de git-opslagruimte. Omdat voor webserver- en Dispatcher-configuratiebestanden vaak specifieke informatie over de omgeving nodig is om deze functie correct te kunnen gebruiken, moet u eerst samenwerken met de Customer Success Engineers (CSE) om deze omgevingsvariabelen in te stellen in `/etc/sysconfig/httpd` .
 
-## Dispatcher Configuration for Existing Managed Service Customers {#steps-for-configuring-dispatcher}
+## Dispatcher-configuratie voor bestaande beheerde serviceklanten {#steps-for-configuring-dispatcher}
 
-Voer de volgende stappen uit om de eerste configuratie van Dispatcher te voltooien.
+Voer de volgende stappen uit om de eerste Dispatcher-configuratie te voltooien.
 
 1. Verkrijg de huidige dossiers van de productieconfiguratie van uw CSE.
 1. Verwijder hard-gecodeerde milieu-specifieke gegevens zoals publiceer renderer IP en vervang door variabelen.
-1. Definieer vereiste variabelen in sleutel-waardeparen voor elk doelVerzender en verzoek uw CSE om hen toe te voegen aan `/etc/sysconfig/httpd` op elk exemplaar.
+1. Definieer vereiste variabelen in sleutelwaardeparen voor elk doel-Dispatcher en verzoek uw CSE deze aan `/etc/sysconfig/httpd` toe te voegen.
 1. Test de bijgewerkte configuraties in uw testomgeving.
 1. Zodra getest, verzoek uw CSE om aan productie op te stellen.
 1. Leg de bestanden vast in uw it-opslagplaats.
@@ -42,13 +42,13 @@ Voer de volgende stappen uit om de eerste configuratie van Dispatcher te voltooi
 
 ### Voorbeeld {#example}
 
-De specifieke dossier en folderstructuur kunnen variëren gebaseerd op de details van uw project, maar dit voorbeeld zou een concrete gids voor hoe te om uw project te structureren om configuraties Apache en Dispatcher te omvatten.
+De specifieke bestands- en mapstructuur kan variëren op basis van de specificaties van uw project, maar dit voorbeeld moet een concrete gids bevatten voor de structuur van uw project, zodat Apache- en Dispatcher-configuraties worden opgenomen.
 
-1. Een submap maken met de naam `dispatcher`.
+1. Maak een submap met de naam `dispatcher` .
 
    U kunt hier elke naam gebruiken, maar de mapnaam die in deze stap wordt gemaakt, moet dezelfde zijn als de naam die in stap 6 wordt gebruikt.
 
-1. Deze subdirectory bevat een module Maven die het ZIP-bestand van Dispatcher maakt met de plug-in Maven Assembly. Om dit te beginnen, in `dispatcher` map, een `pom.xml` bestand met deze inhoud, wijzigen `parent` referentie; `artifactId`, en `name` indien nodig.
+1. Deze submap bevat een module Maven die het ZIP-bestand van Dispatcher maakt met de plug-in Maven Assembly. Als u dit wilt starten, maakt u in de map `dispatcher` een `pom.xml` -bestand met deze inhoud en wijzigt u zo nodig de `parent` reference `artifactId` en `name` .
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ De specifieke dossier en folderstructuur kunnen variëren gebaseerd op de detail
 
    * Zoals in Stap 1, kunnen artefactId en de naam hier andere waarden zijn als u wilt. `dispatcher` wordt hier slechts een voorbeeld gebruikt.
 
-1. Voor de plug-in Maven Assembly is een `descriptor` om te bepalen hoe het .zip dossier wordt gecreeerd. Als u deze descriptor wilt maken, maakt u een bestand in het dialoogvenster `dispatcher` submap genaamd `assembly.xml` met de volgende inhoud. Er wordt naar deze bestandsnaam verwezen op regel 26 in het dialoogvenster `pom.xml` bestand hierboven.
+1. Voor de plug-in Maven Assembly is een `descriptor` vereist om te definiëren hoe het ZIP-bestand wordt gemaakt. Maak een bestand in de submap `dispatcher` met de naam `assembly.xml` met de volgende inhoud om dit beschrijvingsbestand te maken. Op regel 26 in het bovenstaande bestand `pom.xml` wordt naar deze bestandsnaam verwezen.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -113,9 +113,9 @@ De specifieke dossier en folderstructuur kunnen variëren gebaseerd op de detail
    </assembly>
    ```
 
-1. Een submap maken met de naam `src` (zoals vermeld in de verzamelingsbeschrijving hierboven op regel 11) binnen de submap dispatcher om de werkelijke Apache- en Dispatcher-configuraties op te slaan. Binnen deze `src` map, mappen maken met de naam `conf`, `conf.d`, `conf.dispatcher.d`, en `conf.modules.d`.
+1. Maak een submap met de naam `src` (waarnaar in de verzamelingsbeschrijving hierboven op regel 11 wordt verwezen) in de submap dispatcher om de werkelijke Apache- en Dispatcher-configuraties op te slaan. Maak binnen deze map `src` mappen met de naam `conf` , `conf.d` , `conf.dispatcher.d` en `conf.modules.d` .
 
-1. Vul de `conf`, `conf.d`, `conf.dispatcher.d`, en `conf.modules.d` mappen met uw configuratiebestanden. De standaardconfiguratie bestaat bijvoorbeeld uit deze bestanden en symbolische koppelingen.
+1. Vul de mappen `conf`, `conf.d` , `conf.dispatcher.d` en `conf.modules.d` met uw configuratiebestanden. De standaardconfiguratie bestaat bijvoorbeeld uit deze bestanden en symbolische koppelingen.
 
    ```
    dispatcher
@@ -190,9 +190,9 @@ De specifieke dossier en folderstructuur kunnen variëren gebaseerd op de detail
            └── 02-dispatcher.conf
    ```
 
-1. Tot slot, in het `pom.xml` dossier in de wortel van uw project, voeg een `<module>` -element dat de verzendermodule moet bevatten.
+1. Voeg ten slotte in het `pom.xml` -bestand in de hoofdmap van uw project een `<module>` -element toe om de verzendingsmodule op te nemen.
 
-   Bijvoorbeeld als uw bestaande modulelijst is
+   Als de bestaande lijst met modules bijvoorbeeld
 
    ```xml
        <modules>
@@ -213,9 +213,9 @@ De specifieke dossier en folderstructuur kunnen variëren gebaseerd op de detail
        </modules>
    ```
 
-   * Zoals vermeld in stap 1, de waarde van de `<module>` -element moet overeenkomen met de gemaakte mapnaam.
+   * Zoals aangegeven in stap 1, moet de waarde van het element `<module>` overeenkomen met de gemaakte mapnaam.
 
-1. Uitvoeren om te testen `mvn clean package` in de hoofdmap van het project. U zou lijnen als dit in de output moeten zien.
+1. Als u wilt testen, voert u `mvn clean package` uit in de hoofdmap van het project. U zou lijnen als dit in de output moeten zien.
 
    ```
    [INFO] --- maven-assembly-plugin:3.1.0:single (default) @ dispatcher ---

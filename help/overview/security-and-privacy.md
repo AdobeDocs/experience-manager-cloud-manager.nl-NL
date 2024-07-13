@@ -16,22 +16,22 @@ Meer informatie over de beveiliging en privacy van uw code en artefactelementen 
 
 ## Rollen en machtigingen {#roles}
 
-[!UICONTROL Cloud Manager] heeft pre-gevormde rollen met aangewezen toestemmingen.
+[!UICONTROL Cloud Manager] heeft vooraf geconfigureerde rollen met de juiste machtigingen.
 
-Raadpleeg het document voor meer informatie over de mogelijke rollen die u kunt toewijzen in de Admin Console- en gebruikersrolmachtigingen [Op rollen gebaseerde machtigingen.](/help/requirements/role-based-permissions.md)
+Om over de mogelijke rollen te leren u in de Admin Console en gebruikersroltoestemmingen kunt toewijzen, verwijs naar het document [ Op rol-Gebaseerde Toestemmingen.](/help/requirements/role-based-permissions.md)
 
 ## Bronisolatie {#resource-isolation}
 
-[!UICONTROL Cloud Manager] klanten hebben hun IMS-referenties nodig om te worden geverifieerd als alle machtigingen die aan [!UICONTROL Cloud Manager] zijn gebonden aan hun IMS-organisaties. Tijdens het instapproces zorgt het provisioningteam ervoor dat de bronisolatie wordt afgedwongen in [!UICONTROL Cloud Manager].
+[!UICONTROL Cloud Manager] -klanten hebben hun IMS-referenties nodig om te verifiëren dat alle machtigingen die aan [!UICONTROL Cloud Manager] zijn gekoppeld, aan hun IMS-organisaties zijn gekoppeld. Tijdens het instapproces zorgt het inrichtingsteam ervoor dat de bronisolatie wordt afgedwongen in [!UICONTROL Cloud Manager] .
 
 ## Gegevensbeveiliging {#data-security}
 
-Code in [!UICONTROL Cloud Manager] is tijdens de doortocht versleuteld. Binaire bestanden die in Cloud Manager worden gemaakt, worden ook tijdens de opslag versleuteld en versleuteld.
+Code in [!UICONTROL Cloud Manager] wordt tijdens de doortocht versleuteld. De bindingen die Cloud Manager bouwt worden ook gecodeerd in transit en wanneer opgeslagen.
 
 Elke klant krijgt zijn eigen git bewaarplaats en de code is veilig en niet gedeeld met andere organisaties.
 
 ## Gegevensprivacy {#data-privacy}
 
-[!UICONTROL Cloud Manager] zich houdt aan de privacybeginselen die door Adobe zijn gedefinieerd. Ontwikkelaars zetten code veilig in git repositories via HTTPS.
+[!UICONTROL Cloud Manager] houdt zich aan de privacybeginselen die door Adobe worden gedefinieerd. Ontwikkelaars zetten code veilig in git repositories via HTTPS.
 
-[!UICONTROL Cloud Manager]De gebruikersinterface van gebruikersinterface wordt gebouwd bovenop de diensten die aan een gemeenschappelijk controlekader van Adobe voldoen dat. [!UICONTROL Cloud Manager]De gebruikersinterface van de gebruiker gebruikt veilige diensten van verscheidene wolkenleveranciers.
+De gebruikersinterface van [!UICONTROL Cloud Manager] is gebaseerd op services die voldoen aan een algemeen besturingsframework van de Adobe dat. De gebruikersinterface van [!UICONTROL Cloud Manager] gebruikt beveiligde services van verschillende cloudproviders.

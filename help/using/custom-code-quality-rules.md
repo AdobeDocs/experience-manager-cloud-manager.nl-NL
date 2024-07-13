@@ -1,6 +1,6 @@
 ---
 title: Aangepaste regels voor codekwaliteit
-description: Meer informatie over de regels voor de kwaliteit van aangepaste code die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van de code, op basis van de aanbevolen procedures van AEM Engineering.
+description: Meer informatie over de regels voor de kwaliteit van aangepaste code die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van code, op basis van de beste praktijken van AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
 workflow-type: tm+mt
@@ -12,15 +12,15 @@ ht-degree: 1%
 
 # Aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
 
-Meer informatie over de aangepaste kwaliteitsregels voor code die door Cloud Manager worden uitgevoerd als onderdeel van [testen van de codekwaliteit;](/help/using/code-quality-testing.md) gebaseerd op de beste werkwijzen van AEM Engineering.
+Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manager als deel van [ worden uitgevoerd codekwaliteit het testen, ](/help/using/code-quality-testing.md) op beste praktijken van AEM Techniek wordt gebaseerd.
 
 >[!NOTE]
 >
->De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie [Documentatie van SonarQube over concepten](https://docs.sonarqube.org/latest/) kennis te nemen van zijn concepten en kwaliteitsregels.
+>De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube ](https://docs.sonarqube.org/latest/) om over zijn concepten en kwaliteitsregels te leren.[
 
 >[!NOTE]
 >
->Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst met regels downloaden [gebruiken van deze verbinding.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+>Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -29,11 +29,11 @@ In de volgende sectie worden SonarQube-regels beschreven die door Cloud Manager 
 ### Gebruik geen potentieel gevaarlijke functies {#do-not-use-potentially-dangerous-functions}
 
 * **Sleutel**: CQRules:CWE-676
-* **Type**: kwetsbaarheid
-* **Ernst**: Primair
-* **Sinds**: Versie 2018.4.0
+* **Type**: Vulnerability
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2018.4.0
 
-De methoden `Thread.stop()` en `Thread.interrupt()` kan problemen veroorzaken die moeilijk te reproduceren zijn en, soms, veiligheidskwetsbaarheden. Het gebruik ervan moet zorgvuldig worden gecontroleerd en gevalideerd. Over het algemeen is het doorgeven van berichten een veiligere manier om vergelijkbare doelen te bereiken.
+De methoden `Thread.stop()` en `Thread.interrupt()` kunnen problemen veroorzaken die moeilijk te reproduceren zijn, en soms ook beveiligingskwetsbaarheden. Het gebruik ervan moet zorgvuldig worden gecontroleerd en gevalideerd. Over het algemeen is het doorgeven van berichten een veiligere manier om vergelijkbare doelen te bereiken.
 
 #### Niet-compatibele code {#non-compliant-code}
 
@@ -85,9 +85,9 @@ public class DoThis implements Runnable {
 ### Gebruik geen opmaaktekenreeksen die extern kunnen worden beheerd {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **Sleutel**: CQRules:CWE-134
-* **Type**: kwetsbaarheid
-* **Ernst**: Primair
-* **Sinds**: Versie 2018.4.0
+* **Type**: Vulnerability
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2018.4.0
 
 Het gebruiken van een formaatkoord van een externe bron (zoals een verzoekparameter of user-generated inhoud) kan een toepassing aan ontkenning van de dienstaanvallen blootstellen. Er zijn omstandigheden waarin een indelingstekenreeks extern kan worden beheerd, maar alleen is toegestaan vanuit vertrouwde bronnen.
 
@@ -104,11 +104,11 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 ### HTTP-aanvragen moeten altijd een Socket- en Connect-time-out hebben {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 * **Sleutel**: CQRules:ConnectionTimeoutMechanism
-* **Type**: Fout
+* **Type**: Bug
 * **Ernst**: Kritiek
-* **Sinds**: Versie 2018.6.0
+* **sinds**: Versie 2018.6.0
 
-Wanneer het uitvoeren van HTTP- verzoeken van binnen een AEM toepassing, is het kritiek om ervoor te zorgen dat juiste onderbrekingen worden gevormd om onnodige draadconsumptie te vermijden. Jammer genoeg, het standaardgedrag van allebei de standaardHTTP- Cliënt van Java™, `java.net.HttpUrlConnection`en de veelgebruikte client voor Apache HTTP Components moet nooit een time-out maken. Daarom moeten time-outs expliciet worden ingesteld. Als beste praktijken, zouden deze onderbrekingen niet meer dan 60 seconden moeten zijn.
+Wanneer het uitvoeren van HTTP- verzoeken van binnen een AEM toepassing, is het kritiek om ervoor te zorgen dat juiste onderbrekingen worden gevormd om onnodige draadconsumptie te vermijden. Jammer genoeg, is het standaardgedrag van zowel de standaardHTTP- Cliënt van Java™, `java.net.HttpUrlConnection`, als de algemeen gebruikte cliënt van de Componenten van Apache HTTP aan nooit onderbreking, zodat moeten de onderbrekingen uitdrukkelijk worden geplaatst. Als beste praktijken, zouden deze onderbrekingen niet meer dan 60 seconden moeten zijn.
 
 #### Niet-compatibele code {#non-compliant-code-2}
 
@@ -180,12 +180,12 @@ public void orDoThis() {
 
 * **Sleutel**: CQRules:CQBP-72
 * **Type**: Code Smell
-* **Ernst**: Primair
-* **Sinds**: Versie 2018.4.0
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2018.4.0
 
-`ResourceResolver` objecten verkregen uit de `ResourceResolverFactory` verbruikt systeembronnen. Hoewel er maatregelen bestaan om deze middelen terug te vorderen wanneer een `ResourceResolver` niet meer in gebruik is, is het efficiënter om geopende `ResourceResolver` objecten aanroepen `close()` methode.
+`ResourceResolver` -objecten die uit `ResourceResolverFactory` zijn opgehaald, gebruiken systeembronnen. Hoewel er maatregelen zijn om deze bronnen terug te winnen wanneer een `ResourceResolver` niet meer in gebruik is, is het efficiënter om geopende `ResourceResolver` -objecten expliciet te sluiten door de methode `close()` aan te roepen.
 
-Eén algemene misvatting is dat: `ResourceResolver` objecten die met een bestaande JCR-sessie zijn gemaakt, mogen niet expliciet worden gesloten of de onderliggende JCR-sessie moet worden gesloten. Dat is niet het geval. Ongeacht hoe `ResourceResolver` wordt geopend, moet het worden gesloten wanneer het niet meer wordt gebruikt. Sinds `ResourceResolver` implementeert de `Closeable` -interface, is het ook mogelijk de `try-with-resources` syntaxis in plaats van expliciet aan te roepen `close()`.
+Een veelvoorkomend misverstand is dat `ResourceResolver` -objecten die zijn gemaakt met een bestaande JCR-sessie, niet expliciet moeten worden gesloten of dat de onderliggende JCR-sessie moet worden gesloten. Dat is niet het geval. Ongeacht hoe een `ResourceResolver` wordt geopend, moet deze worden gesloten wanneer deze niet meer wordt gebruikt. Aangezien `ResourceResolver` de interface `Closeable` implementeert, is het ook mogelijk om de syntaxis `try-with-resources` te gebruiken in plaats van `close()` expliciet aan te roepen.
 
 #### Niet-compatibele code {#non-compliant-code-4}
 
@@ -222,10 +222,10 @@ public void orDoThis(Session session) throws Exception {
 
 * **Sleutel**: CQRules:CQBP-75
 * **Type**: Code Smell
-* **Ernst**: Primair
-* **Sinds**: Versie 2018.4.0
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2018.4.0
 
-Zoals beschreven in het [Verkoopdocumentatie](https://sling.apache.org/documentation/the-sling-engine/servlets.html)bindingen van servlets via paden worden afgeraden. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
+Zoals die in de [ het Schuiven documentatie ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) wordt beschreven, bindingen servlets door wegen wordt ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
 
 #### Niet-compatibele code {#non-compliant-code-5}
 
@@ -240,10 +240,10 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 ### Afgehandelde uitzonderingen moeten worden geregistreerd of gegenereerd, niet beide {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-* **Sleutel**: CQRules:CQBP-44—CatchAndOrLogOrThrow
+* **Sleutel**: CQRules:CQBP-44-CatchAndOrLogOrThrow
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
 In het algemeen, zou een uitzondering precies één keer moeten worden geregistreerd. Het registreren van uitzonderingen kan veelvoudige tijden verwarring veroorzaken aangezien het onduidelijk is hoe vaak een uitzondering voorkwam. Het meest gangbare patroon dat tot dit leidt is het registreren en het werpen van een gevangen uitzondering.
 
@@ -282,10 +282,10 @@ public void orDoThis() throws MyCustomException {
 
 ### Gebruik geen logboekinstructies die direct worden gevolgd door de instructies Throw {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-* **Sleutel**: CQRules:CQBP-44—ConsecutivelyLogAndThrow
+* **Sleutel**: CQRules:CQBP-44-OpeenvolgendLogAndThrow
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
 Een ander gemeenschappelijk patroon te vermijden is een bericht te registreren en dan onmiddellijk een uitzondering te werpen. Dit geeft meestal aan dat het uitzonderingsbericht wordt gedupliceerd in logbestanden.
 
@@ -308,7 +308,7 @@ public void doThis() throws Exception {
 
 ### Meld u niet aan bij INFO bij het verwerken van GET- of HEAD-verzoeken {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-* **Sleutel**: CQRules:CQBP-44—LogInfoInGetOrHeadRequests
+* **Sleutel**: CQRules:CQBP-44-LogInfoInGetOrHeadRequests
 * **Type**: Code Smell
 * **Ernst**: Klein
 
@@ -336,10 +336,10 @@ public void doGet() throws Exception {
 
 ### Gebruik Exception.getMessage() niet als de eerste parameter van een Logging-instructie {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-* **Sleutel**: CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
+* **Sleutel**: CQRules:CQBP-44-ExceptionGetMessageIsFirstLogParam
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
 Als beste praktijken, zouden de logboekberichten contextuele informatie over moeten verstrekken waar in de toepassing een uitzondering is voorgekomen. Terwijl de context ook door stapelsporen te gebruiken kan worden bepaald, over het algemeen zal het logboekbericht gemakkelijker zijn te lezen en te begrijpen. Dientengevolge, wanneer het registreren van een uitzondering, is het een slechte praktijk om het bericht van de uitzondering als logboekbericht te gebruiken. Het uitzonderingsbericht bevat wat verkeerd ging terwijl het logboekbericht zou moeten worden gebruikt om een logboeklezer te vertellen wat de toepassing deed toen de uitzondering gebeurde. Het uitzonderingsbericht wordt nog geregistreerd. Door uw eigen bericht te specificeren, zijn de logboeken gemakkelijker te begrijpen.
 
@@ -369,10 +369,10 @@ public void doThis() {
 
 ### Aanmelden bij Vangstblokken moet plaatsvinden op het WAARSCHUWINGSniveau of FOUTniveau {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-* **Sleutel**: CQRules:CQBP-44—WrongLogLevelInCatchBlock
+* **Sleutel**: CQRules:CQBP-44-WrongLogLevelInCatchBlock
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
 Zoals de naam al aangeeft, moeten Java™-uitzonderingen altijd in uitzonderlijke omstandigheden worden gebruikt. Dientengevolge, wanneer een uitzondering wordt gevangen, is het belangrijk om ervoor te zorgen dat de logboekberichten op het aangewezen niveau worden geregistreerd: of WARN of FOUT. Dit zorgt ervoor dat die berichten correct in de logboeken verschijnen.
 
@@ -402,12 +402,12 @@ public void doThis() {
 
 ### Stapelsporen niet naar de console afdrukken {#do-not-print-stack-traces-to-the-console}
 
-* **Sleutel**: CQRules:CQBP-44—ExceptionPrintStackTrace
+* **Sleutel**: CQRules:CQBP-44-ExceptionPrintStackTrace
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
-De context is kritiek wanneer het begrip van logboekberichten. Gebruiken `Exception.printStackTrace()` zorgt ervoor dat alleen de stacktracering wordt uitgevoerd naar de standaardfoutenstream, waarbij alle context verloren gaat. Bovendien kunnen in een multithread-toepassing, zoals AEM, meerdere uitzonderingen parallel met deze methode worden afgedrukt, de stacksporen ervan overlappen, wat tot grote verwarring leidt. De uitzonderingen zouden door het registrerenkader slechts moeten worden geregistreerd.
+De context is kritiek wanneer het begrip van logboekberichten. Wanneer u `Exception.printStackTrace()` gebruikt, wordt alleen de stacktracering uitgevoerd naar de standaardfoutenstream, waardoor alle context verloren gaat. Bovendien kunnen in een multithread-toepassing, zoals AEM, meerdere uitzonderingen parallel met deze methode worden afgedrukt, de stacksporen ervan overlappen, wat tot grote verwarring leidt. De uitzonderingen zouden door het registrerenkader slechts moeten worden geregistreerd.
 
 #### Niet-compatibele code {#non-compliant-code-11}
 
@@ -435,10 +435,10 @@ public void doThis() {
 
 ### Niet uitvoeren naar standaardinvoer of standaardfout {#do-not-output-to-standard-output-or-standard-error}
 
-* **Sleutel**: CQRules:CQBP-44—LogLevelConsolePrinters
+* **Sleutel**: CQRules:CQBP-44-LogLevelConsolePrinters
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
 Het registreren in AEM zou altijd door het registrerenkader, SLF4J moeten worden gedaan. De uitvoer rechtstreeks naar de standaarduitvoer of standaardfoutenstromen verliest de structurele en contextuele informatie die door het registrerenkader wordt verstrekt en kan, soms, prestatieskwesties veroorzaken.
 
@@ -471,9 +471,9 @@ public void doThis() {
 * **Sleutel**: CQRules:CQBP-71
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2018.4.0
+* **sinds**: Versie 2018.4.0
 
-In het algemeen beginnen paden met `/libs` en `/apps` moeten niet worden gecodeerd omdat de paden waarnaar ze verwijzen het meest worden opgeslagen als paden ten opzichte van het zoekpad Schuivend (dat is ingesteld op `/libs,/apps` standaard). Het gebruik van het absolute pad kan leiden tot subtiele defecten die pas later in de levenscyclus van het project verschijnen.
+Doorgaans moeten paden die beginnen met `/libs` en `/apps` niet worden gecodeerd als de paden waarnaar ze verwijzen, meestal worden opgeslagen als paden die relatief zijn ten opzichte van het zoekpad met de waarde Schuivend (standaard is dit ingesteld op `/libs,/apps` ). Het gebruik van het absolute pad kan leiden tot subtiele defecten die pas later in de levenscyclus van het project verschijnen.
 
 #### Niet-compatibele code {#non-compliant-code-13}
 
@@ -494,30 +494,30 @@ public void doThis(Resource resource) {
 ### Verkoopplanner mag niet worden gebruikt {#sonarqube-sling-scheduler}
 
 * **Sleutel**: CQRules:AMSCORE-554
-* **Type**: Compatibiliteit code/Cloud Service
+* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
 * **Ernst**: Klein
-* **Sinds**: Versie 2020.5.0
+* **sinds**: Versie 2020.5.0
 
 Gebruik Sling Scheduler niet voor taken waarvoor een gegarandeerde uitvoering is vereist. Het verkopen van Geplande Banen garandeert uitvoering en beter geschikt voor zowel gegroepeerde als niet-gegroepeerde milieu&#39;s.
 
-Zie [Apache Sling Event- en Job Handling-documentatie](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) om meer over te leren hoe het Verdelen van Banen in gegroepeerde milieu&#39;s worden behandeld.
+Verwijs naar [ Apache het Sling Event en de documentatie van de Verwerking van de Baan ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) om meer over te leren hoe het Verdelen van Banen in gegroepeerde milieu&#39;s wordt behandeld.
 
 ### Verouderde API&#39;s AEM niet mogen worden gebruikt {#sonarqube-aem-deprecated}
 
 * **Sleutel**: AMSCORE-553
-* **Type**: Compatibiliteit code/Cloud Service
+* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
 * **Ernst**: Klein
-* **Sinds**: Versie 2020.5.0
+* **sinds**: Versie 2020.5.0
 
 Het AEM API-oppervlak wordt voortdurend herzien om te bepalen voor welke API&#39;s het gebruik wordt ontmoedigd en dus als afgekeurd wordt beschouwd.
 
-Deze API&#39;s zijn vaak verouderd met de standaard Java™ *@Deprecated* annotatie en, als zodanig, zoals geïdentificeerd door `squid:CallToDeprecatedMethod`.
+Deze API&#39;s zijn vaak verouderd met de standaard Java™- *@Deprecated* -annotatie en worden dus herkend door `squid:CallToDeprecatedMethod` .
 
 Er zijn echter gevallen waarin een API in de context van AEM verouderd is, maar in andere contexten niet mag worden vervangen. Deze regel identificeert deze tweede klasse.
 
 ## Regels voor OakPAL-inhoud {#oakpal-rules}
 
-In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manager zijn uitgevoerd.
+In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manager worden uitgevoerd.
 
 >[!NOTE]
 >
@@ -526,15 +526,15 @@ In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manag
 ### Product-API&#39;s die zijn voorzien van een annotatie met @ProviderType mogen niet worden geïmplementeerd of uitgebreid door klanten {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Sleutel**: CQBP-84
-* **Type**: Fout
+* **Type**: Bug
 * **Ernst**: Kritiek
-* **Sinds**: Versie 2018.7.0
+* **sinds**: Versie 2018.7.0
 
-De AEM-API bevat Java™-interfaces en -klassen die alleen door aangepaste code moeten worden gebruikt, maar niet geïmplementeerd. Bijvoorbeeld de interface `com.day.cq.wcm.api.Page` wordt alleen door AEM geïmplementeerd.
+De AEM-API bevat Java™-interfaces en -klassen die alleen door aangepaste code moeten worden gebruikt, maar niet geïmplementeerd. De interface `com.day.cq.wcm.api.Page` wordt bijvoorbeeld alleen geïmplementeerd door AEM.
 
 Wanneer nieuwe methoden aan deze interfaces worden toegevoegd, beïnvloeden deze aanvullende methoden geen bestaande code die deze interfaces gebruikt en daardoor wordt de toevoeging van nieuwe methoden aan deze interfaces beschouwd als compatibel met eerdere versies. Nochtans, als de douanecode één van deze interfaces uitvoert, heeft die douanecode een achterwaarts-verenigbaarheidsrisico voor de klant geïntroduceerd.
 
-Interfaces en klassen die alleen door AEM moeten worden geïmplementeerd, zijn voorzien van een annotatie `org.osgi.annotation.versioning.ProviderType` of, soms, een gelijkaardige erfenisaantekening `aQute.bnd.annotation.ProviderType`. Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd of een klasse door douanecode wordt uitgebreid.
+Interfaces en klassen die alleen bedoeld zijn om door AEM te worden geïmplementeerd, zijn voorzien van een annotatie `org.osgi.annotation.versioning.ProviderType` of soms een vergelijkbare oudere annotatie `aQute.bnd.annotation.ProviderType` . Deze regel identificeert de gevallen waarin een dergelijke interface wordt uitgevoerd of een klasse door douanecode wordt uitgebreid.
 
 #### Niet-compatibele code {#non-compliant-code-3}
 
@@ -549,18 +549,18 @@ public class DontDoThis implements Page {
 ### Klantpakketten mogen geen knooppunten onder /libs maken of wijzigen {#oakpal-customer-package}
 
 * **Sleutel**: BannedPath
-* **Type**: Fout
+* **Type**: Bug
 * **Ernst**: Blocker
-* **Sinds**: Versie 2019.6.0
+* **sinds**: Versie 2019.6.0
 
-Het is al lang een goede praktijk dat de `/libs` de inhoudsstructuur in de AEM-inhoudgegevensopslagruimte moet door klanten als alleen-lezen worden beschouwd. Knooppunten en eigenschappen wijzigen onder `/libs` brengt een aanzienlijk risico met zich mee voor belangrijke en kleine updates. Wijzigingen in `/libs` uitsluitend via officiële kanalen door Adobe wordt verricht.
+Het is al lang een goede gewoonte om de `/libs` -inhoudsstructuur in de AEM-inhoudsopslagruimte als alleen-lezen te beschouwen voor klanten. Als u knooppunten en eigenschappen wijzigt onder `/libs` , ontstaat een aanzienlijk risico voor belangrijke en kleine updates. Wijzigingen in `/libs` worden alleen via officiële Adobe aangebracht.
 
 ### Pakketten mogen geen dubbele OSGi-configuraties bevatten {#oakpal-package-osgi}
 
 * **Sleutel**: DuplicateOsgiConfigurations
-* **Type**: Fout
-* **Ernst**: Primair
-* **Sinds**: Versie 2019.6.0
+* **Type**: Bug
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2019.6.0
 
 Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zelfde component OSGi veelvoudige tijden wordt gevormd. Dit leidt tot een dubbelzinnigheid over welke configuratie operabel is. Deze regel is &quot;runmode-bewust&quot;in die zin dat het slechts kwesties zal identificeren waar de zelfde component veelvoudige tijden op de zelfde looppaswijze of de combinatie looppaswijzen wordt gevormd.
 
@@ -588,13 +588,13 @@ Een gemeenschappelijk probleem dat op complexe projecten voorkomt is waar de zel
 ### Mappen configureren en installeren mag alleen OSGi-knooppunten bevatten {#oakpal-config-install}
 
 * **Sleutel**: ConfigAndInstallShouldOnlyContainOsgiNodes
-* **Type**: Fout
-* **Ernst**: Primair
-* **Sinds**: Versie 2019.6.0
+* **Type**: Bug
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2019.6.0
 
-Om veiligheidsredenen, paden die `/config/` en `/install/` alleen leesbaar zijn door administratieve gebruikers in AEM en alleen moeten worden gebruikt voor OSGi-configuratie en OSGi-bundels. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
+Om veiligheidsredenen zijn paden die `/config/` en `/install/` bevatten, alleen leesbaar voor gebruikers met administratieve bevoegdheden in AEM en moeten deze paden alleen worden gebruikt voor OSGi-configuraties en OSGi-bundels. Als u andere typen inhoud onder paden plaatst die deze segmenten bevatten, resulteert dit in toepassingsgedrag dat per ongeluk verschilt tussen gebruikers met en zonder beheerdersrechten.
 
-Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` binnen componentendialogen of wanneer het specificeren van de rijke configuratie van de tekstredacteur voor gealigneerde het uitgeven. Om dit op te lossen, zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de rijke configuratie van de tekstredacteur, gebruik `configPath` eigenschap op de `cq:inplaceEditing` knooppunt om de nieuwe locatie op te geven.
+Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` in componentdialoogvensters of wanneer u de configuratie van de rich text editor opgeeft voor inlinebewerking. Om dit op te lossen, zou de beledigende knoop aan een volgzame naam moeten worden anders genoemd. Voor de configuratie van de RTF-editor gebruikt u de eigenschap `configPath` op het knooppunt `cq:inplaceEditing` om de nieuwe locatie op te geven.
 
 #### Niet-compatibele code {#non-compliant-code-config-install}
 
@@ -618,55 +618,55 @@ Een veelvoorkomend probleem is het gebruik van knooppunten met de naam `config` 
 ### Pakketten mogen elkaar niet overlappen {#oakpal-no-overlap}
 
 * **Sleutel**: PackageOverlaps
-* **Type**: Fout
-* **Ernst**: Primair
-* **Sinds**: Versie 2019.6.0
+* **Type**: Bug
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2019.6.0
 
-Vergelijkbaar met de [De pakketten zouden geen dubbele OSGi configuratieregel moeten bevatten,](#oakpal-package-osgi)  dit is een gemeenschappelijk probleem bij complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
+Gelijkaardig aan de [ Pakketten zouden de Dubbele regel van Configuraties niet moeten bevatten OSGi, ](#oakpal-package-osgi) dit is een gemeenschappelijk probleem op complexe projecten waar de zelfde knoopweg aan door veelvoudige afzonderlijke inhoudspakketten wordt geschreven. Terwijl het gebruiken van inhoudspakketgebiedsdelen kan worden gebruikt om een verenigbaar resultaat te verzekeren, is het beter om overlappingen volledig te vermijden.
 
 ### Standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
 
 * **Sleutel**: ClassicUIAuthoringMode
-* **Type**: Compatibiliteit code/Cloud Service
+* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
 * **Ernst**: Klein
-* **Sinds**: Versie 2020.5.0
+* **sinds**: Versie 2020.5.0
 
-De OSGi-configuratie `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` definieert de standaardontwerpmodus in AEM. Omdat Klassieke UI sinds AEM 6.4 is afgekeurd, wordt een kwestie nu opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
+De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaalt de standaard auteurswijze binnen AEM. Omdat Klassieke UI sinds AEM 6.4 is afgekeurd, wordt een kwestie nu opgeheven wanneer de standaard auteurswijze aan Klassieke UI wordt gevormd.
 
 ### Componenten met dialoogvensters moeten aanraakinterface-dialoogvensters hebben {#oakpal-components-dialogs}
 
 * **Sleutel**: ComponentWithOnlyClassicUIDialog
-* **Type**: Compatibiliteit code/Cloud Service
+* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
 * **Ernst**: Klein
-* **Sinds**: Versie 2020.5.0
+* **sinds**: Versie 2020.5.0
 
 AEM Componenten die een Klassieke UI dialoog hebben zouden altijd een overeenkomstige dialoog van de Aanraking UI moeten hebben zowel om een optimale auteurservaring te verstrekken als met het de plaatsingsmodel van de Cloud Service compatibel te zijn, waar Klassieke UI niet wordt gesteund. Deze regel verifieert de volgende scenario&#39;s:
 
-* Een component met een klassieke UI-dialoogvenster (dat wil zeggen een `dialog` onderliggende node) moet een corresponderend Touch UI-dialoogvenster hebben (dat wil zeggen een `cq:dialog` onderliggende node).
-* Een component met een dialoogvenster voor het ontwerpen van een klassieke gebruikersinterface (d.w.z. een `design_dialog` knooppunt) moet een corresponderend dialoogvenster voor het ontwerpen van een aanraakinterface hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
+* Een component met een klassieke UI-dialoogvenster (dat wil zeggen een `dialog` onderliggende node) moet een overeenkomend Touch UI-dialoogvenster hebben (dat wil zeggen een `cq:dialog` onderliggende node).
+* Een component met een dialoogvenster voor klassieke gebruikersinterface-ontwerp (d.w.z. een `design_dialog` -knooppunt) moet een overeenkomstig dialoogvenster voor aanraakinterface-ontwerp hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
 * Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
 
-De documentatie van de Hulpmiddelen van de Modernisering van het AEM verstrekt details en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Zie [De documentatie van de AEM Moderniseringshulpmiddelen](https://opensource.adobe.com/aem-modernize-tools/) voor meer informatie .
+De documentatie van de Hulpmiddelen van de Modernisering van het AEM verstrekt details en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Verwijs naar [ de documentatie van Hulpmiddelen van de Modernisering van de AEM ](https://opensource.adobe.com/aem-modernize-tools/) voor meer details.
 
 ### Reverse Replication Agents mogen niet worden gebruikt {#oakpal-reverse-replication}
 
 * **Sleutel**: ReverseReplication
-* **Type**: Compatibiliteit code/Cloud Service
+* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
 * **Ernst**: Klein
-* **Sinds**: Versie 2020.5.0
+* **sinds**: Versie 2020.5.0
 
-Ondersteuning voor reverse-replicatie is niet beschikbaar in Cloud Service-implementaties, zoals beschreven in [Opmerkingen bij de release: verwijdering van replicatieagents.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html#replication-agents)
+De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die in [ worden beschreven de Nota&#39;s van de Versie: Verwijdering van de Agenten van de Replicatie.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html#replication-agents)
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
 ### De middelen in volmacht-Toegelaten Bibliotheken van de Cliënt zouden in een Omslag moeten zijn genoemde middelen {#oakpal-resources-proxy}
 
 * **Sleutel**: ClientlibProxyResource
-* **Type**: Fout
+* **Type**: Bug
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in het [Gebruikend Cliënt-zij documentatie van Bibliotheken,](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#using-preprocessors) bij het gebruik van proxy-clientbibliotheken moeten deze statische bronnen zich in een onderliggende map bevinden met de naam `resources` om effectief naar de publicatie-instanties te kunnen verwijzen.
+AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in [ Gebruikend cliënt-Kant de documentatie van Bibliotheken, ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#using-preprocessors) wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op te worden van verwijzingen voorzien te publiceren instanties.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 
@@ -695,151 +695,151 @@ AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en 
 * **Sleutel**: CloudServiceIncompatibleWorkflowProcess
 * **Type**: Code Smell
 * **Ernst**: Blocker
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
 Met de overstap naar Asset micro-services voor de verwerking van bedrijfsmiddelen op AEM Cloud Service zijn verschillende workflowprocessen die werden gebruikt in on-premise en AMS-versies van AEM niet ondersteund of onnodig geworden.
 
-Het migratiehulpmiddel in [AEM Assets as a Cloud Service GitHub-opslagplaats](https://github.com/adobe/aem-cloud-migration) kan worden gebruikt om workflowmodellen bij te werken tijdens de migratie naar AEM as a Cloud Service.
+Het migratiehulpmiddel in de [ as a Cloud Service GitHub bewaarplaats van AEM Assets ](https://github.com/adobe/aem-cloud-migration) kan worden gebruikt om werkschemamodellen tijdens migratie aan AEM as a Cloud Service bij te werken.
 
 ### Het gebruik van statische sjablonen wordt ontmoedigd ten gunste van bewerkbare sjablonen {#oakpal-static-template}
 
 * **Sleutel**: StaticTemplateUsage
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-Terwijl het gebruik van statische malplaatjes in AEM Projecten historisch algemeen is geweest, worden de editable malplaatjes hoogst geadviseerd aangezien zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie vindt u in de [Paginasjablonen - Bewerkbare documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+Terwijl het gebruik van statische malplaatjes in AEM Projecten historisch algemeen is geweest, worden de editable malplaatjes hoogst geadviseerd aangezien zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie kan in de [ Malplaatjes van de Pagina worden gevonden - editable documentatie.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
 
-De migratie van statische aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [AEM moderniseringsinstrumenten.](https://opensource.adobe.com/aem-modernize-tools/)
+De migratie van statisch aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [ AEM Moderniseringshulpmiddelen.](https://opensource.adobe.com/aem-modernize-tools/)
 
 ### Het gebruik van verouderde elementcomponenten wordt ontmoedigd {#oakpal-usage-legacy}
 
 * **Sleutel**: LegacyFoundationComponentUsage
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-De oudere Componenten van de Stichting (d.w.z. componenten onder `/libs/foundation`) zijn vervangen voor verscheidene AEM vrijlatingen ten gunste van de [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Het gebruik van de componenten van de erfenisStichting als basis voor douanecomponenten, hetzij door bedekking of overerving, wordt ontmoedigd en zou in de overeenkomstige kerncomponent moeten worden omgezet.
+De oudere Componenten van de Stichting (d.w.z. componenten onder `/libs/foundation`) zijn afgekeurd voor verscheidene AEM versies ten gunste van de [ Componenten van de Kern.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) Het gebruik van de oudere Foundation Components als de basis voor aangepaste componenten, door bedekking of overerving, wordt afgeraden en moet worden omgezet in de corresponderende kerncomponent.
 
-Deze conversie kan worden vergemakkelijkt door de [AEM moderniseringsinstrumenten.](https://opensource.adobe.com/aem-modernize-tools/)
+Deze omzetting kan door [ worden vergemakkelijkt AEM Moderniseringshulpmiddelen.](https://opensource.adobe.com/aem-modernize-tools/)
 
 ### De de definitieknoden van de indexdefinitie van het Onderzoek van de douane moeten directe kinderen van /eikel zijn:index {#oakpal-custom-search}
 
 * **Sleutel**: OakIndexLocation
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM Cloud Service vereist dat aangepaste zoekindexdefinities (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) zijn directe onderliggende knooppunten van `/oak:index`. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over zoekindexen vindt u in de [Documentatie voor zoeken en indexeren van inhoud.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
+AEM Cloud Service vereist dat definities van aangepaste zoekindexen (d.w.z. knooppunten van het type `oak:QueryIndexDefinition`) directe onderliggende knooppunten van `/oak:index` zijn. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
 
 ### Knooppunten voor definitie van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
 * **Sleutel**: IndexCompatVersion
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM Cloud Service vereist dat aangepaste zoekindexdefinities (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) moet de `compatVersion` eigenschap ingesteld op `2`. Een andere waarde wordt niet ondersteund door AEM Cloud Service. Meer informatie over zoekindexen vindt u in de [Documentatie voor zoeken en indexeren van inhoud.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
+AEM Cloud Service vereist dat in definities van aangepaste zoekindexen (bijvoorbeeld knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` is ingesteld op `2` . Een andere waarde wordt niet ondersteund door AEM Cloud Service. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
 
 ### De afstammende knopen van de Definitie van de Index van het Onderzoek van het Douane moeten van type zijn:niet gestructureerd {#oakpal-descendent-nodes}
 
 * **Sleutel**: IndexDescendantNodeType
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-Problemen met moeilijk op te lossen problemen kunnen optreden wanneer een definitieknoopknooppunt van een aangepaste zoekindex niet-geordende onderliggende knooppunten bevat. Om dit te voorkomen, wordt aanbevolen dat alle afstammende knooppunten van een `oak:QueryIndexDefinition` knooppunt is van type `nt:unstructured`.
+Problemen met moeilijk op te lossen problemen kunnen optreden wanneer een definitieknoopknooppunt van een aangepaste zoekindex niet-geordende onderliggende knooppunten bevat. Om deze te voorkomen, wordt aangeraden dat alle afstammende knooppunten van een knooppunt `oak:QueryIndexDefinition` van het type `nt:unstructured` zijn.
 
 ### Knooppunten voor aangepaste zoekindexdefinitie moeten een onderliggende node met de naam indexRules bevatten die onderliggende items bevat {#oakpal-custom-search-index}
 
 * **Sleutel**: IndexRulesNode
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` die op hun beurt ten minste één kind moeten hebben. Meer informatie vindt u in de [Oak-documentatie.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten, dat op zijn beurt minstens één onderliggend knooppunt moet hebben. Meer informatie kan in de [ documentatie van Oak worden gevonden.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 ### Knooppunten voor aangepaste zoekindexdefinitie moeten naamgevingsconventies volgen {#oakpal-custom-search-definitions}
 
 * **Sleutel**: IndexName
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM Cloud Service vereist dat definities van aangepaste zoekindexen (knooppunten van het type) `oak:QueryIndexDefinition`) moet een naam krijgen volgens een specifiek patroon dat wordt beschreven op [Inhoud zoeken en indexeren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)
+AEM Cloud Service vereist dat de definities van de douaneonderzoeksindex (namelijk knopen van type `oak:QueryIndexDefinition`) na een specifiek patroon moeten worden genoemd dat op [ wordt beschreven Inhoud Onderzoek en het Indexeren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)
 
 ### De de definitieknoden van de Definitie van de Index van het Onderzoek van de Douane moeten de winst van het Type van Index gebruiken  {#oakpal-index-type-lucene}
 
 * **Sleutel**: IndexType
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM Cloud Service vereist dat aangepaste zoekindexdefinities (dat wil zeggen knooppunten van het type) `oak:QueryIndexDefinition`) een `type` eigenschap met de waarde ingesteld op `lucene`. Indexering met oudere indextypen moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie de [Documentatie voor zoeken en indexeren van inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie .
+AEM Cloud Service vereist dat definities van aangepaste zoekindexen (d.w.z. knooppunten van het type `oak:QueryIndexDefinition`) de eigenschap `type` hebben met de waarde ingesteld op `lucene` . Indexering met oudere indextypen moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie.
 
 ### De definitieknooppunten van de index van het Onderzoek van de douane moeten geen bezit genoemd zaad bevatten {#oakpal-property-name-seed}
 
 * **Sleutel**: IndexSeedProperty
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `seed`. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie de [Documentatie voor zoeken en indexeren van inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie .
+AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om een eigenschap met de naam `seed` te bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie.
 
 ### De definitieknooppunten van de aangepaste zoekindex mogen geen eigenschap met de naam redex bevatten {#oakpal-reindex-property}
 
 * **Sleutel**: IndexReindexProperty
 * **Type**: Code Smell
 * **Ernst**: Klein
-* **Sinds**: Versie 2021.2.0
+* **sinds**: Versie 2021.2.0
 
-AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van een eigenschap met de naam `reindex`. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie de [Documentatie voor zoeken en indexeren van inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie .
+AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om een eigenschap met de naam `reindex` te bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use) voor meer informatie.
 
 ### De knooppunten van de indexdefinitie moeten niet in het inhoudspakket worden opgesteld UI {#oakpal-ui-content-package}
 
 * **Sleutel**: IndexNotUnderUIContent
 * **Type**: Verbetering
 * **Ernst**: Klein
-* **Sinds**: Versie 2024.6.0
+* **sinds**: Versie 2024.6.0
 
-AEM Cloud Service staat definities van aangepaste zoekindexen (knooppunten van het type) niet toe `oak:QueryIndexDefinition`) van wordt geïmplementeerd in het UI-inhoudspakket.
+AEM Cloud Service staat toe dat definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) niet worden geïmplementeerd in het pakket met UI-inhoud.
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/release-notes/current.md)
 
 ### Aangepaste full-text indexdefinitie van type damAssetLucene moet correct worden voorgefixeerd met &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
 
 * **Sleutel**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Type**: Verbetering
 * **Ernst**: Klein
-* **Sinds**: Versie 2024.6.0
+* **sinds**: Versie 2024.6.0
 
-AEM Cloud Service staat aangepaste definities van volledige-tekstindextypen niet toe `damAssetLucene` van tevoren met andere dan `damAssetLucene`.
+AEM Cloud Service staat toe dat aangepaste full-text indexdefinities van het type `damAssetLucene` worden voorafgegaan door andere items dan `damAssetLucene` .
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/release-notes/current.md)
 
 ### De knooppunten van de indexdefinitie mogen geen eigenschappen met dezelfde naam bevatten {#oakpal-index-property-name}
 
 * **Sleutel**: DuplicateNameProperty
 * **Type**: Verbetering
 * **Ernst**: Klein
-* **Sinds**: Versie 2024.6.0
+* **sinds**: Versie 2024.6.0
 
-AEM Cloud Service staat definities van aangepaste zoekindexen niet toe (knooppunten van het type) `oak:QueryIndexDefinition`) van eigenschappen met dezelfde naam
+AEM Cloud Service staat definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om eigenschappen met dezelfde naam te bevatten
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/release-notes/current.md)
 
 ### Het aanpassen van bepaalde OTB-indexdefinities is verboden {#oakpal-customizing-ootb-index}
 
-* **Sleutel**: RestrictionIndexCustomization
+* **Sleutel**: RestrictIndexCustomization
 * **Type**: Verbetering
 * **Ernst**: Klein
-* **Sinds**: Versie 2024.6.0
+* **sinds**: Versie 2024.6.0
 
 AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen niet toe:
 
@@ -852,53 +852,53 @@ AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen n
 
 >[!WARNING]
 >
->U wordt aangespoord dit zo spoedig mogelijk te doen, aangezien dit ertoe zal leiden dat pijpleidingen mislukken, te beginnen met de [Cloud Manager release augustus 2024.](/help/release-notes/current.md)
+>U wordt aangespoord om dit zo spoedig mogelijk te richten aangezien het pijpleidingen zal veroorzaken om te ontbreken beginnend met de [ versie van Cloud Manager Augustus 2024.](/help/release-notes/current.md)
 
 ### De conkenizers in de analysatoren moeten worden geconfigureerd met de naam &#39;tokenizer&#39;. {#oakpal-tokenizer}
 
 * **Sleutel**: AnalyzerTokenizerConfigCheck
 * **Type**: Verbetering
 * **Ernst**: Klein
-* **Sinds**: Versie 2024.6.0
+* **sinds**: Versie 2024.6.0
 
-AEM Cloud Service verbiedt het maken van kenizers met onjuiste namen in analysatoren. Tokenizers moeten altijd worden gedefinieerd als `tokenizer`.
+AEM Cloud Service verbiedt het maken van kenizers met onjuiste namen in analysatoren. Tokenizers moeten altijd als `tokenizer` worden gedefinieerd.
 
-## Gereedschap Verzendoptimalisatie {#dispatcher-optimization-tool-rules}
+## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
 
-In de volgende sectie worden de controles vermeld die door Cloud Manager zijn uitgevoerd met het hulpprogramma voor het optimaliseren van patches (DOT). Volg de verbindingen voor elke controle voor zijn definitie en details GitHub.
+In de volgende sectie worden de door Cloud Manager uitgevoerde controles van het Dispatcher Optimization Tool (DOT) weergegeven. Volg de verbindingen voor elke controle voor zijn definitie en details GitHub.
 
-* [Onverwachte tokens voor configuratie van Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+* [ de Configuratie Onverwachte Tokens van Dispatcher ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
 
-* [Distributiesconfiguratie zonder offerte](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+* [ de Configuratie van Dispatcher Ongeëvenaarde Citaat ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
 
-* [Dispatcher Configuration Missing Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+* [ Ontbrekende Steek van de Configuratie van Dispatcher ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
 
-* [Dispatcher Configuration Extra Brace](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+* [ de Configuratie Extra Steun van Dispatcher ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
 
-* [Configuratie van verzender ontbreekt verplichte eigenschap](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+* [ de Configuratie van Dispatcher ontbrekende Verplicht Bezit ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
 
-* [Vervangen eigenschap door configuratie van Dispatcher](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+* [ Dispatcher Configuratie Vervangen Bezit ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
 
-* [Dispatcher Configuration not found](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+* [ niet Gevonden de Configuratie van Dispatcher ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
 
-* [Opgenomen bestand voor HTTP-configuratie niet gevonden](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+* [ Httpd- Configuratie omvat niet gevonden dossier ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
 
-* [Algemene configuratie van verzender](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+* [ Algemene Configuratie van Dispatcher ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
 
-* [De Dispatcher-publicatiecapaciteit van de publicatiecapaciteit moet serverStaleOnError hebben ingeschakeld](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+* [ Dispatcher publiceert landbouwbedrijfgeheime voorgeheugen zou serverStaleOnError toegelaten moeten hebben ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
 
-* [Dispatcher publiceert landbouwbedrijffilters zou het gebrek moeten bevatten ontkent regels van de versie 6.x.x van AEM archetype](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+* [ Dispatcher publiceert landbouwbedrijffilters zou het gebrek moeten bevatten ontkent regels van de versie 6.x.x van AEM archetype ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
 
-* [De Dispatcher publiceert landbouwbedrijfgeheime voorgeheugenstateslevel bezit zou >= 2 moeten zijn](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+* [ Dispatcher publiceert landbouwbedrijfgeheime voorgeheugenstatussen - niveaubezit zou >= 2 ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2) moeten zijn
 
-* [De Dispatcher publiceerde landbouwbedrijfGracePeriod bezit zou >= 2 moeten zijn](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+* [ Dispatcher publiceert landbouwbedrijf GracePeriod bezit zou >= 2 ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2) moeten zijn
 
-* [Elke Dispatcher-farm moet een unieke naam hebben](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+* [ Elk landbouwbedrijf van Dispatcher zou een unieke naam ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name) moeten hebben
 
-* [Dispatcher publiceert landbouwbedrijfgeheime voorgeheugen zou zijn ignoreUrlParams regels moeten hebben die op een manier van de lijst van gewenste personen worden gevormd](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [ Dispatcher publiceert landbouwbedrijfgeheime voorgeheugen zou zijn ignoreUrlParams regels moeten hebben die in een manier van de lijst van gewenste personen worden gevormd ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [De Dispatcher publiceert landbouwbedrijffilters zou de toegestane het Verdelen selecteurs op een manier van de lijst van gewenste personen moeten specificeren](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [ Dispatcher publiceert landbouwbedrijffilters zou de toegestane het Verdelen selecteurs op een wijze van de lijst van gewenste personen moeten specificeren ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [De Dispatcher publiceert landbouwbedrijffilters zouden de toegestane het achtervoegselpatronen van het Sling op een manier van de lijst van gewenste personen moeten specificeren](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [ Dispatcher publiceert landbouwbedrijffilters zou de toegestane het achtervoegselpatronen van het Sling op een wijze van de lijst van gewenste personen moeten specificeren ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [Gebruik niet de &#39;Alle toegekende&#39; instructie &#39;vereisen&#39; in een VirtualHost Directory-sectie met een hoofddirectory-pad](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [ gebruikt niet &quot;vereisen allen verleend&quot;richtlijn in een sectie van de Folder VirtualHost met een wortel folder-weg ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)

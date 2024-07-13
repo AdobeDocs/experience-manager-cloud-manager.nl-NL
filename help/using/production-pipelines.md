@@ -1,6 +1,6 @@
 ---
 title: Productiepijpleidingen configureren
-description: Leer hoe u met Cloud Manager productiepijpleidingen kunt maken en configureren om uw code te implementeren.
+description: Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
 workflow-type: tm+mt
@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # Productiepijpleidingen configureren {#configuring-production-pipelines}
 
-Leer hoe u met Cloud Manager productiepijpleidingen kunt maken en configureren om uw code te implementeren. als u eerst een meer conceptueel overzicht wilt van de werking van pijpleidingen in Cloud Manager, raadpleegt u het document [CI/CD Pipelines.](/help/overview/ci-cd-pipelines.md)
+Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren. als u eerst een meer conceptueel overzicht van zou willen hoe de pijpleidingen in Cloud Manager werken, te zien gelieve het document [ CI/CD Lijnen.](/help/overview/ci-cd-pipelines.md)
 
 ## Overzicht {#overview}
 
-Met de **Instellingen Pipet** tegel in [!UICONTROL Cloud Manager] u kunt twee verschillende soorten pijpleidingen tot stand brengen.
+Gebruikend de **tegel van de Montages van de Pijpleiding** {in [!UICONTROL Cloud Manager] kunt u twee verschillende soorten pijpleidingen tot stand brengen.
 
-* **Productiepijpleidingen** - Een productiepijpleiding is een speciaal gebouwde pijpleiding die bestaat uit een reeks georkestreerde stappen om broncode van uw git-opslagplaats helemaal in productie te nemen.
-* **Niet-productiepijpleidingen** - Een niet-productiepijplijn dient vooral om code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
+* **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode van uw git bewaarplaats helemaal in productie te nemen.
+* **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
-Dit document richt zich op productiepijpleidingen. Zie het document voor meer informatie over het configureren van niet-productiepijpleidingen [Niet-productiepijpleidingen configureren.](/help/using/non-production-pipelines.md)
+Dit document richt zich op productiepijpleidingen. Voor details op hoe te om niet-productiepijpleidingen te vormen zie het document [ Vormend niet-Productiepijpleidingen.](/help/using/non-production-pipelines.md)
 
-De **Implementatiebeheer** de pijpleiding moet worden opgezet . Configuratie van pijpleidingen bestaat uit:
+De **rol van de Manager van de Plaatsing** is verantwoordelijk voor vestiging de pijpleiding. Configuratie van pijpleidingen bestaat uit:
 
 1. Het bepalen van de trekker die de pijpleiding zal beginnen.
 1. De parameters definiëren die de productieimplementatie bepalen.
@@ -31,131 +31,131 @@ De **Implementatiebeheer** de pijpleiding moet worden opgezet . Configuratie van
 
 >[!NOTE]
 >
->Een pijpleiding kan niet opstelling tot zijn bijbehorende git bewaarplaats minstens één tak heeft en [programma instellen](/help/getting-started/program-setup.md) is voltooid.
+>Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende git bewaarplaats minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig.
 
 ## Een nieuwe productiepijpleiding toevoegen {#adding-production-pipeline}
 
-Als u eenmaal de [!UICONTROL Cloud Manager] UI om uw programma op te zetten en minstens één milieu te hebben, bent u bereid om een productiepijplijn toe te voegen.
+Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma en minstens één milieu hebt, bent u bereid om een productiepijplijn toe te voegen.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Ga naar de **Pijpleidingen** kaart van **Programmaoverzicht** pagina en klik op **+Toevoegen** en selecteert u **Productiepijpleiding toevoegen**.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik op **+ voeg** toe en selecteer **Productiepijpleiding** toevoegen.
 
-   ![Een productiepijplijn toevoegen](/help/assets/configure-pipelines/add-prod1.png)
+   ![ voeg een productiepijpleiding ](/help/assets/configure-pipelines/add-prod1.png) toe
 
-1. De **Productiepijpleiding toevoegen** wordt geopend voor **Configuratie** tabblad waar u een aantal opties voor de pijplijn moet definiëren. Deze opties zijn gegroepeerd in inklapbare secties en worden in de volgende stappen beschreven.
+1. **voeg de dialoogdoos van de Pijpleiding van de Productie toe** aan het **3} lusje van de Configuratie {opent waar een aantal opties voor uw pijpleiding moet worden bepaald.** Deze opties zijn gegroepeerd in inklapbare secties en worden in de volgende stappen beschreven.
 
-   1. Geef een beschrijvende naam op voor uw pijplijn in het dialoogvenster **Naam pijpleiding** veld.
+   1. Verstrek een beschrijvende naam voor uw pijpleiding op het **gebied van de Naam van de Pijpleiding**.
 
-   1. Onder de **Broncode** sectie, bepaalt u waar de pijpleiding de code terugwint het zal verwerken.
+   1. Onder de **sectie van de Code van Source**, bepaalt u waar de pijpleiding de code terugwint het zal verwerken.
 
-      * **Bewaarplaats** - Deze optie bepaalt waarvan git repo de pijpleiding de code zou moeten terugwinnen.
+      * **Bewaarplaats** - Deze optie bepaalt waarvan de git repo de pijpleiding de code zou moeten terugwinnen.
 
       >[!TIP]
       >
-      >Zie het document [Programma instellen](/help/getting-started/program-setup.md) voor meer informatie over het toevoegen en beheren van opslagruimten in Cloud Manager.
+      >Zie het document [ Opstelling van het Programma ](/help/getting-started/program-setup.md) leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
-      * **Git Branch** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
-      * **Codelocatie** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
+      * **Tak van het Git** - Deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
+      * **Plaats van de Code** - Deze optie bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
 
-      ![Repo&#39;s voor de pijpleiding definiëren](/help/assets/configure-pipelines/add-prod2.png)
+      ![ bepalen repos voor de pijpleiding ](/help/assets/configure-pipelines/add-prod2.png)
 
-   1. Onder de **Omgevingen** sectie, bepaalt u wat een plaatsing teweegbrengt en hoe het per milieu zou moeten worden uitgevoerd.
+   1. Onder de **sectie van Milieu&#39;s**, bepaalt u wat een plaatsing teweegbrengt en hoe het per milieu zou moeten worden uitgerold.
 
-      1. In de **WERKGEBIED** sectie, kunt u bepalen hoe de pijpleiding uit aan uw het opvoeren milieu voortkomt.
+      1. In de **sectie van het STADIUM**, kunt u bepalen hoe de pijpleiding uit aan uw het opvoeren milieu rolt.
 
-         * **Implementatieactivering** - U hebt de volgende opties om de plaatsingstrekkers te bepalen om de pijpleiding te beginnen.
+         * **Trigger van de Plaatsing** - u hebt de volgende opties om de plaatsingstrekkers te bepalen om de pijpleiding te beginnen.
 
-            * **Handmatig** - Gebruik deze optie om de pijplijn handmatig te starten met de interface van Cloud Manager.
-            * **Wijzigingen in Git** - Deze opties beginnen de pijpleiding CI/CD wanneer de bemoeienis aan de gevormde git tak wordt toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
+            * **Handboek** - gebruik deze optie om de pijpleiding manueel te beginnen gebruikend Cloud Manager UI.
+            * **op de Veranderingen van het Git** - Deze opties beginnen de pijpleiding CI/CD wanneer de bedenkingen aan de gevormde git tak worden toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
 
-         * **Belangrijk gedrag metrische fouten** - Tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitshates wordt ontmoet. De beschikbare opties zijn:
+         * **Belangrijk Metrisch Gedrag van Mislukt** - tijdens pijpleidingsopstelling of geef uit, heeft de Manager van de Plaatsing de optie om het gedrag van de pijpleiding te bepalen wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet. De beschikbare opties zijn:
 
-            * **Telkens vragen** - Dit is de standaardinstelling en u moet handmatig ingrijpen als een belangrijke fout optreedt.
-            * **Direct mislukken** - Indien geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-            * **Direct doorgaan** - Indien geselecteerd, zal de pijpleiding automatisch te werk gaan wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+            * **vraag telkens als** - dit is het gebrek plaatsend en vereist handinterventie op om het even welke belangrijke mislukking.
+            * **onmiddellijk het Eindigen** - als geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
+            * **gaat onmiddellijk** - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
-         ![Implementatiemarkering](/help/assets/configure-pipelines/add-prod3.png)
+         ![ trekker van de Plaatsing ](/help/assets/configure-pipelines/add-prod3.png)
 
-         * **Implementatieopties** - U kunt bepaalde implementatietaken versnellen.
+         * **Opties van de Plaatsing** - u kunt bepaalde plaatsingstaken versnellen.
 
-            * **Goedkeuren na implementatie van werkgebied** - Deze goedkeuring vindt plaats na implementatie in de testomgeving voordat er tests worden uitgevoerd. Anders vindt goedkeuring plaats voordat de productie wordt geïmplementeerd, wat gebeurt nadat alle tests zijn voltooid.
+            * **keur na de Plaatsing van het Stadium** goed - Deze goedkeuring komt na plaatsing aan het opvoeren milieu voor alvorens om het even welk testen wordt gedaan. Anders vindt goedkeuring plaats voordat de productie wordt geïmplementeerd, wat gebeurt nadat alle tests zijn voltooid.
 
-            * **Wijzigingen in taakverdeling overslaan** - Er worden geen wijzigingen aangebracht in het taakverdelingsmechanisme.
+            * **overslaan de veranderingen van de Balancer van de Lading** - de veranderingen van het balanceerhulpmiddel van de Lading worden niet aangebracht.
 
-         ![Implementatieopties stapelen](/help/assets/configure-pipelines/add-prod4.png)
+         ![ het Staging plaatsingsopties ](/help/assets/configure-pipelines/add-prod4.png)
 
-         * **Dispatcher Configuration** - de **Implementatiebeheer** De rol kan een reeks inhoudspaden vormen die of ongeldig of uit het geheime voorgeheugen van de AEM van de Verzender zal worden gespoeld wanneer een pijpleiding in werking wordt gesteld. Deze geheim voorgeheugenacties zullen als deel van de stap van de plaatsingspijpleiding worden uitgevoerd, enkel nadat om het even welke inhoudspakketten worden opgesteld. Deze instellingen gebruiken het standaardgedrag AEM Dispatcher. Om te vormen:
+         * **de Configuratie van Dispatcher** - de **rol van de Manager van de Plaatsing** kan een reeks inhoudspaden vormen die of van het geheime voorgeheugen van AEM Dispatcher ongeldig zullen worden gemaakt of zullen worden gespoeld wanneer een pijpleiding in werking wordt gesteld. Deze geheim voorgeheugenacties zullen als deel van de stap van de plaatsingspijpleiding worden uitgevoerd, enkel nadat om het even welke inhoudspakketten worden opgesteld. Bij deze instellingen wordt standaard AEM Dispatcher-gedrag gebruikt. Om te vormen:
 
-            1. Onder **PAD** geef een inhoudspad op.
-            1. Onder **TYPE** selecteert u de actie die op dat pad moet worden uitgevoerd.
+            1. Onder **PAD** verstrekt een inhoudspad.
+            1. Onder **TYPE**, selecteer de actie die op die weg moet worden genomen.
 
-               * **Uitspoelen** - Een cache verwijderen.
-               * **Invalidate** - Voer een cachevalidatie uit, net als wanneer inhoud wordt geactiveerd van een ontwerpinstantie naar een publicatieinstantie.
+               * **Flush** - voer een geheim voorgeheugenschrapping uit.
+               * **ongeldig maakt** ongeldig - voer een geheim voorgeheugenbevestiging uit, gelijkend op wanneer de inhoud van een auteursinstantie aan een het publiceren instantie wordt geactiveerd.
 
-            1. Klikken **Pad toevoegen** om het opgegeven pad toe te voegen. U kunt maximaal 100 paden per omgeving toevoegen.
+            1. Klik **toevoegen Weg** om uw gespecificeerde weg toe te voegen. U kunt maximaal 100 paden per omgeving toevoegen.
 
-         ![Dispatcher-configuratie](/help/assets/configure-pipelines/dispatcher-stage.png)
+         ![ de configuratie van Dispatcher ](/help/assets/configure-pipelines/dispatcher-stage.png)
 
          >[!TIP]
          >
          >Over het algemeen verdient het de voorkeur de actie voor invalideren te gebruiken, maar er kunnen zich gevallen voordoen waarin flushing vereist is, met name bij gebruik van AEM Client Libraries voor HTML.
 
-      1. In de **PRODUCTIE** sectie, kunt u bepalen hoe de pijpleiding uit aan uw productiemilieu voortkomt.
+      1. In de **sectie van de PRODUCTIE**, kunt u bepalen hoe de pijpleiding uit aan uw productiemilieu voortkomt.
 
-         * **Implementatieopties** - U kunt de parameters bepalen die de productieplaatsing controleren.
+         * **Opties van de Plaatsing** - u kunt de parameters bepalen die de productieleiding controleren.
 
-            * **Live goedkeuring gebruiken** - Een implementatie moet handmatig worden goedgekeurd door een gebruiker met de **Zakelijke eigenaar**, **Projectmanager**, of **Implementatiebeheer** rol via de [!UICONTROL Cloud Manager] UI.
-            * **Gepland** - Met deze optie wordt de pijpleiding vóór de implementatie van de productie gestopt, zodat deze kan worden gepland. Als deze optie wordt geselecteerd, zal de pijpleiding na plaatsing aan het opvoeren milieu stoppen en de gebruiker voor de te nemen actie vragen.
-               * **Nu** - Deze optie wordt onmiddellijk ingezet voor productie, waardoor de pijpleiding effectief wordt voltooid.
-               * **Datum** - Met deze optie kan de gebruiker een tijdstip plannen waarop de implementatie moet worden voltooid.
-               * **Uitvoering stoppen** - Met deze optie wordt de implementatie naar de productie afgebroken.
+            * **het Gebruik gaat Levende Goedkeuring** - een plaatsing moet manueel door een gebruiker met de **BedrijfsEigenaar** worden goedgekeurd, **de Manager van het Project**, of **de rol van de Manager van de Plaatsing** via [!UICONTROL Cloud Manager] UI.
+            * **Gepland** - Deze optie stopt de pijpleiding vóór productieleiding om het toe te laten om worden gepland. Als deze optie wordt geselecteerd, zal de pijpleiding na plaatsing aan het opvoeren milieu stoppen en de gebruiker voor de te nemen actie vragen.
+               * **nu** - Deze optie stelt aan productie onmiddellijk op, effectief de pijpleiding te voltooien.
+               * **Datum** - Deze optie staat de gebruiker toe om een tijd te plannen wanneer de plaatsing zou moeten worden voltooid.
+               * **Uitvoering van het Einde** - deze optie aborteert plaatsing aan productie.
 
            >[!TIP]
            >
-           >Raadpleeg het document [Implementatie van code](/help/using/code-deployment.md) leren hoe te om het plaatsingsprogramma te plaatsen of de pijpleiding onmiddellijk uit te voeren.
+           >Gelieve te verwijzen naar de Plaatsing van de Code van het document [, ](/help/using/code-deployment.md) om te leren hoe te om het plaatsingsprogramma te plaatsen of de pijpleiding onmiddellijk uit te voeren.
 
-            * **CSE-overzicht gebruiken** - Als deze optie is geselecteerd, wordt een CSE ingeschakeld om de implementatie daadwerkelijk te starten. Wanneer u een pijplijn maakt of bewerkt terwijl deze optie is ingeschakeld, wordt **Implementatiebeheer** De rol heeft de volgende opties.
+            * **Het Toezicht CSE van het Gebruik** - als deze optie wordt geselecteerd, wordt CSE aangehaald om de plaatsing eigenlijk te beginnen. Wanneer het creëren van of het uitgeven van een pijpleiding wanneer deze optie wordt toegelaten, heeft de **rol van de Manager van de Plaatsing** de volgende opties.
 
-               * **Elke CSE** - Met deze optie kan elke beschikbare CSE de implementatie starten.
+               * **Om het even welke CSE** - Deze optie staat om het even welke beschikbare CSE toe om de plaatsing te beginnen.
                * **Mijn CSE** - Deze optie staat slechts specifieke CSE toe die aan de klant wordt toegewezen om de plaatsing te beginnen. Dit geldt ook voor de aangewezen back-up van de CSE als de toegewezen CSE niet beschikbaar is.
 
-           ![Implementatieopties voor productie](/help/assets/configure-pipelines/prod-deploymentoptions.png)
+           ![ de plaatsingsopties van de Productie ](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
-         * **Dispatcher Configuration** - Definieer de configuratie van de verzender voor uw productieomgeving. De opties zijn hetzelfde als die voor de testomgeving.
+         * **Configuratie van Dispatcher** - bepaal de verzender configuratie voor uw productiemilieu. De opties zijn hetzelfde als die voor de testomgeving.
 
-1. Klikken op **Doorgaan** aan de **Werkgebiedtests** tabblad waarop u AEM Sites en AEM Assets Performance Testing kunt configureren, afhankelijk van de producten waarvoor u een licentie hebt.
+1. Klik op **ga** verder om aan het **Testen van het Stadium** lusje vooruit te gaan waar u het Testen van de Prestaties van AEM Sites en van AEM Assets kunt vormen, afhankelijk van welke producten u vergunning hebt gegeven.
 
    >[!TIP]
    >
-   >Het document raadplegen [Testen van de codekwaliteit](/help/using/code-quality-testing.md#performance-testing) voor meer informatie over de opties op de **Werkgebiedtests** tab.
+   >Verwijs naar het document [ Testen van de Kwaliteit van de Code ](/help/using/code-quality-testing.md#performance-testing) voor meer details over de opties beschikbaar op het **Testen van het Stadium** tabel.
 
-   1. Onder de **Sites Content Delivery/Distributed Load Weight** in de sectie, definieert u hoe de prestaties van sites worden getest op basis van de weging van paginaverzoeken tussen de drie paginasets, die kunnen worden in- of uitgeschakeld.
+   1. Onder de **sectie van het Gewicht van de Draad van de Inhoud van 0} Plaatsen Levering/Verspreid van de Lading, bepaalt u hoe de plaatsprestaties het testen worden gevormd gebaseerd op de weging van paginaverzoeken tussen de drie paginasets, die kunnen worden toegelaten of worden onbruikbaar gemaakt.**
 
-      * **Populaire actieve pagina&#39;s**
-      * **Overige actieve pagina&#39;s**
-      * **Nieuwe pagina&#39;s**
+      * **Populaire Levende Pagina&#39;s**
+      * **Andere Levende Pagina&#39;s**
+      * **Nieuwe Pagina&#39;s**
 
-      ![Belastingsgewicht van sites](/help/assets/configure-pipelines/add-prod5.png)
+      ![ het ladingsgewicht van Plaatsen ](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. Onder de **Distributie voor tests op middelenprestaties** definieert u de testverdeling van afbeeldingen en PDF en definieert u uw eigen testelementen.
+   1. Onder de **sectie van het Testen van de Prestaties van Assets** van de Distributie {, bepaalt u de testdistributie van beelden en PDF evenals bepaalt uw eigen testactiva.
 
-      * **Afbeeldingen** - Pas de schuifregelaar aan om de testsplitsing tussen afbeeldingen en PDF aan te passen.
-      * **PDF** - Pas de schuifregelaar aan om de testsplitsing tussen afbeeldingen en PDF aan te passen.
+      * **Beelden** - pas de schuif aan om de testspleet tussen beelden en PDF aan te passen.
+      * **PDF** - pas de schuif aan om de testspleet tussen beelden en PDF aan te passen.
 
       * Definieer uw eigen aangepaste elementen door deze te uploaden.
 
-         1. **INDELING** - Bepaal of uw aangepaste element een PDF van een afbeelding is.
-         1. **FILENAME** - Gebruik de knop voor de bestandsbrowser om een afbeelding op uw lokale computer te selecteren.
-         1. **Testbestand toevoegen** - Klik om uw geselecteerde element te uploaden.
+         1. **FORMAAT** - verkies of uw douanemiddel een PDF van een beeld is.
+         1. **BESTANDSNAAM** - gebruik de knoop van dossierbrowser om een beeld van uw lokale machine te selecteren.
+         1. **voeg het Dossier van de Test** toe - klik om uw geselecteerde activa te uploaden.
 
-      ![Distributie van middelen testen](/help/assets/configure-pipelines/add-prod6.png)
+      ![ Assets testende distributie ](/help/assets/configure-pipelines/add-prod6.png)
 
-1. Klikken **Opslaan** om het toevoegen van uw productiepijplijn te voltooien.
+1. Klik **sparen** om het toevoegen van uw productiepijplijn te voltooien.
 
 ## De volgende stappen {#the-next-steps}
 
-Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Zie het document [Codeimplementatie](/help/using/code-deployment.md) voor meer informatie .
+Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Gelieve te zien de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial-one}
 

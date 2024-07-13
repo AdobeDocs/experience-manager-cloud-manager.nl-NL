@@ -1,64 +1,64 @@
 ---
 title: Toegang tot opslagplaats
-description: Leer hoe u toegang krijgt tot en beheer kunt maken van uw door Adobe beheerde it-opslagruimten met behulp van het beheer van uw eigen git-account in Cloud Manager.
-source-git-commit: b15ef71ae24f51811798d2d25c8f75320e21c01f
+description: Leer hoe u toegang krijgt tot en beheer krijgt van uw door de Adobe beheerde it-opslagruimten met behulp van het zelfbedienings-git-accountbeheer van Cloud Manager.
+exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-
 # Toegang tot opslagplaats {#accessing-repos}
 
-Leer hoe u toegang krijgt tot en beheer kunt maken van uw door Adobe beheerde it-opslagruimten met behulp van het beheer van uw eigen git-account in Cloud Manager.
+Leer hoe u toegang krijgt tot en beheer krijgt van uw door de Adobe beheerde it-opslagruimten met behulp van het zelfbedienings-git-accountbeheer van Cloud Manager.
 
 ## Toegang tot informatie over opslagplaats via de overzichtspagina {#overview-page}
 
-Met Cloud Manager kunt u via de **Repo-info openen** de knoop is duidelijk beschikbaar op de pijpleidingskaart.
+Cloud Manager maakt het gemakkelijk om uw informatie van de bewaarplaatstoegang voor Adobe-geleide bewaarplaatsen terug te winnen door de **knoop van de Reparatie van de Toegang te gebruiken** beschikbaar hoofdzakelijk op de pijpleidingskaart.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeren naar **Pijpleidingen** kaart van uw **Programmaoverzicht** pagina.
+1. Navigeer aan **Pijpleidingen** kaart van uw **pagina van het Overzicht van het Programma**.
 
-   ![De knop Repo-info openen op de milieucokaart](assets/pipelines-card.png)
+   ![ de knoop van Info van de Reparatie van de Toegang op de kaart van Milieu ](assets/pipelines-card.png)
 
-1. Tik of klik op de knop **Repo-info openen** om de knop **Info opslagplaats** dialoogvenster en weergave:
+1. Tik of klik de **knoop van Info van de Reactie van de Toegang** om de **Info van de Bewaarplaats** dialoog en mening te openen:
 
    * De git-gebruikersnaam.
    * Het wachtwoord voor de it.
-   * De URL naar de gegevensopslagruimte van Cloud Manager.
+   * De URL naar de Cloud Manager-it-opslagplaats.
    * Vooraf gebouwde git-opdrachten waarmee u snel een externe server aan uw git-repo- en pushcode kunt toevoegen.
 
-   ![Venster Info opslagplaats](assets/access-repo-info.png)
+   ![ het venster van Info van de Bewaarplaats ](assets/access-repo-info.png)
 
-1. Om tot het wachtwoord toegang te hebben, moet een nieuw wachtwoord worden geproduceerd. Tik of klik op de knop **Wachtwoord genereren** knop.
+1. Om tot het wachtwoord toegang te hebben, moet een nieuw wachtwoord worden geproduceerd. Om dit te doen, ontvang of klik **wachtwoord** knoop produceren.
 
-1. Het genereren van wachtwoorden bevestigen in het dialoogvenster **Weet u zeker dat...** dialoogvenster door te tikken of te klikken **Wachtwoord genereren**.
+1. Bevestig wachtwoordgeneratie in **bent u zeker..** dialoog door te tikken of te klikken **produceert wachtwoord**.
 
-   ![Het genereren van wachtwoorden bevestigen](assets/confirm-password-generation.png)
+   ![ Bevestig wachtwoordgeneratie ](assets/confirm-password-generation.png)
 
-1. Het wachtwoord wordt gegenereerd en is zichtbaar voor kopiëren in het dialoogvenster **Wachtwoord** veld.
+1. Het wachtwoord wordt geproduceerd en is zichtbaar voor het kopiëren op het **gebied van het Wachtwoord**.
 
    * Als u een wachtwoord genereert, wordt het vorige wachtwoord ongeldig.
    * Cloud Manager slaat het wachtwoord niet op. Het is uw verantwoordelijkheid om dit wachtwoord veilig op te slaan.
-   * Aangezien Cloud Manager het wachtwoord niet opslaat, moet u een nieuw wachtwoord opnieuw genereren als u het wachtwoord verliest.
+   * Omdat Cloud Manager het wachtwoord niet opslaat, moet u een nieuw wachtwoord opnieuw genereren als u het wachtwoord verliest.
 
-   ![Voorbeeld van een gegenereerd wachtwoord](assets/generated-password.png)
+   ![ Voorbeeld van een geproduceerd wachtwoord ](assets/generated-password.png)
 
-Met behulp van deze referenties kunt u een lokale kopie van de opslagplaats klonen, wijzigingen aanbrengen in die lokale opslagplaats en eventuele wijzigingen in de code opnieuw doorvoeren naar de externe gegevensopslagruimte in Cloud Manager.
+Met behulp van deze referenties kunt u een lokale kopie van de opslagplaats klonen, wijzigingen aanbrengen in die lokale opslagplaats en, wanneer u klaar bent, wijzigingen in de code terugsturen naar de externe gegevensopslagruimte in Cloud Manager.
 
 >[!NOTE]
 >
->* De **Repo-info openen** deze optie is zichtbaar voor gebruikers met **Ontwikkelaar** of **Implementatiebeheer** rollen.
->* De **Repo-info openen** geeft alleen de toegangsgegevens van de opslagplaats weer voor opslagplaatsen die door Adobe worden beheerd. Informatie over toegang [privéopslagplaatsen](private-repositories.md) is niet beschikbaar in Cloud Manager.
+>* De **optie van Info van de Reactie van de Toegang** is zichtbaar aan gebruikers met **Ontwikkelaar** of **de rollen van de Manager van de Plaatsing**.
+>* De **knoop van Info van de Reactie van de Toegang** toont slechts de informatie van de bewaarplaatstoegang voor Adobe-beheerde bewaarplaatsen. De informatie van de toegang over [ privé bewaarplaatsen ](private-repositories.md) is niet beschikbaar in Cloud Manager.
 
 ## Toegang tot gegevens opslagplaats vanuit het venster Opslagplaatsen {#repositories-window}
 
-An **Repo-info openen** is ook beschikbaar op de werkbalk van het dialoogvenster [**Opslagplaatsen** venster.](managing-repositories.md) het toont de zelfde informatie over de toegang tot van Adobe-beheerde bewaarplaatsen.
+Een **knoop van Info van de Reactie van de Toegang** is ook beschikbaar in de toolbar van het [**Venster van Bewaarplaatsen**.In ](managing-repositories.md) wordt dezelfde informatie weergegeven over de toegang tot opslagruimten met beheerde Adoben.
 
 ## Een toegangswachtwoord intrekken {#revoke-password}
 
-U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, gelieve [Maak een ondersteuningsticket voor dit verzoek.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, gelieve [ een steunkaartje voor dit verzoek tot stand te brengen.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
 
 Het kaartje zal met hoge prioriteit worden behandeld en moet binnen één dag worden ingetrokken.

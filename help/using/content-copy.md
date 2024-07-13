@@ -1,6 +1,6 @@
 ---
 title: Het gereedschap Inhoud kopiëren
-description: Met het hulpprogramma voor het kopiëren van inhoud van Cloud Manager kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AMS-gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
+description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AMS-gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
 workflow-type: tm+mt
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Het gereedschap Inhoud kopiëren {#content-copy}
 
-Met het hulpprogramma voor het kopiëren van inhoud van Cloud Manager kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AMS-gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
+Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AMS-gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 
 ## Inleiding {#introduction}
 
 De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met het gereedschap Inhoud kopiëren kunt u inhoud van uw productie-AMS-gehoste AEM 6.x-omgeving kopiëren naar een testomgeving.
 
-De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Een inhoudsset bestaat uit een lijst met JCR-paden die de veranderbare inhoud bevatten die vanuit een bronomgeving naar een doelomgeving binnen hetzelfde programma van Cloud Manager moet worden gekopieerd. De volgende paden zijn toegestaan in een inhoudsset.
+De inhoud die moet worden gekopieerd, wordt gedefinieerd door een inhoudsset. Een inhoudsset bestaat uit een lijst met JCR-paden die de veranderbare inhoud bevatten die van een bronomgeving naar een doelomgeving binnen hetzelfde Cloud Manager-programma moet worden gekopieerd. De volgende paden zijn toegestaan in een inhoudsset.
 
 ```text
 /content/**
@@ -35,51 +35,51 @@ Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 
 ## Machtigingen {#permissions}
 
-Als u het gereedschap Inhoud kopiëren wilt gebruiken, moet de gebruiker aan de **Implementatiebeheer** rol in de bron- en doelomgevingen.
+Om het hulpmiddel van het inhoudsexemplaar te gebruiken, moet de gebruiker aan de **rol van de Manager van de Plaatsing** in de bron en doelmilieu&#39;s worden toegewezen.
 
 ## Een inhoudsset maken {#create-content-set}
 
 Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wanneer deze is gedefinieerd, kunnen inhoudssets opnieuw worden gebruikt om inhoud te kopiëren. Ga als volgt te werk om een inhoudenset te maken.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Ga naar de **Inhoudssets** pagina van de **Omgevingen** scherm.
+1. Navigeer aan de **pagina van de Reeksen van de Inhoud** van het **milieu&#39;s** scherm.
 
-1. Tik of klik op de knop **Inhoudsset toevoegen** aan de rechterbovenhoek van het scherm.
+1. Tik of klik **toevoegen de Vastgestelde Inhoud** knoop van de Inhoud bij het hoogste recht van het scherm.
 
-   ![Inhoudssets](/help/assets/content-sets.png)
+   ![ Inhoudsreeksen ](/help/assets/content-sets.png)
 
-1. Op de **Details** Geef een naam en een beschrijving voor de inhoudenset op en tik of klik op **Doorgaan**.
+1. Op het **lusje van Details** van de tovenaar, verstrek een naam en een beschrijving voor de inhoud plaatste en tik of klik **gaat** verder.
 
-   ![Details van inhoudsset](/help/assets/add-content-set-details.png)
+   ![ Inhoud plaatste details ](/help/assets/add-content-set-details.png)
 
-1. Op de **Inhoudspaden** van de wizard, geeft u de paden op van de inhoud die u wilt wijzigen.
+1. Op het **lusje van de Wegen van de Inhoud** van de tovenaar, specificeer de wegen van de veranderlijke inhoud die in de inhoudreeks moet worden omvat.
 
-   1. Voer het pad in het dialoogvenster **Inclusief pad toevoegen** veld.
-   1. Tik of klik op de knop **Pad toevoegen** om het pad aan de inhoudenset toe te voegen.
-   1. Tik of klik op de knop **Pad toevoegen** nogmaals indien nodig.
+   1. Ga de weg in **toevoegen omvat Weg** gebied.
+   1. Tik of klik **voeg de knoop van de Weg** toe om de weg aan de inhoudreeks toe te voegen.
+   1. Tik of klik **voeg opnieuw de knoop van de Weg** toe zonodig.
 
-   ![Paden toevoegen aan inhoudsset](/help/assets/add-content-set-paths.png)
+   ![ voegt wegen aan inhoud toe plaatste ](/help/assets/add-content-set-paths.png)
 
 1. Als u de inhoudenset moet verfijnen of beperken, kunnen subpaden worden uitgesloten.
 
-   1. Tik of klik op de knop **Subpaden uitsluiten toevoegen** pictogram naast het pad dat u moet beperken.
+   1. In de lijst van inbegrepen wegen, tik of klik **voeg sub-wegen** pictogram naast de weg toe u moet beperken.
    1. Voer het subpad in dat u onder het geselecteerde pad wilt uitsluiten.
-   1. Tik of klik op **Pad uitsluiten**.
-   1. Tik of klik op **Subpaden uitsluiten toevoegen** nogmaals om extra paden toe te voegen om deze uit te sluiten.
+   1. Tik of klik **uitsluiten Weg**.
+   1. Tik of klik **voeg sub-wegen** opnieuw toe om extra wegen toe te voegen om zonodig uit te sluiten.
 
-   ![Paden uitsluiten](/help/assets/add-content-set-paths-excluded.png)
+   ![ Excluding wegen ](/help/assets/add-content-set-paths-excluded.png)
 
 1. U kunt de opgegeven paden desgewenst wijzigen.
 
    1. Tik of klik op de X naast de uitgesloten subpaden om deze te verwijderen.
-   1. Tik of klik op de knop Ovaal naast de paden die u wilt tonen **Bewerken** en **Verwijderen** opties.
+   1. Tik of klik de elliptische knoop naast wegen om **uit te openbaren geef** uit en **schrap** opties.
 
-   ![Padlijst bewerken](/help/assets/add-content-set-excluded-paths.png)
+   ![ het Uitgeven weglijst ](/help/assets/add-content-set-excluded-paths.png)
 
-1. Tik of klik op **Maken** om de inhoudenset te maken.
+1. Tik of klik **creeer** om de geplaatste inhoud tot stand te brengen.
 
 De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
@@ -90,9 +90,9 @@ De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
 ## Een inhoudsset bewerken {#edit-content-set}
 
-Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van te tikken of te klikken **Inhoudsset toevoegen** selecteert u een bestaande set in de console en selecteert u **Bewerken** in het ovaalmenu.
+Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van het in kaart brengen of het klikken van **voeg Vastgestelde Inhoud** toe, selecteer een bestaande reeks van de console en uitgezocht **geef** van het ellipsmenu uit.
 
-![Inhoudsset bewerken](/help/assets/edit-content-set.png)
+![ geef inhoudreeks ](/help/assets/edit-content-set.png) uit
 
 Wanneer u de inhoudenset bewerkt, moet u mogelijk de geconfigureerde paden uitbreiden om de uitgesloten subpaden zichtbaar te maken.
 
@@ -100,15 +100,15 @@ Wanneer u de inhoudenset bewerkt, moet u mogelijk de geconfigureerde paden uitbr
 
 Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Ga als volgt te werk om inhoud te kopiëren.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Ga naar de **Inhoudssets** pagina van de **Omgevingen** scherm.
+1. Navigeer aan de **pagina van de Reeksen van de Inhoud** van het **milieu&#39;s** scherm.
 
-1. Selecteer een inhoudsset in de console en selecteer **Inhoud kopiëren** in het ovaalmenu.
+1. Selecteer een inhoud die van de console wordt geplaatst en selecteer **Inhoud van het Exemplaar** van het ellipsmenu.
 
-   ![Inhoud kopiëren](/help/assets/copy-content.png)
+   ![ exemplaar van de Inhoud ](/help/assets/copy-content.png)
 
    >[!NOTE]
    >
@@ -117,29 +117,29 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
    >* De gebruiker beschikt niet over de juiste machtigingen.
    >* Het milieu heeft een lopende pijpleiding of een verrichting van de exemplaarinhoud lopend.
 
-1. In de **Inhoud kopiëren** geeft u de bron en de bestemming op voor de actie Kopiëren van inhoud.
+1. In de **inhoud van het Exemplaar** dialoog, specificeer de bron en de bestemming voor uw actie van het inhoudsexemplaar.
 
-1. U kunt ervoor kiezen om de paden voor uitsluiten te verwijderen of te behouden in de doelomgeving. Selectievakje selecteren `Do not delete exclude paths from destination` als u de uitsluitingspaden wilt behouden die in de inhoudenset zijn opgegeven. Als het selectievakje uitgeschakeld blijft, worden paden uitgesloten uit de doelomgeving.
+1. U kunt ervoor kiezen om de paden voor uitsluiten te verwijderen of te behouden in de doelomgeving. Schakel het selectievakje `Do not delete exclude paths from destination` in als u de in de inhoudenset opgegeven paden voor uitsluiten wilt behouden. Als het selectievakje uitgeschakeld blijft, worden paden uitgesloten uit de doelomgeving.
 
-1. U kunt versiehistorie kopiëren van de paden die van bron naar doelomgeving worden gekopieerd. Selectievakje selecteren `Copy Versions` als u alle versiehistorie wilt kopiëren.
+1. U kunt versiehistorie kopiëren van de paden die van bron naar doelomgeving worden gekopieerd. Schakel het selectievakje `Copy Versions` in als u alle versiehistorie wilt kopiëren.
 
-   ![Inhoud kopiëren](/help/assets/copying-content.png)
+   ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
 
-1. Tik of klik op **Kopiëren**.
+1. Tik of klik **Exemplaar**.
 
 Het kopieerproces wordt gestart. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 
 ## Activiteit voor kopiëren van inhoud {#copy-activity}
 
-U kunt de status van uw kopieerprocessen in de **Inhoudsactiviteit kopiëren** pagina.
+U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit van de Inhoud van het Exemplaar controleren**.
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Ga naar de **Omgevingen** van het scherm **Overzicht** pagina.
+1. Navigeer aan het **scherm van Milieu&#39;s** van de **pagina van het Overzicht**.
 
-1. Ga naar de **Inhoudsactiviteit kopiëren** pagina van de **Omgevingen** scherm.
+1. Navigeer aan de **pagina van de Activiteit van de Inhoud van het Exemplaar** van het **milieu&#39;s** scherm.
 
-![Activiteit voor kopiëren van inhoud](/help/assets/copy-content-activity.png)
+![ Activiteit van het Exemplaar van de Inhoud ](/help/assets/copy-content-activity.png)
 
 ### Statussen van inhoud kopiëren {#statuses}
 
@@ -165,5 +165,5 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Het gereedschap voor het kopiëren van inhoud mag niet worden gebruikt als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Een inhoudkopie kan niet worden gepauzeerd of geannuleerd nadat deze is gestart.
 * Met het gereedschap voor het kopiëren van inhoud kopieert u elementen samen met dynamische metagegevens over media van de hogere omgeving naar de geselecteerde lagere omgeving.
-   * Gekopieerde elementen moeten vervolgens opnieuw worden verwerkt met de opdracht [Workflow voor DAM-procesmiddelen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) op de lagere omgeving om de respectieve dynamische mediasonfiguratie te gebruiken.
+   * De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) op het lagere milieu om de respectieve dynamische media configuratie te gebruiken.
 * Het kopiëren van inhoud gaat aanzienlijk sneller als de versiegeschiedenis niet wordt gekopieerd.

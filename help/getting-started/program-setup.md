@@ -4,7 +4,7 @@ description: Na het instappen, zal de bedrijfseigenaar één of andere aanvankel
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -18,35 +18,35 @@ Na het instappen voltooit de bedrijfseigenaar de aanvankelijke opstelling van he
 
 Voer de volgende stappen uit om het programma in te stellen en KPI&#39;s te definiëren.
 
-1. Aanmelden bij Cloud Manager [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) en selecteert u de gewenste organisatie.
+1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
 
-1. Klikken **Installatieprogramma** om het installatieproces te starten.
+1. Klik **Programma van de Opstelling** om het opstellingsproces te beginnen.
 
-   ![Programma instellen](/help/assets/set-up-program/setup1.png)
+   ![ programma van de Opstelling ](/help/assets/set-up-program/setup1.png)
 
-1. In de **Installatieprogramma** kunt u de programmagegevens op drie tabbladen invoeren:
+1. In de **dialoog van het Programma van de Opstelling** kunt u programmainformatie over drie lusjes ingaan:
 
    * **Algemeen**
    * **KPI**
-   * **Inrichting**
+   * **Levering**
 
-1. Op de **Algemeen** toevoegen, een beschrijving voor uw programma toevoegen en desgewenst een miniatuur uploaden door op **Foto wijzigen**.
+1. Op het **Algemene** lusje, voeg een beschrijving voor uw programma toe en upload naar keuze een duimnagel door op **de Foto van de Verandering** te klikken.
 
-   ![Tabblad Algemeen](/help/assets/Setup_Program-General.png)
+   ![ Algemene tabel ](/help/assets/Setup_Program-General.png)
 
-1. Op de **KPI** , definieert u de KPI&#39;s. In dit voorbeeld worden afzonderlijke KPI&#39;s gedefinieerd voor **AEM Sites** en **AEM Assets**. U kunt de KPI&#39;s opgeven voor de producten waarvoor u een licentie hebt.
+1. Voor **KPI** lusje, bepaal uw KPIs. In dit voorbeeld, wordt afzonderlijke KPIs bepaald voor **AEM Sites** en **AEM Assets**. U kunt de KPI&#39;s opgeven voor de producten waarvoor u een licentie hebt.
 
-   * Zie de sectie [KPI&#39;s](#kpis) voor meer informatie over hoe KPI&#39;s worden gemeten in Cloud Manager.
+   * Zie sectie [ KPIs ](#kpis) voor meer details over hoe KPIs in Cloud Manager wordt gemeten.
 
-   ![KPI&#39;s definiëren](/help/assets/Setup_Program-KPIs.png)
+   ![ het bepalen KPIs ](/help/assets/Setup_Program-KPIs.png)
 
-1. Op de **Inrichting** kunt u de schaalopties op aanvraag voor uw omgeving definiëren als automatische schaling is ingeschakeld voor uw programma.
+1. Op het **lusje van de Levering**, kunt u de het schrapen op bestelling opties voor uw milieu&#39;s bepalen als autoscaling voor uw programma wordt toegelaten.
 
    * Autoscaling is alleen van toepassing op de productieomgeving en is mogelijk niet voor alle programma&#39;s van de klant beschikbaar.
 
-   ![Inrichtingsopties](/help/assets/Setup_Program-Provisioning.png)
+   ![ de opties van de Levering ](/help/assets/Setup_Program-Provisioning.png)
 
-1. Klikken **Opslaan** om de installatiewizard te voltooien.
+1. Klik **sparen** om de opstellingstovenaar te voltooien.
 
 Uw programma wordt gemaakt. Het kan enige minuten duren voordat de bronnen zijn ingericht voordat het programma klaar is voor gebruik.
 
@@ -54,31 +54,31 @@ Uw programma wordt gemaakt. Het kan enige minuten duren voordat de bronnen zijn 
 
 U kunt programma&#39;s bewerken nadat u ze hebt ingesteld. Voer de volgende stappen uit om een programma te bewerken.
 
-1. Aanmelden bij Cloud Manager [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) en selecteert u de gewenste organisatie.
+1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
 
-1. Navigeer naar het programma vanuit het hoofdscherm van Cloud Manager.
+1. Navigeer naar het programma vanuit het Cloud Manager-beginscherm.
 
-1. Klikken op **Programma bewerken** om uw programma bij te werken of te wijzigen van **Overzicht** pagina.
+1. Klik op **geef programma** uit om uw programma van de **pagina van het Overzicht** bij te werken of te wijzigen.
 
-   ![Programma bewerken, optie](/help/assets/set-up-program/edit-program1.png)
+   ![ geef programmaoptie ](/help/assets/set-up-program/edit-program1.png) uit
 
-1. De **Programma bewerken** wordt weergegeven, zodat u uw programma kunt bijwerken. Zie de sectie [Programmainstelling met Cloud Manager](#program-setup-cloud-manager) voor meer informatie over de beschikbare velden.
+1. De **geeft de vertoningen van de de dialoog van het Programma** uit, toestaand u om uw programma bij te werken. Zie de sectie [ Opstelling van het Programma met Cloud Manager ](#program-setup-cloud-manager) voor details op de beschikbare gebieden.
 
-   ![Dialoogvenster Programma bewerken](/help/assets/set-up-program/edit-program-general.png)
+   ![ geef programmadialoog ](/help/assets/set-up-program/edit-program-general.png) uit
 
-1. Klikken op **Bijwerken** om uw wijzigingen op te slaan.
+1. Klik op **Update** om uw veranderingen te bewaren.
 
-Merk op dat de veranderingen onmiddellijk aan de Manager van de Wolk worden bewaard, maar niet in uw milieu&#39;s tot de volgende pijpleidingslooppas zullen worden weerspiegeld.
+Merk op dat de veranderingen onmiddellijk aan Cloud Manager worden bewaard, maar zal niet in uw milieu&#39;s tot de volgende pijpleidingslooppas worden weerspiegeld.
 
-Als u nog geen pijpleiding hebt gecreeerd zie de documenten [Productiepijpleidingen configureren](/help/using/production-pipelines.md) en [Niet-productiepijpleidingen configureren.](/help/using/non-production-pipelines.md)
+Als u nog geen pijpleiding hebt gecreeerd zie de documenten [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen.](/help/using/non-production-pipelines.md)
 
 ## Schakelen tussen programma&#39;s {#swithing-programs}
 
-Wanneer u aan een programma werkt, kunt u snel naar een ander programma schakelen zonder terug te keren naar de overzichtspagina van Cloud Manager.
+Wanneer u aan een programma werkt, kunt u snel overschakelen naar een ander programma zonder terug te keren naar de overzichtspagina van Cloud Manager.
 
 Gebruik de actiebalk om naar een ander programma te schakelen, het huidige programma te bewerken of een nieuw programma toe te voegen.
 
-![Programmaschakelaar](/help/assets/set-up-program/setup2.png)
+![ de schakelaar van het Programma ](/help/assets/set-up-program/setup2.png)
 
 ## KPI&#39;s {#kpis}
 
@@ -86,9 +86,9 @@ De plaatsen KPIs wordt gemeten op tests die op het opvoeren milieu worden in wer
 
 Bijvoorbeeld, zou een gebruiker die een gemiddelde van 1000 paginameningen per minuut in hun productiemilieu verwacht en vier verzender/het publiceren servers in productie heeft dit aan 250 paginameningen per minuut moeten schrapen. Hierbij wordt ervan uitgegaan dat hun testomgeving uit slechts één verzender/publicatieserverpaar bestaat.
 
-De prestaties van de activa worden getest door elementen herhaaldelijk te uploaden tijdens een testperiode van 30 minuten en de verwerkingstijd voor elk middel en verschillende metingen op systeemniveau te meten.
+De Assets-prestaties worden getest door elementen gedurende een testperiode van 30 minuten herhaaldelijk te uploaden en de verwerkingstijd voor elk element en verschillende metingen op systeemniveau te meten.
 
-U kunt een netwerk van de inhoudslevering (CDN) zoals Akamai of CloudFront vóór uw productiemilieu hebben. Sinds [!UICONTROL Cloud Manager] tests tegen het het opvoeren milieu direct, zou KPI op slechts het verkeer moeten wijzen dat door CDN wordt verwacht over te gaan, namelijk, mist het geheime voorgeheugen. Dit zal doorgaans een relatief kleine ondergroep van het totale productieverkeer zijn.
+U kunt een netwerk van de inhoudslevering (CDN) zoals Akamai of CloudFront vóór uw productiemilieu hebben. Aangezien [!UICONTROL Cloud Manager] tests tegen het het opvoeren milieu direct, KPI op slechts het verkeer zou moeten wijzen dat door CDN wordt verwacht over te gaan, namelijk mist het geheime voorgeheugen. Doorgaans zal dit een relatief kleine ondergroep van het totale productieverkeer zijn.
 
 ## Video-overzicht {#video}
 

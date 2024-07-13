@@ -16,31 +16,31 @@ Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 
 ## Meldingen in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] verzendt u berichten wanneer een productiepijplijn (met succes of met succes) begint en voltooit, bij het begin van een productieplaatsing, evenals wanneer **Goedkeuring gaan live** en **Gepland** de stappen zijn bereikt. Deze meldingen worden verzonden via de [!UICONTROL Experience Cloud] meldingssysteem.
+[!UICONTROL Cloud Manager] verzendt u berichten wanneer een productiepijpleiding (met succes of met succes), bij het begin van een productieleiding begint en voltooit, evenals wanneer de **Go-Live Goedkeuring** en **Geplande** stappen worden bereikt. Deze meldingen worden verzonden via het [!UICONTROL Experience Cloud] -meldingssysteem.
 
 >[!NOTE]
 >
->De goedkeuring en geplande meldingen worden alleen naar gebruikers in de **Zakelijke eigenaar**, **Programmabeheerder**, en **Implementatiebeheer** rollen.
+>De goedkeuring en de geplande berichten worden slechts verzonden naar gebruikers in de **BedrijfsEigenaar**, **Manager van het Programma**, en **Manager van de Plaatsing** rollen.
 
-De meldingen worden weergegeven in een zijbalk in [!UICONTROL Cloud Manager] en door de Adobe [!UICONTROL Experience Cloud].
+De meldingen worden weergegeven in een zijbalk binnen [!UICONTROL Cloud Manager] en in de hele Adobe [!UICONTROL Experience Cloud] .
 
 Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
 
-![Meldingspictogram](/help/assets/notifications-bell-badged.png)
+![ pictogram van Meldingen ](/help/assets/notifications-bell-badged.png)
 
-Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. De **Meldingen** in de zijbalk worden de meest recente meldingen weergegeven, zoals bevestigingen voor de implementatie. Meldingen betreffen uw omgeving.
+Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. Het **lusje van Meldingen** in sidebar maakt een lijst van de meest recente berichten zoals plaatsingsbevestigingen. Meldingen betreffen uw omgeving.
 
-![Zijbalk voor meldingen](/help/assets/notifications-activities.png)
+![ Notifications sidebar ](/help/assets/notifications-activities.png)
 
-De **Aankondigingen** bevat Adobe-productaankondigingen. Aankondigingen hebben betrekking op het product.
+Het **lusje van Mededelingen** omvat de aankondigingen van het het productproduct van de Adobe. Aankondigingen betreffen het product.
 
-![Zijbalk voor meldingen](/help/assets/notificaitons-announcements.png)
+![ Notifications sidebar ](/help/assets/notificaitons-announcements.png)
 
 Klik op een bericht of aankondiging om de details ervan weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
 
-Klik op de knop **Alles weergeven** onder in het deelvenster om alle aankondigingen in uw Postvak IN weer te geven.
+Klik op de **Mening allen** optie bij de bodem van het paneel om alle aankondigingen in uw inbox te bekijken.
 
-Klik op de knop **Alles markeren als gelezen** onder aan het deelvenster kunt u alle ongelezen meldingen markeren als gelezen en de badge voor het belpictogram wissen.
+Klik op het **Teken allen als gelezen** optie bij de bodem van het paneel om alle ongelezen berichten als gelezen te merken en het belpictogram te ontruimen.
 
 ## Configuratie van melding {#configuration}
 
@@ -48,45 +48,45 @@ U kunt aanpassen hoe u meldingen ontvangt en welke meldingen u ontvangt.
 
 Klik op het tandwielpictogram boven aan de zijbalk met meldingen.
 
-![Pictogram Meldingsinstellingen](/help/assets/notifications-configuration.png)
+![ pictogram van de montages van het Bericht ](/help/assets/notifications-configuration.png)
 
-Hierdoor wordt het **Voorkeuren voor Experience Cloud** , waarin u uw berichtabonnementen kunt definiëren en kunt aangeven hoe u uw meldingen ontvangt.
+Dit opent het **venster van de voorkeur van het Experience Cloud**, waar u uw berichtabonnementen kunt bepalen en hoe u uw berichten ontvangt.
 
 ### Abonnementen {#subscriptions}
 
 In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en welke meldingen.
 
-![Abonnementen op meldingen](/help/assets/notifications-subscriptions.png)
+![ abonnementen van het Bericht ](/help/assets/notifications-subscriptions.png)
 
-Standaard ontvangt u alle meldingen voor alle producten. Klikken op **Aanpassen** naast een product om de typen meldingen te definiëren die u voor dat product ontvangt.
+Standaard ontvangt u alle meldingen voor alle producten. Klik op **aanpassen** naast een product om de soorten berichten te bepalen u voor dat product ontvangt.
 
-![Aanpassing van berichtabonnement](/help/assets/notifications-subscriptions-customize.png)
+![ aanpassing van het abonnement van het Bericht ](/help/assets/notifications-subscriptions-customize.png)
 
 ### Prioriteit {#priority}
 
-Prioritaire waarschuwingen worden gemarkeerd met een **HOOG** -tag en kan worden geconfigureerd om uitsluitend als waarschuwing te worden ontvangen. In de **Prioriteit** kunt u opgeven welke categorieën als prioritaire meldingen worden beschouwd.
+Het prioritaire alarm zal met a **HOGE** markering worden gemerkt en kan worden gevormd om uitsluitend als alarm worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
 
-![Meldingsprioriteit](/help/assets/notifications-priority.png)
+![ prioriteit van het Bericht ](/help/assets/notifications-priority.png)
 
 Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die als prioriteit worden aangemerkt. Klik op de X naast de categorienamen om deze te verwijderen.
 
 ### Waarschuwingen {#alerts}
 
-Er worden enkele seconden waarschuwingen weergegeven in de rechterbovenhoek van het venster. Gebruik de **Waarschuwingen** in deze sectie om te definiëren voor welke meldingen u waarschuwingen ontvangt.
+Er worden enkele seconden waarschuwingen weergegeven in de rechterbovenhoek van het venster. Gebruik de **sectie van Alarm** om te bepalen voor welke berichten u alarm ontvangt.
 
-![Meldingswaarschuwingen](/help/assets/notifications-alerts.png)
+![ alarm van het Bericht ](/help/assets/notifications-alerts.png)
 
 U kunt het gedrag van de waarschuwingen definiëren.
 
-* **Waarschuwingen weergeven voor** - Definieert de typen meldingen die waarschuwingen activeren
-* **Waarschuwingen moeten op het scherm blijven staan totdat ik ze afsluit** - Controleert of de waarschuwingen zouden moeten voortbestaan tenzij u hen actief ontslaat
-* **Duur** - Hiermee bepaalt u hoe lang de waarschuwing op het scherm moet blijven als u niet hebt gekozen dat deze op het scherm moet blijven.
+* **toon alarm voor** - bepaalt de soorten berichten die alarm teweegbrengen
+* **Alarm zou op het scherm moeten blijven tot ik hen** ontvang - Controles als het alarm zou moeten voortbestaan tenzij u hen actief ontslaat
+* **Duur** - bepaalt hoe lang het alarm op het scherm zou moeten blijven als u niet hebt gekozen dat zij op het scherm zouden moeten blijven.
 
 ### E-mails {#emails}
 
-Meldingen zijn beschikbaar in de webgebruikersinterface van Adobe [!UICONTROL Experience Cloud] oplossingen. U kunt ervoor kiezen deze meldingen via e-mail te verzenden in het dialoogvenster **E-mails** sectie.
+Meldingen zijn beschikbaar in de webgebruikersinterface voor alle Adobe [!UICONTROL Experience Cloud] -oplossingen. U kunt voor deze berichten ook kiezen om door e-mail in de **E-mail** sectie worden verzonden.
 
-![E-mailberichten](/help/assets/notifications-emails.png)
+![ E-mails van het Bericht ](/help/assets/notifications-emails.png)
 
 Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
 
@@ -94,4 +94,4 @@ Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
 * Dagelijks
 * Wekelijks
 
-Wanneer **Directe meldingen** wordt gekozen, worden e-mails onmiddellijk verzonden voor elke melding. Voor **Dagelijks overzicht** en **Wekelijks overzicht** U kunt kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.
+Wanneer **Onmiddellijke berichten** wordt gekozen, worden de e-mails verzonden onmiddellijk voor elk bericht. Voor **Dagelijkse samenvatting** en **Weekse samenvatting** kunt u kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.

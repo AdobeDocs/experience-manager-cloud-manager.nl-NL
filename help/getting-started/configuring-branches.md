@@ -4,7 +4,7 @@ description: Leer hoe te opstelling uw eerste tak in git en hoe het door de pijp
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe te opstelling uw eerste tak in git en hoe het door de pijpleiding CI/CD
 
 ## De eerste vertakking instellen in Git {#setting-up-your-first-branch-in-git}
 
-Een enkele, aanvankelijk lege git-opslagplaats [is provisioned](/help/requirements/environment-provisioning.md) voor elk programma dat in Cloud Manager wordt gestart. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. De beste manier is om `main` als de naam van deze vertakking. Dit is handig het standaardgedrag van it-clients wanneer u nieuwe projecten instelt.
+Één enkele, aanvankelijk lege, git bewaarplaats [ wordt provisioned ](/help/requirements/environment-provisioning.md) voor elk programma op boord gebracht in Cloud Manager. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Dit is handig het standaardgedrag van it-clients wanneer u nieuwe projecten instelt.
 
 Wanneer u bijvoorbeeld een nieuw project instelt, voert u een set opdrachten uit die vergelijkbaar zijn met de volgende:
 
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Het is geen vereiste om de bevel-lijn cliënt te gebruiken. Er zijn een verscheidenheid van grafische git cliënten beschikbaar of als standalone toepassingen of als deel van een geïntegreerde ontwikkelomgeving (winde) zoals Eclipse of IntelliJ. Zolang de clienttoepassing ondersteuning biedt voor toegang met HTTPS, moet deze compatibel zijn met [!UICONTROL Cloud Manager].
+>Het is geen vereiste om de bevel-lijn cliënt te gebruiken. Er zijn een verscheidenheid van grafische git cliënten beschikbaar of als standalone toepassingen of als deel van een geïntegreerde ontwikkelomgeving (winde) zoals Eclipse of IntelliJ. Zolang de clienttoepassing het gebruik van HTTPS ondersteunt, moet deze compatibel zijn met [!UICONTROL Cloud Manager] .
 
 ## De eerste vertakking duwen {#pushing-your-first-branch}
 
-Als u ten minste één revisie hebt toegewezen, kunt u de opdracht [!UICONTROL Cloud Manager] opbergplaats als een externe opslagplaats en duw vervolgens uw verplichtingen erop.
+Nadat u ten minste één revisie hebt toegewezen, kunt u de [!UICONTROL Cloud Manager] -opslagplaats als een externe opslagplaats toevoegen en vervolgens uw verplichtingen erop toepassen.
 
 ```shell
 $ git remote add adobe <url>
@@ -70,12 +70,12 @@ To <url>
 
 >[!NOTE]
 >
->De specifieke URL, samen met uw referenties, wordt door uw Succesengineering van de Klant tijdens [!UICONTROL Cloud Manager] aan boord.
+>De specifieke URL, samen met uw referenties, wordt tijdens [!UICONTROL Cloud Manager] on-boarding door de Success Engineering van de Klant aan uw computer verstrekt.
 
 ## Aanvullende vertakkingen {#additional-branches}
 
-Eén `main` voor zeer eenvoudige projecten kan een bijkantoor volstaan , maar in de meeste gevallen is een meer complexe vertakkingsstrategie vereist . Vele klanten volgen een proces waar de de ontwikkelingsactiviteiten van dag tot dag op een tak worden uitgevoerd genoemd `develop` en de ontwikkelingstak wordt samengevoegd in de `main` vertakking wanneer het tijd voor een plaatsing is.
+Een enkele `main` -vertakking kan voldoende zijn voor zeer eenvoudige projecten, maar in de meeste gevallen is een complexere vertakkingsstrategie vereist. Veel klanten volgen een proces waarbij de ontwikkelingsactiviteiten van dag tot dag worden uitgevoerd op een vertakking die `develop` wordt genoemd en de ontwikkeltak in de `main` tak wordt samengevoegd wanneer het tijd voor een plaatsing is.
 
 >[!TIP]
 >
->Als u de algemene opdrachten voor de it wilt weergeven, raadpleegt u de [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Om gemeenschappelijke git bevelen te bekijken, zie het [ Punt van de Controle van de Git ](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).

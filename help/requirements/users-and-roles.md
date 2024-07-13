@@ -4,15 +4,15 @@ description: Leer hoe u de Admin Console gebruikt om gebruikers en rollen toe te
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 5%
+source-wordcount: '729'
+ht-degree: 4%
 
 ---
 
 
 # Gebruikers en rollen toevoegen {#add-users-and-roles}
 
-Veel functies in [!UICONTROL Cloud Manager] specifieke rechten vereisen om te gebruiken. Zo kunnen alleen bepaalde gebruikers de prestatiekernindicatoren (KPI&#39;s) voor een programma instellen. Deze toestemmingen worden logisch gezien gegroepeerd in rollen.
+Voor veel functies in [!UICONTROL Cloud Manager] zijn specifieke machtigingen vereist. Zo kunnen alleen bepaalde gebruikers de prestatiekernindicatoren (KPI&#39;s) voor een programma instellen. Deze toestemmingen worden logisch gezien gegroepeerd in rollen.
 
 [!UICONTROL Cloud Manager] definieert momenteel vier rollen voor gebruikers die de beschikbaarheid van specifieke functies bepalen:
 
@@ -23,7 +23,7 @@ Veel functies in [!UICONTROL Cloud Manager] specifieke rechten vereisen om te ge
 
 >[!NOTE]
 >
->Te gebruiken [!UICONTROL Cloud Manager], hebt u een Adobe ID en de Adobe Managed Services-productcontext nodig.
+>Als u [!UICONTROL Cloud Manager] wilt gebruiken, hebt u een Adobe ID en de Adobe Managed Services-productcontext nodig.
 
 ## Roldefinities {#role-definitions}
 
@@ -33,22 +33,22 @@ Deze lijst vat de rollen samen.
 |--- |--- |
 | Business Owner | Deze gebruiker is verantwoordelijk voor het definiëren van KPI&#39;s, het goedkeuren van productieimplementaties en het overschrijven van belangrijke 3-tivelige fouten indien nodig. |
 | Program Manager | Deze gebruiker gebruikt [!UICONTROL Cloud Manager] om teamopstelling uit te voeren, status te herzien, KPIs te bekijken, en kan belangrijke 3-rij mislukkingen goedkeuren wanneer noodzakelijk. |
-| Deployment Manager | Deze gebruiker beheert implementatiebewerkingen en gebruikt [!UICONTROL Cloud Manager] om het opvoeren/productie plaatsingen uit te voeren, CI/CD pijpleidingen uit te geven, belangrijke 3-rij mislukkingen goed te keuren wanneer nodig, en tot de git bewaarplaats te kunnen toegang hebben. |
-| Developer | Deze gebruiker ontwikkelt en test de code van de douanetoepassing en hoofdzakelijk gebruikt [!UICONTROL Cloud Manager] om de implementatiestatus te bekijken en toegang te krijgen tot de git-opslagplaats voor codeverplichtingen. |
-| Klantsuccesvolle technicus | Deze gebruiker steunt over het algemeen klantensucces voor klanten AMS en wisselt met [!UICONTROL Cloud Manager] voor het uitvoeren van implementaties die toezicht op de bedrijfsorganisatie vereisen. |
-| Inhoudsauteur | Deze gebruiker communiceert doorgaans niet met [!UICONTROL Cloud Manager] maar kan [!UICONTROL Cloud Manager] programmaschakelaar om tot AEM toegang te hebben. |
+| Deployment Manager | Deze gebruiker beheert implementatiebewerkingen en gebruikt [!UICONTROL Cloud Manager] om testimplementaties/productieimplementaties uit te voeren, CI-/CD-pijpleidingen te bewerken, belangrijke fouten met drie lagen indien nodig goed te keuren en toegang te krijgen tot de git-opslagruimte. |
+| Developer | Deze gebruiker ontwikkelt en test de code van de douanetoepassing en gebruikt hoofdzakelijk [!UICONTROL Cloud Manager] om plaatsingsstatus te bekijken en kan tot de git bewaarplaats voor codeverplichtingen toegang hebben. |
+| Klantsuccesvolle technicus | Deze gebruiker ondersteunt doorgaans het succes van de klant voor AMS-klanten en communiceert met [!UICONTROL Cloud Manager] voor het uitvoeren van implementaties die CSE-toezicht vereisen. |
+| Inhoudsauteur | Deze gebruiker communiceert doorgaans niet met [!UICONTROL Cloud Manager] , maar gebruikt mogelijk de programmaschakeloptie [!UICONTROL Cloud Manager] om toegang te krijgen tot AEM. |
 
 >[!NOTE]
 >
->De ontwikkelaar persona in de Admin Console heeft geen verband met de rol van de ontwikkelaar in [!UICONTROL Cloud Manager].
+>De ontwikkelaarspersoon in de Admin Console heeft geen verband met de rol van de Ontwikkelaar in [!UICONTROL Cloud Manager] .
 
 ## Admin Console gebruiken om een profiel te maken {#using-admin-console-to-create-a-profile}
 
-[!UICONTROL Cloud Manager] rollen worden beheerd van de Admin Console. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel.
+[!UICONTROL Cloud Manager] rollen worden beheerd vanuit de Admin Console. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel toe te voegen.
 
-De Admin Console is een centrale plaats voor het beheren van uw rechten van de Adobe over uw volledige organisatie. Raadpleeg de documentatie voor meer informatie over de Adobe Admin Console [Admin Console.](https://helpx.adobe.com/nl/enterprise/using/admin-console.html)
+De Admin Console is een centrale plaats voor het beheren van uw rechten van de Adobe over uw volledige organisatie. Meer over Adobe Admin Console leren, zie de documentatie voor [ Admin Console.](https://helpx.adobe.com/nl/enterprise/using/admin-console.html)
 
-Om de aangewezen op rol-gebaseerde toestemmingen te verstrekken aan [!UICONTROL Cloud Manager] gebruikers, moet een beheerder in de organisatie van de klant nieuwe productprofielen tot stand brengen onder [!UICONTROL AEM Managed Services] productcontext die overeenkomt met elk van de vier [!UICONTROL Cloud Manager] rollen:
+Om [!UICONTROL Cloud Manager] -gebruikers de juiste op rollen gebaseerde machtigingen te kunnen geven, moet een beheerder in de organisatie van de klant nieuwe productprofielen maken onder de [!UICONTROL AEM Managed Services] productcontext die overeenkomt met elk van de vier [!UICONTROL Cloud Manager] -rollen:
 
 * Business Owner
 * Deployment Manager
@@ -57,62 +57,62 @@ Om de aangewezen op rol-gebaseerde toestemmingen te verstrekken aan [!UICONTROL 
 
 Met de Admin Console kunt u gebruikers/groepen maken of toevoegen aan deze productprofielen.
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` .](https://adminconsole.adobe.com)
 
-1. Klik op de knop **Overzicht** klikt u op het product dat u wilt wijzigen op het tabblad **Producten en diensten** kaart. Als het daar niet wordt vermeld, gebruik **Producten** om het product te zoeken en erop te klikken.
+1. Klik op het **Overzicht** lusje, klik op het product u op de **Producten en de diensten** kaart wilt wijzigen. Als het daar niet vermeld is, gebruik het **Producten** lusje om van het product de plaats te bepalen en het te klikken.
 
-   ![Overzicht van beheerconsole, tabblad](/help/assets/admin-console-overview.png)
+   ![ Admin consoleoverzicht tabel ](/help/assets/admin-console-overview.png)
 
-1. Op de **Producten** klikt u op de omgeving waaraan u gebruikers/groepen wilt toevoegen aan productprofielen.
+1. Op het **lusje van Producten**, klik het milieu waarvoor u gebruikers/groepen aan productprofielen wilt toevoegen.
 
-   ![Tabblad Admin Console-producten](/help/assets/admin-console-product.png)
+   ![ Admin consoleproducten tabel ](/help/assets/admin-console-product.png)
 
-1. Op de **Productprofiel** tabblad van het product klikt u op **Nieuw profiel** om een nieuw profiel toe te voegen.
+1. Op het **lusje van het Profiel van het 0} Product {van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
 
-   ![Nieuw profiel](/help/assets/admin-console-product-profiles.png)
+   ![ Nieuw profiel ](/help/assets/admin-console-product-profiles.png)
 
-1. Geef informatie voor het instellen van een nieuwe rol voor [!UICONTROL Cloud Manager].
+1. Geef de informatie op om een nieuwe rol in te stellen voor [!UICONTROL Cloud Manager] .
 
-   * **Profielnaam** - de **Profielnaam** kan om het even wat zijn, hoewel om verwarring te vermijden het wordt geadviseerd om de waarden in **Aanbevolen profielnaam** kolom.
-   * **Weergavenaam** - de **Weergavenaam** moet de technische waarde zijn die wordt gedefinieerd door [!UICONTROL Cloud Manager] (zie de volgende tabel).
-   * **Machtigingengroep** - U kunt een machtigingengroep voor het profiel kiezen (niet altijd beschikbaar).
+   * **de Naam van het Profiel** - de **Naam van het Profiel** kan om het even wat zijn, hoewel om verwarring te vermijden wordt het geadviseerd om de waarden in de **Geadviseerde kolom van de Naam van het Profiel** te gebruiken.
+   * **Naam van de Vertoning** - de **Naam van de Vertoning** moet de technische waarde zijn die door [!UICONTROL Cloud Manager] wordt bepaald (zie de volgende lijst).
+   * **Groep van de Toestemming** - u kunt een toestemmingsgroep voor het profiel (niet altijd beschikbaar) kiezen.
 
-   ![Een nieuw profiel maken](/help/assets/screen_shot_2018-05-04at171819.png)
+   ![ Creërend een nieuw profiel ](/help/assets/screen_shot_2018-05-04at171819.png)
 
    | Rol | Weergavenaam (vereist) | Aanbevolen profielnaam |
    |---|---|---|
    | Business Owner | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol bedrijfseigenaar |
-   | Deployment Manager | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van implementatiebeheer |
+   | Deployment Manager | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van Deployment Manager |
    | Developer | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van ontwikkelaar |
-   | Program Manager | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van programmamanager |
+   | Program Manager | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van Program Manager |
 
 
-1. Klikken **Gereed** om het nieuwe profiel op te slaan.
+1. Klik **Gedaan** om het nieuwe profiel te bewaren.
 
 ## Profielen toewijzen aan gebruikers of gebruikersgroepen {#assign-profiles}
 
 Nadat u productprofielen hebt gemaakt, kunt u gebruikers of gebruikersgroepen aan deze profielen toewijzen.
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` .](https://adminconsole.adobe.com)
 
-1. Kies in de Admin Console de optie **Gebruikers** tab.
+1. In de Admin Console, kies de **Gebruikers** tabel.
 
-   ![Tabblad Gebruikers](/help/assets/admin-console-users.png)
+   ![ Gebruikers tabel ](/help/assets/admin-console-users.png)
 
-1. Klikken op **Gebruikers** in het linkernavigatievenster en klik vervolgens op een gebruiker om deze te wijzigen.
+1. Klik op **Gebruikers** in het linkernavigatievenster en klik dan op een gebruiker om het te wijzigen.
 
-1. Klik op de knop voor ovaal in het dialoogvenster **Producten** en selecteert u **Bewerken**.
+1. Klik op de ellipsknoop in de **Producten** sectie en selecteer **uitgeven**.
 
-   ![Gebruiker bewerken](/help/assets/admin-console-edit-user.png)
+   ![ geef gebruiker ](/help/assets/admin-console-edit-user.png) uit
 
-1. In de **Producten en gebruikersgroepen bewerken** klikt u op de plusknop en selecteert u de profielen die u aan de gebruiker wilt toewijzen.
+1. In **geef producten en gebruikersgroepen** dialoog uit, klik de plus knoop en selecteer de profielen om aan de gebruiker toe te wijzen.
 
-   * Als de gebruiker reeds aan de rollen wordt toegewezen, zal de plus knoop een Edit knoop (een potlood) zijn, maar werkt de zelfde manier.
+   * Als de gebruiker reeds aan de rollen wordt toegewezen, zal de plus knoop een uitgeven knoop (een potlood) zijn, maar werkt de zelfde manier.
 
-   ![Producten en gebruikersgroepen bewerken](/help/assets/admin-console-edit-products-and-user-groups.png)
+   ![ geef producten en gebruikersgroepen ](/help/assets/admin-console-edit-products-and-user-groups.png) uit
 
-1. Klikken **Opslaan** om de profielen op te slaan naar de gebruiker.
+1. Klik **sparen** om de profielen aan de gebruiker te bewaren.
 
-Herhaal dezelfde stappen om profielen toe te wijzen aan gebruikersgroepen, maar selecteer **Gebruikersgroepen** van het linkernavigatievenster op **Gebruikers** tab. Klik op een gebruikersgroep en selecteer de optie **Toegewezen productprofielen** en klik op **Productprofiel toewijzen** om profielen toe te wijzen.
+Herhaal de zelfde stappen om profielen aan gebruikersgroepen toe te wijzen, maar selecteer **Groepen van de Gebruiker** van het linkernavigatievenster op het **Gebruikers** lusje. Klik op een gebruikersgroep en selecteer **Toegewezen Profielen van het Product** lusje en klik **toewijzen het Profiel van het Product** om profielen toe te wijzen.
 
-![Profielen toewijzen aan groep](/help/assets/admin-console-edit-user-groups.png)
+![ wijs profielen aan groep ](/help/assets/admin-console-edit-user-groups.png) toe

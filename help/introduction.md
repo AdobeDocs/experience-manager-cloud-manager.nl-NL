@@ -4,7 +4,7 @@ description: Begin hier om Cloud Manager for Adobe Managed Services (AMS) te ler
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1276'
 ht-degree: 3%
 
 ---
@@ -29,9 +29,9 @@ Begin hier om Cloud Manager for Adobe Manage Services (AMS) te leren kennen en h
 >
 >In deze documentatie worden specifiek de functies en functies van Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De equivalente documentatie voor AEM as a Cloud Service is te vinden in de [AEM as a Cloud Service documentatie.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [ documentatie van AEM as a Cloud Service worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
 
-Met Cloud Manager beschikt uw ontwikkelteam over de volgende functies:
+Met Cloud Manager profiteert uw ontwikkelingsteam van de volgende functies:
 
 * Doorlopende integratie/doorlopende levering (CI/CD) van code om de tijd tot de markt te beperken van maanden/weken tot dagen/uren
 
@@ -39,41 +39,41 @@ Met Cloud Manager beschikt uw ontwikkelteam over de volgende functies:
 
 * API-connectiviteit als aanvulling op bestaande DevOps-processen
 
-* Autoscaling die intelligent de behoefte aan verhoogde capaciteit ontdekt en automatisch extra Verzender/het publiceren segmenten online brengt
+* Autoscaling die intelligent de behoefte aan verhoogde capaciteit ontdekt en automatisch extra Dispatcher/het publiceren segmenten online brengt
 
-Dit beeld illustreert de CI/CD processtroom in [!UICONTROL Cloud Manager]:
+Deze afbeelding illustreert de verwerkingsstroom CI/CD die wordt gebruikt in [!UICONTROL Cloud Manager]:
 
-![Cd/cd-stroom](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![ CI/CD stroom ](/help/assets/screen_shot_2018-05-12at73843pm.png)
 
 ## Belangrijke functies in [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
-Hieronder vindt u een dieper overzicht van de belangrijkste functies van Cloud Manager.
+Hieronder volgt een dieper overzicht van de belangrijkste functies van Cloud Manager.
 
 ### Self-Service Interface {#self-service-interface}
 
-De gebruikersinterface (UI) voor [!UICONTROL Cloud Manager] kunt u eenvoudig toegang krijgen tot de cloudomgeving en de CI/CD-pijplijn voor uw Adobe Experience Manager-toepassingen en deze beheren.
+Met de gebruikersinterface (UI) voor [!UICONTROL Cloud Manager] hebt u eenvoudig toegang tot en beheer van de cloudomgeving en de CI/CD-pijplijn voor uw Adobe Experience Manager-toepassingen.
 
 U definieert toepassingsspecifieke prestatiekernindicatoren (KPI&#39;s) (zoals piekpaginaweergaven per minuut en verwachte responstijd voor een paginabelasting) die de basis vormen voor het meten van een geslaagde implementatie. Rollen en machtigingen voor verschillende teamleden kunnen eenvoudig worden gedefinieerd. De zelfbedieningsinterface plaatst controle in uw handen, maar het biedt ook verbindingen aan beste praktijkmiddelen en toegang tot deskundigen binnen Adobe aan die de noodzakelijke begeleiding kunnen verstrekken zoals nodig.
 
-Verkennen en beginnen met [!UICONTROL Cloud Manager]De gebruikersinterface van het document, zie [Eerste aanmelding.](/help/getting-started/first-time-login.md)
+Om te onderzoeken en begonnen te worden met [!UICONTROL Cloud Manager]&#39;s UI, zie het document [ Eerste Login van de Tijd.](/help/getting-started/first-time-login.md)
 
 ### CI/CD Pipet {#ci-cd-pipeline}
 
-Een van de belangrijkste mogelijkheden van [!UICONTROL Cloud Manager] is de mogelijkheid om een geoptimaliseerde CI/CD-pijplijn uit te oefenen om de levering van aangepaste code of updates te versnellen, zoals het toevoegen van nieuwe componenten op de website.
+Een van de belangrijkste mogelijkheden van [!UICONTROL Cloud Manager] is de mogelijkheid om een geoptimaliseerde CI/CD-pijpleiding uit te voeren om de levering van aangepaste code of updates te versnellen, zoals het toevoegen van nieuwe componenten op de website.
 
-Via de [!UICONTROL Cloud Manager] UI, kunt u uw CI/CD pijpleiding vormen en schoppen. Als deel van deze pijpleiding, wordt een grondig codescannen uitgevoerd om ervoor te zorgen dat slechts de toepassingen van uitstekende kwaliteit door aan het productiemilieu overgaan.
+Via de interface van [!UICONTROL Cloud Manager] kunt u de I/CD-pijpleiding configureren en afschoppen. Als deel van deze pijpleiding, wordt een grondig codescannen uitgevoerd om ervoor te zorgen dat slechts de toepassingen van uitstekende kwaliteit door aan het productiemilieu overgaan.
 
-Meer leren over het vormen pijpleiding van [!UICONTROL Cloud Manager]s UI, zie de documenten [Productiepijpleidingen configureren](/help/using/production-pipelines.md) en [Niet-productiepijpleidingen configureren.](/help/using/non-production-pipelines.md)
+Om meer over het vormen van pijpleiding van [!UICONTROL Cloud Manager] UI te leren, zie de documenten [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen.](/help/using/non-production-pipelines.md)
 
 ### Flexibele implementatiemodi {#flexible-deployment-modes}
 
-[!UICONTROL Cloud Manager] biedt flexibele en configureerbare plaatsingswijzen zodat kunt u ervaringen op veranderende bedrijfsvereisten leveren.
+[!UICONTROL Cloud Manager] biedt flexibele en configureerbare implementatiemodi, zodat u ervaringen kunt bieden op basis van veranderende bedrijfsbehoeften.
 
 Met een automatische trekkerwijze, wordt de code automatisch opgesteld aan een milieu dat op specifieke gebeurtenissen zoals code wordt gebaseerd begaat. U kunt codeplaatsingen tijdens gespecificeerde tijdkaders, zelfs buiten kantooruren ook plannen.
 
 Onafhankelijk van de plaatsingstrekker, worden de kwaliteitscontroles altijd uitgevoerd als deel van CI/CD pijpleiding uitvoering telkens als een plaatsing wordt teweeggebracht. De controles van de kwaliteit omvatten, code inspectie, veiligheidstests, en prestaties het testen, allen die uit de doos zonder inspanning worden geleverd van u of uw partners wordt vereist.
 
-Meer informatie over het opstellen van code en kwaliteitscontroles, zie het document [Code implementeren.](/help/using/code-deployment.md)
+Meer leren over het opstellen van code en kwaliteitscontroles, zie het document [ die Code opstellen.](/help/using/code-deployment.md)
 
 ## Optionele functies in Cloud Manager {#optional-features-in-cloud-manager}
 
@@ -81,11 +81,11 @@ Cloud Manager biedt extra, geavanceerde functies die gunstig kunnen zijn voor uw
 
 ### Automatisch schalen {#autoscaling}
 
-Wanneer de productieomgeving te kampen heeft met een ongewoon hoge belasting, [!UICONTROL Cloud Manager] detecteert de behoefte aan extra capaciteit en brengt automatisch extra capaciteit online met behulp van de functie voor automatisch schalen.
+Wanneer de productieomgeving te maken heeft met een ongewoon hoge belasting, detecteert [!UICONTROL Cloud Manager] de behoefte aan extra capaciteit en wordt automatisch extra capaciteit online beschikbaar via de functie voor automatisch schalen.
 
-In dat geval [!UICONTROL Cloud Manager] activeert automatisch het inrichtingsproces voor automatisch schalen, verzendt een melding van de gebeurtenis voor automatisch schalen en plaatst binnen enkele minuten extra capaciteit online. De extra capaciteit wordt geleverd in de productieomgeving, in dezelfde regio of regio&#39;s en overeenkomstig dezelfde systeemspecificaties als de actieve Dispatcher/publishing-knooppunten.
+In een dergelijke gebeurtenis activeert [!UICONTROL Cloud Manager] automatisch het inrichtingsproces voor automatisch schalen, wordt een melding van de gebeurtenis voor automatisch schalen verzonden en wordt binnen enkele minuten extra capaciteit online gezet. De extra capaciteit wordt geleverd in de productieomgeving, in dezelfde regio of regio&#39;s en overeenkomstig dezelfde systeemspecificaties als de lopende Dispatcher/publicatieknooppunten.
 
-De functie voor automatisch schalen is alleen van toepassing op de laag Dispatcher/publishing en wordt uitgevoerd met een horizontale schaalmethode, met minimaal één extra segment van een paar Dispatcher/publishing tot maximaal tien segmenten. Eventuele extra capaciteit die wordt geleverd, wordt handmatig geschaald binnen een periode van tien werkdagen, zoals bepaald door de CSE (Customer Success Engineer).
+De functie voor automatisch schalen is alleen van toepassing op de Dispatcher-/publicatielaag en wordt uitgevoerd met een horizontale schaalmethode, met minimaal één extra segment van een Dispatcher-/publicatiepaar tot maximaal tien segmenten. Eventuele extra capaciteit die wordt geleverd, wordt handmatig geschaald binnen een periode van tien werkdagen, zoals bepaald door de CSE (Customer Success Engineer).
 
 >[!NOTE]
 >
@@ -97,10 +97,10 @@ Blauwe/groene implementatie is een techniek die downtime en risico&#39;s vermind
 
 Op elk ogenblik, is slechts één van de milieu&#39;s levend, met het levende milieu dat al productieverkeer dient. Over het algemeen is blauw de huidige live omgeving en groen is inactief.
 
-* Blauwe/groene implementatie is een add-on bij Ci/cd-pijpleidingen van Cloud Manager waarin een tweede set groene publicatie- en Dispatcher-instanties wordt gemaakt en gebruikt voor implementaties. De groene instanties worden vervolgens gekoppeld aan het taakverdelingsmechanisme voor de productie en de oude (blauwe) exemplaren worden verwijderd en beëindigd.
-* Deze implementatie van blauw/groen behandelt instanties als voorbijgaand en elke herhaling van een blauwe/groene pijpleiding zal tot een nieuwe reeks publiceren en servers van de Verzender leiden.
+* Blauwe/groene implementatie is een invoegtoepassing voor Cloud Manager CI/CD-pijpleidingen waarin een tweede verzameling publicatie- en Dispatcher-instanties (groen) wordt gemaakt en gebruikt voor implementaties. De groene instanties worden vervolgens gekoppeld aan het taakverdelingsmechanisme voor de productie en de oude (blauwe) exemplaren worden verwijderd en beëindigd.
+* Deze implementatie van blauw/groen behandelt instanties als transient en elke herhaling van een blauwe/groene pijpleiding zal tot een nieuwe reeks publiceren en Dispatcher servers leiden.
 * Als onderdeel van de installatie wordt een groene taakverdelingsmechanisme gemaakt. Dit taakverdelingsmechanisme wordt nooit gewijzigd en verwijst naar de groene of &quot;test&quot;-URL.
-* Tijdens een blauwe/groene implementatie wordt een exacte replica van de bestaande publicatie-/Dispatcher-lagen gemaakt.
+* Tijdens een blauwe/groene implementatie wordt een exacte replica van de bestaande publiceer-/Dispatcher-lagen gemaakt.
 
 #### Blauwe/groene implementatiestroom {#flow}
 
@@ -127,9 +127,9 @@ Als u in blauwe/groene plaatsing geinteresseerd bent, te overwegen gelieve de vo
 
 #### Eisen en beperkingen {#limitations}
 
-* Blauw/groen is alleen beschikbaar voor publicatie/verzender-paren.
-* De paren van de Verzending van de voorproef/publiceren maken geen deel uit van blauwe/groene plaatsingen.
-* Elk paar Dispatcher/publish is gelijk aan elk ander paar Dispatcher/publish.
+* Blauw/groen is alleen beschikbaar voor publicatie/Dispatcher-paren.
+* Voorvertoning van Dispatcher/publicatieparen maakt geen deel uit van blauw/groene implementaties.
+* Elk Dispatcher/publicatiepaar is identiek aan elk ander Dispatcher/publicatiepaar.
 * Blauw/groen is alleen beschikbaar in de productieomgeving.
 * Blauw/groen is zowel beschikbaar in AWS als in Azure.
-* Blauw/groen is niet alleen beschikbaar voor klanten met middelen.
+* Blauw/groen is niet alleen beschikbaar voor klanten van Assets.

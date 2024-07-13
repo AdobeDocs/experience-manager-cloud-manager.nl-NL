@@ -16,28 +16,28 @@ Leer hoe de controles GitHub PRs voor uw privé bewaarplaatsen annoteert om u te
 
 ## Overzicht {#overview}
 
-Als u [privéopslagplaatsen](private-repositories.md) voor uw programma van de Manager van de Wolk, worden de controles in GitHub automatisch in werking gesteld voor elk trekkingsverzoek. Deze worden voorzien van nuttige informatie om u te helpen om het even welke kwesties met uw code zo snel mogelijk begrijpen.
+Als u [ privé bewaarplaatsen ](private-repositories.md) voor uw programma van Cloud Manager gebruikt, worden de controles in GitHub automatisch in werking gesteld voor elk trekkingsverzoek. Deze worden voorzien van nuttige informatie om u te helpen om het even welke kwesties met uw code zo snel mogelijk begrijpen.
 
-![Voorbeeld van GitHub-controleannotaties](assets/github-check-annotations.png)
+![ Voorbeeld van GitHub controleannotaties ](assets/github-check-annotations.png)
 
-[Codekwaliteit](/help/using/code-quality-testing.md) problemen ontdekt door [SonarQube](/help/using/custom-code-quality-rules.md) duidelijk zijn vermeld.
+{de kwaliteit van de 0} Code ](/help/using/code-quality-testing.md) kwesties die door [ worden ontdekt SonarQube ](/help/using/custom-code-quality-rules.md) zijn duidelijk vermeld.[
 
-![Voorbeeld van een code-uitgifteaantekening](assets/github-check-annotations-example.png)
+![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example.png)
 
 De exacte coderegel met de uitgave is opgegeven en u kunt erop klikken om de relevante code weer te geven. Deze annotaties worden gegeven voor alle code kwesties, niet alleen die veranderd in het trekkingsverzoek.
 
-![Voorbeeld van een code-uitgifteaantekening](assets/github-check-annotations-example-code.png)
+![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example-code.png)
 
-Alle geannoteerde regels worden samengevoegd op de **Gewijzigde bestanden** op het trekkingsverzoek van GitHub. Annotaties voor bestanden die niet zijn gewijzigd in de pull-aanvraag, worden in hun eigen sectie weergegeven.
+Alle geannoteerde lijnen worden samengevoegd op het **Gewijzigde Dossiers** lusje op het trekkingsverzoek GitHub. Annotaties voor bestanden die niet zijn gewijzigd in de pull-aanvraag, worden in hun eigen sectie weergegeven.
 
-![Voorbeeld van notities op tabblad gewijzigd bestand](assets/github-check-annotations-files-changed.png)
+![ Voorbeeld van aantekeningen op veranderde dossiers tabel ](assets/github-check-annotations-files-changed.png)
 
 ## Codekwaliteitspijplijnen {#code-quality-pipelines}
 
-De [codekwaliteit](/help/using/code-quality-testing.md) de resultaten zijn ook zichtbaar in de pijplijn die automatisch wordt geactiveerd door Cloud Manager onder aan het dialoogvenster **Controles** tab. Het is ook toegankelijk vanuit de **Details** van de controle van het trekkingsverzoek.
+De [ resultaten van de codekwaliteit ](/help/using/code-quality-testing.md) zijn ook zichtbaar in de pijpleiding die automatisch door Cloud Manager bij de bodem van de **Controles** tabel wordt teweeggebracht. Het is ook toegankelijk van de **Details** van de controle van het trekkingsverzoek.
 
-![Voorbeeld van annotaties](assets/github-check-annotations-code-quality.png)
+![ Voorbeeld van annotaties ](assets/github-check-annotations-code-quality.png)
 
-![Voorbeeld van annotaties](assets/github-check-annotations-code-quality-2.png)
+![ Voorbeeld van annotaties ](assets/github-check-annotations-code-quality-2.png)
 
-U kunt de problemen ook visualiseren in de vorm van een CSV. Dit kan worden opgehaald door [de details van de uitvoering van de pijplijn weergeven in Cloud Manager.](/help/using/managing-pipelines.md)
+U kunt de problemen ook visualiseren in de vorm van een CSV. Dit kan door [ worden teruggewonnen het bekijken van de details van de pijpleidingsuitvoering in Cloud Manager.](/help/using/managing-pipelines.md)

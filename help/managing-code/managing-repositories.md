@@ -1,6 +1,6 @@
 ---
-title: Opslagplaatsen beheren in Cloud Manager
-description: Leer hoe u uw git-opslagruimten maakt, weergeeft en bewerkt in Cloud Manager.
+title: Opslagplaatsen in Cloud Manager beheren
+description: Leer hoe u uw git-opslagruimten in Cloud Manager maakt, weergeeft en bewerkt.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
 workflow-type: tm+mt
@@ -10,97 +10,97 @@ ht-degree: 0%
 ---
 
 
-# Opslagplaatsen voor Cloud Manager {#cloud-manager-repos}
+# Cloud Manager-opslagplaatsen {#cloud-manager-repos}
 
-Leer hoe u uw git-opslagruimten maakt, weergeeft en bewerkt in Cloud Manager.
+Leer hoe u uw git-opslagruimten in Cloud Manager maakt, weergeeft en bewerkt.
 
 ## Overzicht {#overview}
 
-Opslagplaatsen worden gebruikt om de code van uw project op te slaan en te beheren met behulp van Git. Voor elk programma dat u maakt in Cloud Manager is een opslagplaats met beheerde Adobe gemaakt.
+Opslagplaatsen worden gebruikt om de code van uw project op te slaan en te beheren met behulp van Git. Voor elk programma dat u in Cloud Manager maakt, is een opslagplaats met beheerde Adobe gemaakt.
 
-U kunt desgewenst extra opslagruimten voor Adobe-beheer maken en ook uw eigen persoonlijke opslagruimten toevoegen. Alle opslagruimten die bij uw programma horen, kunnen worden weergegeven in de **Opslagplaatsen** venster.
+U kunt desgewenst extra opslagruimten voor Adobe-beheer maken en ook uw eigen persoonlijke opslagruimten toevoegen. Alle bewaarplaatsen verbonden aan uw programma kunnen in het **venster van Bewaarplaatsen** worden bekeken.
 
-In Cloud Manager gemaakte opslagruimten kunnen ook worden geselecteerd wanneer u pijpleidingen toevoegt of bewerkt. Zie [CI-CD-pijpleidingen](/help/overview/ci-cd-pipelines.md) voor meer informatie.
+In Cloud Manager gemaakte opslagplaatsen kunnen ook worden geselecteerd wanneer u pijpleidingen toevoegt of bewerkt. Zie [ CI-CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md) om meer te leren.
 
-Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [ondersteuning voor git-submodules,](git-submodules.md) veel secundaire vertakkingen kunnen tijdens de bouwperiode worden opgenomen .
+Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [ de steun van de it submodule, ](git-submodules.md) vele secundaire takken kunnen bij bouwstijltijd worden omvat.
 
 ## Venster Opslagplaatsen {#repositories-window}
 
-1. Aanmelden bij Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) en selecteert u de gewenste organisatie en het juiste programma.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **Programmaoverzicht** pagina, selecteert u de **Opslagplaatsen** tab naar **Opslagplaatsen** pagina.
+1. Van de **pagina van het Overzicht van het Programma**, selecteer het **lusje van Bewaarplaatsen** om aan de **pagina van Bewaarplaatsen** over te schakelen.
 
-1. De **Opslagplaatsen** worden alle aan uw programma gekoppelde opslagruimten weergegeven.
+1. Het **venster van Bewaarplaatsen** toont alle bewaarplaatsen verbonden aan uw programma.
 
-   ![Venster Opslagplaatsen](assets/repositories.png)
+   ![ venster van Bewaarplaatsen ](assets/repositories.png)
 
-De **Opslagplaatsen** venster bevat informatie over de opslagplaatsen:
+Het **venster van Bewaarplaatsen** verstrekt details over de bewaarplaatsen:
 
 * Het type gegevensopslagruimte
-   * **Adobe** geeft opslagruimten aan die door Adobe worden beheerd
+   * **Adobe** wijst op Adobe-geleide bewaarplaatsen
    * **GitHub** wijst op privé bewaarplaatsen GitHub die u beheert
 * Toen het werd gemaakt
 * Pijpleidingen die zijn gekoppeld aan de opslagplaats
 
 U kunt de repository selecteren in het venster en op de elliptische knop klikken om actie te ondernemen in de geselecteerde repository.
 
-* **[Branches controleren / Project maken](#check-branches)** (alleen beschikbaar voor opslagplaatsen voor Adoben)
-* **[Repository-URL kopiëren](#copy-url)**
-* **[Weergeven en bijwerken](#view-update)**
-* **[Verwijderen](#delete)**
+* **[de Tak van de Controle / leidt Project](#check-branches)** (slechts beschikbaar voor Adobe bewaarplaatsen)
+* **[Repository URL van het Exemplaar](#copy-url)**
+* **[Mening &amp; Update](#view-update)**
+* **[Schrapping](#delete)**
 
-![Handelingen in opslagplaats](assets/repository-actions.png)
+![ de acties van de Bewaarplaats ](assets/repository-actions.png)
 
 ## Opslagplaatsen toevoegen {#adding-repositories}
 
-Tik of klik op de knop **Opslagplaats toevoegen** in de **Opslagplaatsen** venster om het **Opslagplaats toevoegen** wizard.
+Tik of klik **voeg de knoop van de Bewaarplaats** in het **venster van Bewaarplaatsen** toe om **te beginnen voeg de** tovenaar van de Bewaarplaats {toe.
 
-![wizard Opslagplaats toevoegen](assets/add-repository-wizard.png)
+![ toevoegen de tovenaar van de bewaarplaats ](assets/add-repository-wizard.png)
 
-Cloud Manager ondersteunt beide opslagruimten die door Adobe worden beheerd (**Opslagplaats Adobe**) en uw eigen zelfbeheerde opslagplaatsen (**Particuliere opslagplaats**). De vereiste velden zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende documenten voor meer informatie.
+Cloud Manager steunt beide bewaarplaatsen die door Adobe (**worden beheerd de Bewaarplaats van de Adobe**) evenals uw zelf-beheerde bewaarplaatsen (**Privé Bewaarplaats**). De vereiste velden zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende documenten voor meer informatie.
 
 * [Opslagplaatsen voor Adoben toevoegen in Cloud Manager](adobe-repositories.md)
 * [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](private-repositories.md)
 
 >[!NOTE]
 >
->* Een gebruiker moet de rol hebben **Implementatiebeheer** of **Zakelijke eigenaar** om een gegevensopslagruimte te kunnen toevoegen.
+>* Een gebruiker moet de rol **Manager van de Plaatsing** of **BedrijfsEigenaar** hebben om een bewaarplaats toe te voegen.
 >* Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepaalde onderneming of IMS-organisatie.
 
 ## Repo-info openen {#repo-info}
 
-Wanneer u uw opslagruimten in de **Opslagplaatsen** venster, kunt u de details bekijken over hoe te om tot Adobe-beheerde bewaarplaatsen programmatically toegang te hebben door te tikken of te klikken **Repo-info openen** in de werkbalk.
+Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door te tikken of de **knoop van Info van de Reparatie van de Toegang** in de toolbar te klikken.
 
-![Informatie over opslagplaats](assets/access-repo-info.png)
+![ informatie van de Bewaarplaats ](assets/access-repo-info.png)
 
-De **Info opslagplaats** venster wordt geopend met de details. Zie het document voor meer informatie over het benaderen van gegevens in de repository [Toegang tot gegevens opslagplaats.](accessing-repositories.md)
+Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie gelieve het document [ Toegang hebbend tot de Informatie van de Bewaarplaats.](accessing-repositories.md)
 
 ## Branches controleren {#check-branches}
 
-De **Branches controleren / Project maken** actie voert twee functies uit afhankelijk van de staat van de bewaarplaats.
+De **Tak van de Controle / leidt de actie van het Project** voert twee functies afhankelijk van de staat van de bewaarplaats uit.
 
-* Als de opslagplaats nieuw wordt gecreeerd, leidt de actie tot een steekproefproject dat op wordt gebaseerd [het AEM project archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Als de bewaarplaats nieuw-gecreeerd is, leidt de actie tot een steekproefproject dat op [ wordt gebaseerd het AEM projectarchetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
 * Als de gegevensopslagplaats reeds het steekproefproject heeft gecreeerd, controleert het de staat van de bewaarplaats en zijn takken en meldt terug als het steekproefproject reeds bestaat.
 
-![Vertakkingen controleren, actie](assets/check-branches.png)
+![ de bijwerkingsacties van de Controle ](assets/check-branches.png)
 
 ## Repository-URL kopiëren {#copy-url}
 
-De **Repository-URL kopiëren** de actie kopieert URL van de bewaarplaats die in **Opslagplaatsen** naar het klembord voor gebruik elders.
+De **actie van Repository URL van het Exemplaar** kopieert URL van de bewaarplaats die in het **venster van Bewaarplaatsen** aan het klembord wordt geselecteerd om elders te worden gebruikt.
 
 ## Weergeven en bijwerken {#view-update}
 
-De **Weergeven en bijwerken** handeling opent de **Opslagplaats bijwerken** in. Met deze functie kunt u de **Naam** en **URL-voorvertoning opslagplaats** en de **Beschrijving** van de gegevensopslagruimte.
+De **Mening &amp; van de Update** actie opent de **dialoog van de Bewaarplaats van de Update**. Gebruikend het kunt u de **Naam** bekijken en **Voorproef URL van de Bewaarplaats** evenals de **Beschrijving** van de bewaarplaats bijwerken.
 
-![Gegevens in de opslagplaats weergeven en bijwerken](assets/update-repository.png)
+![ Mening en update bewaarplaats informatie ](assets/update-repository.png)
 
 ## Verwijderen {#delete}
 
-De **Verwijderen** de actie verwijdert de bewaarplaats uit uw project. Een opslagplaats kan niet worden geschrapt als het met een pijpleiding wordt geassocieerd.
+De **schrapping** actie verwijdert de bewaarplaats uit uw project. Een opslagplaats kan niet worden geschrapt als het met een pijpleiding wordt geassocieerd.
 
-![Verwijderen](assets/delete.png)
+![ Schrapping ](assets/delete.png)
 
-Wanneer een opslagplaats wordt verwijderd in Cloud Manager, wordt deze gemarkeerd als verwijderd en is deze niet langer toegankelijk voor de gebruiker, maar wordt deze in het systeem onderhouden voor hersteldoeleinden.
+Wanneer een gegevensopslagruimte in Cloud Manager wordt verwijderd, wordt deze gemarkeerd als verwijderd en is deze niet langer toegankelijk voor de gebruiker, maar wordt deze in het systeem onderhouden voor hersteldoeleinden.
 
 Als u een nieuwe repository probeert te maken nadat u een repository met dezelfde naam hebt verwijderd, ontvangt u het foutbericht `An error has occurred while trying to create repository. Please contact your CSE or Adobe Support.`
 

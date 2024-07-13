@@ -16,15 +16,15 @@ Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 
 ## Overzicht van pagina {#overview-page}
 
-De **Overzicht** Cloud Manager bevat de pagina **Omgevingen** tegel die van alle beheerde AEM milieu&#39;s een lijst maakt.
+De **pagina van het Overzicht** van Cloud Manager omvat de **3} tegel van Milieu&#39;s {die van alle beheerde AEM een lijst maakt.**
 
 In elk van de vermelde omgevingen wordt de bijbehorende status weergegeven.
 
-![Overzicht pagina](/help/assets/Manage-Environ-Overview.png)
+![ pagina van het Overzicht ](/help/assets/Manage-Environ-Overview.png)
 
 ## Omgevingstegel {#environments-tile}
 
-De **Omgevingen** De tegel geeft de productie- en staging-omgevingen weer die samen met de status in uw programma zijn ingericht.
+De **tegels van Milieu&#39;s** toont de productie en het opvoeren milieu&#39;s die in uw programma samen met de status worden voorzien.
 
 De status is de toestand van het opgerold vermogen over de knooppunten in de omgeving in de volgende volgorde van prioriteit.
 
@@ -33,24 +33,24 @@ De status is de toestand van het opgerold vermogen over de knooppunten in de omg
 * Blauw - Een of meer knooppunten komen naar boven.
 * Geel - Een of meer knooppunten hebben een stroomstatus die niet beschikbaar is.
 
-![Omgevingselement](/help/assets/Environments-card-new.png)
+![ de tegels van Milieu&#39;s ](/help/assets/Environments-card-new.png)
 
 ## Omgevingen beheren {#managing-environments-with-cloud-manager}
 
-Op de **Omgevingen** tik of klik op de rij van een omgeving om de **Omgevingen** scherm.
+Op de **tegel van Milieu&#39;s**, ontvang of klik de rij van om het even welk milieu om het **milieu&#39;s** scherm te tonen.
 
-De **Omgevingen** scherm geeft elke productie- en testomgeving in uw programma weer. De naam van de omgeving wordt boven elke kaart weergegeven. De kaart omvat een lijst van knopen in het milieu samen met de t-shirtgrootte van cpu, de opslag, het gebied, en de status.
+Het **milieu&#39;s** scherm toont elke productie en het opvoeren milieu&#39;s in uw programma. De naam van de omgeving wordt boven elke kaart weergegeven. De kaart omvat een lijst van knopen in het milieu samen met de t-shirtgrootte van cpu, de opslag, het gebied, en de status.
 
 >[!NOTE]
 >
->De **STATUS** van het knooppunt staat voor de energiestatus van de VM en geeft niet de status van AEM op de server weer. De status kan zijn:
+>De **STATUS** van de knoop vertegenwoordigt de machtsstaat van VM en wijst niet op het statuut van AEM op de server. De status kan zijn:
 
 * Groen - Draaien
 * Rood - gestopt
 * Blauw - Komend omhoog
 * Geel - niet beschikbaar
 
-![Het tabblad Omgevingen](/help/assets/Environments-tab.png)
+![ Milieu&#39;s tabel ](/help/assets/Environments-tab.png)
 
 >[!NOTE]
 >

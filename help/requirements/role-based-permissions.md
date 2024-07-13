@@ -1,6 +1,6 @@
 ---
 title: Op rollen gebaseerde machtigingen
-description: Meer informatie over de vooraf geconfigureerde, op rollen gebaseerde machtigingen van Cloud Manager voor het beheren van toegang tot uw cloudbronnen.
+description: Meer informatie over vooraf geconfigureerde, op rollen gebaseerde machtigingen van Cloud Manager voor het beheer van de toegang tot uw cloudbronnen.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
 workflow-type: tm+mt
@@ -12,30 +12,30 @@ ht-degree: 2%
 
 # Op rollen gebaseerde machtigingen {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] heeft pre-gevormde rollen met aangewezen toestemmingen. Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code door te sturen naar de git-opslagplaats. Een bedrijfseigenaar heeft verschillende toestemmingen die hen toestaan om de belangrijkste prestatiesindicatoren (KPIs) te bepalen en plaatsingen goed te keuren.
+[!UICONTROL Cloud Manager] heeft vooraf geconfigureerde rollen met de juiste machtigingen. Een ontwikkelaar ontwikkelt bijvoorbeeld code en heeft de toestemming om de code door te sturen naar de git-opslagplaats. Een bedrijfseigenaar heeft verschillende toestemmingen die hen toestaan om de belangrijkste prestatiesindicatoren (KPIs) te bepalen en plaatsingen goed te keuren.
 
 >[!NOTE]
 >
 >In deze documentatie worden op rollen gebaseerde machtigingen voor Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De equivalente documentatie voor AEM as a Cloud Service vindt u in het document [Inleiding tot Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) in de AEM as a Cloud Service documentatie.
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in het document [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) in de documentatie van AEM as a Cloud Service worden gevonden.
 
 ## Gebruikersrollen {#user-roles}
 
-Rolbeheer voor [!UICONTROL Cloud Manager] wordt uitgevoerd met de [Admin Console.](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) Elke gebruiker van [!UICONTROL Cloud Manager] moet lid zijn van de IMS-organisatie van de klant en de Adobe Managed Services Product Context hebben. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel in de Admin Console.
+Rolbeheer voor [!UICONTROL Cloud Manager] wordt gedaan gebruikend de [ Admin Console.](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) Elke gebruiker van [!UICONTROL Cloud Manager] moet lid zijn van de IMS-organisatie van de klant en over de Adobe Managed Services-productcontext beschikken. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel in de Admin Console toe te voegen.
 
-Meer informatie over hoe te om uw rollen te plaatsen zie het document [Gebruikers en rollen instellen.](/help/requirements/users-and-roles.md)
+Meer over leren hoe te om uw rollen te opstelling zie het document [ VestigingsGebruikers en Rollen.](/help/requirements/users-and-roles.md)
 
 Deze lijst maakt een lijst van de rollen u in de Admin Console kunt toewijzen.
 
 | [!UICONTROL Cloud Manager] Rol | Beschrijving |
 |---|---|
-| Business Owner | Dit is de primaire gebruiker die de eerste [!UICONTROL Cloud Manager] De opstelling en is verantwoordelijk voor het bepalen van KPIs, het goedkeuren van productieplaatsingen, en het met voeten treden van belangrijke 3-tier mislukkingen wanneer noodzakelijk. |
-| Program Manager | Deze gebruiker gebruikt [!UICONTROL Cloud Manager] om teamopstelling uit te voeren, revisiestatus, KPIs te bekijken, en kan belangrijke 3 rijmislukkingen goedkeuren wanneer noodzakelijk. |
-| Deployment Manager | Deze gebruiker beheert de implementatiebewerkingen met [!UICONTROL Cloud Manager] om fase en productieplaatsingen uit te voeren, kan belangrijke drie-laag mislukkingen goedkeuren wanneer nodig, en heeft toegang tot de git bewaarplaats. |
-| Developer | Deze gebruiker ontwikkelt en test de code van de douanetoepassing, hoofdzakelijk gebruik [!UICONTROL Cloud Manager] om plaatsingsstatus te bekijken, en toegang tot de git bewaarplaats te begaan. |
-| Klantsuccesvolle technicus | Deze gebruiker steunt over het algemeen klantensucces voor klanten AMS en wisselt met [!UICONTROL Cloud Manager] voor het uitvoeren van implementaties waarvoor toezicht van de Klant vereist is. |
-| Inhoudsauteur | Deze gebruiker communiceert gewoonlijk niet met Cloud Manager, maar gebruikt mogelijk de programmaschakeloptie voor Cloud Manager (die vanuit Experience Cloud is genavigeerd) om toegang te krijgen tot Adobe Experience Manager (AEM). |
+| Business Owner | Dit is de primaire gebruiker die de eerste [!UICONTROL Cloud Manager] -installatie voltooit en verantwoordelijk is voor het definiëren van KPI&#39;s, het goedkeuren van productieimplementaties en het negeren van belangrijke 3-laagfouten indien nodig. |
+| Program Manager | Deze gebruiker gebruikt [!UICONTROL Cloud Manager] om teamopstelling uit te voeren, status te herzien, KPIs te bekijken, en kan belangrijke drie-rij mislukkingen goedkeuren wanneer noodzakelijk. |
+| Deployment Manager | Deze gebruiker beheert de implementatiebewerkingen met behulp van [!UICONTROL Cloud Manager] voor het uitvoeren van werkings- en productieimplementaties, kan indien nodig belangrijke fouten op drie niveaus goedkeuren en heeft toegang tot de opslagruimte voor it. |
+| Developer | Deze gebruiker ontwikkelt en test de code van de douanetoepassing, hoofdzakelijk gebruikt [!UICONTROL Cloud Manager] om plaatsingsstatus te bekijken, en heeft toegang tot de git bewaarplaats begaan. |
+| Klantsuccesvolle technicus | Deze gebruiker ondersteunt doorgaans het succes van de klant voor AMS-klanten en communiceert met [!UICONTROL Cloud Manager] met het doel implementaties uit te voeren waarvoor toezicht van de Customer Success Engineer (CSE) vereist is. |
+| Inhoudsauteur | Deze gebruiker communiceert doorgaans niet met Cloud Manager, maar kan de Cloud Manager-programmaschakeloptie (die vanuit Experience Cloud is genavigeerd) gebruiken om toegang te krijgen tot Adobe Experience Manager (AEM). |
 
 ## Gebruikersmachtigingen {#user-permissions}
 
@@ -65,8 +65,8 @@ Elk van de rollen heeft specifieke bijbehorende preconfigured toestemmingen. Dez
 | Stap lezen | Zie de resultaten van de metrische gegevens voor de stapkwaliteit | x | x | x | x | x |
 | Token voor persoonlijke toegang genereren | Toegangsuitrusting |  | x |  | x |  |
 
-Raadpleeg het document voor meer informatie over het instellen van uw gebruikers [Gebruikers en rollen instellen.](/help/requirements/users-and-roles.md)
+Meer over leren hoe te opstelling uw gebruikers zien het document [ VestigingsGebruikers en Rollen.](/help/requirements/users-and-roles.md)
 
 >[!TIP]
 >
->Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Zie het document [Aangepaste machtigingen](/help/using/custom-permissions.md) voor meer informatie .
+>Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Gelieve te zien de toestemmingen van de Douane van het document [ ](/help/using/custom-permissions.md) voor meer details.

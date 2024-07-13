@@ -1,10 +1,10 @@
 ---
 title: Toegangsrechten
-description: Meer informatie over je Adobe ID en hoe je deze gebruikt om toegang te krijgen tot Experience Cloud-bronnen.
+description: Meer informatie over uw Adobe ID en hoe u deze gebruikt om toegang te krijgen tot bronnen van Experiencen Cloud.
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -12,16 +12,16 @@ ht-degree: 0%
 
 # Toegangsrechten {#access-rights}
 
-Meer informatie over je Adobe ID en hoe je deze gebruikt om toegang te krijgen tot Experience Cloud-bronnen.
+Meer informatie over uw Adobe ID en hoe u deze gebruikt om toegang te krijgen tot bronnen van Experiencen Cloud.
 
 ## Typen gebruikersidentiteiten {#user-identity-types}
 
-Als onderdeel van het instapproces zal Adobe een organisatie-id voor uw bedrijf maken in het Adobe Identity Management System (IMS). IMS is waar al uw gebruikers en hun toestemmingen kunnen worden beheerd. Elke gebruiker, die een lid van deze organisatie moet zijn, en zal toegang tot om het even welk van [!UICONTROL Experience Cloud] -services hebben een eigen Adobe ID nodig.
+Als onderdeel van het instapproces zal de Adobe een organisatie-id voor uw bedrijf in het Adobe Identity Management System (IMS) creëren. IMS is waar al uw gebruikers en hun toestemmingen kunnen worden beheerd. Elke gebruiker, die lid moet zijn van deze organisatie en toegang moet krijgen tot de [!UICONTROL Experience Cloud] -services, moet een eigen Adobe ID hebben.
 
-Als u aan de slag wilt gaan met een Adobe ID, raadpleegt u het document [Adobe-identiteitstypen beheren](https://helpx.adobe.com/enterprise/using/identity.html) voor gedetailleerde instructies over hoe u een Adobe ID kunt verkrijgen met behulp van een van de beschikbare identiteitstypen.
+Om met een Adobe ID begonnen te worden, gelieve te verwijzen naar het document [ beheert de Types van Identiteit van de Adobe ](https://helpx.adobe.com/enterprise/using/identity.html) voor gedetailleerde instructies op hoe te om Adobe ID te verkrijgen gebruikend één van de beschikbare identiteitstypes.
 
 ### Gebruikers en rollen {#users-and-roles}
 
-Zodra Adobe een organisatie voor uw bedrijf heeft gecreeerd, zal uw aangewezen systeembeheerder als eerste lid aan deze organisatie worden toegevoegd. De systeembeheerder zal de beheerdertoestemmingen door gebrek, en toegewezen krijgen [!UICONTROL AEM Managed Services] product en een of meer [!UICONTROL Cloud Manager] productprofielen. Zie het document [Gebruikers en rollen toevoegen](/help/requirements/users-and-roles.md) voor meer informatie over het configureren en beheren van uw teamgebruikers met de Admin Console.
+Zodra de Adobe een organisatie voor uw bedrijf heeft gecreeerd, zal uw aangewezen systeembeheerder als eerste lid aan deze organisatie worden toegevoegd. De systeembeheerder krijgt standaard de beheerdersmachtigingen en toegewezen aan het product [!UICONTROL AEM Managed Services] en een of meer productprofielen van [!UICONTROL Cloud Manager] . Gelieve te zien het document [ Gebruikers en Rollen ](/help/requirements/users-and-roles.md) toevoegen om meer over te leren hoe te om uw teamgebruikers te vormen en te beheren gebruikend de Admin Console.
 
-Als deze rechten zijn toegekend, is uw beheerder nu ingesteld op basis van één aanmelding met een Adobe ID voor toegang tot de [!UICONTROL Experience Cloud] services, aanmelden bij uw AEM cloudomgevingen en gebruik [!UICONTROL Cloud Manager].
+Als deze machtigingen zijn verleend, wordt uw beheerder nu ingesteld met één aanmelding met behulp van een Adobe ID voor toegang tot de [!UICONTROL Experience Cloud] -services, aanmelding bij uw AEM cloudomgevingen en gebruik van [!UICONTROL Cloud Manager] .

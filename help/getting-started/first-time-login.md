@@ -1,6 +1,6 @@
 ---
 title: Eerste aanmelding
-description: Volg deze pagina als u algemene configuraties hebt ingesteld en u voor het eerst Cloud Manager kunt gebruiken.
+description: Volg deze pagina als u algemene configuraties hebt ingesteld en u Cloud Manager voor het eerst kunt gebruiken.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
 workflow-type: tm+mt
@@ -12,36 +12,36 @@ ht-degree: 0%
 
 # Eerste aanmelding {#first-time-login}
 
-Zodra u opstelling de algemene configuratie voor [!UICONTROL Cloud Manager], bent u klaar om het te gebruiken.
+Als u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld, kunt u deze gebruiken.
 
 >[!NOTE]
 >
->Afhankelijk van de rollen die binnen worden toegewezen [!UICONTROL Cloud Manager] en de status van de toepassing, kunnen de schermen u ziet van de illustraties variëren.
+>Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] zijn toegewezen en de status van de toepassing, kunnen de schermen die u ziet, van de illustraties verschillen.
 
 ## Aanmelden voor de eerste keer {#logging-in-for-the-first-time}
 
-1. Aanmelden bij Cloud Manager [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) en je ziet de lijst met programma&#39;s.
+1. Meld u aan bij Cloud Manager op [`my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) en uw lijst met programma&#39;s wordt weergegeven.
 
-   ![Cloud Manager-console](/help/assets/cloud-manager-console.png)
+   ![ Cloud Manager console ](/help/assets/cloud-manager-console.png)
 
-1. Tik of klik op de kaart van uw programma om naar Cloud Manager te navigeren **Overzicht** pagina.
+1. Tik of klik de kaart van uw programma om aan Cloud Manager **te navigeren Overzicht** pagina.
 
-1. Cloud Manager wordt geopend voor de **Overzicht** pagina.
+1. Cloud Manager opent aan de **pagina van het Overzicht**.
 
-   ![Overzicht van Cloud Manager](/help/assets/program-overview-page.png)
+   ![ Cloud Manager overzichtspagina ](/help/assets/program-overview-page.png)
 
-1. Tik of klik op **Installatieprogramma** in de [oproep tot actie](/help/getting-started/navigation.md#cta) om uw programmabeschrijving in te stellen en belangrijke prestatie-indicatoren (KPI&#39;s) te definiëren. Als uw programma al is ingesteld, kan de overeenkomst aanvullende volgende stappen bieden.
+1. Als uw programma nog niet opstelling is, tik of klik **Programma van de Opstelling** in [ vraag-aan-actie ](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaalt zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de overeenkomst aanvullende volgende stappen bieden.
 
-Ga door met het document [Programma instellen](/help/getting-started/program-setup.md) voor de volgende stappen in het instellen van uw programma.
+Gelieve te blijven aan de Opstelling van het document [ Programma ](/help/getting-started/program-setup.md) voor de volgende stappen in vestiging uw programma.
 
-## Activiteit van cloudbeheer {#activity}
+## Cloud Manager-activiteit {#activity}
 
-Cloud Manager biedt een geconsolideerde weergave van de activiteit van een programma, waarin alle uitgevoerde CI-/CD-pijpleidingen, zowel de productie als de niet-productie, worden vermeld, zodat de activiteiten in het verleden en heden zichtbaar zijn.
+Cloud Manager geeft een geconsolideerd overzicht van de activiteiten van een programma, waarin alle uitgevoerde CI/CD-pijplijnen, zowel de productie als de niet-productie, worden vermeld, zodat de activiteiten in het verleden en in het heden zichtbaar zijn.
 
 >[!TIP]
 >
->Raadpleeg het document voor meer informatie over het gebruik van de interface van Cloud Manager. [Navigeren door de interface van Cloud Manager.](/help/getting-started/navigation.md)
+>Voor details op hoe te om Cloud Manager UI te gebruiken, te zien gelieve het document [ navigerend Cloud Manager UI.](/help/getting-started/navigation.md)
 
 >[!NOTE]
 >
->Een gebruiker met toegang tot een AEM-omgeving heeft standaard ook de rol Gebruiker van Cloud Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de gebruikersrol van Cloud Manager kan via de opties in het programmamenu naar de auteur-URL van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
+>Een gebruiker met toegang tot een AEM heeft standaard ook de rol Gebruiker van Cloud Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de Cloud Manager-gebruikersrol kan via de opties in het programmamenu naar de URL van de auteur van de AEM omgeving navigeren (als omgevingen bestaan). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.

@@ -5,7 +5,7 @@ description: Leer hoe de de evaluatiefase van de Tovenaar van de Update van het 
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Evaluatiefase {#evaluation}
 
-De eerste fase in de wizard Productupdates is **[!UICONTROL Evaluation]** fase, die de verbeteringsingewikkeldheid met de patroondetector direct binnen de tovenaar beoordeelt. Aan het einde van deze stap hebt u toegang tot een evaluatierapport.
+De eerste fase in de wizard Productupdates is **[!UICONTROL Evaluation]** -fase, waarin de complexiteit van de upgrade wordt beoordeeld aan de hand van de patroondetector rechtstreeks in de wizard. Aan het einde van deze stap hebt u toegang tot een evaluatierapport.
 
 Met het gegenereerde rapport kunt u controleren of de auteurinstantie geschikt is voor upgrades door patronen te detecteren die:
 
-* Overtred bepaalde regels met betrekking tot gebieden die door de upgrade worden beïnvloed of overschreven.
+* Overtreed bepaalde regels betreffende gebieden die door de upgrade worden beïnvloed of overschreven.
 
 * Gebruik een AEM 6.x-functie of een API die niet achterwaarts compatibel is met de nieuwe versie van AEM en die na de upgrade mogelijk kan worden onderbroken.
 
@@ -25,24 +25,24 @@ Het verslag dient als een beoordeling van de ontwikkelingsinspanningen die gepaa
 
 >[!NOTE]
 >
->Raadpleeg het document voor meer informatie over patroondetector [De complexiteit van upgrades beoordelen met de patroondetector.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en)
+>Meer over patroondetector leren, verwijs naar het document [ die de Complexiteit van de Verbetering met de Detector van het Patroon beoordelen.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en)
 
 ## De evaluatie uitvoeren {#running}
 
-De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, zal de Manager van de Wolk het op het opvoeren milieu van de auteursinstantie in werking stellen.
+De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, zal Cloud Manager het op het opvoeren milieu van de auteursinstantie in werking stellen.
 
 Voer de volgende stappen uit om het evaluatieverslag te genereren.
 
-1. De wizard starten zoals wordt beschreven in het document [Wizard Productupdates.](/help/product-update-wizard/overview.md)
+1. Begin de tovenaar zoals die in het document [ wordt beschreven Tovenaar van de Update van het Product.](/help/product-update-wizard/overview.md)
 
-1. Klikken op **[!UICONTROL Run Evaluation]**.
+1. Klik op **[!UICONTROL Run Evaluation]** .
 
-   ![Evaluatie uitvoeren](/help/assets/Run-Evaluation.png)
+   ![ evaluatie van de Looppas ](/help/assets/Run-Evaluation.png)
 
-1. De wizard informeert u over de status van uw handeling. U zult **In uitvoering** of **voltooid** indien van toepassing wanneer het evaluatieverslag wordt opgesteld.
+1. De wizard informeert u over de status van uw handeling. U zult **in uitvoering** of **voltooide** zoals toepasselijk merken wanneer het evaluatierapport wordt geproduceerd.
 
-1. Nadat het rapport is gegenereerd, kunt u op **[!UICONTROL Download report]** om een kopie op te slaan.
+1. Nadat het rapport is gegenereerd, kunt u op **[!UICONTROL Download report]** klikken om een kopie op te slaan.
 
-   ![Rapport gemaakt](/help/assets/Evaluation-1.png)
+   ![ gecreeerd Rapport ](/help/assets/Evaluation-1.png)
 
-De huidige release van de wizard Productupdates in Cloud Manager ondersteunt de functie **Evaluatie** alleen fase. De andere vier fasen, namelijk **Herstel**, **Uitvoering**, **Validatie**, en **Voltooiing** binnenkort.
+De huidige versie van de tovenaar van de Update van het Product in Cloud Manager steunt de **slechts fase van de Evaluatie**. De andere vier fasen namelijk **Vergoeding**, **Uitvoering**, **Bevestiging**, en **Voltooiing** komen binnenkort.
