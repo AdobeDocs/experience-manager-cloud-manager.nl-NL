@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Meer informatie over de regels voor de kwaliteit van aangepaste code die door Cloud Manager worden uitgevoerd als onderdeel van het testen van de kwaliteit van code, op basis van de beste praktijken van AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
+source-git-commit: 8f0f5e819cf312ef25beac815beca92d4e3ac255
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '3544'
 ht-degree: 1%
 
 ---
@@ -862,6 +862,15 @@ AEM Cloud Service staat ongeoorloofde wijzigingen van de volgende OOTB-indexen n
 * **sinds**: Versie 2024.6.0
 
 AEM Cloud Service verbiedt het maken van kenizers met onjuiste namen in analysatoren. Tokenizers moeten altijd als `tokenizer` worden gedefinieerd.
+
+### Configuratie van indexdefinities mag geen spaties bevatten {#oakpal-indexing-definitions-spaces}
+
+* **Sleutel**: PathSpacesCheck
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **sinds**: Versie 2024.7.0
+
+AEM Cloud Service staat het maken van indexeringsdefinities die eigenschappen met spaties bevatten, niet toe.
 
 ## Dispatcher Optimization Tool {#dispatcher-optimization-tool-rules}
 

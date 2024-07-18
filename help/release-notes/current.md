@@ -1,19 +1,19 @@
 ---
-title: Opmerkingen bij de release 2024.6.0
-description: Dit zijn de opmerkingen bij de release van Cloud Manager 2024.6.0.
+title: Opmerkingen bij de release 2024.7.0
+description: Dit zijn de opmerkingen bij de release van Cloud Manager 2024.7.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
+source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release Cloud Manager 2024.6.0 {#release-notes}
+# Opmerkingen bij de release Cloud Manager 2024.7.0 {#release-notes}
 
-Deze pagina documenteert de releaseopmerkingen voor [!UICONTROL Cloud Manager] release 2024.6.0.
+Deze pagina documenteert de releaseopmerkingen voor [!UICONTROL Cloud Manager] release 2024.7.0.
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ Deze pagina documenteert de releaseopmerkingen voor [!UICONTROL Cloud Manager] r
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor [!UICONTROL Cloud Manager] release 2024.6.0 is 6 juni 2024. De volgende release is gepland voor 18 juli 2024.
+De releasedatum voor [!UICONTROL Cloud Manager] release 2024.7.0 is 18 juli 2024. De volgende release is gepland voor 8 augustus 2024.
 
 ## Wat is er nieuw? {#what-is-new}
 
-* U kunt [ uw eigen bewaarplaatsen GitHub ](/help/managing-code/private-repositories.md) als bronnen voor volledig-stapelpijpleidingen nu gebruiken.
-   * Bovendien, kunt u uit bewaarplaatsen GitHub met [ git submodules voordeel halen, ](/help/managing-code/git-submodules.md) die u van verbeterde controle over de auto-geproduceerde pijpleidingen voorzien die voor de bevestiging van het trekkingsverzoek worden gebruikt en die u toestaan om gedrag voor cruciale metriek tijdens de fase van het codescanningsprogramma te bepalen.
-   * [ u hebt ook de keus ](/help/managing-code/github-check-config.md) om de rapportgeschiedenis op GitHub te bewaren, de pijpleiding te noemen, en pijpleidingsvariabelen te plaatsen om uw behoeften aan te passen.
-* De nieuwe regels OakPal werden toegevoegd aan het [ aftasten van de Kwaliteit van de Code van Cloud Manager.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * Elke nieuwe regel die vanaf juni 2024 wordt toegevoegd, is een onverbrekelijke verandering.
-   * U wordt aangespoord deze problemen zo snel mogelijk aan te pakken, aangezien deze nieuwe regels ertoe zullen leiden dat pijpleidingen vanaf de release van Cloud Manager augustus 2024 mislukken.
+* De [ productiepijpleiding ](/help/using/production-pipelines.md#adding-production-pipeline) en [ niet-productiepijpleiding ](/help/using/non-production-pipelines.md#adding-non-production-pipeline) trekker **op de Veranderingen van het Git** om de pijpleiding op te starten begaat is nu beschikbaar voor [ privé bewaarplaatsen.](/help/managing-code/private-repositories.md)
+* Een pre-productiepijplijn is slechts teweegbrengt manueel en kan niet als **op de Veranderingen van het Git** worden gevormd.
+* Voor productiepijpleidingen omvat de lijst van bevorderbare uitvoeringen die de artefactversie groter hebben dan de artefactversie die op het productiemilieu wordt opgesteld.
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
