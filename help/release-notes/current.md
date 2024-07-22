@@ -3,9 +3,9 @@ title: Opmerkingen bij de release 2024.7.0
 description: Dit zijn de opmerkingen bij de release van Cloud Manager 2024.7.0.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
+source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ De releasedatum voor [!UICONTROL Cloud Manager] release 2024.7.0 is 18 juli 2024
 * De [ productiepijpleiding ](/help/using/production-pipelines.md#adding-production-pipeline) en [ niet-productiepijpleiding ](/help/using/non-production-pipelines.md#adding-non-production-pipeline) trekker **op de Veranderingen van het Git** om de pijpleiding op te starten begaat is nu beschikbaar voor [ privé bewaarplaatsen.](/help/managing-code/private-repositories.md)
 * Een pre-productiepijplijn is slechts teweegbrengt manueel en kan niet als **op de Veranderingen van het Git** worden gevormd.
 * Voor productiepijpleidingen omvat de lijst van bevorderbare uitvoeringen die de artefactversie groter hebben dan de artefactversie die op het productiemilieu wordt opgesteld.
+* [ Het AEM Archetype van het Project ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) is bijgewerkt aan [ versie 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+
 
 ## Programma voor vroegtijdige adoptie {#early-adoption}
 
