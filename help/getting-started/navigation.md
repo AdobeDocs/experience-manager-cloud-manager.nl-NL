@@ -2,12 +2,13 @@
 title: Navigeren door de gebruikersinterface van Cloud Manager
 description: Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1439'
 ht-degree: 0%
 
 ---
+
 
 # Navigeren door de gebruikersinterface van Cloudbeheer {#navigation}
 
@@ -15,10 +16,10 @@ Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt
 
 De interface voor cloud-beheer bestaat voornamelijk uit twee grafische interfaces:
 
-* [ De Mijn console van Programma&#39;s ](#my-programs) waar u al uw programma&#39;s kunt bekijken en beheren.
+* [ De Mijn console van Programma&#39;s ](#my-programs-console) waar u al uw programma&#39;s kunt bekijken en beheren.
 * [ het venster van het Overzicht van het Programma ](#program-overview) waar u het detail van kunt zien en een individueel programma beheren.
 
-## Mijn programmaconsole {#my-programs}
+## Mijn programmaconsole {#my-programs-console}
 
 Wanneer u login in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en de aangewezen organisatie selecteert, komt u bij de **Mijn console van Programma&#39;s** aan.
 
@@ -27,8 +28,13 @@ Wanneer u login in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cl
 De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waartoe u toegang hebt in de geselecteerde organisatie. Het bestaat uit verschillende delen.
 
 1. [ Toolbars ](#toolbars-my-programs-toolbars) voor organisatieselectie, alarm, en rekeningsmontages
-1. [ Statistieken en vraag-aan-actie ](#statistics) voor een overzicht van uw recente activiteit
-1. [ Programma&#39;s en vergunning ](#programs-license) om uw huidige vergunningsstatus te begrijpen en uw programma&#39;s te beheren
+1. Tabs waarmee u de huidige weergave van uw programma&#39;s kunt schakelen.
+   * **Begin** mening (gebrek) die **Mijn mening van Programma&#39;s** met een overzicht van alle programma&#39;s selecteert
+   * **Vergunning** die tot het Dashboard van de Vergunning toegang heeft. Het licentiedashboard geldt alleen voor AEM as a Cloud Service-programma&#39;s, niet voor AMS-programma&#39;s.
+      * Om het type van de dienst te bepalen uw programma heeft (AMS of AEMaaCS), gelieve de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document te zien.
+   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager.](#cloud-manager-header)
+1. [ Vraag-aan-Acties en Statistieken ](#cta-statistics) voor een overzicht van uw recente activiteit
+1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
 1. [ Snelle verbindingen ](#quick-links) om tot verwante middelen gemakkelijk toegang te hebben
 
 >[!TIP]
@@ -45,6 +51,9 @@ De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Mana
 
 ![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
 
+1. Het hamburger menu dat toegang tot lusjes geeft die u aan specifieke delen van a in individueel programma kunnen nemen of tussen het Dashboard van de Vergunning en **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van context schakelen.
+   * Het licentiedashboard geldt alleen voor AEM as a Cloud Service-programma&#39;s, niet voor AMS-programma&#39;s.
+   * Om het type van de dienst te bepalen uw programma heeft (AMS of AEMaaCS), gelieve de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document te zien.
 1. Met de knop Cloud Manager gaat u terug naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
 1. Tik of klik op Feedback om feedback te geven aan de Adobe over Cloud Manager.
 1. De organisatieselecteur toont de organisatie u momenteel wordt ondertekend in (in dit voorbeeld, Interne Stichting). Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
@@ -64,9 +73,9 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
    * De instapreis is ontworpen voor AEM as a Cloud Service en niet voor Cloud Service voor AMS, maar veel concepten zijn hetzelfde.
 1. Met de knop Handeling kunt u contextgerichte acties uitvoeren, zoals het maken van een nieuw programma.
 
-### Statistieken {#statistics}
+### Vraag-aan-Acties en Statistieken {#cta-statistics}
 
-Het gedeelte Statistieken bevat geaggregeerde gegevens voor uw organisatie. Als u uw programma&#39;s met succes hebt ingesteld, kunnen statistieken van uw activiteiten in de afgelopen 90 dagen worden weergegeven, zoals:
+De vraag-aan-actie en statistieksectie verstrekt gezamenlijke gegevens voor uw organisatie, bijvoorbeeld, als u met succes uw programma&#39;s hebt opgezet, zouden de statistieken van uw activiteiten in de afgelopen 90 dagen kunnen tonen, die omvatten:
 
 * Aantal [ plaatsingen ](/help/using/code-deployment.md)
 * Aantal ](/help/using/code-quality-testing.md) geïdentificeerde kwesties van de 0} codekwaliteit[
@@ -74,13 +83,13 @@ Het gedeelte Statistieken bevat geaggregeerde gegevens voor uw organisatie. Als 
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.
 
-### Programma&#39;s en licentie {#programs-license}
+### Sectie Mijn programma&#39;s {#my-programs-section}
 
-De belangrijkste inhoud van de Mijn console van Programma&#39;s is de lijst van programma&#39;s en status van uw vergunning.
+De belangrijkste inhoud van de Mijn console van Programma&#39;s is de **Mijn sectie van Programma&#39;s** die van uw programma&#39;s als individuele kaarten een lijst maakt. Tik of klik op een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
-#### Tabblad Programma&#39;s {#programs}
-
-Het **lusje van Programma&#39;s** lijsten kaarten die elk programma vertegenwoordigen waartot u toegang hebt. Tik of klik op een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
+>[!NOTE]
+>
+>Afhankelijk van uw rechten kunt u bepaalde programma&#39;s mogelijk niet selecteren.
 
 Gebruik de sorteeropties om het gewenste programma te vinden.
 
@@ -94,13 +103,17 @@ Gebruik de sorteeropties om het gewenste programma te vinden.
 * Rasterweergave (standaard)
 * Lijstweergave
 
+#### Programmakaarten {#program-cards}
+
 Elk programma wordt vertegenwoordigd door een kaart (of rij in een lijst), die een overzicht van het programma en snelle verbindingen verstrekt om actie te ondernemen.
 
 ![ kaart van het Programma ](assets/program-card.png)
 
 * Programmaafbeelding (indien geconfigureerd)
 * Programmanaam
-* Het type van de dienst: **Cloud van de Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) of **Experience Manager** voor de programma&#39;s van AMS
+* Servicetype:
+   * **Experience Manager** voor de programma&#39;s van AMS
+   * **Cloud van de Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
 * Status
 * Gevormde oplossingen
 * Aanmaakdatum
@@ -118,17 +131,13 @@ Het ellipsiepictogram geeft u toegang tot extra acties u het programma kunt neme
 * [Het programma bewerken](/help/getting-started/program-setup.md)
 * Controle tonen
 
-#### Tabblad Licentie {#license-tab}
-
-Het **lusje van de Vergunning** geeft u snelle toegang tot het vergunningsdashboard.
-
 ### Snelle koppelingen {#quick-links}
 
 De snelle sectie van verbindingen geeft u toegang tot algemeen gebruikte, verwante middelen.
 
 ## Venster Overzicht van programma {#program-overview}
 
-Zodra u een programma in de Mijn console van Programma&#39;s selecteert, wordt u genomen aan het Overzicht van het Programma.
+Zodra u een programma in de [**Mijn console van Programma&#39;s** selecteert, ](#my-programs-console) u aan het Overzicht van het Programma wordt genomen.
 
 ![ Overzicht van het Programma ](assets/program-overview.png)
 
@@ -169,7 +178,7 @@ Elk programma heeft een heleboel opties en gegevens verbonden aan het. Deze gege
 * [ Activiteit ](/help/using/managing-pipelines.md#activity) - de geschiedenis van pijpleidingslooppas van het programma
 * [ Pijpleidingen ](/help/using/managing-pipelines.md#pipelines) - Alle pijpleidingen die voor het programma worden gevormd
 * [ Bewaarplaatsen ](/help/managing-code/managing-repositories.md) - Alle bewaarplaatsen die voor het programma worden gevormd
-* [ Rapporten ](/help/using/monitoring-environments.md#system-monitoring-overview) - Metriek zoals gegevens SLA
+* [ Rapporten ](/help/using/monitoring-environments.md#system-monitoring-overview) - Metriek zoals de gegevens van SLA
 * [ Milieu&#39;s ](/help/using/managing-environments.md) - Alle milieu&#39;s die voor het programma worden gevormd
 * [ Reeksen van de Inhoud ](/help/using/content-copy.md) - Reeksen van inhoud die voor exemplaardoeleinden wordt gecreeerd
 * [ Activiteit van de Inhoud van het Exemplaar ](/help/using/content-copy.md) - de activiteiten van het Inhoudsexemplaar
