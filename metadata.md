@@ -4,9 +4,9 @@ type: Documentation
 cloud: Experience Cloud
 git-repo: https://github.com/AdobeDocs/experience-manager-cloud-manager.nl-NL
 recommendations: noDisplay
-source-git-commit: f35a777176522d412267f481622c8cd3d2592764
+source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ Het bestand metadata.md bevat metagegevens op repo-niveau die worden doorgegeven
 |--- |--- |
 | titel oplossing | Gebruikt in artikelkoptekst als koppeling |
 | oplossing-hub-url | Opent helpx-hubpagina |
-| oplossingspictogram | Hiermee wordt het oplossingspictogram weergegeven naast de titel van de oplossing. Nog niet geïmplementeerd |
+| oplossingspictogram | Toont een oplossingspictogram naast de oplossingstitel. Nog niet geïmplementeerd |
 | aan de slag-url | Aan de slag met Help-pagina koppelen |
 | zelfstudies-url | Koppeling maken naar videozelfstudies: helpx-zelfstudies of KT-zelfstudies |
-| minitoc-niveaus | Hiermee bepaalt u het aantal kopniveaus dat wordt weergegeven in de rechterrails. default is 2 |
-| git-repo | Hiermee geeft u de locatie op van het hoofdrepo voor intern gebruik |
+| minitoc-niveaus | Hiermee bepaalt u het aantal kopniveaus dat in de rechterspoorlijn wordt weergegeven. default is 2 |
+| git-repo | Hiermee wordt de locatie van het primaire repo voor intern gebruik opgegeven |

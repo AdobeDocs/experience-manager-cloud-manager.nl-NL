@@ -1,17 +1,16 @@
 ---
-source-git-commit: db9e8c7fe003f2199b4bc529f6f1768681c35654
+source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
-# Documentatie Adobe Experience Manager Cloud Manager
+# Adobe Experience Manager Cloud Manager-documentatie
 
-Dit is de opslagplaats voor documentatie van Adobe Experience Manager Cloud Manager.
+Deze opslagplaats is bedoeld voor Adobe Experience Manager Cloud Manager-documentatie.
 
 Uw bijdragen aan de documentatie zijn welkom. Zie de volgende bronnen:
 
-* [contribute.](contributing.md) mdVoor een overzicht van hoe te om aan de documentatie bij te dragen.
-* [Guidelines.](guidelines.md) mdVoor een overzicht van wat in bijdragen wordt verwacht en hoe te om uw documentatiebijdragen samen te stellen.
-* [gedragscode.](code-of-conduct.md) mdVoor een overzicht van de normen van gedrag wij verwachten aangezien u aan dit documentatieproject bijdraagt.
+* [ contribute.md ](contributing.md) voor een overzicht van hoe te om aan de documentatie bij te dragen.
+* [ guidelines.md ](guidelines.md) voor een overzicht van wat in bijdragen en hoe te om uw documentatiebijdragen samen te stellen wordt verwacht.
+* [ code-van-behavior.md ](code-of-conduct.md) voor een overzicht van de normen van Adobe verwacht gedrag aangezien u aan dit documentatieproject bijdraagt.
