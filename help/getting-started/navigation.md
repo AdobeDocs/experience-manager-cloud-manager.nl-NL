@@ -2,9 +2,9 @@
 title: Navigeren door de gebruikersinterface van Cloud Manager
 description: Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,15 @@ De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waa
 1. Tabs waarmee u de huidige weergave van uw programma&#39;s kunt schakelen.
    * **Begin** mening (gebrek) die **Mijn mening van Programma&#39;s** met een overzicht van alle programma&#39;s selecteert
    * **Vergunning** die tot het Dashboard van de Vergunning toegang heeft. Het licentiedashboard geldt alleen voor AEM as a Cloud Service-programma&#39;s, niet voor AMS-programma&#39;s.
-      * Om het type van de dienst te bepalen uw programma heeft (AMS of AEMaaCS), gelieve de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document te zien.
-   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager.](#cloud-manager-header)
+      * Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document.
+   * Merk op dat het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburgermenu in de [ kopbal van Cloud Manager ](#cloud-manager-header).
 1. [ Vraag-aan-Acties en Statistieken ](#cta-statistics) voor een overzicht van uw recente activiteit
 1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
 1. [ Snelle verbindingen ](#quick-links) om tot verwante middelen gemakkelijk toegang te hebben
 
 >[!TIP]
 >
->Gelieve te zien het document [ Programma&#39;s en de Types van Programma ](/help/getting-started/program-setup.md) voor details op programma&#39;s.
+>Zie [ Programma&#39;s en de Types van Programma ](/help/getting-started/program-setup.md) voor details op programma&#39;s.
 
 ### Werkbalken {#my-programs-toolbars}
 
@@ -53,13 +53,13 @@ De eerste is de Cloud Manager header, die blijvend is terwijl je door Cloud Mana
 
 1. Het hamburger menu dat toegang tot lusjes geeft die u aan specifieke delen van a in individueel programma kunnen nemen of tussen het Dashboard van de Vergunning en **[Mijn console van Programma&#39;s](#my-programs-console)** afhankelijk van context schakelen.
    * Het licentiedashboard geldt alleen voor AEM as a Cloud Service-programma&#39;s, niet voor AMS-programma&#39;s.
-   * Om het type van de dienst te bepalen uw programma heeft (AMS of AEMaaCS), gelieve de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document te zien.
+   * Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document.
 1. Met de knop Cloud Manager gaat u terug naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
-1. Tik of klik op Feedback om feedback te geven aan de Adobe over Cloud Manager.
-1. De organisatieselecteur toont de organisatie u momenteel wordt ondertekend in (in dit voorbeeld, Interne Stichting). Tik of klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere.
-1. Als u op de schakeloptie voor oplossingen tikt of erop klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
+1. Klik op Feedback om feedback te geven aan de Adobe over Cloud Manager.
+1. De organisatieselecteur toont de organisatie u momenteel wordt ondertekend in (in dit voorbeeld, Interne Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
+1. Als u op de overschakeloptie voor oplossingen klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
 1. Met het Help-pictogram hebt u snel toegang tot leermiddelen en ondersteuningsbronnen.
-1. Het berichtpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten.](/help/using/notifications.md)
+1. Het berichtenpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten ](/help/using/notifications.md)
 1. Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersbeeld hebt gevormd, wordt een pictogram willekeurig toegewezen.
 
 #### Programmawerkbalk {#program-toolbar}
@@ -85,7 +85,7 @@ Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stapp
 
 ### Sectie Mijn programma&#39;s {#my-programs-section}
 
-De belangrijkste inhoud van de Mijn console van Programma&#39;s is de **Mijn sectie van Programma&#39;s** die van uw programma&#39;s als individuele kaarten een lijst maakt. Tik of klik op een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
+De belangrijkste inhoud van de Mijn console van Programma&#39;s is de **Mijn sectie van Programma&#39;s** die van uw programma&#39;s als individuele kaarten een lijst maakt. Klik op een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
 >[!NOTE]
 >
@@ -137,13 +137,13 @@ De snelle sectie van verbindingen geeft u toegang tot algemeen gebruikte, verwan
 
 ## Venster Overzicht van programma {#program-overview}
 
-Zodra u een programma in de [**Mijn console van Programma&#39;s** selecteert, ](#my-programs-console) u aan het Overzicht van het Programma wordt genomen.
+Zodra u een programma in de [**Mijn console van Programma&#39;s** ](#my-programs-console) selecteert, wordt u genomen aan het Overzicht van het Programma.
 
 ![ Overzicht van het Programma ](assets/program-overview.png)
 
 In het programmaoverzicht hebt u toegang tot alle details van een Cloud Manager-programma. Zoals de Mijn console van Programma&#39;s, wordt het gemaakt van verscheidene delen.
 
-1. [ Toolbars ](#program-overview-toolbar) om snel terug naar de Mijn console van Programma&#39;s te springen evenals het programma te navigeren
+1. [ Toolbars ](#program-overview-toolbar) om snel terug naar de Mijn console van Programma&#39;s te springen en het programma te navigeren
 1. [ Lusjes ](#program-tabs) om tussen verschillende aspecten van het programma te schakelen
 1. A [ vraag-aan-actie ](#cta) die op de laatste acties van het programma wordt gebaseerd
 1. Een [ overzicht van de milieu&#39;s ](#environments) van het programma
@@ -152,7 +152,7 @@ In het programmaoverzicht hebt u toegang tot alle details van een Cloud Manager-
 
 ### Werkbalken {#program-overview-toolbar}
 
-De toolbars voor het programmaoverzicht zijn zeer gelijkaardig aan die van de [ Mijn console van Programma&#39;s.](#my-programs-toolbars) Alleen de verschillen worden hier weergegeven.
+De toolbars voor het programmaoverzicht zijn zeer gelijkaardig aan die van de [ Mijn console van Programma&#39;s ](#my-programs-toolbars). Alleen de verschillen worden hier geïllustreerd.
 
 #### Cloud Manager-koptekst {#cloud-manager-header-2}
 
@@ -160,7 +160,7 @@ De Cloud Manager-header heeft een hamburgermenu dat automatisch wordt geopend om
 
 ![ het hamburgermenu van Cloud Manager ](assets/cloud-manager-hamburger.png)
 
-Tik of klik op het hamburger-menupictogram om de tabbladen te verbergen.
+Klik op het hamburger-menupictogram om de tabbladen te verbergen.
 
 #### Programmawerkbalk {#program-toolbar-2}
 
@@ -190,7 +190,7 @@ Gebruik het hamburger menu in de [ kopbal van Cloud Manager ](#cloud-manager-hea
 
 ### Oproep tot actie {#cta}
 
-De vraag-aan-actie sectie zal u nuttige informatie afhankelijk van de status van uw programma geven. Voor een nieuw programma kunt u volgende stappen zien die evenals een herinnering van een go-live datum worden aangeboden, [ tijdens programmaverwezenlijking wordt geplaatst.](/help/getting-started/program-setup.md)
+De vraag-aan-actie sectie zal u nuttige informatie afhankelijk van de status van uw programma geven. Voor een nieuw programma kunt u volgende aangeboden stappen en een herinnering van een go-live datum zien, [ plaats tijdens programmaverwezenlijking ](/help/getting-started/program-setup.md).
 
 Voor een levend programma, de status van uw laatste plaatsing met verbindingen voor details en het beginnen van een nieuwe plaatsing.
 
@@ -198,19 +198,19 @@ Voor een levend programma, de status van uw laatste plaatsing met verbindingen v
 
 ### Milieukaart {#environments}
 
-De **kaart van Milieu** geeft u een overzicht van uw milieu&#39;s evenals verbindingen voor snelle acties.
+De **kaart van Milieu** geeft u een overzicht van uw milieu&#39;s en verbindingen voor snelle acties.
 
 De **kaart van Milieu** maakt een lijst van slechts drie milieu&#39;s. Klik **tonen allen** om alle milieu&#39;s van het programma te zien.
 
-Gelieve te zien het document [ Leiden Milieu ](/help/using/managing-environments.md) voor details op hoe te om uw milieu&#39;s te beheren.
+Zie [ het Leiden Milieu ](/help/using/managing-environments.md) voor details op hoe te om uw milieu&#39;s te beheren.
 
 ### Pijppijplijnkaart {#pipelines}
 
-De **Pijpleidingen** kaart geeft u een overzicht van uw pijpleidingen evenals verbindingen voor snelle acties.
+De **Pijpleidingen** kaart geeft u een overzicht van uw pijpleidingen en verbindingen voor snelle acties.
 
 De **Pijpleidingen** kaart maakt slechts van drie pijpleidingen een lijst. Klik **tonen allen** om alle pijpleidingen van het programma te zien.
 
-Gelieve te zien het document [ Leiden Pijpleidingen ](/help/using/managing-pipelines.md) voor details op hoe te om uw pijpleidingen te beheren.
+Zie [ het Leiden Pijpleidingen ](/help/using/managing-pipelines.md) voor details op hoe te om uw pijpleidingen te beheren.
 
 ### Nuttige bronnen {#useful-resources}
 

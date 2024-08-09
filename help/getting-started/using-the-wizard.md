@@ -2,9 +2,9 @@
 title: De wizard Nieuw project gebruiken
 description: Volg deze pagina om te leren hoe u de wizard kunt gebruiken om een AEM Application Project te maken
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: cb791a4f148ba394687b5e824b75fe1386d83c18
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Voer de volgende stappen uit om een AEM project te maken met de wizard.
 
 1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
 
-1. Als u niet reeds hebt, [ creeer uw programma.](program-setup.md) Zodra het programma wordt gecreeerd, zal Cloud Manager erkennen dat de bewaarplaatsen nog niet opstelling zijn en een speciale vraag-aan-actie kaart wordt getoond op het **2} scherm van het Overzicht {.**
+1. Als u niet reeds hebt, [ creeer uw programma ](program-setup.md). Wanneer het programma wordt gecreeerd, erkent Cloud Manager dat de bewaarplaatsen nog niet opstelling zijn en een speciale vraag-aan-actiekaart wordt getoond op het **1} scherm van het Overzicht.**
 
    ![ creeer project CTA ](/help/assets/image2018-10-3_14-29-44.png)
 

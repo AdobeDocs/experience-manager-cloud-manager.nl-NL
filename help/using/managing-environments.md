@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De status is de toestand van het opgerold vermogen over de knooppunten in de omg
 
 ## Omgevingen beheren {#managing-environments-with-cloud-manager}
 
-Op de **tegel van Milieu&#39;s**, ontvang of klik de rij van om het even welk milieu om het **milieu&#39;s** scherm te tonen.
+Op de **tegel van Milieu**, klik de rij van om het even welk milieu om het **milieu&#39;s** scherm te tonen.
 
 Het **milieu&#39;s** scherm toont elke productie en het opvoeren milieu&#39;s in uw programma. De naam van de omgeving wordt boven elke kaart weergegeven. De kaart omvat een lijst van knopen in het milieu samen met de t-shirtgrootte van cpu, de opslag, het gebied, en de status.
 

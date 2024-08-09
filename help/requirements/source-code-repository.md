@@ -2,9 +2,9 @@
 title: Source Code Repository
 description: Meer informatie over de git-opslagplaats die is ingericht voor elk programma dat u in Cloud Manager hebt.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Uw [!UICONTROL AEM Managed Services] -abonnement bevat een opslagplaats voor bro
 
 Als beste praktijken, zou u altijd de Cloud Manager gokbewaarplaats moeten gebruiken, die leeg zonder om het even welke gevormde takken of steekproefprojecten komt. Als u de Cloud Manager git-opslagplaats wilt gebruiken, ontvangt u een token voor persoonlijke toegang waarmee u elke willekeurige git-client kunt gebruiken voor het maken van vertakkingen, het opslaan en ophalen van uw code, het vastleggen van de geschiedenis, enzovoort.
 
-Voor meer informatie over hoe te opstellingstakken in git, zie [ Vormend de Trekken van de Versie.](/help/getting-started/configuring-branches.md)
+Voor meer informatie over hoe te opstellingstakken in git, zie [ het Vormen de Tanden van de Versie ](/help/getting-started/configuring-branches.md).
 
-Voor meer informatie over hoe te om de Cloud Manager git bewaarplaats met de pijpleiding te gebruiken CI/CD, gelieve te verwijzen naar de documenten [ vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md) om meer te leren.
+Voor meer informatie over hoe te om de Cloud Manager git bewaarplaats met de pijpleiding te gebruiken CI/CD, zie [ de Pijpleidingen van de Productie vormen ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen ](/help/using/non-production-pipelines.md) om meer te leren.
 
 ## Bewaarplaats op locatie {#on-premise-repository}
 

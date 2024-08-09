@@ -2,9 +2,9 @@
 title: Programma instellen
 description: Na het instappen, zal de bedrijfseigenaar één of andere aanvankelijke opstelling van het programma moeten doen.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ U kunt programma&#39;s bewerken nadat u ze hebt ingesteld. Voer de volgende stap
 
 Merk op dat de veranderingen onmiddellijk aan Cloud Manager worden bewaard, maar zal niet in uw milieu&#39;s tot de volgende pijpleidingslooppas worden weerspiegeld.
 
-Als u nog geen pijpleiding hebt gecreeerd zie de documenten [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen.](/help/using/non-production-pipelines.md)
+Als u nog geen pijpleiding hebt gecreeerd zie de documenten [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen ](/help/using/non-production-pipelines.md).
 
 ## Schakelen tussen programma&#39;s {#swithing-programs}
 

@@ -2,9 +2,9 @@
 title: Veelgestelde vragen over Cloud Manager
 description: In dit document worden antwoorden gegeven op de meest gestelde vragen over Cloud Manager voor AMS-klanten.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ In dit document worden antwoorden gegeven op de meest gestelde vragen over Cloud
 
 Ja. U moet de `maven-toolchains-plugin` met de juiste instellingen voor Java 11 toevoegen.
 
-* Dit proces wordt gedocumenteerd [ hier.](/help/getting-started/using-the-wizard.md)
-* Voor een voorbeeld, zie de [ code van het steekproefproject.](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)
+* Dit proces wordt gedocumenteerd [ hier ](/help/getting-started/using-the-wizard.md).
+* Voor een voorbeeld, zie de [ code van het steekproefproject van de wint ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
 ## Mijn build mislukt met een fout over maven-scr-plugin na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#maven-src-plugin}
 
@@ -29,7 +29,7 @@ Het is mogelijk dat uw AEM Cloud Manager-build mislukt wanneer u probeert de bui
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
 ```
 
-Voor instructies op hoe te om deze stop te verwijderen, [ zie hier.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
+Voor instructies op hoe te om deze stop te verwijderen, [ zie hier ](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Mijn build mislukt met een fout met betrekking tot RequireJavaVersion na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#requirejavaversion}
 
@@ -60,7 +60,7 @@ Er is geen enkel antwoord op deze vraag. Maar dit zijn enkele belangrijke punten
    * Paginaladen die langer zijn dan `20` seconden, worden gemarkeerd als `504` fouten.
 * Als uw plaats gebruikersauthentificatie vereist, zie het document [ Uw Resultaten van de Test ](/help/using/code-quality-testing.md#authenticated-performance-testing) begrijpen voor het vormen van de test om aan uw plaats voor authentiek te verklaren.
 
-Gelieve te zien het document [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor meer informatie over kwaliteitscontroles.
+Zie [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor meer informatie over kwaliteitscontroles.
 
 ## Kan ik SNAPSHOT voor de versie van het Maven project gebruiken? {#snapshot}
 
@@ -70,11 +70,11 @@ Dit laat verdere plaatsing toe om nog worden geïnstalleerd wanneer de versie ni
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in de it. Indien nodig kunt u later naar dit label verwijzen.
 
-De verdere details over versie behandeling worden [ hier gedocumenteerd.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html)
+De verdere details over versie behandeling worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling.html).
 
 ## Hoe werkt het pakket en de bundelversioning voor het opvoeren en productieplaatsingen? {#staging-production}
 
-In het opvoeren en productieplaatsingen, wordt een automatische versie geproduceerd [ zoals hier gedocumenteerd.](/help/managing-code/maven-project-version.md)
+In het opvoeren en productieplaatsingen, wordt een automatische versie geproduceerd [ zoals hier gedocumenteerd ](/help/managing-code/maven-project-version.md).
 
 Stel voor aangepaste versies in werkgebied- en productieimplementaties een geschikte versie met drie delen in, zoals `1.0.0` . Verhoog de versie telkens wanneer u aan productie opstelt.
 

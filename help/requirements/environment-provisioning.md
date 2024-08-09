@@ -2,9 +2,9 @@
 title: Levering van omgeving
 description: Leer hoe uw omgevingen worden ingericht als onderdeel van het Cloud Manager-instapproces.
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Tijdens het instapproces worden alle AEM cloudomgevingen die u hebt aangeschaft 
 
 ## Welkom-e-mail {#welcome-email}
 
-Na voltooiing van het proces van de milieulevering, ontvangt de aangewezen klantenbeheerder een welkome e-mail met de bevestiging dat zij toegang tot Adobe [!UICONTROL Experience Cloud] hebben gekregen. Het welkomstbericht bevat gedetailleerde informatie over hoe u aan de slag kunt gaan met [!UICONTROL Experience Cloud] -services, [!UICONTROL AEM Managed Services] cloudomgevingen en [!UICONTROL Cloud Manager] self-service portal. Daarnaast bevat de e-mail belangrijke informatie zoals de contactgegevens van de Customer Success Engineer (CSE), waar kan worden gezocht naar ondersteuningsbronnen, forums, veelgestelde vragen en nog veel meer. In de lijst met bronnen in de e-mail krijgt u ook informatie over hoe u [!UICONTROL Cloud Manager] kunt openen voor uw AEM cloudomgevingen.
+Na voltooiing van het proces van de milieulevering, ontvangt de aangewezen klantenbeheerder een welkome e-mail met de bevestiging dat zij toegang tot Adobe [!UICONTROL Experience Cloud] hebben gekregen. Het welkomstbericht bevat gedetailleerde informatie over hoe u aan de slag kunt gaan met [!UICONTROL Experience Cloud] -services, [!UICONTROL AEM Managed Services] cloudomgevingen en [!UICONTROL Cloud Manager] zelfbedieningsportal. Daarnaast bevat de e-mail belangrijke informatie zoals de contactgegevens van de Customer Success Engineer (CSE), waar kan worden gezocht naar ondersteuningsbronnen, forums, veelgestelde vragen en nog veel meer. In de lijst met bronnen in de e-mail krijgt u ook informatie over hoe u [!UICONTROL Cloud Manager] kunt openen voor uw AEM cloudomgevingen.
 
 ## Volgende stappen {#next-steps}
 

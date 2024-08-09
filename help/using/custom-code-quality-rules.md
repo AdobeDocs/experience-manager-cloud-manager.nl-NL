@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Ontdek de specificaties van de aangepaste codecwaliteitsregels die door Cloud Manager worden uitgevoerd tijdens het testen van de codekwaliteit. Deze regels zijn gegrond in beste praktijken van AEM Techniek.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3482'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Aangepaste regels voor codekwaliteit {#custom-code-quality-rules}
 
-Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manager als deel van [ worden uitgevoerd codekwaliteit het testen, ](/help/using/code-quality-testing.md) op beste praktijken van AEM Techniek wordt gebaseerd.
+Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manager als deel van [ worden uitgevoerd codekwaliteit het testen ](/help/using/code-quality-testing.md), op beste praktijken van AEM Techniek wordt gebaseerd.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manage
 
 >[!NOTE]
 >
->Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+>Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 Gebruik Sling Scheduler niet voor taken waarvoor een gegarandeerde uitvoering is vereist. Het verkopen van Geplande Banen garandeert uitvoering en beter geschikt voor zowel gegroepeerde als niet-gegroepeerde milieu&#39;s.
 
-Verwijs naar [ Apache het Sling Event en de documentatie van de Verwerking van de Baan ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) om meer over te leren hoe het Verdelen van Banen in gegroepeerde milieu&#39;s wordt behandeld.
+Zie [ Apache het Sling Event en de documentatie van de Verwerking van de Baan ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) om meer over te leren hoe het Verschuiven van Banen in gegroepeerde milieu&#39;s worden behandeld.
 
 ### AEM vervangen API&#39;s mogen niet worden gebruikt {#sonarqube-aem-deprecated}
 
@@ -655,7 +655,7 @@ De documentatie van de Hulpmiddelen van de Modernisering van het AEM verstrekt d
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
-De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die in [ worden beschreven de Nota&#39;s van de Versie: Verwijdering van de Agenten van de Replicatie.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)
+Steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van de Cloud Service, zoals die in [ wordt beschreven de Nota&#39;s van de Versie: Verwijdering van de Agenten van de Replicatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
 
 De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve oplossingen moeten contacteren.
 
@@ -666,7 +666,7 @@ De klanten die omgekeerde replicatie gebruiken zouden Adobe voor alternatieve op
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals beschreven in [ Gebruikend cliënt-Kant de documentatie van Bibliotheken, ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors) wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op publiceer instanties van verwijzingen te worden voorzien.
+AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals die in [ wordt beschreven Gebruikend de cliënt-Kant documentatie van Bibliotheken ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op publiceer instanties van verwijzingen te worden voorzien.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 
@@ -708,9 +708,9 @@ Het migratiehulpmiddel in de [ as a Cloud Service GitHub bewaarplaats van AEM As
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Terwijl het gebruik van statische malplaatjes in AEM Projecten historisch algemeen is geweest, worden de editable malplaatjes hoogst geadviseerd aangezien zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie kan in de [ Malplaatjes van de Pagina worden gevonden - editable documentatie.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)
+Terwijl het gebruik van statische malplaatjes in AEM Projecten historisch algemeen is geweest, worden de editable malplaatjes hoogst geadviseerd aangezien zij de meeste flexibiliteit verstrekken en extra eigenschappen steunen die niet in statische malplaatjes aanwezig zijn. Meer informatie kan in de [ Malplaatjes van de Pagina worden gevonden - editable documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
 
-De migratie van statisch aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [ AEM Moderniseringshulpmiddelen.](https://opensource.adobe.com/aem-modernize-tools/)
+De migratie van statisch aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend [ AEM Moderniseringshulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/).
 
 ### Het gebruik van oudere basiscomponenten wordt afgeraden {#oakpal-usage-legacy}
 
@@ -719,7 +719,7 @@ De migratie van statisch aan editable malplaatjes kan grotendeels worden geautom
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-De oudere Componenten van de Stichting (namelijk componenten onder `/libs/foundation`) zijn afgekeurd voor verscheidene AEM versies ten gunste van de [ Componenten van de Kern.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) Het gebruik van de oudere Foundation Components als de basis voor aangepaste componenten, door bedekking of overerving, wordt afgeraden en moet worden omgezet in de corresponderende kerncomponent.
+De oudere Componenten van de Stichting (namelijk componenten onder `/libs/foundation`) zijn afgekeurd voor verscheidene AEM versies ten gunste van de [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction). Het gebruik van de componenten van de erfenisStichting als basis voor douanecomponenten, hetzij door bedekking of overerving, wordt ontmoedigd en zou in de overeenkomstige kerncomponent moeten worden omgezet.
 
 [ AEM Moderniseringshulpmiddelen ](https://opensource.adobe.com/aem-modernize-tools/) kunnen deze omzetting vergemakkelijken.
 
@@ -730,7 +730,7 @@ De oudere Componenten van de Stichting (namelijk componenten onder `/libs/founda
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-AEM Cloud Service vereist dat definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) directe onderliggende knooppunten van `/oak:index` zijn. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie worden gevonden.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing)
+AEM Cloud Service vereist dat definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) directe onderliggende knooppunten van `/oak:index` zijn. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) worden gevonden.
 
 ### Definitieknooppunten van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service vereist dat definities van aangepaste zoekindexen (knooppunten
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-AEM Cloud Service vereist dat in definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` is ingesteld op `2` . AEM Cloud Service ondersteunt geen andere waarde. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie worden gevonden.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing)
+AEM Cloud Service vereist dat in definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` is ingesteld op `2` . AEM Cloud Service ondersteunt geen andere waarde. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) worden gevonden.
 
 ### Afstammende knooppunten van definitieknooppunten van de aangepaste zoekindex moeten van het type zijn `nt:unstructured` {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ Problemen met moeilijk op te lossen problemen kunnen optreden wanneer een defini
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten en dit knooppunt moet ten minste één onderliggend knooppunt hebben. Meer informatie kan in de [ documentatie van Oak worden gevonden.](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex moet een onderliggend knooppunt met de naam `indexRules` bevatten en dit knooppunt moet ten minste één onderliggend knooppunt hebben. Meer informatie kan in de [ documentatie van Oak ](https://jackrabbit.apache.org/oak/docs/query/lucene.html) worden gevonden.
 
 ### Definitieknooppunten van aangepaste zoekindex moeten de naamgevingsconventies volgen {#oakpal-custom-search-definitions}
 

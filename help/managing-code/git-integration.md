@@ -2,9 +2,9 @@
 title: Git Integration met Adobe Cloud Manager
 description: Deze videoreeks doorloopt de opstelling en de integratie van een klant-beheerde (op-gebouw) gogegevensopslagplaats met Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Deze videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie
 
 De stappen en naamgevingsconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde it-opslagplaats en Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zullen worden aangepast voor individuele ontwikkelingsteams.
 
-Voor een volledig overzicht van Cloud Manager, te herzien gelieve de document [ Inleiding aan Cloud Manager.](/help/introduction.md)
+Voor een volledig overzicht van Cloud Manager, zie [ Inleiding aan Cloud Manager ](/help/introduction.md).
 
 ## Beginsynchronisatie {#initial-sync}
 
@@ -40,7 +40,7 @@ De eerste stappen voor het synchroniseren van een door de klant beheerde it-opsl
 
 ## Basisvertakkingsstrategie {#branching-strategy}
 
-Opstelling een basis vertakkende strategie om uit Cloud Manager [ productie ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen voordeel te halen.](/help/using/non-production-pipelines.md)
+Opstelling een basis vertakkende strategie om uit Cloud Manager [ productie ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen ](/help/using/non-production-pipelines.md) voordeel te halen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 

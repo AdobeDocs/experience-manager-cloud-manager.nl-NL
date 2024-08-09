@@ -2,7 +2,7 @@
 title: Opslagplaatsen voor Adoben toevoegen in Cloud Manager
 description: Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -29,8 +29,8 @@ Het **venster van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide 
 
    ![ voeg de dialoog van de Bewaarplaats ](assets/add-repository-wizard.png) toe
 
-Wanneer de tovenaar sluit, wordt uw nieuwe bewaarplaats getoond in de lijst in het **venster van Bewaarplaatsen**. U kunt a [ CI/CD pijpleiding ](/help/overview/ci-cd-pipelines.md) met het nu associëren of het binnen het [**venster van Bewaarplaatsen** beheren.](managing-repositories.md)
+Wanneer de tovenaar sluit, wordt uw nieuwe bewaarplaats getoond in de lijst in het **venster van Bewaarplaatsen**. U kunt a [ CI/CD pijpleiding ](/help/overview/ci-cd-pipelines.md) met het nu associëren of het binnen het [**venster van Bewaarplaatsen** ](managing-repositories.md) beheren.
 
 >[!TIP]
 >
->U kunt bewaarplaatsen ook toevoegen GitHub die u als [ privé bewaarplaatsen beheert.](private-repositories.md)
+>U kunt bewaarplaatsen ook toevoegen GitHub die u als [ privé bewaarplaatsen ](private-repositories.md) beheert.

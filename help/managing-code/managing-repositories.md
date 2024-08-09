@@ -2,9 +2,9 @@
 title: Opslagplaatsen in Cloud Manager beheren
 description: Leer hoe u uw git-opslagruimten in Cloud Manager maakt, weergeeft en bewerkt.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ U kunt desgewenst extra opslagruimten voor Adobe-beheer maken en ook uw eigen pe
 
 In Cloud Manager gemaakte opslagplaatsen kunnen ook worden geselecteerd wanneer u pijpleidingen toevoegt of bewerkt. Zie [ CI-CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md) om meer te leren.
 
-Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [ de steun van de it submodule, ](git-submodules.md) vele secundaire takken kunnen bij bouwstijltijd worden omvat.
+Er is één enkele primaire bewaarplaats of een tak voor om het even welke bepaalde pijpleiding. Met [ de steun van de it submodule ](git-submodules.md), vele secundaire takken kunnen bij bouwstijltijd worden omvat.
 
 ## Venster Opslagplaatsen {#repositories-window}
 
@@ -53,11 +53,11 @@ U kunt de repository selecteren in het venster en op de elliptische knop klikken
 
 ## Opslagplaatsen toevoegen {#adding-repositories}
 
-Tik of klik **voeg de knoop van de Bewaarplaats** in het **venster van Bewaarplaatsen** toe om **te beginnen voeg de** tovenaar van de Bewaarplaats {toe.
+Klik **toevoegen** knoop van de Bewaarplaats {in het **venster van Bewaarplaatsen** om **te beginnen voeg de** tovenaar van de Bewaarplaats {toe.
 
 ![ toevoegen de tovenaar van de bewaarplaats ](assets/add-repository-wizard.png)
 
-Cloud Manager steunt beide bewaarplaatsen die door Adobe (**worden beheerd de Bewaarplaats van de Adobe**) evenals uw zelf-beheerde bewaarplaatsen (**Privé Bewaarplaats**). De vereiste velden zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende documenten voor meer informatie.
+Cloud Manager steunt beide bewaarplaatsen die door Adobe (**worden beheerd de Bewaarplaats van de Adobe**) en uw zelf-beheerde bewaarplaatsen (**Privé Bewaarplaats**). De vereiste velden zijn afhankelijk van het type opslagplaats dat u wilt toevoegen. Raadpleeg de volgende documenten voor meer informatie.
 
 * [Opslagplaatsen voor Adoben toevoegen in Cloud Manager](adobe-repositories.md)
 * [Persoonlijke opslagplaatsen toevoegen in Cloud Manager](private-repositories.md)
@@ -69,17 +69,17 @@ Cloud Manager steunt beide bewaarplaatsen die door Adobe (**worden beheerd de Be
 
 ## Repo-info openen {#repo-info}
 
-Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door te tikken of de **knoop van Info van de Reparatie van de Toegang** in de toolbar te klikken.
+Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot Adobe-geleide bewaarplaatsen programmatically toegang te hebben door de **knoop van Info van de Reparatie van de Toegang** op de toolbar te klikken.
 
 ![ informatie van de Bewaarplaats ](assets/access-repo-info.png)
 
-Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie gelieve het document [ Toegang hebbend tot de Informatie van de Bewaarplaats.](accessing-repositories.md)
+Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer informatie bij de toegang tot van bewaarplaats informatie, zie [ Toegang tot de Informatie van de Bewaarplaats ](accessing-repositories.md).
 
 ## Branches controleren {#check-branches}
 
 De **Tak van de Controle / leidt de actie van het Project** voert twee functies afhankelijk van de staat van de bewaarplaats uit.
 
-* Als de bewaarplaats nieuw-gecreeerd is, leidt de actie tot een steekproefproject dat op [ wordt gebaseerd het AEM projectarchetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Als de bewaarplaats nieuw-gecreeerd is, leidt de actie tot een steekproefproject dat op [ wordt gebaseerd het AEM projectarchetype ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Als de gegevensopslagplaats reeds het steekproefproject heeft gecreeerd, controleert het de staat van de bewaarplaats en zijn takken en meldt terug als het steekproefproject reeds bestaat.
 
 ![ de bijwerkingsacties van de Controle ](assets/check-branches.png)
@@ -90,7 +90,7 @@ De **actie van Repository URL van het Exemplaar** kopieert URL van de bewaarplaa
 
 ## Weergeven en bijwerken {#view-update}
 
-De **Mening &amp; van de Update** actie opent de **dialoog van de Bewaarplaats van de Update**. Gebruikend het kunt u de **Naam** bekijken en **Voorproef URL van de Bewaarplaats** evenals de **Beschrijving** van de bewaarplaats bijwerken.
+De **Mening &amp; van de Update** actie opent de **dialoog van de Bewaarplaats van de Update**. Gebruikend het kunt u de **Naam** bekijken en **Voorproef URL van de Bewaarplaats** en de **Beschrijving** van de bewaarplaats bijwerken.
 
 ![ Mening en update bewaarplaats informatie ](assets/update-repository.png)
 
@@ -102,6 +102,6 @@ De **schrapping** actie verwijdert de bewaarplaats uit uw project. Een opslagpla
 
 Wanneer een gegevensopslagruimte in Cloud Manager wordt verwijderd, wordt deze gemarkeerd als verwijderd en is deze niet langer toegankelijk voor de gebruiker, maar wordt deze in het systeem onderhouden voor hersteldoeleinden.
 
-Als u een nieuwe repository probeert te maken nadat u een repository met dezelfde naam hebt verwijderd, ontvangt u het foutbericht `An error has occurred while trying to create repository. Please contact your CSE or Adobe Support.`
+Als u een nieuwe repository probeert te maken nadat u een repository met dezelfde naam hebt verwijderd, ontvangt u het foutbericht `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
 Als u dit foutbericht ontvangt, neemt u contact op met de Adobe Support zodat deze gebruikers kunnen helpen de naam van de verwijderde opslagplaats te wijzigen of een andere naam voor de nieuwe opslagplaats kunnen kiezen.

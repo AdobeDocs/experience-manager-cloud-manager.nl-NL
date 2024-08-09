@@ -2,7 +2,7 @@
 title: Gebruikersreis
 description: In dit document worden de verschillende instapscenario's beschreven en wordt uitgelegd hoe u aan de slag gaat met Cloud Manager.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Tijdens het uitvoeren van de upgrade gaat u naar Cloud Manager en ontvangt u de 
 
 Uw bestaande AEM-project moet ook voldoen aan de aanbevolen aanbevolen best practices, aangezien u [!UICONTROL Cloud Manager] gaat gebruiken voor het implementeren van nieuwe codewijzigingen in uw AEM.
 
-Om extra informatie over de voordelen te krijgen om aan AEM 6.5 te bevorderen, zie het document [ Bevorderend aan AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+Om extra informatie over de voordelen te krijgen om aan AEM 6.5 te bevorderen, zie het document [ Bevorderend aan AEM 6.5 ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html).
 
 ## Toegang verkrijgen tot [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -56,7 +56,7 @@ Nadat u zich voor het eerst hebt aangemeld bij [!UICONTROL Cloud Manager] , hebt
 
 Om met [!UICONTROL Cloud Manager] begonnen te worden, zie het document [ Eerste Login van de Tijd ](/help/getting-started/first-time-login.md).
 
-Voor extra informatie over AEM, zie het document [ die en handhaaft.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
+Voor extra informatie over AEM, zie het document [ Opstellend en het Onderhouden ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
 
 ## Aan de slag met [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 

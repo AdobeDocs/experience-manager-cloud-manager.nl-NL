@@ -2,9 +2,9 @@
 title: Meldingen
 description: Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 
 ## Meldingen in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] verzendt u berichten wanneer een productiepijpleiding (met succes of met succes), bij het begin van een productieleiding begint en voltooit, evenals wanneer de **Go-Live Goedkeuring** en **Geplande** stappen worden bereikt. Deze meldingen worden verzonden via het [!UICONTROL Experience Cloud] -meldingssysteem.
+[!UICONTROL Cloud Manager] verzendt u berichten wanneer een productiepijpleiding (met succes of met succes), bij het begin van een productieleiding begint en voltooit, en wanneer de **Go-Live Goedkeuring** en **Geplande** stappen worden bereikt. Deze meldingen worden verzonden via het [!UICONTROL Experience Cloud] -meldingssysteem.
 
 >[!NOTE]
 >

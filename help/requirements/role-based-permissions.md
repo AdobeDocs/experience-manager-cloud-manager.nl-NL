@@ -2,9 +2,9 @@
 title: Op rollen gebaseerde machtigingen
 description: Meer informatie over vooraf geconfigureerde, op rollen gebaseerde machtigingen van Cloud Manager voor het beheer van de toegang tot uw cloudbronnen.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '597'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 2%
 
 ## Gebruikersrollen {#user-roles}
 
-Rolbeheer voor [!UICONTROL Cloud Manager] wordt gedaan gebruikend de [ Admin Console.](https://helpx.adobe.com/nl/enterprise/using/admin-console.html) Elke gebruiker van [!UICONTROL Cloud Manager] moet lid zijn van de IMS-organisatie van de klant en over de Adobe Managed Services-productcontext beschikken. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel in de Admin Console toe te voegen.
+Het beheer van de rol voor [!UICONTROL Cloud Manager] wordt gedaan gebruikend de [ Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Elke gebruiker van [!UICONTROL Cloud Manager] moet lid zijn van de IMS-organisatie van de klant en de Adobe Managed Services-productcontext hebben. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel in de Admin Console toe te voegen.
 
-Meer over leren hoe te om uw rollen te opstelling zie het document [ VestigingsGebruikers en Rollen.](/help/requirements/users-and-roles.md)
+Meer over leren hoe te opstelling zien uw rollen het document [ VestigingsGebruikers en Rollen ](/help/requirements/users-and-roles.md).
 
 Deze lijst maakt een lijst van de rollen u in de Admin Console kunt toewijzen.
 
@@ -65,8 +65,8 @@ Elk van de rollen heeft specifieke bijbehorende preconfigured toestemmingen. Dez
 | Stap lezen | Zie de resultaten van de metrische gegevens voor de stapkwaliteit | x | x | x | x | x |
 | Token voor persoonlijke toegang genereren | Toegangsuitrusting |  | x |  | x |  |
 
-Meer over leren hoe te opstelling uw gebruikers zien het document [ VestigingsGebruikers en Rollen.](/help/requirements/users-and-roles.md)
+Meer over leren hoe te opstelling uw gebruikers zien het document [ VestigingsGebruikers en Rollen ](/help/requirements/users-and-roles.md).
 
 >[!TIP]
 >
->Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Gelieve te zien de toestemmingen van de Douane van het document [ ](/help/using/custom-permissions.md) voor meer details.
+>Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Zie [ de Toestemmingen van de Douane ](/help/using/custom-permissions.md) voor meer details.

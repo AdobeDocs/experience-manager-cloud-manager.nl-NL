@@ -2,9 +2,9 @@
 title: Controleomgevingen
 description: Leer hoe u uw omgevingen in Cloud Manager kunt bewaken.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Volg deze stappen om tot de Controle van het Systeem toegang te hebben.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
-1. Tik of klik de elliptische knoop van het programma u wenst om de **optie van de Controle van de Show** te controleren en te selecteren.
+1. Klik de elliptische knoop van het programma u wenst om de **te controleren en te selecteren tonen Controle** optie.
 
    ![ Montages ](/help/assets/first-timea1.png)
 
@@ -51,7 +51,7 @@ De status in elke categorie is een overzicht van de afzonderlijke meetwaarden. A
 
 ## System Monitoring Detail {#system-monitoring-detail}
 
-Tik of klik op een van de categoriekolommen van een bepaald exemplaar of op de titel van een bepaalde categorie in de linkernavigatie om de details van bepaalde metriek weer te geven. Elke detailpagina bevat een reeks grafieken voor de meetgegevens in die categorie. U kunt de metriek voor alle instanties in een milieu of voor een specifieke instantie bekijken. U kunt schakelen tussen de omgeving en instanties met de vervolgkeuzelijsten in de rechterbovenhoek.
+Als u de details van bepaalde metriek wilt weergeven, klikt u op een van de categoriekolommen van een specifiek exemplaar of op de titel van de categorie in de linkernavigatie. Elke detailpagina bevat een reeks grafieken voor de meetgegevens in die categorie. U kunt de metriek voor alle instanties in een milieu of voor een specifieke instantie bekijken. U kunt schakelen tussen de omgeving en instanties met de vervolgkeuzelijsten in de rechterbovenhoek.
 
 ![ Uitgezochte milieu ](/help/assets/System_Monitoring1.png)
 
@@ -98,9 +98,9 @@ Als u bijvoorbeeld op de waarschuwingsdrempelreeks klikt, ziet u alleen de kriti
 
 ## SLA-rapportage {#sla-reporting}
 
-U kunt de prestaties van uw productie AEM milieu met betrekking tot uw overeenkomst van het de dienstniveau (SLA) zien.
+U kunt de prestaties van uw productie AEM milieu met betrekking tot uw contractuele overeenkomst van het de dienstniveau zien (SLA).
 
-In de volgende grafiek wordt de maandelijkse SLA-prestaties voor 2019 weergegeven.
+In de volgende grafiek wordt het maandelijkse SLA-resultaat voor 2019 weergegeven.
 
 ![ SLA 2018 grafiek ](/help/assets/SLA-Reports-one.png)
 
@@ -112,14 +112,14 @@ De **sectie van de Analyse van de Gebeurtenis** onder deze grafiek toont de reek
 
 ![ de analyse van de Gebeurtenis ](/help/assets/sla-reporting3.png)
 
-## SLA-waarden {#sla-metrics}
+## SLA Metrics {#sla-metrics}
 
 * **het Contract van de Auteur**: Dit is SLA die in uw contract met Adobe Managed Services voor de auteursrij wordt bepaald.
-* **SLA van de Auteur van AMS**: Dit is de gemeten uptime van de de factoringsincidenten van de productiescreter die door Adobe of onze verkopers worden veroorzaakt.
-* **SLA van de Auteur**: Dit is gemeten uptime van de auteursrij die geplande onderbreking zoals onderhoudsvensters negeert.
+* **de Auteur SLA van AMS**: Dit is de gemeten uptime van de de factoringsincidenten van de productiefunctie die door Adobe of onze verkopers worden veroorzaakt.
+* **Auteur SLA**: Dit is de gemeten uptime van de auteursrij die geplande onderbreking zoals onderhoudsvensters negeert.
 * **Eind - gebruikerscontract**: Dit is SLA die in uw contract met Adobe Managed Services voor publiceer rij wordt bepaald.
-* **SLA van de EindGebruiker van AMS**: Dit is gemeten uptime van de productie publiceren rij factoring incidenten die door Adobe of onze verkopers worden veroorzaakt.
-* **SLA van de Gebruiker van het Eind**: Dit is gemeten uptime van de publiceer rij die geplande onderbreking zoals onderhoudsvensters negeert.
+* **SLA van het Eind van AMS**: Dit is gemeten uptime van de productie publiceren rij factoring incidenten die door Adobe of onze verkopers worden veroorzaakt.
+* **SLA van het Eind**: Dit is gemeten uptime van de publiceer rij die geplande onderbreking zoals onderhoudsvensters negeert.
 
 ## Videozelfstudie {#video-tutorial}
 

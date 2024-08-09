@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Productiepijpleidingen configureren {#configuring-production-pipelines}
 
-Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren. als u eerst een meer conceptueel overzicht van zou willen hoe de pijpleidingen in Cloud Manager werken, te zien gelieve het document [ CI/CD Lijnen.](/help/overview/ci-cd-pipelines.md)
+Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren. als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
 
 ## Overzicht {#overview}
 
@@ -21,7 +21,7 @@ Gebruikend de **tegel van de Montages van de Pijpleiding** {in [!UICONTROL Cloud
 * **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode van uw git bewaarplaats helemaal in productie te nemen.
 * **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
-Dit document richt zich op productiepijpleidingen. Voor details op hoe te om niet-productiepijpleidingen te vormen zie het document [ Vormend niet-Productiepijpleidingen.](/help/using/non-production-pipelines.md)
+Dit document richt zich op productiepijpleidingen. Voor details op hoe te om niet-productiepijpleidingen te vormen zie het document [ Vormend niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
 
 De **rol van de Manager van de Plaatsing** is verantwoordelijk voor vestiging de pijpleiding. Configuratie van pijpleidingen bestaat uit:
 
@@ -39,7 +39,7 @@ Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma 
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik op **+ voeg** toe en selecteer **Productiepijpleiding** toevoegen.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**, dan klik **+ voeg** toe en selecteer **Productiepijpleiding** toevoegen.
 
    ![ voeg een productiepijpleiding ](/help/assets/configure-pipelines/add-prod1.png) toe
 
@@ -113,7 +113,7 @@ Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma 
 
            >[!TIP]
            >
-           >Gelieve te verwijzen naar de Plaatsing van de Code van het document [, ](/help/using/code-deployment.md) om te leren hoe te om het plaatsingsprogramma te plaatsen of de pijpleiding onmiddellijk uit te voeren.
+           >Zie ](/help/using/code-deployment.md) de Plaatsing van de Code van 0} om te leren hoe te om het plaatsingsprogramma te plaatsen of de pijpleiding onmiddellijk uit te voeren.[
 
             * **Het Toezicht CSE van het Gebruik** - als deze optie wordt geselecteerd, wordt CSE aangehaald om de plaatsing eigenlijk te beginnen. Wanneer het creëren van of het uitgeven van een pijpleiding wanneer deze optie wordt toegelaten, heeft de **rol van de Manager van de Plaatsing** de volgende opties.
 
@@ -128,7 +128,7 @@ Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma 
 
    >[!TIP]
    >
-   >Verwijs naar het document [ Testen van de Kwaliteit van de Code ](/help/using/code-quality-testing.md#performance-testing) voor meer details over de opties beschikbaar op het **Testen van het Stadium** tabel.
+   >Zie [ het Testen van de Kwaliteit van de Code ](/help/using/code-quality-testing.md#performance-testing) voor meer details over de opties beschikbaar op het **Testen van het Stadium** tabel.
 
    1. Onder de **sectie van het Gewicht van de Draad van de Inhoud van 0} Plaatsen Levering/Verspreid van de Lading, bepaalt u hoe de plaatsprestaties het testen worden gevormd gebaseerd op de weging van paginaverzoeken tussen de drie paginasets, die kunnen worden toegelaten of worden onbruikbaar gemaakt.**
 
@@ -138,7 +138,7 @@ Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma 
 
       ![ het ladingsgewicht van Plaatsen ](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. Onder de **sectie van het Testen van de Prestaties van Assets** van de Distributie {, bepaalt u de testdistributie van beelden en PDF evenals bepaalt uw eigen testactiva.
+   1. Onder de **het Testen van Prestaties van Assets** sectie, bepaalt u de testdistributie van beelden en PDF en bepaalt uw eigen testactiva.
 
       * **Beelden** - pas de schuif aan om de testspleet tussen beelden en PDF aan te passen.
       * **PDF** - pas de schuif aan om de testspleet tussen beelden en PDF aan te passen.
@@ -155,7 +155,7 @@ Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma 
 
 ## De volgende stappen {#the-next-steps}
 
-Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Gelieve te zien de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer details.
+Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial-one}
 

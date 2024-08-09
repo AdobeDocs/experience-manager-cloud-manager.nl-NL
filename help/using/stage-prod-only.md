@@ -2,9 +2,9 @@
 title: Alleen werkgebied- en alleen-prod-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: c238caa22fdd71ae6aefd098331b626b9b951a0f
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het vroege adopterprogramma.](/help/release-notes/current.md#early-adoption)
+>Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md#early-adoption).
 
 ## Overzicht {#overview}
 
@@ -34,7 +34,7 @@ De fase-slechts en prod-slechts pijpleidingen bieden oplossingen aan deze gebrui
 
 Noch worden de stadium-enige noch de prod-enige pijpleidingen uitgevoerd terwijl een volledig-stapelproductiepijpleiding loopt en vice versa. Als zowel het stadium-slechts als de full-stack productiepijplijn de **gevormde trekker van de Veranderingen van het Git** hebben en aan de zelfde tak en de bewaarplaats richten, slechts wordt de stadium-enige pijpleiding automatisch begonnen. Prod-slechts pijpleidingen zijn niet begonnen **op de Veranderingen van het Git** aangezien zij niet direct met een bewaarplaats verbonden zijn.
 
-Deze speciale pijpleidingen bieden meer flexibiliteit, maar noteer de volgende details van de werking en aanbevelingen.
+Deze speciale pijpleidingen bieden meer flexibiliteit, maar u zou de volgende details van verrichting en aanbevelingen moeten noteren.
 
 >[!NOTE]
 >
@@ -46,9 +46,9 @@ Deze speciale pijpleidingen bieden meer flexibiliteit, maar noteer de volgende d
 
 ## Pipetontwerp {#pipeline-creation}
 
-Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardige manier aan de standaard gekoppelde [ productiepijpleidingen ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen.](/help/using/non-production-pipelines.md) Zie deze documenten voor meer informatie.
+Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardige manier aan de standaard gekoppelde [ productiepijpleidingen ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen ](/help/using/non-production-pipelines.md). Zie deze documenten voor meer informatie.
 
-1. In het **venster van de Pijpleiding**, tik of klik **toevoegen Pijpleiding**.
+1. In het **venster van Pijpleidingen**, klik **toevoegen Pijpleiding**.
 
    * Selecteer **toevoegen niet-ProductiePijpleiding** om een stadium-slechts pijpleiding tot stand te brengen.
    * Selecteer **Voeg de Uitrusting van de Productie slechts Pijpleiding** toe om een pro-enige pijpleiding tot stand te brengen.
@@ -59,31 +59,31 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 >
 >Bepaalde opties kunnen grijs worden weergegeven als de desbetreffende pijpleidingen al bestaan.
 >
->* **voeg slechts de Pijpleiding van de Productie** toe zal niet beschikbaar zijn als een stadium-enige pijpleiding nog niet bestaat.
->* **voeg de Pijpleiding van de Productie toe** zal niet beschikbaar zijn als een standaard gekoppelde pijpleiding reeds bestaat.
+>* **voeg slechts de Pijpleiding van de Productie** toe is niet beschikbaar als een stadium-enige pijpleiding nog niet bestaat.
+>* **voeg de Pijpleiding van de Productie** toe is niet beschikbaar als een standaard gekoppelde pijpleiding reeds bestaat.
 >* Per programma zijn slechts één pijpleiding met alleen maar een fase en één pijpleiding toegestaan.
 
 ### Alleen met werkgebied uitgeruste pijpleidingen {#stage-only}
 
-1. Zodra u **selecteert voeg niet-Productiepijpleiding** optie toe, **voegt niet-Productie pijplijn** dialoog toe opent.
-1. Om een stadium-enige pijpleiding tot stand te brengen, selecteer het werkgebiedmilieu in het **In aanmerking komende gebied van de Milieu van de Plaatsing** voor uw pijpleiding. Voltooi de resterende gebieden en tik of klik **ga** verder.
+1. Zodra u **selecteert voeg niet-ProductiePipeline** optie toe, **voegt niet-ProductiePijl** dialoogdoos toe opent.
+1. Om een stadium-enige pijpleiding tot stand te brengen, selecteer het werkgebiedmilieu in het **In aanmerking komende gebied van de Milieu van de Plaatsing** voor uw pijpleiding. Voltooi de resterende gebieden en klik **verdergaan**.
 
    ![ Creërend een stadium-enige pijpleiding ](/help/assets/configure-pipelines/stage-only.png)
 
-1. Op het **Testen van het Stadium** lusje, kunt u het testen dan bepalen die op het het opvoeren milieu zou moeten worden uitgevoerd. Tik of klik **sparen** om uw nieuwe pijpleiding te bewaren.
+1. Op het **Testen van het Stadium** lusje, kunt u het testen dan bepalen die op het het opvoeren milieu zou moeten worden uitgevoerd. Klik **sparen** om uw nieuwe pijpleiding te bewaren.
 
    ![ de parameters van de Test voor een stadium-enige pijpleiding ](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Pijpleidingen, alleen met behulp van propaan {#prod-only}
 
 1. Zodra u **selecteert voeg slechts de optie van de Pijpleiding van de Productie** toe, **voeg slechts de dialoog van de Pijpleiding van de Productie toe** opent.
-1. Verstrek de Naam van de a **Pijpleiding**. De resterende opties en functionaliteit van het dialoogvenster werken hetzelfde als die in het standaarddialoogvenster voor het maken van gekoppelde pijplijnen. Tik of klik **sparen** om de pijpleiding te bewaren.
+1. Verstrek de Naam van de a **Pijpleiding**. De resterende opties en functionaliteit van het dialoogvenster werken hetzelfde als die in het standaarddialoogvenster voor het maken van gekoppelde pijplijnen. Klik **sparen** om de pijpleiding te bewaren.
 
    ![ Creërend een productie-enige pijpleiding ](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Uitvoeren van alleen-Prod en alleen-werkgebiedpijplijnen {#running}
 
-Prod-slechts en stadium-enige pijpleidingen worden in werking gesteld op de zelfde manier als [ alle andere pijpleidingen worden in werking gesteld.](/help/using/managing-pipelines.md#running-pipelines) Zie die documentatie voor meer informatie.
+Prod-slechts en stadium-enige pijpleidingen worden in werking gesteld op de zelfde manier als [ alle andere pijpleidingen in werking gesteld ](/help/using/managing-pipelines.md#running-pipelines). Zie die documentatie voor meer informatie.
 
 Daarnaast kan een pijpleiding met alleen de mogelijkheid van een fase rechtstreeks worden geactiveerd vanaf de uitvoeringsdetails van een pijpleiding met alleen het werkgebied.
 
@@ -93,7 +93,7 @@ Een pijpleiding met alleen trapsgewijze uitloop loopt vrijwel op dezelfde manier
 
 ![ werkgebied-enige pijpleiding loopt ](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-**bevordert bouw** knoop slechts verschijnt als u op de recentste succesvolle stadium-enige pijpleidingsuitvoering bent. Nadat u op de pijplijn hebt getikt of erop hebt geklikt, wordt u gevraagd om de uitvoering van de alleen-lezen pijplijn te bevestigen of om een alleen-lezen pijplijn te maken als deze nog niet bestaat.
+**bevordert bouw** knoop slechts verschijnt als u op de recentste succesvolle stadium-enige pijpleidingsuitvoering bent. Zodra geklikt, vraagt het u om de looppas van de pro-enige pijpleiding te bevestigen of een pro-enige pijpleiding tot stand te brengen als er niet reeds bestaat.
 
 ### Pijpleidingen, alleen met behulp van propaan {#prod-only-run}
 

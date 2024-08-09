@@ -3,9 +3,9 @@ title: Evaluatiefase
 seo-title: Evaluation Phase
 description: Leer hoe de de evaluatiefase van de Tovenaar van de Update van het Product de verbeteringsingewikkeldheid met de patroondetector beoordeelt.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Het verslag dient als een beoordeling van de ontwikkelingsinspanningen die gepaa
 
 >[!NOTE]
 >
->Meer over patroondetector leren, verwijs naar het document [ die de Complexiteit van de Verbetering met de Detector van het Patroon beoordelen.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en)
+>Om meer over patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en) beoordelen.
 
 ## De evaluatie uitvoeren {#running}
 
@@ -33,7 +33,7 @@ De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontd
 
 Voer de volgende stappen uit om het evaluatieverslag te genereren.
 
-1. Begin de tovenaar zoals die in het document [ wordt beschreven Tovenaar van de Update van het Product.](/help/product-update-wizard/overview.md)
+1. Begin de tovenaar zoals die in het document [ wordt beschreven tovenaar van de Update van het Product ](/help/product-update-wizard/overview.md).
 
 1. Klik op **[!UICONTROL Run Evaluation]** .
 

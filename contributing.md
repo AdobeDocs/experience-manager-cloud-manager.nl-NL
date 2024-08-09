@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Welke methode u kiest hangt van af hoe comfortabel u de documentatie in GitHub z
 
 >[!NOTE]
 >
->De bijdragen die u voorlegt worden behandeld door de [ termijnen van de Adobe van gebruik.](https://www.adobe.com/legal/terms.html)
+>De bijdragen die u voorlegt worden behandeld door de [ termijnen van de Adobe van gebruik ](https://www.adobe.com/legal/terms.html).
 
 ### Een probleem maken {#create-an-issue}
 

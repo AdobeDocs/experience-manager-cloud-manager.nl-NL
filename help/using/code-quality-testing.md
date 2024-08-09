@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: fadcf560f08bf16d0d18172c620a450d0cb06225
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2759'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan b
 
 De software implementeert deze met behulp van een combinatie van SonarQube-analyse, inhoudspakketonderzoek met OakPAL en Dispatcher-validatie met het Dispatcher Optimization Tool.
 
-Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane.](/help/using/custom-code-quality-rules.md)
+Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane ](/help/using/custom-code-quality-rules.md).
 
 >[!TIP]
 >
->U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding.](/help/assets/CodeQuality-rules-latest-AMS.xlsx)
+>U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 De resultaten van het testen van de codekwaliteit worden geleverd als classificatie zoals samengevat in deze lijst.
 
@@ -71,7 +71,7 @@ De resultaten van het testen van de codekwaliteit worden geleverd als classifica
 
 >[!NOTE]
 >
->Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden uitgevoerd, gelieve te verwijzen naar de 1} Regels van de Kwaliteit van de Code van de Document {.](custom-code-quality-rules.md)[
+>Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden uitgevoerd, zie [ de Regels van de Kwaliteit van de Code van de Douane ](custom-code-quality-rules.md).
 
 ### Werken met valse positieven {#dealing-with-false-positives}
 
@@ -172,7 +172,7 @@ Drie paginasets selecteren de pagina&#39;s. Cloud Manager gebruikt de toegangslo
 
 ##### Verspreiding van verkeer over geselecteerde paginasets {#distribution-of-traffic}
 
-U kunt overal van één tot alle drie reeksen op het **Testen** lusje van uw [ pijpleidingsconfiguratie kiezen.](/help/using/production-pipelines.md) De verdeling van het verkeer is gebaseerd op het aantal geselecteerde reeksen. Als alle drie zijn geselecteerd, wordt 33% van de totale paginaweergaven in elke set geplaatst. Als er twee zijn geselecteerd, gaat 50% naar elke set. Als één wordt geselecteerd, gaat 100% van het verkeer naar die reeks.
+U kunt overal van één tot alle drie reeksen op het **Testen** lusje van uw [ pijpleidingsconfiguratie ](/help/using/production-pipelines.md) kiezen. De verdeling van verkeer is gebaseerd op het aantal geselecteerde reeksen. Als alle drie zijn geselecteerd, wordt 33% van de totale paginaweergaven in elke set geplaatst. Als er twee zijn geselecteerd, gaat 50% naar elke set. Als één wordt geselecteerd, gaat 100% van het verkeer naar die reeks.
 
 Laten we dit voorbeeld bekijken.
 
@@ -188,7 +188,7 @@ Gedurende de testperiode van 30 minuten:
 
 #### Testen en rapporteren {#testing-reporting}
 
-Cloud Manager voert het testen van de prestaties voor AEM Sites-programma&#39;s uit door pagina&#39;s standaard voor een testperiode van 30 minuten als niet-geverifieerde gebruiker op de testpublicatieserver aan te vragen. Het meet de virtuele user-generated metriek (reactietijd, foutentarief, meningen per minuut, etc.) voor elke pagina evenals diverse systeem-vlakke metriek (cpu, geheugen, voorzien van een netwerkgegevens) voor alle instanties.
+Cloud Manager voert het testen van de prestaties voor AEM Sites-programma&#39;s uit door pagina&#39;s standaard voor een testperiode van 30 minuten als niet-geverifieerde gebruiker op de testpublicatieserver aan te vragen. Het meet de virtuele user-generated metriek (reactietijd, foutentarief, meningen per minuut, etc.) voor elke pagina en diverse systeem-vlakke metriek (cpu, geheugen, voorzien van een netwerkgegevens) voor alle instanties.
 
 In de volgende tabel wordt een overzicht gegeven van de prestatietestmatrix met behulp van het driegrafeerde gatsysteem.
 
@@ -204,7 +204,7 @@ In de volgende tabel wordt een overzicht gegeven van de prestatietestmatrix met 
 | Netwerkbandbreedtegebruik | Belangrijk | >= 90% |
 | Aanvragen per minuut | Info | >= 6000 |
 
-Verwijs naar de sectie [ Voor authentiek verklaarde Prestaties Testen ](#authenticated-performance-testing) voor meer details bij het gebruiken van basisauthentificatie voor prestaties het testen voor Plaatsen en Assets.
+Zie [ Voor authentiek verklaarde het Testen van Prestaties ](#authenticated-performance-testing) voor meer details bij het gebruiken van basisauthentificatie voor prestaties het testen voor Plaatsen en Assets.
 
 >[!NOTE]
 >
@@ -250,7 +250,7 @@ Als bijvoorbeeld een splitsing van 70/30 wordt gebruikt en er 10 elementen per m
 
 #### Testen en rapporteren {#testing-and-reporting}
 
-Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het wachtwoord die door de CSE-instelling worden ingesteld. Assets wordt vervolgens geüpload naar de map met behulp van een opensource-bibliotheek. De tests die door Assets worden in werking gesteld worden het testen stap geschreven gebruikend een [ open bronbibliotheek.](https://github.com/adobe/toughday2) Zowel de verwerkingstijd voor elk element als de verschillende metingen op systeemniveau worden over de testduur van 30 minuten gemeten. Met deze functie kunt u zowel afbeeldingen als PDF-documenten uploaden.
+Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het wachtwoord die door de CSE-instelling worden ingesteld. Assets wordt vervolgens geüpload naar de map met behulp van een opensource-bibliotheek. De tests die door Assets worden in werking gesteld worden het testen stap geschreven gebruikend een [ open bronbibliotheek ](https://github.com/adobe/toughday2). Zowel de verwerkingstijd voor elk element als de verschillende metingen op systeemniveau worden over de testduur van 30 minuten gemeten. Met deze functie kunt u zowel afbeeldingen als PDF-documenten uploaden.
 
 >[!TIP]
 >
@@ -298,7 +298,7 @@ Als de enige items binnen `myco-all-1.0.0-SNAPSHOT.zip` de twee overgeslagen inh
 
 Voor projecten die tientallen ingebedde pakketten produceren, is deze optimalisering getoond om naar boven van 10 minuten per pijpleidingsuitvoering te besparen.
 
-Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een combinatie overgeslagen inhoudspakketten en bundels OSGi bevat. Als `myco-all-1.0.0-SNAPSHOT.zip` bijvoorbeeld de twee ingesloten pakketten bevat die eerder zijn vermeld en een of meer OSGi-bundels, wordt een nieuw, minimaal inhoudspakket samengesteld met alleen de OSGi-bundels. Dit pakket krijgt altijd de naam `cloudmanager-synthetic-jar-package` en de opgenomen bundels worden in `/apps/cloudmanager-synthetic-installer/install` geplaatst.
+Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een combinatie overgeslagen inhoudspakketten en bundels OSGi bevat. Als `myco-all-1.0.0-SNAPSHOT.zip` bijvoorbeeld de twee eerder vermelde ingesloten pakketten en een of meer OSGi-pakketten bevat, wordt een nieuw, minimaal inhoudspakket samengesteld met alleen de OSGi-bundels. Dit pakket krijgt altijd de naam `cloudmanager-synthetic-jar-package` en de opgenomen bundels worden in `/apps/cloudmanager-synthetic-installer/install` geplaatst.
 
 >[!NOTE]
 >

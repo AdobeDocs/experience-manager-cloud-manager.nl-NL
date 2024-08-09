@@ -2,9 +2,9 @@
 title: Het project instellen
 description: Leer hoe u uw project instelt zodat u het kunt beheren en implementeren met Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1426'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ En als u een eenvoudig bericht wilde uitvoeren slechts wanneer de bouwstijl buit
 
 ## Ondersteuning voor met wachtwoord beveiligde gegevensopslagruimte {#password-protected-maven-repositories}
 
-Artefacten van een met een wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd, niet door alle kwaliteitsregels wordt uitgevoerd die in Cloud Manager worden geïmplementeerd. Het wordt geadviseerd om de bronnen van Java evenals de volledige code van de projectbron samen met het binaire getal op te stellen.
+Artefacten van een met een wachtwoord beveiligde Maven-opslagplaats mogen alleen zeer voorzichtig worden gebruikt, aangezien code die via dit mechanisme wordt geïmplementeerd, niet door alle kwaliteitsregels wordt uitgevoerd die in Cloud Manager worden geïmplementeerd. Het wordt geadviseerd om de bronnen van Java en de volledige code van de projectbron samen met het binaire getal op te stellen.
 
 >[!TIP]
 >
@@ -343,4 +343,4 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen worden on
 
 ## Ontwikkel uw Code die op Beste praktijken wordt gebaseerd {#develop-your-code-based-on-best-practices}
 
-De Techniek van de Adobe en de Consulting teams hebben a [ uitvoerige reeks beste praktijken voor AEM ontwikkelaars ontwikkeld.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)
+De Techniek van de Adobe en de Consulting teams hebben a [ uitvoerige reeks beste praktijken voor AEM ontwikkelaars ](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html) ontwikkeld.

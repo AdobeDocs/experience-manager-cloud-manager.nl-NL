@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van hun AMS-gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 655111cdf7327e92e03ac7eedd9eedd87cd4b2f1
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
@@ -47,39 +47,39 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wan
 
 1. Navigeer aan de **pagina van de Reeksen van de Inhoud** van het **milieu&#39;s** scherm.
 
-1. Tik of klik **toevoegen de Vastgestelde Inhoud** knoop van de Inhoud bij het hoogste recht van het scherm.
+1. Klik **toevoegen de Vastgestelde Inhoud** knoop bij top-right van het scherm.
 
    ![ Inhoudsreeksen ](/help/assets/content-sets.png)
 
-1. Op het **lusje van Details** van de tovenaar, verstrek een naam en een beschrijving voor de inhoud plaatste en tik of klik **gaat** verder.
+1. Op het **lusje van Details** van de tovenaar, verstrek een naam en een beschrijving voor de geplaatste inhoud en klik **verdergaan**.
 
    ![ Inhoud plaatste details ](/help/assets/add-content-set-details.png)
 
 1. Op het **lusje van de Wegen van de Inhoud** van de tovenaar, specificeer de wegen van de veranderlijke inhoud die in de inhoudreeks moet worden omvat.
 
    1. Ga de weg in **toevoegen omvat Weg** gebied.
-   1. Tik of klik **voeg de knoop van de Weg** toe om de weg aan de inhoudreeks toe te voegen.
-   1. Tik of klik **voeg opnieuw de knoop van de Weg** toe zonodig.
+   1. Klik **toevoegen de knoop van de Weg** om de weg aan de inhoudreeks toe te voegen.
+   1. Klik opnieuw **toevoegen de knoop van de Weg** zonodig.
 
    ![ voegt wegen aan inhoud toe plaatste ](/help/assets/add-content-set-paths.png)
 
 1. Als u de inhoudenset moet verfijnen of beperken, kunnen subpaden worden uitgesloten.
 
-   1. In de lijst van inbegrepen wegen, tik of klik **voeg sub-wegen** pictogram naast de weg toe u moet beperken.
+   1. In de lijst van inbegrepen wegen, klik **voeg sub-wegen** pictogram naast de weg toe u moet beperken.
    1. Voer het subpad in dat u onder het geselecteerde pad wilt uitsluiten.
-   1. Tik of klik **uitsluiten Weg**.
-   1. Tik of klik **voeg sub-wegen** opnieuw toe om extra wegen toe te voegen om zonodig uit te sluiten.
+   1. Klik **uitsluiten Weg**.
+   1. Klik **toevoegen sluit subpaden** opnieuw uit om extra wegen toe te voegen om zonodig uit te sluiten.
 
    ![ Excluding wegen ](/help/assets/add-content-set-paths-excluded.png)
 
 1. U kunt de opgegeven paden desgewenst wijzigen.
 
-   1. Tik of klik op de X naast de uitgesloten subpaden om deze te verwijderen.
-   1. Tik of klik de elliptische knoop naast wegen om **uit te openbaren geef** uit en **schrap** opties.
+   1. Klik op de X naast de uitgesloten subpaden om deze te verwijderen.
+   1. Klik de ellipsknoop naast wegen om **uit te openbaren geef** uit en **schrap** opties.
 
    ![ het Uitgeven weglijst ](/help/assets/add-content-set-excluded-paths.png)
 
-1. Tik of klik **creeer** om de geplaatste inhoud tot stand te brengen.
+1. Klik **creëren** om de inhoudreeks tot stand te brengen.
 
 De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
@@ -90,7 +90,7 @@ De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
 
 ## Een inhoudsset bewerken {#edit-content-set}
 
-Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van het in kaart brengen of het klikken van **voeg Vastgestelde Inhoud** toe, selecteer een bestaande reeks van de console en uitgezocht **geef** van het ellipsmenu uit.
+Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van het klikken **voeg Geplaatste Inhoud** toe, selecteer een bestaande reeks van de console en selecteer **uitgeven** van het elliptische menu.
 
 ![ geef inhoudreeks ](/help/assets/edit-content-set.png) uit
 
@@ -125,7 +125,7 @@ Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëre
 
    ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
 
-1. Tik of klik **Exemplaar**.
+1. Klik **Exemplaar**.
 
 Het kopieerproces wordt gestart. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 

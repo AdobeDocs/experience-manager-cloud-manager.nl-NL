@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -36,19 +36,19 @@ Onder aan de lijst met pijpleidingen staan algemene opties.
 
 ## Venster Pijpleidingen {#pipelines}
 
-Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Dit is nuttig aangezien het uitvoerigere informatie dan voorstelt wat in de [ Kaart van de Pijpleiding beschikbaar is.](#pipeline-card)
+Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Dit is nuttig aangezien het uitvoerigere informatie dan voorstelt wat in de [ Kaart van de Pijpleiding ](#pipeline-card) beschikbaar is.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, ontvang of klik op** Pijpleidingen **tabel om op het** venster van de Pijpleidingen **te schakelen.**
+1. Van de **pagina van het Overzicht van het 0} Programma, klik het** Pijpleidingen **lusje om aan het** te schakelen Pijpleidingen **venster.**
 
-1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien evenals begin en einde pijpleidingsuitvoering zoals u in de **Kaart van Pijpleidingen** zou.
+1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien en pijpleidingsuitvoering beginnen en tegenhouden zoals u in de **Kaart van Pijpleidingen**.
 
-Tik op het pictogram of klik op het pictogram `i` om details over de laatste of huidige uitvoering van de pijpleiding weer te geven.
+Als u op het pictogram `i` klikt, worden de details van de laatste of huidige uitvoering van de pijplijn weergegeven.
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-status.png)
 
-Tapping of het klikken van **details van de Mening** zullen u aan de [ details van de pijpleidingsuitvoering nemen.](#view-details)
+Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
 ## Activiteitenvenster {#activity}
 
@@ -56,25 +56,25 @@ Het **venster van Activiteiten** toont een volledige lijst van alle pijplijnuitv
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, ontvang of klik op** Activiteit **lusje om aan het** venster van de Activiteit **over te schakelen.**
+1. Van de **pagina van het Overzicht van het Programma**, klik het **lusje van de Activiteit** om aan het **venster van de Activiteit** over te schakelen.
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
-Tik op het pictogram of klik op het pictogram `i` om details over de uitvoering van de geselecteerde pijpleiding weer te geven.
+Als u op het pictogram `i` klikt, worden meer details over de uitvoering van de geselecteerde pijpleiding weergegeven.
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-activity.png)
 
-Tapping of het klikken van **details van de Mening** zullen u aan de [ details van de pijpleidingsuitvoering nemen.](#view-details)
+Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
 ## Lopende pijpleidingen {#running-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik op de ellipsknoop naast de pijpleiding u uitgezocht **Looppas** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **Looppas** van het menu in werking stelt.
 
 1. De pijpleidingslooppas begint en door de **Status** kolom wordt vermeld.
 
-U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening te selecteren.](#view-details)**
+U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening](#view-details)** te selecteren.
 
 Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door de ellipsknoop opnieuw te klikken en **te selecteren annuleert**.
 
@@ -82,7 +82,7 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik op de ellipsknoop naast de pijpleiding u **uitgeven en dan selecteren** van het menu uitgeven en wilt selecteren.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u **uitgeven en dan selecteren** van het menu uitgeven.
 
 1. De **geeft de pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogvakvertoningen uit, toestaand u om de zelfde details uit te geven die u toen het creëren van de pijpleiding inging.
 
@@ -100,7 +100,7 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik op de ellipsknoop naast de pijpleiding u uitgezocht **Schrapping** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **Schrapping** van het menu in werking stelt.
 
 >[!NOTE]
 >
@@ -110,7 +110,7 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik op de ellipsknoop naast de pijpleiding u uitgezocht **details van de Mening** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **details van de Mening** van het menu in werking stelt.
 
 1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
 
@@ -124,11 +124,11 @@ Zodra een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
 
 ![ Overzicht van de Stap ](/help/assets/configure-pipelines/pipeline-step.png)
 
-Tik of klik de **details van de Mening** verbinding om de **sectie van de Duur** te openbaren. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
+Klik de **verbinding van de Details van de Mening** om de **sectie van de Duur** te openbaren. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
 
 ![ Duur ](/help/assets/configure-pipelines/duration.png)
 
-Als uw pijpleiding a **Code Scanning** stap bevatte, die kwesties opriep, kunt u de **knoop van de Details van de Download** tikken of klikken om een lijst van [ tests van de codekwaliteit ](/help/using/code-quality-testing.md) te bekijken die niet overgegaan.
+Als uw pijpleiding a **Code Scanning** stap bevatte, die kwesties opriep, kunt u de **knoop van de Details van de Download** klikken om een lijst van [ tests van de codekwaliteit ](/help/using/code-quality-testing.md) te bekijken die niet overgegaan.
 
 ![ de kwaliteitskwesties van de Code ](assets/managing-pipelines-code-quality-issues.png)
 

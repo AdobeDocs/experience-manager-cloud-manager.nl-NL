@@ -2,9 +2,9 @@
 title: Beveiliging en privacy
 description: Meer informatie over de beveiliging en privacy van uw code en artefactelementen in Cloud Manager.
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
-source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Meer informatie over de beveiliging en privacy van uw code en artefactelementen 
 
 [!UICONTROL Cloud Manager] heeft vooraf geconfigureerde rollen met de juiste machtigingen.
 
-Om over de mogelijke rollen te leren u in de Admin Console en gebruikersroltoestemmingen kunt toewijzen, verwijs naar het document [ Op rol-Gebaseerde Toestemmingen.](/help/requirements/role-based-permissions.md)
+Om over de mogelijke rollen te leren u in de Admin Console en gebruikersroltoestemmingen kunt toewijzen, zie [ Op rol-Gebaseerde Toestemmingen ](/help/requirements/role-based-permissions.md).
 
 ## Bronisolatie {#resource-isolation}
 

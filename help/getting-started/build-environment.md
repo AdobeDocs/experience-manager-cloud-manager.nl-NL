@@ -2,9 +2,9 @@
 title: De Build-omgeving
 description: Leer over de gespecialiseerde bouwstijlomgeving die de gebruikers van Cloud Manager om uw code te bouwen en te testen.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: dc0b83fa045208fcd333af10f90f9590c2aa96b8
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
-   * Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen om HTTPS in plaats van HTTP bij te gebruiken.](#https-maven)
+   * De Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP ](#https-maven) te gebruiken.
 * De geïnstalleerde Java-versies zijn Oracle JDK 8u401 en Oracle JDK 11.0.22.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
@@ -31,15 +31,15 @@ Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem installeren.](#installing-additional-system-packages)
+* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem ](#installing-additional-system-packages) installeert.
 * Elke build wordt uitgevoerd in een ongerepte omgeving. De bouwstijlcontainer houdt geen staat tussen uitvoeringen.
 * Maven wordt altijd uitgevoerd met deze drie opdrachten:
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven wordt op systeemniveau geconfigureerd met een `settings.xml` -bestand dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met behulp van een profiel met de naam `adobe-public` .
-   * Verwijs naar de [ openbaar Maven bewaarplaats van de Adobe ](https://repo1.maven.org/) voor meer details.
-* Node.js 18 is beschikbaar voor [ front eindpijpleidingen.](/help/overview/ci-cd-pipelines.md)
+   * Zie de [ openbaar Maven bewaarplaats van de Adobe ](https://repo1.maven.org/) voor meer details.
+* Node.js 18 is beschikbaar voor [ front eindpijpleidingen ](/help/overview/ci-cd-pipelines.md).
 
 >[!NOTE]
 >
@@ -47,14 +47,15 @@ Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
 
 >[!TIP]
 >
->Raadpleeg de volgende aanvullende bronnen voor meer informatie over het gebruik van Cloud Manager API&#39;s:
+>Zie de volgende aanvullende bronnen voor informatie over het gebruik van Cloud Manager API&#39;s:
+>
 >* [ air-cli-stop-cloudmanager ](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [ Creërend een API Integratie ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [ API Toestemmingen ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
 ## Via HTTPS gemaakte opslagplaatsen {#https-maven}
 
-Cloud Manager [ versie 2023.10.0 ](/help/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s worden geschetst.](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+Cloud Manager [ 2023.10.0 ](/help/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s ](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 
@@ -111,7 +112,7 @@ De momenteel beschikbare combinaties leverancier/versie zijn:
 
 >[!NOTE]
 >
->Vanaf april 2022 is Oracle JDK de standaard-JDK voor de ontwikkeling en werking van AEM toepassingen. Het bouwstijlproces van Cloud Manager zal automatisch op het gebruiken van Oracle JDK schakelen, zelfs als een alternatieve optie uitdrukkelijk in de Maven toolchain wordt geselecteerd. Gelieve te verwijzen naar [ de versienota&#39;s van April ](/help/release-notes/2022/2022-4-0.md) voor verdere details.
+>Vanaf april 2022 is Oracle JDK de standaard-JDK voor de ontwikkeling en werking van AEM toepassingen. Cloud Manager bouwt proces zal automatisch op het gebruiken van Oracle JDK schakelen, zelfs als een alternatieve optie uitdrukkelijk in de Maven toolchain wordt geselecteerd. Zie de [ versienota&#39;s van april ](/help/release-notes/2022/2022-4-0.md) voor meer details.
 
 ### JDK-versie van alternatieve uitvoering {#alternate-maven}
 
@@ -149,7 +150,7 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 #### Dispatcher {#dispatcher}
 
-Slechts kunnen de regelmatige milieuvariabelen met [ worden gebruikt de verzender.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) Secrets kan niet worden gebruikt.
+Slechts kunnen de regelmatige milieuvariabelen met [ worden gebruikt de verzender ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html). Geheimen kunnen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructies.
 
@@ -159,7 +160,7 @@ Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructie
 
 #### OSGi-configuraties {#osgi}
 
-Zowel kunnen de regelmatige omgevingsvariabelen als de geheimen in [ configuraties OSGi worden gebruikt.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
+Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) worden gebruikt.
 
 ### Pipetvariabelen {#pipeline-variables}
 

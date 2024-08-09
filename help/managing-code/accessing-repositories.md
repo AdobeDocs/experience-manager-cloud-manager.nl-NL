@@ -2,9 +2,9 @@
 title: Toegang tot opslagplaats
 description: Leer hoe u toegang krijgt tot en beheer krijgt van uw door de Adobe beheerde it-opslagruimten met behulp van het zelfbedienings-git-accountbeheer van Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Cloud Manager maakt het gemakkelijk om uw informatie van de bewaarplaatstoegang 
 
    ![ de knoop van Info van de Reparatie van de Toegang op de kaart van Milieu ](assets/pipelines-card.png)
 
-1. Tik of klik de **knoop van Info van de Reactie van de Toegang** om de **Info van de Bewaarplaats** dialoog en mening te openen:
+1. Klik de **knoop van Info van de Reactie van de Toegang** om de **dialoog en de mening van Info van de Bewaarplaats** te openen:
 
    * De git-gebruikersnaam.
    * Het wachtwoord voor de it.
@@ -32,9 +32,9 @@ Cloud Manager maakt het gemakkelijk om uw informatie van de bewaarplaatstoegang 
 
    ![ het venster van Info van de Bewaarplaats ](assets/access-repo-info.png)
 
-1. Om tot het wachtwoord toegang te hebben, moet een nieuw wachtwoord worden geproduceerd. Om dit te doen, ontvang of klik **wachtwoord** knoop produceren.
+1. Om tot het wachtwoord toegang te hebben, moet een nieuw wachtwoord worden geproduceerd. Om dit te doen, klik **produceer wachtwoord** knoop.
 
-1. Bevestig wachtwoordgeneratie in **bent u zeker..** dialoog door te tikken of te klikken **produceert wachtwoord**.
+1. Bevestig wachtwoordgeneratie in **bent u zeker..** dialoogdoos door **te klikken produceert wachtwoord**.
 
    ![ Bevestig wachtwoordgeneratie ](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ Met behulp van deze referenties kunt u een lokale kopie van de opslagplaats klon
 
 ## Toegang tot gegevens opslagplaats vanuit het venster Opslagplaatsen {#repositories-window}
 
-Een **knoop van Info van de Reactie van de Toegang** is ook beschikbaar in de toolbar van het [**Venster van Bewaarplaatsen**.In ](managing-repositories.md) wordt dezelfde informatie weergegeven over de toegang tot opslagruimten met beheerde Adoben.
+Een **knoop van Info van de Reparatie van de Toegang** is ook beschikbaar in de toolbar van het [**venster van Bewaarplaatsen** ](managing-repositories.md) het toont de zelfde informatie over de toegang tot van Adobe-beheerde bewaarplaatsen.
 
 ## Een toegangswachtwoord intrekken {#revoke-password}
 
-U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, gelieve [ een steunkaartje voor dit verzoek tot stand te brengen.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+U kunt een toegangswachtwoord op elk ogenblik intrekken. Om dit te doen, [ creeer een steunkaartje voor dit verzoek ](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 Het kaartje zal met hoge prioriteit worden behandeld en moet binnen één dag worden ingetrokken.

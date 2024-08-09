@@ -2,9 +2,9 @@
 title: Codeimplementatie
 description: Leer hoe u uw code implementeert en wat er gebeurt in Cloud Manager wanneer u dat doet.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -109,16 +109,16 @@ Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de pla
 
 1. Elk AEM artefact wordt opgesteld aan elke AEM instantie via de Manager APIs van het Pakket, met pakketgebiedsdelen die de plaatsingsorde bepalen.
 
-   * Meer over leren hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud tussen instanties over te brengen, en file de inhoud van de bewaarplaats, gelieve te verwijzen naar de document [ Manager van het Pakket.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)
+   * Meer over leren hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud tussen instanties over te brengen, en file de inhoud van de bewaarplaats, zie [ de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html).
 
    >[!NOTE]
    >
-   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Om meer over te leren hoe runtime-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, gelieve te verwijzen naar de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service opstellen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)
+   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) opstellen.
 
 1. Het artefact van de verzender wordt als volgt op elke verzender geïmplementeerd:
 
    1. Van de huidige configuraties wordt een back-up gemaakt en naar een tijdelijke locatie gekopieerd.
-   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Verwijs naar het document [ de Configuraties van Dispatcher ](/help/getting-started/dispatcher-configurations.md) voor meer details. Hierdoor worden de mappen gewist zodat er geen zwevende bestanden achterblijven.
+   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Zie [ Configuraties van Dispatcher ](/help/getting-started/dispatcher-configurations.md) voor meer details. Hierdoor worden de mappen gewist zodat er geen zwevende bestanden achterblijven.
    1. Het artefact wordt geëxtraheerd naar de map `httpd` . Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in uw it-opslagplaats, worden genegeerd op het moment van implementatie. Deze bestanden vormen de kern van het AMS-verzenderframework en kunnen niet worden gewijzigd.
    1. Apache voert een configuratietest uit. Als er geen fouten worden gevonden, wordt de service opnieuw geladen. Als er een fout optreedt, worden de configuraties hersteld vanaf de back-up, wordt de service opnieuw geladen en wordt de fout geretourneerd naar Cloud Manager.
    1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het cachegeheugen van de verzender.
@@ -200,7 +200,7 @@ In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pa
 
 ### API opnieuw uitvoeren {#reexecute-api}
 
-Naast het zijn beschikbaar in UI, kunt u [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) gebruiken om wederuitvoeringen teweeg te brengen evenals uitvoeringen te identificeren die als re-uitvoeringen werden teweeggebracht.
+Naast het zijn beschikbaar in UI, kunt u [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) gebruiken om wederuitvoeringen teweeg te brengen en uitvoeringen te identificeren die als re-uitvoeringen werden teweeggebracht.
 
 #### Een nieuwe uitvoering activeren {#triggering}
 

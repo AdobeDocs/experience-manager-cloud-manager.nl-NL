@@ -2,7 +2,7 @@
 title: CI/CD-pijpleidingen
 description: Leer over CI/CD pijpleidingen en hoe zij plaatsingen aan het opvoeren en productiemilieu's in Cloud Manager behandelen.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 0%
@@ -41,7 +41,7 @@ In dit diagram ziet u wat er gebeurt wanneer een release wordt geactiveerd in [!
 
 ### Hoe te Opstelling een CI/CD pijpleiding {#how-to-setup-a-ci-cd-pipeline}
 
-Om meer over pijpleidingsconfiguratie te leren, zie de documenten [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen.](/help/using/non-production-pipelines.md)
+Om meer over pijpleidingsconfiguratie te leren, zie de documenten [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-Productie Pijpleidingen ](/help/using/non-production-pipelines.md).
 
 ## Kwaliteitsgates {#quality-gates}
 

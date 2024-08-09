@@ -2,7 +2,7 @@
 title: Belangrijke concepten
 description: Zoals alle krachtige hulpmiddelen, omvat Cloud Manager vele concepten en termijnen. Dit document geeft een overzicht van een aantal van de belangrijkste documenten die u nodig hebt als u Cloud Manager gaat gebruiken.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Zoals alle krachtige hulpmiddelen, omvat Cloud Manager vele concepten en termijn
 
 ## Toepassing {#application}
 
-Een toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om de onderliggende [ oplossing ](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften aan te passen. Een toepassing is een logische eenheid die uit veelvoudige [ artefacten kan worden samengesteld.](#artifact)
+Een toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om de onderliggende [ oplossing ](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften aan te passen. Een toepassing is een logische eenheid die uit veelvoudige [ artefacten ](#artifact) kan worden samengesteld.
 
-Een voorbeeldtoepassing is de fictieve [ WKND lifestyle toepassing.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Een voorbeeldtoepassing is de fictieve [ WKND lifestyle toepassing ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
 ## Artefact {#artifact}
 
@@ -30,15 +30,15 @@ Een artefactbewaarplaats is een opslagplaats waar klant-specifieke [ artefacten 
 
 ## Omgeving {#environment}
 
-Een milieu is één enkele cluster van virtuele machines binnen a [ programma.](#program) Deze AEM bestaat bijvoorbeeld uit een ontwerpinstantie (optioneel met een extra koude stand-by ontwerpinstantie), nul of meer publicatieinstanties, een of meer dispatcherinstanties en een taakverdelingsmechanisme.
+Een milieu is één enkele cluster van virtuele machines binnen a [ programma ](#program). AEM bestaat deze uit een ontwerpinstantie (optioneel met een extra koude stand-by ontwerpinstantie), nul of meer publicatieinstanties, een of meer dispatcherinstanties en een taakverdelingsmechanisme.
 
 ## git Repository {#git-repository}
 
-Een git bewaarplaats is een plaats waar klant-specifieke broncode wordt opgeslagen en toegankelijk [ gebruikend git.](https://git-scm.com)
+Een git bewaarplaats is een plaats waar klant-specifieke broncode wordt opgeslagen en toegankelijk [ gebruikend git ](https://git-scm.com) is.
 
 ## Instantie {#instance}
 
-Een instantie is een specifieke virtuele server die de AEM [ oplossing in werking stelt.](#solution) Instanties vertegenwoordigen één logische eenheid vanuit een implementatieperspectief.
+Een instantie is een specifieke virtuele server die de AEM [ oplossing ](#solution) in werking stelt. De instanties vertegenwoordigen één enkele logische eenheid vanuit een plaatsingsperspectief.
 
 ## Organisatie {#organization}
 
@@ -54,7 +54,7 @@ Een product is een specifieke reeks functionaliteit binnen a [ oplossing ](#solu
 
 ## Programma {#program}
 
-Een programma is een reeks milieu&#39;s die een logische groepering van klanteninitiatieven steunen, gewoonlijk die aan een gekochte overeenkomsten van het de dienstniveau (SLA) beantwoorden. Elk programma heeft precies één productieomgeving en kan vele niet-productieomgevingen hebben.
+Een programma is een reeks milieu&#39;s die een logische groepering van klanteninitiatieven steunen, die gewoonlijk aan een gekochte overeenkomsten van het de dienstniveau (SLA) beantwoorden. Elk programma heeft precies één productieomgeving en kan vele niet-productieomgevingen hebben.
 
 ## Oplossing {#solution}
 
@@ -62,4 +62,4 @@ Een oplossing is een van de Adobe [!UICONTROL Experience Cloud] -oplossingen. Bi
 
 ## Stap {#step}
 
-Een stap is een gevormde instructieset die één of andere eenheid van het werk als bouwsteen van a [ pijpleiding verwezenlijkt.](#pipeline)
+Een stap is een gevormde instructieset die één of andere eenheid van het werk als bouwsteen van a [ pijpleiding ](#pipeline) verwezenlijkt.

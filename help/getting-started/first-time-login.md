@@ -2,9 +2,9 @@
 title: Eerste aanmelding
 description: Volg deze pagina als u algemene configuraties hebt ingesteld en u Cloud Manager voor het eerst kunt gebruiken.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ Als u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld, k
 
    ![ Cloud Manager console ](/help/assets/cloud-manager-console.png)
 
-1. Tik of klik de kaart van uw programma om aan Cloud Manager **te navigeren Overzicht** pagina.
+1. Klik de kaart van uw programma om aan Cloud Manager **pagina van het Overzicht** te navigeren.
 
 1. Cloud Manager opent aan de **pagina van het Overzicht**.
 
    ![ Cloud Manager overzichtspagina ](/help/assets/program-overview-page.png)
 
-1. Als uw programma nog niet opstelling is, tik of klik **Programma van de Opstelling** in [ vraag-aan-actie ](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaalt zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de overeenkomst aanvullende volgende stappen bieden.
+1. Als uw programma nog niet opstelling is, klik **Programma van de Opstelling** in [ vraag-aan-actie ](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaal zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de CTA extra volgende stappen aanbieden.
 
-Gelieve te blijven aan de Opstelling van het document [ Programma ](/help/getting-started/program-setup.md) voor de volgende stappen in vestiging uw programma.
+U kunt aan de Opstelling van het document [ Programma ](/help/getting-started/program-setup.md) voor de volgende stappen in vestiging uw programma voortzetten.
 
 ## Cloud Manager-activiteit {#activity}
 
@@ -40,7 +40,7 @@ Cloud Manager geeft een geconsolideerd overzicht van de activiteiten van een pro
 
 >[!TIP]
 >
->Voor details op hoe te om Cloud Manager UI te gebruiken, te zien gelieve het document [ navigerend Cloud Manager UI.](/help/getting-started/navigation.md)
+>Voor details op hoe te om Cloud Manager UI te gebruiken, zie het document [ Navigerend Cloud Manager UI ](/help/getting-started/navigation.md).
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Maven Project Version Handling
 description: Leer hoe Maven projectversioning in Cloud Manager afhandelt.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: 9312999660b324f0f9d2b44dfbf49c4813a3a6e9
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer hoe Maven projectversioning in Cloud Manager afhandelt.
 
 Cloud Manager genereert voor staging- en productieimplementaties een unieke, incrementele versie.
 
-Deze versie wordt gezien op de pagina van de details van de pijpleidingsuitvoering evenals de activiteitenpagina. Wanneer een bouwstijl in werking wordt gesteld, wordt het Maven project bijgewerkt om deze versie te gebruiken en een markering wordt gecreeerd in de git bewaarplaats met die versie als zijn naam.
+Deze versie wordt gezien op de pagina van de details van de pijpleidingsuitvoering en de activiteitenpagina. Wanneer een bouwstijl in werking wordt gesteld, wordt het Maven project bijgewerkt om deze versie te gebruiken en een markering wordt gecreeerd in de git bewaarplaats met die versie als zijn naam.
 
 Als de oorspronkelijke projectversie aan bepaalde criteria voldoet, voegt de bijgewerkte versie van het Maven-project zowel de oorspronkelijke projectversie als de door Cloud Manager gegenereerde versie samen. De tag gebruikt echter altijd de gegenereerde versie. Deze samenvoeging vindt pas plaats wanneer de oorspronkelijke projectversie is samengesteld met precies drie versiesegmenten, bijvoorbeeld `1.0.0` of `1.2.3` , maar niet `1.0` of `1` , en de oorspronkelijke versie mag niet eindigen in `-SNAPSHOT` .
 

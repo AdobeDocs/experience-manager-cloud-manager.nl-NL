@@ -2,16 +2,16 @@
 title: Niet-productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
 
 # Niet-productiepijpleidingen configureren {#configuring-non-production-pipelines}
 
-Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou willen hoe de pijpleidingen in Cloud Manager werken, te zien gelieve het document [ CI/CD Pijpleidingen.](/help/overview/ci-cd-pipelines.md)
+Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
 
 ## Overzicht {#overview}
 
@@ -20,7 +20,7 @@ Gebruikend de **Pijpleidingen** tegel in [!UICONTROL Cloud Manager], kan de **Ma
 * **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode helemaal in productie te nemen.
 * **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
-Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te om productiepijpleidingen te vormen zie het document [ Vormend de Pijpleidingen van de Productie.](/help/using/production-pipelines.md)
+Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te om productiepijpleidingen te vormen zie het document [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md).
 
 Er zijn twee soorten niet-productiepijpleidingen:
 
@@ -80,7 +80,7 @@ Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud M
 
 ## De volgende stappen {#the-next-steps}
 
-Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Gelieve te zien de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer details.
+Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial}
 

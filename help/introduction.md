@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager voor AMS
 description: Begin hier om Cloud Manager for Adobe Managed Services (AMS) te leren kennen en hoe organisaties Adobe Experience Manager in de cloud kunnen beheren.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1271'
 ht-degree: 3%
 
 ---
@@ -29,7 +29,7 @@ Begin hier om Cloud Manager for Adobe Manage Services (AMS) te leren kennen en h
 >
 >In deze documentatie worden specifiek de functies en functies van Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [ documentatie van AEM as a Cloud Service worden gevonden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [ documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html) worden gevonden.
 
 Met Cloud Manager profiteert uw ontwikkelingsteam van de volgende functies:
 
@@ -55,7 +55,7 @@ Met de gebruikersinterface (UI) voor [!UICONTROL Cloud Manager] hebt u eenvoudig
 
 U definieert toepassingsspecifieke prestatiekernindicatoren (KPI&#39;s) (zoals piekpaginaweergaven per minuut en verwachte responstijd voor een paginabelasting) die de basis vormen voor het meten van een geslaagde implementatie. Rollen en machtigingen voor verschillende teamleden kunnen eenvoudig worden gedefinieerd. De zelfbedieningsinterface plaatst controle in uw handen, maar het biedt ook verbindingen aan beste praktijkmiddelen en toegang tot deskundigen binnen Adobe aan die de noodzakelijke begeleiding kunnen verstrekken zoals nodig.
 
-Om te onderzoeken en begonnen te worden met [!UICONTROL Cloud Manager]&#39;s UI, zie het document [ Eerste Login van de Tijd.](/help/getting-started/first-time-login.md)
+Om te onderzoeken en begonnen te worden met [!UICONTROL Cloud Manager]&#39;s UI, zie het document [ Eerste Login van de Tijd ](/help/getting-started/first-time-login.md).
 
 ### CI/CD Pipet {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ Een van de belangrijkste mogelijkheden van [!UICONTROL Cloud Manager] is de moge
 
 Via de interface van [!UICONTROL Cloud Manager] kunt u de I/CD-pijpleiding configureren en afschoppen. Als deel van deze pijpleiding, wordt een grondig codescannen uitgevoerd om ervoor te zorgen dat slechts de toepassingen van uitstekende kwaliteit door aan het productiemilieu overgaan.
 
-Om meer over het vormen van pijpleiding van [!UICONTROL Cloud Manager] UI te leren, zie de documenten [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen.](/help/using/non-production-pipelines.md)
+Meer leren over het vormen van pijpleiding van [!UICONTROL Cloud Manager] UI, zie de documenten [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
 
 ### Flexibele implementatiemodi {#flexible-deployment-modes}
 
@@ -73,7 +73,7 @@ Met een automatische trekkerwijze, wordt de code automatisch opgesteld aan een m
 
 Onafhankelijk van de plaatsingstrekker, worden de kwaliteitscontroles altijd uitgevoerd als deel van CI/CD pijpleiding uitvoering telkens als een plaatsing wordt teweeggebracht. De controles van de kwaliteit omvatten, code inspectie, veiligheidstests, en prestaties het testen, allen die uit de doos zonder inspanning worden geleverd van u of uw partners wordt vereist.
 
-Meer leren over het opstellen van code en kwaliteitscontroles, zie het document [ die Code opstellen.](/help/using/code-deployment.md)
+Meer leren over het opstellen van code en kwaliteitscontroles, zie het document [ Opstellend Code ](/help/using/code-deployment.md).
 
 ## Optionele functies in Cloud Manager {#optional-features-in-cloud-manager}
 
@@ -123,7 +123,7 @@ Wanneer de blauwe/groene plaatsing wordt toegelaten, verschilt de plaatsingsstro
 
 Alle AMS-gebruikers die Cloud Manager gebruiken voor productieimplementaties, kunnen gebruikmaken van een blauwe/groene implementatie. Het gebruik van een blauw/groene implementatie vereist echter extra validatie van uw omgevingen en installatie door een Adobe-CSE.
 
-Als u in blauwe/groene plaatsing geinteresseerd bent, te overwegen gelieve de volgende vereisten en beperkingen en uw CSE te contacteren.
+Als u in blauwe/groene plaatsing geinteresseerd bent, overweeg de volgende vereisten en de beperkingen en contacteer uw CSE.
 
 #### Eisen en beperkingen {#limitations}
 
@@ -131,5 +131,5 @@ Als u in blauwe/groene plaatsing geinteresseerd bent, te overwegen gelieve de vo
 * Voorvertoning van Dispatcher/publicatieparen maakt geen deel uit van blauw/groene implementaties.
 * Elk Dispatcher/publicatiepaar is identiek aan elk ander Dispatcher/publicatiepaar.
 * Blauw/groen is alleen beschikbaar in de productieomgeving.
-* Blauw/groen is zowel beschikbaar in AWS als in Azure.
+* Blauw/groen is beschikbaar in AWS en Azure.
 * Blauw/groen is niet alleen beschikbaar voor klanten van Assets.
