@@ -2,7 +2,7 @@
 title: Codeimplementatie
 description: Leer hoe u uw code implementeert en wat er gebeurt in Cloud Manager wanneer u dat doet.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: a7dc30ed31e87ab486f0b279b70c850a33a903eb
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Leer hoe u uw code implementeert en wat er gebeurt in Cloud Manager wanneer u da
 
 ## Code implementeren met Cloud Manager {#deploying-code-with-cloud-manager}
 
-Zodra u uw productiepijplijn met inbegrip van de noodzakelijke bewaarplaats en milieu&#39;s hebt gevormd, bent u bereid om uw code op te stellen.
+Zodra u uw productiepijplijn, met inbegrip van de noodzakelijke bewaarplaats en milieu&#39;s hebt gevormd, bent u bereid om uw code op te stellen.
 
 1. Klik **opstellen** van Cloud Manager om het plaatsingsproces te beginnen.
 
@@ -32,19 +32,19 @@ Het bouwstijlproces begint het proces van de codeplaatsing met inbegrip van de v
 * Werkgebied testen
 * Implementatie van productie
 
-U kunt de stappen van diverse plaatsingsprocessen herzien door logboeken, of het herzien van resultaten, voor de testende criteria te bekijken.
+U kunt de stappen van diverse plaatsingsprocessen herzien door logboeken te bekijken, of resultaten voor de testende criteria te herzien.
 
 ## Implementatiestappen {#deployment-steps}
 
-Een aantal acties komt tijdens elke stap van de plaatsing voor, die in deze sectie worden beschreven. Zie de details van het proces van de sectie [ Plaatsing ](#deployment-process) voor technische details van hoe de code zelf achter-de-scènes wordt opgesteld.
+Een aantal acties komt tijdens elke stap van de plaatsing voor, die in deze sectie wordt beschreven. Zie {de Details van het Proces van de Plaatsing 0} ](#deployment-process) voor technische details van hoe de code zelf achter-de-scènes wordt opgesteld.[
 
 ### Implementatiestap werkgebied {#stage-deployment}
 
 De **plaatsing van het Stadium** stap omvat de volgende acties:
 
-* **Bevestiging**: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken, bijvoorbeeld dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
-* **Bouwstijl &amp; het Testen van de Eenheid**: Deze stap stelt een inperkt bouwstijlproces in werking. Zie het document [ het Milieu van de Bouwstijl ](/help/getting-started/build-environment.md) voor details.
-* **Scannen van de Code**: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie het document [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor details op het het testen proces.
+* **Bevestiging**: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. Bijvoorbeeld, dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
+* **Bouwstijl &amp; het Testen van de Eenheid**: Deze stap stelt een inperkt bouwstijlproces in werking. Zie [ het Milieu van de Bouwstijl ](/help/getting-started/build-environment.md) voor details.
+* **Scannen van de Code**: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor details op het het testen proces.
 * **opstellen aan Stadium**
 
 ![ plaatsing van het Stadium ](/help/assets/Stage_Deployment1.png)
@@ -58,7 +58,7 @@ De **het testen van het Stadium** stap omvat de volgende acties:
 
 ### Implementatiestap voor productie {#production-deployment}
 
-De **stap van de Plaatsing van de Productie**, omvat de volgende acties:
+De **stap van de Plaatsing van de Productie** omvat de volgende acties:
 
 * **Toepassing voor Goedkeuring**
    * Deze optie wordt toegelaten terwijl het vormen van de pijpleiding.
@@ -78,7 +78,7 @@ Zodra uw plaatsing volledig is, is uw code in zijn gerichte milieu en u kunt de 
 
 ## Tijdstippen {#timeouts}
 
-Er wordt een time-out toegepast in de volgende stappen als er op feedback van gebruikers wordt gewacht:
+De volgende stappen worden uit uitgevoerd als er op feedback van gebruikers wordt gewacht:
 
 | Stap | Time-out |
 |--- |--- |
@@ -96,42 +96,42 @@ Cloud Manager uploadt alle doelbestanden/*.zip die tijdens het productieproces w
 
 Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de plaatsing zo snel mogelijk te voltooien en daarom worden de artefacten aan alle knopen gelijktijdig opgesteld als volgt:
 
-1. Cloud Manager bepaalt of elk artefact een AEM- of verzendingspakket is.
+1. Cloud Manager bepaalt of elk artefact een AEM- of Dispatcher-pakket is.
 1. Cloud Manager verwijdert alle verzenders van het taakverdelingsmechanisme om de omgeving tijdens de implementatie te isoleren.
 
-   * Tenzij anders geconfigureerd, kunt u wijzigingen in het taakverdelingsmechanisme in ontwikkelings- en staging-implementaties overslaan, d.w.z. voor ontwikkelomgeving, stappen loskoppelen en koppelen in zowel niet-productiepijpleidingen als voor de staging-omgeving in de productiepijplijn.
+   * Tenzij anders geconfigureerd, kunt u wijzigingen in ontwikkelings- en staging-implementaties overslaan in het taakverdelingsmechanisme. Dat wil zeggen, voor de ontwikkelomgeving, stappen loskoppelen en koppelen in zowel niet-productiepijpleidingen, als voor de halteomgeving van de productiepijpleiding.
 
    ![ overslaan taakverdelingsmechanisme ](/help/assets/load_balancer.png)
 
    >[!NOTE]
    >
-   >Deze functie wordt naar verwachting vooral gebruikt door 1-1-1 klanten.
+   >Naar verwachting zullen 1-1-1 klanten deze functie gebruiken.
 
 1. Elk AEM artefact wordt opgesteld aan elke AEM instantie via de Manager APIs van het Pakket, met pakketgebiedsdelen die de plaatsingsorde bepalen.
 
-   * Meer over leren hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud tussen instanties over te brengen, en file de inhoud van de bewaarplaats, zie [ de Manager van het Pakket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html).
+   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [ Manager van het Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
-   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) opstellen.
+   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
 
-1. Het artefact van de verzender wordt als volgt op elke verzender geïmplementeerd:
+1. Het Dispatcher-artefact wordt als volgt op elke Dispatcher geïmplementeerd:
 
    1. Van de huidige configuraties wordt een back-up gemaakt en naar een tijdelijke locatie gekopieerd.
-   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Zie [ Configuraties van Dispatcher ](/help/getting-started/dispatcher-configurations.md) voor meer details. Hierdoor worden de mappen gewist zodat er geen zwevende bestanden achterblijven.
-   1. Het artefact wordt geëxtraheerd naar de map `httpd` . Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in uw it-opslagplaats, worden genegeerd op het moment van implementatie. Deze bestanden vormen de kern van het AMS-verzenderframework en kunnen niet worden gewijzigd.
+   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Zie [ Configuraties van Dispatcher ](/help/getting-started/dispatcher-configurations.md) voor meer details. Op deze manier worden de mappen gewist, zodat er geen zwevende bestanden achterblijven.
+   1. Het artefact wordt geëxtraheerd naar de map `httpd` . Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in de Git-opslagplaats, worden genegeerd op het moment van implementatie. Deze bestanden vormen de kern van het AMS Dispatcher-framework en kunnen niet worden gewijzigd.
    1. Apache voert een configuratietest uit. Als er geen fouten worden gevonden, wordt de service opnieuw geladen. Als er een fout optreedt, worden de configuraties hersteld vanaf de back-up, wordt de service opnieuw geladen en wordt de fout geretourneerd naar Cloud Manager.
-   1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het cachegeheugen van de verzender.
+   1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het Dispatcher-cachegeheugen.
 
    >[!NOTE]
    >
-   >Cloud Manager verwacht dat het verzendingsartefact de volledige bestandsset bevat. Alle Dispatcher-configuratiebestanden moeten aanwezig zijn in de it-opslagplaats. Ontbrekende bestanden of mappen leiden tot een implementatiefout.
+   >Cloud Manager verwacht dat het Dispatcher-artefact de volledige bestandenset bevat. Alle Dispatcher-configuratiebestanden moeten aanwezig zijn in de Git-opslagplaats. Ontbrekende bestanden of mappen leiden tot een implementatiefout.
 
-1. Nadat alle AEM- en verzendingspakketten naar alle knooppunten zijn geïmplementeerd, worden de verzenders weer toegevoegd aan het taakverdelingsmechanisme en is de implementatie voltooid.
+1. Nadat alle AEM- en Dispatcher-pakketten naar alle knooppunten zijn geïmplementeerd, worden de verzenders weer toegevoegd aan het taakverdelingsmechanisme en is de implementatie voltooid.
 
    >[!NOTE]
    >
-   >U kunt veranderingen in het taakverdelingsmechanisme in ontwikkeling en het opvoeren van Plaatsingen, d.w.z. voor ontwikkelomgeving overslaan, stappen in zowel niet productiepijpleidingen losmaken en vastmaken, als voor het opvoeren van milieu de productiepijpleiding.
+   >U kunt veranderingen van het taakverdelingsmechanisme in ontwikkeling en het opvoeren Inzet overslaan. Dat wil zeggen, voor de ontwikkelomgeving loskoppelen en stappen koppelen in zowel niet-productiepijpleidingen als voor de halteomgeving van de productiepijplijn.
 
 ### Implementatie naar productiefase {#deployment-production-phase}
 
@@ -141,27 +141,27 @@ Productieimplementaties volgen doorgaans dezelfde stappen als hierboven, maar op
 
 1. Implementeer AEM pakketten naar de auteur.
 1. Dispatcher1 loskoppelen van het taakverdelingsmechanisme.
-1. Implementeer AEM pakketten om te publiceren1 en het verzendingspakket om dispatcher1 parallel in de cache van de uitlijningsdispatcher te plaatsen.
+1. Implementeer AEM pakketten om te publiceren1 en het Dispatcher-pakket om Dispatcher1 parallel te verzenden, de Dispatcher-cache leeg te maken.
 1. Plaats dispatcher1 terug in het taakverdelingsmechanisme.
 1. Als dispatcher1 weer in bedrijf is, koppelt u dispatcher2 af van het taakverdelingsmechanisme.
-1. Implementeer AEM pakketten om te publiceren2 en het verzendingspakket naar dispatcher2 in parallel, uitlijningscachegeheugen.
+1. Implementeer AEM pakketten om te publiceren2 en het Dispatcher-pakket naar dispatcher2 in parallelle, flush Dispatcher cache.
 1. Plaats dispatcher2 terug in het taakverdelingsmechanisme.
 
 Dit proces gaat verder tot de plaatsing alle uitgevers en verzenders in de topologie heeft bereikt.
 
 ## Uitvoermodus noodleiding {#emergency-pipeline}
 
-In kritieke situaties moeten klanten van Adobe Managed Services mogelijk codeveranderingen in hun stadium en productiemilieu&#39;s opstellen zonder het wachten op een volledige de testcyclus van Cloud Manager uit te voeren.
+In kritieke situaties, zouden de klanten van Adobe Managed Services codeveranderingen in hun stadium en productiemilieu&#39;s kunnen moeten onmiddellijk opstellen. Hierdoor kunnen ze de volledige Cloud Manager-testcyclus omzeilen.
 
 Om deze situaties het hoofd te bieden, kan de Cloud Manager-productiepijplijn in noodsituaties worden uitgevoerd. Als deze modus wordt gebruikt, worden de stappen voor de beveiligings- en prestatietest niet uitgevoerd. Alle andere stappen, met inbegrip van om het even welke gevormde goedkeuringsstappen, worden uitgevoerd zoals op de normale wijze van de pijpleidingsuitvoering.
 
 >[!NOTE]
 >
->De functie voor de uitvoering van de noodpijpleiding wordt per programma geactiveerd door de succestechnici van de Klant.
+>De functie voor de uitvoering van de noodpijpleiding wordt per programma geactiveerd. De activering wordt uitgevoerd door Succestechnici van de Klant.
 
 ### Uitvoermodus voor noodpijpleiding gebruiken {#using-emergency-pipeline}
 
-Wanneer het beginnen van een uitvoering van de productiepijplijn, als de eigenschap van de spoedpijpleiding uitvoeringswijze voor het programma is geactiveerd, kunt u de uitvoering op of normale of noodwijze van een dialoogdoos beginnen.
+Wanneer u de uitvoering van een productiepijplijn start, kunt u kiezen tussen de normale modus of de noodmodus in een dialoogvenster. Deze optie is beschikbaar als de functie voor het uitvoeren van de noodpijpleiding voor het programma wordt geactiveerd. Deze optie is beschikbaar als de functie is ingeschakeld.
 
 ![ de pijpleidingsopties van de Looppas ](/help/assets/execution-emergency1.png)
 
@@ -177,11 +177,11 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## Het opnieuw uitvoeren van een Plaatsing van de Productie {#reexecute-deployment}
 
-In zeldzame gevallen kunnen de stappen van de productielocatie om voorbijgaande redenen ontbreken. In dergelijke gevallen wordt heruitvoering van de productieleidingsstap ondersteund zolang de productieleidingsstap is voltooid, ongeacht het type voltooiing (bv. succesvol, geannuleerd of niet succesvol). De heruitvoering leidt tot een nieuwe uitvoering gebruikend de zelfde pijpleiding die uit drie stappen bestaat.
+In zeldzame gevallen kunnen de stappen van de productielocatie om voorbijgaande redenen ontbreken. In deze gevallen kunt u de stap voor productieimplementatie opnieuw uitvoeren zolang deze is voltooid, ongeacht of deze is gelukt, geannuleerd of mislukt. De heruitvoering wordt gesteund door de zelfde pijpleiding te gebruiken die uit de volgende drie stappen bestaat:
 
-1. **bevestigt stap** - dit is hoofdzakelijk de zelfde bevestiging die tijdens een normale pijpleidingsuitvoering voorkomt.
+1. **bevestigt stap** - de zelfde bevestiging die tijdens een normale pijpleidingsuitvoering voorkomt.
 1. **bouwstijlstap** - in de context van een heruitvoering, kopieert de bouwstijlstap artefacten en voert niet eigenlijk een nieuw bouwstijlproces uit.
-1. **de stap van de productieplaatsing** - dit gebruikt de zelfde configuratie en de opties zoals de stap van de productieplaatsing in een normale pijpleidingsuitvoering.
+1. **de stap van de productieplaatsing** - gebruikt de zelfde configuratie en de opties zoals de stap van de productieplaatsing in een normale pijpleidingsuitvoering.
 
 In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pagina van de de statuspagina van de productiepijpleiding **re-execute** optie naast de gebruikelijke **Download bouwt logboek** optie.
 
@@ -248,8 +248,8 @@ Deze verbinding is slechts ooit beschikbaar voor de productie stelt stap op.
 
 De syntaxis van de waarde `href` van de HAL-koppeling is slechts een voorbeeld en de werkelijke waarde moet altijd worden gelezen van de HAL-koppeling en niet worden gegenereerd.
 
-Als u een `PUT` -aanvraag naar dit eindpunt verzendt, resulteert dit in een `201` -reactie als dit gelukt is. De nieuwe uitvoering wordt dan vertegenwoordigd door de hoofdtekst van de reactie. Dit is vergelijkbaar met het starten van een normale uitvoering via de API.
+Als u een `PUT` -aanvraag naar dit eindpunt verzendt, levert dit een `201` -reactie op als dit lukt. De responsinstantie is de representatie van de nieuwe uitvoering. Deze functionaliteit is vergelijkbaar met het starten van een normale uitvoering via de API.
 
 #### Een nieuwe uitvoering identificeren {#identifying}
 
-Herhaalde uitvoeringen kunnen worden geïdentificeerd door de waarde `RE_EXECUTE` in het veld `trigger` .
+Het systeem identificeert opnieuw uitgevoerde uitvoeringen door de waarde `RE_EXECUTE` op het trekkergebied.
