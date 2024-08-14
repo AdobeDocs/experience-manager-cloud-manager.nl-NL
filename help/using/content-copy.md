@@ -2,9 +2,9 @@
 title: Het gereedschap Inhoud kopiëren
 description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van door AMS gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -167,9 +167,8 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
 * Per inhoudenset kunnen maximaal vijftig paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
 * Het gereedschap voor het kopiëren van inhoud mag niet worden gebruikt als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Een inhoudkopie kan niet worden gepauzeerd of geannuleerd nadat deze is gestart.
-* Met het gereedschap voor het kopiëren van inhoud kopieert u elementen samen met dynamische metagegevens over media van de hogere omgeving naar de geselecteerde lagere omgeving.
-   * De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) op het lagere milieu om de respectieve dynamische media configuratie te gebruiken.
-* Het kopiëren van inhoud gaat aanzienlijk sneller als de versiegeschiedenis niet wordt gekopieerd.
+* Met het gereedschap Inhoud kopiëren kopieert u elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
+* Het kopiëren van de inhoud gaat aanzienlijk sneller als de versiegeschiedenis niet wordt gekopieerd.
 * [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
 * Als de versiegeschiedenis niet wordt gekopieerd, verloopt het kopiëren van de inhoud aanzienlijk sneller.
 * De regio&#39;s van de doelomgeving moeten dezelfde zijn als of een deel van de bronomgeving.

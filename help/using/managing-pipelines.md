@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -20,23 +20,23 @@ De **Pijpleidingen** kaart op de **pagina van het Overzicht van het Programma** 
 
 ![ de kaart van Pijpleidingen in Cloud Manager ](/help/assets/configure-pipelines/pipelines-card.png)
 
-Door de ellipsieknoop naast elke pijpleiding te klikken kunt u de volgende acties voeren.
+Door de ellipsieknoop naast elke pijpleiding te klikken, kunt u de volgende acties voeren:
 
-* [De pijplijn uitvoeren](#running-pipelines)
-* [De pijplijn bewerken](#editing-pipelines)
-* [De pijplijn verwijderen](#deleting-pipelines)
-* [Details weergeven](#view-details)
+* [ stel de pijpleiding ](#running-pipelines) in werking.
+* [ geef de pijpleiding ](#editing-pipelines) uit.
+* [ Schrap de pijpleiding ](#deleting-pipelines).
+* [ details van de Mening ](#view-details).
 
-Onder aan de lijst met pijpleidingen staan algemene opties.
+Onder aan de lijst met pijpleidingen staan de volgende algemene opties.
 
-* **voeg** toe - aan [ voeg een nieuwe productiepijpleiding ](/help/using/production-pipelines.md) toe of [ voeg nieuwe niet-productiepijpleiding ](/help/using/non-production-pipelines.md) toe
-* **toon allen** - neemt de gebruiker aan het **scherm van Pijpleidingen** om alle pijpleidingen in een meer gedetailleerde lijst te bekijken
-* **Info van de Reactie van de Toegang** - Toont de informatie noodzakelijk om tot de git van Cloud Manager toegang te hebben bewaarplaats
+* **voeg** toe - aan [ voeg een nieuwe productiepijpleiding ](/help/using/production-pipelines.md) toe of [ voeg een nieuwe niet-productiepijpleiding ](/help/using/non-production-pipelines.md) toe.
+* **toon allen** - neemt de gebruiker aan het **scherm van Pijpleidingen** om alle pijpleidingen in een meer gedetailleerde lijst te bekijken.
+* **Info van de Reactie van de Toegang** - toont de informatie noodzakelijk om tot de bewaarplaats van de Git van Cloud Manager toegang te hebben.
 * **leer Meer** - navigeert aan CI/CD de middelen van de pijpleidingsdocumentatie.
 
 ## Venster Pijpleidingen {#pipelines}
 
-Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Dit is nuttig aangezien het uitvoerigere informatie dan voorstelt wat in de [ Kaart van de Pijpleiding ](#pipeline-card) beschikbaar is.
+Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Deze lijst is nuttig omdat het uitvoerigere informatie dan voorstelt wat in de [ kaart van Pijpleidingen ](#pipeline-card) beschikbaar is.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -64,33 +64,31 @@ Als u op het pictogram `i` klikt, worden meer details over de uitvoering van de 
 
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-activity.png)
 
-Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
+Klik **details van de Mening** om [ details van de pijpleidingsuitvoering ](#view-details) te herzien.
 
-## Ruu-pijpleidingen {#running-pipelines}
+## Pijpleidingen uitvoeren {#running-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
+1. Klik de ellipsknoop naast de pijpleiding die u in werking stelt, dan van het menu, uitgezochte **Looppas**.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **Looppas** van het menu in werking stelt.
+   De kolom van de Status wijst erop wanneer de pijpleidingslooppas begint.
 
-1. De pijpleidingslooppas begint en door de **Status** kolom wordt vermeld.
+   U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening](#view-details)** te selecteren.
 
-U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en **[details van de Mening](#view-details)** te selecteren.
-
-Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door de ellipsknoop opnieuw te klikken en **te selecteren annuleert**.
+   Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door de ellipsknoop opnieuw te klikken en **te selecteren annuleert**.
 
 ## Pijpleidingen bewerken {#editing-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u **uitgeven en dan selecteren** van het menu uitgeven.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding die u, dan van het menu wilt uitgeven, uitgezocht **uitgeven**.
 
-1. De **geeft de pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogvakvertoningen uit, toestaand u om de zelfde details uit te geven die u toen het creëren van de pijpleiding inging.
+1. De **geeft de pijpleiding van de Productie uit** of **geeft niet-Productie pijplijn** dialoogdoos uit verschijnt. U kunt de zelfde details uitgeven die u tijdens pijpleidingsverwezenlijking inging.
 
-   * Zie de volgende pagina&#39;s voor details op alle gebieden en configuratieopties beschikbaar voor pijpleidingen.
-      * [Productiepijpleidingen configureren](/help/using/production-pipelines.md)
-      * [Niet-productiepijpleidingen configureren](/help/using/non-production-pipelines.md)
+   Zie [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md) voor details op de gebieden en configuratieopties beschikbaar voor pijpleidingen.
 
-1. Klik **Update** zodra u het uitgeven van de pijpleiding wordt gedaan.
+1. Klik **Update** wanneer u wordt gedaan.
 
 >[!NOTE]
 >
@@ -100,7 +98,7 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **Schrapping** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u in werking stelt, dan van het menu, uitgezocht **Schrapping**.
 
 >[!NOTE]
 >
@@ -110,13 +108,13 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u uitgezocht **details van de Mening** van het menu in werking stelt.
+1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma** en klik de ellipsknoop naast de pijpleiding u in werking stelt, dan van het menu, uitgezochte **details van de Mening**.
 
 1. U wordt genomen aan de detailspagina van de lopende pijpleiding.
 
 ![ details van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-Van hier kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer informatie.
+Van hier, kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer informatie.
 
 Alle stappen in een pijpleidingsuitvoering worden getoond met degenen die nog niet uit grijs begonnen. De voltooide stappen tonen hun duur.
 
@@ -124,7 +122,7 @@ Wanneer een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
 
 ![ Overzicht van de Stap ](/help/assets/configure-pipelines/pipeline-step.png)
 
-Klik de **verbinding van de Details van de Mening** om de **sectie van de Duur** te openbaren. Dit omvat de gemiddelde duur van de pijpleiding op basis van de historische trend voor dat programma.
+Klik de **verbinding van de Details van de Mening** om de **sectie van de Duur** te openbaren. In dit deel wordt de gemiddelde duur van de pijpleiding vermeld op basis van de historische trend voor dat programma.
 
 ![ Duur ](/help/assets/configure-pipelines/duration.png)
 

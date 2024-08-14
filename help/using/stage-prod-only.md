@@ -2,9 +2,9 @@
 title: Alleen werkgebied- en alleen-prod-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -65,32 +65,36 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ### Pijpleidingen met alleen werkgebied {#stage-only}
 
-1. Zodra u **selecteert voeg niet-ProductiePipeline** optie toe, **voegt niet-ProductiePijl** dialoogdoos toe opent.
-1. Om een stadium-enige pijpleiding tot stand te brengen, selecteer het werkgebiedmilieu in het **In aanmerking komende gebied van de Milieu van de Plaatsing** voor uw pijpleiding. Voltooi de resterende gebieden en klik **verdergaan**.
+1. Nadat u **selecteert voeg niet-ProductiePipeline** optie toe, **voegt niet-ProductiePijl** dialoogdoos toe opent.
+1. Om een stadium-enige pijpleiding tot stand te brengen, selecteer het werkgebiedmilieu in het **In aanmerking komende gebied van de Milieu van de Plaatsing** voor uw pijpleiding.
+1. Vul de overige velden in.
+1. Klik **verdergaan**.
 
    ![ Creërend een stadium-enige pijpleiding ](/help/assets/configure-pipelines/stage-only.png)
 
-1. Op het **Testen van het Stadium** lusje, kunt u het testen dan bepalen die in het het opvoeren milieu zou moeten worden uitgevoerd. Klik **sparen** om uw nieuwe pijpleiding te bewaren.
+1. Op het **Testen van het Stadium** lusje, bepaal het testen om in het het opvoeren milieu uit te voeren.
+1. Klik **sparen**.
 
    ![ de parameters van de Test voor een stadium-enige pijpleiding ](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Pijpleidingen met alleen propaan {#prod-only}
 
-1. Zodra u **selecteert voeg slechts de optie van de Pijl van de Productie** toe, **voeg slechts de dialoogdoos van de Pijl van de Productie toe** opent.
-1. Verstrek de Naam van de a **Pijpleiding**. De resterende opties en functionaliteit van het dialoogvenster werken op dezelfde manier als de opties in het standaard dialoogvenster voor het maken van gekoppelde pijplijnen. Klik **sparen** om de pijpleiding te bewaren.
+1. Nadat u **selecteert voeg slechts de optie van de Pijl van de Productie** toe, **voeg slechts de dialoogdoos van de Pijl van de Productie toe** opent.
+1. Op het **gebied van de Naam van de Pijpleiding**, typ de naam u wilt. De resterende opties en functionaliteit van het dialoogvenster werken op dezelfde manier als de opties in het standaard dialoogvenster voor het maken van gekoppelde pijplijnen.
+1. In de laag-juiste hoek van de dialoogdoos, klik **sparen**.
 
    ![ Creërend een productie-enige pijpleiding ](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Pijpleidingen met alleen profielen en alleen met werkruimten {#running}
 
-Prod-slechts en stadium-enige pijpleidingen worden in grote lijnen de zelfde manier in werking gesteld zoals [ alle andere pijpleidingen worden in werking gesteld.](/help/using/managing-pipelines.md#running-pipelines) Zie die documentatie voor meer informatie. Er zijn echter twee nieuwe kenmerken van deze pijpleidingen.
+Prod-slechts en stadium-enige pijpleidingen worden in werking gesteld grotendeels de zelfde manier zoals [ alle andere pijpleidingen in werking gesteld ](/help/using/managing-pipelines.md#running-pipelines). Zie die documentatie voor meer informatie. Er zijn echter twee nieuwe kenmerken van deze pijpleidingen.
 
-* De stadium-slechts en de prod-slechts pijpleidingen bieden een nieuwe [ noodwijze ](#emergency-mode) aan om het overslaan van het testen toe te staan.
-* Prod-slechts pijpleiding kan direct van de uitvoeringsdetails van a [ worden teweeggebracht stadium-slechts pijpleiding.](#stage-only-run)
+* De stadium-slechts en pro-enige pijpleidingen bieden een nieuwe [ noodwijze ](#emergency-mode) aan overslaan het testen.
+* Prod-slechts pijpleiding in werking kan direct van de uitvoeringsdetails van a [ worden teweeggebracht stadium-enige pijpleiding ](#stage-only-run).
 
 ### Noodmodus {#emergency-mode}
 
-Wanneer u productie-slechts en het opvoeren-online pijpleidingen begint, wordt u ertoe aangezet om het begin evenals te bevestigen hoe het zal beginnen.
+Wanneer u alleen productie- en staging-onlinepijpleidingen start, wordt u gevraagd om het begin en het begin te bevestigen.
 
 * **Normale Wijze** is een standaardlooppas en omvat stadium testende stappen.
 * **de Wijze van de Noodsituatie** slaat stadium testende stappen over.
@@ -103,12 +107,12 @@ Een pijpleiding met alleen trapsgewijze uitloop loopt vrijwel op dezelfde manier
 
 ![ werkgebied-enige pijpleiding loopt ](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante stadium-enige pijpleiding of normaal of op [ noodsituatie wijze te bevestigen.](#emergency-mode)
+Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante stadium-enige pijpleiding of normaal of op [ noodsituatie wijze ](#emergency-mode) te bevestigen.
 
-Als er geen pijpleiding met alleen een proxy bestaat, wordt u gevraagd om een pijpleiding te maken.
+Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te maken.
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
-Voor pijpleidingen met alleen modi is het belangrijk de bronartefacten te identificeren die voor de productie moeten worden gebruikt. Deze details kunnen in de **stap van de Voorbereiding van 0} Artefact worden gevonden.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
+Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
