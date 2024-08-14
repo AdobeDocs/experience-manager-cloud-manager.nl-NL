@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release voor Cloud Manager 2024.8.0
 description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.8.0.
 feature: Release Information
-source-git-commit: 34f15aff7478a6a0884f88f534a7dff996a8570e
+source-git-commit: dd764bb17127ba0a1e88e85592329cc9ddff42e3
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Deze pagina documenteert de opmerkingen bij de release voor [!UICONTROL Cloud Ma
 
 ## Releasedatum {#release-date}
 
-De releasedatum voor [!UICONTROL Cloud Manager] 2024.8.0 is 13 augustus 2024. De volgende release is gepland voor 14 september 2024.
+De releasedatum voor [!UICONTROL Cloud Manager] 2024.8.0 is 14 augustus 2024. De volgende release is gepland voor 14 september 2024.
 
 ## Nieuwe functies {#what-is-new}
 
