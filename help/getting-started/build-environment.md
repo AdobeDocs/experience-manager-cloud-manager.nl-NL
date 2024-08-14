@@ -2,21 +2,21 @@
 title: De Build-omgeving
 description: Leer over de gespecialiseerde bouwstijlomgeving die de gebruikers van Cloud Manager om uw code te bouwen en te testen.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
 
 
-# De Build-omgeving {#build-environment}
+# De ontwikkelomgeving {#build-environment}
 
 Leer over de gespecialiseerde bouwstijlomgeving die de gebruikers van Cloud Manager om uw code te bouwen en te testen.
 
 ## Omgevingsdetails {#details}
 
-Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
+Cloud Manager-ontwikkelomgevingen hebben de volgende kenmerken.
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
@@ -24,7 +24,7 @@ Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
 * De geïnstalleerde Java-versies zijn Oracle JDK 8u401 en Oracle JDK 11.0.22.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* De omgevingsvariabele `JAVA_HOME` wordt standaard ingesteld op `/usr/lib/jvm/jdk1.8.0_401` met Oracle JDK 8u401. Zie de sectie [ Afwisselend Gemaakte Versie van JDK van de Uitvoering ](#alternate-maven) voor meer details.
+* Standaard wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk1.8.0_401` , die Oracle JDK 8u401 bevat. Zie de sectie [ Afwisselend Gemaakte Versie van JDK van de Uitvoering ](#alternate-maven) voor meer details.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
    * `bzip2`
    * `unzip`
@@ -37,8 +37,7 @@ Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven wordt op systeemniveau geconfigureerd met een `settings.xml` -bestand dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met behulp van een profiel met de naam `adobe-public` .
-   * Zie de [ openbaar Maven bewaarplaats van de Adobe ](https://repo1.maven.org/) voor meer details.
+* Maven wordt op systeemniveau geconfigureerd met een `settings.xml` -bestand dat automatisch de openbare gegevensopslagruimte voor Adoben bevat met een profiel met de naam `adobe-public` . Zie de [ openbaar Maven bewaarplaats van de Adobe ](https://repo1.maven.org/) voor meer details.
 * Node.js 18 is beschikbaar voor [ front eindpijpleidingen ](/help/overview/ci-cd-pipelines.md).
 
 >[!NOTE]
@@ -53,9 +52,9 @@ Cloud Manager-omgevingen voor build hebben de volgende kenmerken.
 >* [ Creërend een API Integratie ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [ API Toestemmingen ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
-## Via HTTPS gemaakte opslagplaatsen {#https-maven}
+## Door HTTPS aangebrachte opslagruimten {#https-maven}
 
-Cloud Manager [ 2023.10.0 ](/help/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s ](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
+Cloud Manager [ 2023.10.0 ](/help/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s ](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 
@@ -63,14 +62,14 @@ Om ervoor te zorgen dat de bijgewerkte versie probleemloos wordt uitgevoerd, raa
 
 ## Een specifieke Java-versie gebruiken {#using-java-version}
 
-Door gebrek, worden de projecten gebouwd door Cloud Manager bouwt proces gebruikend Oracle 8 JDK. Klanten die een alternatieve JDK willen gebruiken, hebben twee opties.
+Door gebrek, maken de projecten die door Cloud Manager worden gebouwd Oracle 8 JDK. Klanten die een alternatieve JDK willen gebruiken, hebben twee opties.
 
 * [ Gemaakt Toolketens ](#maven-toolchains)
 * [Een alternatieve JDK-versie selecteren voor het volledige uitgevoerde Maven-proces](#alternate-maven)
 
 ### Maven Toolketins {#maven-toolchains}
 
-De [ Gemaakt Toolchains gestopt ](https://maven.apache.org/plugins/maven-toolchains-plugin/) staat projecten toe om een specifieke JDK (of toolchain) te selecteren om in de context van toolketens-bewuste Geweven stoppen worden gebruikt. Dit wordt gedaan in het dossier van het project `pom.xml` door een verkoper en versiewaarde te specificeren. Een voorbeeldsectie in het `pom.xml` -bestand is:
+De [ Gemaakt stop-in Toolketens ](https://maven.apache.org/plugins/maven-toolchains-plugin/) laat projecten een specifieke JDK (of toolchain) selecteren om in de context van toolketens-bewuste Gewenste stop-ins te gebruiken. Dit proces wordt uitgevoerd in het `pom.xml` dossier van het project door een verkoper en versiewaarde te specificeren. Een voorbeeldsectie in het bestand `pom.xml` is als volgt:
 
 ```xml
         <plugin>
@@ -95,30 +94,30 @@ De [ Gemaakt Toolchains gestopt ](https://maven.apache.org/plugins/maven-toolcha
 </plugin>
 ```
 
-Hierdoor wordt voor alle plug-ins met behoud van gereedschappen het Oracle JDK, versie 11, gebruikt.
+Dit proces veroorzaakt alle toolketins-bewuste Geweven stop-ins om het Oracle JDK, versie 11 te gebruiken.
 
-Wanneer u deze methode gebruikt, wordt Maven zelf nog steeds uitgevoerd met de standaard-JDK (Oracle 8) en wordt de omgevingsvariabele `JAVA_HOME` niet gewijzigd. Daarom het controleren van of het handhaven van de versie van Java door plugins zoals de [ Apache Maven Insteekmodule van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werkt niet en dergelijke plugins moeten niet worden gebruikt.
+Wanneer u deze methode gebruikt, wordt Maven zelf nog steeds uitgevoerd met de standaard-JDK (Oracle 8) en wordt de omgevingsvariabele `JAVA_HOME` niet gewijzigd. Daarom het controleren van of het handhaven van de versie van Java door stop-ins zoals [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werkt niet en dergelijke stop-ins moet niet worden gebruikt.
 
 De momenteel beschikbare combinaties leverancier/versie zijn:
 
 | Leverancier | Versie |
 |---|---|
-| oracle | 1,8 |
-| oracle | 1,11 |
-| oracle | 11 |
-| zon | 1,8 |
-| zon | 1,11 |
-| zon | 11 |
+| Oracle | 1,8 |
+| Oracle | 1,11 |
+| Oracle | 11 |
+| Zon | 1,8 |
+| Zon | 1,11 |
+| Zon | 11 |
 
 >[!NOTE]
 >
->Vanaf april 2022 is Oracle JDK de standaard-JDK voor de ontwikkeling en werking van AEM toepassingen. Cloud Manager bouwt proces zal automatisch op het gebruiken van Oracle JDK schakelen, zelfs als een alternatieve optie uitdrukkelijk in de Maven toolchain wordt geselecteerd. Zie de [ versienota&#39;s van april ](/help/release-notes/2022/2022-4-0.md) voor meer details.
+>Vanaf april 2022 zal Oracle JDK de standaard JDK zijn voor de ontwikkeling en werking van AEM toepassingen. Cloud Manager bouwt proces automatisch aan het gebruiken van Oracle JDK over, zelfs als een alternatieve optie uitdrukkelijk in Maven toolchain wordt geselecteerd. Zie de [ versienota&#39;s van april ](/help/release-notes/2022/2022-4-0.md) voor meer details.
 
-### JDK-versie van alternatieve uitvoering {#alternate-maven}
+### Alternatieve JDK-versie voor uitvoering {#alternate-maven}
 
-Het is ook mogelijk om Oracle 8 of Oracle 11 als JDK voor de volledige Geweven uitvoering te selecteren. In tegenstelling tot de opties van toolketins, verandert dit JDK die voor alle stop-ins wordt gebruikt tenzij de toolketenconfiguratie ook wordt geplaatst waarin de toolkettenconfiguratie nog voor toolketens-bewuste Maven plugins wordt toegepast. Dientengevolge, zal het controleren van en het handhaven van de versie van Java gebruikend de [ Gebruikte Insteekmodule van Apache Maven Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
+Het is ook mogelijk om Oracle 8 of Oracle 11 als JDK voor de volledige Geweven uitvoering te selecteren. In tegenstelling tot de opties van toolketins, verandert dit JDK die voor alle stop-ins wordt gebruikt tenzij de toolketenconfiguratie ook wordt geplaatst, in welk geval de toolketenconfiguratie nog wordt toegepast voor toolketens-bewuste Geweven stop-ins. Dientengevolge, controlerend en uitvoerend de versie van Java gebruikend de [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
 
-Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking van de it-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud `11` of `8` hebben. Eventuele andere waarden worden genegeerd. Wanneer `11` wordt opgegeven, wordt Oracle 11 gebruikt en wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk-11.0.22` . Wanneer `8` wordt opgegeven, wordt Oracle 8 gebruikt en wordt de `JAVA_HOME` omgevingsvariabele ingesteld op `/usr/lib/jvm/jdk1.8.0_401` .
+Voor dit proces maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking van de it-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud `11` of `8` hebben. Eventuele andere waarden worden genegeerd. Wanneer `11` wordt opgegeven, wordt Oracle 11 gebruikt en wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk-11.0.22` . Wanneer `8` wordt opgegeven, wordt Oracle 8 gebruikt en wordt de `JAVA_HOME` omgevingsvariabele ingesteld op `/usr/lib/jvm/jdk1.8.0_401` .
 
 ## Omgevingsvariabelen {#environment-variables}
 
@@ -126,7 +125,7 @@ Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de verta
 
 In sommige gevallen, kunt u het noodzakelijk vinden om het bouwstijlproces te variëren dat op informatie over het programma of de pijpleiding wordt gebaseerd.
 
-Als JavaScript-minificatie tijdens de bouw bijvoorbeeld wordt uitgevoerd met behulp van een instrument als gulp, kan het nodig zijn een ander miniatuurniveau te gebruiken bij het bouwen voor een ontwikkelomgeving in plaats van voor het opvoeren en produceren.
+Als u bijvoorbeeld een gereedschap zoals gulp voor JavaScript-minificatie gebruikt, kunt u de voorkeur geven aan verschillende miniatuurniveaus voor ontwikkelings- en productieomgevingen.
 
 Om dit te steunen, voegt Cloud Manager standaardmilieuvariabelen aan de bouwstijlcontainer voor elke uitvoering toe.
 
@@ -144,29 +143,29 @@ Om dit te steunen, voegt Cloud Manager standaardmilieuvariabelen aan de bouwstij
 
 Standaardomgevingsvariabelen kunnen op een aantal plaatsen worden gebruikt.
 
-#### Auteur, Voorvertoning en Publish {#author-preview-publish}
+#### Auteur-, voorproef- en publicatieomgevingen {#author-preview-publish}
 
 Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontwerpomgeving, voorvertoningsomgeving en in de publicatieomgeving.
 
 #### Dispatcher {#dispatcher}
 
-Slechts kunnen de regelmatige milieuvariabelen met [ worden gebruikt de verzender ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html). Geheimen kunnen niet worden gebruikt.
+Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructies.
 
 >[!TIP]
 >
->U zou uw gebruik van milieuvariabelen met [ verzender plaatselijk ](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) moeten bevestigen alvorens op te stellen.
+>Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
 
 #### OSGi-configuraties {#osgi}
 
-Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) worden gebruikt.
+Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
 
 ### Pipetvariabelen {#pipeline-variables}
 
-In sommige gevallen, kan uw bouwstijlproces van specifieke configuratievariabelen afhangen die om in de git bewaarplaats ongepast zouden zijn te plaatsen of tussen pijpleidinguitvoeringen moeten variëren gebruikend de zelfde tak.
+In sommige gevallen, kan uw bouwstijlproces van specifieke configuratievariabelen afhangen die om in de bewaarplaats van het Git ongepast zouden zijn te plaatsen of tussen pijpleidinguitvoeringen moeten variëren gebruikend de zelfde tak.
 
-Cloud Manager staat voor deze variabelen toe om door Cloud Manager API of Cloud Manager CLI op een per-pijpleidingsbasis worden gevormd. Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele waarnaar vervolgens kan worden verwezen vanuit het `pom.xml` -bestand of andere constructiescripts.
+Cloud Manager staat voor deze variabelen toe om door Cloud Manager API of Cloud Manager CLI op een per-pijpleidingsbasis worden gevormd. Variabelen kunnen worden opgeslagen als normale tekst of in rust worden versleuteld. In beide gevallen worden variabelen binnen de ontwikkelomgeving beschikbaar gemaakt als een omgevingsvariabele, waarnaar vervolgens kan worden verwezen vanuit het `pom.xml` -bestand of andere constructiescripts.
 
 Om een variabele te plaatsen die CLI gebruiken, stel een bevel in werking gelijkend op het volgende.
 
@@ -185,9 +184,9 @@ Variabelen moeten aan bepaalde beperkingen voldoen.
 * Namen van variabelen mogen alleen alfanumerieke tekens en het onderstrepingsteken (`_`) bevatten.
    * Volgens de conventie moeten de namen allemaal in hoofdletters staan.
 * Er is een grens van 200 variabelen per pijpleiding.
-* Elke naam moet uit minder dan 100 tekens bestaan.
+* Elke naam moet minder dan 100 tekens bevatten.
 * Elke tekenreekswaarde moet uit minder dan 2048 tekens bestaan.
-* Elke geheimeString-waarde moet uit minder dan en 500 tekens bestaan.
+* Elke `secretString` -waarde moet uit minder dan 500 tekens bestaan.
 
 Bij gebruik in een Maven `pom.xml` -bestand is het doorgaans handig om deze variabelen toe te wijzen aan Maven-eigenschappen met een syntaxis die lijkt op de volgende.
 
@@ -207,7 +206,7 @@ Bij gebruik in een Maven `pom.xml` -bestand is het doorgaans handig om deze vari
 
 ## Extra systeempakketten installeren {#installing-additional-system-packages}
 
-Om volledig te functioneren, vereisen sommige bouwstijlen extra systeempakketten worden geïnstalleerd. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet daarom een geschikte taalinterpreter hebben geïnstalleerd. Dit kan worden gedaan door [`exec-maven-plugin` ](https://www.mojohaus.org/exec-maven-plugin/) te roepen APT aan te halen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. Als u bijvoorbeeld Python wilt installeren:
+Om volledig te functioneren, vereisen sommige bouwstijlen extra systeempakketten worden geïnstalleerd. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet daarom een geschikte taalinterpreter hebben geïnstalleerd. Dit scenario kan worden gedaan door [`exec-maven-plugin` ](https://www.mojohaus.org/exec-maven-plugin/) te roepen APT aan te halen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. Als u bijvoorbeeld Python wilt installeren, kunt u het volgende doen:
 
 ```xml
         <profile>
@@ -260,7 +259,7 @@ Om volledig te functioneren, vereisen sommige bouwstijlen extra systeempakketten
         </profile>
 ```
 
-Dezelfde techniek kan worden gebruikt om taalspecifieke pakketten te installeren, bijvoorbeeld met `gem` voor RubyGems of `pip` voor Python Packages.
+Deze techniek kan ook worden gebruikt om taalspecifieke pakketten te installeren. Dat wil zeggen: gebruik `gem` voor RubyGems of `pip` voor Python Packages.
 
 >[!NOTE]
 >

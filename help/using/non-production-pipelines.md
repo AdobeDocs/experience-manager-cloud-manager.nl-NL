@@ -2,9 +2,9 @@
 title: Niet-productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud M
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
-1. Open de Pipelinekaart van het homescherm van Cloud Manager. Klik op **toevoegen** en selecteren **toevoegen niet-ProductiePijpleiding**.
+1. Open de Pipelinekaart van het homescherm van Cloud Manager. Klik **toevoegen**, dan uitgezocht **voeg niet-Productiepijpleiding** toe.
 
    ![ voeg niet-productiepijpleiding ](/help/assets/configure-pipelines/nonprod-pipeline-add1.png) toe
 

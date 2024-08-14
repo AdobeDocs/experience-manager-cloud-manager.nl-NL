@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Als u op het pictogram `i` klikt, worden meer details over de uitvoering van de 
 
 Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
-## Lopende pijpleidingen {#running-pipelines}
+## Ruu-pijpleidingen {#running-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -78,7 +78,7 @@ U kunt de details van de looppas zien door de ellipsknoop opnieuw te klikken en 
 
 Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door de ellipsknoop opnieuw te klikken en **te selecteren annuleert**.
 
-## Bewerkingspijplijnen {#editing-pipelines}
+## Pijpleidingen bewerken {#editing-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -90,13 +90,13 @@ Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren doo
       * [Productiepijpleidingen configureren](/help/using/production-pipelines.md)
       * [Niet-productiepijpleidingen configureren](/help/using/non-production-pipelines.md)
 
-1. Klik op **Update** zodra u klaar bent met het uitgeven van de pijpleiding.
+1. Klik **Update** zodra u het uitgeven van de pijpleiding wordt gedaan.
 
 >[!NOTE]
 >
 >U kunt een lopende pijpleiding niet uitgeven.
 
-## Verwijderen van pijpleidingen {#deleting-pipelines}
+## Pijpleidingen verwijderen {#deleting-pipelines}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -120,7 +120,7 @@ Van hier kunt u het statuut van de diverse stappen van de pijpleiding zien en bo
 
 Alle stappen in een pijpleidingsuitvoering worden getoond met degenen die nog niet uit grijs begonnen. De voltooide stappen tonen hun duur.
 
-Zodra een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
+Wanneer een pijpleidingsstap volledig is, wordt een samenvatting voorgesteld.
 
 ![ Overzicht van de Stap ](/help/assets/configure-pipelines/pipeline-step.png)
 

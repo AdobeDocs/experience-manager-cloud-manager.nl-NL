@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De **rol van de Manager van de Plaatsing** is verantwoordelijk voor vestiging de
 >
 >Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende git bewaarplaats minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig.
 
-## Een nieuwe productiepijpleiding toevoegen {#adding-production-pipeline}
+## Een nieuwe productiepijplijn toevoegen {#adding-production-pipeline}
 
 Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma en minstens één milieu hebt, bent u bereid om een productiepijplijn toe te voegen.
 
@@ -124,7 +124,7 @@ Zodra u [!UICONTROL Cloud Manager] UI hebt gebruikt aan opstelling uw programma 
 
          * **Configuratie van Dispatcher** - bepaal de verzender configuratie voor uw productiemilieu. De opties zijn hetzelfde als die voor de testomgeving.
 
-1. Klik op **ga** verder om aan het **Testen van het Stadium** lusje vooruit te gaan waar u het Testen van de Prestaties van AEM Sites en van AEM Assets kunt vormen, afhankelijk van welke producten u vergunning hebt gegeven.
+1. Klik **verdergaan** aan het **Testen van het Stadium** lusje vooruit waar u het Testen van Prestaties van AEM Sites en van AEM Assets kunt vormen, afhankelijk van welke producten u vergunning hebt gegeven.
 
    >[!TIP]
    >

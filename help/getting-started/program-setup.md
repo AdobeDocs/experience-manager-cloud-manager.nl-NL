@@ -2,19 +2,19 @@
 title: Programma instellen
 description: Na het instappen, zal de bedrijfseigenaar één of andere aanvankelijke opstelling van het programma moeten doen.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 
-# Programma instellen {#program-setup}
+# Programmainstelling {#program-setup}
 
 Na het instappen voltooit de bedrijfseigenaar de aanvankelijke opstelling van het programma met inbegrip van het plaatsen van de programmabeschrijving en het bepalen van de belangrijkste prestatiesindicatoren (KPIs), die voor prestatietests worden gebruikt.
 
-## Programma instellen met [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
+## Programmainstelling met [!UICONTROL Cloud Manager] {#program-setup-cloud-manager}
 
 Voer de volgende stappen uit om het programma in te stellen en KPI&#39;s te definiëren.
 
@@ -58,7 +58,7 @@ U kunt programma&#39;s bewerken nadat u ze hebt ingesteld. Voer de volgende stap
 
 1. Navigeer naar het programma vanuit het Cloud Manager-beginscherm.
 
-1. Klik op **geef programma** uit om uw programma van de **pagina van het Overzicht** bij te werken of te wijzigen.
+1. Klik **uitgeven programma** om uw programma van de **pagina van het Overzicht** bij te werken of te wijzigen.
 
    ![ geef programmaoptie ](/help/assets/set-up-program/edit-program1.png) uit
 
@@ -66,7 +66,7 @@ U kunt programma&#39;s bewerken nadat u ze hebt ingesteld. Voer de volgende stap
 
    ![ geef programmadialoog ](/help/assets/set-up-program/edit-program-general.png) uit
 
-1. Klik op **Update** om uw veranderingen te bewaren.
+1. Klik **Update** om uw veranderingen te bewaren.
 
 Merk op dat de veranderingen onmiddellijk aan Cloud Manager worden bewaard, maar zal niet in uw milieu&#39;s tot de volgende pijpleidingslooppas worden weerspiegeld.
 

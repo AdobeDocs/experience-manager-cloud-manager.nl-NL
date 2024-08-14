@@ -1,27 +1,27 @@
 ---
 title: Werken met Meerdere Git-opslagplaatsen
-description: Leer hoe u met uw eigen git-opslagplaats of met meerdere git-opslagplaatsen kunt werken in plaats van rechtstreeks te werken met de Cloud Manager git-opslagplaats.
+description: Leer hoe u met uw eigen Git-opslagplaats of meerdere Git-opslagplaatsen kunt werken in plaats van rechtstreeks met de Cloud Manager Git-opslagplaats te werken.
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
 
-# Werken met meerdere Source Git-opslagplaatsen {#working-with-multiple-source-git-repos}
+# Werken met meerdere Git-opslagruimten {#working-with-multiple-source-git-repos}
 
-Leer hoe u met uw eigen git-opslagplaats of met meerdere git-opslagplaatsen kunt werken in plaats van rechtstreeks te werken met de Cloud Manager git-opslagplaats.
+Leer hoe u met uw eigen Git-opslagplaats of meerdere Git-opslagplaatsen kunt werken in plaats van rechtstreeks met de Cloud Manager Git-opslagplaats te werken.
 
-## Door de klant beheerde Git-opslagruimten synchroniseren {#syncing-customer-managed-git-repositories}
+## Door de klant beheerde it-opslagruimten synchroniseren {#syncing-customer-managed-git-repositories}
 
-Als u met uw eigen opslagplaats of opslagplaatsen wilt werken, moet een geautomatiseerd synchronisatieproces worden ingesteld om ervoor te zorgen dat de Cloud Manager git-opslagplaats altijd up-to-date wordt gehouden.
+Als u de Cloud Manager Git-opslagplaats up-to-date wilt houden, stelt u een geautomatiseerd synchronisatieproces in als u uw eigen opslagplaats of opslagruimten gebruikt.
 
-Afhankelijk van waar uw git bewaarplaats wordt ontvangen, zou een actie GitHub of een ononderbroken integratieoplossing zoals Jenkins aan opstelling de automatisering kunnen worden gebruikt. Met een automatisering op zijn plaats, kan elke duw aan uw eigen bewaarplaats automatisch door:sturen aan Cloud Manager git bewaarplaats.
+Afhankelijk van waar uw gegevensopslagplaats van de Git wordt ontvangen, zou een actie GitHub of een ononderbroken integratieoplossing zoals Jenkins aan opstelling de automatisering kunnen worden gebruikt. Met een automatisering op zijn plaats, kan elke duw aan uw eigen bewaarplaats automatisch door:sturen aan Cloud Manager Git bewaarplaats.
 
-Hoewel een dergelijke automatisering voor één enkele klant-eigendom git bewaarplaats ongecompliceerd is, vereist het vormen van dit omhoog voor veelvoudige bewaarplaatsen een meer geïmpliceerde aanvankelijke opstelling. De inhoud van meerdere opslagplaatsen voor it moet worden toegewezen aan verschillende directory&#39;s binnen één Cloud Manager git-opslagplaats. De Cloud Manager it-opslagplaats moet zijn voorzien van een hoofdmap Maven `pom.xml` , waarin de verschillende subprojecten worden vermeld in de sectie Modules
+Hoewel een dergelijke automatisering voor één enkele klant-eigendom van de opslagplaats van het Git ongecompliceerd is, vereist het vormen van het voor veelvoudige bewaarplaatsen een meer geïmpliceerde aanvankelijke opstelling. De inhoud van meerdere Git-opslagplaatsen moet worden toegewezen aan verschillende directory&#39;s binnen één Cloud Manager Git-opslagplaats. De Cloud Manager Git-opslagplaats moet zijn ingericht met een hoofdmap Maven `pom.xml` , waarin de verschillende subprojecten worden vermeld in de sectie Modules
 
-Hieronder ziet u een voorbeeld `pom.xml` voor twee in eigendom van de klant zijnde it-opslagruimten. Het eerste project wordt in de map met de naam `project-a` geplaatst. Het tweede project wordt in de map met de naam `project-b` geplaatst.
+Hieronder ziet u een voorbeeld `pom.xml` voor twee Git-repositories die eigendom zijn van klanten. Het eerste project wordt in de folder genoemd `project-a` gezet, en het tweede project wordt gezet in de folder genoemd `project-b`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,23 +42,23 @@ Hieronder ziet u een voorbeeld `pom.xml` voor twee in eigendom van de klant zijn
 </project>
 ```
 
-Zo&#39;n root `pom.xml` wordt doorgegeven aan een vertakking in de Cloud Manager Git-opslagplaats. Vervolgens moeten de twee projecten worden ingesteld om wijzigingen automatisch door te sturen naar de Cloud Manager git-opslagplaats.
+Zo&#39;n root `pom.xml` wordt doorgegeven aan een vertakking in de Cloud Manager Git-opslagplaats. Vervolgens moeten de twee projecten zo worden opgezet dat wijzigingen automatisch worden doorgestuurd naar de Cloud Manager Git-opslagplaats.
 
-Bijvoorbeeld, kan een actie GitHub door een duw aan een tak in project A worden teweeggebracht. Met de actie worden project A en de Cloud Manager git-opslagplaats uitgecheckt en wordt alle inhoud van project A naar de directory `project-a` in de Cloud Manager git-opslagplaats gekopieerd en vervolgens wordt de wijziging doorgevoerd.
+Bijvoorbeeld, kan een duw aan een tak in project A een actie activeren GitHub. Met de actie worden project A en de Cloud Manager Git-opslagplaats uitgecheckt. Alle inhoud van project A wordt gekopieerd naar de map `project-a` van de Cloud Manager Git-opslagplaats. Vervolgens legt het de wijziging vast en duwt het de verandering.
 
-Een wijziging in de `main` -vertakking in project A wordt bijvoorbeeld automatisch doorgestuurd naar de `main` -vertakking in de Cloud Manager Git-opslagplaats. Natuurlijk kan er een toewijzing tussen vertakkingen zijn, zoals een duw naar een vertakking genoemd `dev` in project A wordt geduwd naar een vertakking genoemd `development` in Cloud Manager git repository. Vergelijkbare stappen zijn vereist voor project B.
+Een wijziging in de `main` -vertakking in project A wordt bijvoorbeeld automatisch doorgestuurd naar de `main` -vertakking in de Cloud Manager Git-opslagplaats. Natuurlijk kan er een toewijzing tussen takken zijn zoals een duw aan een tak genoemd `dev` in project A wordt geduwd aan een tak genoemd `development` in de bewaarplaats van de Git van Cloud Manager. Vergelijkbare stappen zijn vereist voor project B.
 
-Afhankelijk van de vertakkingsstrategie en workflows kan de synchronisatie worden geconfigureerd voor verschillende vertakkingen. Als de gebruikte gokbewaarplaats geen concept gelijkend op acties GitHub verstrekt, is een integratie via (of gelijkaardig) Jenkins ook mogelijk. In dit geval activeert een webhaak een Jenkins-taak die het werk doet.
+Afhankelijk van de vertakkingsstrategie en workflows kan de synchronisatie worden geconfigureerd voor verschillende vertakkingen. Als de gebruikte gegevensopslagplaats van de Git geen concept gelijkend op acties GitHub verstrekt, is een integratie door (of gelijkaardig) van Jenkins ook mogelijk. In dit geval activeert een webhaak een Jenkins-taak die het werk doet.
 
-Voer de onderstaande stappen uit om een nieuwe (derde) bron of opslagplaats toe te voegen:
+Ga als volgt te werk om een nieuwe (derde) bron of opslagplaats toe te voegen:
 
-1. Voeg een nieuwe actie GitHub aan de nieuwe bewaarplaats toe die veranderingen van die bewaarplaats aan Cloud Manager git bewaarplaats duwt.
-1. Voer die actie minstens eenmaal uit om ervoor te zorgen dat de projectcode in Cloud Manager git repository is.
-1. Voeg een verwijzing naar de nieuwe map toe in de hoofdmap Maven `pom.xml` in de Cloud Manager Git-opslagplaats.
+1. Voeg een nieuwe actie GitHub aan de nieuwe bewaarplaats toe die veranderingen van die bewaarplaats aan de bewaarplaats van het Git van Cloud Manager duwt.
+1. Voer die actie minstens eenmaal uit om ervoor te zorgen dat de projectcode in de gegevensopslagplaats van het Git van Cloud Manager is.
+1. Voeg een verwijzing naar de nieuwe map toe in de hoofdmap Maven `pom.xml` van de Cloud Manager Git-opslagplaats.
 
-## Voorbeeld van GitHub-actie {#sample-github-action}
+## Voorbeeld van actie GitHub {#sample-github-action}
 
-Dit is een voorbeeld van een GitHub-actie die wordt geactiveerd door een push naar de `main` -vertakking en die vervolgens in een submap van de Cloud Manager Git-opslagplaats wordt doorgedrukt. De GitHub-acties moeten worden voorzien van twee geheimen, `MAIN_USER` en `MAIN_PASSWORD` , om verbinding te kunnen maken met en druk op de Cloud Manager-git-opslagplaats.
+Een duw aan de `main` tak teweegbrengt deze steekproefactie GitHub teweeg, die dan in een subdirectory van de bewaarplaats van de Git van Cloud Manager duwt. De GitHub-acties moeten met twee geheimen worden geleverd, `MAIN_USER` en `MAIN_PASSWORD` , om verbinding te kunnen maken met en druk op de Cloud Manager Git-opslagplaats.
 
 ```java
 name: SYNC
@@ -115,19 +115,19 @@ jobs:
           git -C main push
 ```
 
-Zoals hierboven getoond, is het gebruiken van een actie GitHub zeer flexibel. Elke toewijzing tussen vertakkingen van de it-opslagplaatsen kan worden uitgevoerd en elke toewijzing van de afzonderlijke it-projecten aan de mappenindeling van het hoofdproject.
+Zoals hierboven getoond, is het gebruiken van een actie GitHub flexibel. Elke toewijzing tussen vertakkingen van de Git-opslagplaatsen kan worden uitgevoerd en elke toewijzing van de afzonderlijke Git-projecten aan de mappenlay-out van het hoofdproject.
 
 >[!NOTE]
 >
->In het bovenstaande script wordt `git add` gebruikt om de gegevensopslagruimte bij te werken, waarbij ervan wordt uitgegaan dat verwijderingen worden opgenomen. Afhankelijk van de standaardconfiguratie van de it moet deze mogelijk worden vervangen door `git add --all` .
+>In het bovenstaande script wordt `git add` gebruikt om de gegevensopslagruimte bij te werken, waarbij ervan wordt uitgegaan dat verwijderingen worden opgenomen. Afhankelijk van de standaardconfiguratie van Git, moet deze vereiste mogelijk worden vervangen door `git add --all` .
 
-## Sample Jenkins Job {#sample-jenkins-job}
+## Sample Jenkins-taak {#sample-jenkins-job}
 
-Dit is een voorbeeldscript dat kan worden gebruikt in een Jenkins-taak of vergelijkbaar. Het wordt geactiveerd door een wijziging in een git-opslagplaats. De baan Jenkins controleert uit de recentste staat van dat project of tak en dan brengt dit manuscript in werking.
+Dit script is een voorbeeld dat kan worden gebruikt in een Jenkins-taak of vergelijkbaar. Een wijziging in een Git-opslagplaats leidt ertoe dat. De baan Jenkins controleert uit de recentste staat van dat project of tak en dan brengt dit manuscript in werking.
 
-Dit script controleert op zijn beurt de Cloud Manager git-opslagplaats en legt de projectcode vast aan een subdirectory.
+Dit script zoekt op zijn beurt de Cloud Manager Git-opslagplaats uit en legt de projectcode vast aan een subdirectory.
 
-Voor de Jenkins-taak moeten twee geheimen worden opgegeven, `MAIN_USER` en `MAIN_PASSWORD` , om verbinding te kunnen maken met en te kunnen drukken op de Cloud Manager Git-opslagplaats.
+De Jenkins-taak moet twee geheimen hebben, `MAIN_USER` en `MAIN_PASSWORD` , om verbinding te kunnen maken met en te kunnen drukken op de Cloud Manager Git-opslagplaats.
 
 ```java
 # Username/email used to commit to Cloud Manager's Git repository
@@ -181,8 +181,8 @@ git commit -F ../commit.txt
 git push
 ```
 
-Zoals hierboven is weergegeven, is het gebruik van een Jenkins-baan erg flexibel. Elke toewijzing tussen vertakkingen van de it-opslagplaatsen kan worden uitgevoerd en elke toewijzing van de afzonderlijke it-projecten aan de mappenindeling van het hoofdproject.
+Zoals hierboven is weergegeven, is het gebruik van een Jenkins-baan erg flexibel. Elke toewijzing tussen vertakkingen van de Git-opslagplaatsen kan worden uitgevoerd en elke toewijzing van de afzonderlijke Git-projecten aan de mappenlay-out van het hoofdproject.
 
 >[!NOTE]
 >
->In het bovenstaande script wordt `git add` gebruikt om de gegevensopslagruimte bij te werken, waarbij ervan wordt uitgegaan dat verwijderingen zijn opgenomen. Afhankelijk van de standaardconfiguratie van it moet deze mogelijk worden vervangen door `git add --all` .
+>In het bovenstaande script wordt `git add` gebruikt om de gegevensopslagruimte bij te werken, waarbij ervan wordt uitgegaan dat verwijderingen worden opgenomen. Afhankelijk van de standaardconfiguratie van Git moet `git add` mogelijk worden vervangen door `git add --all` .

@@ -1,38 +1,36 @@
 ---
-title: Controleomgevingen
+title: Omgevingen bewaken
 description: Leer hoe u uw omgevingen in Cloud Manager kunt bewaken.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
 
 
-# Controleomgevingen {#monitoring-environments}
+# Monitoromgevingen {#monitoring-environments}
 
 Leer hoe u uw omgevingen in Cloud Manager kunt bewaken.
 
-## Metrische drempelwaarden {#thresholds}
+## Metrische drempels {#thresholds}
 
 Systeemcontrole in [!UICONTROL Cloud Manager] wordt uitgevoerd door de afzonderlijke instanties binnen een omgeving te observeren en een aantal verschillende meetgegevens voor elke instantie te volgen. Elke metrische waarde heeft twee gedefinieerde drempelwaarden: een waarschuwingsdrempel en een kritieke drempelwaarde.
 
 Als metrisch zijn over zijn kritieke drempel is, wordt het beschouwd om in een kritieke staat te zijn. Als een metrische waarde boven de waarschuwingsdrempel (maar onder de kritische drempel) ligt, wordt deze als een waarschuwingsstatus beschouwd. De drempelwaarden worden ingesteld door Adobe Managed Services en kunnen worden weergegeven in [!UICONTROL Cloud Manager] . In de meeste gevallen zijn drempels consistent tussen klanten, maar er zijn gevallen waarin Adobe Managed Services drempelwaarden zal aanpassen om aan specifieke klantenvereisten te voldoen. Vragen over de drempelwaarden moeten worden gericht aan uw Customer Success Engineer (CSE).
 
-## Toegang tot systeemcontrole {#accessing-system-monitoring}
-
-Volg deze stappen om tot de Controle van het Systeem toegang te hebben.
+## Toegangssysteemcontrole {#accessing-system-monitoring}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
-1. Klik de elliptische knoop van het programma u wenst om de **te controleren en te selecteren tonen Controle** optie.
+1. Klik de elliptische knoop van het programma u wilt controleren en de **tonen Controle** optie selecteren.
 
    ![ Montages ](/help/assets/first-timea1.png)
 
 De **pagina van Rapporten** opent om systeem controleinformatie te tonen.
 
-## Overzicht van systeemcontrole {#system-monitoring-overview}
+## Overzicht van systeembewaking {#system-monitoring-overview}
 
 De **sectie van de Controle van het Systeem** van de **pagina van Rapporten** maakt een lijst van de gecontroleerde milieu&#39;s in het programma en rapporten over hun gezondheid op hoog niveau over vier afzonderlijke categorieën:
 
@@ -112,14 +110,14 @@ De **sectie van de Analyse van de Gebeurtenis** onder deze grafiek toont de reek
 
 ![ de analyse van de Gebeurtenis ](/help/assets/sla-reporting3.png)
 
-## SLA Metrics {#sla-metrics}
+## SLA-meetgegevens {#sla-metrics}
 
-* **het Contract van de Auteur**: Dit is SLA die in uw contract met Adobe Managed Services voor de auteursrij wordt bepaald.
-* **de Auteur SLA van AMS**: Dit is de gemeten uptime van de de factoringsincidenten van de productiefunctie die door Adobe of onze verkopers worden veroorzaakt.
-* **Auteur SLA**: Dit is de gemeten uptime van de auteursrij die geplande onderbreking zoals onderhoudsvensters negeert.
-* **Eind - gebruikerscontract**: Dit is SLA die in uw contract met Adobe Managed Services voor publiceer rij wordt bepaald.
-* **SLA van het Eind van AMS**: Dit is gemeten uptime van de productie publiceren rij factoring incidenten die door Adobe of onze verkopers worden veroorzaakt.
-* **SLA van het Eind**: Dit is gemeten uptime van de publiceer rij die geplande onderbreking zoals onderhoudsvensters negeert.
+* **het Contract van de Auteur**: SLA bepaalde in uw contract met Adobe Managed Services voor de auteursrij.
+* **de Auteur SLA van AMS**: De gemeten uptime van de de lijstfactoring van de productiepauteur incidenten die door Adobe of onze verkopers worden veroorzaakt.
+* **Auteur SLA**: Gemeten uptime van de auteursrij die geplande onderbreking zoals onderhoudsvensters negeert.
+* **Eind - gebruikerscontract**: SLA bepaalde in uw contract met Adobe Managed Services voor publiceer rij.
+* **SLA van de Eindgebruiker van AMS**: De gemeten uptime van de productie publiceert rij factoring incidenten die door Adobe of onze verkopers worden veroorzaakt.
+* **SLA van het Eind**: Gemeten uptime van publiceer rij die geplande onderbreking zoals onderhoudsvensters negeert.
 
 ## Videozelfstudie {#video-tutorial}
 

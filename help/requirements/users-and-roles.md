@@ -2,9 +2,9 @@
 title: Gebruikers en rollen toevoegen
 description: Leer hoe u de Admin Console gebruikt om gebruikers en rollen toe te voegen en profielen te maken.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Deze lijst vat de rollen samen.
 >
 >De ontwikkelaarspersoon in de Admin Console heeft geen verband met de rol van de Ontwikkelaar in [!UICONTROL Cloud Manager] .
 
-## Admin Console gebruiken om een profiel te maken {#using-admin-console-to-create-a-profile}
+## Beheerconsole gebruiken om een profiel te maken {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] rollen worden beheerd vanuit de Admin Console. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel toe te voegen.
 
@@ -59,7 +59,7 @@ Met de Admin Console kunt u gebruikers/groepen maken of toevoegen aan deze produ
 
 1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
 
-1. Klik op het **Overzicht** lusje, klik het product u op de **Producten en de diensten** kaart wilt wijzigen. Als het daar niet vermeld is, gebruik het **Producten** lusje om van het product de plaats te bepalen en het te klikken.
+1. Klik het **Overzicht** lusje, klik het product u op de **Producten en de diensten** kaart wilt wijzigen. Als het daar niet vermeld is, gebruik het **Producten** lusje om van het product de plaats te bepalen en het te klikken.
 
    ![ Admin consoleoverzicht tabel ](/help/assets/admin-console-overview.png)
 

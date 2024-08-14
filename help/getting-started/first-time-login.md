@@ -2,7 +2,7 @@
 title: Eerste aanmelding
 description: Volg deze pagina als u algemene configuraties hebt ingesteld en u Cloud Manager voor het eerst kunt gebruiken.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Als u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld, k
 >
 >Afhankelijk van de rollen die in [!UICONTROL Cloud Manager] zijn toegewezen en de status van de toepassing, kunnen de schermen die u ziet, van de illustraties verschillen.
 
-## Aanmelden voor de eerste keer {#logging-in-for-the-first-time}
+## Voor het eerst aanmelden {#logging-in-for-the-first-time}
 
 1. Meld u aan bij Cloud Manager op [`my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) en uw lijst met programma&#39;s wordt weergegeven.
 

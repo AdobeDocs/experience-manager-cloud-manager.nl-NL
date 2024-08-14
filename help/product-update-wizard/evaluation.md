@@ -3,9 +3,9 @@ title: Evaluatiefase
 seo-title: Evaluation Phase
 description: Leer hoe de de evaluatiefase van de Tovenaar van de Update van het Product de verbeteringsingewikkeldheid met de patroondetector beoordeelt.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -27,19 +27,19 @@ Het verslag dient als een beoordeling van de ontwikkelingsinspanningen die gepaa
 >
 >Om meer over patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en) beoordelen.
 
-## De evaluatie uitvoeren {#running}
+## Voer het evaluatierapport uit {#running}
 
 De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, zal Cloud Manager het op het opvoeren milieu van de auteursinstantie in werking stellen.
 
-Voer de volgende stappen uit om het evaluatieverslag te genereren.
+**om het evaluatierapport in werking te stellen:**
 
 1. Begin de tovenaar zoals die in het document [ wordt beschreven tovenaar van de Update van het Product ](/help/product-update-wizard/overview.md).
 
-1. Klik op **[!UICONTROL Run Evaluation]** .
+1. Klik op **[!UICONTROL Run Evaluation]**.
 
    ![ evaluatie van de Looppas ](/help/assets/Run-Evaluation.png)
 
-1. De wizard informeert u over de status van uw handeling. U zult **in uitvoering** of **voltooide** zoals toepasselijk merken wanneer het evaluatierapport wordt geproduceerd.
+1. De wizard informeert u over de status van uw handeling. Bericht **lopend** of **voltooide** zoals toepasselijk wanneer het evaluatierapport wordt geproduceerd.
 
 1. Nadat het rapport is gegenereerd, kunt u op **[!UICONTROL Download report]** klikken om een kopie op te slaan.
 

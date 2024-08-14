@@ -2,9 +2,9 @@
 title: Meldingen
 description: Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ Het **lusje van Mededelingen** omvat de aankondigingen van het het productproduc
 
 ![ Notifications sidebar ](/help/assets/notificaitons-announcements.png)
 
-Klik op een bericht of aankondiging om de details ervan weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
+Klik op een melding of aankondiging om de details weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
 
-Klik op de **Mening allen** optie bij de bodem van het paneel om alle aankondigingen in uw inbox te bekijken.
+Klik **Mening alle** optie bij de bodem van het paneel om alle aankondigingen in uw inbox te bekijken.
 
-Klik op het **Teken allen als gelezen** optie bij de bodem van het paneel om alle ongelezen berichten als gelezen te merken en het belpictogram te ontruimen.
+Klik **Teken allen als gelezen** optie bij de bodem van het paneel om alle ongelezen berichten als gelezen te merken en het belpictogram te ontruimen.
 
 ## Configuratie van melding {#configuration}
 
@@ -58,7 +58,7 @@ In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en 
 
 ![ abonnementen van het Bericht ](/help/assets/notifications-subscriptions.png)
 
-Standaard ontvangt u alle meldingen voor alle producten. Klik op **aanpassen** naast een product om de soorten berichten te bepalen u voor dat product ontvangt.
+Standaard ontvangt u alle meldingen voor alle producten. Klik **aanpassen** naast een product om de soorten berichten te bepalen u voor dat product ontvangt.
 
 ![ aanpassing van het abonnement van het Bericht ](/help/assets/notifications-subscriptions-customize.png)
 
