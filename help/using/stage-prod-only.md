@@ -2,9 +2,9 @@
 title: Alleen werkgebied- en alleen-prod-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 70b7994435f7f0f587c134fab1fb66c6576386d9
+source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,19 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ## Pijpleidingen met alleen profielen en alleen met werkruimten {#running}
 
-Prod-slechts en stadium-enige pijpleidingen worden in werking gesteld op de zelfde manier als [ alle andere pijpleidingen in werking gesteld ](/help/using/managing-pipelines.md#running-pipelines). Zie die documentatie voor meer informatie.
+Prod-slechts en stadium-enige pijpleidingen worden in grote lijnen de zelfde manier in werking gesteld zoals [ alle andere pijpleidingen worden in werking gesteld.](/help/using/managing-pipelines.md#running-pipelines) Zie die documentatie voor meer informatie. Er zijn echter twee nieuwe kenmerken van deze pijpleidingen.
 
-Daarnaast kan een pijpleiding met alleen de mogelijkheid van een fase rechtstreeks worden geactiveerd vanaf de uitvoeringsdetails van een pijpleiding met alleen het werkgebied.
+* De stadium-slechts en de prod-slechts pijpleidingen bieden een nieuwe [ noodwijze ](#emergency-mode) aan om het overslaan van het testen toe te staan.
+* Prod-slechts pijpleiding kan direct van de uitvoeringsdetails van a [ worden teweeggebracht stadium-slechts pijpleiding.](#stage-only-run)
+
+### Noodmodus {#emergency-mode}
+
+Wanneer u productie-slechts en het opvoeren-online pijpleidingen begint, wordt u ertoe aangezet om het begin evenals te bevestigen hoe het zal beginnen.
+
+* **Normale Wijze** is een standaardlooppas en omvat stadium testende stappen.
+* **de Wijze van de Noodsituatie** slaat stadium testende stappen over.
+
+![ Noodmodus ](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Pijpleidingen met alleen werkgebied {#stage-only-run}
 
@@ -93,7 +103,9 @@ Een pijpleiding met alleen trapsgewijze uitloop loopt vrijwel op dezelfde manier
 
 ![ werkgebied-enige pijpleiding loopt ](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-**bevordert bouw** knoop slechts verschijnt als u op de recentste succesvolle stadium-enige pijpleidingsuitvoering bent. Zodra geklikt, vraagt het u om de looppas van de pro-enige pijpleiding te bevestigen of een pro-enige pijpleiding tot stand te brengen als er niet reeds bestaat.
+Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante stadium-enige pijpleiding of normaal of op [ noodsituatie wijze te bevestigen.](#emergency-mode)
+
+Als er geen pijpleiding met alleen een proxy bestaat, wordt u gevraagd om een pijpleiding te maken.
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
