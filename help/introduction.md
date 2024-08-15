@@ -2,9 +2,9 @@
 title: Inleiding tot Cloud Manager voor AMS
 description: Begin hier om Cloud Manager for Adobe Managed Services (AMS) te leren kennen en hoe organisaties Adobe Experience Manager in de cloud kunnen beheren.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1232'
 ht-degree: 3%
 
 ---
@@ -33,23 +33,21 @@ Begin hier om Cloud Manager for AMS (Adobe Managed Services) te leren kennen en 
 
 Met Cloud Manager profiteert uw ontwikkelingsteam van de volgende functies:
 
-* Doorlopende integratie/doorlopende levering (CI/CD) van code om de tijd tot de markt te beperken van maanden/weken tot dagen/uren
+* Doorlopende integratie/doorlopende levering (CI/CD) van code om de tijd tot de markt te beperken van maanden/weken tot dagen/uren.
 
-* Codeinspectie, prestatietests en beveiligingsvalidatie op basis van best practices voordat u naar de productie gaat om productieonderbrekingen tot een minimum te beperken
+* Codeinspectie, prestatietests en beveiligingsvalidatie op basis van best practices voordat u naar de productie gaat om productieonderbrekingen tot een minimum te beperken.
 
-* API-connectiviteit als aanvulling op bestaande DevOps-processen
+* API-connectiviteit als aanvulling op bestaande DevOps-processen.
 
-* Autoscaling die intelligent de behoefte aan verhoogde capaciteit ontdekt en automatisch extra Dispatcher/het publiceren segmenten online brengt
+* Autoscaling die intelligent de behoefte aan verhoogde capaciteit ontdekt en automatisch extra Dispatcher/het publiceren segmenten online brengt.
 
-Deze afbeelding illustreert de verwerkingsstroom CI/CD die wordt gebruikt in [!UICONTROL Cloud Manager]:
-
-![ CI/CD stroom ](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![ CI/CD stroom ](/help/assets/screen_shot_2018-05-12at73843pm.png) de CI/CD processtroom die in [!UICONTROL Cloud Manager] wordt gebruikt.
 
 ## Belangrijke functies in [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
 Hieronder volgt een dieper overzicht van de belangrijkste functies van Cloud Manager.
 
-### Self-Service Interface {#self-service-interface}
+### Self-service interface {#self-service-interface}
 
 Met de gebruikersinterface (UI) voor [!UICONTROL Cloud Manager] hebt u eenvoudig toegang tot de cloud-omgeving en kunt u de CI/CD-pijplijn eenvoudig beheren voor uw Adobe Experience Manager-toepassingen.
 
@@ -57,7 +55,7 @@ U definieert toepassingsspecifieke prestatie-indicatoren (KPI&#39;s), zoals piek
 
 Om te onderzoeken en begonnen te worden met [!UICONTROL Cloud Manager]&#39;s UI, zie [ Eerste Login van de Tijd ](/help/getting-started/first-time-login.md).
 
-### CI/CD Pipet {#ci-cd-pipeline}
+### Cd-pijpleiding {#ci-cd-pipeline}
 
 Een van de belangrijkste mogelijkheden van [!UICONTROL Cloud Manager] is de mogelijkheid om een geoptimaliseerde CI/CD-pijpleiding uit te voeren om de levering van aangepaste code of updates te versnellen, zoals het toevoegen van nieuwe componenten op de website.
 
@@ -125,7 +123,7 @@ Alle AMS-gebruikers die Cloud Manager gebruiken voor productieimplementaties, ku
 
 Als u in blauwe/groene plaatsing geinteresseerd bent, overweeg de volgende vereisten en de beperkingen en contacteer uw CSE.
 
-#### Eisen en beperkingen {#limitations}
+#### Vereisten en beperkingen {#limitations}
 
 * Blauw/groen is alleen beschikbaar voor Dispatcher/uitgeversparen.
 * Voorvertoning van Dispatcher/publicatieparen maakt geen deel uit van blauw/groene implementaties.
