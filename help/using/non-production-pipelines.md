@@ -2,9 +2,9 @@
 title: Niet-productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te o
 
 Er zijn twee soorten niet-productiepijpleidingen:
 
-* **Pijpleidingen van de Kwaliteit van de Code** - Deze in werking gestelde codekwaliteit scant op de code in een git tak en voert de bouw en de stappen van de codekwaliteit uit.
-* **Pijpleidingen van de Plaatsing** - naast het uitvoeren van de bouw en de stappen van de codekwaliteit zoals de pijpleidingen van de codekwaliteit, stellen deze pijpleidingen de code aan een niet productiemilieu op.
+* **Pijpleidingen van de Kwaliteit van de Code** - Deze in werking gestelde codekwaliteit scant op de code in een tak van het Git en voert de bouw en de stappen van de codekwaliteit uit.
+* **Pijpleidingen van de Plaatsing** - samen met het uitvoeren van de bouw en de stappen van de codekwaliteit zoals de pijpleidingen van de codekwaliteit, stellen deze pijpleidingen ook de code aan een niet productiemilieu op.
 
 >[!NOTE]
 >
->Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende git bewaarplaats minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie het document [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+>Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende git bewaarplaats minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
 ## Een niet-productiepijpleiding toevoegen {#add-non-production-pipeline}
 
@@ -51,36 +51,37 @@ Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud M
 
 1. Verstrek de bewaarplaats waar de pijpleiding de code zou moeten terugwinnen.
 
-   * **Bewaarplaats** - Deze opties bepalen waarvan git repo de pijpleiding de code zou moeten terugwinnen.
-   * **de Tak van het Git** - deze optie bepaalt van welke tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
+   * **Bewaarplaats** - bepaalt waarvan git repo dat de pijpleiding de code zou moeten terugwinnen.
+   * **Tak van het Git** - bepaalt van welke tak in Git dat de geselecteerde pijpleiding de code zou moeten terugwinnen.
 
 1. Definieer uw implementatieopties.
 
    1. Onder **Trigger van de Plaatsing**, bepaal welke gebeurtenis de pijpleiding activeert.
 
-      * **Handboek** - gebruik deze optie om de pijpleiding manueel te beginnen.
-      * **op de Veranderingen van het Git** - Deze opties beginnen de pijpleiding wanneer de begaat aan de gevormde git tak worden toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel zoals vereist beginnen.
+      * **Handboek** - laat u manueel de pijpleiding beginnen.
+      * **op de Veranderingen van het Git** - begint de pijpleiding wanneer de begaat aan de gevormde tak van het Git worden toegevoegd. Met deze optie, kunt u de pijpleiding nog manueel, zoals vereist beginnen.
 
    1. Voor plaatsingspijpleidingen, onder **Belangrijk Metrisch Gedrag van Mislukt**, bepaal het gedrag van de pijpleiding wanneer een belangrijke mislukking in om het even welke kwaliteitspoorten wordt ontmoet.
 
-      * **vraag telkens als** - dit is het gebrek plaatsend en vereist handinterventie op om het even welke belangrijke mislukking.
-      * **onmiddellijk het Eindigen** - als geselecteerd, zal de pijpleiding worden geannuleerd wanneer een belangrijke mislukking voorkomt. Dit is in feite het emuleren van een gebruiker die elke fout handmatig afwijst.
-      * **gaat onmiddellijk** - als geselecteerd, zal de pijpleiding automatisch te werk wanneer een belangrijke mislukking voorkomt. Dit emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
+      * **vraag telkens** - het gebrek dat en vereist handinterventie op om het even welke belangrijke mislukking plaatst.
+      * **onmiddellijk het Eindigen** - de pijpleiding wordt geannuleerd wanneer een belangrijke mislukking voorkomt. In feite emuleert het een gebruiker handmatig elke fout af.
+      * **gaat onmiddellijk** voort - de pijpleiding gaat automatisch wanneer een belangrijke mislukking voorkomt. Het emuleert hoofdzakelijk een gebruiker manueel goedkeurend elke mislukking.
 
-   1. **de Configuratie van Dispatcher** - de **rol van de Manager van de Plaatsing** kan een reeks inhoudspaden vormen die of van het geheime voorgeheugen van AEM Dispatcher ongeldig zullen worden gemaakt of zullen worden gespoeld wanneer een pijpleiding in werking wordt gesteld. Deze geheim voorgeheugenacties zullen als deel van de stap van de plaatsingspijpleiding worden uitgevoerd, enkel nadat om het even welke inhoudspakketten worden opgesteld. Bij deze instellingen wordt standaard AEM Dispatcher-gedrag gebruikt. Om te vormen:
+   1. **de Configuratie van Dispatcher** - de **rol van de Manager van de Plaatsing** kan een reeks inhoudspaden vormen die of ongeldig of uit het geheime voorgeheugen van AEM Dispatcher worden gespoeld wanneer een pijpleiding in werking wordt gesteld. Deze geheim voorgeheugenacties worden uitgevoerd als deel van de stap van de plaatsingspijpleiding, enkel nadat om het even welke inhoudspakketten worden opgesteld. Bij deze instellingen wordt standaard AEM Dispatcher-gedrag gebruikt. Om te vormen:
 
       1. Onder **PAD** verstrekt een inhoudspad.
       1. Onder **TYPE**, selecteer de actie die op die weg moet worden genomen.
 
          * **Flush** - voer een geheim voorgeheugenschrapping uit.
          * **ongeldig maakt** ongeldig - voer een geheim voorgeheugenbevestiging uit, gelijkend op wanneer de inhoud van een auteursinstantie aan een het publiceren instantie wordt geactiveerd.
+
       1. Klik **toevoegen Weg** om uw gespecificeerde weg toe te voegen. U kunt maximaal 100 paden per omgeving toevoegen.
 
-1. Klik **sparen** om uw pijpleiding te bewaren.
+1. Klik **sparen**.
 
 ## De volgende stappen {#the-next-steps}
 
-Zodra u de pijpleiding hebt gevormd, moet u uw code opstellen. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
+Nadat u de pijpleiding vormt, kunt u uw code opstellen. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial}
 

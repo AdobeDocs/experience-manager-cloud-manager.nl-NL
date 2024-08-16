@@ -1,10 +1,10 @@
 ---
 title: Dispatcher-configuraties
-description: Leer hoe u configuratiebestanden voor verzenders kunt implementeren met Cloud Manager.
+description: Leer hoe u Dispatcher-configuratiebestanden kunt implementeren met Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Dispatcher-configuraties {#manage-your-dispatcher-configurations}
 
-Leer hoe u de configuratiebestanden van de dispatcher kunt implementeren met Cloud Manager
+Leer hoe u Dispatcher-configuratiebestanden kunt implementeren met Cloud Manager
 
 ## Dispatcher-configuraties implementeren met Cloud Manager {#deploying-dispatcher-configurations}
 
-Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren als deze naast normale AEM-inhoudpakketten zijn opgeslagen in de it-opslagplaats.
+Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren als deze naast normale AEM-inhoudpakketten zijn opgeslagen in de Git-opslagplaats.
 
 Als u van deze mogelijkheid gebruik wilt maken, moet de Maven-build een ZIP-bestand maken dat ten minste twee mappen bevat: `conf` en `conf.d` . Dit .zip-bestand kan worden gemaakt met `maven-assembly-plugin` .
 
-De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [ tovenaar van de projectverwezenlijking ](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit is het aanbevolen pad als u nog geen ervaring hebt met Adobe Managed Services (AMS).
+De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [ tovenaar van de projectverwezenlijking ](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit pad wordt aanbevolen als u nog geen ervaring hebt met Adobe Managed Services (AMS).
 
-Bij de implementatie naar een dispatcherinstantie wordt de inhoud van deze mappen in de Dispatcher-instantie overschreven door de mappen in de git-opslagruimte. Omdat voor webserver- en Dispatcher-configuratiebestanden vaak specifieke informatie over de omgeving nodig is om deze functie correct te kunnen gebruiken, moet u eerst samenwerken met de Customer Success Engineers (CSE) om deze omgevingsvariabelen in te stellen in `/etc/sysconfig/httpd` .
+Wanneer u de toepassing uitvoert naar een Dispatcher-instantie, worden de mappen in de instantie vervangen door die mappen in de Git-opslagplaats. Omdat voor webserver- en Dispatcher-configuratiebestanden vaak specifieke gegevens voor de omgeving nodig zijn, moet u samenwerken met de Customer Success Engineers (CSE) om de juiste omgevingsvariabelen in te stellen in `/etc/sysconfig/httpd` voordat u deze functie correct gebruikt.
 
 ## Dispatcher-configuratie voor bestaande beheerde serviceklanten {#steps-for-configuring-dispatcher}
 
@@ -33,12 +33,12 @@ Voer de volgende stappen uit om de eerste Dispatcher-configuratie te voltooien.
 1. Definieer vereiste variabelen in sleutelwaardeparen voor elk doel-Dispatcher en verzoek uw CSE deze aan `/etc/sysconfig/httpd` toe te voegen.
 1. Test de bijgewerkte configuraties in uw testomgeving.
 1. Zodra getest, verzoek uw CSE om aan productie op te stellen.
-1. Leg de bestanden vast in uw it-opslagplaats.
+1. Leg de bestanden vast aan uw Git-opslagplaats.
 1. Implementeer via Cloud Manager.
 
 >[!NOTE]
 >
->Het migreren van Dispatcher- en webserverconfiguraties naar uw it-opslagplaats kan plaatsvinden tijdens het instappen van Cloud Manager, maar kan ook op een later tijdstip worden uitgevoerd.
+>Het migreren van Dispatcher- en webserverconfiguraties naar uw Git-opslagplaats kan plaatsvinden tijdens het instappen van Cloud Manager, maar kan ook op een later tijdstip worden uitgevoerd.
 
 ### Voorbeeld {#example}
 
@@ -48,7 +48,7 @@ De specifieke bestands- en mapstructuur kan variëren op basis van de specificat
 
    U kunt hier elke naam gebruiken, maar de mapnaam die in deze stap wordt gemaakt, moet dezelfde zijn als de naam die in stap 6 wordt gebruikt.
 
-1. Deze submap bevat een module Maven die het ZIP-bestand van Dispatcher maakt met de plug-in Maven Assembly. Als u dit wilt starten, maakt u in de map `dispatcher` een `pom.xml` -bestand met deze inhoud en wijzigt u zo nodig de `parent` reference `artifactId` en `name` .
+1. Deze submap bevat een module Maven die het ZIP-bestand van Dispatcher maakt met de plug-in Maven Assembly. Maak in de map `dispatcher` een `pom.xml` -bestand met deze inhoud en wijzig indien nodig de verwijzing `parent` , `artifactId` en `name` .
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -113,7 +113,7 @@ De specifieke bestands- en mapstructuur kan variëren op basis van de specificat
    </assembly>
    ```
 
-1. Maak een submap met de naam `src` (waarnaar in de verzamelingsbeschrijving hierboven op regel 11 wordt verwezen) in de submap dispatcher om de werkelijke Apache- en Dispatcher-configuraties op te slaan. Maak binnen deze map `src` mappen met de naam `conf` , `conf.d` , `conf.dispatcher.d` en `conf.modules.d` .
+1. Maak een submap met de naam `src` (waarnaar in de verzamelingsbeschrijving hierboven op regel 11 wordt verwezen) in de submap Dispatcher om de werkelijke Apache- en Dispatcher-configuraties op te slaan. Maak binnen deze map `src` mappen met de naam `conf` , `conf.d` , `conf.dispatcher.d` en `conf.modules.d` .
 
 1. Vul de mappen `conf`, `conf.d` , `conf.dispatcher.d` en `conf.modules.d` met uw configuratiebestanden. De standaardconfiguratie bestaat bijvoorbeeld uit deze bestanden en symbolische koppelingen.
 
@@ -190,9 +190,9 @@ De specifieke bestands- en mapstructuur kan variëren op basis van de specificat
            └── 02-dispatcher.conf
    ```
 
-1. Voeg ten slotte in het `pom.xml` -bestand in de hoofdmap van uw project een `<module>` -element toe om de verzendingsmodule op te nemen.
+1. Voeg ten slotte in het `pom.xml` -bestand in de hoofdmap van uw project een `<module>` -element toe om de Dispatcher-module op te nemen.
 
-   Als de bestaande lijst met modules bijvoorbeeld
+   Als uw bestaande lijst van modules bijvoorbeeld de volgende is:
 
    ```xml
        <modules>
@@ -202,7 +202,7 @@ De specifieke bestands- en mapstructuur kan variëren op basis van de specificat
        </modules>
    ```
 
-   U moet het wijzigen in
+   Wijzig deze in het volgende:
 
    ```xml
        <modules>
