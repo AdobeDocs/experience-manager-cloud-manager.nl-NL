@@ -1,11 +1,11 @@
 ---
 title: Evaluatiefase
 seo-title: Evaluation Phase
-description: Leer hoe de de evaluatiefase van de Tovenaar van de Update van het Product de verbeteringsingewikkeldheid met de patroondetector beoordeelt.
+description: Leer hoe de evaluatiefase van de wizard Productupdates de upgradecomplexiteit met de patroondetector beoordeelt.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Evaluatiefase {#evaluation}
 
-De eerste fase in de wizard Productupdates is **[!UICONTROL Evaluation]** -fase, waarin de complexiteit van de upgrade wordt beoordeeld aan de hand van de patroondetector rechtstreeks in de wizard. Aan het einde van deze stap hebt u toegang tot een evaluatierapport.
+De eerste fase in de wizard Productupdates is de **[!UICONTROL Evaluation]** -fase, die de complexiteit van de upgrade rechtstreeks met de patroondetector in de wizard evalueert. Aan het eind van deze stap, kunt u tot het evaluatierapport toegang hebben.
 
-Met het gegenereerde rapport kunt u controleren of de auteurinstantie geschikt is voor upgrades door patronen te detecteren die:
+Met het gegenereerde rapport kunt u controleren of de auteur in aanmerking komt voor een upgrade door de volgende patronen te detecteren:
 
-* Overtreed bepaalde regels betreffende gebieden die door de upgrade worden beïnvloed of overschreven.
+* Breek bepaalde regels betreffende gebieden die door de upgrade worden beïnvloed of overschreven.
 
-* Gebruik een AEM 6.x-functie of een API die niet achterwaarts compatibel is met de nieuwe versie van AEM en die na de upgrade mogelijk kan worden onderbroken.
+* Gebruik een AEM 6.x-functie of een API die niet achterwaarts compatibel is met de nieuwe versie van AEM en die na een upgrade mogelijk kan worden onderbroken.
 
 Het verslag dient als een beoordeling van de ontwikkelingsinspanningen die gepaard gaan met de opwaardering tot Adobe Experience Manager (AEM) 6.5.
 
 >[!NOTE]
 >
->Om meer over patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=en) beoordelen.
+>Om meer over de patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector) beoordelen.
 
 ## Voer het evaluatierapport uit {#running}
 
-De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, zal Cloud Manager het op het opvoeren milieu van de auteursinstantie in werking stellen.
+De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontdekkingstarief te verhogen en om het even welke vertragingen op bedrijfskritieke instanties te vermijden, stelt Cloud Manager het op het opvoeren milieu van de auteursinstantie in werking.
 
 **om het evaluatierapport in werking te stellen:**
 

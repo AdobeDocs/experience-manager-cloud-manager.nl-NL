@@ -1,27 +1,27 @@
 ---
 title: Ondersteuning voor Git-submodule
-description: Leer hoe u Git-submodules kunt gebruiken om de inhoud van meerdere vertakkingen in git-opslagruimten tijdens het samenstellen samen te voegen.
+description: Leer hoe u Git-submodules kunt gebruiken om de inhoud van meerdere vertakkingen in Git-opslagruimten tijdens het samenstellen samen te voegen.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
-# Ondersteuning voor Git-submodule voor opslagplaatsen voor Adoben {#git-submodule-support}
+# Ondersteuning voor Git-submodule voor opslagruimten voor Adoben {#git-submodule-support}
 
-Git-submodules kunnen worden gebruikt om de inhoud van meerdere vertakkingen tijdens het samenstellen samen te voegen tussen git-opslagruimten.
+Git-submodules kunnen worden gebruikt om de inhoud van meerdere vertakkingen tijdens het samenstellen samen te voegen via Git-opslagruimten.
 
-Wanneer het Cloud Manager-bouwproces wordt uitgevoerd, nadat de opslagplaats die voor de pijplijn is geconfigureerd, is gekloond en de geconfigureerde vertakking is uitgecheckt, wordt de opdracht uitgevoerd als de vertakking een `.gitmodules` -bestand in de hoofdmap bevat.
+Wanneer Cloud Manager bouwt proces looppas, klonen het eerst de bewaarplaats van de pijpleiding en controleert de gevormde tak. Als de vertakking een `.gitmodules` dossier in de wortelfolder bevat, wordt het bevel dan uitgevoerd.
 
 ```
 $ git submodule update --init
 ```
 
-Dit zal elke submodule in de aangewezen folder uitchecken. Deze techniek is een potentieel alternatief aan [ werkend met veelvoudige opslagplaatsen van de bronGit ](/help/managing-code/multiple-git-repos.md) voor organisaties die met het gebruiken van git submodules vertrouwd zijn en geen extern het samenvoegen proces willen beheren.
+Dit proces controleert elke submodule in de aangewezen folder. Deze techniek is een potentieel alternatief aan [ werkend met veelvoudige opslagplaatsen van de bronGit ](/help/managing-code/multiple-git-repos.md) voor organisaties die comfortabel het gebruiken van submodules van het Git zijn en geen extern het samenvoegen proces willen beheren.
 
-Stel dat er drie opslagruimten zijn die elk één vertakking met de naam `main` bevatten. In de &quot;primaire&quot; opslagplaats, d.w.z. de opslagplaats die in de pijpleidingen is geconfigureerd, heeft de `main` -vertakking een `pom.xml` -bestand waarin de projecten in de andere twee opslagplaatsen worden gedeclareerd:
+Stel dat er drie opslagruimten zijn die elk één vertakking met de naam `main` bevatten. In de &quot;primaire&quot; opslagplaats, dat wil zeggen de opslagplaats die in de pijpleidingen is geconfigureerd, heeft de `main` -vertakking een `pom.xml` -bestand waarmee de projecten in de andere twee opslagplaatsen worden gedeclareerd:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +49,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-Dit resulteert in een `.gitmodules` -bestand dat er als volgt uitziet:
+De resultaten in het `.gitmodules` -bestand zien er als volgt uit:
 
 ```text
 [submodule "project-a"]
@@ -62,7 +62,7 @@ Dit resulteert in een `.gitmodules` -bestand dat er als volgt uitziet:
     branch = main
 ```
 
-Meer informatie over git submodules kan in het [ de verwijzingshandboek van de Git ](https://git-scm.com/book/en/v2/Git-Tools-Submodules) worden gevonden.
+Zie het [ referentiehandboek van de Git ](https://git-scm.com/book/en/v2/Git-Tools-Submodules) voor meer informatie over submodules van het Git.
 
 ## Beperkingen {#limitations}
 
@@ -71,15 +71,13 @@ Houd rekening met het volgende wanneer u git-submodules gebruikt:
 * De URL van de it moet exact in de hierboven beschreven syntaxis staan.
 * Sluit om beveiligingsredenen geen referenties in deze URL&#39;s in.
 * Alleen submodules in de hoofdmap van de vertakking worden ondersteund.
-* Git-submoduleverwijzingen worden opgeslagen naar specifieke it-opdrachten.
-   * Als er wijzigingen worden aangebracht in de opslagplaats van de submodule, moet de verwijzing naar de submodule daarom worden bijgewerkt, bijvoorbeeld met behulp van `git submodule update --remote` .
-* Tenzij anders nodig, wordt het ten zeerste aanbevolen &quot;oppervlakkige&quot; submodules te gebruiken.
-   * Voer hiervoor `git config -f .gitmodules submodule.<submodule path>.shallow true` uit voor elke submodule.
+* De verwijzingen van de submodule van de Git worden opgeslagen aan specifieke Git begaat. Dientengevolge, wanneer veranderingen in de submodule bewaarplaats worden aangebracht, begaat referenced moet worden bijgewerkt. Bijvoorbeeld met `git submodule update --remote` .
+* Tenzij anders nodig, adviseert de Adobe dat u &quot;oppervlakkige&quot;submodules door `git config -f .gitmodules submodule.<submodule path>.shallow true` voor elke submodule in werking te stellen gebruikt.
 
 
-## Ondersteuning voor Git-submodule voor privéopslagplaatsen {#private-repositories}
+## Ondersteuning voor Git-submodule voor privéopslagruimten {#private-repositories}
 
-Steun voor git submodules wanneer het gebruiken van [ privé bewaarplaatsen ](private-repositories.md) is grotendeels het zelfde als wanneer het gebruiken van de bewaarplaatsen van de Adobe.
+De steun voor submodules van het Git wanneer het gebruiken van [ privé bewaarplaatsen ](private-repositories.md) is grotendeels het zelfde als wanneer het gebruiken van de bewaarplaatsen van de Adobe.
 
 Nadat u het `pom.xml` -bestand hebt ingesteld en de `git submodule` -opdrachten hebt uitgevoerd, moet u echter een `.gitmodules` -bestand aan de hoofdmap van de aggregatoropslagplaats toevoegen, zodat Cloud Manager de installatie van de submodule kan detecteren.
 
@@ -87,11 +85,10 @@ Nadat u het `pom.xml` -bestand hebt ingesteld en de `git submodule` -opdrachten 
 
 ![ Agregator ](assets/aggregator.png)
 
-### Beperkingen en Recommendations {#limitations-recommendations-private-repos}
+### Beperkingen en aanbevelingen {#limitations-recommendations-private-repos}
 
 Houd rekening met de volgende beperkingen wanneer u git-submodules gebruikt met persoonlijke opslagruimten.
 
-* De URL&#39;s van de it voor de submodules kunnen de HTTPS- of SSH-indeling hebben, maar ze moeten een koppeling naar een github.com-opslagplaats maken
-   * Het toevoegen van een ondermodule van de opslagplaats van de Adobe aan een aggregatorbewaarplaats GitHub of vice versa zal niet werken.
+* De URL&#39;s van de it voor de submodules kunnen de HTTPS- of SSH-indeling hebben, maar ze moeten een koppeling naar een Github.com-opslagplaats maken. Het toevoegen van een submodule van de opslagplaats van de Adobe aan een aggregatorbewaarplaats GitHub of vice versa werkt niet.
 * De ondermodules GitHub moeten voor de AdobeApp toegankelijk zijn GitHub.
 * [ de beperkingen om git submodules met Adobe-geleide bewaarplaatsen ](#limitations-recommendations) te gebruiken zijn ook van toepassing.

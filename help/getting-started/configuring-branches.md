@@ -1,22 +1,22 @@
 ---
 title: Branches configureren
-description: Leer hoe te opstelling uw eerste tak in git en hoe het door de pijpleiding CI/CD wordt gebruikt om uw toepassingscode op te stellen.
+description: Leer hoe te opstelling uw eerste tak in Git en hoe het door de pijpleiding CI/CD wordt gebruikt om uw toepassingscode op te stellen.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
 
-# Branches configureren {#configuring-branches}
+# Vertakkingen configureren {#configuring-branches}
 
-Leer hoe te opstelling uw eerste tak in git en hoe het door de pijpleiding CI/CD wordt gebruikt om uw toepassingscode op te stellen.
+Leer hoe te opstelling uw eerste tak in Git en hoe het door de pijpleiding CI/CD wordt gebruikt om uw toepassingscode op te stellen.
 
-## De eerste vertakking instellen in Git {#setting-up-your-first-branch-in-git}
+## De eerste vertakking in Git instellen {#setting-up-your-first-branch-in-git}
 
-Één enkele, aanvankelijk lege, git bewaarplaats [ wordt provisioned ](/help/requirements/environment-provisioning.md) voor elk programma op boord gebracht in Cloud Manager. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Dit is handig het standaardgedrag van it-clients wanneer u nieuwe projecten instelt.
+Één enkele, aanvankelijk lege, git bewaarplaats [ wordt provisioned ](/help/requirements/environment-provisioning.md) voor elk programma op boord gebracht in Cloud Manager. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Deze benadering is handig het standaardgedrag van Git-clients bij het opzetten van nieuwe projecten.
 
 Wanneer u bijvoorbeeld een nieuw project instelt, voert u een set opdrachten uit die vergelijkbaar zijn met de volgende:
 
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Het is geen vereiste om de bevel-lijn cliënt te gebruiken. Er zijn een verscheidenheid van grafische git cliënten beschikbaar of als standalone toepassingen of als deel van een geïntegreerde ontwikkelomgeving (winde) zoals Eclipse of IntelliJ. Zolang de clienttoepassing het gebruik van HTTPS ondersteunt, moet deze compatibel zijn met [!UICONTROL Cloud Manager] .
+>Het is geen vereiste om de bevel-lijn cliënt te gebruiken. Er zijn een verscheidenheid van grafische cliënten van Git beschikbaar of als standalone toepassingen of als deel van een geïntegreerde ontwikkelomgeving (winde) zoals Eclipse of IntelliJ. Zolang de clienttoepassing het gebruik van HTTPS ondersteunt, moet deze compatibel zijn met [!UICONTROL Cloud Manager] .
 
 ## De eerste vertakking duwen {#pushing-your-first-branch}
 
-Nadat u ten minste één revisie hebt toegewezen, kunt u de [!UICONTROL Cloud Manager] -opslagplaats als een externe opslagplaats toevoegen en vervolgens uw verplichtingen erop toepassen.
+Wanneer u minstens één revisie hebt toegewezen, kunt u de [!UICONTROL Cloud Manager] opslagplaats als ver toevoegen, en dan uw toezeggingen aan het duwen.
 
 ```shell
 $ git remote add adobe <url>
@@ -70,12 +70,12 @@ To <url>
 
 >[!NOTE]
 >
->De specifieke URL, samen met uw referenties, wordt tijdens [!UICONTROL Cloud Manager] on-boarding door de Success Engineering van de Klant aan uw computer verstrekt.
+>De specifieke URL, samen met uw gegevens, wordt tijdens het instappen door uw Adobe-CSE (Customer Success Engineer) verstrekt.[!UICONTROL Cloud Manager]
 
 ## Aanvullende vertakkingen {#additional-branches}
 
-Een enkele `main` -vertakking kan voldoende zijn voor zeer eenvoudige projecten, maar in de meeste gevallen is een complexere vertakkingsstrategie vereist. Veel klanten volgen een proces waarbij de ontwikkelingsactiviteiten van dag tot dag worden uitgevoerd op een vertakking die `develop` wordt genoemd en de ontwikkeltak in de `main` tak wordt samengevoegd wanneer het tijd voor een plaatsing is.
+Een enkele `main` -vertakking kan voldoende zijn voor zeer eenvoudige projecten, maar in de meeste gevallen is een complexere vertakkingsstrategie vereist. Veel klanten volgen een proces waarbij de ontwikkelingsactiviteiten van dag tot dag worden uitgevoerd op een vertakking met de naam `develop` . De ontwikkeltak wordt dan samengevoegd in de `main` tak wanneer het tijd voor een plaatsing is.
 
 >[!TIP]
 >
->Om gemeenschappelijke git bevelen te bekijken, zie het [ Punt van de Controle van de Git ](https://github.github.com/training-kit/downloads/github-git-cheat-sheet).
+>Om gemeenschappelijke bevelen van het Git te bekijken, zie het [ Vondst van de Git ](https://training.github.com/downloads/github-git-cheat-sheet).
