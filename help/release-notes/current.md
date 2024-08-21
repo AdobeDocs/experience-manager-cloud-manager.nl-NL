@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager 2024.8.0
 description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.8.0.
 feature: Release Information
-source-git-commit: dd764bb17127ba0a1e88e85592329cc9ddff42e3
+source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ De releasedatum voor [!UICONTROL Cloud Manager] 2024.8.0 is 14 augustus 2024. De
 
 ## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
-Maak deel uit van het programma voor vroegtijdige goedkeuring van de Adobe en heb de kans om een aantal van de volgende kenmerken te testen.
+Maak deel uit van het Cloud Manager-programma voor vroegtijdige adoptie en heb de kans om een aantal van de volgende kenmerken te testen.
 
 ### Pijpleidingen die uitsluitend bestemd zijn voor de productie {#staging-production-only-pipelines}
 
