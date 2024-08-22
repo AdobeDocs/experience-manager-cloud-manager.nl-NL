@@ -2,18 +2,18 @@
 title: Opslagplaatsen voor Adoben toevoegen in Cloud Manager
 description: Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
 
 ---
 
-# Opslagplaatsen voor Adoben toevoegen in Cloud Manager {#adobe-repositories}
+# Adobe-opslagruimten toevoegen in Cloud Manager {#adobe-repositories}
 
 Leer hoe u opslagruimten met beheerde Adoben maakt in Cloud Manager.
 
-## Een door Adoben beheerde opslagplaats toevoegen {#add-adobe-repository}
+## Een opslagplaats met Adobe-beheer toevoegen {#add-adobe-repository}
 
 Het **venster van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide bewaarplaatsen voor uw programma toe te voegen.
 

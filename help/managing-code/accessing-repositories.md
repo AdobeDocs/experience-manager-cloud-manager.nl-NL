@@ -1,8 +1,8 @@
 ---
 title: Toegang tot opslagplaats
-description: Leer hoe u toegang krijgt tot en beheer krijgt van uw door de Adobe beheerde it-opslagruimten met behulp van het zelfbedienings-git-accountbeheer van Cloud Manager.
+description: Leer hoe u toegang krijgt tot en beheer krijgt van uw door de Adobe beheerde Git-opslagruimten met behulp van het zelf-service Git-accountbeheer van Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Toegang tot opslagplaats {#accessing-repos}
 
-Leer hoe u toegang krijgt tot en beheer kunt maken van uw door Adobe beheerde it-opslagruimten met behulp van het zelfbedieningsbeheer van git-accounts in Cloud Manager.
+Leer hoe u toegang krijgt tot en beheer kunt maken van uw door Adobe beheerde Git-opslagruimten met behulp van het zelf-service Git-accountbeheer in Cloud Manager.
 
 ## Toegang tot gegevens in de opslagplaats via de overzichtspagina {#overview-page}
 
@@ -26,7 +26,7 @@ Leer hoe u toegang krijgt tot en beheer kunt maken van uw door Adobe beheerde it
    * De Git-gebruikersnaam.
    * Het wachtwoord voor Actief.
    * De URL naar de Cloud Manager Git-opslagplaats.
-   * Vooraf samengestelde git-opdrachten waarmee u snel een externe server aan uw Git-repo kunt toevoegen en de code kunt duwen.
+   * De vooraf gebouwde bevelen van de Git om een ver aan uw reactie van de Git en duwcode toe te voegen snel.
 
    ![ het venster van Info van de Bewaarplaats ](assets/access-repo-info.png)
 

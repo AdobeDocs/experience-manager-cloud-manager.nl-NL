@@ -2,9 +2,9 @@
 title: Meldingen
 description: Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer hoe Cloud Manager u op de hoogte brengt van belangrijke gebeurtenissen.
 
 ## Meldingen in Cloud Manager {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] verzendt u berichten wanneer een productiepijpleiding (met succes of met succes), bij het begin van een productieleiding begint en voltooit, en wanneer de **Go-Live Goedkeuring** en **Geplande** stappen worden bereikt. Deze meldingen worden verzonden via het [!UICONTROL Experience Cloud] -meldingssysteem.
+[!UICONTROL Cloud Manager] stuurt u meldingen wanneer een productiepijplijn begint en (met succes of zonder succes) wordt voltooid, aan het begin van een productieimplementatie. En, wanneer **gaan-Levende Goedkeuring** en **Geplande** stappen worden bereikt. Deze meldingen worden verzonden via het [!UICONTROL Experience Cloud] -meldingssysteem.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Klik op het tandwielpictogram boven aan de zijbalk met meldingen.
 
 ![ pictogram van de montages van het Bericht ](/help/assets/notifications-configuration.png)
 
-Dit opent het **venster van de voorkeur van het Experience Cloud**, waar u uw berichtabonnementen kunt bepalen en hoe u uw berichten ontvangt.
+Het **voorkeurenvenster van het Experience Cloud** wordt geopend waar u uw berichtabonnementen kunt bepalen en hoe u uw berichten ontvangt.
 
 ### Abonnementen {#subscriptions}
 
@@ -64,11 +64,11 @@ Standaard ontvangt u alle meldingen voor alle producten. Klik **aanpassen** naas
 
 ### Prioriteit {#priority}
 
-Het prioritaire alarm zal met a **HOGE** markering worden gemerkt en kan worden gevormd om uitsluitend als alarm worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
+Het prioritaire alarm wordt duidelijk met a **HOGE** markering. U kunt hen vormen om uitsluitend als alarm worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
 
 ![ prioriteit van het Bericht ](/help/assets/notifications-priority.png)
 
-Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die als prioriteit worden aangemerkt. Klik op de X naast de categorienamen om deze te verwijderen.
+Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die als prioriteit worden aangemerkt. Klik op `X` naast de categorienamen om deze te verwijderen.
 
 ### Waarschuwingen {#alerts}
 
@@ -94,4 +94,4 @@ Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
 * Dagelijks
 * Wekelijks
 
-Wanneer **Onmiddellijke berichten** wordt gekozen, worden de e-mails verzonden onmiddellijk voor elk bericht. Voor **Dagelijkse samenvatting** en **Weekse samenvatting** kunt u kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.
+Wanneer **Onmiddellijke berichten** worden gekozen, worden de e-mails verzonden onmiddellijk voor elk bericht. Voor **Dagelijkse samenvatting** en **Weekse samenvatting** kunt u kiezen wanneer uw dagelijkse samenvatting wordt verzonden en op welke dag en wanneer uw wekelijkse samenvatting wordt verzonden.

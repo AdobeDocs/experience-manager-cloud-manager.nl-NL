@@ -2,7 +2,7 @@
 title: Codeimplementatie
 description: Leer hoe u uw code implementeert en wat er gebeurt in Cloud Manager wanneer u dat doet.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: a7dc30ed31e87ab486f0b279b70c850a33a903eb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 0%
@@ -38,7 +38,7 @@ U kunt de stappen van diverse plaatsingsprocessen herzien door logboeken te beki
 
 Een aantal acties komt tijdens elke stap van de plaatsing voor, die in deze sectie wordt beschreven. Zie {de Details van het Proces van de Plaatsing 0} ](#deployment-process) voor technische details van hoe de code zelf achter-de-scènes wordt opgesteld.[
 
-### Implementatiestap werkgebied {#stage-deployment}
+### Implementatiestap van werkgebied {#stage-deployment}
 
 De **plaatsing van het Stadium** stap omvat de volgende acties:
 
@@ -90,7 +90,7 @@ De volgende stappen worden uit uitgevoerd als er op feedback van gebruikers word
 | Implementatie van planningsproductie | 14 dagen |
 | Implementatie van beheerde productie | 14 dagen |
 
-## Implementatieproces — details {#deployment-process}
+## Details implementatieproces {#deployment-process}
 
 Cloud Manager uploadt alle doelbestanden/*.zip die tijdens het productieproces worden geproduceerd naar een opslaglocatie. Deze artefacten worden teruggewonnen van deze plaats tijdens opstellen fasen van de pijpleiding.
 
@@ -133,7 +133,7 @@ Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de pla
    >
    >U kunt veranderingen van het taakverdelingsmechanisme in ontwikkeling en het opvoeren Inzet overslaan. Dat wil zeggen, voor de ontwikkelomgeving loskoppelen en stappen koppelen in zowel niet-productiepijpleidingen als voor de halteomgeving van de productiepijplijn.
 
-### Implementatie naar productiefase {#deployment-production-phase}
+### Implementatie in de productiefase {#deployment-production-phase}
 
 Het proces voor het opstellen aan productietopologieën verschilt lichtjes om effect aan AEM plaatsbezoekers te minimaliseren.
 
@@ -149,7 +149,7 @@ Productieimplementaties volgen doorgaans dezelfde stappen als hierboven, maar op
 
 Dit proces gaat verder tot de plaatsing alle uitgevers en verzenders in de topologie heeft bereikt.
 
-## Uitvoermodus noodleiding {#emergency-pipeline}
+## Uitvoermodus voor noodpijpleidingen {#emergency-pipeline}
 
 In kritieke situaties, zouden de klanten van Adobe Managed Services codeveranderingen in hun stadium en productiemilieu&#39;s kunnen moeten onmiddellijk opstellen. Hierdoor kunnen ze de volledige Cloud Manager-testcyclus omzeilen.
 
@@ -159,7 +159,7 @@ Om deze situaties het hoofd te bieden, kan de Cloud Manager-productiepijplijn in
 >
 >De functie voor de uitvoering van de noodpijpleiding wordt per programma geactiveerd. De activering wordt uitgevoerd door Succestechnici van de Klant.
 
-### Uitvoermodus voor noodpijpleiding gebruiken {#using-emergency-pipeline}
+### Uitvoermodus voor noodpijpleidingen gebruiken {#using-emergency-pipeline}
 
 Wanneer u de uitvoering van een productiepijplijn start, kunt u kiezen tussen de normale modus of de noodmodus in een dialoogvenster. Deze optie is beschikbaar als de functie voor het uitvoeren van de noodpijpleiding voor het programma wordt geactiveerd. Deze optie is beschikbaar als de functie is ingeschakeld.
 
@@ -175,7 +175,7 @@ Het uitvoeren van een pijplijn in noodmodus kan ook via de Cloud Manager API of 
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## Het opnieuw uitvoeren van een Plaatsing van de Productie {#reexecute-deployment}
+## Een productieimplementatie opnieuw uitvoeren {#reexecute-deployment}
 
 In zeldzame gevallen kunnen de stappen van de productielocatie om voorbijgaande redenen ontbreken. In deze gevallen kunt u de stap voor productieimplementatie opnieuw uitvoeren zolang deze is voltooid, ongeacht of deze is gelukt, geannuleerd of mislukt. De heruitvoering wordt gesteund door de zelfde pijpleiding te gebruiken die uit de volgende drie stappen bestaat:
 
@@ -250,6 +250,6 @@ De syntaxis van de waarde `href` van de HAL-koppeling is slechts een voorbeeld e
 
 Als u een `PUT` -aanvraag naar dit eindpunt verzendt, levert dit een `201` -reactie op als dit lukt. De responsinstantie is de representatie van de nieuwe uitvoering. Deze functionaliteit is vergelijkbaar met het starten van een normale uitvoering via de API.
 
-#### Een nieuwe uitvoering identificeren {#identifying}
+#### Identificeer een opnieuw uitgevoerde uitvoering {#identifying}
 
 Het systeem identificeert opnieuw uitgevoerde uitvoeringen door de waarde `RE_EXECUTE` op het trekkergebied.

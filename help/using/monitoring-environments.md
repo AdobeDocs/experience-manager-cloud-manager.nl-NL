@@ -2,9 +2,9 @@
 title: Omgevingen bewaken
 description: Leer hoe u uw omgevingen in Cloud Manager kunt bewaken.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Als u de details van bepaalde metriek wilt weergeven, klikt u op een van de cate
 
 De navigatie op de linkerzijde toont de beschikbare metriek binnen de momenteel geselecteerde categorie waarvoor er gegevens voor de momenteel geselecteerde milieu en instanties zijn.
 
-Een individuele grafiek zal de status en een grafiek van de gegevens in tijd samen met de drempels tonen. Wanneer meerdere instanties worden weergegeven, bevinden de gegevens van elke instantie zich in een aparte reeks.
+Een individuele grafiek toont de status en een grafiek van de gegevens in tijd samen met de drempels. Wanneer meerdere instanties worden weergegeven, bevinden de gegevens van elke instantie zich in een aparte reeks.
 
 ![ Grafiek van Metriek ](/help/assets/Monitoring_Graphs1.png)
 

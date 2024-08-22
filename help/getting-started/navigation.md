@@ -2,7 +2,7 @@
 title: Navigeren door de gebruikersinterface van Cloud Manager
 description: Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma&#39;s en omgevingen te beheren.
 
-De interface voor cloud-beheer bestaat voornamelijk uit twee grafische interfaces:
+De gebruikersinterface van Cloud Manager bestaat voornamelijk uit twee grafische interfaces:
 
 * [ de Mijn console van Programma&#39;s ](#my-programs-console) is waar u al uw programma&#39;s kunt bekijken en beheren.
 * [ het venster van het Overzicht van het Programma ](#program-overview) is waar u het detail van kunt zien en een individueel programma beheren.

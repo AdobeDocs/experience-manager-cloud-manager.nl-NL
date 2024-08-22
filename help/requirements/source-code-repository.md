@@ -1,8 +1,8 @@
 ---
 title: Source Code Repository
-description: Meer informatie over de git-opslagplaats die is ingericht voor elk programma dat u in Cloud Manager hebt.
+description: Meer informatie over de Git-opslagplaats die is ingericht voor elk programma dat u in Cloud Manager hebt.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Source-codeopslagplaats {#source-code-repository}
 
-Meer informatie over de git-opslagplaats die is ingericht voor elk programma dat u in Cloud Manager hebt.
+Meer informatie over de Git-opslagplaats die is ingericht voor elk programma dat u in Cloud Manager hebt.
 
 ## Cloud Manager-opslagplaats {#cloud-manager-repository}
 
@@ -22,7 +22,7 @@ Als beste praktijken, zou u altijd de bewaarplaats van de Git van Cloud Manager 
 
 Voor meer informatie over hoe te opstellings takken in Git, zie [ Vormend de Tanden van de Versie ](/help/getting-started/configuring-branches.md).
 
-Voor meer informatie over hoe te om de Cloud Manager git bewaarplaats met de pijpleiding te gebruiken CI/CD, zie [ de Pijpleidingen van de Productie vormen ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen ](/help/using/non-production-pipelines.md) om meer te leren.
+Voor meer informatie over hoe te om de bewaarplaats van het Git van Cloud Manager met de pijpleiding te gebruiken CI/CD, zie [ de Pijpleidingen van de Productie vormen ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen ](/help/using/non-production-pipelines.md) om meer te leren.
 
 ## Opslagplaats op locatie {#on-premise-repository}
 

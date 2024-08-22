@@ -2,15 +2,15 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '2759'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 
-# Testen van de codekwaliteit {#code-quality-testing}
+# Codekwaliteitstests {#code-quality-testing}
 
 Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 
@@ -20,7 +20,7 @@ Tijdens pijpleidingsuitvoering, vangt de software een aantal metriek. Deze metri
 
 Deze resultaten worden gerapporteerd met behulp van een drieledig ratingsysteem.
 
-## Waarderingen met drie lagen {#three-tiered-ratings}
+## Driegelaagde ratings {#three-tiered-ratings}
 
 Er liggen drie poorten in de pijplijn:
 
@@ -38,7 +38,7 @@ Voor elk van deze poorten is er een structuur met drie lagen voor problemen die 
 >
 >In een slechts pijpleiding van de codekwaliteit, kunnen de belangrijke mislukkingen in de gate van de codekwaliteit niet worden met voeten getreden aangezien de het testen stap van de codekwaliteit de definitieve stap in de pijpleiding is.
 
-## Testen van de codekwaliteit {#code-quality-testing-step}
+## Codekwaliteitstests {#code-quality-testing-step}
 
 Deze testende stap evalueert de kwaliteit van uw toepassingscode, die het belangrijkste doel van een code kwaliteit-slechts pijpleiding is. Het wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie- en productiepijpleidingen. Meer leren, ga [ Vormend niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
 
@@ -73,7 +73,7 @@ De resultaten van het testen van de codekwaliteit worden geleverd als classifica
 >
 >Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden uitgevoerd, zie [ de Regels van de Kwaliteit van de Code van de Douane ](custom-code-quality-rules.md).
 
-### Werken met valse positieven {#dealing-with-false-positives}
+### Omgaan met valse positieven {#dealing-with-false-positives}
 
 Het kwaliteitscontroleproces is niet perfect en identificeert soms problemen die eigenlijk niet problematisch zijn. Dit scenario wordt een vals positief scenario genoemd.
 
@@ -107,7 +107,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 >
 >Het wordt aanbevolen de annotatie `@SuppressWarnings` zo specifiek mogelijk te maken. Dat wil zeggen dat u alleen de specifieke instructie of het specifieke blok aanwijst die de uitgave veroorzaakt. Het is echter mogelijk om notities te maken op klasseniveau. Dit maakt een bredere onderdrukking van waarschuwingen mogelijk.
 
-## Beveiligingstests {#security-testing}
+## Beveiligingstest {#security-testing}
 
 [!UICONTROL Cloud Manager] stelt de bestaande Controle van de Gezondheid van de Veiligheid van de Veiligheid op het opvoeren milieu na plaatsing in werking en meldt de status door UI. De resultaten worden samengevoegd van alle AEM in de omgeving.
 
@@ -139,7 +139,7 @@ In de volgende tabel staan de gezondheidscontroles.
 | De webserver is geconfigureerd om te voorkomen dat wordt geklikt. | Webserverconfiguratie | Belangrijk |
 | Replicatie maakt geen gebruik van de gebruiker `admin` . | Replicatie- en transportgebruikers | Info |
 
-## Prestatietesten {#performance-testing}
+## Prestatietests {#performance-testing}
 
 ### AEM Sites {#aem-sites}
 
@@ -170,7 +170,7 @@ Drie paginasets selecteren de pagina&#39;s. Cloud Manager gebruikt de toegangslo
 
 * **Nieuwe Pagina&#39;s** - test nieuwe pagina&#39;s die slechts aan het opvoeren en nog niet aan productie kunnen zijn opgesteld, maar moeten worden getest.
 
-##### Verspreiding van verkeer over geselecteerde paginasets {#distribution-of-traffic}
+##### Verdeling van verkeer over geselecteerde paginasets {#distribution-of-traffic}
 
 U kunt overal van één tot alle drie reeksen op het **Testen** lusje van uw [ pijpleidingsconfiguratie ](/help/using/production-pipelines.md) kiezen. De verdeling van verkeer is gebaseerd op het aantal geselecteerde reeksen. Als alle drie zijn geselecteerd, wordt 33% van de totale paginaweergaven in elke set geplaatst. Als er twee zijn geselecteerd, gaat 50% naar elke set. Als één wordt geselecteerd, gaat 100% van het verkeer naar die reeks.
 
@@ -204,7 +204,7 @@ In de volgende tabel wordt een overzicht gegeven van de prestatietestmatrix met 
 | Netwerkbandbreedtegebruik | Belangrijk | >= 90% |
 | Aanvragen per minuut | Info | >= 6000 |
 
-Zie [ Voor authentiek verklaarde het Testen van Prestaties ](#authenticated-performance-testing) voor meer details bij het gebruiken van basisauthentificatie voor prestaties het testen voor Plaatsen en Assets.
+Zie [ Voor authentiek verklaarde prestaties het testen ](#authenticated-performance-testing) voor meer details bij het gebruiken van basisauthentificatie voor prestaties het testen voor Plaatsen en Assets.
 
 >[!NOTE]
 >
@@ -224,19 +224,19 @@ Voer de volgende handelingen uit om deze variabelen in te stellen met de Cloud M
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Zie [ de Variabelen van de Pijpleiding van de Gebruiker van het Patch ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentatie leren hoe te om API te gebruiken.
+Zie [ de variabelen van de gebruikerspijpleiding van het Patch ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentatie leren hoe te om API te gebruiken.
 
 ### AEM Assets {#aem-assets}
 
 Cloud Manager voert prestatietests uit voor AEM Assets-programma&#39;s door elementen herhaaldelijk gedurende 30 minuten te uploaden.
 
-#### Voorschrift aan boord {#onboarding-requirement}
+#### Verplichting aan boord {#onboarding-requirement}
 
 Voor het testen van Assets-prestaties maakt uw Customer Success Engineer een `cloudmanager` gebruiker en wachtwoord tijdens het instappen van de auteur in de testomgeving. Voor de teststappen voor prestaties is een gebruiker vereist met de naam `cloudmanager` en het bijbehorende wachtwoord dat door de CSE is ingesteld.
 
 Deze methode zou in de auteursinstantie met zijn toestemmingen onveranderd moeten blijven. Het wijzigen of verwijderen ervan kan ertoe leiden dat Assets-prestatietests mislukken.
 
-#### Afbeeldingen en Assets voor tests {#assets-for-testing}
+#### Afbeeldingen en Assets voor testdoeleinden {#assets-for-testing}
 
 Klanten kunnen hun eigen middelen uploaden om te testen. Dit proces kan van de **Opstelling van de Pijpleiding** worden gedaan of **** scherm uitgeven. Algemene afbeeldingsindelingen, zoals JPEG, PNG, GIF en BMP, worden ondersteund in combinatie met Photoshop-, Illustrator- en Postscript-bestanden.
 
@@ -256,9 +256,9 @@ Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het w
 >
 >Zie [ productiepijpleidingen ](/help/using/production-pipelines.md) vormen om meer te leren. Zie ](/help/getting-started/program-setup.md) de Opstelling van het 0} Programma leren hoe te opstelling uw programma en uw KPIs bepalen.[
 
-### Resultaten van het testen van prestaties Grafieken {#performance-testing-results-graphs}
+### Prestatietestresultaten {#performance-testing-results-graphs}
 
-Een aantal metriek is beschikbaar in de **dialoog van de Test van Prestaties**
+Een aantal metriek is beschikbaar in de **de dialoogdoos van de Test van Prestaties**.
 
 ![ Lijst van metriek ](/help/assets/understand_test-results-screen1.png)
 
@@ -284,7 +284,7 @@ Deze functionaliteit is beschikbaar voor de volgende metriek.
 * **95th Percentile Tijd van de Reactie** - een grafiek van 95th percentile reactietijd per minuut tijdens de testperiode
    * Een CSV-bestandenlijst met pagina&#39;s waarvan de responstijd van 95% de gedefinieerde PKI heeft overschreden
 
-## Optimalisatie van inhoudspakketscannen {#content-package-scanning-optimization}
+## Optimalisatie van scannen van inhoudspakketten {#content-package-scanning-optimization}
 
 In het kader van het kwaliteitsanalyseproces voert Cloud Manager een analyse uit van de inhoudspakketten die door de Maven-build worden geproduceerd. Cloud Manager biedt optimalisaties om dit proces te versnellen, dat effectief is wanneer bepaalde verpakkingsbeperkingen worden nageleefd.
 

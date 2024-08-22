@@ -2,7 +2,7 @@
 title: Eerste aanmelding
 description: Volg deze pagina als u algemene configuraties hebt ingesteld en u Cloud Manager voor het eerst kunt gebruiken.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Eerste aanmelding {#first-time-login}
 
-Als u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld, kunt u deze gebruiken.
+Nadat u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld, kunt u deze gebruiken.
 
 >[!NOTE]
 >
@@ -36,12 +36,12 @@ U kunt aan de Opstelling van het document [ Programma ](/help/getting-started/pr
 
 ## Cloud Manager-activiteit {#activity}
 
-Cloud Manager geeft een geconsolideerd overzicht van de activiteiten van een programma, waarin alle uitgevoerde CI/CD-pijplijnen, zowel de productie als de niet-productie, worden vermeld, zodat de activiteiten in het verleden en in het heden zichtbaar zijn.
+Cloud Manager geeft een geconsolideerde weergave van de activiteiten van een programma. In de lijst staan alle uitvoeringen van de CI/CD-pijpleiding, zowel de productie als de niet-productie. Deze functionaliteit geeft u inzicht in vroegere en huidige activiteit.
 
 >[!TIP]
 >
->Voor details op hoe te om Cloud Manager UI te gebruiken, zie het document [ Navigerend Cloud Manager UI ](/help/getting-started/navigation.md).
+>Voor details op hoe te om Cloud Manager UI te gebruiken, zie [ Navigerend Cloud Manager UI ](/help/getting-started/navigation.md).
 
 >[!NOTE]
 >
->Een gebruiker met toegang tot een AEM heeft standaard ook de rol Gebruiker van Cloud Manager. Deze rol op zich is ontoereikend om de gebruiker toegang te geven tot de mening van de programmadetails. Een dergelijke gebruiker met alleen de Cloud Manager-gebruikersrol kan via de opties in het programmamenu naar de URL van de auteur van de AEM omgeving navigeren (als omgevingen bestaan). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
+>Een gebruiker met toegang tot een AEM heeft standaard ook de Cloud Manager User-rol. Deze rol is onvoldoende om de gebruiker toegang te geven tot de weergave van de programmadetails. Een dergelijke gebruiker met alleen de Cloud Manager-gebruikersrol kan via de opties in het programmamenu naar de URL van de auteur van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.

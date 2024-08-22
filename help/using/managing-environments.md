@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 
-## Overzicht van pagina {#overview-page}
+## Overzicht pagina {#overview-page}
 
 De **pagina van het Overzicht** van Cloud Manager omvat de **3} tegel van Milieu&#39;s {die van alle beheerde AEM een lijst maakt.**
 
@@ -22,7 +22,7 @@ In elk van de vermelde omgevingen wordt de bijbehorende status weergegeven.
 
 ![ pagina van het Overzicht ](/help/assets/Manage-Environ-Overview.png)
 
-## Omgevingstegel {#environments-tile}
+## Omgevingselement {#environments-tile}
 
 De **tegels van Milieu&#39;s** toont de productie en het opvoeren milieu&#39;s die in uw programma samen met de status worden voorzien.
 
@@ -54,14 +54,14 @@ Het **milieu&#39;s** scherm toont elke productie en het opvoeren milieu&#39;s in
 
 >[!NOTE]
 >
->De details van het milieu zoals naam kunnen niet worden veranderd zodra zij provisioned zijn.
+>De details van het milieu zoals een naam kunnen niet worden veranderd zodra zij provisioned zijn.
 
 >[!NOTE]
 >
->Als u uw omgevingslogboeken nodig hebt, kunnen deze worden aangevraagd via uw Customer Success Engineer.
+>Als u uw milieulogboeken vereist, kunnen zij door uw Ingenieur van het Succes van de Klant worden gevraagd.
 
 ## Videozelfstudie {#video-tutorial}
 
 Deze video biedt een overzicht voor Cloud Manager-omgevingen die zijn samengesteld uit AEM publicatie-, publicatie- en Dispatcher-instanties.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/) (3 minuten, 1 seconde)

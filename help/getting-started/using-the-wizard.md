@@ -2,7 +2,7 @@
 title: De wizard Nieuw project gebruiken
 description: Volg deze pagina om te leren hoe u de wizard kunt gebruiken om een AEM Application Project te maken
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # De wizard Nieuw project gebruiken {#using-the-wizard}
 
-Toen u als nieuwe klant aan Cloud Manager werd toegewezen, werd u voorzien van een lege git-opslagplaats. Om u te helpen begonnen worden, biedt de Manager van de Wolk een tovenaar aan om een minimaal AEM project tot stand te brengen dat op [ wordt gebaseerd AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) als uitgangspunt.
+Toen u als nieuwe klant bij Cloud Manager werd geregistreerd, kreeg u een lege Git-opslagplaats. Om u te helpen begonnen worden, biedt de Manager van de Wolk een tovenaar aan om een minimaal AEM project tot stand te brengen dat op [ wordt gebaseerd AEM Archetype van het Project ](https://github.com/adobe/aem-project-archetype) als uitgangspunt.
 
 Voer de volgende stappen uit om een AEM project te maken met de wizard.
 
@@ -33,7 +33,7 @@ Voer de volgende stappen uit om een AEM project te maken met de wizard.
 
    ![ Gedetailleerde archetype parameters ](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. Klik **creeer** om het starterproject tot stand te brengen door het archetype te gebruiken en aan de genoemde git tak te begaan.
+1. Klik **creeer** om het starterproject tot stand te brengen door archetype te gebruiken en aan de genoemde tak van het Git te begaan.
 
 U hebt nu een basisproject. Het is tijd om uw pijpleidingen op te zetten.
 

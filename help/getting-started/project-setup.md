@@ -2,7 +2,7 @@
 title: Uw project instellen
 description: Leer hoe u uw project instelt zodat u het kunt beheren en implementeren met Cloud Manager.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Leer hoe u uw project instelt zodat u het kunt beheren en implementeren met Clou
 Bestaande AEM Projecten moeten zich aan sommige basisregels houden zodat zij met succes met Cloud Manager kunnen worden gebouwd en worden opgesteld.
 
 * Projecten moeten worden gebouwd met Apache Maven.
-* Er moet een `pom.xml` -bestand aanwezig zijn in de hoofdmap van de it-opslagplaats.
+* Er moet een `pom.xml` -bestand aanwezig zijn in de hoofdmap van de Git-opslagplaats.
    * Dit bestand `pom.xml` kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben) als nodig.
    * U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw `pom.xml` dossiers.
    * De toegang tot [ wachtwoord-beschermde artefactrepositories ](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
@@ -116,7 +116,7 @@ Artefacten van een met een wachtwoord beveiligde Maven-opslagplaats moeten voorz
 >
 >Artefacten van met een wachtwoord beveiligde Maven-repositories mogen alleen in zeldzame gevallen worden gebruikt en voor code die niet aan AEM is gekoppeld.
 
-Om een wachtwoord-beschermde Gemaakt bewaarplaats van Cloud Manager te gebruiken, specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [ Variabele van de Pijpleiding ](/help/getting-started/build-environment.md#pipeline-variables) en verwijs dan dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de git bewaarplaats. Dit dossier volgt het ](https://maven.apache.org/settings.html) schema van het Dossier van Montages 0} Maven.[
+Om een wachtwoord-beschermde Gemaakt bewaarplaats van Cloud Manager te gebruiken, specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [ Variabele van de Pijpleiding ](/help/getting-started/build-environment.md#pipeline-variables) en verwijs dan dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de bewaarplaats van het Git. Dit dossier volgt het ](https://maven.apache.org/settings.html) schema van het Dossier van Montages 0} Maven.[
 
 Wanneer het Cloud Manager-constructieproces start, wordt het element `<servers>` in dit bestand samengevoegd met het standaardbestand van `settings.xml` dat door Cloud Manager wordt geleverd. Aangepaste servers mogen geen server-id&#39;s gebruiken die beginnen met `adobe` en `cloud-manager` . Dergelijke id&#39;s worden als gereserveerd beschouwd. Cloud Manager spiegelt alleen de server-id&#39;s die overeenkomen met een van de opgegeven voorvoegsels of de standaard-id `central` .
 
@@ -275,7 +275,7 @@ Met de lus `content-package-maven-plugin` is deze vergelijkbaar:
 
 ## Hergebruik van artefact maken {#build-artifact-reuse}
 
-In veel gevallen, wordt de zelfde code opgesteld aan veelvoudige AEM milieu&#39;s. Waar mogelijk, vermijdt Cloud Manager het herbouwen van de codebasis wanneer het ontdekt dat het zelfde gat begaan wordt gebruikt in veelvoudige full-stack pijpleidinguitvoeringen.
+In veel gevallen, wordt de zelfde code opgesteld aan veelvoudige AEM milieu&#39;s. Waar mogelijk, vermijdt Cloud Manager het herbouwen van de codebasis wanneer het ontdekt dat het zelfde Git begaan wordt gebruikt in veelvoudige full-stack pijpleidinguitvoeringen.
 
 Wanneer een uitvoering is begonnen, begaat de huidige HEAD voor de takpijpleiding wordt gehaald. De commit hash is zichtbaar in UI en door middel van API. Wanneer de bouwstijlstap met succes voltooit, worden de resulterende artefacten opgeslagen gebaseerd op die knoeiboel begaan en kunnen in verdere pijpleidingsuitvoeringen opnieuw worden gebruikt.
 

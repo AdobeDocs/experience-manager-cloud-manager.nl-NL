@@ -2,7 +2,7 @@
 title: Veelgestelde vragen over Cloud Manager
 description: Leer meer over antwoorden op de vaakst gestelde vragen over Cloud Manager voor AMS-klanten.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 0%
@@ -62,11 +62,11 @@ Zie [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md
 
 ## Kan ik SNAPSHOT voor de versie van het Maven project gebruiken? {#snapshot}
 
-Ja. Voor ontwikkelaarsimplementaties moeten de `pom.xml` bestanden van de grijsvertakking `-SNAPSHOT` aan het einde van de `<version>` -waarde bevatten.
+Ja. Voor ontwikkelaarsimplementaties moeten de Git-vertakkingsbestanden `pom.xml` aan het einde van de `-SNAPSHOT` -waarde bevatten.`<version>`
 
 Dit laat verdere plaatsingen nog worden geïnstalleerd wanneer de versie niet veranderde. In ontwikkelaarsplaatsingen, wordt geen automatische versie toegevoegd of geproduceerd voor de beproefde bouwstijl.
 
-U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in de it. Indien nodig kunt u later naar dit label verwijzen.
+U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in Git. Indien nodig kunt u later naar dit label verwijzen.
 
 De verdere details over versie behandeling worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
@@ -76,11 +76,11 @@ In het opvoeren en productieplaatsingen, wordt een automatische versie geproduce
 
 Stel voor aangepaste versies in werkgebied- en productieimplementaties een geschikte versie met drie delen in, zoals `1.0.0` . Verhoog de versie telkens wanneer u aan productie opstelt.
 
-Cloud Manager voegt automatisch zijn versie aan stadium toe en de productie bouwt en leidt tot een git tak. Er is geen speciale configuratie vereist. Als u een bepaalde versie niet zoals eerder beschreven plaatst, slaagt de plaatsing nog en een versie wordt automatisch geplaatst.
+Cloud Manager voegt automatisch zijn versie aan stadium toe en de productie bouwt en leidt tot een tak van de Git. Er is geen speciale configuratie vereist. Als u een bepaalde versie niet zoals eerder beschreven plaatst, slaagt de plaatsing nog en een versie wordt automatisch geplaatst.
 
 ## Mijn gefabriceerde build mislukt voor Cloud Manager-implementaties, maar het wordt lokaal zonder fouten gemaakt. Wat is er mis? {#maven-build-fail}
 
-Zie dit [ git middel ](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) voor meer details.
+Zie dit [ middel van de Git ](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) voor meer details.
 
 ## Ik kan geen variabele plaatsen gebruikend een bevel van de lucht. Wat kan ik doen? {#set-variable}
 

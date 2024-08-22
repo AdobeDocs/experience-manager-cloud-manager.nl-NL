@@ -2,7 +2,7 @@
 title: Ondersteuning voor Git-submodule
 description: Leer hoe u Git-submodules kunt gebruiken om de inhoud van meerdere vertakkingen in Git-opslagruimten tijdens het samenstellen samen te voegen.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Zie het [ referentiehandboek van de Git ](https://git-scm.com/book/en/v2/Git-Too
 
 ## Beperkingen {#limitations}
 
-Houd rekening met het volgende wanneer u git-submodules gebruikt:
+Houd rekening met het volgende wanneer u Git-submodules gebruikt:
 
 * De URL van de it moet exact in de hierboven beschreven syntaxis staan.
 * Sluit om beveiligingsredenen geen referenties in deze URL&#39;s in.
@@ -87,8 +87,8 @@ Nadat u het `pom.xml` -bestand hebt ingesteld en de `git submodule` -opdrachten 
 
 ### Beperkingen en aanbevelingen {#limitations-recommendations-private-repos}
 
-Houd rekening met de volgende beperkingen wanneer u git-submodules gebruikt met persoonlijke opslagruimten.
+Houd rekening met de volgende beperkingen wanneer u Git-submodules gebruikt met persoonlijke opslagruimten.
 
-* De URL&#39;s van de it voor de submodules kunnen de HTTPS- of SSH-indeling hebben, maar ze moeten een koppeling naar een Github.com-opslagplaats maken. Het toevoegen van een submodule van de opslagplaats van de Adobe aan een aggregatorbewaarplaats GitHub of vice versa werkt niet.
+* De URL&#39;s van de Git voor de submodules kunnen de HTTPS- of SSH-indeling hebben, maar ze moeten een koppeling naar een Github.com-opslagplaats maken. Het toevoegen van een submodule van de opslagplaats van de Adobe aan een aggregatorbewaarplaats GitHub of vice versa werkt niet.
 * De ondermodules GitHub moeten voor de AdobeApp toegankelijk zijn GitHub.
-* [ de beperkingen om git submodules met Adobe-geleide bewaarplaatsen ](#limitations-recommendations) te gebruiken zijn ook van toepassing.
+* [ de beperkingen van het gebruiken van submodules van het Git met Adobe-beheerde bewaarplaatsen ](#limitations-recommendations) zijn ook van toepassing.

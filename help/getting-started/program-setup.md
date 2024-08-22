@@ -2,9 +2,9 @@
 title: Programma instellen
 description: Na het instappen, moet de bedrijfseigenaar één of andere aanvankelijke opstelling van het programma doen.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ U kunt programma&#39;s bewerken nadat u ze hebt ingesteld. Voer de volgende stap
 
 1. Klik **Update** om uw veranderingen te bewaren.
 
-Merk op dat de veranderingen onmiddellijk aan Cloud Manager worden bewaard, maar zal niet in uw milieu&#39;s tot de volgende pijpleidingslooppas worden weerspiegeld.
+De wijzigingen worden direct in Cloud Manager opgeslagen, maar worden pas in uw omgeving doorgevoerd wanneer de volgende pijpleiding wordt uitgevoerd.
 
 Als u nog geen pijpleiding hebt gecreeerd, zie [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
 

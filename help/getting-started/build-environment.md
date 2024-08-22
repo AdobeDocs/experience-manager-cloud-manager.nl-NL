@@ -2,7 +2,7 @@
 title: De Build-omgeving
 description: Leer over de gespecialiseerde bouwstijlomgeving die de gebruikers van Cloud Manager om uw code te bouwen en te testen.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -117,7 +117,7 @@ De momenteel beschikbare combinaties leverancier/versie zijn:
 
 Het is ook mogelijk om Oracle 8 of Oracle 11 als JDK voor de volledige Geweven uitvoering te selecteren. In tegenstelling tot de opties van toolketins, verandert dit JDK die voor alle stop-ins wordt gebruikt tenzij de toolketenconfiguratie ook wordt geplaatst, in welk geval de toolketenconfiguratie nog wordt toegepast voor toolketens-bewuste Geweven stop-ins. Dientengevolge, controlerend en uitvoerend de versie van Java gebruikend de [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
 
-Voor dit proces maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking van de it-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud `11` of `8` hebben. Eventuele andere waarden worden genegeerd. Wanneer `11` wordt opgegeven, wordt Oracle 11 gebruikt en wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk-11.0.22` . Wanneer `8` wordt opgegeven, wordt Oracle 8 gebruikt en wordt de `JAVA_HOME` omgevingsvariabele ingesteld op `/usr/lib/jvm/jdk1.8.0_401` .
+Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud `11` of `8` hebben. Eventuele andere waarden worden genegeerd. Wanneer `11` wordt opgegeven, wordt Oracle 11 gebruikt en wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk-11.0.22` . Wanneer `8` wordt opgegeven, wordt Oracle 8 gebruikt en wordt de `JAVA_HOME` omgevingsvariabele ingesteld op `/usr/lib/jvm/jdk1.8.0_401` .
 
 ## Omgevingsvariabelen {#environment-variables}
 

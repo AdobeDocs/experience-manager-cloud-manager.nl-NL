@@ -1,24 +1,24 @@
 ---
 title: Git Integration met Adobe Cloud Manager
-description: Deze videoreeks doorloopt de opstelling en de integratie van een klant-beheerde (op-gebouw) gogegevensopslagplaats met Adobe Cloud Manager.
+description: Deze videoreeks doorloopt de opstelling en de integratie van een klant-beheerde (on-premise) opslagplaats van de Git met Adobe Cloud Manager.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
 
 
-# Git Integration met Adobe Cloud Manager
+# Git integration met Adobe Cloud Manager
 
-Adobe Cloud Manager wordt geleverd met één git-opslagplaats die wordt gebruikt om code te implementeren met behulp van Cloud Manager CI/CD-leidingen. U kunt de Cloud Manager git-opslagplaats buiten de box gebruiken of u hebt ook de mogelijkheid om een op-premise of door de klant beheerde git-opslagplaats te integreren met Cloud Manager.
+Adobe Cloud Manager wordt geleverd met één Git-opslagplaats die wordt gebruikt om code te implementeren met behulp van Cloud Manager CI/CD-leidingen. U kunt de Cloud Manager Git-opslagplaats buiten de box gebruiken of u hebt ook de mogelijkheid om een op-premise of door de klant beheerde Git-opslagplaats te integreren met Cloud Manager.
 
-## Overzicht van GIT-integratie
+## Overzicht van Git-integratie
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
+>[!VIDEO](https://video.tv.adobe.com/v/28710/) (3 minuten, 11 seconden)
 
-In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekking tot de integratie van een door de klant beheerde it-opslagplaats met Cloud Manager.
+In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekking tot de integratie van een door de klant beheerde Git-opslagplaats met Cloud Manager.
 
 * [Beginsynchronisatie](#initial-sync)
 * [Basisvertakkingsstrategie](#branching-strategy)
@@ -26,45 +26,45 @@ In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekkin
 * [Implementatie van productie](#production-deployment)
 * [Releasetags synchroniseren](#sync-tags)
 
-Deze videoreeks veronderstelt een basiskennis van git en broncontrolebeheer. Zie de [ extra middelen hieronder ](#additional-resources) voor meer details op git.
+Deze videoreeks veronderstelt een basiskennis van Git en broncontrolebeheer. Zie de [ extra middelen hieronder ](#additional-resources) voor meer details op Git.
 
-De stappen en naamgevingsconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde it-opslagplaats en Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zullen worden aangepast voor individuele ontwikkelingsteams.
+De stappen en naamgevingsconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde Git-opslagplaats en Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zullen worden aangepast voor individuele ontwikkelingsteams.
 
 Voor een volledig overzicht van Cloud Manager, zie [ Inleiding aan Cloud Manager ](/help/introduction.md).
 
-## Beginsynchronisatie {#initial-sync}
+## Eerste synchronisatie {#initial-sync}
 
-De eerste stappen voor het synchroniseren van een door de klant beheerde it-opslagplaats met Cloud Manager git-opslagplaats.
+Eerste stappen voor het synchroniseren van een door de klant beheerde Git-opslagplaats met de Cloud Manager Git-opslagplaats.
 
->[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12) (8 minuten)
 
 ## Basisvertakkingsstrategie {#branching-strategy}
 
 Opstelling een basis vertakkende strategie om uit Cloud Manager [ productie ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen ](/help/using/non-production-pipelines.md) voordeel te halen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12) (3 minuten, 48 seconden)
 
-## Ontwikkeling van de functiescherm {#feature-development}
+## Ontwikkeling van filialen {#feature-development}
 
-Gebruik een eigenschapvertakking om codeveranderingen in een klant-beheerde git bewaarplaats te isoleren en met Cloud Manager te synchroniseren git bewaarplaats om een niet productiepijplijn voor codekwaliteit en bevestiging te gebruiken het testen.
+Gebruik een eigenschapvertakking om codeveranderingen in een klant-geleide opslagplaats van de Git te isoleren en met de opslagplaats van de Git van Cloud Manager te synchroniseren om een niet productiepijplijn voor codekwaliteit en validatietests te gebruiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12) (9 minuten)
 
 ## Implementatie van productie {#production-deployment}
 
-Voorbereiden van code voor een productierelease in een door de klant beheerde it-opslagplaats en synchroniseren met de Cloud Manager git-opslagplaats om deze te implementeren in testomgevingen en productieomgevingen.
+Voorbereiden van code voor een productievrijgave in een door de klant beheerde Git-opslagplaats en synchroniseren met de Cloud Manager Git-opslagplaats om te implementeren in testomgevingen en productieomgevingen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12) (6 minuten, 6 seconden)
 
-## Releasetags synchroniseren {#sync-tags}
+## Release-tags synchroniseren {#sync-tags}
 
-Synchroniseer releasetags van een Cloud Manager-it-opslagplaats naar een door de klant beheerde it-opslagplaats, zodat u kunt zien welke code is geïmplementeerd in testomgevingen en productieomgevingen.
+U kunt releasetags van een Cloud Manager Git-opslagplaats synchroniseren naar een door de klant beheerde Git-opslagplaats. Deze mogelijkheid biedt inzicht in welke code is geïmplementeerd in zowel testomgevingen als productieomgevingen.
 
->[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12) (2 minuten, 57 seconden)
 
 ## Aanvullende bronnen {#additional-resources}
 
 * [Cloud Manager Introduction](/help/introduction.md)
-* [ Middelen GitHub ](https://try.github.io)
+* [ Middelen GitHub ](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 * [ Atlassian Tutorials van het Git ](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [ Git Cheat Sheet ](https://education.github.com/git-cheat-sheet-education.pdf)

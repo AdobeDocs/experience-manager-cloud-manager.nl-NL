@@ -2,7 +2,7 @@
 title: Branches configureren
 description: Leer hoe te opstelling uw eerste tak in Git en hoe het door de pijpleiding CI/CD wordt gebruikt om uw toepassingscode op te stellen.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Leer hoe te opstelling uw eerste tak in Git en hoe het door de pijpleiding CI/CD
 
 ## De eerste vertakking in Git instellen {#setting-up-your-first-branch-in-git}
 
-Één enkele, aanvankelijk lege, git bewaarplaats [ wordt provisioned ](/help/requirements/environment-provisioning.md) voor elk programma op boord gebracht in Cloud Manager. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Deze benadering is handig het standaardgedrag van Git-clients bij het opzetten van nieuwe projecten.
+Één enkel, aanvankelijk leeg, de bewaarplaats van het Git [ wordt provisioned ](/help/requirements/environment-provisioning.md) voor elk programma in Cloud Manager in kaart gebracht. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Deze benadering is handig het standaardgedrag van Git-clients bij het opzetten van nieuwe projecten.
 
 Wanneer u bijvoorbeeld een nieuw project instelt, voert u een set opdrachten uit die vergelijkbaar zijn met de volgende:
 
@@ -50,7 +50,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->Het is geen vereiste om de bevel-lijn cliënt te gebruiken. Er zijn een verscheidenheid van grafische cliënten van Git beschikbaar of als standalone toepassingen of als deel van een geïntegreerde ontwikkelomgeving (winde) zoals Eclipse of IntelliJ. Zolang de clienttoepassing het gebruik van HTTPS ondersteunt, moet deze compatibel zijn met [!UICONTROL Cloud Manager] .
+>Het is geen vereiste om de bevel-lijn cliënt te gebruiken. Er zijn een verscheidenheid van grafische cliënten van Git beschikbaar of als standalone toepassingen of als deel van een geïntegreerde ontwikkelomgeving (winde) zoals Eclipse of IntelliJ. Zolang de clienttoepassing Git met HTTPS ondersteunt, moet deze compatibel zijn met [!UICONTROL Cloud Manager] .
 
 ## De eerste vertakking duwen {#pushing-your-first-branch}
 

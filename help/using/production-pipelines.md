@@ -2,9 +2,9 @@
 title: Productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
          * **Opties van de Plaatsing** - u kunt de parameters bepalen die de productieleiding controleren.
 
             * **het Gebruik gaat Levende Goedkeuring** - een gebruiker met **BedrijfsEigenaar**, **de Manager van het Project**, of **de rol van de Manager van de Plaatsing** als [!UICONTROL Cloud Manager] UI moet manueel een plaatsing goedkeuren.
-            * **Gepland** - Stopt de pijpleiding vóór productieleiding om het toe te laten om worden gepland. Als deze optie wordt geselecteerd, zal de pijpleiding na plaatsing aan het opvoeren milieu stoppen en de gebruiker voor de te nemen actie vragen.
+            * **Gepland** - Stopt de pijpleiding vóór productieleiding om het toe te laten om worden gepland. Als deze optie wordt geselecteerd, stopt de pijpleiding na plaatsing aan het opvoeren milieu en vraagt de gebruiker op de te nemen actie.
                * **`Now`** - Implementeert onmiddellijk en voltooit de pijplijn.
                * **Datum** - laat het gebruikersprogramma een tijd wanneer de plaatsing zou moeten worden voltooid.
                * **Uitvoering van het Einde** - borst plaatsing aan productie.

@@ -2,7 +2,7 @@
 title: Niet-productiepijpleidingen configureren
 description: Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Er zijn twee soorten niet-productiepijpleidingen:
 
 >[!NOTE]
 >
->Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende git bewaarplaats minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+>Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
 ## Een niet-productiepijpleiding toevoegen {#add-non-production-pipeline}
 
@@ -51,7 +51,7 @@ Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud M
 
 1. Verstrek de bewaarplaats waar de pijpleiding de code zou moeten terugwinnen.
 
-   * **Bewaarplaats** - bepaalt waarvan git repo dat de pijpleiding de code zou moeten terugwinnen.
+   * **Bewaarplaats** - bepaalt waarvan de repo van het Git dat de pijpleiding de code zou moeten terugwinnen.
    * **Tak van het Git** - bepaalt van welke tak in Git dat de geselecteerde pijpleiding de code zou moeten terugwinnen.
 
 1. Definieer uw implementatieopties.
