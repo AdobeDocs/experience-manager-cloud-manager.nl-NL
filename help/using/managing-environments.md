@@ -2,9 +2,9 @@
 title: Omgevingen beheren
 description: Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Het **milieu&#39;s** scherm toont elke productie en het opvoeren milieu&#39;s in
 
 >[!NOTE]
 >
->Als u uw milieulogboeken vereist, kunnen zij door uw Ingenieur van het Succes van de Klant worden gevraagd.
+>Vraag uw milieu logboeken door uw Ingenieur van het Succes van de Klant.
 
 ## Videozelfstudie {#video-tutorial}
 
