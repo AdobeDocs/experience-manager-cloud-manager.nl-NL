@@ -2,7 +2,7 @@
 title: Alleen werkgebied- en alleen-prod-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Staging- en productieomgevingen zijn nauw aan elkaar gekoppeld. Door gebrek, wor
 De fase-slechts en prod-slechts pijpleidingen bieden oplossingen aan deze gebruiksgevallen door specifieke plaatsingsopties te verstrekken.
 
 * **stadium-slechts de Pijpleidingen van de Plaatsing:** stelt slechts aan een het opvoeren milieu met de uitvoering op die eindigt zodra de plaatsing en de tests worden gedaan. Een alleen-fase pijpleiding gedraagt zich identiek aan de standaard gekoppelde volledige pijpleiding van de stapelprod maar zonder de stappen van de productieleiding (goedkeuring, programma, opstelling).
-* **productie-Enige Pijpleidingen van de Plaatsing:** stelt slechts aan productie op door een werkgebieduitvoering te selecteren die succesvol was. Dan het opstellen van zijn artefacten aan productie. Prod-enige pijpleidingen hergebruiken de artefacten van de werkgebiedplaatsing, die de bouwingsfase mijden.
+* **productie-Enige Pijpleidingen van de Plaatsing:** stelt slechts aan productie op door de meest recente succesvolle werkgebieduitvoering te selecteren. Dan het opstellen van zijn artefacten aan productie. Prod-enige pijpleidingen hergebruiken de artefacten van de werkgebiedplaatsing, die de bouwingsfase mijden.
 
 De fase-slechts en prod-enige pijpleidingen worden niet uitgevoerd terwijl een volledig-stapelproductiepijplijn lopend is, en vice versa. Als zowel het stadium-slechts als de full-stack productiepijplijn de **gevormde trekker van de Veranderingen van het Git** hebben en aan de zelfde tak en de bewaarplaats richten, slechts wordt de stadium-enige pijpleiding automatisch begonnen. Pijpleidingen met alleen proxy&#39;s starten niet **`On Git Changes`** omdat deze niet rechtstreeks aan een opslagplaats zijn gekoppeld.
 
