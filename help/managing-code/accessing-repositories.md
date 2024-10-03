@@ -2,7 +2,7 @@
 title: Toegang tot opslagplaats
 description: Leer hoe u toegang krijgt tot en beheer krijgt van uw door de Adobe beheerde Git-opslagruimten met behulp van het zelf-service Git-accountbeheer van Cloud Manager.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: b66eb29ab86b2a6acf3a1d92c217154d07b9cc1e
+source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Het **de dialoogvakje van Info van de Bewaarplaats** laat u de volgende toegangs
 * De URL naar de Cloud Manager Git-opslagplaats.
 * De vooraf gebouwde bevelen van de Git om een ver aan uw reactie van de Git en duwcode toe te voegen snel.
 
-![ het venster van Info van de Bewaarplaats ](assets/repository-info.png)
+  ![ het venster van Info van de Bewaarplaats ](assets/repository-info.png)
 
 De informatie van de toegang over [ privé bewaarplaatsen ](/help/managing-code/private-repositories.md) is niet beschikbaar in Cloud Manager.
 

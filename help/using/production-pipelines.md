@@ -1,16 +1,16 @@
 ---
-title: Productiepijpleidingen configureren
+title: Een productiepijpleiding toevoegen
 description: Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
 
 
-# Productiepijpleidingen configureren {#configuring-production-pipelines}
+# Een productiepijplijn toevoegen {#configuring-production-pipelines}
 
 Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
 

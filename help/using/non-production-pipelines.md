@@ -1,15 +1,15 @@
 ---
-title: Niet-productiepijpleidingen configureren
+title: Een niet-productiepijplijn toevoegen
 description: Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
 
-# Niet-productiepijpleidingen configureren {#configuring-non-production-pipelines}
+# Een niet-productiepijpleiding toevoegen {#configuring-non-production-pipelines}
 
 Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
 
@@ -31,7 +31,7 @@ Er zijn twee soorten niet-productiepijpleidingen:
 >
 >Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
-## Een niet-productiepijpleiding toevoegen {#add-non-production-pipeline}
+## Een nieuwe niet-productiepijplijn toevoegen {#add-non-production-pipeline}
 
 Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud Manager UI, bent u bereid om een niet productiepijplijn toe te voegen door deze stappen te volgen.
 

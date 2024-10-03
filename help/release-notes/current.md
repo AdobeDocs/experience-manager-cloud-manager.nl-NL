@@ -1,48 +1,72 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2024.9.0
-description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.9.0.
+title: Opmerkingen bij de release voor Cloud Manager 2024.10.0
+description: Meer informatie over de opmerkingen bij de release voor Cloud Manager 2024.10.0.
 feature: Release Information
-source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
+source-git-commit: 94d5f3487408f9d8908bb15221c48ef768390527
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager 2024.9.0 {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2024.10.0 {#release-notes}
 
-Deze pagina documenteert de opmerkingen bij de release voor [!UICONTROL Cloud Manager] 2024.9.0.
+Deze pagina documenteert de opmerkingen bij de release voor [!UICONTROL Cloud Manager] 2024.10.0.
 
 >[!NOTE]
 >
 >Voor de recentste versienota&#39;s voor Cloud Manager in AEM as a Cloud Service, zie [ Cloud Manager in AEM as a Cloud Service huidige versienota&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current).
 
+
+
 ## Releasedatum {#release-date}
 
-Geen merkbare fouten of functies voor de release van Cloud Manager in september.
+<!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-De volgende release is gepland voor 3 oktober 2024.
+De releasedatum voor [!UICONTROL Cloud Manager] 2024.10.0 is 3 oktober 2024.
+
+De volgende release is gepland voor 14 november 2024.
+
 
 
 ## Nieuwe functies {#what-is-new}
 
-* Voor stadium-slechts en productie-enige pijpleidingen (beschikbaar als deel van het [ vroege adoptieprogramma ](#staging-production-only-pipelines)), kunt u hen op [ noodwijze ](/help/using/stage-prod-only.md#emergency-mode) nu uitvoeren, die stadium het testen overslaat.
+* <!-- BOTH CS & AMS --> De in Cloud Manager gebruikte versie van AEM Archetype wordt nu bijgewerkt naar versie 26. Zie [ https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
+<!-- (CMGR-59817) -->
+
+
 
 ## Programma voor vroegtijdige goedkeuring {#early-adoption}
 
-Maak deel uit van het Cloud Manager-programma voor vroegtijdige adoptie en heb de kans om een aantal van de volgende kenmerken te testen.
+Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
 
+### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
+
+<!-- BOTH CS & AMS -->
+
+**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de opslagplaats van de Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+
+Zie [ externe bewaarplaatsen in Cloud Manager ](/help/managing-code/external-repositories.md) toevoegen.
+
+![ voeg de dialoogdoos van de Bewaarplaats ](/help/release-notes/assets/repositories-add-release-notes.png) toe
+
+>[!NOTE]
+>
+>Momenteel, zijn de uit-van-de-doos controles van de trekkingsverzoekcodekwaliteit exclusief aan GitHub-ontvangen bewaarplaatsen, maar een update om deze functionaliteit tot andere verkopers van het Git uit te breiden is in de werken.
+
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:Grp-CloudManager_BYOG@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
 
 ### Pijpleidingen die uitsluitend bestemd zijn voor de productie {#staging-production-only-pipelines}
 
-De Adobe is opgewekt om de inleiding van steun voor [ te aankondigen staging-slechts en productie-enige pijpleidingen ](/help/using/stage-prod-only.md). Met deze nieuwe functie kunt u distributiepijpleidingen voor volledige productie opsplitsen in kleinere, meer gespecialiseerde implementaties.
+De Adobe kondigt de introductie van steun voor [ staging-slechts en productie-enige pijpleidingen ](/help/using/stage-prod-only.md) aan. Met deze nieuwe functie kunt u distributiepijpleidingen voor volledige productie opsplitsen in kleinere, meer gespecialiseerde implementaties.
 
-Als u deze functie wilt testen en feedback wilt geven, stuurt u een e-mail `Grp-cloudmanager_splitpipelines@adobe.com` met het e-mailadres dat aan uw Adobe ID is gekoppeld.
+Als u deze eigenschap zou willen testen en terugkoppelen, e-mail [ Grp-cloudmanager_splitpipelines@adobe.com ](mailto:Grp-cloudmanager_splitpipelines@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID verstrekken.
 
 <!-- ## Bug fixes
 
 * text
+-->
 
-## Known Issues {#known-issues}
+## Bekende problemen {#known-issues}
 
-{{content-copy-known-issues}} LEAVE IN??? -->
+{{content-copy-known-issues}}

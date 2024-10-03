@@ -1,8 +1,8 @@
 ---
 title: Pijpleidingen beheren
-description: Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
+description: Leer hoe u uw bestaande pijpleidingen beheert, inclusief het uitvoeren, bewerken en verwijderen ervan.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Pijpleidingen beheren {#managing-pipelines}
 
-Leer hoe u uw bestaande pijpleidingen kunt beheren, inclusief bewerken, uitvoeren en verwijderen.
+Leer hoe u uw bestaande pijpleidingen beheert, inclusief het uitvoeren, bewerken en verwijderen ervan.
 
 ## Pipetkaart {#pipeline-card}
 
@@ -34,13 +34,13 @@ Onder aan de lijst met pijpleidingen staan de volgende algemene opties.
 * **Info van de Reactie van de Toegang** - toont de informatie noodzakelijk om tot de bewaarplaats van de Git van Cloud Manager toegang te hebben.
 * **leer Meer** - navigeert aan CI/CD de middelen van de pijpleidingsdocumentatie.
 
-## Venster Pijpleidingen {#pipelines}
+## Pagina met pijplijnen {#pipelines}
 
-Het **venster van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Deze lijst is nuttig omdat het uitvoerigere informatie dan voorstelt wat in de [ kaart van Pijpleidingen ](#pipeline-card) beschikbaar is.
+De **pagina van Pijpleidingen** toont een volledige lijst van alle pijpleidingen voor het geselecteerde programma. Deze lijst is nuttig omdat het uitvoerigere informatie dan voorstelt wat in de [ kaart van Pijpleidingen ](#pipeline-card) beschikbaar is.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, klik het** Pijpleidingen **lusje om aan het** te schakelen Pijpleidingen **venster.**
+1. Van de **pagina van het Overzicht van het Programma**, klik het **Pijpleidingen** lusje om aan de **Pijpleidingen** pagina over te schakelen.
 
 1. Hier kunt u een lijst van alle pijpleidingen voor het programma zien en pijpleidingsuitvoering beginnen en tegenhouden zoals u in de **Kaart van Pijpleidingen**.
 
@@ -50,13 +50,13 @@ Als u op het pictogram `i` klikt, worden de details van de laatste of huidige ui
 
 Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
 
-## Activiteitenvenster {#activity}
+## Activiteitenpagina {#activity}
 
-Het **venster van Activiteiten** toont een volledige lijst van alle pijplijnuitvoeringen voor het geselecteerde programma.
+De **pagina van Activiteiten** toont een volledige lijst van alle pijplijnuitvoeringen voor het geselecteerde programma.
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het Programma**, klik het **lusje van de Activiteit** om aan het **venster van de Activiteit** over te schakelen.
+1. Van de **pagina van het Overzicht van het Programma**, klik het **lusje van de Activiteit** om aan de **pagina van de Activiteit** over te schakelen.
 
 1. Hier ziet u een lijst van alle pijpleiding uitvoeringen voor het programma met inbegrip van huidige en historische executies.
 
