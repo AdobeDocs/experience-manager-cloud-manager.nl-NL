@@ -2,7 +2,7 @@
 title: Op rollen gebaseerde machtigingen
 description: Meer informatie over vooraf geconfigureerde, op rollen gebaseerde machtigingen van Cloud Manager voor het beheer van de toegang tot uw cloudbronnen.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 2%
@@ -45,24 +45,26 @@ Elk van de rollen heeft specifieke, bijbehorende preconfigured toestemmingen. De
 | --- | --- | --- | --- | --- | --- | --- |
 | De toepassing lezen | KPI&#39;s van programma lezen | x | x | x | x | x |
 | Toepassing schrijven | Programma instellen of bewerken | x | | | | |
-| Programma toevoegen | Nieuw programma toevoegen | x | | | | |
+| Programma toevoegen | Nieuw programma toevoegen | x |  |  |  |  |
 | Leesomgeving | Zie omgevingsdetails | x | x | x | x | x |
 | Uitvoering maken | Pijpleiding starten | x | x | x | | |
 | Uitvoering lezen | Zie uitvoeringsstatus | x | x | x | x | x |
 | Uitvoering hervatten | Mogelijkheid om uitvoering te hervatten wanneer gepauzeerd | x | x | x | | x |
 | Implementatie Goedkeuren Distributie naar productie | Live goedkeuring bieden | x | x | x | | |
 | Implementatieschema Distribueren naar productie | Implementatie van productieplanning | x | x | x | | x |
-| Implementatie Distribueren naar productie | Toepassing implementeren op productie wanneer gepauzeerd voor CSE-toezicht | | | | | x |
-| Uitvoering annuleren | Huidige uitvoering annuleren | | | x | | |
-| Uitvoering heeft kwaliteitsfouten genegeerd | Belangrijke kwaliteitsgate-fouten goedkeuren | x | x | x | | |
-| Pipet maken | Gasleiding instellen/bewerken | | x | | | |
+| Implementatie Distribueren naar productie | Toepassing implementeren op productie wanneer gepauzeerd voor CSE-toezicht |  |  |  |  | x |
+| Uitvoering annuleren | Huidige uitvoering annuleren |  |  | x |  |  |
+| Uitvoering heeft kwaliteitsfouten genegeerd | Belangrijke kwaliteitsgate-fouten goedkeuren | x | x | x |  |  |
+| Pipet maken | Gasleiding instellen/bewerken |  | x |  |  |  |
 | Pipet gelezen | Zie details over pijpleidingen | x | x | x | x | x |
-| Pipet schrijven | Gasleiding instellen/bewerken | | x | | | |
-| Goedkeuring pijpleiding wijzigen | Hiermee kunt u de optie Bedrijfseigenaar bewerken | | x | | | |
-| Door pijplijn beheerde implementatie wijzigen | Staat het uitgeven van de CSE toezichtoptie toe | | x | | | |
-| Pipet verwijderen | Staat pijpleiding toe schrapping | | x | | | |
+| Pipet schrijven | Gasleiding instellen/bewerken |  | x |  |  |  |
+| Goedkeuring pijpleiding wijzigen | Hiermee kunt u de optie Bedrijfseigenaar bewerken |  | x |  |  |  |
+| Door pijplijn beheerde implementatie wijzigen | Staat het uitgeven van de CSE toezichtoptie toe |  | x |  |  |  |
+| Pipet verwijderen | Staat pijpleiding toe schrapping |  | x |  |  |  |
 | Stap lezen | Zie de resultaten van de metrische gegevens voor de stapkwaliteit | x | x | x | x | x |
-| Token voor persoonlijke toegang genereren | Toegangsgat | | x | | x | |
+| Token voor persoonlijke toegang genereren | Toegangsgat |  | x |  | x |  |
+
+<!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
 Meer over leren hoe te opstelling uw gebruikers, zie [ de Gebruikers en Rollen van de Vestiging ](/help/requirements/users-and-roles.md).
 
