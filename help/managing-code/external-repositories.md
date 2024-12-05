@@ -1,13 +1,13 @@
 ---
 title: Externe opslagplaatsen toevoegen in Cloud Manager (Vroege adopter)
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
-source-git-commit: 054c214be3c8c6e8a8bd4691b70ae2098263ef5b
+exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
+source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
-
 
 # Externe opslagruimten toevoegen in Cloud Manager {#external-repositories}
 
@@ -98,5 +98,9 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
 
 ## Beperkingen
 
-* Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
-* De pijpleidingen die externe bewaarplaatsen gebruiken (exclusief GitHub-ontvangen bewaarplaatsen) en de **optie[!UICONTROL ** van de Trigger van de Plaatsing **op de Veranderingen van het Git**], de trekkers zijn niet automatisch begonnen. Ze moeten handmatig worden gestart.
+Externe opslagplaatsen kunnen niet worden gekoppeld aan configuratiepijpleidingen.
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY
+
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
