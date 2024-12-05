@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release voor Cloud Manager 2024.12.0
 description: Meer informatie over de release van Cloud Manager 2024.12.0 over Adobe Managed Services.
 feature: Release Information
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+source-git-commit: ee79124a012106e53ffaaf9462202712f7078809
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Meer informatie over de release van [!UICONTROL Cloud Manager] 2024.12.0 over Ad
 
 De releasedatum voor [!UICONTROL Cloud Manager] 2024.12.0 is 5 december 2024.
 
-De volgende geplande release is januari 2024.
+De volgende geplande release is 23 januari 2025.
 
 ## Nieuwe functies {#what-is-new}
 
