@@ -1,22 +1,22 @@
 ---
 title: Content Copy for Environment Consistency
-description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
+description: Met Content Copy in Cloud Manager kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
+source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
 
 
-# Inhoud kopiëren voor consistentie in omgeving {#content-copy}
+# Content Copy voor consistentie van omgeving {#content-copy}
 
-Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
+Met Content Copy in Cloud Manager kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 
 ## Info over Inhoud kopiëren {#introduction}
 
-De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met het gereedschap Inhoud kopiëren kunt u inhoud van uw productie-AMS-gehoste AEM 6.x-omgeving kopiëren naar testomgevingen of ontwikkelomgevingen. Deze workflow ondersteunt verschillende testscenario&#39;s.
+De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met Content Copy kunt u inhoud van uw productie-AMS-gehoste AEM 6.x-omgeving kopiëren naar testomgevingen of ontwikkelomgevingen. Deze workflow ondersteunt verschillende testscenario&#39;s.
 
 Een inhoudsset definieert de inhoud die moet worden gekopieerd. Een inhoudenset bevat een lijst met JCR-paden met de inhoud die moet worden gekopieerd. De inhoud wordt verplaatst van een bronomgeving naar een doelomgeving. Alles gebeurt binnen hetzelfde Cloud Manager-programma.
 
@@ -37,7 +37,7 @@ Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 
 ## Machtigingen {#permissions}
 
-Om het hulpmiddel van het inhoudsexemplaar te gebruiken, moet de gebruiker aan de **rol van de Manager van de Plaatsing** in de bron en doelmilieu&#39;s worden toegewezen.
+Om de eigenschap van het Exemplaar van de Inhoud te gebruiken, moet de gebruiker aan de **rol van de Manager van de Plaatsing** in de bron en doelmilieu&#39;s worden toegewezen.
 
 ## Een inhoudsset maken {#create-content-set}
 
@@ -55,7 +55,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wan
 
    ![ Inhoudsreeksen ](/help/assets/content-sets.png)
 
-1. In **voeg de Reeks van de Inhoud** dialoogdoos, op het **3} lusje van Details, in de** Naam **en** de gebieden van de Beschrijving **toe, typ een naam en facultatieve beschrijving voor de geplaatste inhoud, dan klik** verdergaan **.**
+1. In het **`Add Content Set`** dialoogvakje, op het **Details** lusje, in de **Naam** en **6} gebieden van de Beschrijving, typ een naam en facultatieve beschrijving voor de geplaatste inhoud, dan klik** verdergaan **.**
 
    ![ Inhoud plaatste details ](/help/assets/add-content-set-details.png)
 
@@ -167,7 +167,7 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 
 ## Beperkingen {#limitations}
 
-Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen:
+Content Copy heeft de volgende beperkingen:
 
 * Een inhoudkopie kan niet worden uitgevoerd van een lagere omgeving naar een hogere omgeving.
 * Kopiëren van inhoud kan alleen binnen dezelfde laag worden uitgevoerd. Dat wil zeggen, auteur of publicatieversie.
@@ -176,9 +176,9 @@ Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen:
 * Het uitvoeren van gelijktijdige bewerkingen voor het kopiëren van inhoud in dezelfde omgeving is niet mogelijk.
 * Het exemplaar van de inhoud kan niet worden uitgevoerd als er om het even welke actieve verrichting die op of het bestemmings of bronmilieu zoals een pijpleiding CI/CD loopt.
 * Per inhoudenset kunnen maximaal vijftig paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
-* Het gereedschap voor het kopiëren van inhoud mag niet worden gebruikt als een kloon- of spiegelgereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
+* Content Copy mag niet worden gebruikt als een kloon- of mirroring-gereedschap omdat het verplaatste of verwijderde inhoud van de bron niet kan bijhouden.
 * Een inhoudkopie kan niet worden gepauzeerd of geannuleerd nadat deze is gestart.
-* Met het gereedschap Inhoud kopiëren kopieert u elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
+* Met Content Copy worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gekopieerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
 * Het kopiëren van de inhoud gaat aanzienlijk sneller als de versiegeschiedenis niet wordt gekopieerd.
 * [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
 * Als de versiegeschiedenis niet wordt gekopieerd, verloopt het kopiëren van de inhoud aanzienlijk sneller.
