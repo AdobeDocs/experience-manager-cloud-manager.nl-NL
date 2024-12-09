@@ -2,9 +2,9 @@
 title: Content Copy for Environment Consistency
 description: Met Content Copy in Cloud Manager kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
+source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -85,9 +85,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wan
 
    ![ het Uitgeven weglijst ](/help/assets/add-content-set-excluded-paths.png)
 
-1. Klik **creëren**.
-
-U kunt de inhoudenset nu gebruiken om inhoud te kopiëren tussen omgevingen.
+1. Klik **creëren**. U kunt de inhoudenset nu gebruiken om inhoud te kopiëren tussen omgevingen.
 
 ## Een inhoudsset bewerken of verwijderen {#edit-content-set}
 
@@ -132,21 +130,23 @@ Een omgeving kan niet beschikbaar zijn voor selectie als een van de volgende voo
    * Regio&#39;s in een doelomgeving moeten een subset zijn van regio&#39;s in een bronomgeving.
    * Compatibiliteitsproblemen worden gecontroleerd voordat een handeling voor het kopiëren van inhoud wordt uitgevoerd. Wanneer u het **milieu van de Bestemming** selecteert, bevestigt het systeem automatisch de bron en bestemmingsmilieu&#39;s. Als de validatie mislukt, stopt het proces en wordt een foutbericht weergegeven in het dialoogvenster waarin de oorzaak van de fout wordt uitgelegd.
 
+     ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
+
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   1. Om *te behouden* de uitgesloten wegen in het bestemmingsMilieu, controle **`Do not delete exclude paths from destination`**. Met deze instelling blijven de uitgesloten paden die in de inhoudenset zijn opgegeven intact.
-   1. Om *te verwijderen* de uitgesloten wegen in het bestemmingsMilieu, uncheck **`Do not delete exclude paths from destination`**. Met deze instelling worden de uitgesloten paden verwijderd die in de inhoudenset zijn opgegeven.
-   1. Om de versiegeschiedenis van wegen van het bronmilieu aan het bestemmingsmilieu te kopiëren, controleer **Versies van het Exemplaar**.
+   1. Om *te behouden* de uitgesloten wegen in het bestemmingsmilieu, controle **`Do not delete exclude paths from destination`**. Met deze instelling blijven de uitgesloten paden die in de inhoudenset zijn opgegeven intact.
+   1. Om *te verwijderen* de uitgesloten wegen in het bestemmingsmilieu, uncheck **`Do not delete exclude paths from destination`**. Met deze instelling worden de uitgesloten paden verwijderd die in de inhoudenset zijn opgegeven.
+   1. Om de versiegeschiedenis van wegen van het bronmilieu aan het bestemmingsmilieu te kopiëren, controleer **Versies van het Exemplaar**. Het proces van het inhoudsexemplaar is wezenlijk sneller wanneer de versiegeschiedenis *niet* wordt gekopieerd.
 
-      ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
+
 
 1. Klik **Exemplaar**. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 
-## De status van de activiteit voor het kopiëren van inhoud controleren {#copy-activity}
+## De status Inhoud kopiëren controleren {#copy-activity}
 
 U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit van de Inhoud van het Exemplaar controleren**.
 
-**om het statuut van de activiteit van het inhoudsexemplaar te controleren:**
+**om de status van het Exemplaar van de Inhoud te controleren:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -156,7 +156,7 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 
    ![ Activiteit van het Exemplaar van de Inhoud ](/help/assets/copy-content-activity.png)
 
-   Een proces voor kopieerinhoud kan een van de volgende statussen hebben:
+   Een proces voor het kopiëren van inhoud kan een van de volgende statussen hebben:
 
    | Status | Beschrijving |
    | --- | --- |
@@ -165,9 +165,7 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
    | Mislukt | Kopiëren van inhoud is mislukt. |
 
 
-## Beperkingen {#limitations}
-
-Content Copy heeft de volgende beperkingen:
+## Beperkingen van inhoudskopie {#limitations}
 
 * Een inhoudkopie kan niet worden uitgevoerd van een lagere omgeving naar een hogere omgeving.
 * Kopiëren van inhoud kan alleen binnen dezelfde laag worden uitgevoerd. Dat wil zeggen, auteur of publicatieversie.
@@ -175,13 +173,10 @@ Content Copy heeft de volgende beperkingen:
 * Het exemplaar van de inhoud voor de opslag van wolkengegevens kan gebaseerde topologie slechts worden uitgevoerd wanneer de bron en bestemmingsmilieu op de zelfde wolkenleverancier en in het zelfde gebied zijn.
 * Het uitvoeren van gelijktijdige bewerkingen voor het kopiëren van inhoud in dezelfde omgeving is niet mogelijk.
 * Het exemplaar van de inhoud kan niet worden uitgevoerd als er om het even welke actieve verrichting die op of het bestemmings of bronmilieu zoals een pijpleiding CI/CD loopt.
-* Per inhoudenset kunnen maximaal vijftig paden worden opgegeven. Uitgesloten paden zijn niet beperkt.
-* Content Copy mag niet worden gebruikt als een kloon- of mirroring-gereedschap omdat het verplaatste of verwijderde inhoud van de bron niet kan bijhouden.
+* Kopie van inhoud mag niet worden gebruikt als een kloon- of mirroring-gereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Een inhoudkopie kan niet worden gepauzeerd of geannuleerd nadat deze is gestart.
-* Met Content Copy worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gekopieerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
-* Het kopiëren van de inhoud gaat aanzienlijk sneller als de versiegeschiedenis niet wordt gekopieerd.
+* Met Inhoud kopiëren worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gedupliceerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
 * [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
-* Als de versiegeschiedenis niet wordt gekopieerd, verloopt het kopiëren van de inhoud aanzienlijk sneller.
 * De regio&#39;s van de doelomgeving moeten dezelfde zijn als of een deel van de bronomgeving.
 
 ## Bekende problemen {#known-issues}
