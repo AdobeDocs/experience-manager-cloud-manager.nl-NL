@@ -1,20 +1,20 @@
 ---
-title: Het gereedschap Inhoud kopiëren
+title: Content Copy for Environment Consistency
 description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Het gereedschap Inhoud kopiëren {#content-copy}
+# Inhoud kopiëren voor consistentie in omgeving {#content-copy}
 
 Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 
-## Gereedschap Inhoud kopiëren{#introduction}
+## Info over Inhoud kopiëren {#introduction}
 
 De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met het gereedschap Inhoud kopiëren kunt u inhoud van uw productie-AMS-gehoste AEM 6.x-omgeving kopiëren naar testomgevingen of ontwikkelomgevingen. Deze workflow ondersteunt verschillende testscenario&#39;s.
 
