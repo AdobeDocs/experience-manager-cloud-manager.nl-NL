@@ -1,10 +1,10 @@
 ---
 title: Het gereedschap Inhoud kopiëren
-description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van door AMS gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
+description: Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1363'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Het gereedschap Inhoud kopiëren {#content-copy}
 
-Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op verzoek muterende inhoud kopiëren van door AMS gehoste AEM 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
+Met het Cloud Manager-programma voor het kopiëren van inhoud kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 
-## Inleiding {#introduction}
+## Gereedschap Inhoud kopiëren{#introduction}
 
 De huidige, echte gegevens zijn waardevol voor het testen, de bevestiging, en de gebruiker-aanvaarding doeleinden. Met het gereedschap Inhoud kopiëren kunt u inhoud van uw productie-AMS-gehoste AEM 6.x-omgeving kopiëren naar testomgevingen of ontwikkelomgevingen. Deze workflow ondersteunt verschillende testscenario&#39;s.
 
@@ -43,120 +43,131 @@ Om het hulpmiddel van het inhoudsexemplaar te gebruiken, moet de gebruiker aan d
 
 Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wanneer deze is gedefinieerd, kunnen inhoudssets opnieuw worden gebruikt om inhoud te kopiëren. Ga als volgt te werk om een inhoudenset te maken.
 
+**om een geplaatste inhoud tot stand te brengen:**
+
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht**, navigeer aan het **milieu&#39;s** scherm.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-1. Van het **scherm van Milieu&#39;s**, navigeer aan de **Inhoudsreeksen** pagina.
+1. Van het linkerzijmenu, onder **de pagina van de Diensten**, klik ![ pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
 
-1. Dichtbij het top-right van het scherm, klik **voeg Geplaatste Inhoud** toe.
+1. Vlak de hoger-juiste hoek van de pagina, klik **voeg Geplaatste Inhoud** toe.
 
    ![ Inhoudsreeksen ](/help/assets/content-sets.png)
 
-1. Op het **lusje van Details** van de tovenaar, verstrek een naam en een beschrijving voor de geplaatste inhoud en klik **verdergaan**.
+1. In **voeg de Reeks van de Inhoud** dialoogdoos, op het **3} lusje van Details, in de** Naam **en** de gebieden van de Beschrijving **toe, typ een naam en facultatieve beschrijving voor de geplaatste inhoud, dan klik** verdergaan **.**
 
    ![ Inhoud plaatste details ](/help/assets/add-content-set-details.png)
 
-1. Op het **lusje van de Wegen van de Inhoud** van de tovenaar, specificeer de wegen van de veranderlijke inhoud die in de inhoudreeks moet worden omvat.
+1. Op het **lusje van de Wegen van de Inhoud**, op het **Weg** tekstgebied, specificeer een weg aan de inhoud die kan worden veranderd en in de inhoudreeks zou moeten worden omvat.
 
-   1. Ga de weg in **toevoegen omvat Weg** gebied.
-   1. Klik **toevoegen Weg** om de weg aan de inhoudreeks toe te voegen.
-   1. Klik **voeg Weg** opnieuw toe zonodig.
+   Alleen paden die beginnen met `/content` , `/conf` , `/etc` , `/var/workflow/models` of `/var/commerce` , komen in aanmerking voor opname.
+
+1. Klik **![Omslag toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) Weg** om (of omvat) de weg aan de inhoudreeks toe te voegen.
+
+1. (Optioneel) Voeg desgewenst extra paden toe (maximaal 50) door de vorige twee stappen te herhalen. Anders gaat u door met de volgende stap.
 
    ![ voegt wegen aan inhoud toe plaatste ](/help/assets/add-content-set-paths.png)
 
-1. Als u de inhoudenset moet verfijnen of beperken, kunnen subpaden worden uitgesloten.
+1. (Optioneel) Als u de inhoudenset wilt verkleinen, kunt u desgewenst subpaden opgeven in een opgenomen inhoudspad dat moet worden uitgesloten.
 
-   1. In de lijst van inbegrepen wegen, klik **voeg sub-wegen** pictogram naast de weg toe u moet beperken.
-   1. Voer het subpad in dat u wilt uitsluiten van het geselecteerde pad.
-   1. Klik **uitsluiten Weg**.
-   1. Nogmaals, sluit de klik **subpaden** uit om extra wegen toe te voegen om zonodig uit te sluiten.
+   1. Aan het recht van een inbegrepen inhoudspad dat u wilt beperken, klik ![ het schrappingspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
+   1. Typ in het tekstveld een relatief pad naar het hoofdpad dat in het dialoogvenster wordt weergegeven.
+   1. Klik ![ het schrappingspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **uitsluiten Weg**.
+   1. Herhaal indien nodig de stappen i. tot en met iii. hierboven om meer uitsluitingspaden toe te voegen; er is geen beperking. Anders gaat u door met de volgende stap.
 
    ![ Excluding wegen ](/help/assets/add-content-set-paths-excluded.png)
 
-1. U kunt de opgegeven paden desgewenst wijzigen.
+1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   1. Klik op `X` naast de uitgesloten subpaden om deze te verwijderen.
-   1. Klik de ellipsknoop naast de wegen om **uit te geven** en **schrapt** opties.
+   1. Klik ![ Grootte 500 van de kruis ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) rechts van een uitgesloten sub-weg om het te schrappen.
+   1. Klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) aan het recht van een inbegrepen inhoudspad, dan klik **uitgeven** of **Schrapping**.
 
    ![ het Uitgeven weglijst ](/help/assets/add-content-set-excluded-paths.png)
 
-1. Klik **creëren** om de inhoudreeks tot stand te brengen.
+1. Klik **creëren**.
 
-De inhoudenset kan nu worden gebruikt om inhoud tussen omgevingen te kopiëren.
+U kunt de inhoudenset nu gebruiken om inhoud te kopiëren tussen omgevingen.
 
->[!NOTE]
->
->U kunt maximaal 50 paden toevoegen aan een inhoudsset.
->Uitgesloten paden zijn niet beperkt.
+## Een inhoudsset bewerken of verwijderen {#edit-content-set}
 
-## Een inhoudsset bewerken {#edit-content-set}
+Wanneer u een inhoudsset bewerkt, moet u mogelijk de geconfigureerde paden uitbreiden om de uitgesloten subpaden zichtbaar te maken.
 
-Voer vergelijkbare stappen uit als bij het maken van een stap Inhoud. In plaats van het klikken **voeg Geplaatste Inhoud** toe, selecteer een bestaande reeks van de console en selecteer **uitgeven** van het elliptische menu.
-
-![ geef inhoudreeks ](/help/assets/edit-content-set.png) uit
-
-Wanneer u de inhoudenset bewerkt, moet u mogelijk de geconfigureerde paden uitbreiden om de uitgesloten subpaden zichtbaar te maken.
-
-## Inhoud kopiëren {#copy-content}
-
-Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren. Ga als volgt te werk om inhoud te kopiëren.
+**om een geplaatste inhoud uit te geven of te schrappen:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht**, navigeer aan het **milieu&#39;s** scherm.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-1. Van het **scherm van Milieu&#39;s**, navigeer aan de **Inhoudsreeksen** pagina.
+1. Van het linkerzijmenu, onder **Diensten**, klik ![ pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
 
-1. Selecteer een inhoud die van de console wordt geplaatst en selecteer **Inhoud van het Exemplaar** van het ellipsmenu.
+1. In de lijst op de **pagina van de Reeksen van de Inhoud**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) rechts van een inbegrepen inhoudspad, dan klik **uitgeven** of **Schrapping**.
+
+![ geef inhoudreeks ](/help/assets/edit-content-set.png) uit
+
+
+## Inhoud kopiëren {#copy-content}
+
+Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren.
+
+Een omgeving kan niet beschikbaar zijn voor selectie als een van de volgende voorwaarden van toepassing is:
+
+* De gebruiker beschikt niet over de vereiste machtigingen.
+* Er wordt momenteel een bewerking voor het kopiëren van pijpleidingen of inhoud uitgevoerd in de omgeving.
+
+**om inhoud te kopiëren:**
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
+
+1. Van het linkerzijmenu, onder **Diensten**, klik ![ pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
+
+1. In de lijst op de **pagina van de Reeksen van de Inhoud**, rechts van een inbegrepen inhoudsweg die u wilt kopiëren, ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) klikken, dan **Inhoud van het Exemplaar** klikken.
 
    ![ exemplaar van de Inhoud ](/help/assets/copy-content.png)
 
-   >[!NOTE]
-   >
-   >Een omgeving kan niet selecteerbaar zijn als:
-   >
-   >* De gebruiker beschikt niet over de juiste machtigingen.
-   >* Het milieu heeft een lopende pijpleiding of een verrichting van de exemplaarinhoud lopend.
+1. In het **de dialoogvakje van de inhoud van het 0} Exemplaar {, selecteer het** milieu van Source **en het** milieu van de Bestemming **voor uw actie van het inhoudsexemplaar.**
 
-1. In het **de dialoogvakje van de inhoud van het 0} Exemplaar {, specificeer de bron en bestemmingsmilieu&#39;s voor uw actie van het inhoudsexemplaar.**
-   * De regio&#39;s van de doelomgeving moeten dezelfde zijn als of een deel van de bronomgeving.
+   * Regio&#39;s in een doelomgeving moeten een subset zijn van regio&#39;s in een bronomgeving.
+   * Compatibiliteitsproblemen worden gecontroleerd voordat een handeling voor het kopiëren van inhoud wordt uitgevoerd. Wanneer u het **milieu van de Bestemming** selecteert, bevestigt het systeem automatisch de bron en bestemmingsmilieu&#39;s. Als de validatie mislukt, stopt het proces en wordt een foutbericht weergegeven in het dialoogvenster waarin de oorzaak van de fout wordt uitgelegd.
 
-1. U kunt ervoor kiezen om paden voor uitsluiten te verwijderen of te behouden in de doelomgeving. Schakel het selectievakje `Do not delete exclude paths from destination` in om `exclude paths` te behouden die in de inhoudenset zijn opgegeven. Als het selectievakje is uitgeschakeld, worden paden uitgesloten uit de doelomgeving.
+1. (Optioneel) Voer een van de volgende handelingen uit:
 
-1. U kunt de versiegeschiedenis kopiëren van paden die van bron naar bestemmingsomgeving worden gekopieerd. Schakel het selectievakje `Copy Versions` in als u alle versiehistorie wilt kopiëren.
+   1. Om *te behouden* de uitgesloten wegen in het bestemmingsMilieu, controle **`Do not delete exclude paths from destination`**. Met deze instelling blijven de uitgesloten paden die in de inhoudenset zijn opgegeven intact.
+   1. Om *te verwijderen* de uitgesloten wegen in het bestemmingsMilieu, uncheck **`Do not delete exclude paths from destination`**. Met deze instelling worden de uitgesloten paden verwijderd die in de inhoudenset zijn opgegeven.
+   1. Om de versiegeschiedenis van wegen van het bronmilieu aan het bestemmingsmilieu te kopiëren, controleer **Versies van het Exemplaar**.
 
-   ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
+      ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
 
-1. Klik **Exemplaar**.
+1. Klik **Exemplaar**. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 
-Het kopieerproces wordt gestart. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
-
-## Kopieeractiviteit van inhoud {#copy-activity}
+## De status van de activiteit voor het kopiëren van inhoud controleren {#copy-activity}
 
 U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit van de Inhoud van het Exemplaar controleren**.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/), dan selecteer de aangewezen organisatie en het programma.
+**om het statuut van de activiteit van het inhoudsexemplaar te controleren:**
 
-1. Van de **pagina van het Overzicht**, navigeer aan het **milieu&#39;s** scherm.
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van het **scherm van Milieu&#39;s**, navigeer aan de **pagina van de Activiteit van de Inhoud van het Exemplaar**.
+1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-![ Activiteit van het Exemplaar van de Inhoud ](/help/assets/copy-content-activity.png)
+1. Van het linkerzijmenu, onder **Diensten**, klik ![ pictogram van de Geschiedenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **de Activiteit van de Inhoud van het Exemplaar**.
 
-### Statussen voor het kopiëren van inhoud {#statuses}
+   ![ Activiteit van het Exemplaar van de Inhoud ](/help/assets/copy-content-activity.png)
 
-Wanneer u begint inhoud te kopiëren, kan het proces een van de volgende statussen hebben.
+   Een proces voor kopieerinhoud kan een van de volgende statussen hebben:
 
-| Status | Beschrijving |
-|---|---|
-| In uitvoering | De bewerking voor het kopiëren van inhoud is aan de gang |
-| Mislukt | Kopiëren van inhoud is mislukt |
-| Voltooid | Kopie van inhoud voltooid |
+   | Status | Beschrijving |
+   | --- | --- |
+   | In uitvoering | De bewerking voor het kopiëren van inhoud is aan de gang. |
+   | Voltooid | Kopie van inhoud is voltooid. |
+   | Mislukt | Kopiëren van inhoud is mislukt. |
+
 
 ## Beperkingen {#limitations}
 
-Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen.
+Het gereedschap voor het kopiëren van inhoud heeft de volgende beperkingen:
 
 * Een inhoudkopie kan niet worden uitgevoerd van een lagere omgeving naar een hogere omgeving.
 * Kopiëren van inhoud kan alleen binnen dezelfde laag worden uitgevoerd. Dat wil zeggen, auteur of publicatieversie.
