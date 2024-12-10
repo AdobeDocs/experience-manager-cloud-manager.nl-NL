@@ -2,9 +2,9 @@
 title: Content Copy for Environment Consistency
 description: Met Content Copy in Cloud Manager kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
+source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 * Als u inhoud bewerkt in de doelomgeving, wordt deze overschreven door de broninhoud als de paden overeenkomen.
 * Als de paden verschillend zijn, wordt de inhoud van de bron samengevoegd met de inhoud in de bestemming.
 
-## Machtigingen {#permissions}
+### Machtigingen {#permissions}
 
 Om de eigenschap van het Exemplaar van de Inhoud te gebruiken, moet de gebruiker aan de **rol van de Manager van de Plaatsing** in de bron en doelmilieu&#39;s worden toegewezen.
 
@@ -142,11 +142,11 @@ Een omgeving kan niet beschikbaar zijn voor selectie als een van de volgende voo
 
 1. Klik **Exemplaar**. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 
-## De status Inhoud kopiëren controleren {#copy-activity}
+## De status van een inhoudskopie controleren {#copy-activity}
 
 U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit van de Inhoud van het Exemplaar controleren**.
 
-**om de status van het Exemplaar van de Inhoud te controleren:**
+**om het statuut van een inhoudsexemplaar te controleren:**
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
@@ -179,6 +179,6 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 * [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
 * De regio&#39;s van de doelomgeving moeten dezelfde zijn als of een deel van de bronomgeving.
 
-## Bekende problemen {#known-issues}
+## Bekende problemen met Content Copy {#known-issues}
 
 {{content-copy-known-issues}}
