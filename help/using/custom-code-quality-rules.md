@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Ontdek de specificaties van de aangepaste codecwaliteitsregels die door Cloud Manager worden uitgevoerd tijdens het testen van de codekwaliteit. Deze regels zijn gegrond in beste praktijken van AEM Techniek.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
 workflow-type: tm+mt
-source-wordcount: '3482'
+source-wordcount: '3514'
 ht-degree: 0%
 
 ---
@@ -871,6 +871,15 @@ AEM Cloud Service verbiedt het maken van kenizers met onjuiste namen in analysat
 * **sinds**: Versie 2024.7.0
 
 AEM Cloud Service staat het maken van indexdefinities met spaties niet toe.
+
+### Configuratie van indexeringsdefinities mag de eigenschap haystack0 niet bevatten {#oakpal-indexing-haystack0-property}
+
+* **Sleutel**: HayStackPropertyCheck
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **sinds**: Versie 2024.12.0
+
+AEM Cloud Service staat het maken van indexdefinities met haystack-eigenschappen niet toe.
 
 ## Dispatcher-optimalisatiefunctie {#dispatcher-optimization-tool-rules}
 
