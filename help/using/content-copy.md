@@ -2,7 +2,7 @@
 title: Content Copy for Environment Consistency
 description: Met Content Copy in Cloud Manager kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
+source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -32,8 +32,9 @@ De volgende paden zijn toegestaan in een inhoudsset:
 
 Wanneer het kopiëren van inhoud, is het bronmilieu de bron van waarheid.
 
-* Als u inhoud bewerkt in de doelomgeving, wordt deze overschreven door de broninhoud als de paden overeenkomen.
-* Als de paden verschillend zijn, wordt de inhoud van de bron samengevoegd met de inhoud in de bestemming.
+Als u inhoud bewerkt in de doelomgeving, wordt deze overschreven door de broninhoud als de paden overeenkomen.
+
+Als de paden verschillend zijn, wordt de inhoud van de bron samengevoegd met de inhoud in de bestemming.
 
 ### Machtigingen {#permissions}
 
@@ -103,7 +104,6 @@ Wanneer u een inhoudsset bewerkt, moet u mogelijk de geconfigureerde paden uitbr
 
 ![ geef inhoudreeks ](/help/assets/edit-content-set.png) uit
 
-
 ## Inhoud kopiëren {#copy-content}
 
 Nadat u een inhoudsset hebt gemaakt, kunt u deze gebruiken om inhoud te kopiëren.
@@ -138,8 +138,6 @@ Een omgeving kan niet beschikbaar zijn voor selectie als een van de volgende voo
    1. Om *te verwijderen* de uitgesloten wegen in het bestemmingsmilieu, uncheck **`Do not delete exclude paths from destination`**. Met deze instelling worden de uitgesloten paden verwijderd die in de inhoudenset zijn opgegeven.
    1. Om de versiegeschiedenis van wegen van het bronmilieu aan het bestemmingsmilieu te kopiëren, controleer **Versies van het Exemplaar**. Het proces van het inhoudsexemplaar is wezenlijk sneller wanneer de versiegeschiedenis *niet* wordt gekopieerd.
 
-
-
 1. Klik **Exemplaar**. De status van het kopieerproces wordt weerspiegeld in de console voor de geselecteerde inhoudenset.
 
 ## De status van een inhoudskopie controleren {#copy-activity}
@@ -160,10 +158,9 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 
    | Status | Beschrijving |
    | --- | --- |
-   | In uitvoering | De bewerking voor het kopiëren van inhoud is aan de gang. |
-   | Voltooid | Kopie van inhoud is voltooid. |
+   | In uitvoering | Kopiëren van inhoud is aan de gang. |
+   | Voltooid | Het kopiëren van de inhoud is voltooid. |
    | Mislukt | Kopiëren van inhoud is mislukt. |
-
 
 ## Beperkingen van inhoudskopie {#limitations}
 
