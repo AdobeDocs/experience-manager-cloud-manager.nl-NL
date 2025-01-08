@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2789'
 ht-degree: 0%
 
 ---
@@ -48,14 +48,16 @@ De software implementeert deze met behulp van een combinatie van SonarQube-analy
 
 Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane ](/help/using/custom-code-quality-rules.md).
 
->[!TIP]
+>[!IMPORTANT]
 >
->U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+>U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+>
+>Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [ kunt downloaden ](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 De resultaten van het testen van de codekwaliteit worden geleverd als classificatie zoals samengevat in deze lijst.
 
 | Naam | Definitie | Categorie | Drempel voor fout |
-|--- |--- |--- |--- |
+| --- | --- | --- | --- |
 | Beveiligingsbeoordeling | A = Geen kwetsbaarheden <br/> B = minstens 1 minder kleine kwetsbaarheid <br/> C = minstens 1 belangrijke kwetsbaarheid <br/> D = minstens 1 kritieke kwetsbaarheid <br/> E = minstens 1 blokkeerkwetsbaarheid | Kritiek | &lt; B |
 | Betrouwbaarheidsbeoordeling | A = Geen bugs <br/> B = minstens 1 minder kleine insect <br/> C = minstens 1 belangrijke insect <br/> D = minstens 1 kritieke insect <br/> E = minstens 1 blocker bugs | Belangrijk | &lt; C |
 | Onderhoudsverklaring | Gedefinieerd door de openstaande herstelkosten voor code ruikt als een percentage van de tijd dat al naar de toepassing is gegaan <br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | Belangrijk | &lt; A |
@@ -67,7 +69,7 @@ De resultaten van het testen van de codekwaliteit worden geleverd als classifica
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie, {de metrische definities van 0} SonarQube ](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition/).[
+>Voor meer gedetailleerde informatie, {de metrische definities van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).[
 
 >[!NOTE]
 >
@@ -188,14 +190,14 @@ Gedurende de testperiode van 30 minuten:
 
 #### Testen en rapporteren {#testing-reporting}
 
-Cloud Manager voert het testen van de prestaties voor AEM Sites-programma&#39;s uit door pagina&#39;s standaard voor een testperiode van 30 minuten als niet-geverifieerde gebruiker op de testpublicatieserver aan te vragen. Het meet de virtuele user-generated metriek (reactietijd, foutentarief, meningen per minuut, etc.) voor elke pagina en diverse systeem-vlakke metriek (cpu, geheugen, voorzien van een netwerkgegevens) voor alle instanties.
+Cloud Manager voert het testen van de prestaties voor AEM Sites-programma&#39;s uit door pagina&#39;s standaard voor een testperiode van 30 minuten als niet-geverifieerde gebruiker op de testpublicatieserver aan te vragen. Het meet de virtuele user-generated metriek (reactietijd, foutentarief, meningen per minuut, etc.) voor elke pagina en diverse systeem-vlakke metriek (CPU, geheugen, voorzien van een netwerkgegevens) voor alle instanties.
 
 In de volgende tabel wordt een overzicht gegeven van de prestatietestmatrix met behulp van het driegrafeerde gatsysteem.
 
 | Metrisch | Categorie | Drempel voor fout |
 |---|---|---|
 | Foutfrequentie paginaverzoek | Kritiek | >= 2% |
-| CPU-gebruikssnelheid | Kritiek | >= 80% |
+| CPU-gebruiksfrequentie | Kritiek | >= 80% |
 | Wachttijd schijf-IO | Kritiek | >= 50% |
 | 95e responstijd met percentage | Belangrijk | >= KPI op programmaniveau |
 | Piekresponstijd | Belangrijk | >= 18 seconden |
@@ -268,7 +270,7 @@ De metrische deelvensters kunnen worden uitgevouwen om een grafiek weer te geven
 
 Deze functionaliteit is beschikbaar voor de volgende metriek.
 
-* **Gebruik van cpu** - een grafiek van het gebruik van cpu tijdens de testperiode
+* **het Gebruik van CPU** - een grafiek van het gebruik van CPU tijdens de testperiode
 
 * **Schijf I/O wacht Tijd** - een grafiek van schijf I/O wacht tijd tijdens de testperiode
 
