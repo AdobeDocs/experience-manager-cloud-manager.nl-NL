@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2024.12.0
 description: Meer informatie over de release van Cloud Manager 2024.12.0 over Adobe Managed Services.
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De volgende geplande release is 23 januari 2025.
 
 * Vanaf donderdag 13 februari 2025 gebruikt de stap voor de kwaliteit van de Cloud Manager-code nu een bijgewerkte SonarQube-versie 9.9.5.90363.
 
-  De bijgewerkte regels, beschikbaar voor AMS bij [ deze verbinding ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-quality-testing#code-quality-testing-step), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager. Deze update kan van invloed zijn op uw kwaliteitswachttijden en kan implementaties blokkeren.
+  De bijgewerkte regels, beschikbaar voor AMS bij [ deze verbinding ](/help/using/code-quality-testing.md#code-quality-testing-step), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager. Deze update kan van invloed zijn op uw kwaliteitswachttijden en kan implementaties blokkeren.
 
 ## Programma voor vroegtijdige goedkeuring {#early-adoption}
 

@@ -2,7 +2,7 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2789'
 ht-degree: 0%
@@ -48,9 +48,9 @@ De software implementeert deze met behulp van een combinatie van SonarQube-analy
 
 Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane ](/help/using/custom-code-quality-rules.md).
 
+U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+
 >[!IMPORTANT]
->
->U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 >
 >Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [ kunt downloaden ](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
