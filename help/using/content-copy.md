@@ -2,7 +2,7 @@
 title: Content Copy for Environment Consistency
 description: Met Content Copy in Cloud Manager kunnen gebruikers op aanvraag muterende inhoud kopiëren van door Managed Services gehoste Adobe Experience Manager 6.x-productieomgevingen naar lagere omgevingen voor testdoeleinden.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
+source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wan
 
    Alleen paden die beginnen met `/content` , `/conf` , `/etc` , `/var/workflow/models` of `/var/commerce` , komen in aanmerking voor opname.
 
-1. Klik **![Omslag toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) Weg** om (of omvat) de weg aan de inhoudreeks toe te voegen.
+1. Klik ![ Omslag toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Weg** om (of omvat) de weg aan de inhoudreeks toe te voegen.
 
 1. (Optioneel) Voeg desgewenst extra paden toe (maximaal 50) door de vorige twee stappen te herhalen. Anders gaat u door met de volgende stap.
 
