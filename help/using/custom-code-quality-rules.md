@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Ontdek de specificaties van de aangepaste codecwaliteitsregels die door Cloud Manager worden uitgevoerd tijdens het testen van de codekwaliteit. Deze regels zijn gegrond in beste praktijken van AEM Techniek.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
+source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
 workflow-type: tm+mt
-source-wordcount: '3514'
+source-wordcount: '3490'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,13 @@ Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manage
 
 >[!NOTE]
 >
->De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube ](https://docs.sonarsource.com/sonarqube/latest/) om over zijn concepten en kwaliteitsregels te leren.[
+>De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/) om over zijn concepten en kwaliteitsregels te leren.[
 
->[!NOTE]
+Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+
+>[!IMPORTANT]
 >
->Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege informatie die eigendom is van de Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+>Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [ kunt downloaden ](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 ## SonarQube-regels {#sonarqube-rules}
 
@@ -179,7 +181,7 @@ public void orDoThis() {
 ### De objecten `ResourceResolver` moeten altijd worden gesloten {#resourceresolver-objects-should-always-be-closed}
 
 * **Sleutel**: CQRules:CQBP-72
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2018.4.0
 
@@ -221,7 +223,7 @@ public void orDoThis(Session session) throws Exception {
 ### Gebruik geen slingerservletpaden om servlets te registreren {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **Sleutel**: CQRules:CQBP-75
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2018.4.0
 
@@ -241,7 +243,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### Afgehandelde uitzonderingen zouden moeten worden geregistreerd of geworpen, niet allebei {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **Sleutel**: CQRules:CQBP-44-CatchAndOrLogOrThrow
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -283,7 +285,7 @@ public void orDoThis() throws MyCustomException {
 ### Loginstructies die direct worden gevolgd door throw-instructies vermijden {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **Sleutel**: CQRules:CQBP-44-OpeenvolgendLogAndThrow
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -309,7 +311,7 @@ public void doThis() throws Exception {
 ### Meld u niet aan bij INFO wanneer u GET- of HEAD-verzoeken afhandelt {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **Sleutel**: CQRules:CQBP-44-LogInfoInGetOrHeadRequests
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 
 In het algemeen, zou het INFO logboekniveau moeten worden gebruikt om belangrijke acties te afbakenen en, door gebrek, AEM wordt gevormd om bij het INFO niveau of boven te registreren. GET- en HEAD-methoden mogen nooit alleen-lezen zijn en vormen dus geen belangrijke acties. Het registreren op het niveau INFO in antwoord op GET of HEAD verzoeken zal waarschijnlijk tot significante logboeklawaai leiden, die het moeilijker maken om nuttige informatie in logboekdossiers te identificeren. Wanneer het behandelen van GET of HEAD- verzoeken, zou het registreren op de WARN of niveaus van de FOUT moeten zijn als iets verkeerd is gegaan. Voor diepere het oplossen van problemeninformatie, zou het registreren op het DEBUG of niveau van TRACE moeten zijn.
@@ -337,7 +339,7 @@ public void doGet() throws Exception {
 ### Gebruik `Exception.getMessage()` niet als de eerste parameter van een logboekinstructie {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **Sleutel**: CQRules:CQBP-44-ExceptionGetMessageIsFirstLogParam
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -370,7 +372,7 @@ public void doThis() {
 ### Aanmelden van vangstblokken moet zich op het WARN- of FOUTniveau bevinden {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **Sleutel**: CQRules:CQBP-44-WrongLogLevelInCatchBlock
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -403,7 +405,7 @@ public void doThis() {
 ### Stapelsporen niet naar de console afdrukken {#do-not-print-stack-traces-to-the-console}
 
 * **Sleutel**: CQRules:CQBP-44-ExceptionPrintStackTrace
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -436,7 +438,7 @@ public void doThis() {
 ### Niet uitvoeren naar standaarduitvoer of standaardfout {#do-not-output-to-standard-output-or-standard-error}
 
 * **Sleutel**: CQRules:CQBP-44-LogLevelConsolePrinters
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -469,7 +471,7 @@ public void doThis() {
 ### Vermijd hardcodeerde `/apps` en `/libs` paden {#avoid-hardcoded-apps-and-libs-paths}
 
 * **Sleutel**: CQRules:CQBP-71
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
@@ -494,7 +496,7 @@ public void doThis(Resource resource) {
 ### Sling Planner dient niet te worden gebruikt {#sonarqube-sling-scheduler}
 
 * **Sleutel**: CQRules:AMSCORE-554
-* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
+* **Type**: `Code Smell` / de Verenigbaarheid van de Cloud Service
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
@@ -505,7 +507,7 @@ Zie [ Apache het Sling Event en de documentatie van de Verwerking van de Baan ](
 ### AEM vervangen API&#39;s mogen niet worden gebruikt {#sonarqube-aem-deprecated}
 
 * **Sleutel**: AMSCORE-553
-* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
+* **Type**: `Code Smell` / de Verenigbaarheid van de Cloud Service
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
@@ -627,7 +629,7 @@ Gelijkaardig aan de [ Pakketten zouden niet Dubbele regel van de Configuraties m
 ### De standaardontwerpmodus mag geen klassieke UI zijn {#oakpal-default-authoring}
 
 * **Sleutel**: ClassicUIAuthoringMode
-* **Type**: De Verenigbaarheid van de Code Smell /Cloud Service
+* **Type**: `Code Smell` / de Verenigbaarheid van de Cloud Service
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
@@ -636,7 +638,7 @@ De configuratie OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` bepaa
 ### Componenten met dialoogvensters moeten beschikken over aanraakdialoogvensters {#oakpal-components-dialogs}
 
 * **Sleutel**: ComponentWithOnlyClassicUIDialog
-* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
+* **Type**: `Code Smell` / de Verenigbaarheid van de Cloud Service
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
@@ -651,7 +653,7 @@ De documentatie van de Hulpmiddelen van de Modernisering van het AEM verstrekt d
 ### De omgekeerde replicatiemiddelen zouden niet moeten worden gebruikt {#oakpal-reverse-replication}
 
 * **Sleutel**: ReverseReplication
-* **Type**: De Verenigbaarheid van de Code Smell/van de Cloud Service
+* **Type**: `Code Smell` / de Verenigbaarheid van de Cloud Service
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
@@ -693,7 +695,7 @@ AEM clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en 
 ### Gebruik van workflowprocessen die niet compatibel zijn met Cloud Servicen {#oakpal-usage-cloud-service}
 
 * **Sleutel**: CloudServiceIncompatibleWorkflowProcess
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Blocker
 * **sinds**: Versie 2021.2.0
 
@@ -704,7 +706,7 @@ Het migratiehulpmiddel in de [ as a Cloud Service GitHub bewaarplaats van AEM As
 ### Het gebruik van statische sjablonen wordt afgeraden ten gunste van bewerkbare sjablonen {#oakpal-static-template}
 
 * **Sleutel**: StaticTemplateUsage
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -715,7 +717,7 @@ De migratie van statisch aan editable malplaatjes kan grotendeels worden geautom
 ### Het gebruik van oudere basiscomponenten wordt afgeraden {#oakpal-usage-legacy}
 
 * **Sleutel**: LegacyFoundationComponentUsage
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -726,7 +728,7 @@ De oudere Componenten van de Stichting (namelijk componenten onder `/libs/founda
 ### Definitieknooppunten van aangepaste zoekindex moeten onderliggende knooppunten van `/oak:index` zijn {#oakpal-custom-search}
 
 * **Sleutel**: OakIndexLocation
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -735,7 +737,7 @@ AEM Cloud Service vereist dat definities van aangepaste zoekindexen (knooppunten
 ### Definitieknooppunten van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
 * **Sleutel**: IndexCompatVersion
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -744,7 +746,7 @@ AEM Cloud Service vereist dat in definities van aangepaste zoekindexen (dat wil 
 ### Afstammende knooppunten van definitieknooppunten van de aangepaste zoekindex moeten van het type zijn `nt:unstructured` {#oakpal-descendent-nodes}
 
 * **Sleutel**: IndexDescendantNodeType
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -753,7 +755,7 @@ Problemen met moeilijk op te lossen problemen kunnen optreden wanneer een defini
 ### definitieknooppunten van aangepaste zoekindex moeten een onderliggende node met de naam `indexRules` bevatten die onderliggende items bevat {#oakpal-custom-search-index}
 
 * **Sleutel**: IndexRulesNode
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -762,7 +764,7 @@ Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex mo
 ### Definitieknooppunten van aangepaste zoekindex moeten de naamgevingsconventies volgen {#oakpal-custom-search-definitions}
 
 * **Sleutel**: IndexName
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -771,7 +773,7 @@ AEM Cloud Service vereist dat de definities van de douaneonderzoeksindex (nameli
 ### De de definitieknooppunten van de onderzoeksindex van de douane moeten indextype lucene gebruiken {#oakpal-index-type-lucene}
 
 * **Sleutel**: IndexType
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -780,7 +782,7 @@ AEM Cloud Service vereist dat definities van aangepaste zoekindexen (dat wil zeg
 ### Definitieknooppunten van aangepaste zoekindex mogen geen eigenschap met de naam `seed` bevatten {#oakpal-property-name-seed}
 
 * **Sleutel**: IndexSeedProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
@@ -789,7 +791,7 @@ AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen kn
 ### Definitieknooppunten van aangepaste zoekindex mogen geen eigenschap met de naam `reindex` bevatten {#oakpal-reindex-property}
 
 * **Sleutel**: IndexReindexProperty
-* **Type**: Code Smell
+* **Type**: `Code Smell`
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 

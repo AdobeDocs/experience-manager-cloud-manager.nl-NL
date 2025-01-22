@@ -1,20 +1,19 @@
 ---
-title: Opmerkingen bij de release voor Cloud Manager 2024.12.0
-description: Meer informatie over de release van Cloud Manager 2024.12.0 over Adobe Managed Services.
+title: Opmerkingen bij de release voor Cloud Manager 2025.1.0
+description: Meer informatie over de release van Cloud Manager 2025.1.0 over Adobe Managed Services.
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
+source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release voor Cloud Manager 2024.12.0 over Adobe Managed Services {#release-notes}
+# Opmerkingen bij de release voor Cloud Manager 2025.1.0 over Adobe Managed Services {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-Meer informatie over de release van [!UICONTROL Cloud Manager] 2024.12.0 over Adobe Managed Services.
+Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.1.0 over Adobe Managed Services.
 
 >[!NOTE]
 >
@@ -24,39 +23,33 @@ Meer informatie over de release van [!UICONTROL Cloud Manager] 2024.12.0 over Ad
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-De releasedatum voor [!UICONTROL Cloud Manager] 2024.12.0 is 5 december 2024.
+De releasedatum voor [!UICONTROL Cloud Manager] 2025.1.0 is woensdag 22 januari 2024.
 
-De volgende geplande release is 23 januari 2025.
+De volgende geplande release is donderdag 13 februari 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+**de kwaliteitsregels van de Code:** de stap van de Kwaliteit van de Code van Cloud Manager zal beginnen SonarQube Server 9.9 met de versie van Cloud Manager 2025.2.0 te gebruiken, die voor Donderdag, 13 februari, 2025 wordt gepland.
 
-* Vanaf donderdag 13 februari 2025 gebruikt de stap voor de kwaliteit van de Cloud Manager-code nu een bijgewerkte SonarQube-versie 9.9.5.90363.
+Om voor te bereiden, zijn de bijgewerkte regels SonarQube nu beschikbaar bij [ Regels van de Kwaliteit van de Code ](/help/using/code-quality-testing.md#code-quality-testing-step).
 
-  De bijgewerkte regels, beschikbaar voor AMS bij [ deze verbinding ](/help/using/code-quality-testing.md#code-quality-testing-step), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager. Deze update kan van invloed zijn op uw kwaliteitswachttijden en kan implementaties blokkeren.
+U kunt de nieuwe regels &quot;vroege controle&quot;door de volgende variabele van de pijpleidingstekst (zie hieronder schermafbeelding) te plaatsen:
 
-## Programma voor vroegtijdige goedkeuring {#early-adoption}
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
+Stel bovendien de volgende variabele in om ervoor te zorgen dat de stap voor de codekwaliteit wordt uitgevoerd voor dezelfde commit (wordt normaal gesproken overgeslagen voor dezelfde `commitId`):
 
-### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- BOTH CS & AMS -->
-
-**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen, zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de opslagplaats van de Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
-
-De pijpleidingen die externe bewaarplaatsen gebruiken (exclusief GitHub-ontvangen degenen) en de **Trekker van de Plaatsing** aan **wordt geplaatst op de Veranderingen van het Git** beginnen nu automatisch.
-
-Zie [ externe bewaarplaatsen in Cloud Manager ](/help/managing-code/external-repositories.md) toevoegen.
-
-![ voeg de dialoogdoos van de Bewaarplaats ](/help/release-notes/assets/repositories-add-release-notes.png) toe
+![ pagina van de Configuratie van Variabelen ](/help/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->Momenteel, zijn de uit-van-de-doos controles van de trekkingsverzoekcodekwaliteit exclusief aan GitHub-ontvangen bewaarplaatsen, maar een update om deze functionaliteit tot andere verkopers van het Git uit te breiden is in de werken.
+>De Adobe adviseert het creëren van een nieuwe pijpleiding van de Kwaliteit van CI/CD Code, die aan de zelfde tak wordt gevormd zoals uw belangrijkste productiepijplijn. Plaats de aangewezen variabelen *vóór* 13 februari, versie 2025 om te bevestigen dat de nieuwe gedwongen regels geen blockers introduceren.
 
-Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:Grp-CloudManager_BYOG@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}
