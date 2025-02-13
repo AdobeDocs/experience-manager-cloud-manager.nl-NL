@@ -4,9 +4,9 @@ description: Meer informatie over de release van Cloud Manager 2025.2.0 op Adobe
 feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 9d9bf7d689c0ace41bce3f31febe8ba78636c01f
+source-git-commit: 51dd060ec9b922ace9ce537cac669c61154284e8
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud S
 
 ## Releasedatums {#release-date}
 
-*geen notable insecten of eigenschappen voor de versie van februari van Cloud Manager.*
-
 De releasedatum voor [!UICONTROL Cloud Manager] 2025.2.0 is donderdag 13 februari 2025.
 
 De volgende geplande release is donderdag 13 maart 2025.
@@ -31,31 +29,45 @@ De volgende geplande release is donderdag 13 maart 2025.
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
-* Vanaf donderdag 13 februari 2025 gebruikt de stap voor de kwaliteit van de Cloud Manager-code nu een bijgewerkte SonarQube-versie 9.9.5.90363.
+* **Geüpgraded SonarQube**
 
-  De bijgewerkte regels, beschikbaar voor AMS bij [ deze verbinding ](/help/using/code-quality-testing.md#code-quality-testing-step), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager. Deze update kan van invloed zijn op uw kwaliteitswachttijden en kan implementaties blokkeren.
+  Vanaf donderdag 13 februari 2025 gebruikt de kwaliteitsstap van de Cloud Manager-code nu SonarQube 9.9.5.90363.
 
-## Programma voor vroegtijdige goedkeuring {#early-adoption}
+  De bijgewerkte regels, beschikbaar voor AMS bij [ deze verbinding ](/help/using/code-quality-testing.md#code-quality-testing-step), bepalen veiligheidsscores en codekwaliteit voor de pijpleidingen van Cloud Manager.
 
-Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
+* SonarQube 9.9 is nu de standaardscanengine voor codekwaliteit voor alle klanten.
 
-### Kies voor uw eigen git - nu met ondersteuning voor GitLab en Bitbucket {#gitlab-bitbucket}
+* **Java 17 en Java 21 bouwt milieusteun**
 
-<!-- BOTH CS & AMS -->
+  Klanten kunnen nu optioneel bouwen met Java 17 of Java 21, waarbij ze profiteren van prestatieverbeteringen en nieuwe taalfuncties. Zie [ milieu bouwen ](/help/getting-started/build-environment.md) voor configuratiestappen, met inbegrip van het bijwerken van uw Maven projectbeschrijving, en bepaalde bibliotheekversies.
 
-**breng Uw Eigen eigenschap van het Git** is uitgebreid om steun voor externe bewaarplaatsen, zoals GitLab en Bitbucket te omvatten. Deze nieuwe steun is naast reeds bestaande steun voor privé en ondernemingsbewaarplaatsen GitHub. Wanneer u deze nieuwe repo&#39;s toevoegt, kunt u deze ook rechtstreeks aan uw pijpleidingen koppelen. U kunt deze opslagruimten hosten op openbare cloudplatforms of binnen uw privécloud of infrastructuur. Deze integratie verwijdert ook de behoefte aan constante codesynchronisatie met de bewaarplaats van Adobe en verstrekt de capaciteit om trekkingsverzoeken te bevestigen alvorens hen in een hoofdtak samen te voegen.
+  >[!NOTE]
+  >Voor Cloud Service-omgevingen geldt dat als de versie voor het samenstellen is ingesteld op Java 17 of Java 21, de runtime standaard is ingesteld op Java 21.
 
-De pijpleidingen die externe bewaarplaatsen gebruiken (exclusief GitHub-ontvangen degenen) en de **Trekker van de Plaatsing** aan **wordt geplaatst op de Veranderingen van het Git** beginnen nu automatisch.
+* **Uitgebreide bevestigingen van het Exemplaar van de Inhoud**
 
-Zie [ externe bewaarplaatsen in Cloud Manager ](/help/managing-code/external-repositories.md) toevoegen.
+  Validatieregels voor het kopiëren van inhoud zijn bijgewerkt. Met deze versie, kunnen de gebruikers een inhoudkopie niet meer teweegbrengen als er actieve pijpleidingsuitvoeringen in of het bron of bestemmingsmilieu zijn. De gebruikers moeten wachten tot alle aan de gang zijnde pijpleidingsuitvoeringen volledig zijn alvorens een inhoudsexemplaar in werking te stellen.
 
-![ voeg de dialoogdoos van de Bewaarplaats ](/help/release-notes/assets/repositories-add-release-notes.png) toe
+<!-- 
+## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+
+The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+
+Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+
+See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->Momenteel, zijn de uit-van-de-doos controles van de trekkingsverzoekcodekwaliteit exclusief aan GitHub-ontvangen bewaarplaatsen, maar een update om deze functionaliteit tot andere verkopers van het Git uit te breiden is in de werken.
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
 
-Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:Grp-CloudManager_BYOG@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}
