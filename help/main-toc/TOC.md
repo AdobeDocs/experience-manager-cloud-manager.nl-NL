@@ -7,9 +7,9 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 27cd3bbcaa41600167e4d692bd94834c28b0826b
+source-git-commit: 9d9bf7d689c0ace41bce3f31febe8ba78636c01f
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 9%
    + [Eerste aanmelding](/help/getting-started/first-time-login.md)
    + [Navigatie](/help/getting-started/navigation.md)
    + [Programma instellen](/help/getting-started/program-setup.md)
-   + Project maken AEM {#project-creation}
+   + AEM-project maken {#project-creation}
       + [De wizard gebruiken](/help/getting-started/using-the-wizard.md)
       + [Projectinstelling](/help/getting-started/project-setup.md)
       + [De Build-omgeving](/help/getting-started/build-environment.md)
@@ -60,7 +60,7 @@ ht-degree: 9%
 + Code beheren {#managing-code}
    + [Opslagplaatsen in Cloud Manager beheren](/help/managing-code/managing-repositories.md)
    + [Toegang tot opslagplaats](/help/managing-code/accessing-repositories.md)
-   + [Een opslagplaats voor Adoben toevoegen](/help/managing-code/adobe-repositories.md)
+   + [Een Adobe-opslagplaats toevoegen](/help/managing-code/adobe-repositories.md)
    + [Een privéopslagplaats toevoegen](/help/managing-code/private-repositories.md)
    + [Een externe opslagplaats toevoegen (vroege adopter)](/help/managing-code/external-repositories.md)
    + [Ondersteuning voor Git-submodule](/help/managing-code/git-submodules.md)
@@ -74,6 +74,8 @@ ht-degree: 9%
    + [Evaluatie](/help/product-update-wizard/evaluation.md)
 + Opmerkingen bij de release {#release-notes}
    + [Huidig](/help/release-notes/current.md)
+   + 2025 {#rn-2025}
+      + [2025,1,0](/help/release-notes/2025/2025-1-0.md)
    + 2024 {#rn-2024}
       + [2024 12,0](/help/release-notes/2024/2024-12-0.md)
       + [2024 11,0](/help/release-notes/2024/2024-11-0.md)
