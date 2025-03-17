@@ -3,9 +3,9 @@ title: Privéopslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarplaatsen te werken GitHub.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Leer hoe te opstelling Cloud Manager om met uw eigen privé bewaarplaatsen te we
 
 ## Overzicht {#overview}
 
-Het vormen van Cloud Manager met uw privé bewaarplaatsen GitHub laat u code direct binnen GitHub bevestigen, die de behoefte om met de bewaarplaats van de Adobe regelmatig elimineert te synchroniseren.
+Het vormen van Cloud Manager met uw privé bewaarplaatsen GitHub laat u code direct binnen GitHub bevestigen, die de behoefte om met de bewaarplaats van Adobe regelmatig elimineert te synchroniseren.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ De configuratie bestaat uit twee hoofdstappen:
 
 ### Eigendom van een privéopslagplaats valideren {#validate-ownership}
 
-Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot het nodig. Om toegang te verlenen, moet u de Adobe toepassing GitHub installeren en verifiëren dat u de gespecificeerde bewaarplaats bezit.
+Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot het nodig. Om toegang te verlenen, moet u de toepassing van Adobe GitHub installeren en verifiëren dat u de gespecificeerde bewaarplaats bezit.
 
 1. Na het toevoegen van uw eigen bewaarplaats, wordt het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé getoond.**
 
@@ -88,10 +88,9 @@ Tot de validatie wordt de repository weergegeven met een rood pictogram dat aang
 
 ![ Unvalidate repo ](/help/assets/repositories/unvalidated-repo.png)
 
-Merk op dat de **kolom van het Type** gemakkelijk Adobe-verstrekte bewaarplaatsen (**Adobe**) en uw eigen bewaarplaatsen GitHub (**GitHub**) identificeert.
+Merk op dat de **kolom van het Type** gemakkelijk Adobe-Verstrekte bewaarplaatsen (**Adobe**) en uw eigen bewaarplaatsen GitHub (**GitHub**) identificeert.
 
-Om aan de bewaarplaats later terug te keren en de bevestiging te voltooien, ga naar de **pagina van Bewaarplaatsen**. Klik de ellipsis knoop naast de bewaarplaats GitHub die u toevoegde en **Bevestiging van de Eigendom** van het drop-down menu selecteert.
-
+Om aan de bewaarplaats later terug te keren en de bevestiging te voltooien, ga naar de **pagina van Bewaarplaatsen**. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de bewaarplaats GitHub die u toevoegde, dan klik de Bevestiging van de Eigendom ****.
 
 
 ## Persoonlijke opslagruimten gebruiken met Cloud Manager {#using}
@@ -106,7 +105,7 @@ Nadat de bewaarplaats GitHub in Cloud Manager wordt bevestigd, wordt de integrat
 
 1. Voor elk trekkingsverzoek, wordt de a [ volledige pijpleiding van de kwaliteit van de stapelcode ](/help/using/managing-pipelines.md) automatisch gecreeerd. Deze pijpleiding is begonnen bij elke update van het trekkingsverzoek.
 
-1. De controle GitHub blijft in een lopende staat tot de controles van de codekwaliteit volledig zijn. De resultaten van de codekwaliteit worden dan verspreid aan de controle GitHub.
+1. De controle GitHub blijft in een lopende staat tot de controles van de codekwaliteit worden voltooid. De resultaten van de codekwaliteit worden dan verspreid aan de controle GitHub.
 
    ![ GitHub de controles van de codekwaliteit ](/help/assets/repositories/github-code-quality.png)
 
@@ -134,7 +133,7 @@ Bij het gebruik van persoonlijke opslagruimten met Cloud Manager gelden bepaalde
 
 * De de rij en config van het Web pijpleidingen worden niet gesteund met privé bewaarplaatsen.
 * Er wordt geen tag Git gemaakt en geduwd wanneer u privéopslagruimten gebruikt bij de productie van volledige stapelleidingen.
-* Als de Adobe GitHub app wordt verwijderd uit uw organisatie GitHb, verwijdert deze actie de trekkingsverzoekbevestigingseigenschap voor alle bewaarplaatsen.
+* Als de Adobe GitHub-toepassing uit uw GitHb-organisatie wordt verwijderd, verwijdert deze actie de functie voor het valideren van pull-aanvragen voor alle repositories.
 * De pijpleidingen die privé bewaarplaatsen gebruiken en de aanzetmachine op-verbind zijn niet automatisch begonnen wanneer nieuw verbindt in de geselecteerde tak wordt geduwd.
 * [ functionaliteit van het Hergebruik van Artefact ](/help/getting-started/project-setup.md#build-artifact-reuse) is niet op privé bewaarplaatsen van toepassing.
 * U kunt niet de bevestiging van het trekkingsverzoek pauzeren gebruikend de controle GitHub van Cloud Manager. Als de bewaarplaats GitHub in Cloud Manager wordt bevestigd, probeert Cloud Manager om de trekkingsverzoeken te bevestigen die voor die bewaarplaats worden gecreeerd.

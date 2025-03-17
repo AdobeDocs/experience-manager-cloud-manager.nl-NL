@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.3.0
 description: Meer informatie over de release van Cloud Manager 2025.3.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,6 @@ De klanten kunnen de updates van het de dienstpak op de **pagina van het Overzic
 
 ![ Controle voor het menuoptie van updates ](/help/release-notes/assets/check-for-updates-1.png)
 
-
 ![ de dialoogdoos van het Pak van de Dienst van de Update ](/help/release-notes/assets/check-for-updates-2.png)
 
 Het installatie en verbeteringsproces kan op de **pagina van de Activiteit** worden gevolgd.
@@ -56,6 +55,8 @@ Zodra het proces volledig is, moeten de klanten **de uitvoering** voor de verbet
 ![ keur de update van de de dienstpagina ](/help/release-notes/assets/check-for-updates-3.png) goed
 
 Neem contact op met uw Adobe Customer Success Engineer als u deze nieuwe functie wilt testen en feedback wilt delen.
+
+Zie ook [ Updates van het Pakket van de Dienst voor de Milieu&#39;s van de Ontwikkeling - Vroege Goedkeuren ](/help/using/service-packs-environments.md).
 
 
 <!-- ## Bug fixes {#bug-fixes}

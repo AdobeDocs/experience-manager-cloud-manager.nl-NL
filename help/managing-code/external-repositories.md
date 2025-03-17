@@ -1,8 +1,8 @@
 ---
-title: Externe opslagplaatsen toevoegen in Cloud Manager (Vroege adopter)
+title: Externe opslagplaatsen toevoegen in Cloud Manager - Vroege adopter
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub-, GitLab- en Bitbucket-opslagruimten.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -63,7 +63,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
    | --- | --- |
    | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
    | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: GitHub**<br>・ In het **Symbolische 3} tekstgebied van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `Read access to metadata` .<br>  ・ `Read and write access to code and pull requests` .<br>・ Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `api`<br>  ・ `read_api`<br>  ・ `read_repository`<br>  ・ `write_repository`<br>・ op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+   |  | **type van Bewaarplaats: GitLab**<br>・ In het **Symbolische 3} tekstgebied van de Naam van de Naam {, typ een naam voor het toegangstoken u creeert.**<br>・ creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<br>・ Vereiste machtigingen:<br>  ・ `api`<br>  ・ `read_api`<br>  ・ `read_repository`<br>  ・ `write_repository`<br>・ op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
    |  | **type van Bewaarplaats: Bitbucket**<br>・ In het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<br>・ creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>・ Vereiste machtigingen:<br>  ・ `Read and write access to code and pull requests` . |
 
    >[!NOTE]

@@ -2,9 +2,9 @@
 title: Omgevingen bewaken
 description: Leer hoe u uw omgevingen in Cloud Manager kunt bewaken.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Als een metrische waarde boven de waarschuwingsdrempel (maar onder de kritische 
 
 Als metrisch zijn over zijn kritieke drempel is, wordt het beschouwd om in een kritieke staat te zijn.
 
-Adobe Managed Services stelt de drempelwaarden in, die u kunt weergeven in [!UICONTROL Cloud Manager] . In de meeste gevallen zijn drempels consistent tussen klanten, maar er zijn gevallen waarin Adobe Managed Services drempelwaarden bewerkt om aan specifieke klantenvereisten te voldoen. Verricht om het even welke vragen die u over de drempels aan uw Ingenieur van het Succes van de Klant hebt (CSE).
+Adobe Managed Services stelt de drempelwaarden in, die u kunt weergeven in [!UICONTROL Cloud Manager] . In de meeste gevallen zijn drempels consistent tussen klanten, maar er zijn gevallen waarin Adobe Managed Services drempelwaarden bewerkt die overeenkomen met specifieke klantenvereisten. Verricht om het even welke vragen die u over de drempels aan uw Ingenieur van het Succes van de Klant hebt (CSE).
 
 ## Toegangssysteemcontrole {#accessing-system-monitoring}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
-1. Klik op de knop met de ellips van het programma dat u wilt controleren.
+1. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het programma dat u wilt controleren.
 1. In het menu, onder **leidt** rubriek, klik **tonen Controle** om de **pagina van Rapporten** te openen die systeem controleinformatie toont.
 
    ![ Montages ](/help/assets/first-timea1.png)
@@ -73,7 +73,7 @@ Als u bijvoorbeeld op de waarschuwingsdrempelreeks klikt, ziet u alleen de kriti
 
 #### Host {#host}
 
-* **Lading per Kern**: Het aantal processen dat cpu uitvoert. Of, het aantal een rij gevormde processen die in een wachtende staat gemiddeld over één (lading1), vijf (lading5), en vijftien (load15) minieme periode zijn.
+* **Lading per Kern**: Het aantal processen dat CPU uitvoert. Of, het aantal een rij gevormde processen die in een wachtende staat gemiddeld over één (lading1), vijf (lading5), en vijftien (load15) minieme periode zijn.
 * **Telling van het Proces**: Het aantal processen momenteel open.
 * **Aantal van de Gebruiker**: Het aantal gebruikers met een actieve shell zitting.
 * **Gebruik van het Geheugen**: Het percentage momenteel toegewezen systeemgeheugen.
@@ -82,13 +82,13 @@ Als u bijvoorbeeld op de waarschuwingsdrempelreeks klikt, ziet u alleen de kriti
 
 #### Netwerk {#network}
 
-* **Controle van de Haven CQ**: De reactietijd in seconden om tot de AEM of haven van Dispatcher toegang te hebben. Er zijn verschillende maatstaven voor auteur, publicatie en Dispatcher.
+* **Controle van de Haven CQ**: De reactietijd in seconden om tot de haven van AEM of van Dispatcher toegang te hebben. Er zijn verschillende maatstaven voor auteur, publicatie en Dispatcher.
 
 #### Opslag {#storage}
 
 * **Ruimte van de Schijf**: De gebruikte schijfruimte (in megabytes) voor elk onderstelpunt op de gastheer. Er zijn verschillende meetwaarden voor elk koppelingspunt. Er zijn minimaal metriek voor `/` en `/mnt` , maar er kunnen aanvullende meetpunten beschikbaar zijn, afhankelijk van de specifieke instantieconfiguratie.
 * **de Grootte van de Omslag**
-* **AEM de Opslag van het Segment**: De gebruikte schijfruimte (in gigabytes) voor de Opslag van het Segment van de AEM.
+* **Opslag van het Segment van AEM**: De gebruikte schijfruimte (in gigabytes) voor de Opslag van het Segment van AEM.
 
 #### Toepassing {#application}
 
@@ -98,7 +98,7 @@ Als u bijvoorbeeld op de waarschuwingsdrempelreeks klikt, ziet u alleen de kriti
 
 ## SLA-rapportage {#sla-reporting}
 
-U kunt de prestaties van uw productie AEM milieu met betrekking tot uw contractuele overeenkomst van het de dienstniveau zien (SLA).
+U kunt de prestaties van uw AEM-productieomgeving zien in verhouding tot uw service level agreement (SLA) waarvoor u een contract hebt gesloten.
 
 In de volgende grafiek wordt het maandelijkse SLA-resultaat voor 2019 weergegeven.
 
@@ -118,7 +118,7 @@ De **sectie van de Analyse van de Gebeurtenis** onder deze grafiek toont de reek
 * **de Auteur SLA van AMS**: De gemeten uptime van de rij van de productiauteur, factoring incidenten die door verkopers of door Adobe worden veroorzaakt.
 * **Auteur SLA**: Gemeten uptime van de auteursrij die geplande onderbreking zoals onderhoudsvensters negeert.
 * **Eind - gebruikerscontract**: SLA bepaalde in uw contract met Adobe Managed Services voor publiceer rij.
-* **SLA van het Eind van AMS**: De gemeten uptimes van de productie publiceren rij, factoringsincidenten die door verkopers of door Adobe worden veroorzaakt.
+* **SLA van de Eindgebruiker van AMS**: De gemeten uptimes van de productie publiceren rij, factoringsincidenten die door verkopers of door Adobe worden veroorzaakt.
 * **SLA van het Eind**: Gemeten uptime van publiceer rij die geplande onderbreking zoals onderhoudsvensters negeert.
 
 ## Videozelfstudie {#video-tutorial}

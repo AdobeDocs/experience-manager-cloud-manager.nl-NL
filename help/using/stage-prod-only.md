@@ -1,21 +1,21 @@
 ---
-title: Alleen werkgebied- en alleen-prod-pijplijnen
+title: Pijpleidingen met alleen fase en alleen op basis van profielen - Vroege adopter
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
+source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
-# Pijpleidingen die uitsluitend bestemd zijn voor de productie van fase {#stage-prod-only}
+# Pijpleidingen met alleen fase en productie (Vroege aannemer) {#stage-prod-only}
 
 Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md#early-adoption).
+>Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/2024/2024-8-0.md).
 
 ## Overzicht {#overview}
 
@@ -41,7 +41,7 @@ Deze speciale pijpleidingen bieden meer flexibiliteit, maar u zou de volgende de
 >Pijpleidingen met alleen profielen maken altijd gebruik van artefacten uit de pijpleiding met alleen het werkgebied. Dit proces is nog steeds van toepassing, ook al heeft de standaard gekoppelde productiepijpleiding intussen iets anders ingezet.
 >
 >* Bijvoorbeeld scenario&#39;s kunnen leiden tot ongewenste terugdraaiversies van code.
->* De Adobe beveelt aan om de standaard gekoppelde productiepijpleiding niet meer te gebruiken zodra u begint met het gebruik van de pijpleidingen met alleen maar een fase en alleen een fase.
+>* Adobe raadt aan om de standaard gekoppelde productiepijpleiding niet meer te gebruiken zodra u begint met het gebruik van de pijpleidingen met alleen maar profielen en alleen met trapsgewijs.
 >* Als u nog steeds besluit om zowel de standaard gekoppelde pijpleidingen als de pijpleidingen met alleen fase/fase uit te voeren, dient u rekening te houden met het hergebruik van artefacten om terugdraaiversies van code te voorkomen.
 
 ## Pipetontwerp {#pipeline-creation}
@@ -116,3 +116,4 @@ Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te m
 Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+

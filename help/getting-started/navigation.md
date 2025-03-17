@@ -2,9 +2,9 @@
 title: Navigeren door de gebruikersinterface van Cloud Manager
 description: Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1439'
 ht-degree: 0%
 
 ---
@@ -50,15 +50,15 @@ Er staan twee werkbalken boven op elkaar.
 
 De eerste is de Cloud Manager header. De header is blijvend terwijl u door Cloud Manager navigeert. Het is een anker dat u toegang geeft tot instellingen en informatie die van toepassing zijn op alle Cloud Manager-programma&#39;s.
 
-![ de kopbal van het Experience Cloud ](assets/experience-cloud-header.png)
+![ de kopbal van Experience Cloud ](assets/experience-cloud-header.png)
 
-1. Het hamburgerpictogram aan de linkerkant van de kopbal is een drop-down menu dat toegang tot lusjes voor specifieke delen van een individueel programma verleent. Afhankelijk van de context, laat het u ook tussen het Dashboard van de Vergunning en **[Mijn console van Programma&#39;s](#my-programs-console)** schakelen.
+1. Het ![ menupictogram van de Show, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pictogram op de linkerkant van de kopbal is een drop-down menu dat toegang tot lusjes voor specifieke delen van een individueel programma verleent. Afhankelijk van de context, laat het u ook tussen het Dashboard van de Vergunning en **[Mijn console van Programma&#39;s](#my-programs-console)** schakelen.
    * Het licentiedashboard geldt alleen voor AEM as a Cloud Service-programma&#39;s, niet voor AMS-programma&#39;s.
    * Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document.
 1. Met de knop Cloud Manager gaat u terug naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
-1. Klik op Feedback om feedback te geven aan de Adobe over Cloud Manager.
+1. Klik **Terugkoppeling** om terugkoppelen aan Adobe over Cloud Manager te verstrekken.
 1. De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
-1. Als u op de overschakeloptie voor oplossingen klikt, kunt u snel naar andere oplossingen voor Experiencen Cloud gaan.
+1. Als u op de schakeloptie voor oplossingen klikt, kunt u snel naar andere Experience Cloud-oplossingen gaan.
 1. Met het Help-pictogram hebt u snel toegang tot instructiemiddelen en ondersteuningsbronnen.
 1. Het berichtenpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten ](/help/using/notifications.md)
 1. Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersafbeelding selecteert, wordt een pictogram willekeurig toegewezen.
@@ -114,7 +114,7 @@ Een kaart of rij in een tabel vertegenwoordigt elk programma en biedt een overzi
 * Programmanaam
 * Servicetype:
    * **Experience Manager** voor de programma&#39;s van AMS
-   * **Cloud van de Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
+   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
 * Status
 * Gevormde oplossingen
 * Aanmaakdatum
@@ -123,7 +123,7 @@ Met het informatiepictogram hebt u ook snel toegang tot aanvullende informatie o
 
 ![ Informatie ](assets/information-view.png)
 
-Het ellipsiepictogram geeft u toegang tot extra acties u het programma kunt nemen.
+Het ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) geeft u toegang tot extra acties u het programma kunt nemen.
 
 ![ knoop van de Ellipsis voor programma&#39;s ](assets/program-ellipsis.png)
 
