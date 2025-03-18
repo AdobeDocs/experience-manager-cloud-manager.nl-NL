@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.3.0
 description: Meer informatie over de release van Cloud Manager 2025.3.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: bb57be6d2cbab8ff47b368bab59cb3072f78b235
+source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -32,31 +32,34 @@ De volgende geplande release is donderdag 10 april 2025.
 
   ![ Looppas geselecteerde de dialoogdoos van pijpleidingen ](/help/release-notes/assets/run-selected-pipelines.png)
 
+  Zie ook [ veelvoudige pijpleidingen ](/help/using/managing-pipelines.md#run-multiple-pipelines) in werking stellen
 
 
-## Programma voor vroegtijdige goedkeuring {#early-adoption}
+<!--
+## Early adoption program {#early-adoption}
 
-Maak deel uit van het Cloud Manager-programma voor vroege adoptie en heb de kans om toekomstige functies te testen.
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### Self-service Service Pack-updates voor AMS Cloud Manager-klanten
+### Self-service Service Pack updates for AMS Cloud Manager customers 
 
-Als deel van het vroege adoptieprogramma, kunnen de klanten van Adobe Managed Services Cloud Manager nu zelfbedieningspak updates door het **Cloud Manager** gebruikersinterface uitvoeren. Deze eigenschap is momenteel beschikbaar *slechts voor ontwikkelmilieu&#39;s* en omvat beperkte fout rapporterend voor mislukkingen.
+As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
 
-De klanten kunnen de updates van het de dienstpak op de **pagina van het Overzicht van het 0} Programma onder de** Milieu **sectie (** driepunts menu **) controleren.**
+Customers can check for service pack updates on the **Program Overview** page under the **Environments** section (**three-dot menu**).
 
-![ Controle voor het menuoptie van updates ](/help/release-notes/assets/check-for-updates-1.png)
+![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-![ de dialoogdoos van het Pak van de Dienst van de Update ](/help/release-notes/assets/check-for-updates-2.png)
+![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
-Het installatie en verbeteringsproces kan op de **pagina van de Activiteit** worden gevolgd.
+The installation and upgrade process can be tracked on the **Activity** page. 
 
-Zodra het proces volledig is, moeten de klanten **de uitvoering** voor de verbetering van het de dienstpak goedkeuren om met succes te voltooien.
+Once the process is complete, customers must **approve the execution** for the service pack upgrade to finalize successfully.
 
-![ keur de update van de de dienstpagina ](/help/release-notes/assets/check-for-updates-3.png) goed
+![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
 
-Neem contact op met uw Adobe Customer Success Engineer als u deze nieuwe functie wilt testen en feedback wilt delen.
+If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
-Zie ook [ Updates van het Pakket van de Dienst voor de Milieu&#39;s van de Ontwikkeling - Vroege Goedkeuren ](/help/using/service-packs-environments.md).
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
