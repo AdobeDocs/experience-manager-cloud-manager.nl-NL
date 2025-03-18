@@ -1,7 +1,8 @@
 ---
 title: Service Pack-updates voor ontwikkelomgevingen - Vroege adopter
 description: Leer hoe u de updates van het de dienstpak voor de milieu's van de Ontwikkeling door de gebruikersinterface van Cloud Manager kunt in werking stellen.
-source-git-commit: 8da0e6cb4587bc7dfc79bec415ff3aeef2d12e3e
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -14,7 +15,7 @@ Leer hoe u de updates van het de dienstpak voor de milieu&#39;s van de Ontwikkel
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md).
+>Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md#early-adoption).
 
 ## Overzicht {#service-pack-updates-overview}
 
@@ -91,5 +92,3 @@ Zodra de installatie voltooit, wordt uw goedkeuring-of verwerping-vereist om de 
 De installatie van het servicepack wordt geannuleerd en er worden geen wijzigingen toegepast.
 
    ![ Afwijzing van het de dienstpak ](/help/using/assets/service-pack-reject.png)
-
-

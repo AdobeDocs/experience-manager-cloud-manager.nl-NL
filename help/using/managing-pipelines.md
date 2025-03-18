@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen beheert, inclusief het uitvoeren, bewerken en verwijderen ervan.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Als u op het pictogram `i` klikt, worden meer details over de uitvoering van de 
 
 Klik **details van de Mening** om [ details van de pijpleidingsuitvoering ](#view-details) te herzien.
 
-## Pijpleidingen uitvoeren {#running-pipelines}
+## Een pijplijn uitvoeren {#run-one-pipeline}
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
@@ -77,6 +77,23 @@ Klik **details van de Mening** om [ details van de pijpleidingsuitvoering ](#vie
    U kunt de details van de looppas zien door ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) opnieuw te klikken en **[details van de Mening](#view-details)** te klikken.
 
    Afhankelijk van het type van pijpleiding, kunt u de looppas kunnen annuleren door ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) opnieuw te klikken en **te klikken annuleert**.
+
+## Meerdere pijpleidingen uitvoeren {#run-multiple-pipelines}
+
+Met Cloud Manager kunt u meerdere pijpleidingen tegelijk uitvoeren, waardoor de efficiëntie van de implementatie voor klanten van Adobe Managed Services (AMS) wordt verbeterd. De **Looppas geselecteerde** eigenschap laat u veelvoudige pijpleidingen selecteren en hen teweegbrengen om meteen te lopen. Het vermindert de handmatige inspanning van het moeten pijpleidingen individueel in werking stellen en optimaliseert bouw en plaatsingswerkschema&#39;s.
+
+**om veelvoudige pijpleidingen in werking te stellen:**
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Van het linkerzijmenu, klik ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pijpleidingen**.
+1. In de lijst op de **pagina van de Pijpleiding**, selecteer checkboxes naast de pijpleidingen u wilt lopen.
+Indien noodzakelijk, klik ![ pictogram van de Filter, trechter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** aan soortpijpleidingen door milieu, of opgesteld codetype, of allebei.
+1. Dichtbij de hoger-juiste hoek van de pagina, klik **Geselecteerde Looppas (x)**.
+1. In de **Looppas geselecteerde pijpleidingen (x)** dialoogdoos, klik **Looppas (x)**.
+
+   De **looppas** knoop wijst op het aantal pijpleidingen die kunnen te werk gaan. U hebt bijvoorbeeld vier pijpleidingen geselecteerd, maar er is al een pijpleiding actief. Of een omgeving die is gekoppeld aan een geselecteerde pijpleiding bestaat niet meer. In dergelijke gevallen wordt het systeem dienovereenkomstig aangepast. De knop wordt bijgewerkt naar &quot;Uitvoeren (3)&quot; om aan te geven dat drie pijpleidingen kunnen doorgaan.
+
+1. De pijpleidingen beginnen lopend, en hun status wordt bijgewerkt in de **lijst van Pijpleidingen**.
 
 ## Pijpleidingen bewerken {#editing-pipelines}
 
