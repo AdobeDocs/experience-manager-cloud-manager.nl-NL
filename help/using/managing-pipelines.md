@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen beheert, inclusief het uitvoeren, bewerken en verwijderen ervan.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
+source-git-commit: d4a7d9ab72947b97b0dabb2f822ef268e4972685
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Met Cloud Manager kunt u meerdere pijpleidingen tegelijk uitvoeren, waardoor de 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 1. Van het linkerzijmenu, klik ![ pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pijpleidingen**.
 1. In de lijst op de **pagina van de Pijpleiding**, selecteer checkboxes naast de pijpleidingen u wilt lopen.
-Indien noodzakelijk, klik ![ pictogram van de Filter, trechter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** aan soortpijpleidingen door milieu, of opgesteld codetype, of allebei.
+Indien noodzakelijk, klik ![ pictogram van de Filter, trechter ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filters** aan soortpijpleidingen door naam, of milieu, of opgesteld codetype, of een combinatie van alle drie.
 1. Dichtbij de hoger-juiste hoek van de pagina, klik **Geselecteerde Looppas (x)**.
 1. In de **Looppas geselecteerde pijpleidingen (x)** dialoogdoos, klik **Looppas (x)**.
 
