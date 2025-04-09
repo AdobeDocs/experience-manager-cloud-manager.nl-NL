@@ -1,10 +1,10 @@
 ---
-title: Aangepaste regels voor codekwaliteit
-description: Ontdek de specificaties van de aangepaste codecwaliteitsregels die door Cloud Manager worden uitgevoerd tijdens het testen van de codekwaliteit. Deze regels zijn gebaseerd op best practices van AEM Engineering.
+title: Aangepaste codekwaliteitsregels
+description: Ontdek de specifieke kenmerken van de aangepaste codekwaliteitsregels die door Cloud Manager worden uitgevoerd tijdens het testen van de codekwaliteit. Deze regels zijn gebaseerd op best practices van AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
+source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manage
 >
 >De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/) om over zijn concepten en kwaliteitsregels te leren.[
 
-Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege eigendomsgegevens van Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
+De volledige SonarQube-regels kunnen niet worden gedownload vanwege bedrijfseigen informatie van Adobe. U kunt de volledige lijst met regels [downloaden via deze link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
 >[!IMPORTANT]
 >
@@ -106,9 +106,9 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 ### HTTP-aanvragen moeten altijd socket- en verbindingstime-outs hebben {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 * **Sleutel**: CQRules:ConnectionTimeoutMechanism
-* **Type**: Bug
+* **Type**: Insect
 * **Ernst**: Kritiek
-* **sinds**: Versie 2018.6.0
+* **Sinds**: versie 2018.6.0
 
 Wanneer het uitvoeren van HTTP- verzoeken van binnen een toepassing van AEM, is het kritiek dat juiste onderbrekingen worden gevormd om onnodig draadverbruik te vermijden. Helaas hebben zowel de standaard HTTP Client van Java™, `java.net.HttpUrlConnection`, als de wijd gebruikte cliënt van de Componenten van Apache HTTP geen standaardonderbreking. Daarom moeten onderbrekingen uitdrukkelijk worden gevormd. Als beste praktijken, zouden deze onderbrekingen niet meer dan 60 seconden moeten zijn.
 
@@ -240,14 +240,14 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Afgehandelde uitzonderingen zouden moeten worden geregistreerd of geworpen, niet allebei {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Gevangen uitzonderingen moeten worden geregistreerd of gegooid, niet beide {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-* **Sleutel**: CQRules:CQBP-44-CatchAndOrLogOrThrow
-* **Type**: `Code Smell`
-* **Ernst**: Klein
-* **sinds**: Versie 2018.4.0
+* **Sleutel**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
+* **Soort**: `Code Smell`
+* **Ernst**: gering
+* **Sinds**: versie 2018.4.0
 
-In het algemeen, zou een uitzondering precies één keer moeten worden geregistreerd. Het registreren van uitzonderingen kan veelvoudige tijden verwarring veroorzaken omdat het onduidelijk is hoeveel keer een uitzondering voorkwam. Het meest gangbare patroon dat tot dit probleem leidt, is het registreren en het werpen van een gevangen uitzondering.
+Over het algemeen moet een uitzondering precies één keer worden geregistreerd. Het registreren van uitzonderingen kan veelvoudige tijden verwarring veroorzaken omdat het onduidelijk is hoeveel keer een uitzondering voorkwam. Het meest gangbare patroon dat tot dit probleem leidt, is het registreren en het werpen van een gevangen uitzondering.
 
 #### Niet-compatibele code {#non-compliant-code-6}
 
@@ -343,7 +343,7 @@ public void doGet() throws Exception {
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
-Als beste praktijken, zouden de logboekberichten contextuele informatie over moeten verstrekken waar in de toepassing een uitzondering is voorgekomen. Terwijl de context ook door stapelsporen te gebruiken kan worden bepaald, over het algemeen zal het logboekbericht gemakkelijker zijn te lezen en te begrijpen. Dientengevolge, wanneer het registreren van een uitzondering, is het een slechte praktijk om het bericht van de uitzondering als logboekbericht te gebruiken. Het uitzonderingsbericht zou moeten specificeren wat fout ging. In tegenstelling, zou het logboekbericht de lezer over moeten informeren wat de toepassing deed toen de uitzondering voorkwam. Het uitzonderingsbericht wordt nog geregistreerd. Door uw eigen bericht te specificeren, zijn de logboeken gemakkelijker te begrijpen.
+Als beste praktijken, zouden de logboekberichten contextuele informatie over moeten verstrekken waar in de toepassing een uitzondering is voorgekomen. Hoewel de context ook kan worden bepaald door gebruik te maken van stacktraces, zal het logboekbericht over het algemeen gemakkelijker te lezen en te begrijpen zijn. Als gevolg hiervan is het een slechte gewoonte om bij het registreren van een uitzondering het bericht van de uitzondering als logboekbericht te gebruiken. In het uitzonderingsbericht moet worden beschreven wat er mis is gegaan. Het logboekbericht daarentegen moet de lezer informeren over wat de toepassing aan het doen was toen de uitzondering zich voordeed. Het uitzonderingsbericht wordt nog steeds geregistreerd. Door uw eigen bericht op te geven, zijn de logboeken gemakkelijker te begrijpen.
 
 #### Niet-compatibele code {#non-compliant-code-9}
 
@@ -525,10 +525,10 @@ In de volgende sectie worden de OakPAL-controles beschreven die door Cloud Manag
 >
 >OakPAL is een framework dat inhoudspakketten valideert met behulp van een zelfstandige Oak-opslagplaats. Een AEM-partner en winnaar van de AEM Rock Star North America-prijs van 2019 ontwikkelden deze prijs.
 
-### Klanten moeten product-API&#39;s die met @ProviderType zijn geannoteerd, niet implementeren of uitbreiden {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Klanten mogen geen product-API&#39;s implementeren of uitbreiden die zijn geannoteerd met @ProviderType {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
 * **Sleutel**: CQBP-84
-* **Type**: Bug
+* **Type**: Insect
 * **Ernst**: Kritiek
 * **sinds**: Versie 2018.7.0
 
@@ -648,9 +648,9 @@ AEM Components with a Classic UI dialog should also have a Touch UI dialog for o
 * Een component met een klassieke UI-ontwerpdialoogvenster (dat wil zeggen een `design_dialog` -knooppunt) moet een corresponderend dialoogvenster voor het aanraakinterface-ontwerp hebben (dat wil zeggen een `cq:design_dialog` onderliggende node).
 * Een component met zowel een dialoogvenster voor klassieke gebruikersinterface als een dialoogvenster voor klassieke gebruikersinterface moet zowel een corresponderend dialoogvenster voor aanraakinterface als een overeenkomstig dialoogvenster voor aanraakgebruikersinterface hebben.
 
-De documentatie van de Hulpmiddelen van de Modernisering van AEM verstrekt details en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Zie [ de documentatie van Hulpmiddelen van de Modernisering van AEM ](https://opensource.adobe.com/aem-modernize-tools/) voor meer details.
+De documentatie van de Hulpmiddelen van de Modernisering van AEM verstrekt details en tooling voor hoe te om componenten van Klassieke UI in Aanraakinterface om te zetten. Zie [de documentatie](https://opensource.adobe.com/aem-modernize-tools/) van AEM Modernization Tools voor meer informatie.
 
-### De omgekeerde replicatiemiddelen zouden niet moeten worden gebruikt {#oakpal-reverse-replication}
+### Reverse replicatiemiddelen mogen niet worden gebruikt {#oakpal-reverse-replication}
 
 * **Sleutel**: ReverseReplication
 * **Type**: `Code Smell` / de Verenigbaarheid van Cloud Service
@@ -883,14 +883,33 @@ De AEM Cloud-service staat het maken van indexdefinities met spaties niet toe.
 
 De AEM Cloud-service staat het maken van indexdefinities met eigenschappen van haystack niet toe.
 
-### Configuratie van indexeringsdefinities mag de eigenschap niet bevatten: async-previous {#oakpal-indexing-async-previous-property}
+### Configuratie van indexeringsdefinities mag de eigenschap niet bevatten: async-previous {#oakpal-indexing-unsupported-async-properties}
 
-* **Sleutel**: IndexAsyncPreviousCheck
+* **Sleutel**: IndexUnsupportedAsyncPropertiesCheck
 * **Type**: Verbetering
 * **Ernst**: Klein
-* **sinds**: Versie 2025.2.0
+* **sinds**: Versie 2025.3.0
 
-AEM Cloud Service staat het maken van indexeringsdefinities met async-vorige eigenschap niet toe.
+De AEM Cloud Service staat het maken van indexeringsdefinities met niet-ondersteunde async-eigenschappen niet toe.
+
+### Configuratie van indexeringsdefinities mag niet dezelfde tag hebben in meerdere indexen {#oakpal-indexing-same-tag-multiple-indexes}
+
+* **Sleutel**: SameTagInMultipleIndexes
+* **Type**: Verbetering
+* **Ernst**: Klein
+* **sinds**: Versie 2025.3.0
+
+De AEM Cloud-service staat het maken van indexdefinities met dezelfde tag in meerdere indexen niet toe.
+
+### Configuratie van indexeringsdefinities mag geen modusvervanging voor verboden paden bevatten {#oakpal-xml-mode-analysis}
+
+* **Sleutel**: FilterXmlModeAnalysis
+* **Type**: Verbetering
+* **Ernst**: Belangrijk
+* **sinds**: Versie 2025.4.0
+
+Het gebruik van de modus &quot;Vervangen&quot; in de bestandsvault is niet toegestaan voor paden onder /content; deze mag niet worden gebruikt voor paden onder /etc en /var.
+De modus &quot;replace&quot; vervangt alle bestaande inhoud in de opslagplaats door de inhoud in het inhoudspakket. Pakketten die deze actie activeren, mogen geen deel uitmaken van pakketten die via CloudManager worden geïmplementeerd.
 
 ## Dispatcher-optimalisatiefunctie {#dispatcher-optimization-tool-rules}
 
