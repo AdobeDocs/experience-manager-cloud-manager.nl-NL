@@ -2,7 +2,7 @@
 title: Externe opslagplaatsen toevoegen in Cloud Manager - Vroege adopter
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a63d996b283396efa139bf567c40a51e6f46d9bc
+source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
@@ -39,7 +39,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **Mijn console van Programma&#39;s**, selecteer het programma waaraan u een externe bewaarplaats wilt verbinden.
+1. Op de **[Mijn console van Programma&#39;s](/help/getting-started/navigation.md#my-programs-console)**, selecteer het programma waaraan u een externe bewaarplaats wilt verbinden.
 
 1. In het zijmenu, onder **Programma**, klik ![ het overzichtspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
 
@@ -121,7 +121,7 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderne
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
-1. Op de **Mijn console van Programma&#39;s**, selecteer het programma waaraan u een webhaak voor een externe bewaarplaats van het Git wilt vormen.
+1. Op de **[Mijn console van Programma&#39;s](/help/getting-started/navigation.md#my-programs-console)**, selecteer het programma waaraan u een webhaak voor een externe bewaarplaats van het Git wilt vormen.
 
 1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren.
 
