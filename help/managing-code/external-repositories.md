@@ -1,15 +1,16 @@
 ---
-title: Externe opslagplaatsen toevoegen in Cloud Manager - Vroege adopter
+title: Externe opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
+badge: label="Vroege adoptie" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
+source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1867'
 ht-degree: 0%
 
 ---
 
-# Externe opslagplaatsen toevoegen in Cloud Manager - Vroege adopter {#external-repositories}
+# Externe opslagruimten toevoegen in Cloud Manager {#external-repositories}
 
 Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 

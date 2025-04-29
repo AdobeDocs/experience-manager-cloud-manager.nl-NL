@@ -1,21 +1,22 @@
 ---
-title: Pijpleidingen met alleen fase en alleen op basis van profielen - Vroege adopter
+title: Alleen werkgebied- en alleen-prod-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
+badge: label="Vroege adoptie" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
 
-# Pijpleidingen met alleen fase en productie (Vroege aannemer) {#stage-prod-only}
+# Pijpleidingen die uitsluitend bestemd zijn voor de productie van fase {#stage-prod-only}
 
 Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/2024/2024-8-0.md).
+>Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Overzicht {#overview}
 
