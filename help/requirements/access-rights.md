@@ -18,7 +18,7 @@ Meer informatie over uw Adobe ID en hoe u deze gebruikt om toegang te krijgen to
 
 Als onderdeel van het instapproces maakt Adobe een organisatie-id voor uw bedrijf in het Adobe Identity Management System (IMS). IMS is waar al uw gebruikers en hun toestemmingen worden beheerd. Elke gebruiker, die lid van deze organisatie moet zijn, en toegang tot om het even welke [!UICONTROL Experience Cloud] diensten wordt verleend, moet hun eigen Adobe ID hebben.
 
-Om met een Adobe ID begonnen te worden, zie [ de Types van Identiteit van de Adobe ](https://helpx.adobe.com/enterprise/using/identity.html) voor gedetailleerde instructies op hoe te om Adobe ID te verkrijgen gebruikend één van de beschikbare identiteitstypes.
+Om met een Adobe ID begonnen te worden, zie [ de Types van Identiteit van de Adobe ](https://helpx.adobe.com/nl/enterprise/using/identity.html) voor gedetailleerde instructies op hoe te om Adobe ID te verkrijgen gebruikend één van de beschikbare identiteitstypes.
 
 ### Gebruikers en rollen {#users-and-roles}
 

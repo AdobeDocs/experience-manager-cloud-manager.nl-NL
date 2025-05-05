@@ -340,4 +340,4 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen worden on
 
 ## Ontwikkelen van uw code op basis van best practices {#develop-your-code-based-on-best-practices}
 
-De Techniek van de Adobe en de Consulting teams hebben a [ uitvoerige reeks beste praktijken voor AEM ontwikkelaars ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices) ontwikkeld.
+De Techniek van de Adobe en de Consulting teams hebben a [ uitvoerige reeks beste praktijken voor AEM ontwikkelaars ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices) ontwikkeld.

@@ -18,7 +18,7 @@ ht-degree: 2%
 >
 >In deze documentatie worden op rollen gebaseerde machtigingen voor Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De gelijkwaardige documentatie voor AEM as a Cloud Service kan in het document [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions) in de documentatie van AEM as a Cloud Service worden gevonden.
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in het document [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions) in de documentatie van AEM as a Cloud Service worden gevonden.
 
 ## Gebruikersrollen {#user-roles}
 

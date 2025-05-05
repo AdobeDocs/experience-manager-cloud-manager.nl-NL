@@ -25,7 +25,7 @@ Het verslag dient als een beoordeling van de ontwikkelingsinspanningen die gepaa
 
 >[!NOTE]
 >
->Om meer over de patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector) beoordelen.
+>Om meer over de patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector) beoordelen.
 
 ## Voer het evaluatierapport uit {#running}
 

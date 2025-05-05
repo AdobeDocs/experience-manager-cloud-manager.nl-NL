@@ -172,8 +172,8 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 * Het exemplaar van de inhoud kan niet worden uitgevoerd als er om het even welke actieve verrichting die op of het bestemmings of bronmilieu zoals een pijpleiding CI/CD loopt.
 * Kopie van inhoud mag niet worden gebruikt als een kloon- of mirroring-gereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Een inhoudkopie kan niet worden gepauzeerd of geannuleerd nadat deze is gestart.
-* Met Inhoud kopiëren worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gedupliceerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
-* [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
+* Met Inhoud kopiëren worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gedupliceerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
+* [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
 * De regio&#39;s van de doelomgeving moeten dezelfde zijn als of een deel van de bronomgeving.
 
 ## Bekende problemen met Content Copy {#known-issues}

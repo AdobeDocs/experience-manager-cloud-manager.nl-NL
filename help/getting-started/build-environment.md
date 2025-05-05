@@ -149,17 +149,17 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 #### Dispatcher {#dispatcher}
 
-Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
+Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructies.
 
 >[!TIP]
 >
->Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
+>Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
 
 #### OSGi-configuraties {#osgi}
 
-Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
+Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
 
 ### Pipetvariabelen {#pipeline-variables}
 

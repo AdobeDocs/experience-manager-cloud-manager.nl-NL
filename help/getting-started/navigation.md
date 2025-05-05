@@ -70,7 +70,7 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 ![ de toolbar van het Programma ](assets/program-toolbar.png)
 
 1. De programmakiezer wordt geopend in een vervolgkeuzelijst waar u snel andere programma&#39;s kunt selecteren of contextgerichte acties kunt uitvoeren, zoals het maken van een nieuw programma
-1. De het worden begonnen verbinding geeft u toegang tot [ op het instappen documentatiereis ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager op te halen.
+1. De het worden begonnen verbinding geeft u toegang tot [ op het instappen documentatiereis ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager op te halen.
 De instapreis is ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS) en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde.
 1. Met de knop Handeling kunt u contextgerichte acties uitvoeren, zoals het maken van een nieuw programma.
 
@@ -114,7 +114,7 @@ Een kaart of rij in een tabel vertegenwoordigt elk programma en biedt een overzi
 * Programmanaam
 * Servicetype:
    * **Experience Manager** voor de programma&#39;s van AMS
-   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
+   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home)
 * Status
 * Gevormde oplossingen
 * Aanmaakdatum

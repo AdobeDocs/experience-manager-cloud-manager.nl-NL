@@ -121,22 +121,22 @@ In de volgende tabel staan de gezondheidscontroles.
 
 | Naam | Implementatie van gezondheidscontrole | Categorie |
 |---|---|---|
-| Gereedheid van API voor bevestiging van de firewall voor deserialisatie is acceptabel. | [ Readiness van de Firewall van de Bevestiging API van Deserialization ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| De firewall voor deserialization is functioneel. | [ Functionele Firewall Deserialization ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| De firewall voor deserialization wordt geladen. | [ Geladen Firewall Deserialization ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| `AuthorizableNodeName` -implementatie stelt geen machtigbare id beschikbaar in de knooppuntnaam/het pad. | [ Vergunnbare Generatie van de Naam van de Knoop ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) | Kritiek |
-| Standaardwachtwoorden zijn gewijzigd. | [ Standaard Login Rekeningen ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Kritiek |
+| Gereedheid van API voor bevestiging van de firewall voor deserialisatie is acceptabel. | [ Readiness van de Firewall van de Bevestiging API van Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| De firewall voor deserialization is functioneel. | [ Functionele Firewall Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| De firewall voor deserialization wordt geladen. | [ Geladen Firewall Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| `AuthorizableNodeName` -implementatie stelt geen machtigbare id beschikbaar in de knooppuntnaam/het pad. | [ Vergunnbare Generatie van de Naam van de Knoop ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Kritiek |
+| Standaardwachtwoorden zijn gewijzigd. | [ Standaard Login Rekeningen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Kritiek |
 | Standaard GET-servlet wordt beveiligd tegen DOS-aanvallen. | Sling Get Servlet | Kritiek |
 | De Sling JavaScript-handler wordt op de juiste wijze geconfigureerd. | Sling JavaScript Handler | Kritiek |
 | De Sling JSP manager van het Manuscript wordt gevormd geschikt. | JSP-scripthandler afspelen | Kritiek |
 | SSL is correct geconfigureerd. | SSL-configuratie | Kritiek |
 | Er is geen duidelijk onveilig beleid voor gebruikersprofielen gevonden. | Standaardtoegang gebruikersprofiel | Kritiek |
-| Het filter van de Verwijzer van de Verkoop wordt gevormd om aanvallen te verhinderen CSRF. | [ het Verkopen Filter van de Verwijzer ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) | Belangrijk |
+| Het filter van de Verwijzer van de Verkoop wordt gevormd om aanvallen te verhinderen CSRF. | [ het Verkopen Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Belangrijk |
 | De Adobe Granite HTML Library Manager is op de juiste wijze geconfigureerd. | Config. van Bibliotheekbeheer CQ HTML | Belangrijk |
 | De CRXDE-ondersteuningspakket is uitgeschakeld. | CRXDE-ondersteuning | Belangrijk |
 | Sling DavEx-bundel en -servlet zijn uitgeschakeld. | DavEx Health Check | Belangrijk |
 | Voorbeeldinhoud is niet geïnstalleerd. | Voorbeelden van inhoudspakketten | Belangrijk |
-| Zowel het WCM-aanvraagfilter als het WCM-foutopsporingsfilter zijn uitgeschakeld. | [ Configuratie van Filters WCM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Belangrijk |
+| Zowel het WCM-aanvraagfilter als het WCM-foutopsporingsfilter zijn uitgeschakeld. | [ Configuratie van Filters WCM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Belangrijk |
 | De verkoop WebDAV bundel en servlet worden gevormd geschikt. | WebDAV Health Check | Belangrijk |
 | De webserver is geconfigureerd om te voorkomen dat wordt geklikt. | Webserverconfiguratie | Belangrijk |
 | Replicatie maakt geen gebruik van de gebruiker `admin` . | Replicatie- en transportgebruikers | Info |

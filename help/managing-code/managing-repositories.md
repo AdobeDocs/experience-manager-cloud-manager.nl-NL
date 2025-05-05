@@ -75,7 +75,7 @@ Het **venster van Info van de Bewaarplaats** opent met de details. Voor meer inf
 
 In **AEM Cloud Manager**, de **Tak van de Controle / creeer de actie van het Project** dient twee doeleinden, afhankelijk van de huidige staat van de bewaarplaats.
 
-* Als de bewaarplaats nieuw wordt gecreeerd, produceert deze actie een steekproefproject gebruikend [ het AEM projectarchetype ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Als de bewaarplaats nieuw wordt gecreeerd, produceert deze actie een steekproefproject gebruikend [ het AEM projectarchetype ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Als het voorbeeldproject reeds in de bewaarplaats wordt gecreeerd, controleert de actie de status van de bewaarplaats en zijn takken, die terugkoppelen op of het steekproefproject reeds bestaat.
 
   ![ de bijwerkingsacties van de Controle ](assets/check-branches.png)

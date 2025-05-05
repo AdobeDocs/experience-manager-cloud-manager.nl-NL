@@ -110,11 +110,11 @@ Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de pla
 
 1. Elk AEM artefact wordt opgesteld aan elke AEM instantie via de Manager APIs van het Pakket, met pakketgebiedsdelen die de plaatsingsorde bepalen.
 
-   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [ Manager van het Pakket ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
-   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
+   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
 
 1. Het Dispatcher-artefact wordt als volgt op elke Dispatcher geïmplementeerd:
 

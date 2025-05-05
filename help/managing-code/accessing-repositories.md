@@ -60,4 +60,4 @@ De **eigenschap van Info van de Reactie van de Toegang** is ook beschikbaar bij 
 
 U kunt een toegangswachtwoord op elk ogenblik intrekken.
 
-Om dit te doen, [ creeer een steunkaartje voor dit verzoek ](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support). Het kaartje wordt met hoge prioriteit behandeld en wordt gewoonlijk binnen één dag ingetrokken.
+Om dit te doen, [ creeer een steunkaartje voor dit verzoek ](https://experienceleague.adobe.com/nl?support-solution=Experience+Manager&amp;support-tab=home#support). Het kaartje wordt met hoge prioriteit behandeld en wordt gewoonlijk binnen één dag ingetrokken.
