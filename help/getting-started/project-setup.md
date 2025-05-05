@@ -116,7 +116,7 @@ Artefacten van een met een wachtwoord beveiligde Maven-opslagplaats moeten voorz
 >
 >Artefacten van met een wachtwoord beveiligde Maven-repositories mogen alleen in zeldzame gevallen worden gebruikt en voor code die niet aan AEM is gekoppeld.
 
-Om een wachtwoord-beschermde Gemaakt bewaarplaats van Cloud Manager te gebruiken, specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [ Variabele van de Pijpleiding ](/help/getting-started/build-environment.md#pipeline-variables) en verwijs dan dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de bewaarplaats van het Git. Dit dossier volgt het ](https://maven.apache.org/settings.html) schema van het Dossier van Montages 0} Maven.[
+Om een wachtwoord-beschermde Gemaakt bewaarplaats van Cloud Manager te gebruiken, specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [ Variabele van de Pijpleiding ](/help/getting-started/build-environment.md#pipeline-variables) en verwijs dan dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de bewaarplaats van het Git. Dit dossier volgt het [&#128279;](https://maven.apache.org/settings.html) schema van het Dossier van Montages 0&rbrace; Maven.
 
 Wanneer het Cloud Manager-constructieproces start, wordt het element `<servers>` in dit bestand samengevoegd met het standaardbestand van `settings.xml` dat door Cloud Manager wordt geleverd. Aangepaste servers mogen geen server-id&#39;s gebruiken die beginnen met `adobe` en `cloud-manager` . Dergelijke id&#39;s worden als gereserveerd beschouwd. Cloud Manager spiegelt alleen de server-id&#39;s die overeenkomen met een van de opgegeven voorvoegsels of de standaard-id `central` .
 

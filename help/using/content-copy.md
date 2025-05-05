@@ -56,7 +56,7 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wan
 
    ![ Inhoudsreeksen ](/help/assets/content-sets.png)
 
-1. In het **`Add Content Set`** dialoogvakje, op het **Details** lusje, in de **Naam** en **6} gebieden van de Beschrijving, typ een naam en facultatieve beschrijving voor de geplaatste inhoud, dan klik** verdergaan **.**
+1. In het **`Add Content Set`** dialoogvakje, op het **Details** lusje, in de **Naam** en **6&rbrace; gebieden van de Beschrijving, typ een naam en facultatieve beschrijving voor de geplaatste inhoud, dan klik** verdergaan **.**
 
    ![ Inhoud plaatste details ](/help/assets/add-content-set-details.png)
 
@@ -125,7 +125,7 @@ Een omgeving kan niet beschikbaar zijn voor selectie als een van de volgende voo
 
    ![ exemplaar van de Inhoud ](/help/assets/copy-content.png)
 
-1. In het **de dialoogvakje van de inhoud van het 0} Exemplaar {, selecteer het** milieu van Source **en het** milieu van de Bestemming **voor uw actie van het inhoudsexemplaar.**
+1. In het **de dialoogvakje van de inhoud van het 0&rbrace; Exemplaar &lbrace;, selecteer het** milieu van Source **en het** milieu van de Bestemming **voor uw actie van het inhoudsexemplaar.**
 
    * Regio&#39;s in een doelomgeving moeten een subset zijn van regio&#39;s in een bronomgeving.
    * Compatibiliteitsproblemen worden gecontroleerd voordat een handeling voor het kopiëren van inhoud wordt uitgevoerd. Wanneer u het **milieu van de Bestemming** selecteert, bevestigt het systeem automatisch de bron en bestemmingsmilieu&#39;s. Als de validatie mislukt, stopt het proces en wordt een foutbericht weergegeven in het dialoogvenster waarin de oorzaak van de fout wordt uitgelegd.

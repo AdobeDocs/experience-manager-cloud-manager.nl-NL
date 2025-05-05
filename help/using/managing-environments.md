@@ -16,7 +16,7 @@ Leer hoe u Cloud Manager kunt gebruiken om uw omgevingen te beheren.
 
 ## Overzicht pagina {#overview-page}
 
-De **pagina van het Overzicht** van Cloud Manager omvat de **3} tegel van Milieu&#39;s {die van alle beheerde AEM een lijst maakt.**
+De **pagina van het Overzicht** van Cloud Manager omvat de **3&rbrace; tegel van Milieu&#39;s &lbrace;die van alle beheerde AEM een lijst maakt.**
 
 In elk van de vermelde omgevingen wordt de bijbehorende status weergegeven.
 

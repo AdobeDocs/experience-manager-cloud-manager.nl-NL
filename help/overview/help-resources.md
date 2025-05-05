@@ -14,6 +14,6 @@ ht-degree: 0%
 
 Neem contact op met uw Adobe Customer Success Engineer (CSE) van Managed Services voor hulp met [!UICONTROL Cloud Manager] . Ze kunnen u laten weten of ze uw probleem kunnen oplossen of dat u een ondersteuningsticket moet indienen bij de klantenservice van de Adobe.
 
-De Steun van de Onderneming van de toegang ](https://experienceleague.adobe.com/?support-tab=home#support) [ om steunkaartjes tot stand te brengen.
+De Steun van de Onderneming van de toegang [&#128279;](https://experienceleague.adobe.com/?support-tab=home#support)  om steunkaartjes tot stand te brengen.
 
 Zie [ Toegang tot het Portaal van de Steun van de AEM ](https://helpx.adobe.com/enterprise/using/support-and-expert-services.html) voor meer informatie bij het creëren van steunkaartjes met de Zorg van de Klant van de Adobe.

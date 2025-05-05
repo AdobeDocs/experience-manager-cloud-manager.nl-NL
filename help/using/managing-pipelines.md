@@ -142,7 +142,7 @@ U kunt details van een pijpleiding slechts bekijken die loopt of minstens eens i
 
 ![ details van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-Van hier, kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer informatie.
+Van hier, kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie de plaatsing van de code van het document [&#128279;](/help/using/code-deployment.md) voor meer informatie.
 
 Alle stappen in een pijpleidingsuitvoering worden getoond met degenen die nog niet uit grijs begonnen. De voltooide stappen tonen hun duur.
 
@@ -158,6 +158,6 @@ Als uw pijpleiding a **Code Scanning** stap bevatte, die kwesties opriep, kunt u
 
 ![ de kwaliteitskwesties van de Code ](assets/managing-pipelines-code-quality-issues.png)
 
-De kolom van de Plaats van het Dossier van het A **Project** is beschikbaar in het Csv- dossier om op de plaats van de beledigende code te wijzen. Deze kolom is de project-relatieve weg, terwijl de **kolom van de Plaats van het 0} Dossier {wordt geproduceerd.**
+De kolom van de Plaats van het Dossier van het A **Project** is beschikbaar in het Csv- dossier om op de plaats van de beledigende code te wijzen. Deze kolom is de project-relatieve weg, terwijl de **kolom van de Plaats van het 0&rbrace; Dossier &lbrace;wordt geproduceerd.**
 
 ![ van het de aftasten van de code van het Project details ](assets/managing-pipelines-code-quality-details.png)

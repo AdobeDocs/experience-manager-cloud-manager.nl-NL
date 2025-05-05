@@ -16,7 +16,7 @@ Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te
 
 ## Overzicht {#overview}
 
-Gebruikend de **tegel van de Montages van de Pijpleiding** {in [!UICONTROL Cloud Manager] kunt u twee verschillende soorten pijpleidingen tot stand brengen.
+Gebruikend de **tegel van de Montages van de Pijpleiding** &lbrace;in [!UICONTROL Cloud Manager] kunt u twee verschillende soorten pijpleidingen tot stand brengen.
 
 * **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode van uw bewaarplaats van het Git helemaal in productie te nemen.
 * **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
@@ -45,7 +45,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
 
    ![ voeg een productiepijpleiding ](/help/assets/configure-pipelines/add-prod1.png) toe
 
-1. **voeg de dialoogdoos van de Pijpleiding van de Productie toe** aan het **3} lusje van de Configuratie {opent waar een aantal opties voor uw pijpleiding moet worden bepaald.** Deze opties zijn gegroepeerd in inklapbare secties en worden in de volgende stappen beschreven.
+1. **voeg de dialoogdoos van de Pijpleiding van de Productie toe** aan het **3&rbrace; lusje van de Configuratie &lbrace;opent waar een aantal opties voor uw pijpleiding moet worden bepaald.** Deze opties zijn gegroepeerd in inklapbare secties en worden in de volgende stappen beschreven.
 
    1. Verstrek een beschrijvende naam voor uw pijpleiding op het **gebied van de Naam van de Pijpleiding**.
 
@@ -115,7 +115,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
 
            >[!TIP]
            >
-           >Zie ](/help/using/code-deployment.md) de Plaatsing van de Code van 0} om te leren hoe te om het plaatsingsprogramma te plaatsen of de pijpleiding onmiddellijk uit te voeren.[
+           >Zie [&#128279;](/help/using/code-deployment.md) de Plaatsing van de Code van 0&rbrace; om te leren hoe te om het plaatsingsprogramma te plaatsen of de pijpleiding onmiddellijk uit te voeren.
 
             * **Het Toezicht CSE van het Gebruik** - als deze optie wordt geselecteerd, is een CSE (de Ingenieur van het Succes van de Klant) betrokken om de daadwerkelijke plaatsing te beginnen. Wanneer het creëren van of het uitgeven van een pijpleiding wanneer deze optie wordt toegelaten, heeft de **rol van de Manager van de Plaatsing** de volgende opties.
 

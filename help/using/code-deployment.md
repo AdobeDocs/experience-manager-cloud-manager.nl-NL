@@ -36,7 +36,7 @@ U kunt de stappen van diverse plaatsingsprocessen herzien door logboeken te beki
 
 ## Implementatiestappen {#deployment-steps}
 
-Een aantal acties komt tijdens elke stap van de plaatsing voor, die in deze sectie wordt beschreven. Zie {de Details van het Proces van de Plaatsing 0} ](#deployment-process) voor technische details van hoe de code zelf achter-de-scènes wordt opgesteld.[
+Een aantal acties komt tijdens elke stap van de plaatsing voor, die in deze sectie wordt beschreven. Zie {de Details van het Proces van de Plaatsing 0} [&#128279;](#deployment-process) voor technische details van hoe de code zelf achter-de-scènes wordt opgesteld.
 
 ### Implementatiestap van werkgebied {#stage-deployment}
 
@@ -66,6 +66,7 @@ De **stap van de Plaatsing van de Productie** omvat de volgende acties:
 * **Plaatsing van de Productie van het Programma**
    * Deze optie wordt toegelaten terwijl het vormen van de pijpleiding.
    * De geplande datum en tijd worden gespecificeerd in termen van de tijdzone van de gebruiker.
+
      ![ plaatsing van het Programma ](/help/assets/Production_Deployment1.png)
 * **CSE Steun** (als toegelaten)
 * **opstellen aan Productie**

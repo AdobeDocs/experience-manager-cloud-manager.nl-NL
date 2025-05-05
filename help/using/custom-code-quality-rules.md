@@ -16,7 +16,7 @@ Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manage
 
 >[!NOTE]
 >
->De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/) om over zijn concepten en kwaliteitsregels te leren.[
+>De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube [&#128279;](https://docs.sonarsource.com/sonarqube-server/latest/) om over zijn concepten en kwaliteitsregels te leren.
 
 De volledige SonarQube-regels kunnen niet worden gedownload vanwege bedrijfseigen informatie van Adobe. U kunt de volledige lijst met regels [downloaden via deze link](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 

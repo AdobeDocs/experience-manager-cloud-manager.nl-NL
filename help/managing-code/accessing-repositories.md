@@ -42,7 +42,7 @@ De **eigenschap van Info van de Reactie van de Toegang** is zichtbaar aan gebrui
 
 1. In de bevestigingsdialoogdoos, produceert de uitgezochte **wachtwoord**.
 
-1. Aan het recht van het **1} gebied van het Wachtwoord {, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om het wachtwoord aan het klembord te kopiëren.**
+1. Aan het recht van het **1&rbrace; gebied van het Wachtwoord &lbrace;, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) om het wachtwoord aan het klembord te kopiëren.**
 
    * Als u een wachtwoord genereert, wordt het vorige wachtwoord ongeldig.
    * Cloud Manager slaat het wachtwoord niet op. Het is uw verantwoordelijkheid om het wachtwoord veilig op te slaan.

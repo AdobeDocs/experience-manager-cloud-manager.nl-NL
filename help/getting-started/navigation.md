@@ -79,7 +79,7 @@ De instapreis is ontworpen voor Cloud Manager op Adobe Experience Manager as a C
 De vraag-aan-actie en statistieksectie verstrekt gezamenlijke gegevens voor uw organisatie, bijvoorbeeld, als u met succes uw programma&#39;s hebt opgezet, zouden de statistieken van uw activiteiten in de afgelopen 90 dagen kunnen tonen, die omvatten:
 
 * Aantal [ plaatsingen ](/help/using/code-deployment.md)
-* Aantal ](/help/using/code-quality-testing.md) geïdentificeerde kwesties van de 0} codekwaliteit[
+* Aantal [&#128279;](/help/using/code-quality-testing.md) geïdentificeerde kwesties van de 0&rbrace; codekwaliteit
 * Aantal builds
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.

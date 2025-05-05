@@ -42,7 +42,7 @@ ht-degree: 8%
       + [De Build-omgeving](/help/getting-started/build-environment.md)
    + [Branches configureren](/help/getting-started/configuring-branches.md)
    + [Dispatcher-configuraties](/help/getting-started/dispatcher-configurations.md)
-+ {#using} gebruiken
++ gebruiken{#using}
    + CI/CD Pipelines {#pipelines}
       + [Een productiepijpleiding configureren](/help/using/production-pipelines.md)
       + [Een niet-productiepijplijn configureren](/help/using/non-production-pipelines.md)

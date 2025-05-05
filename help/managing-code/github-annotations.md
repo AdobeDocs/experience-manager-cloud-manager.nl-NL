@@ -20,7 +20,7 @@ Als u [ privé bewaarplaatsen ](private-repositories.md) voor uw programma van C
 
 ![ Voorbeeld van GitHub controleannotaties ](assets/github-check-annotations.png)
 
-{de kwaliteit van de 0} Code ](/help/using/code-quality-testing.md) kwesties die door [ worden ontdekt SonarQube ](/help/using/custom-code-quality-rules.md) zijn duidelijk vermeld.[
+{de kwaliteit van de 0} Code [&#128279;](/help/using/code-quality-testing.md) kwesties die door [ worden ontdekt SonarQube ](/help/using/custom-code-quality-rules.md) zijn duidelijk vermeld.
 
 ![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example.png)
 
