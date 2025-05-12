@@ -7,10 +7,10 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -36,14 +36,14 @@ ht-degree: 8%
    + [Eerste aanmelding](/help/getting-started/first-time-login.md)
    + [Navigatie](/help/getting-started/navigation.md)
    + [Programma instellen](/help/getting-started/program-setup.md)
-   + AEM-project maken {#project-creation}
+   + AEM Project maken {#project-creation}
       + [De wizard gebruiken](/help/getting-started/using-the-wizard.md)
       + [Projectinstelling](/help/getting-started/project-setup.md)
       + [De Build-omgeving](/help/getting-started/build-environment.md)
    + [Branches configureren](/help/getting-started/configuring-branches.md)
    + [Dispatcher-configuraties](/help/getting-started/dispatcher-configurations.md)
-+ gebruiken{#using}
-   + CI/CD Pipelines {#pipelines}
++ Gebruiken {#using}
+   + CI/CD-pijpleidingen {#pipelines}
       + [Een productiepijpleiding configureren](/help/using/production-pipelines.md)
       + [Een niet-productiepijplijn configureren](/help/using/non-production-pipelines.md)
       + [Werkgebied splitsen en alleen propellines (Vroege adopter)](/help/using/stage-prod-only.md)
@@ -73,9 +73,10 @@ ht-degree: 8%
 + Wizard Productupdates {#product-update-wizard}
    + [Overzicht](/help/product-update-wizard/overview.md)
    + [Evaluatie](/help/product-update-wizard/evaluation.md)
-+ Opmerkingen bij de release {#release-notes}
++ Release-opmerkingen {#release-notes}
    + [Huidig](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025,4,0](/help/release-notes/2025/2025-4-0.md)
       + [2025,3,0](/help/release-notes/2025/2025-3-0.md)
       + [2025,2,0](/help/release-notes/2025/2025-2-0.md)
       + [2025,1,0](/help/release-notes/2025/2025-1-0.md)
