@@ -41,7 +41,7 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/managing-code/external
 ## Een toegangstoken bewerken {#edit-access-tokens}
 
 1. In **beheert de Tokens van de Toegang** dialoogdoos, rechts van een symbolische naam, klik ![ uitgeven pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. In **geef Token van de Toegang** dialoogdoos uit, op het **Symbolische 3} tekstgebied van de Naam {, werk de symbolische naam bij.**
+1. In **geef Token van de Toegang** dialoogdoos uit, op het **Symbolische 3&rbrace; tekstgebied van de Naam &lbrace;, werk de symbolische naam bij.**
 
    Het geheim van de Token van de Toegang zelf kan niet worden gewijzigd.
 

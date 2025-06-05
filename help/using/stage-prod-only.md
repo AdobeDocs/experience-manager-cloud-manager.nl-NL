@@ -109,7 +109,7 @@ Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te m
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
-Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
+Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0&rbrace; Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
 
