@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.6.0
 description: Meer informatie over de release van Cloud Manager 2025.5.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
+source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.6.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -31,7 +31,7 @@ De volgende geplande release is donderdag 10 juli 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-* **(UI) Pijpleidingen die alleen bestemd zijn voor het afvoeren en uitsluitend voor de productie**
+* **Staging-slechts en productie-enige pijpleidingen**
 
   Cloud Manager ondersteunt nu alleen staging- en alleen productie-pijpleidingen. Met deze functie kunt u implementaties van volledige stapelproductie splitsen in kleinere, doelspecifieke pijpleidingen. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
@@ -39,7 +39,7 @@ De volgende geplande release is donderdag 10 juli 2025.
 
   Zie [ werkgebied-slechts en prod-slechts pijpleidingen ](/help/using/stage-prod-only.md).
 
-* **(UI) De favorieten van de Pijpleiding**
+* **de favorieten van de Pijpleiding**
 
   In deze versie, introduceert Cloud Manager de capaciteit om favoriete pijpleidingen vast te zetten, latend u specifieke pijpleidingen als favorieten zodat verschijnen zij bij de bovenkant van de lijst op de **pagina van de Pijpleidingen**. Deze verbetering maakt vaak betreden pijpleidingen gemakkelijker te vinden en te lopen. <!-- CMGR-68293 -->
 
