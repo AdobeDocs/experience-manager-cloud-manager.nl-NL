@@ -2,9 +2,9 @@
 title: Pijpleidingen beheren
 description: Leer hoe u uw bestaande pijpleidingen beheert, inclusief het uitvoeren, bewerken en verwijderen ervan.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: d4a7d9ab72947b97b0dabb2f822ef268e4972685
+source-git-commit: 91eda02d55134fba167f30830a142a80717e9083
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1170'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,18 @@ Als u op het pictogram `i` klikt, worden de details van de laatste of huidige ui
 ![ de uitvoeringsdetails van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-status.png)
 
 Het klikken **details van de Mening** neemt u aan de [ details van de pijpleidingsuitvoering ](#view-details).
+
+### Markeer favorieten voor pijpleidingen{#pipeline-favorites}
+
+U kunt specifieke pijpleidingen als favorieten merken zodat verschijnen zij bij de bovenkant van de lijst op de **pagina van Pijpleidingen**. Hierdoor zijn vaak geopende pijpleidingen gemakkelijker te vinden en uit te voeren.
+
+**om pijpleidingsfavorieten te merken:**
+
+1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Van de **pagina van het Overzicht van het 0} Programma, klik ![ het lusje van de Pijpleiding - het pictogram van het Werkschema ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)** Pijpleidingen **tabel.**
+1. Voor de **pagina van de Pijpleidingen**, links van een pijpleidingsnaam en type, klik ![ het overzichtspictogram van de Ster voor ongunstige pijpleiding ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) om het aan uw favoriete lijst toe te voegen.
+Alternatief, klik ![ pictogram van de Ster voor een favoriete pijpleiding ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) om de pijpleiding uit uw favorieten lijst te verwijderen.
+
 
 ## Activiteitenpagina {#activity}
 
@@ -142,7 +154,7 @@ U kunt details van een pijpleiding slechts bekijken die loopt of minstens eens i
 
 ![ details van de Pijpleiding ](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-Van hier, kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie de plaatsing van de code van het document [&#128279;](/help/using/code-deployment.md) voor meer informatie.
+Van hier, kunt u het statuut van de diverse stappen van de pijpleiding zien en bouwstijllogboeken voor kenmerkende doeleinden terugwinnen. Zie de plaatsing van de code van het document [ ](/help/using/code-deployment.md) voor meer informatie.
 
 Alle stappen in een pijpleidingsuitvoering worden getoond met degenen die nog niet uit grijs begonnen. De voltooide stappen tonen hun duur.
 
@@ -158,6 +170,6 @@ Als uw pijpleiding a **Code Scanning** stap bevatte, die kwesties opriep, kunt u
 
 ![ de kwaliteitskwesties van de Code ](assets/managing-pipelines-code-quality-issues.png)
 
-De kolom van de Plaats van het Dossier van het A **Project** is beschikbaar in het Csv- dossier om op de plaats van de beledigende code te wijzen. Deze kolom is de project-relatieve weg, terwijl de **kolom van de Plaats van het 0&rbrace; Dossier &lbrace;wordt geproduceerd.**
+De kolom van de Plaats van het Dossier van het A **Project** is beschikbaar in het Csv- dossier om op de plaats van de beledigende code te wijzen. Deze kolom is de project-relatieve weg, terwijl de **kolom van de Plaats van het 0} Dossier {wordt geproduceerd.**
 
 ![ van het de aftasten van de code van het Project details ](assets/managing-pipelines-code-quality-details.png)

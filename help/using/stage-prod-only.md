@@ -1,22 +1,17 @@
 ---
-title: Alleen werkgebied- en alleen-prod-pijplijnen
+title: Splitsen van alleen-werkgebied- en alleen-productie-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
-badge: label="Vroege adoptie" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
 
-# Pijpleidingen die uitsluitend bestemd zijn voor de productie van fase {#stage-prod-only}
+# Pijpleidingen die alleen bestemd zijn voor de productie en die alleen voor de productie worden gesplitst {#stage-prod-only}
 
 Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
-
->[!NOTE]
->
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md#staging-production-only-pipelines).
 
 ## Overzicht {#overview}
 
@@ -114,7 +109,7 @@ Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te m
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
-Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0&rbrace; Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
+Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
 

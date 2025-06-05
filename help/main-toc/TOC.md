@@ -7,10 +7,10 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '373'
+ht-degree: 10%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 0%
    + CI/CD-pijpleidingen {#pipelines}
       + [Een productiepijpleiding configureren](/help/using/production-pipelines.md)
       + [Een niet-productiepijplijn configureren](/help/using/non-production-pipelines.md)
-      + [Werkgebied splitsen en alleen propellines (Vroege adopter)](/help/using/stage-prod-only.md)
+      + [Alleen pijpleidingen splitsen in werkgebied en productie](/help/using/stage-prod-only.md)
       + [Pijpleidingen beheren](/help/using/managing-pipelines.md)
    + [Codeimplementatie](/help/using/code-deployment.md)
    + [Testen van de codekwaliteit](/help/using/code-quality-testing.md)
@@ -64,6 +64,7 @@ ht-degree: 0%
    + [Een Adobe-opslagplaats toevoegen](/help/managing-code/adobe-repositories.md)
    + [Een privéopslagplaats toevoegen](/help/managing-code/private-repositories.md)
    + [Een externe opslagplaats toevoegen (vroege adopter)](/help/managing-code/external-repositories.md)
+   + [Toegangstokens beheren (vroege adopter)](/help/managing-code/manage-access-tokens.md)
    + [Ondersteuning voor Git-submodule](/help/managing-code/git-submodules.md)
    + [Configuratie van GitHub-controle](/help/managing-code/github-check-config.md)
    + [GitHub-controleannotaties](/help/managing-code/github-annotations.md)
@@ -76,6 +77,7 @@ ht-degree: 0%
 + Release-opmerkingen {#release-notes}
    + [Huidig](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025,5,0](/help/release-notes/2025/2025-5-0.md)
       + [2025,4,0](/help/release-notes/2025/2025-4-0.md)
       + [2025,3,0](/help/release-notes/2025/2025-3-0.md)
       + [2025,2,0](/help/release-notes/2025/2025-2-0.md)
