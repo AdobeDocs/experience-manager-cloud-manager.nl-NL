@@ -2,13 +2,13 @@
 title: Toegangstokens beheren in Cloud Manager
 description: Leer hoe u de toegangstokens die worden gebruikt voor 'Create Your Own Git' in Cloud Manager op Adobe Managed Services, kunt weergeven, bewerken en verwijderen.
 badge: label="Vroege adoptie" type="Positive" url="/help/release-notes/current.md#access-tokens"
-source-git-commit: aa0eff7eb1f6b0cde9b99b7cbbfb3410e0db94a6
+exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
+source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
 
 # Toegangstokens beheren voor externe opslagruimten {#manage-access-tokens}
 
@@ -41,9 +41,9 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/managing-code/external
 ## Een toegangstoken bewerken {#edit-access-tokens}
 
 1. In **beheert de Tokens van de Toegang** dialoogdoos, rechts van een symbolische naam, klik ![ uitgeven pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
-1. In **geef Token van de Toegang** dialoogdoos uit, op het **Symbolische 3&rbrace; tekstgebied van de Naam &lbrace;, werk de symbolische naam bij.**
+1. In **geef Token van de Toegang** dialoogdoos uit, werk de **Symbolische Naam**, of de **Symbolische waarde van de Toegang**, of allebei bij.
 
-   Het geheim van de Token van de Toegang zelf kan niet worden gewijzigd.
+   Als het **Token van de Toegang** momenteel in gebruik is, verschijnt een bericht waarschuwend u dat alle bijbehorende bewaarplaatsen automatisch na de update worden opnieuw bevestigd.
 
    ![ geef de Token van de Toegang dialoogdoos uit ](/help/managing-code/assets/access-tokens-edit.png)
 
