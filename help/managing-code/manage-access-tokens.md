@@ -1,9 +1,9 @@
 ---
 title: Toegangstokens beheren in Cloud Manager
 description: Leer hoe u de toegangstokens die worden gebruikt voor 'Create Your Own Git' in Cloud Manager op Adobe Managed Services, kunt weergeven, bewerken en verwijderen.
-badge: label="Vroege adoptie" type="Positive" url="/help/release-notes/current.md#access-tokens"
+badge: label="Private bèta" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/managing-code/external
 
 >[!NOTE]
 >
->De in dit artikel beschreven kenmerken zijn alleen beschikbaar via het programma voor vroegtijdige goedkeuring. Voor meer details en om omhoog als vroege adopter te ondertekenen, zie [ de Tokens van de Toegang beheren ](/help/release-notes/current.md#access-tokens).
+>De functies die in dit artikel worden beschreven, zijn alleen beschikbaar via het persoonlijke bètaprogramma. Voor meer details en om omhoog voor privé bèta te ondertekenen, zie [ de Tokens van de Toegang beheren ](/help/release-notes/current.md#access-tokens).
 
 ## Toegangstokens weergeven {#view-access-tokens}
 

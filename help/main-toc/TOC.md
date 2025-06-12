@@ -7,7 +7,7 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 10%
@@ -52,7 +52,7 @@ ht-degree: 10%
    + [Testen van de codekwaliteit](/help/using/code-quality-testing.md)
    + [Omgevingen beheren](/help/using/managing-environments.md)
    + [Omgevingen bewaken](/help/using/monitoring-environments.md)
-   + [Service Pack-updates voor ontwikkelomgevingen (vroege adopter)](/help/using/service-packs-environments.md)
+   + [Service Pack-updates voor ontwikkelomgevingen (persoonlijke bèta)](/help/using/service-packs-environments.md)
    + [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [ Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Meldingen](/help/using/notifications.md)
@@ -63,8 +63,8 @@ ht-degree: 10%
    + [Toegang tot opslagplaats](/help/managing-code/accessing-repositories.md)
    + [Een Adobe-opslagplaats toevoegen](/help/managing-code/adobe-repositories.md)
    + [Een privéopslagplaats toevoegen](/help/managing-code/private-repositories.md)
-   + [Een externe opslagplaats toevoegen (vroege adopter)](/help/managing-code/external-repositories.md)
-   + [Toegangstokens beheren (vroege adopter)](/help/managing-code/manage-access-tokens.md)
+   + [Een externe opslagplaats toevoegen (persoonlijke bètaversie)](/help/managing-code/external-repositories.md)
+   + [Toegangstokens beheren (persoonlijke bèta)](/help/managing-code/manage-access-tokens.md)
    + [Ondersteuning voor Git-submodule](/help/managing-code/git-submodules.md)
    + [Configuratie van GitHub-controle](/help/managing-code/github-check-config.md)
    + [GitHub-controleannotaties](/help/managing-code/github-annotations.md)

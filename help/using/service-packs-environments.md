@@ -1,23 +1,23 @@
 ---
-title: Service Pack-updates voor ontwikkelomgevingen - Vroege adopter
+title: Service Pack-updates voor ontwikkelomgevingen - persoonlijke bèta
 description: Leer hoe u de updates van het de dienstpak voor de milieu's van de Ontwikkeling door de gebruikersinterface van Cloud Manager kunt in werking stellen.
 hide: true
 hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
-# Service Pack-updates voor ontwikkelomgevingen (Early-adopter) {#stage-prod-only}
+# Service Pack-updates voor ontwikkelomgevingen (persoonlijke bèta) {#stage-prod-only}
 
 Leer hoe u de updates van het de dienstpak voor de milieu&#39;s van de Ontwikkeling door de gebruikersinterface van Cloud Manager kunt in werking stellen.
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het vroege adoptieprogramma ](/help/release-notes/current.md#early-adoption).
+>Deze eigenschap is slechts beschikbaar aan [ het privé bètaprogramma ](/help/release-notes/current.md#beta-program).
 
 ## Overzicht {#service-pack-updates-overview}
 

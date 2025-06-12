@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.6.0
 description: Meer informatie over de release van Cloud Manager 2025.5.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.6.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -33,7 +33,7 @@ De volgende geplande release is donderdag 10 juli 2025.
 
 * **Staging-slechts en productie-enige pijpleidingen**
 
-  Cloud Manager ondersteunt nu alleen staging- en alleen productie-pijpleidingen. Met deze functie kunt u implementaties van volledige stapelproductie splitsen in kleinere, doelspecifieke pijpleidingen. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+  Cloud Manager ondersteunt nu alleen staging- en alleen productie-pijpleidingen. Met deze functie kunt u implementaties van volledige stapelproductie splitsen in kleinere, doelspecifieke pijpleidingen. <!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
 
   ![ voeg niet-productiepijpleidingsdialoogdoos met de Volledige geselecteerde radioknoop van de Code van de Stapel en het milieu van het Stadium toe ](/help/release-notes/assets/add-non-production-pipeline.png)
 
@@ -48,11 +48,11 @@ De volgende geplande release is donderdag 10 juli 2025.
   Zie [ pijpleidingsfavorieten van het Teken ](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Programma voor vroegtijdige goedkeuring {#early-adoption}
+## Private bètaprogramma {#beta-program}
 
-Neem deel aan het Cloud Manager-programma voor vroegtijdige adoptie om exclusieve toegang te krijgen tot de volgende functies voordat ze algemeen worden uitgebracht.
+Neem deel aan een Cloud Manager Private beta-programma om exclusieve toegang te krijgen tot de volgende functies voordat ze in het algemeen worden uitgebracht.
 
-Momenteel zijn de volgende mogelijkheden voor vroegtijdige adoptie beschikbaar:
+De volgende persoonlijke bètamogelijkheden zijn momenteel beschikbaar:
 
 
 ### Toegangstokens beheren{#access-tokens}
