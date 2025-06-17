@@ -3,9 +3,9 @@ title: Externe opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 badge: label="Private bèta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
+source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2295'
 ht-degree: 0%
 
 ---
@@ -51,36 +51,72 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 1. In **voeg de dialoogdoos van de Bewaarplaats** toe, selecteer **Privé Bewaarplaats** om een externe bewaarplaats van de Bewaarplaats van de Bewaarplaats aan uw programma te verbinden.
 
-   ![ voeg eigen bewaarplaats ](/help/managing-code/assets/repositories-private-repo-type.png) toe
+   ![ voeg eigen bewaarplaats ](/help/managing-code/assets/repository-add-private-dialogbox2.png) toe
 
 1. Geef in elk veld de volgende gegevens over uw opslagplaats op:
 
    | Veld | Beschrijving |
    | --- | --- |
    | **Naam van de Bewaarplaats** | Vereist. Een expressieve naam voor uw nieuwe opslagplaats. |
-   | **Repository URL** | Vereist. De URL van de gegevensopslagruimte.<br><br> als u een GitHub-ontvangen bewaarplaats gebruikt, moet de weg in `.git` beëindigen.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratiedoeleinden).<br><br> als u een externe bewaarplaats gebruikt, moet het het volgende URL wegformaat gebruiken:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> of <br>`https://self-hosted-domain/org-name/repo-name.git`<br> en past uw verkoper van het Git aan. |
+   | **Repository URL** | Vereist. De URL van de gegevensopslagruimte.<br><br> als u een GitHub-ontvangen bewaarplaats gebruikt, moet de weg in `.git` beëindigen.<br> bijvoorbeeld, *`https://github.com/org-name/repo-name.git`* (De weg URL is slechts voor illustratie).<br><br> als u een externe bewaarplaats gebruikt, moet het het volgende URL wegformaat gebruiken:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> of <br>`https://self-hosted-domain/org-name/repo-name.git`<br> en past uw verkoper van het Git aan. |
    | **Uitgezochte Type van Bewaarplaats** | Vereist. Selecteer het type opslagplaats dat u gebruikt:<ul><li>**GitHub** (Onderneming GitHub en de zelf-ontvangen versie van GitHub)</li><li>**GitLab** (zowel `gitlab.com` als de zelf-ontvangen versie van GitLab) </li><li>**Bitbucket** (slechts `bitbucket.org` (wolkenversie) wordt gesteund. De zelfgehoste versie van Bitbucket is vanaf 15 februari 2024 vervangen.)</li></ul>Als het URL-pad van de repository hierboven de naam van de Git-leverancier bevat, zoals GitLab of Bitbucket, is het repository type al vooraf geselecteerd voor u. |
    | **Beschrijving** | Optioneel. Een gedetailleerde beschrijving van de gegevensopslagruimte. |
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/managing-code/assets/repositories-exisiting-access-token.png)
-   *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket.*
+   *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket (voor illustratie slechts).*
 
-   | Type token | Beschrijving |
-   | --- | --- |
-   | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-   | **voeg nieuw Token van de Toegang toe** | **type van Bewaarplaats: Onderneming GitHub**<br><ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>De vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE) <br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheren.<br> wanneer u het KLOPJE in de Onderneming GitHub produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   | | **type van Bewaarplaats: GitLab**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE) <br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en WebHaakintegratie toegang te hebben.<br> wanneer u het KLOPJE in GitLab produceert, zorg ervoor het het volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-   | | **type van Bewaarplaats: Bitbucket**<ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+>[!BEGINTABS]
 
-   Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+>[!TAB  Onderneming GitHub ]
 
-   >[!NOTE]
-   >
-   >De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
+**Onderneming GitHub**
+
+| Type token | Beschrijving |
+| --- | --- |
+| **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>De vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE) <br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheren.<br> wanneer u het KLOPJE in de Onderneming GitHub produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+
+Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
+
+>[!TAB  GitLab ]
+
+**GitLab**
+
+| Type token | Beschrijving |
+| --- | --- |
+| **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE) <br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en WebHaakintegratie toegang te hebben.<br> wanneer u het KLOPJE in GitLab produceert, zorg ervoor het het volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+
+Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
+
+>[!TAB  Bitbucket ]
+
+**Bitbucket**
+
+| Type token | Beschrijving |
+| --- | --- |
+| **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+
+Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+
+>[!NOTE]
+>
+>De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
+
+>[!ENDTABS]
 
 1. Klik **Valideren**.
 
@@ -93,12 +129,12 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
    * [Niet-productiepijpleidingen toevoegen](/help/using/non-production-pipelines.md#add-non-production-pipeline)
    * [Een pijplijn bewerken](/help/using/managing-pipelines.md#editing-pipelines)
 
-   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ![&#128279;](/help/managing-code/assets/pipeline-repo-gitbranch.png)
+   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ](/help/managing-code/assets/pipeline-repo-gitbranch.png)![
    *voeg de dialoogdoos van de Pijpleiding van de Niet-Productie met geselecteerde bewaarplaats en de tak van het Git toe,*
 
 1. Wanneer het toevoegen van of het uitgeven van een pijpleiding, om de **plaats van de Code van Source** voor uw nieuwe of bestaande pijpleiding te specificeren, verkies de externe bewaarplaats u van de **drop-down lijst van de Bewaarplaats** wilt gebruiken.
 
-1. In de **drop-down lijst van de Tak van 0&rbrace; Git, selecteer de tak als bron voor de pijpleiding.**
+1. In de **drop-down lijst van de Tak van 0} Git, selecteer de tak als bron voor de pijpleiding.**
 
 1. Klik **sparen**.
 
@@ -143,7 +179,7 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderne
 
    1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
-   1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
@@ -154,9 +190,9 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 
 >[!TAB  Onderneming GitHub ]
 
-### GitHub Enterprise
+**Onderneming GitHub**
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -171,7 +207,9 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 
 >[!TAB  GitLab ]
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+**GitLab**
+
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -186,9 +224,9 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 
 >[!TAB  Bitbucket ]
 
-### Bitmap
+**Bitbucket**
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -209,42 +247,51 @@ Nadat websites correct zijn geconfigureerd, activeert Cloud Manager automatisch 
 
 De volgende gedragingen zijn van toepassing:
 
-* **Onderneming GitHub**
+>[!BEGINTABS]
 
-  Wanneer de controle is gemaakt, lijkt deze op de onderstaande schermafbeelding. Het belangrijkste verschil van `GitHub.com` is dat `GitHub.com` controle-looppas gebruikt, terwijl de Onderneming GitHub (die persoonlijke toegangstokens gebruikt) een begaat status produceert:
+>[!TAB  Onderneming GitHub ]
 
-  ![ verbindt status toe om PR validatieproces op Onderneming GitHub ](/help/managing-code/assets/repository-webhook-github-pr-validation.png) te wijzen
+**Onderneming GitHub**
 
-* **Bitbucket**
+Wanneer de controle is gemaakt, lijkt deze op de onderstaande schermafbeelding. Het belangrijkste verschil van `GitHub.com` is dat `GitHub.com` controle-looppas gebruikt, terwijl de Onderneming GitHub (die persoonlijke toegangstokens gebruikt) een begaat status produceert:
 
-  Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
+![ verbindt status toe om PR validatieproces op Onderneming GitHub ](/help/managing-code/assets/repository-webhook-github-pr-validation.png) te wijzen
 
-  ![ Status terwijl de bevestiging van de codekwaliteit ](/help/managing-code/assets/repository-webhook-bitbucket1.png) loopt
+>[!TAB  GitLab ]
 
-  Gebruikt de status commit voor het volgen van voortgang van PR-validatie. In het volgende geval, toont het het schermschot wat gebeurt wanneer een bevestiging van de codekwaliteit wegens een klantenkwestie ontbreekt. Er wordt een opmerking toegevoegd met gedetailleerde foutinformatie en er wordt een commit check gemaakt, die de fout weergeeft (rechts zichtbaar):
+**GitLab**
 
-  ![ Trek de status van de verzoekbevestiging voor Bitbucket ](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+GitLab-interacties zijn uitsluitend gebaseerd op opmerkingen. Wanneer de validatie begint, wordt een opmerking toegevoegd. Wanneer de validatie is voltooid (of deze is gelukt of mislukt), wordt de eerste opmerking verwijderd en vervangen door een nieuwe opmerking met validatieresultaten of foutdetails.
 
-* **GitLab**
+Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
 
-  GitLab-interacties zijn uitsluitend gebaseerd op opmerkingen. Wanneer de validatie begint, wordt een opmerking toegevoegd. Wanneer de validatie is voltooid (of deze is gelukt of mislukt), wordt de eerste opmerking verwijderd en vervangen door een nieuwe opmerking met validatieresultaten of foutdetails.
+![ wanneer de bevestiging van de codekwaliteit ](/help/managing-code/assets/repository-webhook-gitlab1.png) loopt
 
-  Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
+Wanneer validatie van koude kwaliteit is voltooid:
 
-  ![ wanneer de bevestiging van de codekwaliteit ](/help/managing-code/assets/repository-webhook-gitlab1.png) loopt
+![ wanneer de koude kwaliteitsbevestiging ](/help/managing-code/assets/repository-webhook-gitlab2.png) wordt gebeëindigd
 
-  Wanneer validatie van koude kwaliteit is voltooid:
+Wanneer validatie van de codekwaliteit mislukt vanwege een fout:
 
-  ![ wanneer de koude kwaliteitsbevestiging ](/help/managing-code/assets/repository-webhook-gitlab2.png) wordt gebeëindigd
+![ wanneer de bevestiging van de codekwaliteit met een fout ](/help/managing-code/assets/repository-webhook-gitlab3.png) ontbreekt
 
-  Wanneer validatie van de codekwaliteit mislukt vanwege een fout:
+Wanneer de validatie van de codekwaliteit mislukt als gevolg van problemen met de klant:
 
-  ![ wanneer de bevestiging van de codekwaliteit met een fout ](/help/managing-code/assets/repository-webhook-gitlab3.png) ontbreekt
+![ wanneer de bevestiging van de codekwaliteit wegens klantenkwesties ](/help/managing-code/assets/repository-webhook-gitlab4.png) ontbreekt
 
-  Wanneer de validatie van de codekwaliteit mislukt als gevolg van problemen met de klant:
+>[!TAB  Bitbucket ]
 
-  ![ wanneer de bevestiging van de codekwaliteit wegens klantenkwesties ](/help/managing-code/assets/repository-webhook-gitlab4.png) ontbreekt
+**Bitbucket**
 
+Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
+
+![ Status terwijl de bevestiging van de codekwaliteit ](/help/managing-code/assets/repository-webhook-bitbucket1.png) loopt
+
+Gebruikt de status commit voor het volgen van voortgang van PR-validatie. In het volgende geval, toont het het schermschot wat gebeurt wanneer een bevestiging van de codekwaliteit wegens een klantenkwestie ontbreekt. Er wordt een opmerking toegevoegd met gedetailleerde foutinformatie en er wordt een commit check gemaakt, die de fout weergeeft (rechts zichtbaar):
+
+![ Trek de status van de verzoekbevestiging voor Bitbucket ](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!ENDTABS]
 
 ## Problemen met webhaken oplossen
 
