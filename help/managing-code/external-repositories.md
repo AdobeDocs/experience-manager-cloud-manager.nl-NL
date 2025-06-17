@@ -3,9 +3,9 @@ title: Externe opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 badge: label="Private bèta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
+source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2050'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket.*
@@ -93,12 +93,12 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
    * [Niet-productiepijpleidingen toevoegen](/help/using/non-production-pipelines.md#add-non-production-pipeline)
    * [Een pijplijn bewerken](/help/using/managing-pipelines.md#editing-pipelines)
 
-   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ![&#128279;](/help/managing-code/assets/pipeline-repo-gitbranch.png)
+   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ](/help/managing-code/assets/pipeline-repo-gitbranch.png)![
    *voeg de dialoogdoos van de Pijpleiding van de Niet-Productie met geselecteerde bewaarplaats en de tak van het Git toe,*
 
 1. Wanneer het toevoegen van of het uitgeven van een pijpleiding, om de **plaats van de Code van Source** voor uw nieuwe of bestaande pijpleiding te specificeren, verkies de externe bewaarplaats u van de **drop-down lijst van de Bewaarplaats** wilt gebruiken.
 
-1. In de **drop-down lijst van de Tak van 0&rbrace; Git, selecteer de tak als bron voor de pijpleiding.**
+1. In de **drop-down lijst van de Tak van 0} Git, selecteer de tak als bron voor de pijpleiding.**
 
 1. Klik **sparen**.
 
@@ -143,14 +143,20 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderne
 
    1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
-   1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
 
    Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Zie de tabel onder stap 8.
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+>[!BEGINTABS]
+
+>[!TAB  Onderneming GitHub ]
+
+### GitHub Enterprise
+
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -159,11 +165,43 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
 1. Configureer de webhaak om de vereiste gebeurtenissen te verzenden die Cloud Manager verwacht.
 
-   | Bewaarplaats | Vereiste gebeurtenissen van de webhaak |
-   | --- | --- |
-   | GitHub Enterprise | Deze gebeurtenissen staan Cloud Manager toe om aan activiteit te antwoorden GitHub, zoals trekverzoekbevestiging, op duw-gebaseerde trekkers voor pijpleidingen, of de codesynchronisatie van Edge Delivery Services.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHaakgebeurtenissen teweeg te brengen:<ul><li>Pull-aanvragen<li>Penselen<li>Opmerkingen bij problemen</li></li></li></ul></ul></ul> |
-   | GitLab | Met deze webhaakgebeurtenissen kan Cloud Manager pijpleidingen activeren wanneer code wordt geduwd of een samenvoegaanvraag wordt ingediend. Zij volgen ook commentaren met betrekking tot trekverzoekbevestiging (door nota gebeurtenissen).<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Push-gebeurtenissen<li>Aanvraaggebeurtenissen samenvoegen<li>Notitie, gebeurtenissen</li></li></li></ul></ul></ul> |
-   | Bitmap | Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Volledige aanvraag: gemaakt<li>Verzoek tot uittrekken: Bijgewerkt<li>Pull-verzoeken: Samengevoegd<li>Volledige aanvraag: opmerking<li>Repository: Push</li></li></li></ul></ul></ul> |
+   | Vereiste gebeurtenissen van de webhaak |
+   | --- |
+   | Deze gebeurtenissen staan Cloud Manager toe om aan activiteit te antwoorden GitHub, zoals trekverzoekbevestiging, op duw-gebaseerde trekkers voor pijpleidingen, of de codesynchronisatie van Edge Delivery Services.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHaakgebeurtenissen teweeg te brengen:<ul><li>Pull-aanvragen<li>Penselen<li>Opmerkingen bij problemen</li></li></li></ul></ul></ul> |
+
+>[!TAB  GitLab ]
+
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
+1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
+   1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
+
+      Als u een API-sleutel wilt genereren, moet u een integratieproject maken in Adobe Developer Console. Zie [ Creërend een Project van de Integratie API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) voor volledige details.
+
+1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
+1. Configureer de webhaak om de vereiste gebeurtenissen te verzenden die Cloud Manager verwacht.
+
+   | Vereiste gebeurtenissen van de webhaak |
+   | --- |
+   | Met deze webhaakgebeurtenissen kan Cloud Manager pijpleidingen activeren wanneer code wordt geduwd of een samenvoegaanvraag wordt ingediend. Zij volgen ook commentaren met betrekking tot trekverzoekbevestiging (door nota gebeurtenissen).<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Push-gebeurtenissen<li>Aanvraaggebeurtenissen samenvoegen<li>Notitie, gebeurtenissen</li></li></li></ul></ul></ul> |
+
+>[!TAB  Bitbucket ]
+
+### Bitmap
+
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
+1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
+   1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
+
+      Als u een API-sleutel wilt genereren, moet u een integratieproject maken in Adobe Developer Console. Zie [ Creërend een Project van de Integratie API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) voor volledige details.
+
+1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
+1. Configureer de webhaak om de vereiste gebeurtenissen te verzenden die Cloud Manager verwacht.
+
+   | Vereiste gebeurtenissen van de webhaak |
+   | --- |
+   | Deze gebeurtenissen zorgen ervoor dat Cloud Manager aantrekverzoeken kan bevestigen, op codeduwen kan antwoorden, en met commentaren voor pijpleidingscoördinatie in wisselwerking staat.<br> zorg ervoor dat de webhaak opstelling is om op de volgende vereiste WebHgebeurtenissen teweeg te brengen<ul><li>Volledige aanvraag: gemaakt<li>Verzoek tot uittrekken: Bijgewerkt<li>Pull-verzoeken: Samengevoegd<li>Volledige aanvraag: opmerking<li>Repository: Push</li></li></li></ul></ul></ul> |
+
+>[!ENDTABS]
 
 ### Validatie van trekkingsverzoeken met webhaken
 
