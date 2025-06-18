@@ -3,9 +3,9 @@ title: Externe opslagplaatsen toevoegen in Cloud Manager
 description: Leer hoe u een externe opslagplaats aan Cloud Manager kunt toevoegen. Cloud Manager ondersteunt integratie met GitHub Enterprise-, GitLab- en Bitbucket-opslagruimten.
 badge: label="Private bèta" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
+source-git-commit: a0836dd24dd3b711c9d1b78f28755e2db98b051c
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2210'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 1. Selecteer **sparen** om de bewaarplaats toe te voegen.
 
-1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
+1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben.**
 
    ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket (voor illustratie slechts).*
@@ -73,48 +73,46 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 >[!TAB  Onderneming GitHub ]
 
-| Type token | Beschrijving |
-| --- | --- |
-| **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>De vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE) <br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheren.<br> wanneer u het KLOPJE in de Onderneming GitHub produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-
-Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
+    | Type token | Beschrijving |
+    | — | — |
+    | **Bestaande toegangstoken gebruiken** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de vervolgkeuzelijst **Token Name** om het token te kiezen dat u op de opslagplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
+    | **Nieuw toegangstoken toevoegen** |&lt;ul>&lt;li> Typ in het tekstveld **Token Name** een naam voor het toegangstoken dat u maakt.&lt;li>Creeer een persoonlijk toegangstoken door de instructies in de [documentatie GitHub] te volgen (https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).&lt;li>Vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE)&lt;br>Deze toestemmingen zorgen ervoor dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheert.&lt;br>Wanneer u het PAT in GitHub Enterprise genereert, moet u ervoor zorgen dat dit de volgende opslagmachtigingen bevat:&lt;ul>&lt;li>Pull request (read and write)&lt;li>Commit status (read and write)&lt;li>Repository metadata (read-only)&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;li>In de **Toegangstoken** veld, plak de token die u zojuist hebt gemaakt. |
+    
+     1. Klik op **Valideren**.
+    
+     na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
+    
+     zie ook [beheer Tokens van de Toegang] (/help/managing-code/manage-access-tokens.md).
 
 >[!TAB  GitLab ]
 
-| Type token | Beschrijving |
-| --- | --- |
-| **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE) <br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en WebHaakintegratie toegang te hebben.<br> wanneer u het KLOPJE in GitLab produceert, zorg ervoor het het volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-
-Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
-
->[!TAB  Bitbucket ]
-
-| Type token | Beschrijving |
-| --- | --- |
-| **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
-
-Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
-
->[!NOTE]
->
->De eigenschap **voegt nieuw Token van de Toegang toe** is momenteel in de privé bètafase. Er worden aanvullende functies gepland. Als gevolg hiervan kunnen de vereiste machtigingen voor toegangstokens worden gewijzigd. Bovendien kan de gebruikersinterface voor het beheren van tokens worden bijgewerkt, mogelijk met functies zoals de vervaldatums van tokens. En automatische controles om ervoor te zorgen dat tokens die aan bewaarplaatsen zijn gekoppeld geldig blijven.
-
->[!ENDTABS]
+    | Type token | Beschrijving |
+    | — | — |
+    | **Bestaande toegangstoken gebruiken** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de vervolgkeuzelijst **Token Name** om het token te kiezen dat u op de opslagplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
+    | **Nieuw toegangstoken toevoegen** |&lt;ul>&lt;li>Typ in het tekstveld **Token Name** een naam voor het toegangstoken dat u maakt.&lt;li>Maak een persoonlijke toegangstoken door de instructie in de [GitLab-documentatie] te volgen (https://docs.gitlab.com/user/profile/personal_access_tokens/).&lt;li>Vereiste machtigingen voor het PAT (Personal Access Token) van GitLab&lt;br>Met deze bereiken heeft Cloud Manager toegang tot gegevens van de gegevensopslagruimte en tot gebruikersgegevens die nodig zijn voor validatie en integratie met de webhaak.&lt;br>Wanneer u het PAT in GitLab produceert, zorg ervoor het de volgende symbolenwerkingsgebied omvat:&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>In het veld **Access Token** plakt u het token dat u net hebt gemaakt. |
 
 1. Klik **Valideren**.
 
-Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
+   Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
+
+   Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+
+
+>[!TAB  Bitbucket ]
+
+    | Type token | Beschrijving |
+    | — | — |
+    | **Bestaande toegangstoken gebruiken** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de vervolgkeuzelijst **Token Name** om het token te kiezen dat u op de opslagplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
+    | **Nieuw toegangstoken toevoegen** |&lt;ul>&lt;li>Typ in het tekstveld **Token Name** een naam voor het toegangstoken dat u maakt.&lt;li>Maak een toegangstoken voor de opslagplaats met behulp van de [Bitbucket-documentatie](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).&lt;li>Vereiste machtigingen voor het Bitbucket Personal Access Token (PAT)&lt;br>Deze machtigingen stellen Cloud Manager in staat toegang te krijgen tot de inhoud van de opslagplaats, pull-aanvragen te beheren en webhaakgebeurtenissen te configureren of erop te reageren.&lt;br>Wanneer u het app-wachtwoord maakt in Bitbucket, moet u ervoor zorgen dat dit de volgende vereiste wachtwoordmachtigingen voor de app bevat:&lt;ul>&lt;li>Repository (alleen-lezen)&lt;li>Pull Requests (lezen en schrijven)&lt;li>Webhooks (lezen en schrijven)&lt;/li>&lt;/ul>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;li> Plak in het veld **Toegangstoken** de token die u zojuist hebt gemaakt. |
+    
+     1. Klik op **Valideren**.
+    
+     na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
+    
+     zie ook [beheer Tokens van de Toegang] (/help/managing-code/manage-access-tokens.md).
+
+>[!ENDTABS]
+
 
 ## Koppel een gevalideerde externe opslagruimte aan een pijpleiding {#validate-ext-repo}
 
@@ -123,12 +121,12 @@ Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebru
    * [Niet-productiepijpleidingen toevoegen](/help/using/non-production-pipelines.md#add-non-production-pipeline)
    * [Een pijplijn bewerken](/help/using/managing-pipelines.md#editing-pipelines)
 
-   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ![&#128279;](/help/managing-code/assets/pipeline-repo-gitbranch.png)
+   {de bron van de 0} Opslag van de code van de Pijpleiding en tak van het Git ](/help/managing-code/assets/pipeline-repo-gitbranch.png)![
    *voeg de dialoogdoos van de Pijpleiding van de Niet-Productie met geselecteerde bewaarplaats en de tak van het Git toe,*
 
 1. Wanneer het toevoegen van of het uitgeven van een pijpleiding, om de **plaats van de Code van Source** voor uw nieuwe of bestaande pijpleiding te specificeren, verkies de externe bewaarplaats u van de **drop-down lijst van de Bewaarplaats** wilt gebruiken.
 
-1. In de **drop-down lijst van de Tak van 0&rbrace; Git, selecteer de tak als bron voor de pijpleiding.**
+1. In de **drop-down lijst van de Tak van 0} Git, selecteer de tak als bron voor de pijpleiding.**
 
 1. Klik **sparen**.
 
@@ -173,7 +171,7 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken, zoals Onderne
 
    1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
-   1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
+   1. Naast het **Geheime 1} teken/zeer belangrijke gebied van Webhaak {, klik** **produceren, dan klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).**
 Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt vereist voor de montages Webhaak van uw verkoper van het Git.
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab of Bitbucket).
@@ -184,7 +182,7 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 
 >[!TAB  Onderneming GitHub ]
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -199,7 +197,7 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 
 >[!TAB  GitLab ]
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
@@ -214,7 +212,7 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 
 >[!TAB  Bitbucket ]
 
-1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
+1. Bepaal de plaats van de sectie van de Montages van Webhaak **** van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
