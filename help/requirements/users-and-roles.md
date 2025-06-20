@@ -2,10 +2,10 @@
 title: Gebruikers en rollen toevoegen
 description: Leer hoe u de Admin Console gebruikt om gebruikers en rollen toe te voegen en profielen te maken.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 4%
+source-wordcount: '827'
+ht-degree: 3%
 
 ---
 
@@ -42,7 +42,7 @@ De volgende tabel geeft een overzicht van de rollen in Cloud Manager.
 >
 >De ontwikkelaarspersona in de Admin Console is niet gerelateerd aan de rol van de ontwikkelaar in [!UICONTROL Cloud Manager] .
 
-## Een profiel maken met de Admin Console {#using-admin-console-to-create-a-profile}
+## Een productprofiel maken met de Admin Console {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] -rollen worden beheerd vanuit de Admin Console. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel toe te voegen.
 
@@ -55,7 +55,13 @@ Een beheerder moet nieuwe productprofielen maken onder de [!UICONTROL AEM Manage
 * Developer
 * Program Manager
 
-Met de Admin Console kunt u gebruikers of groepen maken of toevoegen aan deze productprofielen.
+Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productprofielen.
+
+>[!IMPORTANT]
+>
+>Wegens een huidige beperking in Admin Console en Cloud Manager, kunnen de profielen niet met **worden bewaard Geen toestemmingen** geselecteerd. Als u dit probeert, treedt er een backend-fout op. Dit gedrag beïnvloedt de verwezenlijking van de profielen van de Manager van de Plaatsing. Als tijdelijke oplossing selecteert u ten minste één machtiging bij het maken van een nieuw profiel.
+
+**om een productprofiel tot stand te brengen gebruikend Admin Console:**
 
 1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
 
@@ -67,7 +73,7 @@ Met de Admin Console kunt u gebruikers of groepen maken of toevoegen aan deze pr
 
    ![ Admin consoleproducten tabel ](/help/assets/admin-console-product.png)
 
-1. Op het **lusje van het Profiel van het 0&rbrace; Product &lbrace;van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
+1. Op het **lusje van het Profiel van het 0} Product {van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
 
    ![ Nieuw profiel ](/help/assets/admin-console-product-profiles.png)
 
@@ -76,6 +82,10 @@ Met de Admin Console kunt u gebruikers of groepen maken of toevoegen aan deze pr
    * **de Naam van het Profiel** - de **Naam van het Profiel** kan om het even wat zijn, hoewel om verwarring te vermijden wordt het geadviseerd om de waarden in de **Geadviseerde kolom van de Naam van het Profiel** te gebruiken.
    * **Naam van de Vertoning** - de **Naam van de Vertoning** moet de technische waarde zijn die door [!UICONTROL Cloud Manager] wordt bepaald (zie de volgende lijst).
    * **Groep van de Toestemming** - u kunt een toestemmingsgroep voor het profiel (niet altijd beschikbaar) kiezen.
+
+     >[!IMPORTANT]
+     >
+     >Wegens een huidige beperking in Admin Console en Cloud Manager, kunnen de profielen niet met **worden bewaard Geen toestemmingen** geselecteerd. Als u dit probeert, treedt er een backend-fout op. Dit gedrag beïnvloedt de verwezenlijking van de profielen van de Manager van de Plaatsing. Als tijdelijke oplossing selecteert u ten minste één machtiging bij het maken van een nieuw profiel.
 
    ![ Creërend een nieuw profiel ](/help/assets/screen_shot_2018-05-04at171819.png)
 
