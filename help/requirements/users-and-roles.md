@@ -73,7 +73,7 @@ Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productpr
 
    ![ Admin consoleproducten tabel ](/help/assets/admin-console-product.png)
 
-1. Op het **lusje van het Profiel van het 0} Product {van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
+1. Op het **lusje van het Profiel van het 0&rbrace; Product &lbrace;van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
 
    ![ Nieuw profiel ](/help/assets/admin-console-product-profiles.png)
 
