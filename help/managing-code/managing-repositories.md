@@ -39,7 +39,7 @@ Andere beschikbare acties op het drop-down menu omvatten **[Repository URL van h
 
 1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. Van de **pagina van het Overzicht van het 0} Programma, op het zijmenu, klik ![ pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)** Bewaarplaatsen **.**
+1. Van de **pagina van het Overzicht van het 0&rbrace; Programma, op het zijmenu, klik ![ pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg)** Bewaarplaatsen **.**
 
 1. De **pagina van Bewaarplaatsen** toont alle bewaarplaatsen verbonden aan uw geselecteerd programma.
 
@@ -65,7 +65,7 @@ Er geldt een limiet van 300 gegevensbanken voor alle programma&#39;s in een bepa
 
 ## Gegevens uit de gegevensopslagplaats {#repo-info}
 
-Wanneer het bekijken van uw bewaarplaatsen in het **** venster van Bewaarplaatsen {, kunt u de details op bekijken hoe te tot de Adobe-Beheerde bewaarplaatsen programmatically toegang te hebben door de **knoop van Info van de Reparatie van de Toegang** op de toolbar te klikken.
+Wanneer het bekijken van uw bewaarplaatsen in het **&#x200B;**&#x200B;venster van Bewaarplaatsen &lbrace;, kunt u de details op bekijken hoe te tot de Adobe-Beheerde bewaarplaatsen programmatically toegang te hebben door de **knoop van Info van de Reparatie van de Toegang** op de toolbar te klikken.
 
 ![ informatie van de Bewaarplaats ](assets/repository-access-repo-info2.png)
 
@@ -86,7 +86,7 @@ De **actie van Repository URL van het Exemplaar van de Bewaarplaats** kopieert U
 
 ## Een opslagplaats weergeven en bijwerken {#view-update}
 
-De **Mening &amp; van de Update** actie opent de **Repository van de Update** dialoogdoos, waar u de 4} Naam van de bewaarplaats **en** Voorproef van Repository URL van de Bewaarplaats **kunt bekijken.** Bovendien, laat het u de **Beschrijving** van de bewaarplaats bijwerken.
+De **Mening &amp; van de Update** actie opent de **Repository van de Update** dialoogdoos, waar u de 4&rbrace; Naam van de bewaarplaats **en** Voorproef van Repository URL van de Bewaarplaats **kunt bekijken.** Bovendien, laat het u de **Beschrijving** van de bewaarplaats bijwerken.
 
 ![ Mening en update bewaarplaats informatie ](assets/repository-view-update.png)
 

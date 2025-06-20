@@ -69,7 +69,7 @@ De resultaten van het testen van de codekwaliteit worden geleverd als classifica
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie, {de metrische definities van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).[
+>Voor meer gedetailleerde informatie, {de metrische definities van 0} SonarQube [&#128279;](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ Deze methode zou in de auteursinstantie met zijn toestemmingen onveranderd moete
 
 #### Afbeeldingen en Assets voor testdoeleinden {#assets-for-testing}
 
-Klanten kunnen hun eigen middelen uploaden om te testen. Dit proces kan van de **Opstelling van de Pijpleiding** worden gedaan of **** scherm uitgeven. Algemene afbeeldingsindelingen, zoals JPEG, PNG, GIF en BMP, worden samen met Photoshop-, Illustrator- en Postscript-bestanden ondersteund.
+Klanten kunnen hun eigen middelen uploaden om te testen. Dit proces kan van de **Opstelling van de Pijpleiding** worden gedaan of **&#x200B;**&#x200B;scherm uitgeven. Algemene afbeeldingsindelingen, zoals JPEG, PNG, GIF en BMP, worden samen met Photoshop-, Illustrator- en Postscript-bestanden ondersteund.
 
 Als er geen afbeeldingen zijn geüpload, gebruikt Cloud Manager een standaardafbeelding en PDF-documenten om te testen.
 
@@ -256,7 +256,7 @@ Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het w
 
 >[!TIP]
 >
->Zie [ productiepijpleidingen ](/help/using/production-pipelines.md) vormen om meer te leren. Zie ](/help/getting-started/program-setup.md) de Opstelling van het 0} Programma leren hoe te opstelling uw programma en uw KPIs bepalen.[
+>Zie [ productiepijpleidingen ](/help/using/production-pipelines.md) vormen om meer te leren. Zie [&#128279;](/help/getting-started/program-setup.md) de Opstelling van het 0&rbrace; Programma leren hoe te opstelling uw programma en uw KPIs bepalen.
 
 ### Prestatietestresultaten {#performance-testing-results-graphs}
 
