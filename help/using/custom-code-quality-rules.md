@@ -2,9 +2,9 @@
 title: Aangepaste regels voor codekwaliteit
 description: Ontdek de specificaties van de aangepaste codecwaliteitsregels die door Cloud Manager worden uitgevoerd tijdens het testen van de codekwaliteit. Deze regels zijn gebaseerd op best practices van AEM Engineering.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3636'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Leer details over de de kwaliteitsregels van de douanecode die door Cloud Manage
 
 >[!NOTE]
 >
->De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube [&#128279;](https://docs.sonarsource.com/sonarqube-server/latest/) om over zijn concepten en kwaliteitsregels te leren.
+>De hier gegeven codevoorbeelden zijn slechts voor illustratieve doeleinden. Zie {de documentatie van Concepten van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/) om over zijn concepten en kwaliteitsregels te leren.[
 
 Volledige SonarQube-regels zijn niet beschikbaar voor downloaden vanwege eigendomsgegevens van Adobe. U kunt de volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx). Lees dit document verder voor beschrijvingen en voorbeelden van de regels.
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2018.4.0
 
-Zoals die in de [ het Schuiven documentatie ](https://sling.apache.org/documentation/the-sling-engine/servlets.html) wordt beschreven, binden servlets door wegen worden ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
+Zoals die in [ wordt beschreven het Schuiven documentatie ](https://sling.apache.org/documentation/the-sling-engine/servlets.html), binden servlets door wegen wordt ontmoedigd. Padgebonden servers kunnen geen standaard JCR-toegangsbesturingselementen gebruiken en vereisen daarom extra beveiligingsstrengheid. In plaats van het gebruiken van weg-gebonden servlets, wordt het geadviseerd om knopen in de bewaarplaats tot stand te brengen en servlets te registreren door middeltype.
 
 #### Niet-compatibele code {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **Ernst**: Klein
 * **sinds**: Versie 2018.4.0
 
-Paden die beginnen met `/libs` en `/apps` , moeten gewoonlijk niet worden gecodeerd. Deze paden worden doorgaans opgeslagen ten opzichte van het zoekpad voor de splitsing, dat standaard op `/libs,/apps` staat. Het gebruik van het absolute pad kan leiden tot subtiele defecten die pas later in de levenscyclus van het project verschijnen.
+Paden die beginnen met `/libs` en `/apps` , moeten gewoonlijk niet worden gecodeerd. Deze paden worden doorgaans opgeslagen ten opzichte van het zoekpad `Sling` , dat standaard op `/libs,/apps` staat. Het gebruik van het absolute pad kan leiden tot subtiele defecten die pas later in de levenscyclus van het project verschijnen.
 
 #### Niet-compatibele code {#non-compliant-code-13}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
-Gebruik Sling Scheduler niet voor taken waarvoor een gegarandeerde uitvoering is vereist. Het verkopen van Geplande Banen garandeert uitvoering en beter geschikt voor zowel gegroepeerde als niet-gegroepeerde milieu&#39;s.
+Gebruik geen Sling Scheduler voor taken waarvoor een gegarandeerde uitvoering is vereist. Het verkopen van Geplande Banen garandeert uitvoering en beter geschikt voor zowel gegroepeerde als niet-gegroepeerde milieu&#39;s.
 
 Zie [ Apache het Sling Event en de documentatie van de Verwerking van de Baan ](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) om meer over te leren hoe het Verschuiven van Banen in gegroepeerde milieu&#39;s worden behandeld.
 
@@ -657,7 +657,7 @@ De documentatie van de Hulpmiddelen van de Modernisering van AEM verstrekt detai
 * **Ernst**: Klein
 * **sinds**: Versie 2020.5.0
 
-De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van Cloud Service, zoals die in [ worden beschreven de Nota&#39;s van de Versie: Verwijdering van de Agenten van de Replicatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
+De steun voor omgekeerde replicatie is niet beschikbaar in de plaatsingen van Cloud Service, zoals die in [ worden beschreven de Nota&#39;s van de Versie: Verwijdering van de Agenten van de Replicatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents).
 
 Klanten die omgekeerde replicatie gebruiken, moeten contact opnemen met Adobe voor alternatieve oplossingen.
 
@@ -668,7 +668,7 @@ Klanten die omgekeerde replicatie gebruiken, moeten contact opnemen met Adobe vo
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-AEM-clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals die in [ wordt beschreven Gebruikend de cliënt-Kant documentatie van Bibliotheken ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op publiceer instanties van verwijzingen te worden voorzien.
+AEM-clientbibliotheken kunnen statische bronnen bevatten, zoals afbeeldingen en lettertypen. Zoals die in [ wordt beschreven Gebruikend de cliënt-Kant documentatie van Bibliotheken ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors), wanneer het gebruiken van pro-xied cliëntbibliotheken moeten deze statische middelen in een kindomslag genoemd `resources` worden bevat om effectief op publiceer instanties van verwijzingen te worden voorzien.
 
 #### Niet-compatibele code {#non-compliant-proxy-enabled}
 
@@ -710,7 +710,7 @@ Het migratiehulpmiddel in de [ bewaarplaats van AEM Assets as a Cloud Service Gi
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Hoewel het gebruik van statische sjablonen in AEM Projecten historisch veel voorkomt, worden bewerkbare sjablonen in hoge mate aanbevolen omdat ze de meeste flexibiliteit bieden en extra functies ondersteunen die niet aanwezig zijn in statische sjablonen. Meer informatie kan in de [ Malplaatjes van de Pagina worden gevonden - editable documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
+Hoewel het gebruik van statische sjablonen in AEM Projecten historisch veel voorkomt, worden bewerkbare sjablonen in hoge mate aanbevolen omdat ze de meeste flexibiliteit bieden en extra functies ondersteunen die niet aanwezig zijn in statische sjablonen. Meer informatie kan in de [ Malplaatjes van de Pagina worden gevonden - editable documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable).
 
 De migratie van statisch aan editable malplaatjes kan grotendeels worden geautomatiseerd gebruikend de [ Moderniseringshulpmiddelen van AEM ](https://opensource.adobe.com/aem-modernize-tools/).
 
@@ -721,7 +721,7 @@ De migratie van statisch aan editable malplaatjes kan grotendeels worden geautom
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-De oudere Componenten van de Stichting (namelijk componenten onder `/libs/foundation`) zijn afgekeurd voor verscheidene versies van AEM ten gunste van de [ Componenten van de Kern ](https://experienceleague.adobe.com/nl/docs/experience-manager-core-components/using/introduction). Het gebruik van de componenten van de erfenisStichting als basis voor douanecomponenten, hetzij door bedekking of overerving, wordt ontmoedigd en zou in de overeenkomstige kerncomponent moeten worden omgezet.
+De oudere Componenten van de Stichting (namelijk componenten onder `/libs/foundation`) zijn afgekeurd voor verscheidene versies van AEM ten gunste van de [ Componenten van de Kern ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction). Het gebruik van de componenten van de erfenisStichting als basis voor douanecomponenten, hetzij door bedekking of overerving, wordt ontmoedigd en zou in de overeenkomstige kerncomponent moeten worden omgezet.
 
 [ de Moderniseringshulpmiddelen van AEM ](https://opensource.adobe.com/aem-modernize-tools/) kunnen deze omzetting vergemakkelijken.
 
@@ -732,7 +732,7 @@ De oudere Componenten van de Stichting (namelijk componenten onder `/libs/founda
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Voor AEM Cloud Service moeten definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) directe onderliggende knooppunten van `/oak:index` zijn. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) worden gevonden.
+Voor AEM Cloud Service moeten definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) directe onderliggende knooppunten van `/oak:index` zijn. Indexen op andere locaties moeten worden verplaatst om compatibel te zijn met AEM Cloud Service. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) worden gevonden.
 
 ### Definitieknooppunten van aangepaste zoekindex moeten een compatVersion van 2 hebben {#oakpal-custom-search-compatVersion}
 
@@ -741,7 +741,7 @@ Voor AEM Cloud Service moeten definities van aangepaste zoekindexen (knooppunten
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Voor AEM Cloud Service moet in definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` zijn ingesteld op `2` . AEM Cloud Service biedt geen ondersteuning voor andere waarden. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing) worden gevonden.
+Voor AEM Cloud Service moet in definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `compatVersion` zijn ingesteld op `2` . AEM Cloud Service biedt geen ondersteuning voor andere waarden. Meer informatie over onderzoeksindexen kan in het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing) worden gevonden.
 
 ### Afstammende knooppunten van definitieknooppunten van de aangepaste zoekindex moeten van het type zijn `nt:unstructured` {#oakpal-descendent-nodes}
 
@@ -768,7 +768,7 @@ Een correct gedefinieerd definitieknoopknooppunt van een aangepaste zoekindex mo
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-De Dienst van de Wolk AEM vereist dat de definities van de douaneonderzoeksindex (namelijk knopen van type `oak:QueryIndexDefinition`) na een specifiek patroon moeten worden genoemd dat op [ wordt beschreven Inhoud Onderzoek en het Indexeren ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use).
+De Dienst van de Wolk AEM vereist dat de definities van de douaneonderzoeksindex (namelijk knopen van type `oak:QueryIndexDefinition`) na een specifiek patroon moeten worden genoemd dat op [ wordt beschreven Inhoud Onderzoek en het Indexeren ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use).
 
 ### De de definitieknooppunten van de onderzoeksindex van de douane moeten indextype lucene gebruiken {#oakpal-index-type-lucene}
 
@@ -777,7 +777,7 @@ De Dienst van de Wolk AEM vereist dat de definities van de douaneonderzoeksindex
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-Voor AEM Cloud Service moeten definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `type` hebben met de waarde ingesteld op `lucene` . Indexering met oudere indextypen moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use) voor meer informatie.
+Voor AEM Cloud Service moeten definities van aangepaste zoekindexen (knooppunten van het type `oak:QueryIndexDefinition` ) de eigenschap `type` hebben met de waarde ingesteld op `lucene` . Indexering met oudere indextypen moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use) voor meer informatie.
 
 ### Definitieknooppunten van aangepaste zoekindex mogen geen eigenschap met de naam `seed` bevatten {#oakpal-property-name-seed}
 
@@ -786,7 +786,7 @@ Voor AEM Cloud Service moeten definities van aangepaste zoekindexen (knooppunten
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om een eigenschap met de naam `seed` te bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use) voor meer informatie.
+AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om een eigenschap met de naam `seed` te bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use) voor meer informatie.
 
 ### Definitieknooppunten van aangepaste zoekindex mogen geen eigenschap met de naam `reindex` bevatten {#oakpal-reindex-property}
 
@@ -795,7 +795,7 @@ AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen kn
 * **Ernst**: Klein
 * **sinds**: Versie 2021.2.0
 
-AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om een eigenschap met de naam `reindex` te bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use) voor meer informatie.
+AEM Cloud Service staat definities van aangepaste zoekindexen (dat wil zeggen knooppunten van het type `oak:QueryIndexDefinition` ) niet toe om een eigenschap met de naam `reindex` te bevatten. Indexering met deze eigenschap moet worden bijgewerkt voordat u naar AEM Cloud Service gaat. Zie het [ Onderzoek van de Inhoud en het Indexeren documentatie ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use) voor meer informatie.
 
 ### De definitieknooppunten van de index moeten niet in het inhoudspakket worden opgesteld UI {#oakpal-ui-content-package}
 
@@ -908,8 +908,7 @@ De AEM Cloud-service staat het maken van indexdefinities met dezelfde tag in mee
 * **Ernst**: Belangrijk
 * **sinds**: Versie 2025.4.0
 
-Het gebruik van de modus &quot;Vervangen&quot; in de bestandsvault is niet toegestaan voor paden onder /content; deze mag niet worden gebruikt voor paden onder /etc en /var.
-De modus &quot;replace&quot; vervangt alle bestaande inhoud in de opslagplaats door de inhoud in het inhoudspakket. Pakketten die deze actie activeren, mogen geen deel uitmaken van pakketten die via CloudManager worden geïmplementeerd.
+Het gebruik van de modus &quot;Vervangen&quot; in de bestandsvault is niet toegestaan voor paden onder `/content` en niet voor paden onder `/etc` en `/var.` . In de modus &quot;Vervangen&quot; wordt bestaande inhoud in de opslagplaats overschreven door inhoud uit het pakket. Pakketten die deze handeling activeren, moeten niet worden opgenomen in pakketten die via Cloud Manager worden geïmplementeerd.
 
 ## Dispatcher-optimalisatiefunctie {#dispatcher-optimization-tool-rules}
 

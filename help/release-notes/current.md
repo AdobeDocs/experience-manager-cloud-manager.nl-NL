@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.6.0
 description: Meer informatie over de release van Cloud Manager 2025.5.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.6.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -73,7 +73,7 @@ Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt 
 
 #### Toegangstokens beheren{#access-tokens}
 
-Gebruik **beheert de Tokens van de Toegang** eigenschap, samen met BYOG, om, toegangstokens te bekijken anders te noemen en te schrappen verbonden aan externe breng Uw Eigen bewaarplaatsen van het Git, zoals Onderneming GitHub, GitLab, Bitbucket, en Azure DevOps.
+Het gebruik **beheert de Tokens van de Toegang** met BYOG, om, toegangstokens te bekijken anders te noemen en te schrappen verbonden aan externe breng Uw Eigen bewaarplaatsen van het GitHub, zoals Onderneming GitLab, Bitbucket, en Azure DevOps.
 
 Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
 

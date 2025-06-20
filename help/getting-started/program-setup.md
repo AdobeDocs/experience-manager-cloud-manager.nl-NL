@@ -2,7 +2,7 @@
 title: Programma instellen
 description: Na het instappen, moet de bedrijfseigenaar één of andere aanvankelijke opstelling van het programma doen.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Gebruik de actiebalk om naar een ander programma te schakelen, het huidige progr
 
 De plaatsen KPIs wordt gemeten op tests die in het opvoeren milieu worden in werking gesteld. Doorgaans worden deze KPI&#39;s verkleind om ze aan te passen aan de mogelijkheden van de testomgeving.
 
-Bijvoorbeeld, zou een gebruiker die een gemiddelde van 1000 paginameningen per minuut in hun productiemilieu verwacht, en vier Dispatcher/het publiceren servers in productie heeft, dit scenario aan 250 paginameningen per minuut moeten schrapen. In dit scenario wordt ervan uitgegaan dat hun testomgeving uit slechts één verzender/publicatieserverpaar bestaat.
+Bijvoorbeeld, zou een gebruiker die een gemiddelde van 1000 paginameningen per minuut in hun productiemilieu verwacht, en vier Dispatcher/het publiceren servers in productie heeft, dit scenario aan 250 paginameningen per minuut moeten schrapen. In dit scenario wordt ervan uitgegaan dat hun testomgeving uit slechts één Dispatcher/publish-serverpaar bestaat.
 
 Bij het testen van Assets-prestaties worden elementen gedurende 30 minuten herhaaldelijk geüpload. De verwerkingstijd voor elk element en de verschillende metingen op systeemniveau worden gedurende de hele test gemeten.
 

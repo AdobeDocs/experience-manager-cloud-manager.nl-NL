@@ -2,16 +2,16 @@
 title: Splitsen van alleen-werkgebied- en alleen-productie-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
 
 # Pijpleidingen die alleen bestemd zijn voor de productie en die alleen voor de productie worden gesplitst {#stage-prod-only}
 
-Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
+U kunt het opvoeren en productieplaatsingen verdelen gebruikend specifieke pijpleidingen.
 
 ## Overzicht {#overview}
 
@@ -75,7 +75,7 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 
 ### Pijpleidingen met alleen propaan {#prod-only}
 
-1. Nadat u **selecteert voeg slechts de optie van de Pijl van de Productie** toe, **voeg slechts de dialoogdoos van de Pijl van de Productie toe** opent.
+1. Nadat u **klikt voeg slechts de Pijpleiding van de Productie** toe, opent zijn bijbehorende dialoogdoos.
 1. Op het **gebied van de Naam van de Pijpleiding**, typ de naam u wilt. De resterende opties en functionaliteit van het dialoogvenster werken op dezelfde manier als de opties in het standaard dialoogvenster voor het maken van gekoppelde pijplijnen.
 1. In de laag-juiste hoek van de dialoogdoos, klik **sparen**.
 
@@ -109,7 +109,7 @@ Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te m
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
-Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0&rbrace; Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
+Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
 

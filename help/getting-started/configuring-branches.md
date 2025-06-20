@@ -2,9 +2,9 @@
 title: Branches configureren
 description: Leer hoe te opstelling uw eerste tak in Git en hoe het door de pijpleiding CI/CD wordt gebruikt om uw toepassingscode op te stellen.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -70,11 +70,11 @@ To <url>
 
 >[!NOTE]
 >
->De specifieke URL, samen met uw gegevens, wordt tijdens het instappen door uw Adobe-CSE (Customer Success Engineer) verstrekt.[!UICONTROL Cloud Manager]
+>De specifieke URL, samen met uw referenties, wordt tijdens [!UICONTROL Cloud Manager] on-boarding door uw Adobe CSE (Customer Success Engineer) verstrekt.
 
 ## Aanvullende vertakkingen {#additional-branches}
 
-Een enkele `main` -vertakking kan voldoende zijn voor zeer eenvoudige projecten, maar in de meeste gevallen is een complexere vertakkingsstrategie vereist. Veel klanten volgen een proces waarbij de ontwikkelingsactiviteiten van dag tot dag worden uitgevoerd op een vertakking met de naam `develop` . De ontwikkeltak wordt dan samengevoegd in de `main` tak wanneer het tijd voor een plaatsing is.
+Een enkele `main` -vertakking kan voldoende zijn voor zeer eenvoudige projecten, maar in de meeste gevallen is een complexere vertakkingsstrategie vereist. Veel klanten volgen een proces waarbij de ontwikkelingsactiviteiten van dag tot dag worden uitgevoerd op een vertakking met de naam `develop` . De `develop` -vertakking wordt vervolgens samengevoegd in de `main` -vertakking wanneer het tijd is voor een implementatie.
 
 >[!TIP]
 >

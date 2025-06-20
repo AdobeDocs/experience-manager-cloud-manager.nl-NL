@@ -2,9 +2,9 @@
 title: Testen van de codekwaliteit
 description: Leer hoe het testen van de codekwaliteit van pijpleidingen werkt en hoe het de kwaliteit van uw plaatsingen kan verbeteren.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2779'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan b
 
 De software implementeert deze met behulp van een combinatie van SonarQube-analyse, inhoudspakketonderzoek met OakPAL en Dispatcher-validatie met het Dispatcher Optimization Tool.
 
-Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van AEM Techniek en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane ](/help/using/custom-code-quality-rules.md).
+Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van de Techniek van AEM en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane ](/help/using/custom-code-quality-rules.md).
 
 U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
@@ -65,11 +65,11 @@ De resultaten van het testen van de codekwaliteit worden geleverd als classifica
 | Overgeslagen eenheidstests | Aantal overgeslagen eenheidstests | Info | > 1 |
 | Problemen openen | Algemene uitgiftypen - Vulnerabilities, Bugs en Codefragmenten | Info | > 0 |
 | Gedupliceerde lijnen | Gedefinieerd als het aantal regels dat is betrokken bij gedupliceerde blokken. Een codeblok wordt als gedupliceerd beschouwd onder de volgende omstandigheden.<br> niet-Java Projecten:<ul><li>Er moeten ten minste 100 opeenvolgende en gedupliceerde tokens zijn.</li><li>Deze tokens moeten ten minste worden verspreid over: </li><li>30 regels code voor COBOL </li><li>20 coderegels voor ABAP </li><li>10 coderegels voor andere talen</li></ul>Java-projecten:<ul></li><li> Er moeten minstens tien opeenvolgende en gedupliceerde instructies zijn, ongeacht het aantal tokens en regels.</li></ul>Verschillen in inspringing en in letterlijke tekenreeksen worden genegeerd wanneer duplicaten worden gedetecteerd. | Info | > 1% |
-| Compatibiliteit met Cloud Service | Aantal geïdentificeerde kwesties van de Verenigbaarheid van de Cloud Service | Info | > 0 |
+| Cloud Service-compatibiliteit | Aantal geïdentificeerde Cloud Service-compatibiliteitsproblemen | Info | > 0 |
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie, {de metrische definities van 0} SonarQube [&#128279;](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).
+>Voor meer gedetailleerde informatie, {de metrische definities van 0} SonarQube ](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/).[
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Het kwaliteitscontroleproces is niet perfect en identificeert soms problemen die
 
 In deze gevallen kan de broncode worden geannoteerd met de standaard Java `@SuppressWarnings` -annotatie die de regel-id opgeeft als het annotatiekenmerk. Bijvoorbeeld, één gemeenschappelijk vals positief is dat de regel SonarQube om hardcoded wachtwoorden te ontdekken agressief kan zijn over hoe een hard - gecodeerd wachtwoord wordt geïdentificeerd.
 
-De volgende code is vrij gemeenschappelijk in een AEM project, dat code heeft om met één of andere externe dienst te verbinden.
+De volgende code is vrij algemeen in een project van AEM, dat code heeft om met één of andere externe dienst te verbinden.
 
 ```java
 @Property(label = "Service Password")
@@ -111,7 +111,7 @@ Dan is de correcte oplossing het hardcoded wachtwoord te verwijderen.
 
 ## Beveiligingstest {#security-testing}
 
-[!UICONTROL Cloud Manager] stelt de bestaande Controle van de Gezondheid van de Veiligheid van de Veiligheid op het opvoeren milieu na plaatsing in werking en meldt de status door UI. De resultaten worden samengevoegd van alle AEM in de omgeving.
+[!UICONTROL Cloud Manager] voert de bestaande AEM Security Heath Checks uit op de testomgeving na implementatie en rapporteert de status via de gebruikersinterface. De resultaten worden samengevoegd van alle AEM-instanties in de omgeving.
 
 Deze zelfde gezondheidscontroles kunnen op elk ogenblik door de Console van het Web of het Dashboard van Verrichtingen worden uitgevoerd.
 
@@ -121,23 +121,23 @@ In de volgende tabel staan de gezondheidscontroles.
 
 | Naam | Implementatie van gezondheidscontrole | Categorie |
 |---|---|---|
-| Gereedheid van API voor bevestiging van de firewall voor deserialisatie is acceptabel. | [ Readiness van de Firewall van de Bevestiging API van Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| De firewall voor deserialization is functioneel. | [ Functionele Firewall Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| De firewall voor deserialization wordt geladen. | [ Geladen Firewall Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| `AuthorizableNodeName` -implementatie stelt geen machtigbare id beschikbaar in de knooppuntnaam/het pad. | [ Vergunnbare Generatie van de Naam van de Knoop ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Kritiek |
-| Standaardwachtwoorden zijn gewijzigd. | [ Standaard Login Rekeningen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Kritiek |
-| Standaard GET-servlet wordt beveiligd tegen DOS-aanvallen. | Sling Get Servlet | Kritiek |
-| De Sling JavaScript-handler wordt op de juiste wijze geconfigureerd. | Sling JavaScript Handler | Kritiek |
-| De Sling JSP manager van het Manuscript wordt gevormd geschikt. | JSP-scripthandler afspelen | Kritiek |
+| Gereedheid van API voor bevestiging van de firewall voor deserialisatie is acceptabel. | [ Readiness van de Firewall van de Bevestiging API van Deserialization ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| De firewall voor deserialization is functioneel. | [ Functionele Firewall Deserialization ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| De firewall voor deserialization wordt geladen. | [ Geladen Firewall Deserialization ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| `AuthorizableNodeName` -implementatie stelt geen machtigbare id beschikbaar in de knooppuntnaam/het pad. | [ Vergunnbare Generatie van de Naam van de Knoop ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) | Kritiek |
+| Standaardwachtwoorden zijn gewijzigd. | [ Standaard Login Rekeningen ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Kritiek |
+| `Sling` standaard GET servlet is beveiligd tegen DOS-aanvallen. | `Sling Get` servlet | Kritiek |
+| De `Sling` JavaScript-handler is op de juiste wijze geconfigureerd. | `Sling` JavaScript Handler | Kritiek |
+| De `Sling` JSP Scripthandler wordt op de juiste wijze geconfigureerd. | `Sling` JSP Script-handler | Kritiek |
 | SSL is correct geconfigureerd. | SSL-configuratie | Kritiek |
 | Er is geen duidelijk onveilig beleid voor gebruikersprofielen gevonden. | Standaardtoegang gebruikersprofiel | Kritiek |
-| Het filter van de Verwijzer van de Verkoop wordt gevormd om aanvallen te verhinderen CSRF. | [ het Verkopen Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Belangrijk |
-| De Adobe Granite HTML Library Manager is op de juiste wijze geconfigureerd. | Config. van Bibliotheekbeheer CQ HTML | Belangrijk |
+| Het filter `Sling` Referrer wordt gevormd om aanvallen te verhinderen CSRF. | [ het Verkopen Filter van de Verwijzer ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security-checklist#security) | Belangrijk |
+| De Adobe Granite HTML Library Manager is op de juiste wijze geconfigureerd. | Config. HTML Library Manager | Belangrijk |
 | De CRXDE-ondersteuningspakket is uitgeschakeld. | CRXDE-ondersteuning | Belangrijk |
-| Sling DavEx-bundel en -servlet zijn uitgeschakeld. | DavEx Health Check | Belangrijk |
+| `Sling` DavEx-bundel en -servlet zijn uitgeschakeld. | DavEx Health Check | Belangrijk |
 | Voorbeeldinhoud is niet geïnstalleerd. | Voorbeelden van inhoudspakketten | Belangrijk |
-| Zowel het WCM-aanvraagfilter als het WCM-foutopsporingsfilter zijn uitgeschakeld. | [ Configuratie van Filters WCM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Belangrijk |
-| De verkoop WebDAV bundel en servlet worden gevormd geschikt. | WebDAV Health Check | Belangrijk |
+| Zowel het WCM-aanvraagfilter als het WCM-foutopsporingsfilter zijn uitgeschakeld. | [ Configuratie van Filters WCM ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Belangrijk |
+| `Sling` WebDAV-bundel en -servlet zijn op de juiste wijze geconfigureerd. | WebDAV Health Check | Belangrijk |
 | De webserver is geconfigureerd om te voorkomen dat wordt geklikt. | Webserverconfiguratie | Belangrijk |
 | Replicatie maakt geen gebruik van de gebruiker `admin` . | Replicatie- en transportgebruikers | Info |
 
@@ -155,7 +155,7 @@ Op basis van de gedefinieerde KPI&#39;s worden maximaal tien containers gesponne
 
 #### Crawler {#crawler}
 
-Vóór het begin van de testperiode van 30 minuten kruipt Cloud Manager de testomgeving met behulp van een set van een of meer zaadURL&#39;s die door de Klantsuccesingenieur zijn geconfigureerd. Vanaf deze URL&#39;s wordt de HTML van elke pagina geïnspecteerd en worden koppelingen in de breedteeerste modus doorlopen.
+Vóór het begin van de testperiode van 30 minuten kruipt Cloud Manager de testomgeving met behulp van een set van een of meer zaadURL&#39;s die door de Klantsuccesingenieur zijn geconfigureerd. Vanaf deze URL&#39;s wordt de HTML van elke pagina geïnspecteerd en worden koppelingen doorlopen op een wijze die begint met het doorlopen van de breedte.
 
 * Dit schuifproces is standaard beperkt tot maximaal 5000 pagina&#39;s.
 * Het maximumaantal te testen pagina&#39;s kan worden overschreven door de [ pijpleidingsvariabele ](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES` te plaatsen.
@@ -164,7 +164,7 @@ Vóór het begin van de testperiode van 30 minuten kruipt Cloud Manager de testo
 
 #### Paginasets voor testen {#page-sets}
 
-Drie paginasets selecteren de pagina&#39;s. Cloud Manager gebruikt de toegangslogboeken van de AEM instanties over productie en het opvoeren milieu&#39;s om de volgende emmers te bepalen.
+Drie paginasets selecteren de pagina&#39;s. Cloud Manager gebruikt de toegangslogboeken van de instanties van AEM over productie en het opvoeren milieu&#39;s om de volgende emmers te bepalen.
 
 * **Populaire Levende Pagina&#39;s** - verzekert dat de populairste pagina&#39;s die door levende klanten worden betreden worden getest. Cloud Manager leest het toegangslogboek en bepaalt de hoogste 25 meest toegankelijke pagina&#39;s door levende klanten om een lijst van bovenkant te produceren `Popular Live Pages`. Het snijpunt van deze pagina&#39;s die ook aanwezig zijn in de testomgeving, wordt vervolgens gekropen in de testomgeving.
 
@@ -240,9 +240,9 @@ Deze methode zou in de auteursinstantie met zijn toestemmingen onveranderd moete
 
 #### Afbeeldingen en Assets voor testdoeleinden {#assets-for-testing}
 
-Klanten kunnen hun eigen middelen uploaden om te testen. Dit proces kan van de **Opstelling van de Pijpleiding** worden gedaan of **&#x200B;**&#x200B;scherm uitgeven. Algemene afbeeldingsindelingen, zoals JPEG, PNG, GIF en BMP, worden ondersteund in combinatie met Photoshop-, Illustrator- en Postscript-bestanden.
+Klanten kunnen hun eigen middelen uploaden om te testen. Dit proces kan van de **Opstelling van de Pijpleiding** worden gedaan of **** scherm uitgeven. Algemene afbeeldingsindelingen, zoals JPEG, PNG, GIF en BMP, worden samen met Photoshop-, Illustrator- en Postscript-bestanden ondersteund.
 
-Als er geen afbeeldingen zijn geüpload, gebruikt Cloud Manager een standaardafbeelding en PDF-documenten voor het testen.
+Als er geen afbeeldingen zijn geüpload, gebruikt Cloud Manager een standaardafbeelding en PDF-documenten om te testen.
 
 #### Distributie van Assets voor tests {#distribution-of-assets}
 
@@ -252,11 +252,11 @@ Als bijvoorbeeld een splitsing van 70/30 wordt gebruikt en er 10 elementen per m
 
 #### Testen en rapporteren {#testing-and-reporting}
 
-Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het wachtwoord die door de CSE-instelling worden ingesteld. Assets wordt vervolgens geüpload naar de map met behulp van een opensource-bibliotheek. De tests die door Assets worden in werking gesteld worden het testen stap geschreven gebruikend een [ open bronbibliotheek ](https://github.com/adobe/toughday2). Zowel de verwerkingstijd voor elk element als de verschillende metingen op systeemniveau worden over de testduur van 30 minuten gemeten. Met deze functie kunt u zowel afbeeldingen als PDF-documenten uploaden.
+Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het wachtwoord die door de CSE-instelling worden ingesteld. Assets wordt vervolgens geüpload naar de map met behulp van een opensource-bibliotheek. De tests die door Assets worden in werking gesteld worden het testen stap geschreven gebruikend een [ open bronbibliotheek ](https://github.com/adobe/toughday2). Zowel de verwerkingstijd voor elk element als de verschillende metingen op systeemniveau worden over de testduur van 30 minuten gemeten. Deze functie kan zowel afbeeldingen als PDF-documenten uploaden.
 
 >[!TIP]
 >
->Zie [ productiepijpleidingen ](/help/using/production-pipelines.md) vormen om meer te leren. Zie [&#128279;](/help/getting-started/program-setup.md) de Opstelling van het 0&rbrace; Programma leren hoe te opstelling uw programma en uw KPIs bepalen.
+>Zie [ productiepijpleidingen ](/help/using/production-pipelines.md) vormen om meer te leren. Zie ](/help/getting-started/program-setup.md) de Opstelling van het 0} Programma leren hoe te opstelling uw programma en uw KPIs bepalen.[
 
 ### Prestatietestresultaten {#performance-testing-results-graphs}
 
@@ -304,5 +304,5 @@ Een speciaal geval kan voorkomen wanneer het &quot;alle&quot;inhoudspakket een c
 
 >[!NOTE]
 >
->* Deze optimalisatie heeft geen invloed op de pakketten die worden geïmplementeerd op AEM.
+>* Deze optimalisatie heeft geen invloed op de pakketten die naar AEM worden geïmplementeerd.
 >* Het afstemmen tussen ingesloten en overgeslagen inhoudspakketten is gebaseerd op bestandsnamen. Deze optimalisatie mislukt als meerdere overgeslagen inhoudspakketten dezelfde bestandsnaam hebben of als de bestandsnaam tijdens het insluiten verandert.

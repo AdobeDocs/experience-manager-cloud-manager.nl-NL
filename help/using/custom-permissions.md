@@ -2,9 +2,9 @@
 title: Aangepaste machtigingen
 description: Leer hoe u douanetoestemmingen kunt gebruiken om nieuwe profielen van de douanetoestemming met configureerbare toestemmingen tot stand te brengen om toegang tot programma's, pijpleidingen en milieu's voor de gebruikers van de Managers van de Wolk te beperken.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1373'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,11 @@ Voor het maken en gebruiken van uw eigen aangepaste machtigingen moeten de volge
 1. [ wijs douanetoestemmingen aan het nieuwe productprofiel ](#assign-permissions) toe.
 1. [ wijs gebruikers aan het nieuwe productprofiel ](#assign-users) toe.
 
-In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3&rbrace; secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
+In deze sectie worden deze stappen beschreven. U kunt het nuttig vinden om de [ Termijnen ](#terms) en [ Configurable 3} secties van Toestemmingen te zien aangezien u uw eigen douanetoestemmingen creeert.](#configurable-permissions)
 
 >[!NOTE]
 >
->U moet over de rechten van de productbeheerder in de Admin Console beschikken om nieuwe profielen te creëren en toestemmingen voor Cloud Manager te beheren.
+>U moet in de Admin Console over productbeheerdersrechten beschikken om nieuwe profielen te maken en machtigingen voor Cloud Manager te beheren.
 
 ### Een nieuw productprofiel maken {#create}
 
@@ -52,7 +52,7 @@ Maak eerst een nieuw productprofiel waaraan u aangepaste machtigingen kunt toewi
 
 1. Zoek en instantie met een naam die overeenkomt met het patroon `*-cloud-manager` en klik om gebruikers en machtigingen te beheren.
 
-1. U wordt opnieuw gericht aan het **Producten** lusje van de Admin Console, waar u gebruikers en toestemmingen voor Cloud Manager kunt beheren. In de Admin Console, klik **Nieuw Profiel**.
+1. U wordt opnieuw gericht aan het **Producten** lusje van Admin Console, waar u gebruikers en toestemmingen voor Cloud Manager kunt beheren. In Admin Console, klik **Nieuw Profiel**.
 
 ![ Nieuwe knoop van het Profiel ](/help/assets/admin-console-new-profile.png)
 
@@ -71,7 +71,7 @@ Het nieuwe productprofiel wordt opgeslagen en wordt weergegeven in de lijst met 
 
 Nu u een nieuw productprofiel hebt, kunt u er aangepaste machtigingen aan toewijzen.
 
-1. In de Admin Console, klik de naam van het [ nieuwe productprofiel u enkel ](#create) creeerde.
+1. In Admin Console, klik de naam van het [ nieuwe productprofiel u enkel ](#create) creeerde.
 
 1. In het venster dat opent, selecteer het **lusje van Toestemmingen** om een lijst van editable toestemmingen te bekijken.
 
@@ -98,36 +98,36 @@ Uw nieuwe productprofiel wordt nu opgeslagen met de aangepaste machtigingen.
 
 U kunt nu gebruikers toewijzen aan het nieuwe productprofiel dat u met aangepaste machtigingen hebt gemaakt.
 
-1. In de Admin Console, klik de naam van het [ nieuwe productprofiel waaraan u enkel douanetoestemmingen ](#assign-permissions) toewees.
+1. In Admin Console, klik de naam van het [ nieuwe productprofiel waaraan u enkel douanetoestemmingen ](#assign-permissions) toewees.
 
 1. In het venster dat opent, selecteer de **Gebruikers** tabel.
 
 1. Klik **toevoegen Gebruikers** en wijs gebruikers aan uw nieuw productprofiel met douanetoestemmingen toe.
 
-Zie **gebruikers en gebruikersgroepen aan een productprofiel** van het document [ toevoegen productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/nl/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om de Admin Console te gebruiken.
+Zie **gebruikers en gebruikersgroepen toevoegen aan een productprofiel** van het document [ productprofielen voor ondernemingsgebruikers ](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) voor meer details op hoe te om Admin Console te gebruiken.
 
 ## Configureerbare machtigingen {#configurable-permissions}
 
 De volgende machtigingen zijn beschikbaar voor het maken van aangepaste profielen.
 
 | Machtiging | Beschrijving |
-|---|---|
-| Programmatoegang | Gebruikers toegang geven tot programma&#39;s |
-| Programmabewerking | Gebruikers mogen programma&#39;s bewerken |
-| Pipet maken | Gebruikers toestaan nieuwe pijpleidingen te maken |
-| Pipet verwijderen | Gebruikers toestaan pijpleidingen te verwijderen |
-| Pipet bewerken | Gebruikers toestaan pijpleidingen te bewerken |
-| Productieimplementaties goedkeuren/afwijzen | Gebruikers toestaan een stap voor productieimplementatie goed te keuren of af te wijzen |
-| Uitvoeringen pijplijn annuleren | Laat gebruikers uitvoeren pijpleidingen annuleren |
-| Start van pijplijnuitvoering | Gebruikers toestaan nieuwe pijpleidinguitvoeringen te starten |
-| Belangrijke metrische fouten negeren/negeren | Gebruikers toestaan belangrijke metrische fouten te negeren/af te wijzen |
-| Plan voor productieimplementaties | Gebruikers toestaan een stap voor productieimplementatie te plannen |
-| Toegang tot opslaggegevens | Gebruikers toegang geven tot gegevens in de opslagplaats en een wachtwoord voor toegang genereren |
-| Opslagplaats maken | Gebruikers toestaan nieuwe Git-opslagruimten te maken |
-| Opslagplaats verwijderen | Gebruikers mogen Git-opslagruimten verwijderen |
-| Bewerken opslagplaats | Gebruikers toestaan om Git-opslagruimten te bewerken |
-| Code opslagplaats genereren | Gebruikers toestaan projecten te genereren op basis van het archetype |
-| Inhoud kopiëren beheren | Gebruikers toestaan bewerkingen voor het kopiëren van inhoud te beheren |
+| --- | --- |
+| `Program Access` | Gebruikers toegang geven tot programma&#39;s |
+| `Program Edit` | Gebruikers mogen programma&#39;s bewerken |
+| `Pipeline Create` | Gebruikers toestaan nieuwe pijpleidingen te maken |
+| `Pipeline Delete` | Gebruikers toestaan pijpleidingen te verwijderen |
+| `Pipeline Edit` | Gebruikers toestaan pijpleidingen te bewerken |
+| `Production Deployments Approve/Reject` | Gebruikers toestaan een stap voor productieimplementatie goed te keuren of af te wijzen |
+| `Pipeline Executions Cancel` | Laat gebruikers uitvoeren pijpleidingen annuleren |
+| `Pipeline Executions Start` | Gebruikers toestaan nieuwe pijpleidinguitvoeringen te starten |
+| `Override/Reject Important Metric Failures` | Gebruikers toestaan belangrijke metrische fouten te negeren/af te wijzen |
+| `Production Deployments Schedule` | Gebruikers toestaan een stap voor productieimplementatie te plannen |
+| `Repository Info Access` | Gebruikers toegang geven tot gegevens in de opslagplaats en een wachtwoord voor toegang genereren |
+| `Repository Create` | Gebruikers toestaan nieuwe Git-opslagruimten te maken |
+| `Repository Delete` | Gebruikers mogen Git-opslagruimten verwijderen |
+| `Repository Edit` | Gebruikers toestaan om Git-opslagruimten te bewerken |
+| `Repository Code Generate` | Gebruikers toestaan projecten te genereren op basis van het archetype |
+| `Content Copy Manage` | Gebruikers toestaan bewerkingen voor het kopiëren van inhoud te beheren |
 
 ### Rechten op organisatieniveau {#organization-level}
 
@@ -142,7 +142,7 @@ Zie de [ Bewaarplaats van de Code van Source ](/help/requirements/source-code-re
 De volgende termen worden gebruikt bij het maken en beheren van aangepaste machtigingen en vooraf gedefinieerde rollen.
 
 | Term | Beschrijving |
-|---|---|
+| --- | --- |
 | Vooraf gedefinieerde machtigingen | Vooraf bepaalde rollen zoals **BedrijfsEigenaar**, de Manager van de Plaatsing **, etc.** om verschillende functies van Cloud Manager te besturen. Voor details op vooraf bepaalde rollen, zie [ Op rol-Gebaseerde Toestemmingen ](/help/requirements/role-based-permissions.md). |
 | Aangepaste machtigingen | Cloud Manager-functies waarmee gebruikers machtigingsprofielen kunnen maken om rollen te definiëren die de ondersteunde functies van Cloud Manager bepalen |
 | Machtigingsprofiel | Gemaakt in de Admin Console voor het beheer van configureerbare machtigingen die van toepassing zijn op gebruikers die deel uitmaken van het machtigingsprofiel |
@@ -152,18 +152,18 @@ De volgende termen worden gebruikt bij het maken en beheren van aangepaste macht
 De punten van de toestemming verwijzen naar het werkingsgebied waar de toestemmingen worden toegepast. Doorgaans is dit een van de volgende:
 
 | Type machtigingsitem | Voorbeeld | Beschrijving |
-|---|---|---|
+| --- | --- | --- |
 | Organisatie | organisatie:bedrijfA | Alle toepasselijke middelen van een organisatie. Een bron kan een programma, omgeving of pijpleiding zijn. Als de gebruiker een organisatie voor om het even welke toestemming toevoegt, dan hebben alle nieuwe middelen in die organisatie ook die toestemming. |
-| Programma | Programma A | Alle toepasselijke middelen van een programma |
-| Omgeving | Programma A: milieu | Van toepassing in een specifieke omgeving |
-| Pijpleiding | Programma A : Pipeline | Van toepassing op een specifieke pijpleiding |
+| Programma | Programma A | Alle toepasselijke middelen van een programma. |
+| Omgeving | Programma A: milieu | Van toepassing in een specifieke omgeving. |
+| Pijpleiding | Programma A : Pipeline | Van toepassing op een specifieke pijpleiding. |
 
 ## Beperkingen {#limitations}
 
 Houd rekening met de volgende beperkingen wanneer u aangepaste machtigingen gebruikt:
 
 * A [ beperkte reeks toestemmingen is beschikbaar ](#configurable-permissions) voor het creëren van douaneprofielen.
-* Middelen zoals programma, milieu, pijpleiding enz. die in Cloud Manager zijn gemaakt, kan twee minuten in beslag nemen om in Admin Console weer te geven voor configuratie van bevoegdheden.
+* Middelen zoals programma, milieu, pijpleiding enz. die in Cloud Manager zijn gemaakt, kan twee minuten duren om in Admin Console weer te geven voor configuratie van de machtiging.
 * In zeldzame gevallen waarin een service met aangepaste machtigingen niet reageert, zijn vooraf gedefinieerde profielen nog steeds beschikbaar en hebben gebruikers in vooraf gedefinieerde profielen nog steeds de juiste toegang.
 
 ## Veelgestelde vragen {#faq}
@@ -195,8 +195,8 @@ Ja, een gebruiker kan deel uitmaken van meerdere profielen, waaronder vooraf ged
 
 ### Wat gebeurt als een gebruiker toestemming heeft om een milieu/pijpleiding uit te geven maar geen toegang tot een programma heeft dat het milieu/de pijpleiding bevat?
 
-In dit scenario, kan de gebruiker tot het milieu of de pijpleiding toegang hebben als zij niet de **toestemmingen hebben van de Toegang van het 0&rbrace; Programma die het milieu of de pijpleiding bevatten.**
+In dit scenario, kan de gebruiker tot het milieu of de pijpleiding toegang hebben als zij niet de **toestemmingen hebben van de Toegang van het 0} Programma die het milieu of de pijpleiding bevatten.**
 
 ### Wat gebeurt er als ik zowel AEM as a Cloud Service- als AMS-programma&#39;s in dezelfde IMS-org heb? Kan ik machtigingen van één profiel beheren? {#ams-and-aemaacs}
 
-Maak een afzonderlijk profiel voor elk producttype. Dat is één voor AEM als Cloud Service en één voor Adobe Managed Services of AMS.
+Maak een afzonderlijk profiel voor elk producttype. Dat wil zeggen: één voor AEM als Cloud Service en één voor Adobe Managed Services of AMS.
