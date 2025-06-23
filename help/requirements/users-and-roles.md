@@ -2,10 +2,10 @@
 title: Gebruikers en rollen toevoegen
 description: Leer hoe u de Admin Console gebruikt om gebruikers en rollen toe te voegen en profielen te maken.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
+source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 3%
+source-wordcount: '725'
+ht-degree: 4%
 
 ---
 
@@ -57,9 +57,10 @@ Een beheerder moet nieuwe productprofielen maken onder de [!UICONTROL AEM Manage
 
 Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productprofielen.
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->Wegens een huidige beperking in Admin Console en Cloud Manager, kunnen de profielen niet met **worden bewaard Geen toestemmingen** geselecteerd. Als u dit probeert, treedt er een backend-fout op. Dit gedrag beïnvloedt de verwezenlijking van de profielen van de Manager van de Plaatsing. Als tijdelijke oplossing selecteert u ten minste één machtiging bij het maken van een nieuw profiel.
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **om een productprofiel tot stand te brengen gebruikend Admin Console:**
 
@@ -73,7 +74,7 @@ Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productpr
 
    ![ Admin consoleproducten tabel ](/help/assets/admin-console-product.png)
 
-1. Op het **lusje van het Profiel van het 0&rbrace; Product &lbrace;van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
+1. Op het **lusje van het Profiel van het 0} Product {van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
 
    ![ Nieuw profiel ](/help/assets/admin-console-product-profiles.png)
 
@@ -83,18 +84,19 @@ Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productpr
    * **Naam van de Vertoning** - de **Naam van de Vertoning** moet de technische waarde zijn die door [!UICONTROL Cloud Manager] wordt bepaald (zie de volgende lijst).
    * **Groep van de Toestemming** - u kunt een toestemmingsgroep voor het profiel (niet altijd beschikbaar) kiezen.
 
-     >[!IMPORTANT]
-     >
-     >Wegens een huidige beperking in Admin Console en Cloud Manager, kunnen de profielen niet met **worden bewaard Geen toestemmingen** geselecteerd. Als u dit probeert, treedt er een backend-fout op. Dit gedrag beïnvloedt de verwezenlijking van de profielen van de Manager van de Plaatsing. Als tijdelijke oplossing selecteert u ten minste één machtiging bij het maken van een nieuw profiel.
+<!-- CQDOC-22790
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-   ![ Creërend een nieuw profiel ](/help/assets/screen_shot_2018-05-04at171819.png)
+![ Creërend een nieuw profiel ](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | Rol | Weergavenaam (vereist) | Aanbevolen profielnaam |
-   |---|---|---|
-   | Business Owner | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol bedrijfseigenaar |
-   | Deployment Manager | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van Deployment Manager |
-   | Developer | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van ontwikkelaar |
-   | Program Manager | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van Program Manager |
+| Rol | Weergavenaam (vereist) | Aanbevolen profielnaam |
+|---|---|---|
+| Business Owner | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol bedrijfseigenaar |
+| Deployment Manager | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van Deployment Manager |
+| Developer | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van ontwikkelaar |
+| Program Manager | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - Rol van Program Manager |
 
 
 1. Klik **Gedaan** om het nieuwe profiel te bewaren.
