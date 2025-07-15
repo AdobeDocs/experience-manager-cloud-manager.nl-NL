@@ -69,7 +69,7 @@ Dit laat verdere plaatsingen nog worden geïnstalleerd wanneer de versie niet ve
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in Git. Indien nodig kunt u later naar dit label verwijzen.
 
-De verdere details over versie behandeling worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
+De verdere details over versie behandeling worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
 ## Hoe werkt het pakket en de bundelversioning voor het opvoeren en productieplaatsingen? {#staging-production}
 
