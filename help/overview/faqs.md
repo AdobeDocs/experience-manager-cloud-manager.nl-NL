@@ -2,9 +2,9 @@
 title: Veelgestelde vragen over Cloud Manager
 description: Leer meer over antwoorden op de vaakst gestelde vragen over Cloud Manager voor AMS-klanten.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: e7e9844b5f06552fc2104584c63935dee7a9fa89
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,13 @@ ht-degree: 0%
 
 In dit document worden antwoorden gegeven op de meest gestelde vragen over Cloud Manager voor AMS-klanten.
 
-## Is het mogelijk om Java 11 te gebruiken met Cloud Manager builds? {#java-11}
+<!-- 
+## Is it possible to use Java 11 with Cloud Manager builds? {#java-11}
 
-Ja. U moet `maven-toolchains-plugin` met de correcte montages voor Java 11 toevoegen.
+Yes. You need to add the `maven-toolchains-plugin` with the correct settings for Java 11.
 
-* Dit proces wordt gedocumenteerd [ hier ](/help/getting-started/using-the-wizard.md).
-* Voor een voorbeeld, zie de [ WKND code van het steekproefproject ](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* This process is documented [here](/help/getting-started/using-the-wizard.md).
+* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). -->
 
 ## Mijn build mislukt met een fout over maven-scr-plugin na het schakelen van Java 8 naar Java 11. Wat kan ik doen? {#maven-src-plugin}
 
@@ -68,7 +69,7 @@ Dit laat verdere plaatsingen nog worden geïnstalleerd wanneer de versie niet ve
 
 U kunt de versie ook instellen op `-SNAPSHOT` voor stadium- en productiebuilds of -implementaties. Cloud Manager stelt automatisch een correct versienummer in en maakt een tag voor u in Git. Indien nodig kunt u later naar dit label verwijzen.
 
-De verdere details over versie behandeling worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
+De verdere details over versie behandeling worden [ hier gedocumenteerd ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling).
 
 ## Hoe werkt het pakket en de bundelversioning voor het opvoeren en productieplaatsingen? {#staging-production}
 
@@ -102,6 +103,6 @@ setting variables... !
 Cannot set variables: https://cloudmanager.adobe.io/api/program/111/environment/222/variables (403 Forbidden)
 ```
 
-In dit geval, moet de gebruiker die deze bevelen uitvoert aan de **rol van de Manager van de Plaatsing** in de Admin Console worden toegevoegd.
+In dit geval, moet de gebruiker die deze bevelen uitvoert aan de **rol van de Manager van de Plaatsing** in Admin Console worden toegevoegd.
 
 Zie [ API Toestemmingen ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/) voor meer details.

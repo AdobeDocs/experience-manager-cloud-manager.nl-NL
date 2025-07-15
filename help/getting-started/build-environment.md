@@ -2,9 +2,9 @@
 title: De Build-omgeving
 description: Leer over de gespecialiseerde bouwstijlomgeving die de gebruikers van Cloud Manager om uw code te bouwen en te testen.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,9 @@ Cloud Manager-ontwikkelomgevingen hebben de volgende kenmerken.
 * Maven wordt geconfigureerd op systeemniveau met een `settings.xml` -bestand. Dit bestand bevat automatisch de openbare Adobe-gegevensopslagruimte met een profiel met de naam `adobe-public` . Zie [ Adobe openbare Gemaakt bewaarplaats ](https://repo1.maven.org/) voor meer details.
 * Node.js 18 is beschikbaar voor [ front eindpijpleidingen ](/help/overview/ci-cd-pipelines.md).
 
+>[!IMPORTANT]
+>De ondersteuning voor Maven-toolketens is verwijderd vanaf Cloud Manager 2025.06.0. JDK-selectie wordt nu alleen ondersteund via `.cloudmanager/java-version` . Voor meer informatie, zie [ Gebruikend een specifieke versie van Java ](#using-java-version).
+
 >[!NOTE]
 >
 >Hoewel Cloud Manager geen specifieke versie van de `jacoco-maven-plugin` definieert, moet de gebruikte versie ten minste `0.7.5.201505241946` zijn.
@@ -62,14 +65,23 @@ Voor een vlotte ervaring met de bijgewerkte versie raadt Adobe gebruikers aan hu
 
 ## Een specifieke Java-versie gebruiken {#using-java-version}
 
-Standaard wordt voor projecten die door de Cloud Manager worden gemaakt, gebruikgemaakt van de Oracle 8 JDK. Klanten die een alternatieve JDK willen gebruiken, hebben twee opties.
+Standaard wordt voor projecten die door de Cloud Manager worden gemaakt, gebruikgemaakt van de Oracle 8 JDK. Klanten die een alternatieve JDK willen gebruiken, kunnen een alternatieve JDK-versie selecteren voor het volledige uitgevoerde Maven-proces.
 
-* [ Gemaakt Toolketens ](#maven-toolchains)
-* [Een alternatieve JDK-versie selecteren voor het volledige uitgevoerde Maven-proces](#alternate-maven)
+>[!IMPORTANT]
+>
+>Maven Toolketins worden niet meer ondersteund in Cloud Manager 2025.06.0. Houd er rekening mee dat pijpleidingen met een configuratie met een maven-toolketins-plug-in niet werken met `Cannot find matching toolchain definitions.` Gebruik het bestand `.cloudmanager/java-version` om JDK 11, 17 of 21 te selecteren.
+>
+>**begeleiding van de Migratie:**
+>
+>1. Verwijder toolketens door om het even welke `org.apache.maven.plugins:maven-toolchains-plugin` ingang en om het even welke `toolchains.xml` te schrappen geëngageerd aan uw broncontrole.
+>1. Kies een JDK met `.cloudmanager/java-version` (21, 17, of 11) zoals die in [ wordt beschreven Afwisselend Gemaakt uitvoeringJDK versie ](#alternate-maven).
+>1. Adobe raadt aan de Cloud Manager-constructiecache te wissen of een nieuwe pijpleidingrun te starten.
+>
 
-### Maven Toolketins {#maven-toolchains}
+<!--DEPRECATED 
+### Maven Toolchains {#maven-toolchains}
 
-De [ Gemaakt stop-in Toolketens ](https://maven.apache.org/plugins/maven-toolchains-plugin/) laat projecten een specifieke JDK (of toolchain) selecteren om in de context van toolketens-bewuste Gewenste stop-ins te gebruiken. Dit proces wordt uitgevoerd in het `pom.xml` dossier van het project door een verkoper en versiewaarde te specificeren. Een voorbeeldsectie in het bestand `pom.xml` is als volgt:
+The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
 
 ```xml
         <plugin>
@@ -92,30 +104,31 @@ De [ Gemaakt stop-in Toolketens ](https://maven.apache.org/plugins/maven-toolcha
         </toolchains>
     </configuration>
 </plugin>
+
 ```
 
-Dit proces zorgt ervoor dat alle plug-ins die zich bewust zijn van de toolketens, de Oracle JDK versie 11 gebruiken.
+This process causes all toolchains-aware Maven plug-ins to use the Oracle JDK, version 11.
 
-Wanneer u deze methode gebruikt, wordt Maven zelf nog steeds uitgevoerd met de standaard-JDK (Oracle 8) en wordt de omgevingsvariabele `JAVA_HOME` niet gewijzigd. Daarom het controleren van of het handhaven van de versie van Java door stop-ins zoals [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werkt niet en dergelijke stop-ins moet niet worden gebruikt.
+When using this method, Maven itself still runs using the default JDK (Oracle 8) and the `JAVA_HOME` environment variable is not changed. Therefore, checking or enforcing the Java version through plug-ins like the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plug-ins must not be used.
 
-De momenteel beschikbare combinaties leverancier/versie zijn:
+The currently available vendor/version combinations are:
 
-| Leverancier | Versie |
+|Vendor|Version|
 |---|---|
-| Oracle | 1,8 |
-| Oracle | 1,11 |
-| Oracle | 11 |
-| Zon | 1,8 |
-| Zon | 1,11 |
-| Zon | 11 |
+| Oracle |1.8|
+| Oracle |1.11|
+| Oracle |11|
+| Sun |1.8|
+| Sun |1.11|
+| Sun |11|
 
 >[!NOTE]
 >
->Vanaf april 2022 wordt Oracle JDK de standaard JDK voor de ontwikkeling en werking van AEM-toepassingen. Cloud Manager-constructieproces schakelt automatisch over naar Oracle JDK, zelfs als er expliciet een andere optie is geselecteerd in de Maven-toolchain. Zie de [ versienota&#39;s van april ](/help/release-notes/2022/2022-4-0.md) voor meer details.
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
 
 ### Alternatieve JDK-versie voor uitvoering {#alternate-maven}
 
-Het is ook mogelijk om Oracle 8 of Oracle 11 te selecteren als JDK voor de volledige uitgevoerde Maven. In tegenstelling tot de opties van toolketins, verandert dit JDK die voor alle stop-ins wordt gebruikt tenzij de toolketenconfiguratie ook wordt geplaatst, in welk geval de toolketenconfiguratie nog wordt toegepast voor toolketens-bewuste Geweven stop-ins. Dientengevolge, controlerend en uitvoerend de versie van Java gebruikend de [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
+Het is mogelijk om Oracle 8 of Oracle 11 te selecteren als JDK voor de volledige uitgevoerde Maven. Deze benadering verandert JDK die voor alle stop-ins wordt gebruikt. Dientengevolge, controlerend en uitvoerend de versie van Java gebruikend de [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
 
 Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud `11` of `8` hebben. Eventuele andere waarden worden genegeerd. Als `11` is opgegeven, gebruikt het systeem Oracle 11 en stelt de `JAVA_HOME` omgevingsvariabele in op `/usr/lib/jvm/jdk-11.0.22` . Als `8` is opgegeven, gebruikt het systeem Oracle 8 en stelt de `JAVA_HOME` omgevingsvariabele in op `/usr/lib/jvm/jdk1.8.0_401` .
 
@@ -149,17 +162,17 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 #### Dispatcher {#dispatcher}
 
-Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
+Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructies.
 
 >[!TIP]
 >
->Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
+>Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
 
 #### OSGi-configuraties {#osgi}
 
-Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
+Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
 
 ### Pipetvariabelen {#pipeline-variables}
 
