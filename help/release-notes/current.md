@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.7.0
 description: Meer informatie over de release van Cloud Manager 2025.7.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 106caded8056a8a667b6c702b573566f9358f401
+source-git-commit: a1f023b8ecc6fcae97832c5f3fad6bb8ae79ced1
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.7.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -48,9 +48,9 @@ De volgende geplande release is donderdag 7 augustus 2025.
   Zie [ pijpleidingsfavorieten van het Teken ](/help/using/managing-pipelines.md#pipeline-favorites).
 
 
-## Programma voor vroegtijdige adoptie {#beta-program}
+## Alpha/Beta-programma&#39;s {#beta-program}
 
-Neem deel aan Cloud Manager alfa- en bètaprogramma&#39;s om exclusieve vroege toegang te krijgen tot de volgende functies voordat ze in het algemeen worden uitgebracht.
+Neem deel aan Cloud Manager alfa- en bètaprogramma&#39;s om exclusieve toegang te krijgen tot de volgende functies voordat ze in het algemeen worden uitgebracht.
 
 De volgende mogelijkheden zijn momenteel beschikbaar:
 
