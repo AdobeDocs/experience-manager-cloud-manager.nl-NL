@@ -1,11 +1,10 @@
 ---
 title: Toegangstokens beheren in Cloud Manager
 description: Leer hoe u de toegangstokens die worden gebruikt voor 'Create Your Own Git' in Cloud Manager op Adobe Managed Services, kunt weergeven, bewerken en verwijderen.
-badge: label="Private bèta" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 254ad0ac77e793657292e34ae4a6bf3baecea8d5
+source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Cloud Manager gebruikt toegangstokens om opslagruimten te beheren die op externe Git-platforms worden gehost. Eerder, als een teken verliep, moest de bijbehorende bewaarplaats opnieuw worden geregistreerd om operationeel te blijven.
 
-Nu, laat **de Tokens van de Toegang beheren** eigenschap u tokens efficiënter beheren. U kunt tokens bekijken, anders noemen of verwijderen die aan gesteunde externe leveranciers van de it, met inbegrip van de Onderneming GitHub, GitLab, Bitbucket, en Azure DevOps worden aangesloten.
+Nu, **beheert de Tokens van de Toegang** laat u tokens efficiënter beheren. U kunt tokens bekijken, anders noemen of verwijderen die aan gesteunde externe leveranciers van de it, met inbegrip van de Onderneming GitHub, GitLab, Bitbucket, en Azure DevOps worden aangesloten.
 
 Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/managing-code/external-repositories.md) toevoegen.
 
@@ -55,4 +54,4 @@ Zie ook [ Externe Bewaarplaatsen in Cloud Manager ](/help/managing-code/external
 
    Het pictogram is gehandicapt (![ schrap overzichtspictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)) voor tokens die momenteel in gebruik zijn.
 
-1. In het **Symbolische de dialoogvakje van de Toegang van de Schrapping**, klik **Schrapping** om het teken permanent te verwijderen.
+1. In **Schrap het Token van de Toegang**, klik **Schrapping** om het teken permanent te verwijderen.
