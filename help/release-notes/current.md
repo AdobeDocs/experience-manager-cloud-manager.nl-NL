@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.8.0
 description: Meer informatie over de release van Cloud Manager 2025.8.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
+source-git-commit: a96bc45242ee6c6b06b4354756a67562150f385c
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.8.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -81,12 +81,6 @@ Het gebruik **beheert de Tokens van de Toegang** in Cloud Manager aan mening, he
 Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
 
 Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
-
-#### Toegangstokens beheren{#access-tokens}
-
-Het gebruik **beheert de Tokens van de Toegang** met BYOG, om, toegangstokens te bekijken anders te noemen en te schrappen verbonden aan externe breng Uw Eigen bewaarplaatsen van het GitHub, zoals Onderneming GitLab, Bitbucket, en Azure DevOps.
-
-Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
