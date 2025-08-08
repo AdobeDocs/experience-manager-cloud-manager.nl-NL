@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.8.0
 description: Meer informatie over de release van Cloud Manager 2025.8.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: a96bc45242ee6c6b06b4354756a67562150f385c
+source-git-commit: 03e2a9b8cd1ad0a9446fc59a430895302fba21a3
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.8.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -80,10 +80,7 @@ Het gebruik **beheert de Tokens van de Toegang** in Cloud Manager aan mening, he
 
 Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
 
-Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID.
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Bugfixes {#bug-fixes}
 
