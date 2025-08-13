@@ -55,7 +55,7 @@ U kunt het formaat van widgets ook wijzigen en de positie ervan op de pagina aan
 
 ![ widgets van Experience Hub ](/help/assets/experience-hub-widgets.png)
 
-De **sectie van milieu&#39;s van de Auteurs** {toont alle milieu&#39;s van AEM toegankelijk voor u, terwijl de **sectie van Recenten** een lijst van onlangs bezochte pagina&#39;s verstrekt die binnen de systemen van AEM worden gevolgd.
+De **sectie van milieu&#39;s van de Auteurs** &lbrace;toont alle milieu&#39;s van AEM toegankelijk voor u, terwijl de **sectie van Recenten** een lijst van onlangs bezochte pagina&#39;s verstrekt die binnen de systemen van AEM worden gevolgd.
 
 De navigatie-elementen zijn onder andere Assets Browse, waarmee de opslagplaats van de productieomgeving die voor de gebruiker toegankelijk is, wordt geladen.
 
