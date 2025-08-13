@@ -3,9 +3,9 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.8.0
 description: Meer informatie over de release van Cloud Manager 2025.8.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 03e2a9b8cd1ad0a9446fc59a430895302fba21a3
+source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.8.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -31,7 +31,11 @@ De volgende geplande release is donderdag 4 september 2025.
 
 ## Nieuwe functies {#what-is-new}
 
+* **Experience Hub van Adobe die spoedig komt**
 
+  Vanaf 19 augustus 2025 start Adobe een gefaseerde uitrol van de nieuwe Experience Hub voor alle Adobe Experience Manager-gebruikers.
+
+  Experience Hub is een eenduidig beginpunt dat gepersonaliseerde contextafhankelijke ervaringen biedt om gebruikers te helpen sneller doelstellingen te bereiken. De uitrol wordt uiterlijk op 26 augustus 2025 voltooid en beschikbaar gesteld aan alle gebruikers. De nieuwe Experience Hub is toegankelijk direct bij [ experience.adobe.com ](https://experience.adobe.com/). Meer leren, zie [ Adobe Experience Hub ](/help/experience-hub.md).
 
 * **Staging-slechts en productie-enige pijpleidingen**
 
