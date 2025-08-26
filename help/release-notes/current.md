@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.8.0
 description: Meer informatie over de release van Cloud Manager 2025.8.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+source-git-commit: b34fe26f8c9a2d59a7df3d03717f302fe4456352
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.8.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -88,7 +88,7 @@ Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-token
 
 ## Bugfixes {#bug-fixes}
 
-Er zijn geen significante insectenmoeilijke situaties in de versie van Cloud Manager van Juli.
+Er zijn geen significante insectenmoeilijke situaties in de versie van Augustus Cloud Manager.
 
 <!--
 Known Issues {#known-issues}
