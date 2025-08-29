@@ -52,7 +52,7 @@ De eerste is de Cloud Manager header. De header is blijvend terwijl u door Cloud
 | 2 | Adobe Cloud Manager | Klik om de **Mijn console van Programma&#39;s** van Cloud Manager, geen kwestie te openen waar u in Cloud Manager bent. |
 | 3 | Geselecteerde organisatie | De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere organisaties. |
 | 4 | Feedbackpictogram | Klik hierop om Adobe feedback te geven over Cloud Manager. |
-| 5 | AI Assistant-pictogram | Biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op AEM-gerelateerde vragen te stroomlijnen. Zie [ AI Medewerker ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| 5 | AI Assistant-pictogram | Biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op AEM-gerelateerde vragen te stroomlijnen. Zie [ AI Medewerker ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
 | 6 | ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Klik om snel toegang tot het leren en de steunmiddelen te verlenen. |
 | 7 | ![ het pictogram van de Daling ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | Klik om het aantal momenteel toegewezen onvolledige [ berichten ](/help/using/notifications.md) te bekijken |
 | 8 | ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Klik om snel te schakelen tussen de AEM Home-pagina en AEM-oplossingen |
@@ -80,7 +80,7 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 |   | Gebied | Beschrijving |
 | --- | --- | --- |
 | 1 | Mijn programma&#39;s | Klik hierop om een vervolgkeuzelijst te openen waarin u een programma kunt toevoegen, andere bestaande programma&#39;s kunt selecteren of kunt terugkeren naar de startpagina van Experience Manager. |
-| 2 | Aan de slag | Klik om tot de [ toegang te hebben op het instappen documentatietraject ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager in werking te stellen.<br> de reis aan boord wordt ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS), en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde. |
+| 2 | Aan de slag | Klik om tot de [ toegang te hebben op het instappen documentatietraject ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager in werking te stellen.<br> de reis aan boord wordt ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS), en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde. |
 | 3 | Dynamische actieknop | Met de handelingstoets kunt u contextgevoelige handelingen uitvoeren, zoals het toevoegen van een programma, het toevoegen van een domein of het toevoegen van een SSL-certificaat. |
 
 ### Oproep tot actie en statistieken {#cta-statistics}
@@ -120,7 +120,7 @@ Een kaart of rij in een tabel vertegenwoordigt elk programma en biedt een overzi
 * Programmanaam
 * Servicetype:
    * **Experience Manager** voor de programma&#39;s van AMS
-   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
+   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home)
 * Status
 * Gevormde oplossingen
 * Aanmaakdatum
