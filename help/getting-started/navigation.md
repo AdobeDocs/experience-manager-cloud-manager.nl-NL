@@ -2,15 +2,15 @@
 title: Navigeren door de gebruikersinterface van Cloud Manager
 description: Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma's en omgevingen te beheren.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 0%
+source-wordcount: '1501'
+ht-degree: 1%
 
 ---
 
 
-# Navigeren door de gebruikersinterface van Cloudbeheer {#navigation}
+# Navigeren door de gebruikersinterface van Cloud Manager {#navigation}
 
 Leer hoe de gebruikersinterface van Cloud Manager is georganiseerd en hoe u kunt navigeren om uw programma&#39;s en omgevingen te beheren.
 
@@ -21,26 +21,20 @@ De gebruikersinterface van Cloud Manager bestaat voornamelijk uit twee grafische
 
 ## Mijn Programmaconsole {#my-programs-console}
 
-Wanneer u login in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en de aangewezen organisatie selecteert, komt u bij de **Mijn console van Programma&#39;s** aan.
+Wanneer u in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com/experiencemanager) registreert en de aangewezen organisatie selecteert, komt u bij de **Mijn console van Programma&#39;s** aan.
 
-![ Mijn console van Programma&#39;s ](assets/my-programs-console.png)
+![ Mijn console van Programma&#39;s ](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-De console Mijn Programma&#39;s biedt een overzicht van alle programma&#39;s waartoe u toegang hebt in de geselecteerde organisatie. Het bestaat uit verschillende delen.
+De **Mijn console van Programma&#39;s** verstrekt een overzicht van alle programma&#39;s waartot u toegang in de geselecteerde organisatie hebt. Het bestaat uit verschillende delen.
 
-1. [ Toolbars ](#toolbars-my-programs-toolbars) voor organisatieselectie, alarm, en rekeningsmontages.
-1. Tabs waarmee u de huidige weergave van uw programma&#39;s kunt schakelen.
+|   | Gebied | Beschrijving |
+| --- | --- | --- |
+| 1 | [ Toolbars ](#toolbars-my-programs-toolbars) | Wordt gebruikt voor het selecteren van organisaties, waarschuwingen en accountinstellingen. |
+| 2 | Tabblad van deelvenster Links | Diverse lusjes die u laten de huidige mening van uw programma&#39;s, met inbegrip van het volgende van een knevel voorzien:<br><ul><li>**Experience Manager** opent de homepage voor uw diverse oplossingen van AEM</li><li>**Alle Programma&#39;s** die alle beschikbare programma&#39;s toont.</li><li>**Vergunning** opent het Dashboard van de Vergunning. Het dashboard van de Vergunning is slechts op *AEM as a Cloud Service programma&#39;s* (AEMaaCS), niet op de programma&#39;s van Adobe Managed Services zoals AEM 6.5 en AEM 6.5 LTS van toepassing. Om het type van de dienst te bepalen heeft uw programma (AEMaaCS of AMS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit artikel. Het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het ![ het menupictogram van de Show, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) drop-down menu, dat op de linkerkant van de [ kopbal van Cloud Manager ](#cloud-manager-header) wordt gevestigd.</li></ol> |
+| 3 | [ Mijn Programma&#39;s ](#my-programs-section) | Hiermee geeft u alle beschikbare programma&#39;s weer die u kunt selecteren.<br> zie [ Programma&#39;s en de Types van Programma ](/help/getting-started/program-setup.md) voor details op programma&#39;s. |
+| 4 | [ vraag-aan-acties en statistieken ](#cta-statistics) | Geeft een overzicht van je recente activiteiten. |
+| 5 | [ Snelle verbindingen ](#quick-links) | Snelle toegang tot gerelateerde bronnen. |
 
-   * **Begin** mening (gebrek) die **Mijn mening van Programma&#39;s** met een overzicht van alle programma&#39;s selecteert.
-   * **Vergunning** die tot het Dashboard van de Vergunning toegang heeft. Het dashboard van de Vergunning is slechts op *AEM as a Cloud Service programma&#39;s* (AEMaaCS), niet op de programma&#39;s van AMS van toepassing. Om het type van de dienst te bepalen heeft uw programma (AEMaaCS of AMS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit artikel.
-   * Het gebrek van lusjes aan gesloten en kan worden onthuld gebruikend het hamburger pictogram drop-down menu, dat op de linkerkant van de [ kopbal van Cloud Manager ](#cloud-manager-header) wordt gevestigd.
-
-1. [ Vraag-aan-Acties en Statistieken ](#cta-statistics) voor een overzicht van uw recente activiteit
-1. [**Mijn Programma&#39;s** sectie ](#my-programs-section) met een overzicht van al uw programma&#39;s
-1. [ Snelle verbindingen ](#quick-links) om tot verwante middelen gemakkelijk toegang te hebben
-
->[!TIP]
->
->Zie [ Programma&#39;s en de Types van Programma ](/help/getting-started/program-setup.md) voor details op programma&#39;s.
 
 ### Werkbalken {#my-programs-toolbars}
 
@@ -50,36 +44,51 @@ Er staan twee werkbalken boven op elkaar.
 
 De eerste is de Cloud Manager header. De header is blijvend terwijl u door Cloud Manager navigeert. Het is een anker dat u toegang geeft tot instellingen en informatie die van toepassing zijn op alle Cloud Manager-programma&#39;s.
 
-![ de kopbal van Experience Cloud ](assets/experience-cloud-header.png)
+![ de kopbal van Experience Cloud ](/help/getting-started/assets/cloud-manager-header.png)
 
-1. Het ![ menupictogram van de Show, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) pictogram op de linkerkant van de kopbal is een drop-down menu dat toegang tot lusjes voor specifieke delen van een individueel programma verleent. Afhankelijk van de context, laat het u ook tussen het Dashboard van de Vergunning en **[Mijn console van Programma&#39;s](#my-programs-console)** schakelen.
-   * Het licentiedashboard geldt alleen voor AEM as a Cloud Service-programma&#39;s, niet voor AMS-programma&#39;s.
-   * Om het type van de dienst te bepalen heeft uw programma (AMS of AEMaaCS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document.
-1. Met de knop Cloud Manager gaat u terug naar de console Mijn programma&#39;s van Cloud Manager, waar u zich ook in Cloud Manager bevindt.
-1. Klik **Terugkoppeling** om terugkoppelen aan Adobe over Cloud Manager te verstrekken.
-1. De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID aan meerdere organisaties is gekoppeld.
-1. Als u op de schakeloptie voor oplossingen klikt, kunt u snel naar andere Experience Cloud-oplossingen gaan.
-1. Met het Help-pictogram hebt u snel toegang tot instructiemiddelen en ondersteuningsbronnen.
-1. Het berichtenpictogram is badged met het aantal momenteel toegewezen onvolledige [ berichten ](/help/using/notifications.md)
-1. Selecteer het pictogram dat uw gebruiker vertegenwoordigt om tot uw gebruikersmontages toegang te hebben. Als u geen gebruikersafbeelding selecteert, wordt een pictogram willekeurig toegewezen.
+|   | Gebied | Beschrijving |
+| --- | --- | --- |
+| 1 | ![ toon menupictogram, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | Een vervolgkeuzemenu dat toegang biedt tot tabbladen voor specifieke onderdelen van een afzonderlijk programma.<br> om het type van de dienst te bepalen uw programma heeft (AMS of AEMaaCS), zie de [ sectie van de Kaarten van het Programma ](#program-cards) van dit document. |
+| 2 | Adobe Cloud Manager | Klik om de **Mijn console van Programma&#39;s** van Cloud Manager, geen kwestie te openen waar u in Cloud Manager bent. |
+| 3 | Geselecteerde organisatie | De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, de Interne Stichting van de Stichting). Klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere organisaties. |
+| 4 | Feedbackpictogram | Klik hierop om Adobe feedback te geven over Cloud Manager. |
+| 5 | AI Assistant-pictogram | Biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op AEM-gerelateerde vragen te stroomlijnen. Zie [ AI Medewerker ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| 6 | ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Klik om snel toegang tot het leren en de steunmiddelen te verlenen. |
+| 7 | ![ het pictogram van de Daling ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | Klik om het aantal momenteel toegewezen onvolledige [ berichten ](/help/using/notifications.md) te bekijken |
+| 8 | ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Klik om snel te schakelen tussen de AEM Home-pagina en AEM-oplossingen |
+| 9 | App-pictogram | Klik om tot uw **Montages van de Rekening** en **Montages van het Programma** toegang te hebben, of uit te tekenen. |
+
+
+<!--
+1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
+   * The License Dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
+   * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
+1. The **Adobe Cloud Manager** button takes you back to the **My Programs** console of Cloud Manager no matter where you are in Cloud Manager.
+1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
+1. The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
+1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
+1. The Help icon provides quick access to learning and support resources.
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
+1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. -->
 
 #### Programmawerkbalk {#program-toolbar}
 
 Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud Manager-programma&#39;s en naar acties die binnen de context passen.
 
-![ de toolbar van het Programma ](assets/program-toolbar.png)
+![ het programmatoolbar van Cloud Manager ](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
-1. De programmakiezer wordt geopend in een vervolgkeuzelijst waar u snel andere programma&#39;s kunt selecteren of contextgerichte acties kunt uitvoeren, zoals het maken van een nieuw programma
-1. De het worden begonnen verbinding geeft u toegang tot [ op het instappen documentatiereis ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager op te halen.
-De instapreis is ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS) en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde.
-1. Met de knop Handeling kunt u contextgerichte acties uitvoeren, zoals het maken van een nieuw programma.
+|   | Gebied | Beschrijving |
+| --- | --- | --- |
+| 1 | Mijn programma&#39;s | Klik hierop om een vervolgkeuzelijst te openen waarin u een programma kunt toevoegen, andere bestaande programma&#39;s kunt selecteren of kunt terugkeren naar de startpagina van Experience Manager. |
+| 2 | Aan de slag | Klik om tot de [ toegang te hebben op het instappen documentatietraject ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager in werking te stellen.<br> de reis aan boord wordt ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS), en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde. |
+| 3 | Dynamische actieknop | Met de handelingstoets kunt u contextgevoelige handelingen uitvoeren, zoals het toevoegen van een programma, het toevoegen van een domein of het toevoegen van een SSL-certificaat. |
 
 ### Oproep tot actie en statistieken {#cta-statistics}
 
-De vraag-aan-actie en statistieksectie verstrekt gezamenlijke gegevens voor uw organisatie, bijvoorbeeld, als u met succes uw programma&#39;s hebt opgezet, zouden de statistieken van uw activiteiten in de afgelopen 90 dagen kunnen tonen, die omvatten:
+Het gedeelte call-to-action en statistiek bevat geaggregeerde gegevens voor uw organisatie. Als u bijvoorbeeld uw programma&#39;s hebt ingesteld, kunnen statistieken van uw activiteiten in de afgelopen 90 dagen worden weergegeven, zoals:
 
 * Aantal [ plaatsingen ](/help/using/code-deployment.md)
-* Aantal [&#128279;](/help/using/code-quality-testing.md) geïdentificeerde kwesties van de 0&rbrace; codekwaliteit
+* Aantal [ geïdentificeerde kwesties van de 0} codekwaliteit](/help/using/code-quality-testing.md)
 * Aantal builds
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.
@@ -88,21 +97,18 @@ Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stapp
 
 De belangrijkste inhoud van de Mijn console van Programma&#39;s is de **Mijn sectie van Programma&#39;s** die van uw programma&#39;s als individuele kaarten een lijst maakt. Klik een kaart om tot de **pagina van het Overzicht van het Programma** van het programma voor details over het programma toegang te hebben.
 
->[!NOTE]
->
->Afhankelijk van uw rechten kunt u bepaalde programma&#39;s mogelijk niet selecteren.
+Afhankelijk van uw rechten kunt u bepaalde programma&#39;s mogelijk niet selecteren.
 
-Gebruik de volgende sorteeropties, zodat u het gewenste programma beter kunt vinden:
+U kunt de volgende sorteeropties gebruiken om snel het gewenste programma te zoeken:
 
 ![ het Sorteren opties ](assets/my-programs-sorting.png)
 
-* Sorteren op
-   * Gemaakt op (standaard)
+* Sorteren op:
+   * Gemaakt op
    * Programmanaam
    * Status
-* Oplopend (standaard) / Aflopend
-* Rasterweergave (standaard)
-* Lijstweergave
+* ![ de orde van de Sortering neer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![ de orde van de Sortering omhoog pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) de programma&#39;s van de Soort neer of omhoog, respectievelijk.
+* ![ het Klassieke pictogram van de netmening ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![ het bulleted van de Tekst pictogram of lijst ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) de programma&#39;s van de Mening in netvorm of lijstvorm, respectievelijk.
 
 #### Programmakaarten {#program-cards}
 
@@ -114,7 +120,7 @@ Een kaart of rij in een tabel vertegenwoordigt elk programma en biedt een overzi
 * Programmanaam
 * Servicetype:
    * **Experience Manager** voor de programma&#39;s van AMS
-   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home)
+   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
 * Status
 * Gevormde oplossingen
 * Aanmaakdatum
@@ -146,7 +152,7 @@ Het overzicht van het Programma geeft u toegang tot alle details van een Cloud M
 
 1. [ Toolbars ](#program-overview-toolbar) om terug naar de **Mijn console van Programma&#39;s** snel te springen en het programma te navigeren.
 1. [ Lusjes ](#program-tabs) om tussen verschillende aspecten van het programma te schakelen.
-1. A [ vraag-aan-actie ](#cta) die op de laatste acties van het programma wordt gebaseerd.
+1. A [ call-to-action ](#cta) die op de laatste acties van het programma wordt gebaseerd.
 1. Een [ overzicht van de milieu&#39;s ](#environments) van het programma.
 1. Een [ overzicht van de pijpleidingen ](#pipelines) van het programma.
 1. Verbindingen met [ nuttige middelen ](#useful-resources).
@@ -157,11 +163,9 @@ De toolbars voor het Overzicht van het Programma zijn gelijkaardig aan toolbars 
 
 #### Cloud Manager header {#cloud-manager-header-2}
 
-De Cloud Manager-header heeft een keuzemenu met een hamburger-pictogram dat automatisch wordt geopend om de navigeerbare tabbladen van het Program Overview weer te geven.
+De kopbal van Cloud Manager heeft a ![ toont menupictogram, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) drop-down menu dat automatisch opent om de navigable lusjes van het Overzicht van het Programma te tonen.
 
-![ Cloud Manager hamburger pictogram drop-down menu ](assets/cloud-manager-hamburger.png)
-
-Klik op het hamburgerpictogram om de tabbladen te verbergen.
+Klik ![ tonen menupictogram, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om de lusjes te verbergen.
 
 #### Programmawerkbalk {#program-toolbar-2}
 
@@ -169,7 +173,7 @@ Op de werkbalk van het programma hebt u nog steeds toegang om snel over te schak
 
 ![ de toolbar van het Programma ](assets/cloud-manager-program-toolbar.png)
 
-Als u de tabbladen met het hamburgerpictogram verbergt, wordt bovendien op de werkbalk het tabblad weergegeven dat u momenteel hebt ingeschakeld.
+Bovendien, als u de lusjes gebruikend ![ toont menupictogram, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) verbergt, kan de toolbar nog het lusje tonen dat u momenteel bent.
 
 ### Tabbladen van programma {#program-tabs}
 
@@ -187,15 +191,15 @@ Elk programma heeft talrijke opties en gegevens verbonden aan het. Deze gegevens
 
 Door gebrek, wanneer u een programma opent u op het **Overzicht** tabel aankomt. Het huidige tabblad wordt gemarkeerd. Selecteer een ander tabblad om de details ervan weer te geven.
 
-Gebruik het hamburgerpictogram in de [ kopbal van Cloud Manager ](#cloud-manager-header-2) om de lusjes te verbergen.
+Het gebruik ![ toont menupictogram, hamburger ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) in de [ kopbal van Cloud Manager ](#cloud-manager-header-2) om de lusjes te verbergen.
 
-### Oproep tot actie {#cta}
+### Call-to-action {#cta}
 
-De vraag-aan-actie sectie geeft u nuttige informatie afhankelijk van de status van uw programma. Voor een nieuw programma, kunt u volgende aangeboden stappen en een herinnering van een go-live datum zien, [ plaats tijdens programmaverwezenlijking ](/help/getting-started/program-setup.md).
+In de sectie call-to-action vindt u nuttige informatie, afhankelijk van de status van uw programma. Voor een nieuw programma, kunt u volgende aangeboden stappen en een herinnering van een go-live datum zien, [ plaats tijdens programmaverwezenlijking ](/help/getting-started/program-setup.md).
 
 Voor een levend programma, de status van uw laatste plaatsing met verbindingen voor details en het beginnen van een nieuwe plaatsing.
 
-![ Vraag-aan-actie ](assets/info-banner.png)
+![ Call-to-action ](assets/info-banner.png)
 
 ### Milieukaart {#environments}
 

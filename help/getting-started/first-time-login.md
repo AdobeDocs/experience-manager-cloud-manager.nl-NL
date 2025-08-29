@@ -2,9 +2,9 @@
 title: Eerste aanmelding
 description: Volg deze pagina als u algemene configuraties hebt ingesteld en u Cloud Manager voor het eerst kunt gebruiken.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 89fa72fb3950f6040f42066fdcbca3a61bb76f5b
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,24 @@ Nadat u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld,
 
 ## Voor het eerst aanmelden {#logging-in-for-the-first-time}
 
-1. Meld u aan bij Cloud Manager op [`my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com/) en uw lijst met programma&#39;s wordt weergegeven.
+1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com/experiencemanager). Meer leren, zie [ Ongeveer Adobe Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. In het linkerzijpaneel, klik **Cloud Manager**.
 
-   ![ Cloud Manager console ](/help/assets/cloud-manager-console.png)
+   ![ Cloud Manager in linkerzijpaneel in Experience Manager ](/help/getting-started/assets/cloud-manager-experiencemanager.png)
 
-1. Klik de kaart van uw programma om aan Cloud Manager **pagina van het Overzicht** te navigeren.
+<!-- 
+1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
-1. Cloud Manager opent aan de **pagina van het Overzicht**.
+   ![Cloud Manager console](/help/assets/cloud-manager-console.png)
 
-   ![ Cloud Manager overzichtspagina ](/help/assets/program-overview-page.png)
+1. Click your program's card to navigate to Cloud Manager's **Overview** page. 
 
-1. Als uw programma nog niet opstelling is, klik **Programma van de Opstelling** in [ vraag-aan-actie ](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaal zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de CTA extra volgende stappen aanbieden.
+1. Cloud Manager opens to the **Overview** page.
+
+   ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
+
+
+1. Als uw programma nog niet opstelling is, klik **Programma van de Opstelling** in [ call-to-action ](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaal zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de CTA extra volgende stappen aanbieden.
 
 U kunt aan de Opstelling van het document [ Programma ](/help/getting-started/program-setup.md) voor de volgende stappen in vestiging uw programma voortzetten.
 
@@ -44,4 +51,4 @@ Cloud Manager geeft een geconsolideerde weergave van de activiteiten van een pro
 
 >[!NOTE]
 >
->Een gebruiker met toegang tot een AEM heeft standaard ook de Cloud Manager User-rol. Deze rol is onvoldoende om de gebruiker toegang te geven tot de weergave van de programmadetails. Een dergelijke gebruiker met alleen de Cloud Manager-gebruikersrol kan via de opties in het programmamenu naar de URL van de auteur van de AEM omgeving navigeren (als er omgevingen zijn). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
+>Standaard heeft een gebruiker met toegang tot een AEM-omgeving ook de Cloud Manager User-rol. Deze rol is onvoldoende om de gebruiker toegang te geven tot de weergave van de programmadetails. Een dergelijke gebruiker met alleen de Cloud Manager-gebruikersrol kan via de opties in het programmamenu naar de AEM-omgeving auteur-URL navigeren (als omgevingen bestaan). Dergelijke gebruikers moeten hun beheerder contacteren als zij programma-vlakke toegang willen krijgen.
