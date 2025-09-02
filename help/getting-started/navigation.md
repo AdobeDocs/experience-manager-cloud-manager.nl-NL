@@ -87,7 +87,7 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 Het gedeelte call-to-action en statistiek bevat geaggregeerde gegevens voor uw organisatie. Als u bijvoorbeeld uw programma&#39;s hebt ingesteld, kunnen statistieken van uw activiteiten in de afgelopen 90 dagen worden weergegeven, zoals:
 
 * Aantal [ plaatsingen ](/help/using/code-deployment.md)
-* Aantal [ geïdentificeerde kwesties van de 0} codekwaliteit](/help/using/code-quality-testing.md)
+* Aantal [ geïdentificeerde kwesties van de 0&rbrace; codekwaliteit](/help/using/code-quality-testing.md)
 * Aantal builds
 
 Of als u net de opstelling van uw org begint, zou er uiteinden op volgende stappen of documentatiemiddelen kunnen zijn.
