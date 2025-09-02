@@ -52,7 +52,7 @@ De eerste is de Cloud Manager header. De header is blijvend terwijl u door Cloud
 | ![ Adobe rood en wit pictogram ](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Klik om de **Mijn console van Programma&#39;s** van Cloud Manager, geen kwestie te openen waar u in Cloud Manager bent. |
 | *`Name of selected organization`* | De organisatieselecteur toont de organisatie die u momenteel wordt ondertekend (in dit voorbeeld, *Interne Stichting*). Klik om over te schakelen naar een andere organisatie als uw Adobe ID is gekoppeld aan meerdere organisaties. |
 | ![ het pictogram van de Terugkoppeling ](/help/getting-started/assets/AppComment.svg) Terugkoppeling | Klik hierop om Adobe feedback te geven over Cloud Manager. |
-| ![ AI Hulp pictogram ](/help/getting-started/assets/AIChat.svg) | De AI Assistant biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op AEM-gerelateerde vragen te stroomlijnen. Zie [ AI Medewerker ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![ AI Hulp pictogram ](/help/getting-started/assets/AIChat.svg) | De AI Assistant biedt een conversatie-interface die is ontworpen om het zoeken naar antwoorden op AEM-gerelateerde vragen te stroomlijnen. Zie [ AI Medewerker ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
 | ![ pictogram van de Hulp ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | Klik om snel toegang tot het leren en de steunmiddelen te verlenen. |
 | ![ Wit belpictogram ](/help/getting-started/assets/Bell.svg) | Klik om het aantal momenteel toegewezen onvolledige [ berichten ](/help/using/notifications.md) te bekijken |
 | ![ Apps pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | Klik om snel te schakelen tussen de AEM Home-pagina en AEM-oplossingen |
@@ -79,7 +79,7 @@ Op de werkbalk van het programma vindt u koppelingen naar de verschillende Cloud
 |   | Gebied | Beschrijving |
 | --- | --- | --- |
 | 1 | Mijn programma&#39;s | Klik hierop om een vervolgkeuzelijst te openen waarin u een programma kunt toevoegen, andere bestaande programma&#39;s kunt selecteren of kunt terugkeren naar de startpagina van Experience Manager. |
-| 2 | ![ pictogram van Info ](/help/getting-started/assets/Info.svg) Begonnen het worden | Klik om tot de [ toegang te hebben op het instappen documentatietraject ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager in werking te stellen.<br> de reis aan boord wordt ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS), en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde. |
+| 2 | ![ pictogram van Info ](/help/getting-started/assets/Info.svg) Begonnen het worden | Klik om tot de [ toegang te hebben op het instappen documentatietraject ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/journey/overview) om u met Cloud Manager in werking te stellen.<br> de reis aan boord wordt ontworpen voor Cloud Manager op Adobe Experience Manager as a Cloud Service (AEMaaCS), en niet voor Cloud Manager op Adobe Managed Services (AMS). Veel concepten zijn echter hetzelfde. |
 | 3 | *`Dynamic action button`* | De actieknoop biedt context-aangewezen acties aan u zoals **kunt klikken voegt Programma** (in voorbeeld hierboven) toe, of voegt een domein toe. |
 
 ### Oproep tot actie en statistieken {#cta-statistics}
@@ -119,7 +119,7 @@ Een kaart of rij in een tabel vertegenwoordigt elk programma en biedt een overzi
 * De naam van het programma (in het bovengenoemde voorbeeld, *Tijdschrift van WKND*)
 * Servicetype:
    * **Experience Manager** voor de programma&#39;s van AMS
-   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
+   * **de Wolk van Experience Manager** voor [ AEM as a Cloud Service programma&#39;s ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home)
 * Status (in het bovengenoemde voorbeeld, *Klaar*)
 * Gevormde oplossingen
 * Aanmaakdatum
