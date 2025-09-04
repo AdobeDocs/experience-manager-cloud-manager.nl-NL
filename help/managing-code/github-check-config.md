@@ -1,33 +1,35 @@
 ---
-title: GitHub Check Configuration for Private Repositories
+title: Controleren op privéopslagplaatsen volbrengen
 description: Leer hoe u de pijpleidingen kunt beheren die automatisch worden gemaakt om elke pull-aanvraag naar een privéopslagplaats te valideren.
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-# GitHub-controleconfiguratie voor privéopslagruimten {#github-check-config}
+# Controles voor aanvragen van persoonlijke opslagplaatsen uitvoeren {#github-check-config}
+
+<!--OLD TITLE THAT I THOUGHT WAS BETTER Check configuration for private repositories -->
 
 Leer hoe u de pijpleidingen kunt beheren die automatisch worden gemaakt om elke pull-aanvraag naar een privéopslagplaats te valideren.
 
-## Configuratie van GitHub-controles {#configuration}
+## Configuratie van controles van privéopslagplaatsen {#configuration}
 
 Wanneer het gebruiken van [ privé bewaarplaatsen ](private-repositories.md#using), wordt de a [ volledige pijpleiding van de kwaliteit van de stapelcode ](/help/overview/ci-cd-pipelines.md) automatisch gecreeerd. Deze pijpleiding is begonnen bij elke update van het trekkingsverzoek.
 
 U kunt deze controles besturen door een `.cloudmanager/pr_pipelines.yml` -bestand te maken in de standaardvertakking van de privéopslagruimte.
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
 pipelines:
   - type: CI_CD
     template:
       programId: 1234
       pipelineId: 456
-    namePrefix: Full Stack Code Quality Pipeline for PR 
+    namePrefix: Full Stack Code Quality Pipeline for PR
     importantMetricsFailureBehavior: CONTINUE
 ```
 

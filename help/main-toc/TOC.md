@@ -7,10 +7,10 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 5df4852716a608c7497e93eef030b4b5bd27d42b
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 10%
+source-wordcount: '384'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 10%
 # Cloud Manager-documentatie {#content}
 
 + [Cloud Manager voor AMS](/help/introduction.md)
-+ [ Experience Hub ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [ Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Overzicht {#overview}
    + [Belangrijke concepten](/help/overview/key-concepts.md)
    + [Gebruikersreis](/help/overview/user-journey.md)
@@ -67,7 +67,7 @@ ht-degree: 10%
    + [Een externe opslagplaats toevoegen (persoonlijke bètaversie)](/help/managing-code/external-repositories.md)
    + [Toegangstokens beheren (persoonlijke bèta)](/help/managing-code/manage-access-tokens.md)
    + [Ondersteuning voor Git-submodule](/help/managing-code/git-submodules.md)
-   + [Configuratie van GitHub-controle](/help/managing-code/github-check-config.md)
+   + [Controleren op privéopslagplaatsen volbrengen](/help/managing-code/github-check-config.md)
    + [GitHub-controleannotaties](/help/managing-code/github-annotations.md)
    + [Maven Project Version Handling](/help/managing-code/maven-project-version.md)
    + [Integreren met Git](/help/managing-code/git-integration.md)
@@ -78,6 +78,7 @@ ht-degree: 10%
 + Release-opmerkingen {#release-notes}
    + [Huidig](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025,8,0](/help/release-notes/2025/2025-8-0.md)
       + [2025,7,0](/help/release-notes/2025/2025-7-0.md)
       + [2025,6,0](/help/release-notes/2025/2025-6-0.md)
       + [2025,5,0](/help/release-notes/2025/2025-5-0.md)

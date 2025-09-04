@@ -2,7 +2,7 @@
 title: Splitsen van alleen-werkgebied- en alleen-productie-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te m
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
-Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0&rbrace; Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
+Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
 
