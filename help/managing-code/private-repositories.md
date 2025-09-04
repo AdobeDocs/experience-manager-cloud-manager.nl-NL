@@ -58,7 +58,7 @@ De configuratie bestaat uit twee hoofdstappen:
 
 Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot het nodig. Om toegang te verlenen, moet u de toepassing van Adobe GitHub installeren en verifiëren dat u de gespecificeerde bewaarplaats bezit.
 
-1. Na het toevoegen van uw eigen bewaarplaats, wordt het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé getoond.**
+1. Na het toevoegen van uw eigen bewaarplaats, wordt het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé getoond.**
 
    ![ Persoonlijke Bevestiging van de Eigendom van de Bewaarplaats van de Bewaarplaats ](/help/assets/repositories/private-repo-validate.png)
 
@@ -72,7 +72,7 @@ Cloud Manager weet nu van uw bewaarplaats GitHub, maar het heeft nog toegang tot
 
    ![ bevestigt geheime generatie ](/help/assets/repositories/confirm-generation.png)
 
-1. Terug in de **dialoogdoos van de Bevestiging van de Eigendom van de Bewaarplaats 0} Privé, heeft Cloud Manager de inhoud op het** Geheime 3} gebied van de dossierinhoud {geproduceerd. **** Kopieer de inhoud van dat veld.
+1. Terug in de **dialoogdoos van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, heeft Cloud Manager de inhoud op het** Geheime 3&rbrace; gebied van de dossierinhoud &lbrace;geproduceerd. **&#x200B;**&#x200B;Kopieer de inhoud van dat veld.
 
    De inhoud van het geheime bestand wordt slechts eenmaal weergegeven. Als u de inhoud niet kopieert voordat u dit venster sluit, moet u het geheim opnieuw genereren.
 
@@ -90,7 +90,7 @@ Tot de validatie wordt de repository weergegeven met een rood pictogram dat aang
 
 Merk op dat de **kolom van het Type** gemakkelijk Adobe-Verstrekte bewaarplaatsen (**Adobe**) en uw eigen bewaarplaatsen GitHub (**GitHub**) identificeert.
 
-Om aan de bewaarplaats later terug te keren en de bevestiging te voltooien, ga naar de **pagina van Bewaarplaatsen**. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de bewaarplaats GitHub die u toevoegde, dan klik de Bevestiging van de Eigendom ****.
+Om aan de bewaarplaats later terug te keren en de bevestiging te voltooien, ga naar de **pagina van Bewaarplaatsen**. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast de bewaarplaats GitHub die u toevoegde, dan klik de Bevestiging van de Eigendom **&#x200B;**.
 
 
 ## Persoonlijke opslagruimten gebruiken met Cloud Manager {#using}
