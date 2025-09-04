@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager 2025.9.0
 description: Meer informatie over de release van Cloud Manager 2025.9.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 979430b92a03abbc8c600e4cc0e10cff5041f425
+source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.9.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -31,11 +31,11 @@ De volgende geplande release is donderdag 2 oktober 2025.
 
 ## Nieuwe functies {#what-is-new}
 
-* **steun nu toegevoegd voor Azure DevOps privé bewaarplaatsen**
+* **Steun nu toegevoegd voor Azure DevOps privé bewaarplaatsen**
 
   Documentatie-updates bevatten configuratiestappen voor Uw eigen IT met Azure DevOps en pull request-validatie. Zie [ Externe Bewaarplaatsen in Cloud Manager ](/help/managing-code/external-repositories.md) toevoegen.
 
-* **Trek verzoekcontroles voor privé antwoorden**
+* **Trek verzoekcontroles voor privé bewaarplaatsen**
 
   Cloud Manager ondersteunt nu config-pijpleidingen met privéopslagruimten via GitHub, Bitbucket, Azure DevOps en GitLab. Zie ![ de Controles van het Verzoek van de Trek voor Privé Bewaarplaatsen ](/help/managing-code/github-check-config.md).
 
