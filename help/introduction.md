@@ -18,8 +18,8 @@ Begin hier om Cloud Manager for AMS (Adobe Managed Services) te leren kennen en 
 >id="aemcloud_cloudmanager_introduction"
 >title="Inleiding tot Cloud Manager voor AMS"
 >abstract="Laat organisaties toe om Adobe Experience Manager in de wolk zelf te beheren. Cloud Manager biedt een kader voor doorlopende integratie en levering (CI/CD) waarmee IT-teams en implementatiepartners sneller hun updates en wijzigingen kunnen doorvoeren, zonder verlies in prestaties of veiligheid."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="Programma&#39;s maken"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="Omgevingen maken"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="Programma&#39;s maken"
+>additional-url="https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="Omgevingen maken"
 
 ## Inleiding {#introduction}
 
@@ -29,7 +29,7 @@ Begin hier om Cloud Manager for AMS (Adobe Managed Services) te leren kennen en 
 >
 >In deze documentatie worden specifiek de functies en functies van Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [ documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) worden gevonden.
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [ documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home) worden gevonden.
 
 Met Cloud Manager profiteert uw ontwikkelingsteam van de volgende functies:
 
