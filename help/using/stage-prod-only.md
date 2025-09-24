@@ -2,7 +2,7 @@
 title: Splitsen van alleen-werkgebied- en alleen-productie-pijplijnen
 description: Leer hoe u het opvoeren en productielokaties kunt verdelen gebruikend specifieke pijpleidingen.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
+source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -103,13 +103,13 @@ Een pijpleiding met alleen trapsgewijze uitloop loopt vrijwel op dezelfde manier
 
 ![ werkgebied-enige pijpleiding loopt ](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante stadium-enige pijpleiding of normaal of op [ noodsituatie wijze ](#emergency-mode) te bevestigen.
+Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante pro-enige pijpleiding of op [ noodsituatie ](#emergency-mode) te bevestigen.
 
 Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te maken.
 
 ### Pijpleidingen met alleen propaan {#prod-only-run}
 
-Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0&rbrace; Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
+Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0} Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
 ![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
 
