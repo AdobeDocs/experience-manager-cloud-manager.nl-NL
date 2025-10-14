@@ -20,12 +20,12 @@ Uw [!UICONTROL AEM Managed Services] -abonnement bevat een opslagplaats voor bro
 
 Als beste praktijken, zou u altijd de bewaarplaats van de Git van Cloud Manager moeten gebruiken, die leeg zonder enige gevormde takken of steekproefprojecten komt. Cloud Manager biedt een privé toegangstoken voor zijn gegevensopslagplaats van de Git, die u om het even welke cliënt van de Git laat gebruiken om takken tot stand te brengen, code te beheren, wor geschiedenis terug te winnen, en meer.
 
-Voor meer informatie over hoe te opstellings takken in Git, zie [ Vormend de Tanden van de Versie ](/help/getting-started/configuring-branches.md).
+Voor meer informatie over hoe te opstellings takken in Git, zie [&#x200B; Vormend de Tanden van de Versie &#x200B;](/help/getting-started/configuring-branches.md).
 
-Voor meer informatie over hoe te om de bewaarplaats van het Git van Cloud Manager met de pijpleiding te gebruiken CI/CD, zie [ de Pijpleidingen van de Productie vormen ](/help/using/production-pipelines.md) en [ Vormend niet-ProductiePijpleidingen ](/help/using/non-production-pipelines.md) om meer te leren.
+Voor meer informatie over hoe te om de bewaarplaats van het Git van Cloud Manager met de pijpleiding te gebruiken CI/CD, zie [&#x200B; de Pijpleidingen van de Productie vormen &#x200B;](/help/using/production-pipelines.md) en [&#x200B; Vormend niet-ProductiePijpleidingen &#x200B;](/help/using/non-production-pipelines.md) om meer te leren.
 
 ## Opslagplaats op locatie {#on-premise-repository}
 
 U hebt mogelijk een bestaande Git-opslagplaats en wilt deze blijven gebruiken. In dat geval kunt u de Git-functie gebruiken voor meerdere externe opslagruimten. De ontwikkeling van dag tot dag zou in uw Git-opslagplaats blijven plaatsvinden. Wanneer een releasevertakking gereed is voor implementatie op productie, kunt u uw nieuwste code naar de Cloud Manager Git-opslagplaats drukken en de Cloud Manager CI/CD-pijplijn activeren.
 
-Om gemeenschappelijke bevelen van het Git te bekijken, zie het [ Vondst van de Git ](https://education.github.com/git-cheat-sheet-education.pdf).
+Om gemeenschappelijke bevelen van het Git te bekijken, zie het [&#x200B; Vondst van de Git &#x200B;](https://education.github.com/git-cheat-sheet-education.pdf).

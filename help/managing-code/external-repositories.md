@@ -29,11 +29,11 @@ Klanten kunnen nu ook hun Azure DevOps Git-opslagplaatsen in Cloud Manager aan b
 
 De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie stappen:
 
-1. [ voeg een externe bewaarplaats ](#add-external-repo) aan een geselecteerd programma toe.
-1. [ Verbinding een gevalideerde externe bewaarplaats aan een pijpleiding ](#validate-ext-repo).
+1. [&#x200B; voeg een externe bewaarplaats &#x200B;](#add-external-repo) aan een geselecteerd programma toe.
+1. [&#x200B; Verbinding een gevalideerde externe bewaarplaats aan een pijpleiding &#x200B;](#validate-ext-repo).
 <!-- 1. Provide an access token to the external repository.
 1. Validate ownership of the private GitHub repository. -->
-1. [ vorm een webhaak ](#configure-webhook) aan een externe bewaarplaats.
+1. [&#x200B; vorm een webhaak &#x200B;](#configure-webhook) aan een externe bewaarplaats.
 
 
 ## Een externe opslagplaats toevoegen {#add-ext-repo}
@@ -46,19 +46,19 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
 
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/getting-started/navigation.md#my-programs-console)**, selecteer het programma waaraan u een externe bewaarplaats wilt verbinden.
 
-1. In het zijmenu, onder **Programma**, klik ![ het overzichtspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
+1. In het zijmenu, onder **Programma**, klik ![&#x200B; het overzichtspictogram van de Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
 
-   ![ de pagina van Bewaarplaatsen ](/help/managing-code/assets/repositories-tab.png)
+   ![&#x200B; de pagina van Bewaarplaatsen &#x200B;](/help/managing-code/assets/repositories-tab.png)
 
 1. Vlak de hoger-juiste hoek van de **pagina van Bewaarplaatsen**, klik **toevoegen Bewaarplaats**.
 
 1. In **voeg de dialoogdoos van de Bewaarplaats** toe, selecteer **Privé Bewaarplaats** om een externe bewaarplaats van de Bewaarplaats van de Bewaarplaats aan uw programma te verbinden.
 
-   ![ voeg eigen bewaarplaats ](/help/managing-code/assets/repository-add-private-dialogbox2.png) toe
+   ![&#x200B; voeg eigen bewaarplaats &#x200B;](/help/managing-code/assets/repository-add-private-dialogbox2.png) toe
 
 1. Geef in elk veld de volgende gegevens over uw opslagplaats op:
 
@@ -75,7 +75,7 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 
 1. In het **dialoogvakje van de Bevestiging van de Eigendom van de Bewaarplaats 0&rbrace; Privé, verstrek een toegangstoken om eigendom van de externe bewaarplaats te bevestigen zodat kunt u tot het toegang hebben, dan klik** Valideren **.**
 
-   ![ Selecterend een bestaand toegangstoken voor een bewaarplaats ](/help/managing-code/assets/repositories-exisiting-access-token.png)
+   ![&#x200B; Selecterend een bestaand toegangstoken voor een bewaarplaats &#x200B;](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *Selecterend een bestaand toegangstoken voor een bewaarplaats Bitbucket (voor illustratie slechts).*
 
 >[!BEGINTABS]
@@ -87,11 +87,11 @@ De configuratie van een externe opslagplaats in Cloud Manager bestaat uit drie s
 | Toegang tot token, optie | Beschrijving |
 | --- | --- |
 | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [ documentatie GitHub ](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>De vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE) <br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheren.<br> wanneer u het KLOPJE in de Onderneming GitHub produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li> Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructies in de [&#x200B; documentatie GitHub &#x200B;](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) te volgen.<li>De vereiste toestemmingen voor het Token van de Toegang van de Onderneming GitHub Persoonlijke (KLOPJE) <br> Deze toestemmingen verzekeren dat Cloud Manager trekverzoeken kan bevestigen, statuscontroles, en toegangsnoodzakelijke repo details beheren.<br> wanneer u het KLOPJE in de Onderneming GitHub produceert, zorg ervoor het de volgende bewaarplaatstoestemmingen omvat:<ul><li>Pull request (lezen en schrijven)<li>Statussen vastleggen (lezen en schrijven)<li>Metagegevens opslagplaats (alleen-lezen)</li></li></ul></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
 Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
 
-Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+Zie ook [&#x200B; de Tokens van de Toegang beheren &#x200B;](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB  GitLab ]
 
@@ -100,11 +100,11 @@ Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-t
 | Toegang tot token, optie | Beschrijving |
 | --- | --- |
 | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [ documentatie GitLab ](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE) <br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en WebHaakintegratie toegang te hebben.<br> wanneer u het KLOPJE in GitLab produceert, zorg ervoor het het volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een persoonlijk toegangstoken door de instructie in de [&#x200B; documentatie GitLab &#x200B;](https://docs.gitlab.com/user/profile/personal_access_tokens/) te volgen.<li>Vereiste toestemmingen voor het Token van de Toegang van GitLab Persoonlijke (KLOPJE) <br> Deze werkingsgebieden staan Cloud Manager toe om tot gegevens van de gegevensopslagplaats en gebruikersinformatie zoals nodig voor bevestiging en WebHaakintegratie toegang te hebben.<br> wanneer u het KLOPJE in GitLab produceert, zorg ervoor het het volgende symbolische werkingsgebied omvat:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
 Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
 
-Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+Zie ook [&#x200B; de Tokens van de Toegang beheren &#x200B;](/help/managing-code/manage-access-tokens.md).
 
 
 >[!TAB  Bitbucket ]
@@ -114,11 +114,11 @@ Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-t
 | Toegang tot token, optie | Beschrijving |
 | --- | --- |
 | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ documentatie Bitbucket ](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [&#x200B; documentatie Bitbucket &#x200B;](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>De vereiste toestemmingen voor het Symbolische Symbolische Token van de Toegang van de Bitmap Persoonlijke (KLOPJE) <br> Deze toestemmingen staan Cloud Manager toe om tot inhoud van de opslagplaats toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op Web-haakgebeurtenissen te reageren.<br> wanneer u het toepassingswachtwoord in Bitbucket creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Opslagplaats (alleen-lezen)<li>Pull-aanvragen (lezen en schrijven)<li>Webhaken (lezen en schrijven)</li></li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
 Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
 
-Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+Zie ook [&#x200B; de Tokens van de Toegang beheren &#x200B;](/help/managing-code/manage-access-tokens.md).
 
 >[!TAB  Azure DevOps ]
 
@@ -127,11 +127,11 @@ Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-t
 | Toegang tot token, optie | Beschrijving |
 | --- | --- |
 | **het Bestaande Token van de Toegang van het Gebruik** | Als u al een toegangstoken voor de opslagplaats hebt opgegeven voor uw organisatie en toegang hebt tot meerdere opslagplaatsen, kunt u een bestaand token selecteren. Gebruik de **Symbolische Naam** drop-down lijst om het teken te kiezen u op de bewaarplaats wilt toepassen. Anders, voeg een nieuw toegangstoken toe. |
-| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [ Azure documentatie DevOps ](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Vereiste toestemmingen voor het Azure DevOps Persoonlijke Token van de Toegang (PAT).<br> Deze toestemmingen staan Cloud Manager toe om tot bewaarplaatsinhoud toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op WebHaakgebeurtenissen te reageren.<br> wanneer u het app wachtwoord in Azure DevOps creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Code (lezen)</li><li>Code (status)</li><li>Verzoek om Threads intrekken (lezen en schrijven)</li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
+| **voeg nieuw Token van de Toegang toe** | <ul><li>Op het **Symbolische de tekstgebied van de Naam**, typ een naam voor het toegangstoken u creeert.<li>Creeer een toegangstoken van de bewaarplaats gebruikend de [&#x200B; Azure documentatie DevOps &#x200B;](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Vereiste toestemmingen voor het Azure DevOps Persoonlijke Token van de Toegang (PAT).<br> Deze toestemmingen staan Cloud Manager toe om tot bewaarplaatsinhoud toegang te hebben, trekkingsverzoeken te beheren, en te vormen of op WebHaakgebeurtenissen te reageren.<br> wanneer u het app wachtwoord in Azure DevOps creeert, zorg ervoor het de volgende vereiste toestemmingen van het toepassingswachtwoord omvat:<ul><li>Code (lezen)</li><li>Code (status)</li><li>Verzoek om Threads intrekken (lezen en schrijven)</li></ul></li></li></ul></ul></ul><ul><li>Op het **Symbolische gebied van de Toegang**, kleef het teken u enkel creeerde. |
 
 Na bevestiging, is de externe bewaarplaats klaar om aan een pijpleiding te gebruiken en te verbinden.
 
-Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+Zie ook [&#x200B; de Tokens van de Toegang beheren &#x200B;](/help/managing-code/manage-access-tokens.md).
 
 >[!ENDTABS]
 
@@ -155,12 +155,12 @@ Zie ook [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-t
 
 >[!TIP]
 >
->Voor details over het beheren van bewaarplaatsen in Cloud Manager, zie [ Bewaarplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md).
+>Voor details over het beheren van bewaarplaatsen in Cloud Manager, zie [&#x200B; Bewaarplaatsen van Cloud Manager &#x200B;](/help/managing-code/managing-repositories.md).
 
 
 ## Een webhaak configureren voor een externe gegevensopslagruimte {#configure-webhook}
 
-Met Cloud Manager kunt u webhaken configureren voor externe Git-opslagruimten die u hebt toegevoegd. Zie [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Met deze websites kan Cloud Manager gebeurtenissen ontvangen die gerelateerd zijn aan verschillende acties binnen uw Git-leveranciersoplossing.
+Met Cloud Manager kunt u webhaken configureren voor externe Git-opslagruimten die u hebt toegevoegd. Zie [&#x200B; een externe bewaarplaats &#x200B;](#add-ext-repo) toevoegen. Met deze websites kan Cloud Manager gebeurtenissen ontvangen die gerelateerd zijn aan verschillende acties binnen uw Git-leveranciersoplossing.
 
 Met websites kan Cloud Manager bijvoorbeeld acties activeren op basis van gebeurtenissen zoals de volgende:
 
@@ -174,25 +174,25 @@ Voor alle andere externe bewaarplaatsen die met een toegangstoken - zoals de Ond
 
 **om een webhaak voor een externe bewaarplaats te vormen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie.
 
 1. Op de **[Mijn console van Programma&#39;s](/help/getting-started/navigation.md#my-programs-console)**, selecteer het programma waaraan u een webhaak voor een externe bewaarplaats van het Git wilt vormen.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openbaren.
 
-1. In het linkerzijmenu, onder de **rubriek van het Programma**, klik ![ het overzichtspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
+1. In het linkerzijmenu, onder de **rubriek van het Programma**, klik ![&#x200B; het overzichtspictogram van de Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **Bewaarplaatsen**.
 
-1. Op de **pagina van Bewaarplaatsen**, die de **kolom van het Type** gebruikt om u in uw selectie te begeleiden, van de bewaarplaats de plaats bepalen u wilt, dan klik ![ Ellipse - Meer pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast het.
+1. Op de **pagina van Bewaarplaatsen**, die de **kolom van het Type** gebruikt om u in uw selectie te begeleiden, van de bewaarplaats de plaats bepalen u wilt, dan klik ![&#x200B; Ellipse - Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) naast het.
 
-   ![ de optie Webhaak van Config op drop-down menu voor een geselecteerde bewaarplaats ](/help/managing-code/assets/repository-config-webhook.png)
+   ![&#x200B; de optie Webhaak van Config op drop-down menu voor een geselecteerde bewaarplaats &#x200B;](/help/managing-code/assets/repository-config-webhook.png)
 
 1. Van het drop-down menu, klik **Config Webhaak**.
 
-   ![ vorm de dialoogdoos van Webhaak ](/help/managing-code/assets/config-webhook.png)
+   ![&#x200B; vorm de dialoogdoos van Webhaak &#x200B;](/help/managing-code/assets/config-webhook.png)
 
 1. In het **de dialoogvakje van WebHaak van Config**, doe het volgende:
 
-   1. Naast het **gebied van URL van de Webhaak**, klik ![ pictogram van het Exemplaar ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
+   1. Naast het **gebied van URL van de Webhaak**, klik ![&#x200B; pictogram van het Exemplaar &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 Plak de URL in een tekstbestand zonder opmaak. De gekopieerde URL is vereist voor de WebHaak-instellingen van uw Git-leverancier.
    1. Naast het **Geheime 1&rbrace; teken/zeer belangrijke gebied van Webhaak &lbrace;, klik** **produceren, dan klik** pictogram van het Exemplaar ![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg).
 
@@ -200,13 +200,13 @@ Plak het geheim in een tekstbestand zonder opmaak. Het gekopieerde geheim wordt 
 1. Klik **dicht**.
 1. Navigeer naar uw Git-leveranciersoplossing (GitHub Enterprise, GitLab, Bitbucket of Azure DevOps).
 
-   Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [ een externe bewaarplaats ](#add-ext-repo) toevoegen. Zie de tabel met tabbladen onder stap 8.
+   Alle details op de webshconfiguratie en de gebeurtenissen die voor elke verkoper worden vereist zijn beschikbaar in [&#x200B; een externe bewaarplaats &#x200B;](#add-ext-repo) toevoegen. Zie de tabel met tabbladen onder stap 8.
 
 1. Bepaal de plaats van de sectie van de Montages van Webhaak **&#x200B;**&#x200B;van de oplossing.
 1. Plak de URL van de Webhaak die u eerder hebt gekopieerd in het URL-tekstveld.
    1. Vervang de query-parameter `api_key` in de URL van de Webhaak door uw eigen echte API-sleutel.
 
-      Als u een API-sleutel wilt genereren, moet u een integratieproject maken in Adobe Developer Console. Zie [ Creërend een Project van de Integratie API ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) voor volledige details.
+      Als u een API-sleutel wilt genereren, moet u een integratieproject maken in Adobe Developer Console. Zie [&#x200B; Creërend een Project van de Integratie API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) voor volledige details.
 
 1. Plak het Geheim WebHaak dat u vroeger in het **Geheime** (of **Geheime sleutel**, of **Geheime teken**) tekstgebied kopieerde.
 1. Configureer de webhaak om de gebeurtenissen te verzenden die Cloud Manager nodig heeft. Gebruik de volgende lijst om de correcte gebeurtenissen voor uw leverancier van het Git te bepalen.
@@ -263,7 +263,7 @@ Het gedrag is afhankelijk van de Git-provider die u gebruikt, zoals hieronder wo
 
 Wanneer de controle is gemaakt, lijkt deze op de onderstaande schermafbeelding. Het belangrijkste verschil van `GitHub.com` is dat `GitHub.com` controle-looppas gebruikt, terwijl de Onderneming GitHub (die persoonlijke toegangstokens gebruikt) een begaat status produceert:
 
-![ verbindt status toe om PR validatieproces op Onderneming GitHub ](/help/managing-code/assets/repository-webhook-github-pr-validation.png) te wijzen
+![&#x200B; verbindt status toe om PR validatieproces op Onderneming GitHub &#x200B;](/help/managing-code/assets/repository-webhook-github-pr-validation.png) te wijzen
 
 >[!TAB  GitLab ]
 
@@ -273,19 +273,19 @@ GitLab-interacties zijn uitsluitend gebaseerd op opmerkingen. Wanneer de validat
 
 Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
 
-![ wanneer de bevestiging van de codekwaliteit ](/help/managing-code/assets/repository-webhook-gitlab1.png) loopt
+![&#x200B; wanneer de bevestiging van de codekwaliteit &#x200B;](/help/managing-code/assets/repository-webhook-gitlab1.png) loopt
 
 Wanneer validatie van koude kwaliteit is voltooid:
 
-![ wanneer de koude kwaliteitsbevestiging ](/help/managing-code/assets/repository-webhook-gitlab2.png) wordt gebeëindigd
+![&#x200B; wanneer de koude kwaliteitsbevestiging &#x200B;](/help/managing-code/assets/repository-webhook-gitlab2.png) wordt gebeëindigd
 
 Wanneer validatie van de codekwaliteit mislukt vanwege een fout:
 
-![ wanneer de bevestiging van de codekwaliteit met een fout ](/help/managing-code/assets/repository-webhook-gitlab3.png) ontbreekt
+![&#x200B; wanneer de bevestiging van de codekwaliteit met een fout &#x200B;](/help/managing-code/assets/repository-webhook-gitlab3.png) ontbreekt
 
 Wanneer de validatie van de codekwaliteit mislukt als gevolg van problemen met de klant:
 
-![ wanneer de bevestiging van de codekwaliteit wegens klantenkwesties ](/help/managing-code/assets/repository-webhook-gitlab4.png) ontbreekt
+![&#x200B; wanneer de bevestiging van de codekwaliteit wegens klantenkwesties &#x200B;](/help/managing-code/assets/repository-webhook-gitlab4.png) ontbreekt
 
 >[!TAB  Bitbucket ]
 
@@ -293,11 +293,11 @@ Wanneer de validatie van de codekwaliteit mislukt als gevolg van problemen met d
 
 Wanneer de validatie van de codekwaliteit wordt uitgevoerd:
 
-![ Status terwijl de bevestiging van de codekwaliteit ](/help/managing-code/assets/repository-webhook-bitbucket1.png) loopt
+![&#x200B; Status terwijl de bevestiging van de codekwaliteit &#x200B;](/help/managing-code/assets/repository-webhook-bitbucket1.png) loopt
 
 Gebruikt de status commit voor het volgen van voortgang van PR-validatie. In het volgende geval, toont het het schermschot wat gebeurt wanneer een bevestiging van de codekwaliteit wegens een klantenkwestie ontbreekt. Er wordt een opmerking toegevoegd met gedetailleerde foutinformatie en er wordt een commit check gemaakt, die de fout weergeeft (rechts zichtbaar):
 
-![ Trek de status van de verzoekbevestiging voor Bitbucket ](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+![&#x200B; Trek de status van de verzoekbevestiging voor Bitbucket &#x200B;](/help/managing-code/assets/repository-webhook-bitbucket2.png)
 
 >[!TAB  Azure DevOps ]
 
@@ -305,19 +305,19 @@ Azure DevOps tracks vragen validatie aan via statuscontroles. Wanneer de looppas
 
 Tijdens de validatie van de codekwaliteit, toont een statuscontrole aan dat het proces lopend is:
 
-![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-1 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
+![&#x200B; Azure DevOps bevestiging van trekkingsverzoeken met webhooks-1 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)
 
 Wanneer de validatie van de codekwaliteit is voltooid, wordt de statuscontrole bijgewerkt met de resultaten:
 
-![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-2 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+![&#x200B; Azure DevOps bevestiging van trekkingsverzoeken met webhooks-2 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
 
 Als de validatie mislukt, wordt gedetailleerde foutinformatie gegeven in de statuscontrolegegevens. U kunt op de statuscontrole klikken om de volledige validatieresultaten in Cloud Manager weer te geven.
 
-![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-3 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
+![&#x200B; Azure DevOps bevestiging van trekkingsverzoeken met webhooks-3 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
 Cloud Manager voegt voor opmerkingen over pull-aanvragen en feedback opmerkingen rechtstreeks toe aan de pull-aanvraag in Azure DevOps met validatiegegevens en eventueel vereiste handelingen.
 
-![ Azure DevOps bevestiging van trekkingsverzoeken met webhooks-4 ](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
+![&#x200B; Azure DevOps bevestiging van trekkingsverzoeken met webhooks-4 &#x200B;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Een niet-productiepijpleiding toevoegen {#configuring-non-production-pipelines}
 
-Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
+Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [&#x200B; CI/CD Pijpleidingen &#x200B;](/help/overview/ci-cd-pipelines.md).
 
 ## Overzicht {#overview}
 
@@ -20,7 +20,7 @@ Gebruikend de **Pijpleidingen** tegel in [!UICONTROL Cloud Manager], kan de **Ma
 * **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode helemaal in productie te nemen.
 * **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
-Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te om productiepijpleidingen te vormen zie het document [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md).
+Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te om productiepijpleidingen te vormen zie het document [&#x200B; Vormend de Pijpleidingen van de Productie &#x200B;](/help/using/production-pipelines.md).
 
 Er zijn twee soorten niet-productiepijpleidingen:
 
@@ -29,21 +29,21 @@ Er zijn twee soorten niet-productiepijpleidingen:
 
 >[!NOTE]
 >
->Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+>Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [&#x200B; programmaopstelling &#x200B;](/help/getting-started/program-setup.md) is volledig. Zie [&#x200B; Opslagplaatsen van Cloud Manager &#x200B;](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
 ## Een nieuwe niet-productiepijplijn toevoegen {#add-non-production-pipeline}
 
 Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud Manager UI, bent u bereid om een niet productiepijplijn toe te voegen door deze stappen te volgen.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
 1. Open de Pipelinekaart van het homescherm van Cloud Manager. Klik **toevoegen**, dan uitgezocht **voeg niet-Productiepijpleiding** toe.
 
-   ![ voeg niet-productiepijpleiding ](/help/assets/configure-pipelines/nonprod-pipeline-add1.png) toe
+   ![&#x200B; voeg niet-productiepijpleiding &#x200B;](/help/assets/configure-pipelines/nonprod-pipeline-add1.png) toe
 
 1. Op het **lusje van de Configuratie** van **voeg de dialoog van de Pijl van de Niet-Productie** toe, selecteer het type van pijpleiding u wilt creëren, of a **de Pijl van de Kwaliteit van de Code** of a **Pijpleiding van de Plaatsing**.
 
-   ![ kies pijpleidingstype ](/help/assets/configure-pipelines/add-non-production-pipeline.png)
+   ![&#x200B; kies pijpleidingstype &#x200B;](/help/assets/configure-pipelines/add-non-production-pipeline.png)
 
 1. Verstrek een beschrijving voor uw pijpleiding in het **gebied van de Naam van de Pijpleiding van de Niet-Productie**.
 
@@ -81,7 +81,7 @@ Zodra u opstelling uw programma hebt en minstens één milieu gebruikend Cloud M
 
 ## De volgende stappen {#the-next-steps}
 
-Nadat u de pijpleiding vormt, kunt u uw code opstellen. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
+Nadat u de pijpleiding vormt, kunt u uw code opstellen. Zie [&#x200B; Plaatsing van de Code &#x200B;](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial}
 

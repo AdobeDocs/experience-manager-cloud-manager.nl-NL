@@ -24,7 +24,7 @@ Dit rapport helpt de ontwikkelingsinspanningen te ramen die nodig zijn om te upg
 
 >[!NOTE]
 >
->Om meer over de patroondetector te leren, zie [ die de Complexiteit van de Verbetering met de Detector van het Patroon ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector) beoordelen.
+>Om meer over de patroondetector te leren, zie [&#x200B; die de Complexiteit van de Verbetering met de Detector van het Patroon &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector) beoordelen.
 
 ## Voer het evaluatierapport uit {#running}
 
@@ -32,16 +32,16 @@ De patroondetector kan in elke omgeving worden uitgevoerd. Nochtans, om het ontd
 
 **om het evaluatierapport in werking te stellen:**
 
-1. Begin de tovenaar zoals die in het document [ wordt beschreven tovenaar van de Update van het Product ](/help/product-update-wizard/overview.md).
+1. Begin de tovenaar zoals die in het document [&#x200B; wordt beschreven tovenaar van de Update van het Product &#x200B;](/help/product-update-wizard/overview.md).
 
 1. Klik op **[!UICONTROL Run Evaluation]**.
 
-   ![ evaluatie van de Looppas ](/help/assets/Run-Evaluation.png)
+   ![&#x200B; evaluatie van de Looppas &#x200B;](/help/assets/Run-Evaluation.png)
 
 1. De wizard informeert u over de status van uw handeling. Bericht **lopend** of **voltooide** zoals toepasselijk wanneer het evaluatierapport wordt geproduceerd.
 
 1. Nadat het rapport is gegenereerd, kunt u op **[!UICONTROL Download report]** klikken om een kopie op te slaan.
 
-   ![ gecreeerd Rapport ](/help/assets/Evaluation-1.png)
+   ![&#x200B; gecreeerd Rapport &#x200B;](/help/assets/Evaluation-1.png)
 
 De huidige tovenaar van de Update van het Product in Cloud Manager steunt de **slechts fase van de Evaluatie**. De andere vier fasen namelijk **Vergoeding**, **Uitvoering**, **Bevestiging**, en **Voltooiing** komen binnenkort.

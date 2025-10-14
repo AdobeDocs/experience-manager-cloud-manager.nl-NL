@@ -26,12 +26,12 @@ Adobe Managed Services stelt de drempelwaarden in, die u kunt weergeven in [!UIC
 
 ## Toegangssysteemcontrole {#accessing-system-monitoring}
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
-1. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het programma dat u wilt controleren.
+1. Klik ![&#x200B; Meer pictogram, ellips &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) van het programma dat u wilt controleren.
 1. In het menu, onder **beheert**, klik **tonen Controle** om de **pagina van Rapporten** te openen die systeem controleinformatie toont.
 
-   ![ Montages ](/help/assets/first-timea1.png)
+   ![&#x200B; Montages &#x200B;](/help/assets/first-timea1.png)
 
 .
 
@@ -46,7 +46,7 @@ De **sectie van de Controle van het Systeem** van de **pagina van Rapporten** ma
 
 De status in elke categorie is een overzicht van de afzonderlijke meetwaarden. Als om het even welke metrisch in een categorie in de kritieke staat is, is de volledige categorie in een kritieke staat ten behoeve van de overzichtspagina. Dezelfde samenvatting kan op milieuniveau en op instantieniveau worden bekeken.
 
-![ Controle van het Systeem overzicht ](/help/assets/System-Monitoring-Reports.png)
+![&#x200B; Controle van het Systeem overzicht &#x200B;](/help/assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -56,18 +56,18 @@ De status in elke categorie is een overzicht van de afzonderlijke meetwaarden. A
 
 Als u de details van bepaalde metriek wilt weergeven, klikt u op een van de categoriekolommen van een specifiek exemplaar of op de titel van de categorie in de linkernavigatie. Elke detailpagina bevat een reeks grafieken voor de meetgegevens in die categorie. U kunt de metriek voor alle instanties in een milieu of voor een specifieke instantie bekijken. U kunt schakelen tussen de omgeving en instanties met de vervolgkeuzelijsten in de rechterbovenhoek.
 
-![ Uitgezochte milieu ](/help/assets/System_Monitoring1.png)
+![&#x200B; Uitgezochte milieu &#x200B;](/help/assets/System_Monitoring1.png)
 
 De navigatie op de linkerzijde toont de beschikbare metriek binnen de momenteel geselecteerde categorie waarvoor er gegevens voor de momenteel geselecteerde milieu en instanties zijn.
 
 Een individuele grafiek toont de status en een grafiek van de gegevens in tijd samen met de drempels. Wanneer meerdere instanties worden weergegeven, bevinden de gegevens van elke instantie zich in een aparte reeks.
 
-![ Grafiek van Metriek ](/help/assets/Monitoring_Graphs1.png)
+![&#x200B; Grafiek van Metriek &#x200B;](/help/assets/Monitoring_Graphs1.png)
 
 Individuele reeksen kunnen op een grafiek worden verborgen door op de reeks in de legenda te klikken.
 Als u bijvoorbeeld op de waarschuwingsdrempelreeks klikt, ziet u alleen de kritieke drempel.
 
-![ wijzig grafiek ](/help/assets/Monitoring_Graphs2.png)
+![&#x200B; wijzig grafiek &#x200B;](/help/assets/Monitoring_Graphs2.png)
 
 ### Metrische definities {#metric-definitions}
 
@@ -102,15 +102,15 @@ U kunt de prestaties van uw AEM-productieomgeving zien in verhouding tot uw serv
 
 In de volgende grafiek wordt het maandelijkse SLA-resultaat voor 2019 weergegeven.
 
-![ SLA 2018 grafiek ](/help/assets/SLA-Reports-one.png)
+![&#x200B; SLA 2018 grafiek &#x200B;](/help/assets/SLA-Reports-one.png)
 
 Net als bij systeemgrafieken worden bij het verschuiven van een gegevenspunt de specifieke waarden voor die maand weergegeven.
 
-![ het puntrollover van Gegevens ](/help/assets/SLA-Reports-two.png)
+![&#x200B; het puntrollover van Gegevens &#x200B;](/help/assets/SLA-Reports-two.png)
 
 De **sectie van de Analyse van de Gebeurtenis** onder deze grafiek toont de reeks incidenten die voor het programma tijdens het momenteel geselecteerde jaar voorkwamen. Elk incident heeft een tijdbereik, een oorzaak en een reeks opmerkingen.
 
-![ de analyse van de Gebeurtenis ](/help/assets/sla-reporting3.png)
+![&#x200B; de analyse van de Gebeurtenis &#x200B;](/help/assets/sla-reporting3.png)
 
 ## SLA-meetgegevens {#sla-metrics}
 

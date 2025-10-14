@@ -20,7 +20,7 @@ Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren a
 
 Als u van deze mogelijkheid gebruik wilt maken, moet de Maven-build een ZIP-bestand maken dat ten minste twee mappen bevat: `conf` en `conf.d` . Dit .zip-bestand kan worden gemaakt met `maven-assembly-plugin` .
 
-De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [ tovenaar van de projectverwezenlijking ](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit pad wordt aanbevolen als u nog geen ervaring hebt met Adobe Managed Services (AMS).
+De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [&#x200B; tovenaar van de projectverwezenlijking &#x200B;](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit pad wordt aanbevolen als u nog geen ervaring hebt met Adobe Managed Services (AMS).
 
 Wanneer u de toepassing uitvoert naar een Dispatcher-instantie, worden de mappen in de instantie vervangen door die mappen in de Git-opslagplaats. Omdat voor webserver- en Dispatcher-configuratiebestanden vaak specifieke gegevens voor de omgeving nodig zijn, moet u samenwerken met de Customer Success Engineers (CSE) om de juiste omgevingsvariabelen in te stellen in `/etc/sysconfig/httpd` voordat u deze functie correct gebruikt.
 

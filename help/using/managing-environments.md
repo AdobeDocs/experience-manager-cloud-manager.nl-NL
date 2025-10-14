@@ -20,7 +20,7 @@ De **pagina van het Overzicht** van Cloud Manager omvat de **3&rbrace; tegel van
 
 In elk van de vermelde omgevingen wordt de bijbehorende status weergegeven.
 
-![ pagina van het Overzicht ](/help/assets/Manage-Environ-Overview.png)
+![&#x200B; pagina van het Overzicht &#x200B;](/help/assets/Manage-Environ-Overview.png)
 
 ## Omgevingselement {#environments-tile}
 
@@ -33,7 +33,7 @@ De status is de toestand van het opgerold vermogen over de knooppunten in de omg
 * Blauw - Een of meer knooppunten komen naar boven.
 * Geel - Een of meer knooppunten hebben een stroomstatus die niet beschikbaar is.
 
-![ de tegels van Milieu&#39;s ](/help/assets/Environments-card-new.png)
+![&#x200B; de tegels van Milieu&#39;s &#x200B;](/help/assets/Environments-card-new.png)
 
 ## Omgevingen beheren {#managing-environments-with-cloud-manager}
 
@@ -50,7 +50,7 @@ Het **milieu&#39;s** scherm toont elke productie en het opvoeren milieu&#39;s in
 * Blauw - Komend omhoog
 * Geel - niet beschikbaar
 
-![ Milieu&#39;s tabel ](/help/assets/Environments-tab.png)
+![&#x200B; Milieu&#39;s tabel &#x200B;](/help/assets/Environments-tab.png)
 
 >[!NOTE]
 >

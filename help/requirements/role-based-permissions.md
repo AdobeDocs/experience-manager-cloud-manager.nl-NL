@@ -18,13 +18,13 @@ ht-degree: 3%
 >
 >In deze documentatie worden op rollen gebaseerde machtigingen voor Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De gelijkwaardige documentatie voor AEM as a Cloud Service kan in het document [ Inleiding aan Cloud Manager ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions) in de documentatie van AEM as a Cloud Service worden gevonden.
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in het document [&#x200B; Inleiding aan Cloud Manager &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions) in de documentatie van AEM as a Cloud Service worden gevonden.
 
 ## Gebruikersrollen {#user-roles}
 
-Het beheer van de rol voor [!UICONTROL Cloud Manager] wordt gedaan gebruikend [ Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Elke gebruiker van [!UICONTROL Cloud Manager] moet lid zijn van de IMS-organisatie van de klant en over de Adobe Managed Services-productcontext beschikken. U kunt leden van specifieke rollen toevoegen door de gebruiker toe te voegen aan een [!UICONTROL Cloud Manager] -productprofiel in de Admin Console.
+Het beheer van de rol voor [!UICONTROL Cloud Manager] wordt gedaan gebruikend [&#x200B; Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-console.html). Elke gebruiker van [!UICONTROL Cloud Manager] moet lid zijn van de IMS-organisatie van de klant en over de Adobe Managed Services-productcontext beschikken. U kunt leden van specifieke rollen toevoegen door de gebruiker toe te voegen aan een [!UICONTROL Cloud Manager] -productprofiel in de Admin Console.
 
-Meer over leren hoe te opstelling uw rollen, zie [ de Gebruikers en Rollen van de Vestiging ](/help/requirements/users-and-roles.md).
+Meer over leren hoe te opstelling uw rollen, zie [&#x200B; de Gebruikers en Rollen van de Vestiging &#x200B;](/help/requirements/users-and-roles.md).
 
 De volgende tabel bevat een lijst met de rollen die u in de Admin Console kunt toewijzen.
 
@@ -66,8 +66,8 @@ Elk van de rollen heeft specifieke, bijbehorende preconfigured toestemmingen. De
 
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
-Meer over leren hoe te opstelling uw gebruikers, zie [ de Gebruikers en Rollen van de Vestiging ](/help/requirements/users-and-roles.md).
+Meer over leren hoe te opstelling uw gebruikers, zie [&#x200B; de Gebruikers en Rollen van de Vestiging &#x200B;](/help/requirements/users-and-roles.md).
 
 >[!TIP]
 >
->Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Zie [ de Toestemmingen van de Douane ](/help/using/custom-permissions.md) voor meer details.
+>Aangepaste machtigingsprofielen met configureerbare machtigingen zijn ook beschikbaar. Zie [&#x200B; de Toestemmingen van de Douane &#x200B;](/help/using/custom-permissions.md) voor meer details.

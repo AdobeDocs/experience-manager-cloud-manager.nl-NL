@@ -46,45 +46,45 @@ Voordat inhoud kan worden gekopieerd, moet een inhoudsset zijn gedefinieerd. Wan
 
 **om een geplaatste inhoud tot stand te brengen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-1. Van het linkerzijmenu, onder **de pagina van de Diensten**, klik ![ pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
+1. Van het linkerzijmenu, onder **de pagina van de Diensten**, klik ![&#x200B; pictogram van de Doos &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
 
 1. Vlak de hoger-juiste hoek van de pagina, klik **voeg Geplaatste Inhoud** toe.
 
-   ![ Inhoudsreeksen ](/help/assets/content-sets.png)
+   ![&#x200B; Inhoudsreeksen &#x200B;](/help/assets/content-sets.png)
 
 1. In het **`Add Content Set`** dialoogvakje, op het **Details** lusje, in de **Naam** en **6&rbrace; gebieden van de Beschrijving, typ een naam en facultatieve beschrijving voor de geplaatste inhoud, dan klik** verdergaan **.**
 
-   ![ Inhoud plaatste details ](/help/assets/add-content-set-details.png)
+   ![&#x200B; Inhoud plaatste details &#x200B;](/help/assets/add-content-set-details.png)
 
 1. Op het **lusje van de Wegen van de Inhoud**, op het **Weg** tekstgebied, specificeer een weg aan de inhoud die kan worden veranderd en in de inhoudreeks zou moeten worden omvat.
 
    Alleen paden die beginnen met `/content` , `/conf` , `/etc` , `/var/workflow/models` of `/var/commerce` , komen in aanmerking voor opname.
 
-1. Klik ![ Omslag toevoegen pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Weg** om (of omvat) de weg aan de inhoudreeks toe te voegen.
+1. Klik ![&#x200B; Omslag toevoegen pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **Weg** om (of omvat) de weg aan de inhoudreeks toe te voegen.
 
 1. (Optioneel) Voeg desgewenst extra paden toe (maximaal 50) door de vorige twee stappen te herhalen. Anders gaat u door met de volgende stap.
 
-   ![ voegt wegen aan inhoud toe plaatste ](/help/assets/add-content-set-paths.png)
+   ![&#x200B; voegt wegen aan inhoud toe plaatste &#x200B;](/help/assets/add-content-set-paths.png)
 
 1. (Optioneel) Als u de inhoudenset wilt verkleinen, kunt u desgewenst subpaden opgeven in een opgenomen inhoudspad dat moet worden uitgesloten.
 
-   1. Aan het recht van een inbegrepen inhoudspad dat u wilt beperken, klik ![ het schrappingspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
+   1. Aan het recht van een inbegrepen inhoudspad dat u wilt beperken, klik ![&#x200B; het schrappingspictogram van de Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg).
    1. Typ in het tekstveld een relatief pad naar het hoofdpad dat in het dialoogvenster wordt weergegeven.
-   1. Klik ![ het schrappingspictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **uitsluiten Weg**.
+   1. Klik ![&#x200B; het schrappingspictogram van de Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg) **uitsluiten Weg**.
    1. Herhaal indien nodig de stappen i. tot en met iii. hierboven om meer uitsluitingspaden toe te voegen; er is geen beperking. Anders gaat u door met de volgende stap.
 
-   ![ Excluding wegen ](/help/assets/add-content-set-paths-excluded.png)
+   ![&#x200B; Excluding wegen &#x200B;](/help/assets/add-content-set-paths-excluded.png)
 
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   1. Klik ![ Grootte 500 van de kruis ](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) rechts van een uitgesloten sub-weg om het te schrappen.
-   1. Klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) aan het recht van een inbegrepen inhoudspad, dan klik **uitgeven** of **Schrapping**.
+   1. Klik ![&#x200B; Grootte 500 van de kruis &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) rechts van een uitgesloten sub-weg om het te schrappen.
+   1. Klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) aan het recht van een inbegrepen inhoudspad, dan klik **uitgeven** of **Schrapping**.
 
-   ![ het Uitgeven weglijst ](/help/assets/add-content-set-excluded-paths.png)
+   ![&#x200B; het Uitgeven weglijst &#x200B;](/help/assets/add-content-set-excluded-paths.png)
 
 1. Klik **creëren**. U kunt de inhoudenset nu gebruiken om inhoud te kopiëren tussen omgevingen.
 
@@ -94,15 +94,15 @@ Wanneer u een inhoudsset bewerkt, moet u mogelijk de geconfigureerde paden uitbr
 
 **om een geplaatste inhoud uit te geven of te schrappen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-1. Van het linkerzijmenu, onder **Diensten**, klik ![ pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
+1. Van het linkerzijmenu, onder **Diensten**, klik ![&#x200B; pictogram van de Doos &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
 
-1. In de lijst op de **pagina van de Reeksen van de Inhoud**, klik ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) rechts van een inbegrepen inhoudspad, dan klik **uitgeven** of **Schrapping**.
+1. In de lijst op de **pagina van de Reeksen van de Inhoud**, klik ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) rechts van een inbegrepen inhoudspad, dan klik **uitgeven** of **Schrapping**.
 
-![ geef inhoudreeks ](/help/assets/edit-content-set.png) uit
+![&#x200B; geef inhoudreeks &#x200B;](/help/assets/edit-content-set.png) uit
 
 ## Inhoud kopiëren {#copy-content}
 
@@ -115,22 +115,22 @@ Een omgeving kan niet beschikbaar zijn voor selectie als een van de volgende voo
 
 **om inhoud te kopiëren:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-1. Van het linkerzijmenu, onder **Diensten**, klik ![ pictogram van de Doos ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
+1. Van het linkerzijmenu, onder **Diensten**, klik ![&#x200B; pictogram van de Doos &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **de Reeksen van de Inhoud**.
 
-1. In de lijst op de **pagina van de Reeksen van de Inhoud**, rechts van een inbegrepen inhoudsweg die u wilt kopiëren, ![ Meer pictogram ](https://spectrum.adobe.com/static/icons/ui_18/More.svg) klikken, dan **Inhoud van het Exemplaar** klikken.
+1. In de lijst op de **pagina van de Reeksen van de Inhoud**, rechts van een inbegrepen inhoudsweg die u wilt kopiëren, ![&#x200B; Meer pictogram &#x200B;](https://spectrum.adobe.com/static/icons/ui_18/More.svg) klikken, dan **Inhoud van het Exemplaar** klikken.
 
-   ![ exemplaar van de Inhoud ](/help/assets/copy-content.png)
+   ![&#x200B; exemplaar van de Inhoud &#x200B;](/help/assets/copy-content.png)
 
 1. In het **de dialoogvakje van de inhoud van het 0&rbrace; Exemplaar &lbrace;, selecteer het** milieu van Source **en het** milieu van de Bestemming **voor uw actie van het inhoudsexemplaar.**
 
    * Regio&#39;s in een doelomgeving moeten een subset zijn van regio&#39;s in een bronomgeving.
    * Compatibiliteitsproblemen worden gecontroleerd voordat een handeling voor het kopiëren van inhoud wordt uitgevoerd. Wanneer u het **milieu van de Bestemming** selecteert, bevestigt het systeem automatisch de bron en bestemmingsmilieu&#39;s. Als de validatie mislukt, stopt het proces en wordt een foutbericht weergegeven in het dialoogvenster waarin de oorzaak van de fout wordt uitgelegd.
 
-     ![ het Kopiëren inhoud ](/help/assets/copying-content.png)
+     ![&#x200B; het Kopiëren inhoud &#x200B;](/help/assets/copying-content.png)
 
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
@@ -146,13 +146,13 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 
 **om het statuut van een inhoudsexemplaar te controleren:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
-1. In de upper-left hoek van de pagina, klik ![ tonen menupictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
+1. In de upper-left hoek van de pagina, klik ![&#x200B; tonen menupictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) om het linkerzijmenu te openen.
 
-1. Van het linkerzijmenu, onder **Diensten**, klik ![ pictogram van de Geschiedenis ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **de Activiteit van de Inhoud van het Exemplaar**.
+1. Van het linkerzijmenu, onder **Diensten**, klik ![&#x200B; pictogram van de Geschiedenis &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **de Activiteit van de Inhoud van het Exemplaar**.
 
-   ![ Activiteit van het Exemplaar van de Inhoud ](/help/assets/copy-content-activity.png)
+   ![&#x200B; Activiteit van het Exemplaar van de Inhoud &#x200B;](/help/assets/copy-content-activity.png)
 
    Een proces voor het kopiëren van inhoud kan een van de volgende statussen hebben:
 
@@ -172,8 +172,8 @@ U kunt het statuut van uw exemplaarprocessen in de **pagina van de Activiteit va
 * Het exemplaar van de inhoud kan niet worden uitgevoerd als er om het even welke actieve verrichting die op of het bestemmings of bronmilieu zoals een pijpleiding CI/CD loopt.
 * Kopie van inhoud mag niet worden gebruikt als een kloon- of mirroring-gereedschap omdat het geen verplaatste of verwijderde inhoud van de bron kan bijhouden.
 * Een inhoudkopie kan niet worden gepauzeerd of geannuleerd nadat deze is gestart.
-* Met Inhoud kopiëren worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gedupliceerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [ DAM werkschema van procesactiva ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
-* [ de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
+* Met Inhoud kopiëren worden elementen en Dynamic Media-metagegevens van de hogere omgeving naar de geselecteerde lagere omgeving gedupliceerd. De gekopieerde activa moeten dan worden herverwerkt gebruikend het [&#x200B; DAM werkschema van procesactiva &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/using/assets-workflow) op het lagere milieu om de respectieve configuratie van Dynamic Media te gebruiken.
+* [&#x200B; de configuraties van Dynamic Media met activa groter dan 2 toegelaten GB &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb) worden niet gesteund.
 * De regio&#39;s van de doelomgeving moeten dezelfde zijn als of een deel van de bronomgeving.
 
 ## Bekende problemen met Content Copy {#known-issues}

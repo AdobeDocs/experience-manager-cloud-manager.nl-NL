@@ -31,7 +31,7 @@ Er liggen drie poorten in de pijplijn:
 Voor elk van deze poorten is er een structuur met drie lagen voor problemen die door de poort worden geïdentificeerd.
 
 * **Kritieke** - Kwesties die een directe mislukking van de pijpleiding veroorzaken.
-* **Belangrijk** - Kwesties die de pijpleiding veroorzaken om een gepauzeerde staat in te gaan. Een plaatsingsmanager, projectmanager, of bedrijfseigenaar kan of de kwesties met voeten treden. Als ze dat doen, gaat de pijpleiding door zoals bedoeld. Alternatief, kunnen zij de kwesties goedkeuren, veroorzakend de pijpleiding om met een mislukking te stoppen. De opheffing van belangrijke mislukkingen is onderworpen aan a [ onderbreking ](/help/using/code-deployment.md#timeouts).
+* **Belangrijk** - Kwesties die de pijpleiding veroorzaken om een gepauzeerde staat in te gaan. Een plaatsingsmanager, projectmanager, of bedrijfseigenaar kan of de kwesties met voeten treden. Als ze dat doen, gaat de pijpleiding door zoals bedoeld. Alternatief, kunnen zij de kwesties goedkeuren, veroorzakend de pijpleiding om met een mislukking te stoppen. De opheffing van belangrijke mislukkingen is onderworpen aan a [&#x200B; onderbreking &#x200B;](/help/using/code-deployment.md#timeouts).
 * **Info** - Kwesties die puur voor informatiedoeleinden worden verstrekt en geen effect op pijpleidingsuitvoering hebben.
 
 >[!NOTE]
@@ -40,19 +40,19 @@ Voor elk van deze poorten is er een structuur met drie lagen voor problemen die 
 
 ## Codekwaliteitstests {#code-quality-testing-step}
 
-Deze testende stap evalueert de kwaliteit van uw toepassingscode, die het belangrijkste doel van een code kwaliteit-slechts pijpleiding is. Het wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie- en productiepijpleidingen. Meer leren, ga [ Vormend niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
+Deze testende stap evalueert de kwaliteit van uw toepassingscode, die het belangrijkste doel van een code kwaliteit-slechts pijpleiding is. Het wordt uitgevoerd onmiddellijk na de bouwstap in alle niet-productie- en productiepijpleidingen. Meer leren, ga [&#x200B; Vormend niet-Productiepijpleidingen &#x200B;](/help/using/non-production-pipelines.md).
 
 Testen van de codekwaliteit scant de broncode om ervoor te zorgen dat deze aan bepaalde kwaliteitscriteria voldoet.
 
 De software implementeert deze met behulp van een combinatie van SonarQube-analyse, inhoudspakketonderzoek met OakPAL en Dispatcher-validatie met het Dispatcher Optimization Tool.
 
-Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van de Techniek van AEM en worden bedoeld als [ Regels van de Kwaliteit van de Code van de Douane ](/help/using/custom-code-quality-rules.md).
+Er zijn meer dan 100 regels die generieke Java-regels en AEM-specifieke regels combineren. Sommige van de AEM-specifieke regels worden gecreeerd gebaseerd op beste praktijken van de Techniek van AEM en worden bedoeld als [&#x200B; Regels van de Kwaliteit van de Code van de Douane &#x200B;](/help/using/custom-code-quality-rules.md).
 
-U kunt de huidige volledige lijst van regels [ downloaden gebruikend deze verbinding ](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
+U kunt de huidige volledige lijst van regels [&#x200B; downloaden gebruikend deze verbinding &#x200B;](/help/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 >[!IMPORTANT]
 >
->Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [ kunt downloaden ](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
+>Beginnend Donderdag, 13 Februari, 2025 (Cloud Manager 2025.2.0), gebruikt de Kwaliteit van de Code van Cloud Manager een bijgewerkte versie SonarQube 9.9 en een bijgewerkte lijst van regels die u hier [&#x200B; kunt downloaden &#x200B;](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx).
 
 De resultaten van het testen van de codekwaliteit worden geleverd als classificatie zoals samengevat in deze lijst.
 
@@ -73,7 +73,7 @@ De resultaten van het testen van de codekwaliteit worden geleverd als classifica
 
 >[!NOTE]
 >
->Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden uitgevoerd, zie [ de Regels van de Kwaliteit van de Code van de Douane ](custom-code-quality-rules.md).
+>Meer over de de kwaliteitsregels van de douanecode leren die door [!UICONTROL Cloud Manager] worden uitgevoerd, zie [&#x200B; de Regels van de Kwaliteit van de Code van de Douane &#x200B;](custom-code-quality-rules.md).
 
 ### Omgaan met valse positieven {#dealing-with-false-positives}
 
@@ -121,22 +121,22 @@ In de volgende tabel staan de gezondheidscontroles.
 
 | Naam | Implementatie van gezondheidscontrole | Categorie |
 |---|---|---|
-| Gereedheid van API voor bevestiging van de firewall voor deserialisatie is acceptabel. | [ Readiness van de Firewall van de Bevestiging API van Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| De firewall voor deserialization is functioneel. | [ Functionele Firewall Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| De firewall voor deserialization wordt geladen. | [ Geladen Firewall Deserialization ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
-| `AuthorizableNodeName` -implementatie stelt geen machtigbare id beschikbaar in de knooppuntnaam/het pad. | [ Vergunnbare Generatie van de Naam van de Knoop ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Kritiek |
-| Standaardwachtwoorden zijn gewijzigd. | [ Standaard Login Rekeningen ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Kritiek |
+| Gereedheid van API voor bevestiging van de firewall voor deserialisatie is acceptabel. | [&#x200B; Readiness van de Firewall van de Bevestiging API van Deserialization &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| De firewall voor deserialization is functioneel. | [&#x200B; Functionele Firewall Deserialization &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| De firewall voor deserialization wordt geladen. | [&#x200B; Geladen Firewall Deserialization &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | Kritiek |
+| `AuthorizableNodeName` -implementatie stelt geen machtigbare id beschikbaar in de knooppuntnaam/het pad. | [&#x200B; Vergunnbare Generatie van de Naam van de Knoop &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Kritiek |
+| Standaardwachtwoorden zijn gewijzigd. | [&#x200B; Standaard Login Rekeningen &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | Kritiek |
 | `Sling` standaard GET servlet is beveiligd tegen DOS-aanvallen. | `Sling Get` servlet | Kritiek |
 | De `Sling` JavaScript-handler is op de juiste wijze geconfigureerd. | `Sling` JavaScript Handler | Kritiek |
 | De `Sling` JSP Scripthandler wordt op de juiste wijze geconfigureerd. | `Sling` JSP Script-handler | Kritiek |
 | SSL is correct geconfigureerd. | SSL-configuratie | Kritiek |
 | Er is geen duidelijk onveilig beleid voor gebruikersprofielen gevonden. | Standaardtoegang gebruikersprofiel | Kritiek |
-| Het filter `Sling` Referrer wordt gevormd om aanvallen te verhinderen CSRF. | [ het Verkopen Filter van de Verwijzer ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Belangrijk |
+| Het filter `Sling` Referrer wordt gevormd om aanvallen te verhinderen CSRF. | [&#x200B; het Verkopen Filter van de Verwijzer &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/security/security-checklist#security) | Belangrijk |
 | De Adobe Granite HTML Library Manager is op de juiste wijze geconfigureerd. | Config. HTML Library Manager | Belangrijk |
 | De CRXDE-ondersteuningspakket is uitgeschakeld. | CRXDE-ondersteuning | Belangrijk |
 | `Sling` DavEx-bundel en -servlet zijn uitgeschakeld. | DavEx Health Check | Belangrijk |
 | Voorbeeldinhoud is niet geïnstalleerd. | Voorbeelden van inhoudspakketten | Belangrijk |
-| Zowel het WCM-aanvraagfilter als het WCM-foutopsporingsfilter zijn uitgeschakeld. | [ Configuratie van Filters WCM ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Belangrijk |
+| Zowel het WCM-aanvraagfilter als het WCM-foutopsporingsfilter zijn uitgeschakeld. | [&#x200B; Configuratie van Filters WCM &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | Belangrijk |
 | `Sling` WebDAV-bundel en -servlet zijn op de juiste wijze geconfigureerd. | WebDAV Health Check | Belangrijk |
 | De webserver is geconfigureerd om te voorkomen dat wordt geklikt. | Webserverconfiguratie | Belangrijk |
 | Replicatie maakt geen gebruik van de gebruiker `admin` . | Replicatie- en transportgebruikers | Info |
@@ -149,7 +149,7 @@ Cloud Manager voert prestatietests voor AEM Sites-programma&#39;s uit. De presta
 
 #### Virtuele gebruikers {#virtual-users}
 
-Cloud Manager spint omhoog virtuele gebruikers of containers die op KPIs (reactietijd en pagina&#39;s/min) worden gebaseerd die door de **rol van de BedrijfsEigenaar** worden geplaatst. Deze KPIs wordt geplaatst terwijl [ creërend of het uitgeven van het programma ](/help/getting-started/program-setup.md).
+Cloud Manager spint omhoog virtuele gebruikers of containers die op KPIs (reactietijd en pagina&#39;s/min) worden gebaseerd die door de **rol van de BedrijfsEigenaar** worden geplaatst. Deze KPIs wordt geplaatst terwijl [&#x200B; creërend of het uitgeven van het programma &#x200B;](/help/getting-started/program-setup.md).
 
 Op basis van de gedefinieerde KPI&#39;s worden maximaal tien containers gesponnen die werkelijke gebruikers simuleren. De pagina&#39;s die voor het testen zijn geselecteerd, worden gesplitst en toegewezen aan elke virtuele gebruiker.
 
@@ -158,7 +158,7 @@ Op basis van de gedefinieerde KPI&#39;s worden maximaal tien containers gesponne
 Vóór het begin van de testperiode van 30 minuten kruipt Cloud Manager de testomgeving met behulp van een set van een of meer zaadURL&#39;s die door de Klantsuccesingenieur zijn geconfigureerd. Vanaf deze URL&#39;s wordt de HTML van elke pagina geïnspecteerd en worden koppelingen doorlopen op een wijze die begint met het doorlopen van de breedte.
 
 * Dit schuifproces is standaard beperkt tot maximaal 5000 pagina&#39;s.
-* Het maximumaantal te testen pagina&#39;s kan worden overschreven door de [ pijpleidingsvariabele ](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES` te plaatsen.
+* Het maximumaantal te testen pagina&#39;s kan worden overschreven door de [&#x200B; pijpleidingsvariabele &#x200B;](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES` te plaatsen.
    * Toegestane waarden zijn `2000` - `7000` .
 * De verzoeken van de kruipper hebben een vaste onderbreking van 10 seconden.
 
@@ -174,7 +174,7 @@ Drie paginasets selecteren de pagina&#39;s. Cloud Manager gebruikt de toegangslo
 
 ##### Verdeling van verkeer over geselecteerde paginasets {#distribution-of-traffic}
 
-U kunt overal van één tot alle drie reeksen op het **Testen** lusje van uw [ pijpleidingsconfiguratie ](/help/using/production-pipelines.md) kiezen. De verdeling van verkeer is gebaseerd op het aantal geselecteerde reeksen. Als alle drie zijn geselecteerd, wordt 33% van de totale paginaweergaven in elke set geplaatst. Als er twee zijn geselecteerd, gaat 50% naar elke set. Als één wordt geselecteerd, gaat 100% van het verkeer naar die reeks.
+U kunt overal van één tot alle drie reeksen op het **Testen** lusje van uw [&#x200B; pijpleidingsconfiguratie &#x200B;](/help/using/production-pipelines.md) kiezen. De verdeling van verkeer is gebaseerd op het aantal geselecteerde reeksen. Als alle drie zijn geselecteerd, wordt 33% van de totale paginaweergaven in elke set geplaatst. Als er twee zijn geselecteerd, gaat 50% naar elke set. Als één wordt geselecteerd, gaat 100% van het verkeer naar die reeks.
 
 Laten we dit voorbeeld bekijken.
 
@@ -206,7 +206,7 @@ In de volgende tabel wordt een overzicht gegeven van de prestatietestmatrix met 
 | Netwerkbandbreedtegebruik | Belangrijk | >= 90% |
 | Aanvragen per minuut | Info | >= 6000 |
 
-Zie [ Voor authentiek verklaarde prestaties het testen ](#authenticated-performance-testing) voor meer details bij het gebruiken van basisauthentificatie voor prestaties het testen voor Plaatsen en Assets.
+Zie [&#x200B; Voor authentiek verklaarde prestaties het testen &#x200B;](#authenticated-performance-testing) voor meer details bij het gebruiken van basisauthentificatie voor prestaties het testen voor Plaatsen en Assets.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Voer de volgende handelingen uit om deze variabelen in te stellen met de Cloud M
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-Zie [ de variabelen van de gebruikerspijpleiding van het Patch ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentatie leren hoe te om API te gebruiken.
+Zie [&#x200B; de variabelen van de gebruikerspijpleiding van het Patch &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API documentatie leren hoe te om API te gebruiken.
 
 ### AEM Assets {#aem-assets}
 
@@ -252,21 +252,21 @@ Als bijvoorbeeld een splitsing van 70/30 wordt gebruikt en er 10 elementen per m
 
 #### Testen en rapporteren {#testing-and-reporting}
 
-Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het wachtwoord die door de CSE-instelling worden ingesteld. Assets wordt vervolgens geüpload naar de map met behulp van een opensource-bibliotheek. De tests die door Assets worden in werking gesteld worden het testen stap geschreven gebruikend een [ open bronbibliotheek ](https://github.com/adobe/toughday2). Zowel de verwerkingstijd voor elk element als de verschillende metingen op systeemniveau worden over de testduur van 30 minuten gemeten. Deze functie kan zowel afbeeldingen als PDF-documenten uploaden.
+Cloud Manager maakt een map op de auteurinstantie met de gebruikersnaam en het wachtwoord die door de CSE-instelling worden ingesteld. Assets wordt vervolgens geüpload naar de map met behulp van een opensource-bibliotheek. De tests die door Assets worden in werking gesteld worden het testen stap geschreven gebruikend een [&#x200B; open bronbibliotheek &#x200B;](https://github.com/adobe/toughday2). Zowel de verwerkingstijd voor elk element als de verschillende metingen op systeemniveau worden over de testduur van 30 minuten gemeten. Deze functie kan zowel afbeeldingen als PDF-documenten uploaden.
 
 >[!TIP]
 >
->Zie [ productiepijpleidingen ](/help/using/production-pipelines.md) vormen om meer te leren. Zie [&#128279;](/help/getting-started/program-setup.md) de Opstelling van het 0&rbrace; Programma leren hoe te opstelling uw programma en uw KPIs bepalen.
+>Zie [&#x200B; productiepijpleidingen &#x200B;](/help/using/production-pipelines.md) vormen om meer te leren. Zie [&#128279;](/help/getting-started/program-setup.md) de Opstelling van het 0&rbrace; Programma leren hoe te opstelling uw programma en uw KPIs bepalen.
 
 ### Prestatietestresultaten {#performance-testing-results-graphs}
 
 Een aantal metriek is beschikbaar in de **de dialoogdoos van de Test van Prestaties**.
 
-![ Lijst van metriek ](/help/assets/understand_test-results-screen1.png)
+![&#x200B; Lijst van metriek &#x200B;](/help/assets/understand_test-results-screen1.png)
 
 De metrische deelvensters kunnen worden uitgevouwen om een grafiek weer te geven, om een koppeling naar een download te bieden of om beide weer te geven.
 
-![ Metriek die als grafiek ](/help/assets/screen_shot_2018-09-05at83933pm.png) wordt uitgebreid
+![&#x200B; Metriek die als grafiek &#x200B;](/help/assets/screen_shot_2018-09-05at83933pm.png) wordt uitgebreid
 
 Deze functionaliteit is beschikbaar voor de volgende metriek.
 

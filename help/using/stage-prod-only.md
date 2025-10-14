@@ -19,7 +19,7 @@ Staging- en productieomgevingen zijn nauw aan elkaar gekoppeld. Door gebrek, wor
 
 * Als u aan stadium-slechts wilt opstellen, verwerpt u **bevorderen aan Prod** stap in de pijpleiding. De uitvoering wordt echter gemarkeerd als geannuleerd.
 * Als u de recentste code in een het opvoeren milieu aan productie wilt opstellen, moet u de volledige pijpleiding met inbegrip van de het opvoeren plaatsing opnieuw opstellen alhoewel geen code daar werd veranderd.
-* De milieu&#39;s kunnen niet tijdens plaatsingen worden bijgewerkt. Als u de testomgeving enkele dagen lang pauzeert voordat u de productie promoot, blijft de productieomgeving vergrendeld en kan deze niet worden bijgewerkt. Dit scenario maakt niet-afhankelijke taken zoals het bijwerken van [ milieuvariabelen ](/help/getting-started/build-environment.md#environment-variables) onmogelijk.
+* De milieu&#39;s kunnen niet tijdens plaatsingen worden bijgewerkt. Als u de testomgeving enkele dagen lang pauzeert voordat u de productie promoot, blijft de productieomgeving vergrendeld en kan deze niet worden bijgewerkt. Dit scenario maakt niet-afhankelijke taken zoals het bijwerken van [&#x200B; milieuvariabelen &#x200B;](/help/getting-started/build-environment.md#environment-variables) onmogelijk.
 
 De fase-slechts en prod-slechts pijpleidingen bieden oplossingen aan deze gebruiksgevallen door specifieke plaatsingsopties te verstrekken.
 
@@ -42,14 +42,14 @@ Deze speciale pijpleidingen bieden meer flexibiliteit, maar u zou de volgende de
 
 ## Pipetontwerp {#pipeline-creation}
 
-Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardige manier aan de standaard gekoppelde [ productiepijpleidingen ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen ](/help/using/non-production-pipelines.md). Zie deze documenten voor meer informatie.
+Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardige manier aan de standaard gekoppelde [&#x200B; productiepijpleidingen &#x200B;](/help/using/production-pipelines.md) en [&#x200B; niet productiepijpleidingen &#x200B;](/help/using/non-production-pipelines.md). Zie deze documenten voor meer informatie.
 
 1. In het **venster van Pijpleidingen**, klik **toevoegen Pijpleiding**.
 
    * Selecteer **toevoegen niet-ProductiePijpleiding** om een stadium-slechts pijpleiding tot stand te brengen.
    * Selecteer **Voeg de Uitrusting van de Productie slechts Pijpleiding** toe om een pro-enige pijpleiding tot stand te brengen.
 
-   ![ Creërend een prod/stadium-enige pijpleiding ](/help/assets/configure-pipelines/prod-stage-pipelines.png)
+   ![&#x200B; Creërend een prod/stadium-enige pijpleiding &#x200B;](/help/assets/configure-pipelines/prod-stage-pipelines.png)
 
 >[!NOTE]
 >
@@ -66,12 +66,12 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 1. Vul de overige velden in.
 1. Klik **verdergaan**.
 
-   ![ Creërend een stadium-enige pijpleiding ](/help/assets/configure-pipelines/stage-only.png)
+   ![&#x200B; Creërend een stadium-enige pijpleiding &#x200B;](/help/assets/configure-pipelines/stage-only.png)
 
 1. Op het **Testen van het Stadium** lusje, bepaal het testen om in het het opvoeren milieu uit te voeren.
 1. Klik **sparen**.
 
-   ![ de parameters van de Test voor een stadium-enige pijpleiding ](/help/assets/configure-pipelines/stage-only-test.png)
+   ![&#x200B; de parameters van de Test voor een stadium-enige pijpleiding &#x200B;](/help/assets/configure-pipelines/stage-only-test.png)
 
 ### Pijpleidingen met alleen propaan {#prod-only}
 
@@ -79,14 +79,14 @@ Prod-slechts en stadium-enige pijpleidingen worden gecreeerd op een gelijkaardig
 1. Op het **gebied van de Naam van de Pijpleiding**, typ de naam u wilt. De resterende opties en functionaliteit van het dialoogvenster werken op dezelfde manier als de opties in het standaard dialoogvenster voor het maken van gekoppelde pijplijnen.
 1. In de laag-juiste hoek van de dialoogdoos, klik **sparen**.
 
-   ![ Creërend een productie-enige pijpleiding ](/help/assets/configure-pipelines/prod-only-pipeline.png)
+   ![&#x200B; Creërend een productie-enige pijpleiding &#x200B;](/help/assets/configure-pipelines/prod-only-pipeline.png)
 
 ## Pijpleidingen met alleen profielen en alleen met werkruimten {#running}
 
-Prod-slechts en stadium-enige pijpleidingen worden in werking gesteld grotendeels de zelfde manier zoals [ alle andere pijpleidingen in werking gesteld ](/help/using/managing-pipelines.md#running-pipelines). Zie die documentatie voor meer informatie. Er zijn echter twee nieuwe kenmerken van deze pijpleidingen.
+Prod-slechts en stadium-enige pijpleidingen worden in werking gesteld grotendeels de zelfde manier zoals [&#x200B; alle andere pijpleidingen in werking gesteld &#x200B;](/help/using/managing-pipelines.md#running-pipelines). Zie die documentatie voor meer informatie. Er zijn echter twee nieuwe kenmerken van deze pijpleidingen.
 
-* De stadium-slechts en pro-enige pijpleidingen bieden een nieuwe [ noodwijze ](#emergency-mode) aan overslaan het testen.
-* Prod-slechts pijpleiding in werking kan direct van de uitvoeringsdetails van a [ worden teweeggebracht stadium-enige pijpleiding ](#stage-only-run).
+* De stadium-slechts en pro-enige pijpleidingen bieden een nieuwe [&#x200B; noodwijze &#x200B;](#emergency-mode) aan overslaan het testen.
+* Prod-slechts pijpleiding in werking kan direct van de uitvoeringsdetails van a [&#x200B; worden teweeggebracht stadium-enige pijpleiding &#x200B;](#stage-only-run).
 
 ### Noodmodus {#emergency-mode}
 
@@ -95,15 +95,15 @@ Wanneer u alleen productie- en staging-onlinepijpleidingen start, wordt u gevraa
 * **Normale Wijze** is een standaardlooppas en omvat stadium testende stappen.
 * **de Wijze van de Noodsituatie** slaat stadium testende stappen over.
 
-![ Noodmodus ](/help/assets/configure-pipelines/emergency-mode.png)
+![&#x200B; Noodmodus &#x200B;](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### Pijpleidingen met alleen werkgebied {#stage-only-run}
 
 Een pijpleiding met alleen trapsgewijze uitloop loopt vrijwel op dezelfde manier als standaard gekoppelde pijpleidingen. Nochtans, aan het eind van de looppas, na de het testen stappen, bevordert a **bouwstijl** knoop verschijnt. Met deze knop kunt u een pijplijnuitvoering met alleen de mogelijkheid tot voorspelling starten met behulp van de artefacten die in het werkgebied zijn geïmplementeerd en deze in productie implementeren.
 
-![ werkgebied-enige pijpleiding loopt ](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
+![&#x200B; werkgebied-enige pijpleiding loopt &#x200B;](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante pro-enige pijpleiding of op [ noodsituatie ](#emergency-mode) te bevestigen.
+Het klikken **bevordert bouwstijl** zet u ertoe aan om de looppas van de verwante pro-enige pijpleiding of op [&#x200B; noodsituatie &#x200B;](#emergency-mode) te bevestigen.
 
 Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te maken.
 
@@ -111,5 +111,5 @@ Als een pijpleiding alleen-vooruit niet bestaat, wordt u gevraagd om er een te m
 
 Voor pijplijnen met alleen profielen moet u de bronartefacten identificeren die u wilt gebruiken voor de productie. Deze details worden gevonden in de **stap van de Voorbereiding van 0&rbrace; Artefact.** U kunt naar die uitvoeringen navigeren voor meer details en logboeken.
 
-![ details Artefact ](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+![&#x200B; details Artefact &#x200B;](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
 

@@ -22,19 +22,19 @@ Bestaande AEM Projecten moeten zich aan sommige basisregels houden zodat zij met
 * Er moet een `pom.xml` -bestand aanwezig zijn in de hoofdmap van de Git-opslagplaats.
    * Dit bestand `pom.xml` kan verwijzen naar zoveel submodules (die op hun beurt weer andere submodules kunnen hebben) als nodig.
    * U kunt verwijzingen naar extra bewaarplaatsen van het Artefact toevoegen Maven in uw `pom.xml` dossiers.
-   * De toegang tot [ wachtwoord-beschermde artefactrepositories ](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
+   * De toegang tot [&#x200B; wachtwoord-beschermde artefactrepositories &#x200B;](#password-protected-maven-repositories) wordt gesteund wanneer gevormd. Toegang tot door het netwerk beveiligde gegevensbestanden voor artefacten wordt echter niet ondersteund.
 * Implementeerbare inhoudspakketten worden gedetecteerd door te zoeken naar ZIP-bestanden voor inhoudspakketten in een map met de naam `target` .
    * Elk aantal submodules kan inhoudspakketten produceren.
 * Implementeerbare Dispatcher-artefacten worden ontdekt door te zoeken naar `zip` -bestanden in submappen van `target` named `conf` en `conf.d` .
 * Als er meer dan één inhoudspakket is, wordt de volgorde van pakketimplementaties niet gegarandeerd.
 * Als een specifieke orde nodig is, kunnen de gebiedsdelen van het inhoudspakket worden gebruikt om de orde te bepalen.
-* De pakketten kunnen [ worden overgeslagen ](#skipping-content-packages) van plaatsing.
+* De pakketten kunnen [&#x200B; worden overgeslagen &#x200B;](#skipping-content-packages) van plaatsing.
 
 ## Geweven profielen activeren in Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
-In sommige beperkte gevallen, kunt u uw bouwstijlproces lichtjes moeten variëren wanneer het binnen Cloud Manager loopt in tegenstelling tot wanneer het op ontwikkelaarwerkstations loopt. Voor deze gevallen, [ Gemaakt Profielen ](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kunnen worden gebruikt om te bepalen hoe de bouwstijl in verschillende milieu&#39;s, met inbegrip van Cloud Manager verschillend zou moeten zijn.
+In sommige beperkte gevallen, kunt u uw bouwstijlproces lichtjes moeten variëren wanneer het binnen Cloud Manager loopt in tegenstelling tot wanneer het op ontwikkelaarwerkstations loopt. Voor deze gevallen, [&#x200B; Gemaakt Profielen &#x200B;](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) kunnen worden gebruikt om te bepalen hoe de bouwstijl in verschillende milieu&#39;s, met inbegrip van Cloud Manager verschillend zou moeten zijn.
 
-De activering van een Geweven Profiel binnen Cloud Manager bouwt milieu zou moeten worden gedaan door `CM_BUILD` [ milieuvariabele ](/help/getting-started/build-environment.md#environment-variables) te zoeken. Omgekeerd moet een profiel dat alleen buiten de Cloud Manager-ontwikkelomgeving moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
+De activering van een Geweven Profiel binnen Cloud Manager bouwt milieu zou moeten worden gedaan door `CM_BUILD` [&#x200B; milieuvariabele &#x200B;](/help/getting-started/build-environment.md#environment-variables) te zoeken. Omgekeerd moet een profiel dat alleen buiten de Cloud Manager-ontwikkelomgeving moet worden gebruikt, worden uitgevoerd door te zoeken naar de afwezigheid van deze variabele.
 
 Als u bijvoorbeeld een eenvoudig bericht wilt uitvoeren wanneer de build in Cloud Manager wordt uitgevoerd, doet u het volgende:
 
@@ -116,11 +116,11 @@ Artefacten van een met een wachtwoord beveiligde Maven-opslagplaats moeten voorz
 >
 >Artefacten van met een wachtwoord beveiligde Maven-repositories mogen alleen in zeldzame gevallen worden gebruikt en voor code die niet aan AEM is gekoppeld.
 
-Om een wachtwoord-beschermde Gemaakt bewaarplaats van Cloud Manager te gebruiken, specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [ Variabele van de Pijpleiding ](/help/getting-started/build-environment.md#pipeline-variables) en verwijs dan dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de bewaarplaats van het Git. Dit dossier volgt het [&#128279;](https://maven.apache.org/settings.html) schema van het Dossier van Montages 0&rbrace; Maven.
+Om een wachtwoord-beschermde Gemaakt bewaarplaats van Cloud Manager te gebruiken, specificeer het wachtwoord (en naar keuze, de gebruikersbenaming) als geheime [&#x200B; Variabele van de Pijpleiding &#x200B;](/help/getting-started/build-environment.md#pipeline-variables) en verwijs dan dat geheim binnen een dossier genoemd `.cloudmanager/maven/settings.xml` in de bewaarplaats van het Git. Dit dossier volgt het [&#128279;](https://maven.apache.org/settings.html) schema van het Dossier van Montages 0&rbrace; Maven.
 
 Wanneer het Cloud Manager-constructieproces start, wordt het element `<servers>` in dit bestand samengevoegd met het standaardbestand van `settings.xml` dat door Cloud Manager wordt geleverd. Aangepaste servers mogen geen server-id&#39;s gebruiken die beginnen met `adobe` en `cloud-manager` . Dergelijke id&#39;s worden als gereserveerd beschouwd. Cloud Manager spiegelt alleen de server-id&#39;s die overeenkomen met een van de opgegeven voorvoegsels of de standaard-id `central` .
 
-Als dit bestand is geïnstalleerd, wordt vanuit een element `<repository>` en/of `<pluginRepository>` in het bestand `pom.xml` naar de server-id verwezen. Over het algemeen, zouden deze `<repository>` en/of `<pluginRepository>` elementen binnen a [ Cloud Manager-specifiek profiel ](#activating-maven-profiles-in-cloud-manager) bevat zijn, hoewel dat niet strikt noodzakelijk is.
+Als dit bestand is geïnstalleerd, wordt vanuit een element `<repository>` en/of `<pluginRepository>` in het bestand `pom.xml` naar de server-id verwezen. Over het algemeen, zouden deze `<repository>` en/of `<pluginRepository>` elementen binnen a [&#x200B; Cloud Manager-specifiek profiel &#x200B;](#activating-maven-profiles-in-cloud-manager) bevat zijn, hoewel dat niet strikt noodzakelijk is.
 
 Stel dat de gegevensopslagruimte zich op `https://repository.myco.com/maven2` bevindt, de gebruikersnaam die Cloud Manager moet gebruiken, is `cloudmanager` en het wachtwoord is `secretword` .
 
@@ -334,10 +334,10 @@ Indien gewenst, kan het hergebruikgedrag voor specifieke pijpleidingen worden on
 
 * Artefacten van de bouwstijl worden niet opnieuw gebruikt over verschillende programma&#39;s, ongeacht als de commit knoeiboel identiek is.
 * De kunstmatigheden van de bouwstijl worden opnieuw gebruikt binnen het zelfde programma zelfs als de tak en/of de pijpleiding verschillend is.
-* [ Gemaakt versie behandelend ](/help/managing-code/maven-project-version.md) vervangt de projectversie slechts in productiepijpleidingen. Als het zelfde begaat voor zowel ontwikkeling als productiepijpleidingen wordt gebruikt, en de ontwikkelingspijpleiding loopt eerst, de versies aan stadium en productie onveranderd op. In dit geval wordt echter nog steeds een tag gemaakt.
+* [&#x200B; Gemaakt versie behandelend &#x200B;](/help/managing-code/maven-project-version.md) vervangt de projectversie slechts in productiepijpleidingen. Als het zelfde begaat voor zowel ontwikkeling als productiepijpleidingen wordt gebruikt, en de ontwikkelingspijpleiding loopt eerst, de versies aan stadium en productie onveranderd op. In dit geval wordt echter nog steeds een tag gemaakt.
 * Als de terugwinning van de opgeslagen artefacten niet succesvol is, wordt de bouwstijlstap uitgevoerd alsof geen artefacten werden opgeslagen.
 * Andere pijplijnvariabelen dan `CM_DISABLE_BUILD_REUSE` worden niet in aanmerking genomen wanneer Cloud Manager besluit eerder gemaakte constructieartefacten opnieuw te gebruiken.
 
 ## Ontwikkelen van uw code op basis van best practices {#develop-your-code-based-on-best-practices}
 
-De Techniek van de Adobe en de Consulting teams hebben a [ uitvoerige reeks beste praktijken voor AEM ontwikkelaars ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices) ontwikkeld.
+De Techniek van de Adobe en de Consulting teams hebben a [&#x200B; uitvoerige reeks beste praktijken voor AEM ontwikkelaars &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices) ontwikkeld.

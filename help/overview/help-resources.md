@@ -16,4 +16,4 @@ Neem contact op met uw Adobe Customer Success Engineer (CSE) van Managed Service
 
 De Steun van de Onderneming van de toegang [&#128279;](https://experienceleague.adobe.com/nl?support-tab=home#support)  om steunkaartjes tot stand te brengen.
 
-Zie [ Toegang tot het Portaal van de Steun van de AEM ](https://helpx.adobe.com/nl/enterprise/using/support-and-expert-services.html) voor meer informatie bij het creëren van steunkaartjes met de Zorg van de Klant van de Adobe.
+Zie [&#x200B; Toegang tot het Portaal van de Steun van de AEM &#x200B;](https://helpx.adobe.com/nl/enterprise/using/support-and-expert-services.html) voor meer informatie bij het creëren van steunkaartjes met de Zorg van de Klant van de Adobe.

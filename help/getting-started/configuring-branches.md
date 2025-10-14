@@ -16,7 +16,7 @@ Leer hoe te opstelling uw eerste tak in Git en hoe het door de pijpleiding CI/CD
 
 ## De eerste vertakking in Git instellen {#setting-up-your-first-branch-in-git}
 
-Één enkel, aanvankelijk leeg, de bewaarplaats van het Git [ wordt provisioned ](/help/requirements/environment-provisioning.md) voor elk programma in Cloud Manager in kaart gebracht. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Deze benadering is handig het standaardgedrag van Git-clients bij het opzetten van nieuwe projecten.
+Één enkel, aanvankelijk leeg, de bewaarplaats van het Git [&#x200B; wordt provisioned &#x200B;](/help/requirements/environment-provisioning.md) voor elk programma in Cloud Manager in kaart gebracht. Deze opslagplaats kan zo vele takken bevatten aangezien uw ontwikkelingsproces vereist, maar er moet minstens één tak zijn die door de pijpleiding CI/CD wordt gebruikt om toepassingscode aan stadium en productie op te stellen. U kunt `main` het beste gebruiken als de naam van deze vertakking. Deze benadering is handig het standaardgedrag van Git-clients bij het opzetten van nieuwe projecten.
 
 Wanneer u bijvoorbeeld een nieuw project instelt, voert u een set opdrachten uit die vergelijkbaar zijn met de volgende:
 
@@ -78,4 +78,4 @@ Een enkele `main` -vertakking kan voldoende zijn voor zeer eenvoudige projecten,
 
 >[!TIP]
 >
->Om gemeenschappelijke bevelen van het Git te bekijken, zie het [ Vondst van de Git ](https://training.github.com/downloads/github-git-cheat-sheet).
+>Om gemeenschappelijke bevelen van het Git te bekijken, zie het [&#x200B; Vondst van de Git &#x200B;](https://training.github.com/downloads/github-git-cheat-sheet).

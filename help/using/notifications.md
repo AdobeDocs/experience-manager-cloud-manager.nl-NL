@@ -26,15 +26,15 @@ De meldingen worden weergegeven in een zijbalk binnen [!UICONTROL Cloud Manager]
 
 Het belpictogram in de koptekst is gemarkeerd wanneer u nieuwe meldingen hebt.
 
-![ pictogram van Meldingen ](/help/assets/notifications-bell-badged.png)
+![&#x200B; pictogram van Meldingen &#x200B;](/help/assets/notifications-bell-badged.png)
 
 Klik op het belpictogram om de zijbalk te openen en de meldingen weer te geven. Het **lusje van Meldingen** in sidebar maakt een lijst van de meest recente berichten zoals plaatsingsbevestigingen. Meldingen betreffen uw omgeving.
 
-![ Notifications sidebar ](/help/assets/notifications-activities.png)
+![&#x200B; Notifications sidebar &#x200B;](/help/assets/notifications-activities.png)
 
 Het **lusje van Mededelingen** omvat de aankondigingen van het het productproduct van de Adobe. Aankondigingen betreffen het product.
 
-![ Notifications sidebar ](/help/assets/notificaitons-announcements.png)
+![&#x200B; Notifications sidebar &#x200B;](/help/assets/notificaitons-announcements.png)
 
 Klik op een melding of aankondiging om de details weer te geven. De berichten verbonden aan activiteiten zoals pijpleidingsplaatsingen nemen u aan het detail van die activiteit zoals het venster van de pijpleidingsuitvoering.
 
@@ -48,7 +48,7 @@ U kunt aanpassen hoe u meldingen ontvangt en welke meldingen u ontvangt.
 
 Klik op het tandwielpictogram boven aan de zijbalk met meldingen.
 
-![ pictogram van de montages van het Bericht ](/help/assets/notifications-configuration.png)
+![&#x200B; pictogram van de montages van het Bericht &#x200B;](/help/assets/notifications-configuration.png)
 
 Het **voorkeurenvenster van het Experience Cloud** wordt geopend waar u uw berichtabonnementen kunt bepalen en hoe u uw berichten ontvangt.
 
@@ -56,17 +56,17 @@ Het **voorkeurenvenster van het Experience Cloud** wordt geopend waar u uw beric
 
 In abonnementen wordt gedefinieerd voor welke producten u meldingen ontvangt en welke meldingen.
 
-![ abonnementen van het Bericht ](/help/assets/notifications-subscriptions.png)
+![&#x200B; abonnementen van het Bericht &#x200B;](/help/assets/notifications-subscriptions.png)
 
 Standaard ontvangt u alle meldingen voor alle producten. Klik **aanpassen** naast een product om de soorten berichten te bepalen u voor dat product ontvangt.
 
-![ aanpassing van het abonnement van het Bericht ](/help/assets/notifications-subscriptions-customize.png)
+![&#x200B; aanpassing van het abonnement van het Bericht &#x200B;](/help/assets/notifications-subscriptions-customize.png)
 
 ### Prioriteit {#priority}
 
 Het prioritaire alarm wordt duidelijk met a **HOGE** markering. U kunt hen vormen om uitsluitend als alarm worden ontvangen. In de **Prioriteit** sectie, kunt u bepalen welke categorieën als prioritaire berichten kwalificeren.
 
-![ prioriteit van het Bericht ](/help/assets/notifications-priority.png)
+![&#x200B; prioriteit van het Bericht &#x200B;](/help/assets/notifications-priority.png)
 
 Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die als prioriteit worden aangemerkt. Klik op `X` naast de categorienamen om deze te verwijderen.
 
@@ -74,7 +74,7 @@ Gebruik de vervolgkeuzelijst om aan de lijst met categorieën toe te voegen die 
 
 Er worden enkele seconden waarschuwingen weergegeven in de rechterbovenhoek van het venster. Gebruik de **sectie van Alarm** om te bepalen voor welke berichten u alarm ontvangt.
 
-![ alarm van het Bericht ](/help/assets/notifications-alerts.png)
+![&#x200B; alarm van het Bericht &#x200B;](/help/assets/notifications-alerts.png)
 
 U kunt het gedrag van de waarschuwingen definiëren.
 
@@ -86,7 +86,7 @@ U kunt het gedrag van de waarschuwingen definiëren.
 
 Meldingen zijn beschikbaar in de webgebruikersinterface voor alle Adobe [!UICONTROL Experience Cloud] -oplossingen. U kunt voor deze berichten ook kiezen om door e-mail in de **E-mail** sectie worden verzonden.
 
-![ E-mails van het Bericht ](/help/assets/notifications-emails.png)
+![&#x200B; E-mails van het Bericht &#x200B;](/help/assets/notifications-emails.png)
 
 Standaard worden geen e-mails verzonden. U kunt e-mails ontvangen als:
 

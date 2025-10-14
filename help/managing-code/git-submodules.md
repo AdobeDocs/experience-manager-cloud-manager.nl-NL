@@ -19,7 +19,7 @@ Wanneer Cloud Manager bouwt proces looppas, klonen het eerst de bewaarplaats van
 $ git submodule update --init
 ```
 
-Dit proces controleert elke submodule in de aangewezen folder. Deze techniek is een potentieel alternatief aan [ werkend met veelvoudige opslagplaatsen van de bronGit ](/help/managing-code/multiple-git-repos.md) voor organisaties die comfortabel het gebruiken van submodules van het Git zijn en geen extern het samenvoegen proces willen beheren.
+Dit proces controleert elke submodule in de aangewezen folder. Deze techniek is een potentieel alternatief aan [&#x200B; werkend met veelvoudige opslagplaatsen van de bronGit &#x200B;](/help/managing-code/multiple-git-repos.md) voor organisaties die comfortabel het gebruiken van submodules van het Git zijn en geen extern het samenvoegen proces willen beheren.
 
 Stel dat er drie opslagruimten zijn die elk één vertakking met de naam `main` bevatten. In de &quot;primaire&quot; opslagplaats, dat wil zeggen de opslagplaats die in de pijpleidingen is geconfigureerd, heeft de `main` -vertakking een `pom.xml` -bestand waarmee de projecten in de andere twee opslagplaatsen worden gedeclareerd:
 
@@ -62,7 +62,7 @@ De resultaten in het `.gitmodules` -bestand zien er als volgt uit:
     branch = main
 ```
 
-Zie het [ referentiehandboek van de Git ](https://git-scm.com/book/en/v2/Git-Tools-Submodules) voor meer informatie over submodules van het Git.
+Zie het [&#x200B; referentiehandboek van de Git &#x200B;](https://git-scm.com/book/en/v2/Git-Tools-Submodules) voor meer informatie over submodules van het Git.
 
 ## Beperkingen {#limitations}
 
@@ -77,13 +77,13 @@ Houd rekening met het volgende wanneer u Git-submodules gebruikt:
 
 ## Ondersteuning voor Git-submodule voor privéopslagruimten {#private-repositories}
 
-De steun voor submodules van het Git wanneer het gebruiken van [ privé bewaarplaatsen ](private-repositories.md) is grotendeels het zelfde als wanneer het gebruiken van de bewaarplaatsen van de Adobe.
+De steun voor submodules van het Git wanneer het gebruiken van [&#x200B; privé bewaarplaatsen &#x200B;](private-repositories.md) is grotendeels het zelfde als wanneer het gebruiken van de bewaarplaatsen van de Adobe.
 
 Nadat u het `pom.xml` -bestand hebt ingesteld en de `git submodule` -opdrachten hebt uitgevoerd, moet u echter een `.gitmodules` -bestand aan de hoofdmap van de aggregatoropslagplaats toevoegen, zodat Cloud Manager de installatie van de submodule kan detecteren.
 
-![ .gitmodules, bestand ](assets/gitmodules.png)
+![&#x200B; .gitmodules, bestand &#x200B;](assets/gitmodules.png)
 
-![ Agregator ](assets/aggregator.png)
+![&#x200B; Agregator &#x200B;](assets/aggregator.png)
 
 ### Beperkingen en aanbevelingen {#limitations-recommendations-private-repos}
 
@@ -91,4 +91,4 @@ Houd rekening met de volgende beperkingen wanneer u Git-submodules gebruikt met 
 
 * De URL&#39;s van de Git voor de submodules kunnen de HTTPS- of SSH-indeling hebben, maar ze moeten een koppeling naar een Github.com-opslagplaats maken. Het toevoegen van een submodule van de opslagplaats van de Adobe aan een aggregatorbewaarplaats GitHub of vice versa werkt niet.
 * De ondermodules GitHub moeten voor de AdobeApp toegankelijk zijn GitHub.
-* [ de beperkingen van het gebruiken van submodules van het Git met Adobe-beheerde bewaarplaatsen ](#limitations-recommendations) zijn ook van toepassing.
+* [&#x200B; de beperkingen van het gebruiken van submodules van het Git met Adobe-beheerde bewaarplaatsen &#x200B;](#limitations-recommendations) zijn ook van toepassing.

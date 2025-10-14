@@ -18,11 +18,11 @@ Na het instappen, plaatst de bedrijfseigenaar opstelling het programma door een 
 
 Voer de volgende stappen uit om het programma in te stellen en KPI&#39;s te definiëren.
 
-1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
+1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` &#x200B;](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
 
 1. Klik **Programma van de Opstelling** om het opstellingsproces te beginnen.
 
-   ![ programma van de Opstelling ](/help/assets/set-up-program/setup1.png)
+   ![&#x200B; programma van de Opstelling &#x200B;](/help/assets/set-up-program/setup1.png)
 
 1. In het **de dialoogvakje van het Programma van de Opstelling**, kunt u programmainformatie over drie lusjes ingaan:
 
@@ -32,19 +32,19 @@ Voer de volgende stappen uit om het programma in te stellen en KPI&#39;s te defi
 
 1. Op het **Algemene** lusje, voeg een beschrijving voor uw programma toe en upload naar keuze een duimnagel door op **de Foto van de Verandering** te klikken.
 
-   ![ Algemene tabel ](/help/assets/Setup_Program-General.png)
+   ![&#x200B; Algemene tabel &#x200B;](/help/assets/Setup_Program-General.png)
 
 1. Voor **KPI** lusje, bepaal uw KPIs. In dit voorbeeld, wordt afzonderlijke KPIs bepaald voor **AEM Sites** en **AEM Assets**. Specificeer KPIs voor de producten die u vergunning hebt gegeven.
 
-   Zie sectie [ KPIs ](#kpis) voor meer details over hoe KPIs in Cloud Manager wordt gemeten.
+   Zie sectie [&#x200B; KPIs &#x200B;](#kpis) voor meer details over hoe KPIs in Cloud Manager wordt gemeten.
 
-   ![ het bepalen KPIs ](/help/assets/Setup_Program-KPIs.png)
+   ![&#x200B; het bepalen KPIs &#x200B;](/help/assets/Setup_Program-KPIs.png)
 
 1. Op het **lusje van de Levering**, kunt u de het schrapen op bestelling opties voor uw milieu&#39;s bepalen als autoscaling voor uw programma wordt toegelaten.
 
    Autoscaling is alleen van toepassing op de productieomgeving en is mogelijk niet voor alle programma&#39;s van de klant beschikbaar.
 
-   ![ de opties van de Levering ](/help/assets/Setup_Program-Provisioning.png)
+   ![&#x200B; de opties van de Levering &#x200B;](/help/assets/Setup_Program-Provisioning.png)
 
 1. Klik **sparen**.
 
@@ -54,23 +54,23 @@ Uw programma is gemaakt. Het kan enige minuten duren voordat de bronnen zijn ing
 
 U kunt programma&#39;s bewerken nadat u ze hebt ingesteld. Voer de volgende stappen uit om een programma te bewerken.
 
-1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` ](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
+1. Meld u aan bij Cloud Manager op [`https://my.cloudmanager.adobe.com` &#x200B;](https://my.cloudmanager.adobe.com) en selecteer de juiste organisatie.
 
 1. Navigeer naar het programma vanuit het Cloud Manager-beginscherm.
 
 1. Klik **uitgeven programma** om uw programma van de **pagina van het Overzicht** bij te werken of te wijzigen.
 
-   ![ geef programmaoptie ](/help/assets/set-up-program/edit-program1.png) uit
+   ![&#x200B; geef programmaoptie &#x200B;](/help/assets/set-up-program/edit-program1.png) uit
 
-1. De **geeft de vertoningen van de de dialoog van het Programma** uit, toestaand u om uw programma bij te werken. Zie de sectie [ Opstelling van het Programma met Cloud Manager ](#program-setup-cloud-manager) voor details op de beschikbare gebieden.
+1. De **geeft de vertoningen van de de dialoog van het Programma** uit, toestaand u om uw programma bij te werken. Zie de sectie [&#x200B; Opstelling van het Programma met Cloud Manager &#x200B;](#program-setup-cloud-manager) voor details op de beschikbare gebieden.
 
-   ![ geef programmadialoog ](/help/assets/set-up-program/edit-program-general.png) uit
+   ![&#x200B; geef programmadialoog &#x200B;](/help/assets/set-up-program/edit-program-general.png) uit
 
 1. Klik **Update** om uw veranderingen te bewaren.
 
 De wijzigingen worden direct in Cloud Manager opgeslagen, maar worden pas in uw omgeving doorgevoerd wanneer de volgende pijpleiding wordt uitgevoerd.
 
-Als u nog geen pijpleiding hebt gecreeerd, zie [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
+Als u nog geen pijpleiding hebt gecreeerd, zie [&#x200B; het Vormen de Pijpleidingen van de Productie &#x200B;](/help/using/production-pipelines.md) en [&#x200B; het Vormen niet-Productiepijpleidingen &#x200B;](/help/using/non-production-pipelines.md).
 
 ## Schakelen tussen programma&#39;s {#swithing-programs}
 
@@ -78,7 +78,7 @@ Wanneer u aan een programma werkt, kunt u snel overschakelen naar een ander prog
 
 Gebruik de actiebalk om naar een ander programma te schakelen, het huidige programma te bewerken of een nieuw programma toe te voegen.
 
-![ de schakelaar van het Programma ](/help/assets/set-up-program/setup2.png)
+![&#x200B; de schakelaar van het Programma &#x200B;](/help/assets/set-up-program/setup2.png)
 
 ## KPI&#39;s {#kpis}
 

@@ -17,13 +17,13 @@ De **pagina van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide be
 
 **om een bewaarplaats van de Adobe in Cloud Manager toe te voegen:**
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma waaraan u een Adobe-beheerde bewaarplaats wilt toevoegen.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteer de aangewezen organisatie en het programma waaraan u een Adobe-beheerde bewaarplaats wilt toevoegen.
 
-1. Van de **pagina van het Overzicht van het Programma**, in het zijmenu, klik ![ het pictogram van de Omslag ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen** tabel.
+1. Van de **pagina van het Overzicht van het Programma**, in het zijmenu, klik ![&#x200B; het pictogram van de Omslag &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **Bewaarplaatsen** tabel.
 
 1. Op de **pagina van Bewaarplaatsen**, dichtbij het hoger-recht, klik **Add Bewaarplaats**.
 
-   ![ toevoegen de knoop van de gegevensopslagplaats ](/help/managing-code/assets/repositories-tab.png)
+   ![&#x200B; toevoegen de knoop van de gegevensopslagplaats &#x200B;](/help/managing-code/assets/repositories-tab.png)
 
 1. In **voeg de dialoogdoos van de Bewaarplaats** toe, zorg ervoor dat **Repository van de Adobe** als bewaarplaatstype wordt geselecteerd.
 
@@ -33,13 +33,13 @@ De **pagina van Bewaarplaatsen** maakt het gemakkelijk om extra Adobe-geleide be
    * **Bewaarplaats URL voorproef** - u te hoeven niet om een weg in te gaan URL of de bestaande weg uit te geven omdat de gegevensopslaginfrastructuur reeds op zijn plaats is en volledig geïntegreerd en door Adobe wordt geleid.
    * **Beschrijving (facultatief)** - een gedetailleerde beschrijving van de bewaarplaats.
 
-   ![ voeg de dialoogdoos van de Bewaarplaats ](/help/managing-code/assets/repository-add-adobe.png) toe
+   ![&#x200B; voeg de dialoogdoos van de Bewaarplaats &#x200B;](/help/managing-code/assets/repository-add-adobe.png) toe
 
 1. Klik **sparen**.
 Uw nieuwe bewaarplaats wordt getoond in de lijst op de **pagina van Bewaarplaatsen**.
 
-U kunt a [ CI/CD pijpleiding ](/help/overview/ci-cd-pipelines.md) met het nu associëren of het binnen de [**Opslagplaatsen** pagina ](/help/managing-code/managing-repositories.md) beheren.
+U kunt a [&#x200B; CI/CD pijpleiding &#x200B;](/help/overview/ci-cd-pipelines.md) met het nu associëren of het binnen de [**Opslagplaatsen** pagina &#x200B;](/help/managing-code/managing-repositories.md) beheren.
 
 >[!TIP]
 >
->U kunt bewaarplaatsen ook toevoegen GitHub die u als [ privé bewaarplaatsen ](/help/managing-code/private-repositories.md) beheert.
+>U kunt bewaarplaatsen ook toevoegen GitHub die u als [&#x200B; privé bewaarplaatsen &#x200B;](/help/managing-code/private-repositories.md) beheert.

@@ -46,7 +46,7 @@ Tijdens de upgrade gaat u naar Cloud Manager en ontvangt u de URL voor toegang t
 
 Uw bestaande AEM project moet ook voldoen aan de aanbevolen aanbevolen best practices, omdat u [!UICONTROL Cloud Manager] gaat gebruiken voor het implementeren van nieuwe codewijzigingen in uw AEM.
 
-Om extra informatie over de voordelen te krijgen om aan AEM 6.5 te bevorderen, zie [ Bevorderend aan AEM 6.5 ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade).
+Om extra informatie over de voordelen te krijgen om aan AEM 6.5 te bevorderen, zie [&#x200B; Bevorderend aan AEM 6.5 &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade).
 
 ## Toegang [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
@@ -54,9 +54,9 @@ Meld u aan bij de bestemmingspagina van [!UICONTROL Experience Cloud] met uw Ide
 
 Nadat u zich voor het eerst hebt aangemeld bij [!UICONTROL Cloud Manager] , hebt u rechtstreeks vanuit de gebruikersinterface van [!UICONTROL Cloud Manager] toegang tot uw AEM. U bent nu klaar om alle mogelijkheden van [!UICONTROL Cloud Manager] te verkennen en uw eerste codevertakking voor te bereiden om te worden geïmplementeerd in uw werkgebied- en productieomgeving.
 
-Om met [!UICONTROL Cloud Manager] begonnen te worden, zie [ Eerste Login van de Tijd ](/help/getting-started/first-time-login.md).
+Om met [!UICONTROL Cloud Manager] begonnen te worden, zie [&#x200B; Eerste Login van de Tijd &#x200B;](/help/getting-started/first-time-login.md).
 
-Voor extra informatie over AEM, zie [ het Opstellen en het Onderhouden ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Voor extra informatie over AEM, zie [&#x200B; het Opstellen en het Onderhouden &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Aan de slag met [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
@@ -72,4 +72,4 @@ Nadat u zich bij [!UICONTROL Cloud Manager] hebt aangemeld, kunt u als volgt aan
 
 Dit diagram illustreert de klantenreis op een hoog niveau wanneer het gebruiken van de [!UICONTROL Cloud Manager] CI/CD pijpleiding voor het opstellen van uw codeveranderingen in uw het opvoeren en productiemilieu&#39;s.
 
-![ reis van begin tot eind ](/help/assets/screen_shot_2018-05-15at124004pm.png)
+![&#x200B; reis van begin tot eind &#x200B;](/help/assets/screen_shot_2018-05-15at124004pm.png)

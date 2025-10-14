@@ -20,10 +20,10 @@ Nadat u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld,
 
 ## Voor het eerst aanmelden {#logging-in-for-the-first-time}
 
-1. Teken in Cloud Manager bij [ experience.adobe.com ](https://experience.adobe.com/experiencemanager). Meer leren, zie [ Ongeveer Adobe Experience Hub ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Teken in Cloud Manager bij [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com/experiencemanager). Meer leren, zie [&#x200B; Ongeveer Adobe Experience Hub &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. In het linkerzijpaneel, klik **Cloud Manager**.
 
-   ![ Cloud Manager in linkerzijpaneel in Experience Manager ](/help/getting-started/assets/cloud-manager-experiencemanager.png)
+   ![&#x200B; Cloud Manager in linkerzijpaneel in Experience Manager &#x200B;](/help/getting-started/assets/cloud-manager-experiencemanager.png)
 
 <!-- 
 1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
@@ -37,9 +37,9 @@ Nadat u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld,
    ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
 
 
-1. Als uw programma nog niet opstelling is, klik **Programma van de Opstelling** in [ call-to-action ](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaal zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de CTA extra volgende stappen aanbieden.
+1. Als uw programma nog niet opstelling is, klik **Programma van de Opstelling** in [&#x200B; call-to-action &#x200B;](/help/getting-started/navigation.md#cta) aan opstelling uw programmabeschrijving en bepaal zeer belangrijke prestatiesindicatoren (KPIs). Als uw programma al is ingesteld, kan de CTA extra volgende stappen aanbieden.
 
-U kunt aan de Opstelling van het document [ Programma ](/help/getting-started/program-setup.md) voor de volgende stappen in vestiging uw programma voortzetten.
+U kunt aan de Opstelling van het document [&#x200B; Programma &#x200B;](/help/getting-started/program-setup.md) voor de volgende stappen in vestiging uw programma voortzetten.
 
 ## Cloud Manager-activiteit {#activity}
 
@@ -47,7 +47,7 @@ Cloud Manager geeft een geconsolideerde weergave van de activiteiten van een pro
 
 >[!TIP]
 >
->Voor details op hoe te om Cloud Manager UI te gebruiken, zie [ Navigerend Cloud Manager UI ](/help/getting-started/navigation.md).
+>Voor details op hoe te om Cloud Manager UI te gebruiken, zie [&#x200B; Navigerend Cloud Manager UI &#x200B;](/help/getting-started/navigation.md).
 
 >[!NOTE]
 >

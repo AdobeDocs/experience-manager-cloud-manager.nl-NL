@@ -29,7 +29,7 @@ Begin hier om Cloud Manager for AMS (Adobe Managed Services) te leren kennen en 
 >
 >In deze documentatie worden specifiek de functies en functies van Cloud Manager for Adobe Managed Services (AMS) beschreven.
 >
->De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [ documentatie van AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home) worden gevonden.
+>De gelijkwaardige documentatie voor AEM as a Cloud Service kan in de [&#x200B; documentatie van AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/home) worden gevonden.
 
 Met Cloud Manager profiteert uw ontwikkelingsteam van de volgende functies:
 
@@ -38,7 +38,7 @@ Met Cloud Manager profiteert uw ontwikkelingsteam van de volgende functies:
 * API-connectiviteit als aanvulling op bestaande DevOps-processen.
 * Autoscaling die intelligent de behoefte aan verhoogde capaciteit ontdekt en automatisch extra Dispatcher/het publiceren segmenten online brengt.
 
-![ CI/CD stroom ](/help/assets/screen_shot_2018-05-12at73843pm.png) de CI/CD processtroom die in [!UICONTROL Cloud Manager] wordt gebruikt.
+![&#x200B; CI/CD stroom &#x200B;](/help/assets/screen_shot_2018-05-12at73843pm.png) de CI/CD processtroom die in [!UICONTROL Cloud Manager] wordt gebruikt.
 
 ## Belangrijke functies in [!UICONTROL Cloud Manager] {#key-features-in-cloud-manager}
 
@@ -46,7 +46,7 @@ In de volgende secties worden de belangrijkste Cloud Manager-functies gemarkeerd
 
 ### Self-service interface {#self-service-interface}
 
-Om te onderzoeken en begonnen te worden met [!UICONTROL Cloud Manager]&#39;s UI, zie [ Eerste Login van de Tijd ](/help/getting-started/first-time-login.md).
+Om te onderzoeken en begonnen te worden met [!UICONTROL Cloud Manager]&#39;s UI, zie [&#x200B; Eerste Login van de Tijd &#x200B;](/help/getting-started/first-time-login.md).
 
 Met de gebruikersinterface (UI) voor [!UICONTROL Cloud Manager] hebt u eenvoudig toegang tot de cloudomgeving en kunt u de CI/CD-pijplijn eenvoudig beheren voor uw Adobe Experience Manager-toepassingen.
 
@@ -58,7 +58,7 @@ Een van de belangrijkste mogelijkheden van [!UICONTROL Cloud Manager] is de moge
 
 Via de interface van [!UICONTROL Cloud Manager] kunt u de I/CD-pijpleiding configureren en afschoppen. Als deel van deze pijpleiding, wordt een grondig codescannen uitgevoerd om ervoor te zorgen dat slechts de toepassingen van uitstekende kwaliteit door aan het productiemilieu overgaan.
 
-Meer leren over het vormen van pijpleiding van [!UICONTROL Cloud Manager] UI, zie [ het Vormen de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ het Vormen niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
+Meer leren over het vormen van pijpleiding van [!UICONTROL Cloud Manager] UI, zie [&#x200B; het Vormen de Pijpleidingen van de Productie &#x200B;](/help/using/production-pipelines.md) en [&#x200B; het Vormen niet-Productiepijpleidingen &#x200B;](/help/using/non-production-pipelines.md).
 
 ### Flexibele implementatiemodi {#flexible-deployment-modes}
 
@@ -68,7 +68,7 @@ Met een automatische trekkerwijze, wordt de code automatisch opgesteld aan een m
 
 Onafhankelijk van de plaatsingstrekker, worden de kwaliteitscontroles altijd uitgevoerd als deel van CI/CD pijpleiding uitvoering telkens als een plaatsing wordt teweeggebracht. De controles van de kwaliteit omvatten code inspectie, veiligheidstests, en prestaties het testen, allen die uit-van-de-doos zonder inspanning worden geleverd van u of uw partners wordt vereist.
 
-Meer leren over het opstellen van code en kwaliteitscontroles, zie [ het Opstellen van Code ](/help/using/code-deployment.md).
+Meer leren over het opstellen van code en kwaliteitscontroles, zie [&#x200B; het Opstellen van Code &#x200B;](/help/using/code-deployment.md).
 
 ## Optionele functies in Cloud Manager {#optional-features-in-cloud-manager}
 

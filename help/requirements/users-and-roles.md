@@ -46,7 +46,7 @@ De volgende tabel geeft een overzicht van de rollen in Cloud Manager.
 
 [!UICONTROL Cloud Manager] -rollen worden beheerd vanuit de Admin Console. Specifieke rollidmaatschappen worden verstrekt door de gebruiker aan een [!UICONTROL Cloud Manager] productprofiel toe te voegen.
 
-De Admin Console is een centrale locatie voor het beheer van uw Adobe-rechten in uw hele organisatie. Meer over Adobe Admin Console leren, zie [ Admin Console ](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
+De Admin Console is een centrale locatie voor het beheer van uw Adobe-rechten in uw hele organisatie. Meer over Adobe Admin Console leren, zie [&#x200B; Admin Console &#x200B;](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
 Een beheerder moet nieuwe productprofielen maken onder de [!UICONTROL AEM Managed Services] Productcontext om op rollen gebaseerde machtigingen toe te wijzen aan [!UICONTROL Cloud Manager] -gebruikers, die overeenkomen met elk van de vier [!UICONTROL Cloud Manager] -rollen.
 
@@ -64,19 +64,19 @@ Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productpr
 
 **om een productprofiel tot stand te brengen gebruikend Admin Console:**
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com) .
 
 1. Klik het **Overzicht** lusje, dan klik het product u op de **Producten en de kaart van de Diensten** wilt uitgeven. Als het daar niet vermeld is, gebruik het **Producten** lusje om van het product de plaats te bepalen en het te klikken.
 
-   ![ Admin consoleoverzicht tabel ](/help/assets/admin-console-overview.png)
+   ![&#x200B; Admin consoleoverzicht tabel &#x200B;](/help/assets/admin-console-overview.png)
 
 1. Op het **lusje van Producten**, klik het milieu waarvoor u gebruikers/groepen aan productprofielen wilt toevoegen.
 
-   ![ Admin consoleproducten tabel ](/help/assets/admin-console-product.png)
+   ![&#x200B; Admin consoleproducten tabel &#x200B;](/help/assets/admin-console-product.png)
 
 1. Op het **lusje van het Profiel van het 0&rbrace; Product &lbrace;van het product, klik** Nieuw Profiel **om een nieuw profiel toe te voegen.**
 
-   ![ Nieuw profiel ](/help/assets/admin-console-product-profiles.png)
+   ![&#x200B; Nieuw profiel &#x200B;](/help/assets/admin-console-product-profiles.png)
 
 1. Geef de informatie op om een nieuwe rol in te stellen voor [!UICONTROL Cloud Manager] .
 
@@ -89,7 +89,7 @@ Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productpr
       >
       >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-![ Creërend een nieuw profiel ](/help/assets/screen_shot_2018-05-04at171819.png)
+![&#x200B; Creërend een nieuw profiel &#x200B;](/help/assets/screen_shot_2018-05-04at171819.png)
 
 | Rol | Weergavenaam (vereist) | Aanbevolen profielnaam |
 |---|---|---|
@@ -105,26 +105,26 @@ Met de Admin Console gebruikers of groepen maken of toevoegen aan deze productpr
 
 Nadat u productprofielen hebt gemaakt, kunt u gebruikers of gebruikersgroepen aan deze profielen toewijzen.
 
-1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` ](https://adminconsole.adobe.com) .
+1. Meld u aan bij de Admin Console op [`https://adminconsole.adobe.com` &#x200B;](https://adminconsole.adobe.com) .
 
 1. In Admin Console, kies de **Gebruikers** tabel.
 
-   ![ Gebruikers tabel ](/help/assets/admin-console-users.png)
+   ![&#x200B; Gebruikers tabel &#x200B;](/help/assets/admin-console-users.png)
 
 1. Klik **Gebruikers** in het linkernavigatievenster en klik dan een gebruiker om het te wijzigen.
 
-1. Klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de **Producten** sectie en klik **uitgeven**.
+1. Klik ![&#x200B; Meer pictogram, ellips &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) in de **Producten** sectie en klik **uitgeven**.
 
-   ![ geef gebruiker ](/help/assets/admin-console-edit-user.png) uit
+   ![&#x200B; geef gebruiker &#x200B;](/help/assets/admin-console-edit-user.png) uit
 
-1. In **geef producten en gebruikersgroepen** dialoogdoos uit, klik ![ voeg pictogram toe, plus teken ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) en selecteer de profielen om aan de gebruiker toe te wijzen.
+1. In **geef producten en gebruikersgroepen** dialoogdoos uit, klik ![&#x200B; voeg pictogram toe, plus teken &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) en selecteer de profielen om aan de gebruiker toe te wijzen.
 
-   * Als de gebruiker reeds aan de rollen wordt toegewezen, voegt ![ pictogram toe, plus ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) knoop is uitgeven knoop (een potlood), maar werkt de zelfde manier.
+   * Als de gebruiker reeds aan de rollen wordt toegewezen, voegt ![&#x200B; pictogram toe, plus &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) knoop is uitgeven knoop (een potlood), maar werkt de zelfde manier.
 
-   ![ geef producten en gebruikersgroepen ](/help/assets/admin-console-edit-products-and-user-groups.png) uit
+   ![&#x200B; geef producten en gebruikersgroepen &#x200B;](/help/assets/admin-console-edit-products-and-user-groups.png) uit
 
 1. Klik **sparen** om de profielen aan de gebruiker te bewaren.
 
 Herhaal de zelfde stappen om profielen aan gebruikersgroepen toe te wijzen, maar selecteer **Groepen van de Gebruiker** van het linkernavigatievenster op het **Gebruikers** lusje. Klik een gebruikersgroep en selecteer de **Toegewezen Profielen van het Product** klik **toewijzen het Profiel van het Product** om profielen toe te wijzen.
 
-![ wijs profielen aan groep ](/help/assets/admin-console-edit-user-groups.png) toe
+![&#x200B; wijs profielen aan groep &#x200B;](/help/assets/admin-console-edit-user-groups.png) toe

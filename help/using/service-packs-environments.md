@@ -17,7 +17,7 @@ Leer hoe u de updates van het de dienstpak voor de milieu&#39;s van de Ontwikkel
 
 >[!NOTE]
 >
->Deze eigenschap is slechts beschikbaar aan [ het privé bètaprogramma ](/help/release-notes/current.md#beta-program).
+>Deze eigenschap is slechts beschikbaar aan [&#x200B; het privé bètaprogramma &#x200B;](/help/release-notes/current.md#beta-program).
 
 ## Overzicht {#service-pack-updates-overview}
 
@@ -39,13 +39,13 @@ U kunt de updates van het de dienstpak voor de milieu&#39;s van de Ontwikkeling 
 
 1. Meld u aan bij Cloud Manager met de rechten van Deployment Manager.
 1. Navigeer naar de pagina Program Overview.
-1. Onder de sectie van Milieu, klik ![ Meer pictogram, ellips ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Onder de sectie van Milieu, klik ![&#x200B; Meer pictogram, ellips &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
 
-   ![ Controle voor de update van het de dienstpak op drop-down menu ](/help/using/assets/service-pack-check-for-updates.png)
+   ![&#x200B; Controle voor de update van het de dienstpak op drop-down menu &#x200B;](/help/using/assets/service-pack-check-for-updates.png)
 
-1. Van het drop-down menu, klik ![ Open in het lichte pictogram ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) **Controle voor Updates** om voor de beschikbare updates van het de dienstpak af te tasten.
+1. Van het drop-down menu, klik ![&#x200B; Open in het lichte pictogram &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) **Controle voor Updates** om voor de beschikbare updates van het de dienstpak af te tasten.
 
-   ![ een lijst van beschikbare updates verschijnt die ](/help/using/assets/service-pack-versions.png) beschikbaar zijn
+   ![&#x200B; een lijst van beschikbare updates verschijnt die &#x200B;](/help/using/assets/service-pack-versions.png) beschikbaar zijn
 
 1. Klik op de gewenste versie van het de dienstpak van de lijst.
 1. Klik **Service Pack van de Update** om met het updateproces te beginnen.
@@ -62,11 +62,11 @@ Nadat u de update hebt gestart, kunt u de voortgang volgen op de pagina Activite
 1. Navigeer naar de pagina Activiteit vanaf het Cloud Manager-dashboard.
 1. Zoek naar de ingang van de Installatie Service Pack.
 
-   ![ de installaties van het Pak van de Dienst ](/help/using/assets/service-pack-installation.png)
+   ![&#x200B; de installaties van het Pak van de Dienst &#x200B;](/help/using/assets/service-pack-installation.png)
 
 1. Klik op het item om de gedetailleerde voortgang en statusupdates als volgt te bekijken:
 
-   ![ Voortgang van de installatie van het de dienstpak ](/help/using/assets/service-pack-progression.png)
+   ![&#x200B; Voortgang van de installatie van het de dienstpak &#x200B;](/help/using/assets/service-pack-progression.png)
 
 ### Installatiefouten oplossen
 
@@ -82,15 +82,15 @@ Zodra de installatie voltooit, wordt uw goedkeuring-of verwerping-vereist om de 
 1. Open de pagina Activiteit in Cloud Manager.
 1. Zoek de goedkeuringsaanvraag in behandeling voor de service pack-update.
 
-   ![ verwerp of keur de update van het de dienstpak ](/help/using/assets/service-pack-reject-approve.png) goed
+   ![&#x200B; verwerp of keur de update van het de dienstpak &#x200B;](/help/using/assets/service-pack-reject-approve.png) goed
 
 1. Voer een van de volgende handelingen uit:
 
    * Om de update te voltooien, klik **goedkeuren**.
 
-   ![ Goedkeuring van het de dienstpak ](/help/using/assets/service-pack-approve.png)
+   ![&#x200B; Goedkeuring van het de dienstpak &#x200B;](/help/using/assets/service-pack-approve.png)
 
    * Om de update te annuleren, klik **Weigeren**.
 De installatie van het servicepack wordt geannuleerd en er worden geen wijzigingen toegepast.
 
-   ![ Afwijzing van het de dienstpak ](/help/using/assets/service-pack-reject.png)
+   ![&#x200B; Afwijzing van het de dienstpak &#x200B;](/help/using/assets/service-pack-reject.png)

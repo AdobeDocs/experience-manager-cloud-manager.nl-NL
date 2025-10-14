@@ -30,11 +30,11 @@ Klanten die op Cloud Manager zijn ingeschreven en in aanmerking komen voor een u
 
 1. Een **[!UICONTROL AEM 6.5 Update]** -kaart wordt weergegeven op het overzichtsscherm van [!UICONTROL Cloud Manager] . Met deze kaart kunt u bijhouden in welke fase van het updateproces u zich momenteel bevindt en kunt u zien welke volgende stap moet worden uitgevoerd.
 
-   ![ de tovenaar van de Update kaart ](/help/assets/Start-Update.png)
+   ![&#x200B; de tovenaar van de Update kaart &#x200B;](/help/assets/Start-Update.png)
 
 1. Selecteer **[!UICONTROL Start Update]** om de wizard te starten.
 
 1. De wizard geeft de eerste fase van het **[!UICONTROL AEM 6.5 Update]** -proces weer.
 
-Meer over de eerste fase van de tovenaar leren, zie [ Fase van de Evaluatie ](/help/product-update-wizard/evaluation.md).
+Meer over de eerste fase van de tovenaar leren, zie [&#x200B; Fase van de Evaluatie &#x200B;](/help/product-update-wizard/evaluation.md).
 

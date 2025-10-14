@@ -26,11 +26,11 @@ In deze videoreeks worden verschillende gebruiksgevallen besproken met betrekkin
 * [Implementatie van productie](#production-deployment)
 * [Releasetags synchroniseren](#sync-tags)
 
-Deze videoreeks veronderstelt een basiskennis van Git en broncontrolebeheer. Zie de [ extra middelen hieronder ](#additional-resources) voor meer details op Git.
+Deze videoreeks veronderstelt een basiskennis van Git en broncontrolebeheer. Zie de [&#x200B; extra middelen hieronder &#x200B;](#additional-resources) voor meer details op Git.
 
 De stappen en naamgevingsconventies die in deze videoreeks worden beschreven, zijn enkele aanbevolen werkwijzen voor het werken met een door de klant beheerde Git-opslagplaats en Cloud Manager. Verwacht wordt dat de getoonde conventies en workflows zullen worden aangepast voor individuele ontwikkelingsteams.
 
-Voor een volledig overzicht van Cloud Manager, zie [ Inleiding aan Cloud Manager ](/help/introduction.md).
+Voor een volledig overzicht van Cloud Manager, zie [&#x200B; Inleiding aan Cloud Manager &#x200B;](/help/introduction.md).
 
 ## Eerste synchronisatie {#initial-sync}
 
@@ -40,7 +40,7 @@ Eerste stappen voor het synchroniseren van een door de klant beheerde Git-opslag
 
 ## Basisvertakkingsstrategie {#branching-strategy}
 
-Opstelling een basis vertakkende strategie om uit Cloud Manager [ productie ](/help/using/production-pipelines.md) en [ niet productiepijpleidingen ](/help/using/non-production-pipelines.md) voordeel te halen.
+Opstelling een basis vertakkende strategie om uit Cloud Manager [&#x200B; productie &#x200B;](/help/using/production-pipelines.md) en [&#x200B; niet productiepijpleidingen &#x200B;](/help/using/non-production-pipelines.md) voordeel te halen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -65,6 +65,6 @@ U kunt releasetags van een Cloud Manager Git-opslagplaats synchroniseren naar ee
 ## Aanvullende bronnen {#additional-resources}
 
 * [Cloud Manager Introduction](/help/introduction.md)
-* [ Middelen GitHub ](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
-* [ Atlassian Tutorials van het Git ](https://www.atlassian.com/git/tutorials/what-is-version-control)
-* [ Git Cheat Sheet ](https://education.github.com/git-cheat-sheet-education.pdf)
+* [&#x200B; Middelen GitHub &#x200B;](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
+* [&#x200B; Atlassian Tutorials van het Git &#x200B;](https://www.atlassian.com/git/tutorials/what-is-version-control)
+* [&#x200B; Git Cheat Sheet &#x200B;](https://education.github.com/git-cheat-sheet-education.pdf)

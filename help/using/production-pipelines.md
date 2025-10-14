@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Een productiepijplijn toevoegen {#configuring-production-pipelines}
 
-Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
+Leer hoe u Cloud Manager kunt gebruiken om productiepijpleidingen te maken en te configureren om uw code te implementeren. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [&#x200B; CI/CD Pijpleidingen &#x200B;](/help/overview/ci-cd-pipelines.md).
 
 ## Overzicht {#overview}
 
@@ -21,7 +21,7 @@ Gebruikend de **tegel van de Montages van de Pijpleiding** &lbrace;in [!UICONTRO
 * **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode van uw bewaarplaats van het Git helemaal in productie te nemen.
 * **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
-Dit document richt zich op productiepijpleidingen. Voor details op hoe te om niet-productiepijpleidingen te vormen zie het document [ Vormend niet-Productiepijpleidingen ](/help/using/non-production-pipelines.md).
+Dit document richt zich op productiepijpleidingen. Voor details op hoe te om niet-productiepijpleidingen te vormen zie het document [&#x200B; Vormend niet-Productiepijpleidingen &#x200B;](/help/using/non-production-pipelines.md).
 
 De **rol van de Manager van de Plaatsing** is verantwoordelijk voor vestiging de pijpleiding. Configuratie van pijpleidingen bestaat uit:
 
@@ -31,19 +31,19 @@ De **rol van de Manager van de Plaatsing** is verantwoordelijk voor vestiging de
 
 >[!NOTE]
 >
->Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig.
+>Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [&#x200B; programmaopstelling &#x200B;](/help/getting-started/program-setup.md) is volledig.
 
 ## Een nieuwe productiepijplijn toevoegen {#adding-production-pipeline}
 
 Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om uw programma in te stellen en minstens één omgeving hebt, kunt u een productiepijplijn toevoegen.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com/) en selecteert de aangewezen organisatie en het programma.
 
 1. Navigeer aan de **Pipelines** kaart van de **pagina van het Overzicht van het Programma**.
 
 1. Klik **+ toevoegen**, dan uitgezocht **voeg de Pijpleiding van de Productie** toe.
 
-   ![ voeg een productiepijpleiding ](/help/assets/configure-pipelines/add-prod1.png) toe
+   ![&#x200B; voeg een productiepijpleiding &#x200B;](/help/assets/configure-pipelines/add-prod1.png) toe
 
 1. **voeg de dialoogdoos van de Pijpleiding van de Productie toe** aan het **3&rbrace; lusje van de Configuratie &lbrace;opent waar een aantal opties voor uw pijpleiding moet worden bepaald.** Deze opties zijn gegroepeerd in inklapbare secties en worden in de volgende stappen beschreven.
 
@@ -55,12 +55,12 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
 
       >[!TIP]
       >
-      >Zie het document [ Opstelling van het Programma ](/help/getting-started/program-setup.md) leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+      >Zie het document [&#x200B; Opstelling van het Programma &#x200B;](/help/getting-started/program-setup.md) leren hoe te om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
       * **Tak van het Git** - bepaalt waarvan de tak in de geselecteerde pijpleiding de code zou moeten terugwinnen.
       * **Plaats van de Code** - bepaalt de weg in de tak van de geselecteerde repo waarvan de pijpleiding de code zou moeten terugwinnen.
 
-      ![ bepalen repos voor de pijpleiding ](/help/assets/configure-pipelines/add-prod2.png)
+      ![&#x200B; bepalen repos voor de pijpleiding &#x200B;](/help/assets/configure-pipelines/add-prod2.png)
 
    1. Onder de **sectie van Milieu&#39;s**, bepaalt u wat een plaatsing teweegbrengt en hoe het per milieu zou moeten worden uitgerold.
 
@@ -77,7 +77,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
             * **onmiddellijk het Eindigen** - de pijpleiding wordt geannuleerd wanneer een belangrijke mislukking voorkomt. Het emuleert een gebruiker handmatig elke fout af.
             * **gaat onmiddellijk** voort - de pijpleiding gaat automatisch wanneer een belangrijke mislukking voorkomt. Het emuleert een gebruiker handmatig die elke fout goedkeurt.
 
-         ![ trekker van de Plaatsing ](/help/assets/configure-pipelines/add-prod3.png)
+         ![&#x200B; trekker van de Plaatsing &#x200B;](/help/assets/configure-pipelines/add-prod3.png)
 
          * **Opties van de Plaatsing** - u kunt bepaalde plaatsingstaken versnellen.
 
@@ -85,7 +85,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
 
             * **overslaan de veranderingen van de Balancer van de Lading** - de veranderingen van het balanceerhulpmiddel van de Lading worden niet aangebracht.
 
-         ![ het Staging plaatsingsopties ](/help/assets/configure-pipelines/add-prod4.png)
+         ![&#x200B; het Staging plaatsingsopties &#x200B;](/help/assets/configure-pipelines/add-prod4.png)
 
          * **de Configuratie van Dispatcher** - de **rol van de Manager van de Plaatsing** kan een reeks inhoudspaden vormen die of ongeldig of uit het geheime voorgeheugen van AEM Dispatcher worden gespoeld wanneer een pijpleiding in werking wordt gesteld. Deze geheim voorgeheugenacties worden uitgevoerd als deel van de stap van de plaatsingspijpleiding, enkel nadat om het even welke inhoudspakketten worden opgesteld. Bij deze instellingen wordt standaard AEM Dispatcher-gedrag gebruikt. Voer de volgende handelingen uit om te configureren:
 
@@ -97,7 +97,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
 
             1. Klik **toevoegen Weg** om uw gespecificeerde weg toe te voegen. U kunt maximaal 100 paden per omgeving toevoegen.
 
-         ![ de configuratie van Dispatcher ](/help/assets/configure-pipelines/dispatcher-stage.png)
+         ![&#x200B; de configuratie van Dispatcher &#x200B;](/help/assets/configure-pipelines/dispatcher-stage.png)
 
          >[!TIP]
          >
@@ -122,7 +122,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
                * **Om het even welke CSE** - staat om het even welke beschikbare CSE toe om de plaatsing te beginnen.
                * **Mijn CSE** - staat slechts specifieke CSE toe die aan de klant wordt toegewezen om de plaatsing te beginnen. Deze optie is ook van toepassing voor de aangewezen steun van CSE als toegewezen CSE niet beschikbaar is.
 
-           ![ de plaatsingsopties van de Productie ](/help/assets/configure-pipelines/prod-deploymentoptions.png)
+           ![&#x200B; de plaatsingsopties van de Productie &#x200B;](/help/assets/configure-pipelines/prod-deploymentoptions.png)
 
          * **Configuratie van Dispatcher** - bepaal de configuratie van Dispatcher voor uw productiemilieu. De opties zijn hetzelfde als de opties voor de testomgeving.
 
@@ -130,7 +130,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
 
    >[!TIP]
    >
-   >Zie [ het Testen van de Kwaliteit van de Code ](/help/using/code-quality-testing.md#performance-testing) voor meer details over de opties beschikbaar op het **Testen van het Stadium** tabel.
+   >Zie [&#x200B; het Testen van de Kwaliteit van de Code &#x200B;](/help/using/code-quality-testing.md#performance-testing) voor meer details over de opties beschikbaar op het **Testen van het Stadium** tabel.
 
    1. In de **sectie van het Gewicht van de Inhoudslevering van Plaatsen/Verspreid van de Lading**, vormt u het Testen van de plaatsPrestaties die op de weging van paginaverzoeken onder drie paginasets wordt gebaseerd. U kunt de paginasets desgewenst in- of uitschakelen.
 
@@ -138,7 +138,7 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
       * **Andere Levende Pagina&#39;s**
       * **Nieuwe Pagina&#39;s**
 
-      ![ het ladingsgewicht van Plaatsen ](/help/assets/configure-pipelines/add-prod5.png)
+      ![&#x200B; het ladingsgewicht van Plaatsen &#x200B;](/help/assets/configure-pipelines/add-prod5.png)
 
    1. Onder de **het Testen van Prestaties van Assets** sectie, bepaalt u de testdistributie van beelden en PDF en bepaalt uw eigen testactiva.
 
@@ -151,13 +151,13 @@ Nadat u de gebruikersinterface van [!UICONTROL Cloud Manager] hebt gebruikt om u
          1. **BESTANDSNAAM** - gebruik de knoop van dossierbrowser om een beeld van uw lokale machine te selecteren.
          1. **voeg het Dossier van de Test** toe - klik om uw geselecteerde activa te uploaden.
 
-      ![ Assets testende distributie ](/help/assets/configure-pipelines/add-prod6.png)
+      ![&#x200B; Assets testende distributie &#x200B;](/help/assets/configure-pipelines/add-prod6.png)
 
 1. Klik **sparen** om het toevoegen van uw productiepijplijn te voltooien.
 
 ## De volgende stappen {#the-next-steps}
 
-Nadat u de pijpleiding hebt gevormd, stelt u uw code op. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
+Nadat u de pijpleiding hebt gevormd, stelt u uw code op. Zie [&#x200B; Plaatsing van de Code &#x200B;](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial-one}
 

@@ -18,7 +18,7 @@ Meer informatie over de beveiliging en privacy van uw code en artefactelementen 
 
 [!UICONTROL Cloud Manager] heeft vooraf geconfigureerde rollen met de juiste machtigingen.
 
-Om over de mogelijke rollen te leren u in de Admin Console en gebruikersroltoestemmingen kunt toewijzen, zie [ Op rol-Gebaseerde Toestemmingen ](/help/requirements/role-based-permissions.md).
+Om over de mogelijke rollen te leren u in de Admin Console en gebruikersroltoestemmingen kunt toewijzen, zie [&#x200B; Op rol-Gebaseerde Toestemmingen &#x200B;](/help/requirements/role-based-permissions.md).
 
 ## Bronisolatie {#resource-isolation}
 

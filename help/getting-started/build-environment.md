@@ -20,28 +20,28 @@ Cloud Manager-ontwikkelomgevingen hebben de volgende kenmerken.
 
 * De ontwikkelomgeving is gebaseerd op Linux en is afgeleid van Ubuntu 22.04.
 * Apache Maven 3.9.4 is geïnstalleerd.
-   * Adobe adviseert gebruikers [ hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP ](#https-maven) te gebruiken.
+   * Adobe adviseert gebruikers [&#x200B; hun Geweven bewaarplaatsen bij te werken om HTTPS in plaats van HTTP &#x200B;](#https-maven) te gebruiken.
 * De geïnstalleerde Java-versies zijn Oracle JDK 8u401 en Oracle JDK 11.0.22.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* Standaard wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk1.8.0_401` , die Oracle JDK 8u401 bevat. Zie de sectie [ Afwisselend Gemaakte Versie van JDK van de Uitvoering ](#alternate-maven) voor meer details.
+* Standaard wordt de omgevingsvariabele `JAVA_HOME` ingesteld op `/usr/lib/jvm/jdk1.8.0_401` , die Oracle JDK 8u401 bevat. Zie de sectie [&#x200B; Afwisselend Gemaakte Versie van JDK van de Uitvoering &#x200B;](#alternate-maven) voor meer details.
 * Er zijn enkele extra systeempakketten geïnstalleerd die nodig zijn.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [ wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem ](#installing-additional-system-packages) installeert.
+* Andere pakketten kunnen bij bouwstijltijd zoals die in de sectie [&#x200B; wordt beschreven worden geïnstalleerd die de Extra Pakketten van het Systeem &#x200B;](#installing-additional-system-packages) installeert.
 * Elke build wordt uitgevoerd in een ongerepte omgeving. De bouwstijlcontainer houdt geen staat tussen uitvoeringen.
 * Maven wordt uitgevoerd met deze drie opdrachten:
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* Maven wordt geconfigureerd op systeemniveau met een `settings.xml` -bestand. Dit bestand bevat automatisch de openbare Adobe-gegevensopslagruimte met een profiel met de naam `adobe-public` . Zie [ Adobe openbare Gemaakt bewaarplaats ](https://repo1.maven.org/) voor meer details.
-* Node.js 18 is beschikbaar voor [ front eindpijpleidingen ](/help/overview/ci-cd-pipelines.md).
+* Maven wordt geconfigureerd op systeemniveau met een `settings.xml` -bestand. Dit bestand bevat automatisch de openbare Adobe-gegevensopslagruimte met een profiel met de naam `adobe-public` . Zie [&#x200B; Adobe openbare Gemaakt bewaarplaats &#x200B;](https://repo1.maven.org/) voor meer details.
+* Node.js 18 is beschikbaar voor [&#x200B; front eindpijpleidingen &#x200B;](/help/overview/ci-cd-pipelines.md).
 
 >[!IMPORTANT]
->De ondersteuning voor Maven-toolketens is verwijderd vanaf Cloud Manager 2025.06.0. JDK-selectie wordt nu alleen ondersteund via `.cloudmanager/java-version` . Voor meer informatie, zie [ Gebruikend een specifieke versie van Java ](#using-java-version).
+>De ondersteuning voor Maven-toolketens is verwijderd vanaf Cloud Manager 2025.06.0. JDK-selectie wordt nu alleen ondersteund via `.cloudmanager/java-version` . Voor meer informatie, zie [&#x200B; Gebruikend een specifieke versie van Java &#x200B;](#using-java-version).
 
 >[!NOTE]
 >
@@ -51,13 +51,13 @@ Cloud Manager-ontwikkelomgevingen hebben de volgende kenmerken.
 >
 >Zie de volgende aanvullende bronnen voor informatie over het gebruik van Cloud Manager API&#39;s:
 >
->* [ air-cli-stop-cloudmanager ](https://github.com/adobe/aio-cli-plugin-cloudmanager)
->* [ Creërend een API Integratie ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
->* [ API Toestemmingen ](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
+>* [&#x200B; air-cli-stop-cloudmanager &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [&#x200B; Creërend een API Integratie &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
+>* [&#x200B; API Toestemmingen &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 
 ## Door HTTPS aangebrachte opslagruimten {#https-maven}
 
-Cloud Manager [ 2023.10.0 ](/help/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [ Gemaakt versienota&#39;s ](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
+Cloud Manager [&#x200B; 2023.10.0 &#x200B;](/help/release-notes/2023/2023-10-0.md) begon een het rollen update aan het bouwstijlmilieu (die met versie 2023.12.0) voltooide, die een update aan Geweven 3.8.8 omvatte. Een belangrijke wijziging die werd aangebracht in Maven 3.8.1 was een verbetering van de beveiliging die bedoeld was om potentiële kwetsbaarheden te beperken. Specifiek, maven maakt nu alle onveilige `http://*` spiegels door gebrek onbruikbaar, zoals die in de [&#x200B; Gemaakt versienota&#39;s &#x200B;](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291) worden geschetst.
 
 Als gevolg van deze beveiligingsuitbreiding kunnen sommige gebruikers problemen ondervinden tijdens de constructiestap, met name wanneer ze artefacten downloaden van Geweven opslagplaatsen die onveilige HTTP-verbindingen gebruiken.
 
@@ -74,7 +74,7 @@ Standaard wordt voor projecten die door de Cloud Manager worden gemaakt, gebruik
 >**begeleiding van de Migratie:**
 >
 >1. Verwijder toolketens door om het even welke `org.apache.maven.plugins:maven-toolchains-plugin` ingang en om het even welke `toolchains.xml` te schrappen geëngageerd aan uw broncontrole.
->1. Kies een JDK met `.cloudmanager/java-version` (21, 17, of 11) zoals die in [ wordt beschreven Afwisselend Gemaakt uitvoeringJDK versie ](#alternate-maven).
+>1. Kies een JDK met `.cloudmanager/java-version` (21, 17, of 11) zoals die in [&#x200B; wordt beschreven Afwisselend Gemaakt uitvoeringJDK versie &#x200B;](#alternate-maven).
 >1. Adobe raadt aan de Cloud Manager-constructiecache te wissen of een nieuwe pijpleidingrun te starten.
 >
 
@@ -128,7 +128,7 @@ The currently available vendor/version combinations are:
 
 ### Alternatieve JDK-versie voor uitvoering {#alternate-maven}
 
-Het is mogelijk om Oracle 8 of Oracle 11 te selecteren als JDK voor de volledige uitgevoerde Maven. Deze benadering verandert JDK die voor alle stop-ins wordt gebruikt. Dientengevolge, controlerend en uitvoerend de versie van Java gebruikend de [ Apache Maven Plug-in van de Enforcer ](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
+Het is mogelijk om Oracle 8 of Oracle 11 te selecteren als JDK voor de volledige uitgevoerde Maven. Deze benadering verandert JDK die voor alle stop-ins wordt gebruikt. Dientengevolge, controlerend en uitvoerend de versie van Java gebruikend de [&#x200B; Apache Maven Plug-in van de Enforcer &#x200B;](https://maven.apache.org/enforcer/maven-enforcer-plugin/) werken.
 
 Hiertoe maakt u een bestand met de naam `.cloudmanager/java-version` in de vertakking Git-opslagruimte die door de pijplijn wordt gebruikt. Dit bestand kan de inhoud `11` of `8` hebben. Eventuele andere waarden worden genegeerd. Als `11` is opgegeven, gebruikt het systeem Oracle 11 en stelt de `JAVA_HOME` omgevingsvariabele in op `/usr/lib/jvm/jdk-11.0.22` . Als `8` is opgegeven, gebruikt het systeem Oracle 8 en stelt de `JAVA_HOME` omgevingsvariabele in op `/usr/lib/jvm/jdk1.8.0_401` .
 
@@ -162,17 +162,17 @@ Zowel normale omgevingsvariabelen als geheimen kunnen worden gebruikt in de ontw
 
 #### Dispatcher {#dispatcher}
 
-Slechts kunnen de regelmatige milieuvariabelen met [ Dispatcher ](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
+Slechts kunnen de regelmatige milieuvariabelen met [&#x200B; Dispatcher &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-dispatcher/using/dispatcher) worden gebruikt. Geheimen kunnen niet worden gebruikt.
 
 Omgevingsvariabelen kunnen echter niet worden gebruikt in `IfDefine` -instructies.
 
 >[!TIP]
 >
->Valideer uw gebruik van milieuvariabelen met [ Dispatcher plaatselijk ](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
+>Valideer uw gebruik van milieuvariabelen met [&#x200B; Dispatcher plaatselijk &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) alvorens op te stellen.
 
 #### OSGi-configuraties {#osgi}
 
-Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [ configuraties OSGi ](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
+Zowel kunnen de regelmatige milieuvariabelen als de geheimen in [&#x200B; configuraties OSGi &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi) worden gebruikt.
 
 ### Pipetvariabelen {#pipeline-variables}
 
@@ -219,7 +219,7 @@ Bij gebruik in een Maven `pom.xml` -bestand is het doorgaans handig om deze vari
 
 ## Extra systeempakketten installeren {#installing-additional-system-packages}
 
-Om volledig te functioneren, vereisen sommige bouwstijlen extra systeempakketten worden geïnstalleerd. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet daarom een geschikte taalinterpreter hebben geïnstalleerd. Dit scenario kan worden gedaan door [`exec-maven-plugin` ](https://www.mojohaus.org/exec-maven-plugin/) te roepen APT aan te halen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. Als u bijvoorbeeld Python wilt installeren, kunt u het volgende doen:
+Om volledig te functioneren, vereisen sommige bouwstijlen extra systeempakketten worden geïnstalleerd. Een build kan bijvoorbeeld een Python- of Ruby-script aanroepen en moet daarom een geschikte taalinterpreter hebben geïnstalleerd. Dit scenario kan worden gedaan door [`exec-maven-plugin` &#x200B;](https://www.mojohaus.org/exec-maven-plugin/) te roepen APT aan te halen. Deze uitvoering moet doorgaans worden opgenomen in een Cloud Manager-specifiek Maven-profiel. Als u bijvoorbeeld Python wilt installeren, kunt u het volgende doen:
 
 ```xml
         <profile>

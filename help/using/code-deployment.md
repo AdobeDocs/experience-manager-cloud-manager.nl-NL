@@ -20,11 +20,11 @@ Zodra u uw productiepijplijn, met inbegrip van de noodzakelijke bewaarplaats en 
 
 1. Klik **opstellen** van Cloud Manager om het plaatsingsproces te beginnen.
 
-   ![ Deploy knoop ](/help/assets/Deploy1.png)
+   ![&#x200B; Deploy knoop &#x200B;](/help/assets/Deploy1.png)
 
 1. De **het schermvertoningen van de Uitvoering van de Pijpleiding**. Klik **bouwen** om het proces te beginnen.
 
-   ![ bouwt knoop ](/help/assets/Deploy2.png)
+   ![&#x200B; bouwt knoop &#x200B;](/help/assets/Deploy2.png)
 
 Het bouwstijlproces begint het proces van de codeplaatsing met inbegrip van de volgende stappen:
 
@@ -43,18 +43,18 @@ Een aantal acties komt tijdens elke stap van de plaatsing voor, die in deze sect
 De **plaatsing van het Stadium** stap omvat de volgende acties:
 
 * **Bevestiging**: Deze stap zorgt ervoor dat de pijpleiding wordt gevormd om de momenteel beschikbare middelen te gebruiken. Bijvoorbeeld, dat de gevormde tak bestaat en dat de milieu&#39;s beschikbaar zijn.
-* **Bouwstijl &amp; het Testen van de Eenheid**: Deze stap stelt een inperkt bouwstijlproces in werking. Zie [ het Milieu van de Bouwstijl ](/help/getting-started/build-environment.md) voor details.
-* **Scannen van de Code**: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor details op het het testen proces.
+* **Bouwstijl &amp; het Testen van de Eenheid**: Deze stap stelt een inperkt bouwstijlproces in werking. Zie [&#x200B; het Milieu van de Bouwstijl &#x200B;](/help/getting-started/build-environment.md) voor details.
+* **Scannen van de Code**: Deze stap evalueert de kwaliteit van uw toepassingscode. Zie [&#x200B; Begrijpend de Resultaten van de Test &#x200B;](/help/using/code-quality-testing.md) voor details op het het testen proces.
 * **opstellen aan Stadium**
 
-![ plaatsing van het Stadium ](/help/assets/Stage_Deployment1.png)
+![&#x200B; plaatsing van het Stadium &#x200B;](/help/assets/Stage_Deployment1.png)
 
 ### Teststap werkgebied {#stage-testing}
 
 De **het testen van het Stadium** stap omvat de volgende acties:
 
-* **het Testen van de Veiligheid**: Deze stap evalueert het veiligheidseffect van uw code op het AEM milieu. Zie het document [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor details op het het testen proces.
-   * **het Testen van Prestaties**: Deze stap evalueert de prestaties van uw code. Zie [ Begrijpend de Resultaten van de Test ](/help/using/code-quality-testing.md) voor details op het het testen proces.
+* **het Testen van de Veiligheid**: Deze stap evalueert het veiligheidseffect van uw code op het AEM milieu. Zie het document [&#x200B; Begrijpend de Resultaten van de Test &#x200B;](/help/using/code-quality-testing.md) voor details op het het testen proces.
+   * **het Testen van Prestaties**: Deze stap evalueert de prestaties van uw code. Zie [&#x200B; Begrijpend de Resultaten van de Test &#x200B;](/help/using/code-quality-testing.md) voor details op het het testen proces.
 
 ### Implementatiestap voor productie {#production-deployment}
 
@@ -67,15 +67,15 @@ De **stap van de Plaatsing van de Productie** omvat de volgende acties:
    * Deze optie wordt toegelaten terwijl het vormen van de pijpleiding.
    * De geplande datum en tijd worden gespecificeerd in termen van de tijdzone van de gebruiker.
 
-     ![ plaatsing van het Programma ](/help/assets/Production_Deployment1.png)
+     ![&#x200B; plaatsing van het Programma &#x200B;](/help/assets/Production_Deployment1.png)
 * **CSE Steun** (als toegelaten)
 * **opstellen aan Productie**
 
-![ plaatsing van de Productie ](/help/assets/Prod_Deployment1.png)
+![&#x200B; plaatsing van de Productie &#x200B;](/help/assets/Prod_Deployment1.png)
 
 Zodra uw plaatsing volledig is, is uw code in zijn gerichte milieu en u kunt de logboeken bekijken.
 
-![ Volledige Plaatsing van de Plaatsing ](/help/assets/Production_Deployment2.png)
+![&#x200B; Volledige Plaatsing van de Plaatsing &#x200B;](/help/assets/Production_Deployment2.png)
 
 ## Tijdstippen {#timeouts}
 
@@ -102,7 +102,7 @@ Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de pla
 
    * Tenzij anders geconfigureerd, kunt u wijzigingen in ontwikkelings- en staging-implementaties overslaan in het taakverdelingsmechanisme. Dat wil zeggen, voor de ontwikkelomgeving, stappen loskoppelen en koppelen in zowel niet-productiepijpleidingen, als voor de halteomgeving van de productiepijpleiding.
 
-   ![ overslaan taakverdelingsmechanisme ](/help/assets/load_balancer.png)
+   ![&#x200B; overslaan taakverdelingsmechanisme &#x200B;](/help/assets/load_balancer.png)
 
    >[!NOTE]
    >
@@ -110,16 +110,16 @@ Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de pla
 
 1. Elk AEM artefact wordt opgesteld aan elke AEM instantie via de Manager APIs van het Pakket, met pakketgebiedsdelen die de plaatsingsorde bepalen.
 
-   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [ Manager van het Pakket ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
-   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [ sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service ](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
+   >Alle AEM artefacten worden opgesteld aan zowel de auteur als de uitgevers. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw AEM instantie voor een specifiek doel te stemmen, zie de [&#x200B; sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
 
 1. Het Dispatcher-artefact wordt als volgt op elke Dispatcher geïmplementeerd:
 
    1. Van de huidige configuraties wordt een back-up gemaakt en naar een tijdelijke locatie gekopieerd.
-   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Zie [ Configuraties van Dispatcher ](/help/getting-started/dispatcher-configurations.md) voor meer details. Op deze manier worden de mappen gewist, zodat er geen zwevende bestanden achterblijven.
+   1. Alle configuraties worden verwijderd, behalve de onveranderlijke bestanden. Zie [&#x200B; Configuraties van Dispatcher &#x200B;](/help/getting-started/dispatcher-configurations.md) voor meer details. Op deze manier worden de mappen gewist, zodat er geen zwevende bestanden achterblijven.
    1. Het artefact wordt geëxtraheerd naar de map `httpd` . Onveranderbare bestanden worden niet overschreven. Wijzigingen die u aanbrengt in onveranderlijke bestanden in de Git-opslagplaats, worden genegeerd op het moment van implementatie. Deze bestanden vormen de kern van het AMS Dispatcher-framework en kunnen niet worden gewijzigd.
    1. Apache voert een configuratietest uit. Als er geen fouten worden gevonden, wordt de service opnieuw geladen. Als er een fout optreedt, worden de configuraties hersteld vanaf de back-up, wordt de service opnieuw geladen en wordt de fout geretourneerd naar Cloud Manager.
    1. Elk pad dat in de pijplijnconfiguratie is opgegeven, wordt ongeldig gemaakt of verwijderd uit het Dispatcher-cachegeheugen.
@@ -164,11 +164,11 @@ Om deze situaties het hoofd te bieden, kan de Cloud Manager-productiepijplijn in
 
 Wanneer u de uitvoering van een productiepijplijn start, kunt u kiezen tussen de normale modus of de noodmodus in een dialoogvenster. Deze optie is beschikbaar als de functie voor het uitvoeren van de noodpijpleiding voor het programma wordt geactiveerd. Deze optie is beschikbaar als de functie is ingeschakeld.
 
-![ de pijpleidingsopties van de Looppas ](/help/assets/execution-emergency1.png)
+![&#x200B; de pijpleidingsopties van de Looppas &#x200B;](/help/assets/execution-emergency1.png)
 
 Wanneer het bekijken van de pagina van de details van de pijpleidingsuitvoering voor een uitvoering die op noodwijze wordt in werking gesteld, tonen de broodkruimels bij de bovenkant van het scherm een indicator dat de pijpleiding op noodwijze uitvoert.
 
-![ de wijzebroodkruimels van de Noodsituatie ](/help/assets/execution-emergency2.png)
+![&#x200B; de wijzebroodkruimels van de Noodsituatie &#x200B;](/help/assets/execution-emergency2.png)
 
 Het uitvoeren van een pijplijn in noodmodus kan ook via de Cloud Manager API of CLI worden uitgevoerd. Als u een uitvoering wilt starten in de noodmodus, dient u een `PUT` -verzoek in bij het eindpunt van de uitvoering van de pijpleiding met de queryparameter `?pipelineExecutionMode=EMERGENCY` of, wanneer u de CLI gebruikt:
 
@@ -186,7 +186,7 @@ In zeldzame gevallen kunnen de stappen van de productielocatie om voorbijgaande 
 
 In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pagina van de de statuspagina van de productiepijpleiding **re-execute** optie naast de gebruikelijke **Download bouwt logboek** optie.
 
-![ re-execute optie in het venster van het pijpleidingsoverzicht ](/help/assets/re-execute.png)
+![&#x200B; re-execute optie in het venster van het pijpleidingsoverzicht &#x200B;](/help/assets/re-execute.png)
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ In dergelijke omstandigheden waar een heruitvoering mogelijk is, verstrekt de pa
 
 ### API opnieuw uitvoeren {#reexecute-api}
 
-Naast het zijn beschikbaar in UI, kunt u [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) gebruiken om wederuitvoeringen teweeg te brengen en uitvoeringen te identificeren die als re-uitvoeringen werden teweeggebracht.
+Naast het zijn beschikbaar in UI, kunt u [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) gebruiken om wederuitvoeringen teweeg te brengen en uitvoeringen te identificeren die als re-uitvoeringen werden teweeggebracht.
 
 #### Een nieuwe uitvoering activeren {#triggering}
 
