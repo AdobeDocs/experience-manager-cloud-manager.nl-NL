@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2025.10.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [&#x200B; huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -41,28 +41,28 @@ De volgende mogelijkheden zijn momenteel beschikbaar:
 
 ### Uitbreidbaarheid en aanpassing van Experience Hub {#exp-hub-extensibility}
 
-[ Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) dient als uw ingangspunt aan AEM, die voor de behoeften van uw organisatie wordt aangepast. Vertel Adobe over uw bestaande AEM UI-extensies, zodat ze u kunnen helpen deze extensies zo weinig mogelijk in Experience Hub in te schakelen.
+[&#x200B; Experience Hub &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) dient als uw ingangspunt aan AEM, die voor de behoeften van uw organisatie wordt aangepast. Vertel Adobe over uw bestaande AEM UI-extensies, zodat ze u kunnen helpen deze extensies zo weinig mogelijk in Experience Hub in te schakelen.
 
-![ Diagram van de rekbaarheid en aanpassingswerkschema van Experience Hub ](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+![&#x200B; Diagram van de rekbaarheid en aanpassingswerkschema van Experience Hub &#x200B;](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
-Sluit aangepaste ervaringen in Experience Hub in om het dashboard van uw organisatie uit te breiden en aan te passen. Naast ingebouwde widgets Adobe, voeg uw eigen gebruiken toe gebruikend het [ kader van de Uitbreidbaarheid 0} UI. ](https://developer.adobe.com/uix/docs/) Creëer op JavaScript gebaseerde UI-apps en zorg ervoor dat deze aan uw gebruikers worden gepresenteerd, zodat ze aan de specifieke vereisten en workflows voldoen.
+Sluit aangepaste ervaringen in Experience Hub in om het dashboard van uw organisatie uit te breiden en aan te passen. Naast ingebouwde widgets Adobe, voeg uw eigen gebruiken toe gebruikend het [&#x200B; kader van de Uitbreidbaarheid 0&rbrace; UI. &#x200B;](https://developer.adobe.com/uix/docs/) Creëer op JavaScript gebaseerde UI-apps en zorg ervoor dat deze aan uw gebruikers worden gepresenteerd, zodat ze aan de specifieke vereisten en workflows voldoen.
 
-Geïnteresseerd in de bèta? E-mail [ beta_exphubextensibility@adobe.com ](mailto:beta_exphubextensibility@adobe.com) met uw Adobe OrgID en een korte beschrijving van de aanpassing u van plan bent te creëren.
+Geïnteresseerd in de bèta? E-mail [&#x200B; beta_exphubextensibility@adobe.com &#x200B;](mailto:beta_exphubextensibility@adobe.com) met uw Adobe OrgID en een korte beschrijving van de aanpassing u van plan bent te creëren.
 
 ### Snellere builds met module caching {#quick-build-cm-pipelines}
 
 Een nieuw bouwstijlmodel compileert slechts veranderde modules (eerder dan de volledige repo) gebruikend module-vlakke caching om bouwstijltijden te verkorten. Het is van toepassing op code-kwaliteit, volledig-stapel, en stadium-slechts pijpleidingen.
 
-![ geeft de Dialoogvenster van de Pijpleiding van de Niet-Productie uit die de twee opties van de Strategie van de Bouwstijl tonen die Volledige Bouwstijl en Slimme Bouwstijl zijn ](/help/release-notes/assets/non-production-pipeline-edit.png) *uitgeeft de de dialoogdoos van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledige Bouwstijl en Slimme Bouwstijl zijn.*
+![&#x200B; geeft de Dialoogvenster van de Pijpleiding van de Niet-Productie uit die de twee opties van de Strategie van de Bouwstijl tonen die Volledige Bouwstijl en Slimme Bouwstijl zijn &#x200B;](/help/release-notes/assets/non-production-pipeline-edit.png) *uitgeeft de de dialoogdoos van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledige Bouwstijl en Slimme Bouwstijl zijn.*
 
 In **voeg/geef de dialoogdoos van de Pijpleiding** toe, onder het **lusje van de Code van Source**, laat een nieuwe **Bouw Strategie** sectie u één van de volgende bouwstijlopties kiezen:
 
 * **Volledig bouwt** — bouwt alle modules in de bewaarplaats op elke looppas.
 * **Slim bouwt** — bouwt slechts modules die sinds laatste worden veranderd begaan, die algemene bouwtijd verkort.
 
-U controleert welke pijpleidingen gebruiken **Slimme bouwstijl**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de 3} pijpleidingen van de Plaatsing.**
+U controleert welke pijpleidingen gebruiken **Slimme bouwstijl**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de 3&rbrace; pijpleidingen van de Plaatsing.**
 
-Geïnteresseerd? E-mail [ beta_quickbuild_cmpipelines@adobe.com ](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
+Geïnteresseerd? E-mail [&#x200B; beta_quickbuild_cmpipelines@adobe.com &#x200B;](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
@@ -78,17 +78,17 @@ Klanten kunnen nu hun Azure DevOps Git-opslagruimten in Cloud Manager aan boord 
 
 De steun voor extra pijpleidingstypes en trekverzoekbevestiging door pijpleidingen van de codekwaliteit komt binnenkort.
 
-Zie [ externe bewaarplaatsen in Cloud Manager ](/help/managing-code/external-repositories.md) toevoegen.
+Zie [&#x200B; externe bewaarplaatsen in Cloud Manager &#x200B;](/help/managing-code/external-repositories.md) toevoegen.
 
-![ voeg de dialoogdoos van de Bewaarplaats ](/help/release-notes/assets/azure-repo.png) toe
+![&#x200B; voeg de dialoogdoos van de Bewaarplaats &#x200B;](/help/release-notes/assets/azure-repo.png) toe
 
-Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [ Grp-CloudManager_BYOG@adobe.com ](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
+Als u in het testen van deze nieuwe eigenschap en het delen van uw terugkoppelt geinteresseerd bent, verzend een e-mail naar [&#x200B; Grp-CloudManager_BYOG@adobe.com &#x200B;](mailto:grp-cloudmanager_byog@adobe.com) van uw e-mailadres verbonden aan uw Adobe ID. Zorg ervoor dat u ook het Git-platform opgeeft dat u wilt gebruiken en dat u zich in een opslagstructuur van een privéserver, een openbare opslagruimte of een bedrijfsopslagruimte bevindt.
 
 #### Toegangstokens beheren{#manage-access-tokens}
 
 Het gebruik **beheert de Tokens van de Toegang** in Cloud Manager aan mening, hernoemt, en schrapt toegangstokens verbonden aan externe bewaarplaatsen BYOG, zoals Onderneming GitHub, GitLab, Bitbucket, en Azure DevOps.
 
-Zie [ de Tokens van de Toegang beheren ](/help/managing-code/manage-access-tokens.md).
+Zie [&#x200B; de Tokens van de Toegang beheren &#x200B;](/help/managing-code/manage-access-tokens.md).
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
