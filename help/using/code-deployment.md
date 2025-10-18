@@ -109,11 +109,11 @@ Wanneer Cloud Manager aan niet productietopologieën opstelt, is het doel de pla
 
 1. Elk AEM-artefact wordt geïmplementeerd op elke AEM-instantie via API&#39;s van Package Manager, waarbij pakketafhankelijkheden de implementatievolgorde bepalen.
 
-   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+   * Voor meer informatie over hoe u pakketten kunt gebruiken om nieuwe functionaliteit te installeren, inhoud over te brengen tussen instanties, en file bewaarplaats inhoud. Zie [&#x200B; Manager van het Pakket &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
    >[!NOTE]
    >
-   >Alle AEM-artefacten worden zowel aan de auteur als aan de uitgevers geïmplementeerd. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw instantie van AEM voor een specifiek doel te stemmen, zie de [&#x200B; sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
+   >Alle AEM-artefacten worden zowel aan de auteur als aan de uitgevers geïmplementeerd. De wijzen van de looppas zouden moeten worden leveraged wanneer de knoop-specifieke configuraties worden vereist. Meer over leren hoe de looppas-wijzen u toestaan om uw instantie van AEM voor een specifiek doel te stemmen, zie de [&#x200B; sectie van de Wijzen van de Looppas van het document die aan AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) opstellen.
 
 1. Het Dispatcher-artefact wordt als volgt op elke Dispatcher geïmplementeerd:
 
