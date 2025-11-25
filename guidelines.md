@@ -1,5 +1,5 @@
 ---
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: d8380bf56891af7ce3fe833e209ae8663e4bc6fe
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -23,25 +23,25 @@ Hoewel Adobe de bijdragen aan haar documentatie verwelkomt, moet elke bijdrage a
 
 Bijdragen die niet aan deze normen voldoen, kunnen worden afgewezen.
 
-### De gevallen van standaardgebruik worden gedocumenteerd in Adobe.
+### Standaardeuse-gevallen worden in Adobe gedocumenteerd
 
 De documentatie van AEM behandelt standaardgebruiksgevallen. Gebruiksgevallen die buiten het bereik van de standaardinstallatie en het standaardgebruik van het product vallen, maken geen deel uit van de documentatie van AEM.
 
-### Adobe documenteert over het algemeen geen bugs of hun aanraakpunten.
+### Adobe documenteert over het algemeen geen bugs of de bijbehorende aanraakpunten
 
 De documentatie van AEM behandelt standaardgebruiksgevallen. Daarom zijn bugs, effecten die door bugs worden veroorzaakt en werkargumenten voor bugs niet gedocumenteerd.
 
 De uitzonderingen op deze regel zijn op de versienota&#39;s van toepassing waar de bekende kwesties met mogelijke oplossingen kunnen worden vermeld die het Beheer van het Product goedkeurt.
 
-### De bijdragen van de documentatie zijn niet voor het beantwoorden van technische vragen.
+### De bijdragen van de documentatie zijn niet voor het beantwoorden van technische vragen
 
 Alle ideeën die u nodig hebt om de documentatie van AEM te verbeteren, zijn welkom als bijdragen. Nochtans, zijn om het even welke commentaren, kwesties, en trekkingsverzoeken bedoeld als *bijdragen* slechts. Ze hoeven geen antwoord te geven op je vragen over hoe je AEM kunt gebruiken, je AEM-project kunt implementeren of technische problemen kunt oplossen.
 
-U kunt vragen over AEM-gebruik of technische fouten melden. Gebruik het normale steunproces als [&#x200B; portaal van de Steun van de Onderneming van Experience Cloud &#x200B;](https://experienceleague.adobe.com/nl?support-solution=General#support) of besproken in de [&#x200B; gemeenschap van Experience Manager &#x200B;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+U kunt vragen over AEM-gebruik of technische fouten melden. Gebruik het normale steunproces als [ portaal van de Steun van de Onderneming van Experience Cloud ](https://experienceleague.adobe.com/?support-solution=General#support) of besproken in de [ gemeenschap van Experience Manager ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
 ***de documentatiebijdragen van AEM zijn geen vervanging voor de Zorg van de Klant van Adobe*** en om het even welke dergelijke bijdragen die antwoorden op steun-verwante vragen zoeken worden verworpen.
 
-### Bijdragen moeten duidelijk verwijzen naar betrokken documentatiepagina&#39;s.
+### Bijdragen moeten duidelijk verwijzen naar betrokken documentatiepagina&#39;s
 
 Als u een probleem maakt om verbeteringen in de documentatie voor te stellen, moet u koppelingen naar de betrokken pagina&#39;s opnemen. Als u een kwestie creeert door **te gebruiken geef deze pagina** verbinding op een documentatiepagina uit, wordt de kwestie automatisch gecreeerd met een verbinding aan de pagina.
 
@@ -65,7 +65,7 @@ Alle lezers van AEM-documentatie zijn over de hele wereld beschikbaar en kunnen 
 
 #### Volg de Microsoft®-handleiding
 
-[&#x200B; het Handboek Microsoft® van Stijl &#x200B;](https://learn.microsoft.com/en-us/style-guide/welcome/) is een vrij beschikbare gids van de documentatiestijl die zich op softwaredocumentatie concentreert en de documentatie van AEM volgt deze gids waar mogelijk.
+[ het Handboek Microsoft® van Stijl ](https://learn.microsoft.com/en-us/style-guide/welcome/) is een vrij beschikbare gids van de documentatiestijl die zich op softwaredocumentatie concentreert en de documentatie van AEM volgt deze gids waar mogelijk.
 
 ### Opmaak
 
