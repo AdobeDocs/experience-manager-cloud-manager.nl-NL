@@ -18,7 +18,7 @@ Zoals alle krachtige hulpmiddelen, omvat Cloud Manager vele concepten en termijn
 
 Een toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om de onderliggende [&#x200B; oplossing &#x200B;](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften aan te passen. Een toepassing is een logische eenheid die uit veelvoudige [&#x200B; artefacten &#x200B;](#artifact) kan worden samengesteld.
 
-Een voorbeeldtoepassing is de fictieve [&#x200B; WKND lifestyle toepassing &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
+Een voorbeeldtoepassing is de fictieve [&#x200B; WKND lifestyle toepassing &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
 
 ## Artefact {#artifact}
 
