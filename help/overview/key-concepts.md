@@ -2,7 +2,7 @@
 title: Belangrijke concepten
 description: Zoals alle krachtige hulpmiddelen, omvat Cloud Manager vele concepten en termijnen. Dit document geeft een overzicht van een aantal van de belangrijkste documenten die u nodig hebt als u Cloud Manager gaat gebruiken.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Zoals alle krachtige hulpmiddelen, omvat Cloud Manager vele concepten en termijn
 
 ## Toepassing {#application}
 
-Een toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om de onderliggende [&#x200B; oplossing &#x200B;](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften aan te passen. Een toepassing is een logische eenheid die uit veelvoudige [&#x200B; artefacten &#x200B;](#artifact) kan worden samengesteld.
+Een toepassing is de reeks aanpassingen en configuraties die door een klant worden gecreeerd om de onderliggende [ oplossing ](#solution) (zoals AEM Sites of AEM Assets) voor hun specifieke gebruiksgevallen en behoeften aan te passen. Een toepassing is een logische eenheid die uit veelvoudige [ artefacten ](#artifact) kan worden samengesteld.
 
-Een voorbeeldtoepassing is de fictieve [&#x200B; WKND lifestyle toepassing &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
+Een voorbeeldtoepassing is de fictieve [ WKND lifestyle toepassing ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview).
 
 ## Artefact {#artifact}
 
@@ -26,23 +26,23 @@ Een artefact is een plaatsbare eenheid en is het resultaat van één of ander bo
 
 ## Artefaciliteit {#artifact-repository}
 
-Een artefactbewaarplaats is een opslagplaats waar klant-specifieke [&#x200B; artefacten &#x200B;](#artifact) worden bewaard en worden beveiligd.
+Een artefactbewaarplaats is een opslagplaats waar klant-specifieke [ artefacten ](#artifact) worden bewaard en worden beveiligd.
 
 ## Omgeving {#environment}
 
-Een milieu is één enkele cluster van virtuele machines binnen a [&#x200B; programma &#x200B;](#program). Voor AEM bestaat deze omgeving uit een ontwerpinstantie (optioneel met een extra koude stand-by ontwerpinstantie), nul of meer publicatieinstanties, een of meer Dispatcher-instanties en een taakverdelingsmechanisme.
+Een milieu is één enkele cluster van virtuele machines binnen a [ programma ](#program). Voor AEM bestaat deze omgeving uit een ontwerpinstantie (optioneel met een extra koude stand-by ontwerpinstantie), nul of meer publicatieinstanties, een of meer Dispatcher-instanties en een taakverdelingsmechanisme.
 
 ## Git-opslagplaats {#git-repository}
 
-Een bewaarplaats van het Git is een plaats waar klant-specifieke broncode wordt opgeslagen en toegankelijk [&#x200B; gebruikend Git &#x200B;](https://git-scm.com) is.
+Een bewaarplaats van het Git is een plaats waar klant-specifieke broncode wordt opgeslagen en toegankelijk [ gebruikend Git ](https://git-scm.com) is.
 
 ## Instantie {#instance}
 
-Een instantie is een specifieke virtuele server die de AEM [&#x200B; oplossing &#x200B;](#solution) in werking stelt. De instanties vertegenwoordigen één enkele logische eenheid vanuit een plaatsingsperspectief.
+Een instantie is een specifieke virtuele server die de AEM [ oplossing ](#solution) in werking stelt. De instanties vertegenwoordigen één enkele logische eenheid vanuit een plaatsingsperspectief.
 
 ## Organisatie {#organization}
 
-Een organisatie is een constructie van de Adobe die een ondernemingsklant vertegenwoordigt. Eén bedrijf kan meerdere organisaties hebben, afhankelijk van de manier waarop deze zijn ingericht in het Identity Management System (IMS) van Adobe.
+Een organisatie is een constructie van Adobe die een ondernemingsklant vertegenwoordigt. Eén bedrijf kan meerdere organisaties hebben, afhankelijk van de manier waarop ze zijn ingericht in Adobe Identity Management System (IMS).
 
 ## Pijpleiding {#pipeline}
 
@@ -50,7 +50,7 @@ Een pijpleiding is een reeks plaatsingsstappen die in opeenvolging in werking wo
 
 ## Product {#product}
 
-Een product is een specifieke reeks functionaliteit binnen a [&#x200B; oplossing &#x200B;](#solution) vergunning gegeven door een organisatie. De verschillende [&#x200B; programma&#39;s &#x200B;](#program) binnen een organisatie kunnen op verschillende reeksen producten, bijvoorbeeld, AEM Sites, AEM Assets, of AEM Forms worden gemachtigd.
+Een product is een specifieke reeks functionaliteit binnen a [ oplossing ](#solution) vergunning gegeven door een organisatie. De verschillende [ programma&#39;s ](#program) binnen een organisatie kunnen op verschillende reeksen producten, bijvoorbeeld, AEM Sites, AEM Assets, of AEM Forms worden gemachtigd.
 
 ## Programma {#program}
 
@@ -62,4 +62,4 @@ Een oplossing is een van de Adobe [!UICONTROL Experience Cloud] -oplossingen. Bi
 
 ## Stap {#step}
 
-Een stap is een gevormde instructieset die één of andere eenheid van het werk als bouwsteen van a [&#x200B; pijpleiding &#x200B;](#pipeline) verwezenlijkt.
+Een stap is een gevormde instructieset die één of andere eenheid van het werk als bouwsteen van a [ pijpleiding ](#pipeline) verwezenlijkt.

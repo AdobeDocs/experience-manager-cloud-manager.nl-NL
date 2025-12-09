@@ -2,9 +2,9 @@
 title: GitHub-controleannotaties
 description: Leer hoe de controles GitHub PRs voor uw privé bewaarplaatsen annoteert om u van nuttige te voorzien terugkoppelen.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -16,28 +16,28 @@ Leer hoe de controles GitHub PRs voor uw privé bewaarplaatsen annoteert om u va
 
 ## Overzicht {#overview}
 
-Als u [&#x200B; privé bewaarplaatsen &#x200B;](private-repositories.md) voor uw programma van Cloud Manager gebruikt, worden de controles in GitHub automatisch in werking gesteld voor elk trekkingsverzoek. Deze controles zijn voorzien van nuttige informatie om u te helpen om het even welke kwesties met uw code zo snel mogelijk begrijpen.
+Als u [ privé bewaarplaatsen ](private-repositories.md) voor uw programma van Cloud Manager gebruikt, controles in looppas GitHub automatisch voor elk trekkingsverzoek. Deze controles zijn voorzien van nuttige informatie om u te helpen om het even welke kwesties met uw code zo snel mogelijk begrijpen.
 
-![&#x200B; Voorbeeld van GitHub controleannotaties &#x200B;](assets/github-check-annotations.png)
+![ Voorbeeld van GitHub controleannotaties ](assets/github-check-annotations.png)
 
-{de kwaliteit van de 0} Code [&#128279;](/help/using/code-quality-testing.md) kwesties die door [&#x200B; worden ontdekt SonarQube &#x200B;](/help/using/custom-code-quality-rules.md) zijn duidelijk vermeld.
+{de kwaliteit van de 0} Code [ kwesties die door ](/help/using/code-quality-testing.md) worden ontdekt SonarQube [ zijn duidelijk vermeld.](/help/using/custom-code-quality-rules.md)
 
-![&#x200B; Voorbeeld van de annotatie van de codekwestie &#x200B;](assets/github-check-annotations-example.png)
+![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example.png)
 
 De exacte coderegel met de uitgave wordt opgegeven en u kunt erop klikken om de relevante code weer te geven. Deze annotaties worden gegeven voor alle code kwesties, niet alleen die kwesties die in het trekkingsverzoek worden veranderd.
 
-![&#x200B; Voorbeeld van de annotatie van de codekwestie &#x200B;](assets/github-check-annotations-example-code.png)
+![ Voorbeeld van de annotatie van de codekwestie ](assets/github-check-annotations-example-code.png)
 
 Alle geannoteerde lijnen worden samengevoegd op het **Gewijzigde Dossiers** lusje op het trekkingsverzoek GitHub. Annotaties voor bestanden die niet zijn gewijzigd in de pull-aanvraag, worden in hun eigen sectie weergegeven.
 
-![&#x200B; Voorbeeld van aantekeningen op veranderde dossiers tabel &#x200B;](assets/github-check-annotations-files-changed.png)
+![ Voorbeeld van aantekeningen op veranderde dossiers tabel ](assets/github-check-annotations-files-changed.png)
 
 ## Pijpleidingen voor codeswaliteit {#code-quality-pipelines}
 
-De [&#x200B; resultaten van de Kwaliteit van de Code &#x200B;](/help/using/code-quality-testing.md) zijn ook zichtbaar in de pijpleiding, die Cloud Manager automatisch bij de bodem van de **Controles** tabel teweegbrengt. Het is ook toegankelijk van de **Details** van de controle van het trekkingsverzoek.
+De [ resultaten van de Kwaliteit van de Code ](/help/using/code-quality-testing.md) zijn ook zichtbaar in de pijpleiding, die Cloud Manager automatisch bij de bodem van de **Controles** tabel teweegbrengt. Het is ook toegankelijk van de **Details** van de controle van het trekkingsverzoek.
 
-![&#x200B; Voorbeeld van annotaties &#x200B;](assets/github-check-annotations-code-quality.png)
+![ Voorbeeld van annotaties ](assets/github-check-annotations-code-quality.png)
 
-![&#x200B; Voorbeeld van annotaties &#x200B;](assets/github-check-annotations-code-quality-2.png)
+![ Voorbeeld van annotaties ](assets/github-check-annotations-code-quality-2.png)
 
-U kunt de problemen ook visualiseren in de vorm van een CSV. Deze methode kan door [&#x200B; worden teruggewonnen het bekijken van de details van de pijpleidingsuitvoering in Cloud Manager &#x200B;](/help/using/managing-pipelines.md).
+U kunt de problemen ook visualiseren in de vorm van een CSV. Deze methode kan door [ worden teruggewonnen het bekijken van de details van de pijpleidingsuitvoering in Cloud Manager ](/help/using/managing-pipelines.md).
