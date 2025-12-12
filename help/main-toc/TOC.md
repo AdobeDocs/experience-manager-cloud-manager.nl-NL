@@ -18,7 +18,7 @@ ht-degree: 9%
 # Cloud Manager-documentatie {#content}
 
 + [Cloud Manager voor AMS](/help/introduction.md)
-+ [ Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [&#x200B; Experience Hub &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Overzicht {#overview}
    + [Belangrijke concepten](/help/overview/key-concepts.md)
    + [Gebruikersreis](/help/overview/user-journey.md)
@@ -54,8 +54,8 @@ ht-degree: 9%
    + [Omgevingen beheren](/help/using/managing-environments.md)
    + [Omgevingen bewaken](/help/using/monitoring-environments.md)
    + [Service Pack-updates voor ontwikkelomgevingen (persoonlijke bèta)](/help/using/service-packs-environments.md)
-   + [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
-   + [ Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+   + [&#x200B; Cloud Manager CLI &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Meldingen](/help/using/notifications.md)
    + [Aangepaste regels voor codekwaliteit](/help/using/custom-code-quality-rules.md)
    + [Content Copy for Environment Consistency](/help/using/content-copy.md)
