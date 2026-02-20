@@ -7,9 +7,9 @@ user-guide-description: Leer hoe u met Cloud Manager zelf in de cloud Adobe Expe
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
+source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 9%
 # Cloud Manager-documentatie {#content}
 
 + [Cloud Manager voor AMS](/help/introduction.md)
-+ [&#x200B; Experience Hub &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [ Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + Overzicht {#overview}
    + [Belangrijke concepten](/help/overview/key-concepts.md)
    + [Gebruikersreis](/help/overview/user-journey.md)
@@ -54,8 +54,8 @@ ht-degree: 9%
    + [Omgevingen beheren](/help/using/managing-environments.md)
    + [Omgevingen bewaken](/help/using/monitoring-environments.md)
    + [Service Pack-updates voor ontwikkelomgevingen (persoonlijke bèta)](/help/using/service-packs-environments.md)
-   + [&#x200B; Cloud Manager API &#x200B;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
-   + [&#x200B; Cloud Manager CLI &#x200B;](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [ Cloud Manager API ](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+   + [ Cloud Manager CLI ](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [Meldingen](/help/using/notifications.md)
    + [Aangepaste regels voor codekwaliteit](/help/using/custom-code-quality-rules.md)
    + [Content Copy for Environment Consistency](/help/using/content-copy.md)
@@ -65,7 +65,7 @@ ht-degree: 9%
    + [Een Adobe-opslagplaats toevoegen](/help/managing-code/adobe-repositories.md)
    + [Een privéopslagplaats toevoegen](/help/managing-code/private-repositories.md)
    + [Een externe opslagplaats toevoegen](/help/managing-code/external-repositories.md)
-   + [Toegangstokens beheren (persoonlijke bèta)](/help/managing-code/manage-access-tokens.md)
+   + [Toegangstokens beheren](/help/managing-code/manage-access-tokens.md)
    + [Ondersteuning voor Git-submodule](/help/managing-code/git-submodules.md)
    + [Controleren op privéopslagplaatsen volbrengen](/help/managing-code/github-check-config.md)
    + [GitHub-controleannotaties](/help/managing-code/github-annotations.md)
