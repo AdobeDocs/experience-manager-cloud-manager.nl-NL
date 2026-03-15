@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2026.3.0 op Adobe Managed Services.
 
-Zie ook de [&#x200B; huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [&#x200B; huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -30,7 +30,7 @@ De volgende geplande release is donderdag 2 april 2026.
 ## Nieuwe functies {#what-is-new}
 
 * **Steun voor rekbaarheid UI in AEM Experience Hub**
-De steun voor Uitbreidingen UI in [&#x200B; AEM Experience Hub &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
+De steun voor Uitbreidingen UI in [&#x200B; AEM Experience Hub &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
 
   Meer leren, zie [&#x200B; AEM Experience Hub &#x200B;](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
@@ -57,7 +57,7 @@ De volgende mogelijkheden zijn momenteel beschikbaar:
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 

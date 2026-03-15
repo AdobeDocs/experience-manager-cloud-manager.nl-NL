@@ -20,7 +20,7 @@ Nadat u de algemene configuratie voor [!UICONTROL Cloud Manager] hebt ingesteld,
 
 ## Voor het eerst aanmelden {#logging-in-for-the-first-time}
 
-1. Teken in Cloud Manager bij [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com/experiencemanager). Meer leren, zie [&#x200B; Ongeveer Adobe Experience Hub &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. Teken in Cloud Manager bij [&#x200B; experience.adobe.com &#x200B;](https://experience.adobe.com/experiencemanager). Meer leren, zie [&#x200B; Ongeveer Adobe Experience Hub &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. In het linkerzijpaneel, klik **Cloud Manager**.
 
    ![&#x200B; Cloud Manager in linkerzijpaneel in Experience Manager &#x200B;](/help/getting-started/assets/cloud-manager-experiencemanager.png)
