@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2026.3.0 op Adobe Managed Services.
 
-Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [&#x200B; huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -30,18 +30,18 @@ De volgende geplande release is donderdag 2 april 2026.
 ## Nieuwe functies {#what-is-new}
 
 * **Steun voor rekbaarheid UI in AEM Experience Hub**
-De steun voor Uitbreidingen UI in [ AEM Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
+De steun voor Uitbreidingen UI in [&#x200B; AEM Experience Hub &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
 
-  Meer leren, zie [ AEM Experience Hub ](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
+  Meer leren, zie [&#x200B; AEM Experience Hub &#x200B;](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
 * **de pijpleidingen van de Configuratie steunen nu beheerde geheimen**
 
   Gebruikers kunnen nu rechtstreeks in Cloud Manager-configuratiepijpleidingen geheimen toevoegen en beheren. Deze geheimen treden veilig waarden in de specificaties van de pijpleidingsconfiguratie met voeten en steunen flexibele, milieu-specifieke plaatsingen.
 
-  ![ Mening/geeft de variabelen optie op het drop-down menu voor een geselecteerde pijpleiding ](/help/release-notes/assets/view-edit-variables-option.png) uit
+  ![&#x200B; Mening/geeft de variabelen optie op het drop-down menu voor een geselecteerde pijpleiding &#x200B;](/help/release-notes/assets/view-edit-variables-option.png) uit
   *Mening/geef Variabelen optie op het drop-down menu voor een geselecteerde pijpleiding uit.*
 
-  ![ de dialoogdoos van de Configuratie van Variabelen ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*de dialoogdoos van de Configuratie van Variabelen.*
+  ![&#x200B; de dialoogdoos van de Configuratie van Variabelen &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*de dialoogdoos van de Configuratie van Variabelen.*
 
 * **Verbeterde stabiliteit, prestaties, en betrouwbaarheid**
 
@@ -70,7 +70,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 Een nieuw bouwstijlmodel compileert slechts veranderde modules (eerder dan de volledige repo) gebruikend module-vlakke caching om bouwstijden te verkorten. Het is van toepassing op pijpleidingen van codekwaliteit, volledig-stapel, en stadium-slechts.
 
-![ geef de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig zijn bouwt en Slim bouwen ](/help/release-notes/assets/non-production-pipeline-edit.png)
+![&#x200B; geef de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig zijn bouwt en Slim bouwen &#x200B;](/help/release-notes/assets/non-production-pipeline-edit.png)
 *geef de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig bouwen en Slim zijn.*
 
 In **voeg toe/geef de dialoogdoos van de Pijpleiding**, onder het **Broncode** lusje uit, laat een nieuwe **Bouw Strategie** sectie u één van de volgende bouwstijlopties kiezen:
@@ -80,7 +80,7 @@ In **voeg toe/geef de dialoogdoos van de Pijpleiding**, onder het **Broncode** l
 
 U controleert welke pijpleidingen gebruiken **Slimme bouw**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de pijpleidingen van de Plaatsing**.
 
-Interessant? E-mail [ beta_quickbuild_cmpipelines@adobe.com ](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma
+Interessant? E-mail [&#x200B; beta_quickbuild_cmpipelines@adobe.com &#x200B;](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
