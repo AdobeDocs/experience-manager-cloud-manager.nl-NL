@@ -3,7 +3,7 @@ title: Opmerkingen bij de release voor Cloud Manager 2026.3.0
 description: Meer informatie over de release van Cloud Manager 2026.3.0 op Adobe Managed Services.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 9ce8a2ca2117992421052b76b0f5c7c9c5a6195b
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Meer informatie over de release van [!UICONTROL Cloud Manager] 2026.3.0 op Adobe Managed Services.
 
-Zie ook de [&#x200B; huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-cloud-service/content/release-notes/home).
+Zie ook de [ huidige versienota&#39;s voor Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home).
 
 ## Releasedatums {#release-date}
 
@@ -30,18 +30,18 @@ De volgende geplande release is donderdag 2 april 2026.
 ## Nieuwe functies {#what-is-new}
 
 * **Steun voor rekbaarheid UI in AEM Experience Hub**
-De steun voor Uitbreidingen UI in [&#x200B; AEM Experience Hub &#x200B;](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
+De steun voor Uitbreidingen UI in [ AEM Experience Hub ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) wordt nu toegelaten, latend ontwikkelaars de interface met douanefunctionaliteit uitbreiden en widgets die gebruikend Adobe App Builder worden gebouwd.
 
-  Meer leren, zie [&#x200B; AEM Experience Hub &#x200B;](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
+  Meer leren, zie [ AEM Experience Hub ](https://developer.adobe.com/uix/docs/services/aem-experience-hub/).
 
 * **de pijpleidingen van de Configuratie steunen nu beheerde geheimen**
 
   Gebruikers kunnen nu rechtstreeks in Cloud Manager-configuratiepijpleidingen geheimen toevoegen en beheren. Deze geheimen treden veilig waarden in de specificaties van de pijpleidingsconfiguratie met voeten en steunen flexibele, milieu-specifieke plaatsingen.
 
-  ![&#x200B; Mening/geeft de variabelen optie op het drop-down menu voor een geselecteerde pijpleiding &#x200B;](/help/release-notes/assets/view-edit-variables-option.png) uit
+  ![ Mening/geeft de variabelen optie op het drop-down menu voor een geselecteerde pijpleiding ](/help/release-notes/assets/view-edit-variables-option.png) uit
   *Mening/geef Variabelen optie op het drop-down menu voor een geselecteerde pijpleiding uit.*
 
-  ![&#x200B; de dialoogdoos van de Configuratie van Variabelen &#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*de dialoogdoos van de Configuratie van Variabelen.*
+  ![ de dialoogdoos van de Configuratie van Variabelen ](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*de dialoogdoos van de Configuratie van Variabelen.*
 
 * **Verbeterde stabiliteit, prestaties, en betrouwbaarheid**
 
@@ -57,7 +57,7 @@ De volgende mogelijkheden zijn momenteel beschikbaar:
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/nl/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -68,27 +68,28 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### Snellere builds met module caching {#quick-build-cm-pipelines}
 
-Een nieuw bouwstijlmodel compileert slechts veranderde modules (eerder dan de volledige repo) gebruikend module-vlakke caching om bouwstijltijden te verkorten. Het is van toepassing op code-kwaliteit, volledig-stapel, en stadium-slechts pijpleidingen.
+Een nieuw bouwstijlmodel compileert slechts veranderde modules (eerder dan de volledige repo) gebruikend module-vlakke caching om bouwstijden te verkorten. Het is van toepassing op pijpleidingen van codekwaliteit, volledig-stapel, en stadium-slechts.
 
-![&#x200B; geeft de Dialoogvenster van de Pijpleiding van de Niet-Productie uit die de twee opties van de Strategie van de Bouwstijl tonen die Volledige Bouwstijl en Slimme zijn &#x200B;](/help/release-notes/assets/non-production-pipeline-edit.png)
-*geef de de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig zijn bouwt en Smart bouwt.*
+![ geef de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig zijn bouwt en Slim bouwen ](/help/release-notes/assets/non-production-pipeline-edit.png)
+*geef de dialoogdoos uit van de Pijpleiding van de Niet-Productie die de twee opties toont van de Strategie van de Bouwstijl die Volledig bouwen en Slim zijn.*
 
-In **voeg/geef de dialoogdoos van de Pijpleiding** toe, onder het **lusje van de Code van Source**, laat een nieuwe **Bouw Strategie** sectie u één van de volgende bouwstijlopties kiezen:
+In **voeg toe/geef de dialoogdoos van de Pijpleiding**, onder het **Broncode** lusje uit, laat een nieuwe **Bouw Strategie** sectie u één van de volgende bouwstijlopties kiezen:
 
 * **Volledig bouwt** — bouwt alle modules in de bewaarplaats op elke looppas.
-* **Slim bouwt** — bouwt slechts modules die sinds laatste worden veranderd begaan, die algemene bouwtijd verkort.
+* **Slim bouwt** - bouwt slechts modules die sinds laatste worden veranderd begaat, die algemene bouwtijd verkort.
 
-U controleert welke pijpleidingen gebruiken **Slimme bouwstijl**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de 3&rbrace; pijpleidingen van de Plaatsing.**
+U controleert welke pijpleidingen gebruiken **Slimme bouw**. Tijdens bèta, verschijnt deze optie slechts voor **Kwaliteit van de Code** en **Dev de pijpleidingen van de Plaatsing**.
 
-Geïnteresseerd? E-mail [&#x200B; beta_quickbuild_cmpipelines@adobe.com &#x200B;](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma.
+Interessant? E-mail [ beta_quickbuild_cmpipelines@adobe.com ](mailto:beta_quickbuild_cmpipelines@adobe.com) met uw Adobe OrgID en identiteitskaart van het Programma
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
-## Bugfixes {#bug-fixes}
+## Opgeloste problemen {#bug-fixes}
 
-In de Cloud Manager van maart 2026 over AMS-release zijn geen belangrijke correcties aangebracht.
+Er zijn geen belangrijke bugcorrecties in de Cloud Manager van maart 2026 voor de AMS-release.
 
 <!--
 Known Issues {#known-issues}
 
-* A -->
+* A 
+-->
