@@ -2,9 +2,9 @@
 title: Dispatcher-configuraties
 description: Leer hoe u Dispatcher-configuratiebestanden kunt implementeren met Cloud Manager.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ Leer hoe u Dispatcher-configuratiebestanden kunt implementeren met Cloud Manager
 
 ## Dispatcher-configuraties implementeren met Cloud Manager {#deploying-dispatcher-configurations}
 
-Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren als deze naast normale AEM-inhoudpakketten zijn opgeslagen in de Git-opslagplaats.
+Cloud Manager kan webserver- en Dispatcher-configuratiebestanden implementeren op voorwaarde dat deze samen met normale AEM-inhoudspakketten zijn opgeslagen in de Git-opslagplaats.
 
 Als u van deze mogelijkheid gebruik wilt maken, moet de Maven-build een ZIP-bestand maken dat ten minste twee mappen bevat: `conf` en `conf.d` . Dit .zip-bestand kan worden gemaakt met `maven-assembly-plugin` .
 
-De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [&#x200B; tovenaar van de projectverwezenlijking &#x200B;](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit pad wordt aanbevolen als u nog geen ervaring hebt met Adobe Managed Services (AMS).
+De projecten die door Cloud Manager worden geproduceerd die de ingebouwde [ tovenaar van de projectverwezenlijking ](/help/getting-started/using-the-wizard.md) gebruiken hebben de correcte Gemaakt automatisch gecreeerd projectstructuur. Dit pad wordt aanbevolen als u nog geen ervaring hebt met Adobe Managed Services (AMS).
 
 Wanneer u de toepassing uitvoert naar een Dispatcher-instantie, worden de mappen in de instantie vervangen door die mappen in de Git-opslagplaats. Omdat voor webserver- en Dispatcher-configuratiebestanden vaak specifieke gegevens voor de omgeving nodig zijn, moet u samenwerken met de Customer Success Engineers (CSE) om de juiste omgevingsvariabelen in te stellen in `/etc/sysconfig/httpd` voordat u deze functie correct gebruikt.
 
@@ -30,7 +30,7 @@ Voer de volgende stappen uit om de eerste Dispatcher-configuratie te voltooien.
 
 1. Verkrijg de huidige dossiers van de productieconfiguratie van uw CSE.
 1. Verwijder hard-gecodeerde milieu-specifieke gegevens zoals publiceer renderer IP en vervang door variabelen.
-1. Definieer vereiste variabelen in sleutelwaardeparen voor elk doel-Dispatcher en verzoek uw CSE deze aan `/etc/sysconfig/httpd` toe te voegen.
+1. Bepaal vereiste variabelen in zeer belangrijk-waardeparen voor elk doel Dispatcher en voeg hen aan [ variabelen ](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars)) omslag op elke instantie toe.
 1. Test de bijgewerkte configuraties in uw testomgeving.
 1. Zodra getest, verzoek uw CSE om aan productie op te stellen.
 1. Leg de bestanden vast aan uw Git-opslagplaats.
