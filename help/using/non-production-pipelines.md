@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Een niet-productiepijpleiding toevoegen {#configuring-non-production-pipelines}
 
-Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [ CI/CD Pijpleidingen ](/help/overview/ci-cd-pipelines.md).
+Leer hoe u Cloud Manager kunt gebruiken om niet-productiepijpleidingen te maken en te configureren voor de implementatie van uw code. Als u eerst een meer conceptueel overzicht van zou houden hoe de pijpleidingen in Cloud Manager werken, zie [&#x200B; CI/CD Pijpleidingen &#x200B;](/help/overview/ci-cd-pipelines.md).
 
 ## Overzicht {#overview}
 
@@ -20,7 +20,7 @@ Gebruikend de **Pijpleidingen** tegel in [!UICONTROL Cloud Manager], kan de **Ma
 * **de Pijpleidingen van de Productie** - De productiepijpleidingen van A zijn een doelgerichte pijpleiding die van een reeks georkestreerde stappen wordt gemaakt om broncode helemaal in productie te nemen.
 * **niet-Productiepijpleidingen** - een niet productiepijplijn dient hoofdzakelijk code-kwaliteit scans in werking te stellen of broncode in een ontwikkelomgeving op te stellen.
 
-Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te om productiepijpleidingen te vormen zie het document [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md).
+Dit document richt zich op niet-productiepijpleidingen. Voor details op hoe te om productiepijpleidingen te vormen zie het document [&#x200B; Vormend de Pijpleidingen van de Productie &#x200B;](/help/using/production-pipelines.md).
 
 Er zijn twee soorten niet-productiepijpleidingen:
 
@@ -29,24 +29,24 @@ Er zijn twee soorten niet-productiepijpleidingen:
 
 >[!NOTE]
 >
->Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [ programmaopstelling ](/help/getting-started/program-setup.md) is volledig. Zie [ Opslagplaatsen van Cloud Manager ](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
+>Een pijpleiding kan niet opstelling zijn tot zijn bijbehorende bewaarplaats van het Git minstens één tak heeft en [&#x200B; programmaopstelling &#x200B;](/help/getting-started/program-setup.md) is volledig. Zie [&#x200B; Opslagplaatsen van Cloud Manager &#x200B;](/help/managing-code/managing-repositories.md) leren om bewaarplaatsen in Cloud Manager toe te voegen en te beheren.
 
 ## Een nieuwe niet-productiepijplijn toevoegen {#add-non-production-pipeline}
 
 Nadat u opstelling een programma hebt en minstens één milieu gebruikend Cloud Manager UI, kunt u niet productiepijpleidingen toevoegen om de kwaliteit van uw code te testen alvorens aan productiemilieu&#39;s op te stellen.
 
-1. Logboek in Cloud Manager bij [ my.cloudmanager.adobe.com ](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
+1. Logboek in Cloud Manager bij [&#x200B; my.cloudmanager.adobe.com &#x200B;](https://my.cloudmanager.adobe.com) en selecteert de aangewezen organisatie en het programma.
 
 1. Open de Pipelinekaart van het homescherm van Cloud Manager. Klik **toevoegen**, dan uitgezocht **voeg niet-Productiepijpleiding** toe.
 
-   ![ voeg niet-productiepijpleiding ](/help/assets/configure-pipelines/nonprod-pipeline-add1.png) toe
+   ![&#x200B; voeg niet-productiepijpleiding &#x200B;](/help/assets/configure-pipelines/nonprod-pipeline-add1.png) toe
 
 1. Op het **lusje van de Configuratie** van **voeg niet-Productie Pijpleiding** dialoogdoos toe, selecteer het type van pijpleiding u, of één van het volgende wilt tot stand brengen:
 
    * **Pijpleiding van de Kwaliteit van de Code** - creeert een pijpleiding die de code bouwt, eenheidstests in werking stelt, en codekwaliteit evalueert zonder aan een milieu op te stellen.
    * **Pijpleiding van de Plaatsing** - creeert een pijpleiding die de code bouwt, eenheidstests in werking stelt, codekwaliteit evalueert, en aan een milieu opstelt.
 
-   ![ kies pijpleidingstype ](/help/using/assets/add-non-production-pipeline-cm-ams.png)
+   ![&#x200B; kies pijpleidingstype &#x200B;](/help/using/assets/add-non-production-pipeline-cm-ams.png)
 
 >[!BEGINTABS]
 
@@ -72,11 +72,11 @@ Nadat u opstelling een programma hebt en minstens één milieu gebruikend Cloud 
 |  | **keurt na de controledoos van de Plaatsing van het Stadium goed** | Zichtbaar slechts wanneer het uitgeven van een niet productiepijplijn.<br> selecteer deze optie om goedkeuring na plaatsing aan het werkgebiedmilieu te vereisen alvorens de pijpleiding kan verdergaan. Als deze optie niet wordt geselecteerd, blijft de pijpleiding gebaseerd op het gevormde gedrag verdergaan. |
 |  | **Skip de veranderingen van de Balancer van de Lading** controledoos | Selecteer deze optie om te voorkomen dat de pijplijn tijdens de implementatie wijzigingen aanbrengt in het taakverdelingsmechanisme. |
 |  | **Configuratie van Dispatcher** | De **rol van de Manager van de Plaatsing** kan een reeks inhoudspaden vormen die of ongeldig worden gemaakt of van het geheime voorgeheugen van AEM Dispatcher leeggemaakt wanneer een pijpleiding in werking wordt gesteld. Deze geheim voorgeheugenacties worden uitgevoerd als deel van de stap van de plaatsingspijpleiding, enkel nadat om het even welke inhoudspakketten worden opgesteld. Deze instellingen maken gebruik van de standaard AEM Dispatcher-functionaliteit. Ga als volgt te werk om `Dispatcher` te configureren:<ul><li>Onder **PAD**, verstrek een inhoudspad dat u de pijpleiding wilt leegmaken of ongeldig maken.<li>Onder **TYPE**, selecteer de actie die op die weg moet worden genomen.<ul><li>**Duw** - voer een geheim voorgeheugenschrapping op de gespecificeerde weg uit.</li><li>**ongeldig maakt** ongeldig - voer een geheim voorgeheugenbevestiging uit, gelijkend op wanneer de inhoud van een auteursinstantie aan een het publiceren instantie wordt geactiveerd.</li><li>Klik **toevoegen Weg** om uw gespecificeerde weg toe te voegen. U kunt maximaal 100 paden per omgeving toevoegen.</li></ul> |
-| **Pijpleiding** | **controledoos van de Controle van de Ervaring 0}** | Selecteer deze optie om een stap van de Controle van de Ervaring in de pijpleiding op te nemen. Wanneer toegelaten, omvat de pijpleiding de stap van de Controle van de Ervaring na de Code van Source tabel. |
+| **Pijpleiding** | **controledoos van de Controle van de Ervaring 0&rbrace;** | Selecteer deze optie om een stap van de Controle van de Ervaring in de pijpleiding op te nemen. Wanneer toegelaten, omvat de pijpleiding de stap van de Controle van de Ervaring na de Code van Source tabel. |
 
 >[!ENDTABS]
 
-1. In de laag-juiste hoek van **voeg niet-Productie pijplijn** dialoogdoos toe, gaat de klik **** verder.
+1. In de laag-juiste hoek van **voeg niet-Productie pijplijn** dialoogdoos toe, gaat de klik **&#x200B;**&#x200B;verder.
 1. Selecteer het type van code de pijpleiding wordt gevormd om te bouwen en op te stellen.
 
 >[!BEGINTABS]
@@ -88,10 +88,10 @@ Implementeert de volledige AEM-toepassing, inclusief de toepassingscode en stand
 | Sectie | Optie | Beschrijving |
 | --- | --- | --- |
 | **code van Source** | **Bewaarplaats** | Van de drop-down lijst, kies de bewaarplaats van het Git die de pijpleiding als zijn bron gebruikt. Cloud Manager bouwt code van de bewaarplaats die u hier kiest. |
-|   | **de Tak van de Git** | Van de drop-down lijst, kies welke tak in de geselecteerde bewaarplaats de pijpleiding van zou moeten bouwen. De standaardwaarde is `main` . De pijpleiding gebruikt de gekozen tak als bron voor bouw en plaatsing. Indien nodig, verfrist de klik **** om de lijst van beschikbare takken voor de geselecteerde bewaarplaats bij te werken. Gebruik deze optie als een recent gemaakte vertakking niet in de lijst voorkomt. |
-|   | **bouwt Strategie** | <ul><li>**Volledig bouwt** - bouwt alle modules in de bewaarplaats telkens<li>BETA **Smart bouwt** - bouwt slechts modules die sinds laatste zijn veranderd begaat.<br> leer meer over [ gebruikend Slim bouwt in een niet productiepijpleiding ](#about-smart-build).</li></ol>**Belangrijk**: De slimme Bouwstijl is beschikbaar slechts voor de pijpleidingen van de Kwaliteit van de Code van de Code van de Code van de Code van de Code van de Code van de Code en Dev de volledige plaatsingspijpleidingen. |
+|   | **de Tak van de Git** | Van de drop-down lijst, kies welke tak in de geselecteerde bewaarplaats de pijpleiding van zou moeten bouwen. De standaardwaarde is `main` . De pijpleiding gebruikt de gekozen tak als bron voor bouw en plaatsing. Indien nodig, verfrist de klik **&#x200B;**&#x200B;om de lijst van beschikbare takken voor de geselecteerde bewaarplaats bij te werken. Gebruik deze optie als een recent gemaakte vertakking niet in de lijst voorkomt. |
+|   | **bouwt Strategie** | <ul><li>**Volledig bouwt** - bouwt alle modules in de bewaarplaats telkens<li>BETA **Smart bouwt** - bouwt slechts modules die sinds laatste zijn veranderd begaat.<br> leer meer over [&#x200B; gebruikend Slim bouwt in een niet productiepijpleiding &#x200B;](#about-smart-build).</li></ol>**Belangrijk**: De slimme Bouwstijl is beschikbaar slechts voor de pijpleidingen van de Kwaliteit van de Code van de Code van de Code van de Code van de Code van de Code van de Code en Dev de volledige plaatsingspijpleidingen. |
 |   | **negeren de controledoos van de Configuratie van de Rij van het Web** | Selecteer deze optie om plaatsing van de configuratie van de Webrij in een Volledige codepijpleiding van de Stapel over te slaan. Laat de optie uitgeschakeld als u de configuratie van de weblaag samen met de code van de pijpleiding wilt implementeren. |
-| **Pijpleiding** | **controledoos van de Controle van de Ervaring 0}** | Selecteer deze optie om een stap van de Controle van de Ervaring in de pijpleiding op te nemen. Wanneer toegelaten, omvat de pijpleiding de stap van de Controle van de Ervaring na de Code van Source tabel. |
+| **Pijpleiding** | **controledoos van de Controle van de Ervaring 0&rbrace;** | Selecteer deze optie om een stap van de Controle van de Ervaring in de pijpleiding op te nemen. Wanneer toegelaten, omvat de pijpleiding de stap van de Controle van de Ervaring na de Code van Source tabel. |
 
 >[!TAB  Code Source - de Rij Config van het Web ]
 
@@ -102,7 +102,7 @@ Als een volledige stapelpijpleiding reeds bestaat, toont Cloud Manager een beric
 | Sectie | Optie | Beschrijving |
 | --- | --- | --- |
 | **code van Source** | **Bewaarplaats** | Selecteer in de vervolgkeuzelijst de Git-opslagplaats die de configuratie van de weblaag bevat. |
-|   | **de Tak van de Git** | Selecteer de vertakking in de gekozen opslagplaats die Cloud Manager voor de implementatie gebruikt. Indien nodig, verfrist de klik **** om de lijst van beschikbare takken voor de geselecteerde bewaarplaats bij te werken. Gebruik deze optie als een recent gemaakte vertakking niet in de lijst voorkomt. |
+|   | **de Tak van de Git** | Selecteer de vertakking in de gekozen opslagplaats die Cloud Manager voor de implementatie gebruikt. Indien nodig, verfrist de klik **&#x200B;**&#x200B;om de lijst van beschikbare takken voor de geselecteerde bewaarplaats bij te werken. Gebruik deze optie als een recent gemaakte vertakking niet in de lijst voorkomt. |
 |   | **Plaats van de Code** | Voer het pad in de geselecteerde opslagplaats in dat de weblaagconfiguratie bevat die u wilt implementeren. De standaardplaats is de bewaarplaatswortel (`/`). |
 
 >[!ENDTABS]
@@ -180,7 +180,7 @@ Als u onverwacht bouwt gedrag ontmoet, denk na onbruikbaar makend caching voor s
 | Geen prestatieverbetering | ・ Zorg ervoor dat de veelvoudige looppas (geheim voorgeheugen opwarmen) voorkwam.<br>・ Controleer als de meeste modules vaak veranderen. |
 | Onverwachte artefacten of ontbrekende wijzigingen | ・ Herzie of de veranderingen buiten Gemaakt gebiedsdeel volgen zijn.<br>・ Gebruik **Volledig bouwt** voor controle. |
 
-Zie [ een niet-productiepijplijn ](#add-non-production-pipeline) toevoegen toelaat Smart bouwt.
+Zie [&#x200B; een niet-productiepijplijn &#x200B;](#add-non-production-pipeline) toevoegen toelaat Smart bouwt.
 
 
 
@@ -220,7 +220,7 @@ Zie [ een niet-productiepijplijn ](#add-non-production-pipeline) toevoegen toela
 
 ## De volgende stappen {#the-next-steps}
 
-Nadat u de pijpleiding vormt, kunt u uw code opstellen. Zie [ Plaatsing van de Code ](/help/using/code-deployment.md) voor meer details.
+Nadat u de pijpleiding vormt, kunt u uw code opstellen. Zie [&#x200B; Plaatsing van de Code &#x200B;](/help/using/code-deployment.md) voor meer details.
 
 ## Videozelfstudie {#video-tutorial}
 

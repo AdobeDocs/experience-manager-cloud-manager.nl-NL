@@ -24,7 +24,7 @@ De CI/CD pijpleiding automatiseert ook eenheid en prestaties testende processen 
 
 In het volgende diagram ziet u wat er gebeurt wanneer een release wordt geactiveerd in [!UICONTROL Cloud Manager] via een pijplijn.
 
-![ het pijpleidingsproces ](/help/assets/screen_shot_2018-05-30at82457pm.png)
+![&#x200B; het pijpleidingsproces &#x200B;](/help/assets/screen_shot_2018-05-30at82457pm.png)
 
 | Pipetstap | Beschrijving |
 | --- | --- |
@@ -45,12 +45,12 @@ Cloud Manager gebruikt nu een geoptimaliseerde bouwstijlstrategie genoemd **Slim
 
 De slimme Bouwstijl is beschikbaar voor de Kwaliteit van de Code en Dev Volledige de plaatsingspijpleidingen van de Stapel slechts.
 
-Zie [ een niet-productiepijpleiding ](/help/using/non-production-pipelines.md#add-non-production-pipeline) en [ over het gebruiken van Slimme bouwt in een niet-productiepijpleiding ](/help/using/non-production-pipelines.md#about-smart-build) toevoegen.
+Zie [&#x200B; een niet-productiepijpleiding &#x200B;](/help/using/non-production-pipelines.md#add-non-production-pipeline) en [&#x200B; over het gebruiken van Slimme bouwt in een niet-productiepijpleiding &#x200B;](/help/using/non-production-pipelines.md#about-smart-build) toevoegen.
 
 
 ### Hoe te opstelling een pijpleiding CI/CD {#how-to-setup-a-ci-cd-pipeline}
 
-Om meer over pijpleidingsconfiguratie te leren, zie de documenten [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) en [ Vormend niet-Productie Pijpleidingen ](/help/using/non-production-pipelines.md).
+Om meer over pijpleidingsconfiguratie te leren, zie de documenten [&#x200B; Vormend de Pijpleidingen van de Productie &#x200B;](/help/using/production-pipelines.md) en [&#x200B; Vormend niet-Productie Pijpleidingen &#x200B;](/help/using/non-production-pipelines.md).
 
 ## Kwaliteitskloven {#quality-gates}
 
@@ -68,8 +68,8 @@ Voor elk van deze poorten kunnen drie niveaus worden vastgesteld:
 
 Hieronder ziet u een voorbeeld van een codescan met geïdentificeerde problemen.
 
-![ het aftasten van de Code voorbeeld ](/help/assets/quality-gate-failed.png)
+![&#x200B; het aftasten van de Code voorbeeld &#x200B;](/help/assets/quality-gate-failed.png)
 
 ### Gates instellen {#how-to-setup-gates}
 
-Zie het document [ Vormend de Pijpleidingen van de Productie ](/help/using/production-pipelines.md) voor details bij vestiging uw code, kwaliteit, en prestatiespoorten.
+Zie het document [&#x200B; Vormend de Pijpleidingen van de Productie &#x200B;](/help/using/production-pipelines.md) voor details bij vestiging uw code, kwaliteit, en prestatiespoorten.
